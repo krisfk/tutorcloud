@@ -45,7 +45,7 @@
                         <div class="container h-100">
 
                             <div class="row h-100 align-items-center">
-                                <div class="col-4">
+                                <div class="col-2">
                                     <img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" alt="">
                                 </div>
                                 <div class="col-6">
@@ -117,7 +117,7 @@ echo'</li>';
 
                                     </ul>
                                 </div>
-                                <div class="col-2"></div>
+                                <div class="col-4"></div>
                             </div>
                         </div>
 
