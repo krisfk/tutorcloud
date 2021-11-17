@@ -39,13 +39,7 @@
             <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main">
 
-                    <div class="text-center mt-3">
-                        <a href="<?php echo get_site_url();?>" class="logo-a">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/images/logo.jpg" alt="">
 
-                        </a>
-
-                    </div>
                     <div class="top-div"></div>
                     <div class="container">
                         <!-- <ul> -->
