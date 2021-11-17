@@ -97,7 +97,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
  */
 
 body {
-    color: #769e9c;
+    color: #769e9c !important;
 }
 
 .top-menu-ul {
