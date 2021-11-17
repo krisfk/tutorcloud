@@ -28,9 +28,11 @@ get_header();
 
 <div class="container">
 
-    <h2>關於TutorCloud
-        <div class="bar"></div>
-    </h2>
+    <div class="text-center">
+        <h2>關於TutorCloud
+            <div class="bar"></div>
+        </h2>
+    </div>
 </div>
 <?php
 get_footer();
