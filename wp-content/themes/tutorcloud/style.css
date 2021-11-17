@@ -165,11 +165,11 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .know-more-btn {
     background: #618376 url(./assets/images/white-arrow.png) no-repeat;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem 0.5rem 1rem;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     /* background: ; */
-    background-position: 100% 50%;
+    background-position: 93% 50%;
 }
 
 .know-more-btn:hover {
