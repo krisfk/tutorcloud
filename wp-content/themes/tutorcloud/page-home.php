@@ -11,6 +11,8 @@
 
 get_header();
 ?>
-<div>fds</div>
+<div class="home-banner-div">
+
+</div>
 <?php
 get_footer();

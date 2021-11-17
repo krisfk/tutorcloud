@@ -138,3 +138,10 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .tutor-login-btn:hover {
     color: #fff;
 }
+
+.home-banner-div {
+    display: block;
+    height: 502px;
+    background: url(./assets/images/banner-img.png);
+    background-size: cover;
+}
