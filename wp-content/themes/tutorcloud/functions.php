@@ -500,10 +500,15 @@ function twenty_twenty_one_skip_link_focus_fix() {
 
 	// The following is minified via `npx terser --compress --mangle -- assets/js/skip-link-focus-fix.js`.
 	?>
-	<script>
-	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
-	</script>
-	<?php
+<script>
+/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window
+    .addEventListener("hashchange", (function() {
+        var t, e = location.hash.substring(1);
+        /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i
+            .test(t.tagName) || (t.tabIndex = -1), t.focus())
+    }), !1);
+</script>
+<?php
 }
 add_action( 'wp_print_footer_scripts', 'twenty_twenty_one_skip_link_focus_fix' );
 
@@ -629,11 +634,70 @@ function twentytwentyone_the_html_classes() {
  */
 function twentytwentyone_add_ie_class() {
 	?>
-	<script>
-	if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
-		document.body.classList.add( 'is-IE' );
-	}
-	</script>
-	<?php
+<script>
+if (-1 !== navigator.userAgent.indexOf('MSIE') || -1 !== navigator.appVersion.indexOf('Trident/')) {
+    document.body.classList.add('is-IE');
+}
+</script>
+<?php
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
+
+
+
+
+function wp_get_menu_array($current_menu='Main Menu') {
+
+	$menu_array = wp_get_nav_menu_items($current_menu);
+
+	$menu = array();
+
+	function populate_children($menu_array, $menu_item)
+	{
+		$children = array();
+		if (!empty($menu_array)){
+			foreach ($menu_array as $k=>$m) {
+				if ($m->menu_item_parent == $menu_item->ID) {
+					$children[$m->ID] = array();
+					$children[$m->ID]['ID'] = $m->ID;
+					$children[$m->ID]['title'] = $m->title;
+					$children[$m->ID]['url'] = $m->url;
+					// $children[$m->ID]['class'] = 'fdsaf';
+
+					unset($menu_array[$k]);
+					$children[$m->ID]['children'] = populate_children($menu_array, $m);
+				}
+			}
+		};
+
+		return $children;
+	}
+
+	foreach ($menu_array as $m) {
+		if (empty($m->menu_item_parent)) {
+			$menu[$m->ID] = array();
+			$menu[$m->ID]['ID'] = $m->ID;
+			$menu[$m->ID]['title'] = $m->title;
+			$menu[$m->ID]['url'] = $m->url;
+			$menu[$m->ID]['class'] = $m->classes[0];
+
+			$menu[$m->ID]['children'] = populate_children($menu_array, $m);
+		}
+	}
+
+	return $menu;
+
+}
+
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+	global $post;
+	if ( isset( $post ) ) {
+	$classes[] = $post->post_type . '-' . $post->post_name;
+	}
+	return $classes;
+	}
+	add_filter( 'body_class', 'add_slug_body_class' );
+	
+	
+	
