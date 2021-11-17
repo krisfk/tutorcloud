@@ -189,6 +189,8 @@ h2 {
     display: inline-block;
     /* margin: 0 auto; */
     padding: 0 0.4rem;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 h2 .bar {
