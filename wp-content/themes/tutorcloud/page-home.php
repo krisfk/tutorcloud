@@ -10,5 +10,7 @@
  */
 
 get_header();
-
+?>
+<div>fds</div>
+<?php
 get_footer();

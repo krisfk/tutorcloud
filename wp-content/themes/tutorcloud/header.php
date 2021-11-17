@@ -41,6 +41,17 @@
 
 
                     <div class="top-div">
+
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-6"></div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
                         <ul class=" top-menu-ul">
 
                             <?php
