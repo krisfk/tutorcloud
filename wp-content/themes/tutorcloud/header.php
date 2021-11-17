@@ -52,9 +52,10 @@
                                 <div class="col-2"></div>
                             </div>
                         </div>
-                        <ul class=" top-menu-ul">
+                        <ul>
+                            <ul class="top-menu-ul">
 
-                            <?php
+                                <?php
 		$main_menu = wp_get_menu_array('main menu');
 foreach ($main_menu as $menu_item) {
 
@@ -73,18 +74,18 @@ if(count($menu_item['children']))
 
 echo '<li><a class="level-1 parent '.$class.'" href="'.$url.'">'.$title;
 ?>
-                            <img class="arrow"
-                                src="<?php echo get_template_directory_uri();?>/assets/images/white-arrow-enter.png"
-                                alt="">
+                                <img class="arrow"
+                                    src="<?php echo get_template_directory_uri();?>/assets/images/white-arrow-enter.png"
+                                    alt="">
 
-                            <?php
+                                <?php
 echo'</a>';
 
 
 echo '<ul class="mobile-menu-submenu">';
 ?>
 
-                            <?php
+                                <?php
 
 foreach ($menu_item['children'] as $sub_menu_item) 
 {
@@ -119,7 +120,7 @@ echo'</li>';
 
 
 
-                        </ul>
+                            </ul>
 
                     </div>
                     <div class="container">
