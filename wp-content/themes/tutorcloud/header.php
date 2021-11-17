@@ -40,15 +40,11 @@
                 <main id="main" class="site-main" role="main">
 
 
-                    <div class="top-div"></div>
-                    <div class="container">
-                        <!-- <ul> -->
-
-
+                    <div class="top-div">
                         <ul class=" top-menu-ul">
 
                             <?php
-                                    $main_menu = wp_get_menu_array('main menu');
+		$main_menu = wp_get_menu_array('main menu');
 foreach ($main_menu as $menu_item) {
 
 $url = $menu_item['url'];
@@ -63,34 +59,34 @@ $slug=str_replace('/','',$slug);
 
 if(count($menu_item['children']))
 {
-  
-    echo '<li><a class="level-1 parent '.$class.'" href="'.$url.'">'.$title;
-    ?>
+
+echo '<li><a class="level-1 parent '.$class.'" href="'.$url.'">'.$title;
+?>
                             <img class="arrow"
                                 src="<?php echo get_template_directory_uri();?>/assets/images/white-arrow-enter.png"
                                 alt="">
 
                             <?php
-    echo'</a>';
+echo'</a>';
 
- 
-    echo '<ul class="mobile-menu-submenu">';
+
+echo '<ul class="mobile-menu-submenu">';
 ?>
 
                             <?php
-    
-    foreach ($menu_item['children'] as $sub_menu_item) 
-    {
-        $sub_url = $sub_menu_item['url'];
-        $sub_title = $sub_menu_item['title'];
-        
-        $sub_temp_arr=explode(get_site_url(),$sub_url);
-        $sub_slug=str_replace('/en/','',$sub_temp_arr[1]);
-        $sub_slug=str_replace('/cn/','',$sub_slug);
-        $sub_slug=str_replace('/','',$sub_slug);
-        echo'<li><a class="'.$sub_slug.'" href="'.$sub_url.'">'.$sub_title.'</a></li>';
-    }
-    echo '</ul>';
+
+foreach ($menu_item['children'] as $sub_menu_item) 
+{
+$sub_url = $sub_menu_item['url'];
+$sub_title = $sub_menu_item['title'];
+
+$sub_temp_arr=explode(get_site_url(),$sub_url);
+$sub_slug=str_replace('/en/','',$sub_temp_arr[1]);
+$sub_slug=str_replace('/cn/','',$sub_slug);
+$sub_slug=str_replace('/','',$sub_slug);
+echo'<li><a class="'.$sub_slug.'" href="'.$sub_url.'">'.$sub_title.'</a></li>';
+}
+echo '</ul>';
 
 }
 else
@@ -113,6 +109,13 @@ echo'</li>';
 
 
                         </ul>
+
+                    </div>
+                    <div class="container">
+                        <!-- <ul> -->
+
+
+
                     </div>
 
                     <!-- <a href="#" class="mobile-menu-btn float-end"> -->
