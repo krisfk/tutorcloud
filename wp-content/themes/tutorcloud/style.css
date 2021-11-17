@@ -170,6 +170,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     font-size: 1.5rem;
     /* background: ; */
     background-position: 90% 50%;
+    display: inline-block;
 }
 
 .know-more-btn:hover {
