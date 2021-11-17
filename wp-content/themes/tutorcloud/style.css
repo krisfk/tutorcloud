@@ -127,6 +127,9 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 
 .tutor-login-btn {
     display: inline-block;
-    color: #46a879;
+    background: #46a879;
     padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
 }
