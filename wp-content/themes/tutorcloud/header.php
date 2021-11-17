@@ -48,7 +48,7 @@
                                 <div class="col-2">
                                     <img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" alt="">
                                 </div>
-                                <div class="col-6">
+                                <div class="col-8">
                                     <ul class="top-menu-ul">
 
                                         <?php
@@ -117,7 +117,7 @@ echo'</li>';
 
                                     </ul>
                                 </div>
-                                <div class="col-4 text-end">
+                                <div class="col-2 text-end">
 
 
                                     <a href="#" class="tutor-login-btn">導帥登入</a>
