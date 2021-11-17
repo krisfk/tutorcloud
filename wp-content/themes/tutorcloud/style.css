@@ -154,5 +154,10 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
     color: rgba(255, 255, 255, 0.851);
     /* line-height: 2.648; */
     text-align: center;
-    text-shadow: 0px 2px 20.24px rgba(51, 87, 88, 0.004);
+    text-shadow: rgb(51 87 88) 0px 2px 20.24px, rgb(51 87 88) 0px 2px 20.24px;
+}
+
+.banner-msg .large-txt {
+    font-size: 70px;
+    padding: 0 0.5rem;
 }
