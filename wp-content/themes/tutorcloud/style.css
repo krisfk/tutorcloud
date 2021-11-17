@@ -176,3 +176,9 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
 .know-more-btn:hover {
     color: #fff;
 }
+
+.home-banner-content {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -55%);
+}
