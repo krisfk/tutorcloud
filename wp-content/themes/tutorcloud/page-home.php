@@ -19,7 +19,9 @@ get_header();
         家長可獲高達 <span class="large-txt">$100</span> 現金回贈
     </div>
 
-    <a href="#" class="know-more-btn">了解更多</a>
+    <div class="text-center mt-5">
+        <a href="#" class="know-more-btn">了解更多</a>
+    </div>
 </div>
 <?php
 get_footer();
