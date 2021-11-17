@@ -117,7 +117,7 @@ echo'</li>';
 
                                     </ul>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4 text-end">
 
 
                                     <a href="#" class="tutor-login-btn">導帥登入</a>
