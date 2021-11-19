@@ -18,8 +18,8 @@
 
 <?php //get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
-<footer id="colophon" class="site-footer" role="contentinfo">
-
+<footer id="colophon" class="site-footer mt-5" role="contentinfo">
+    Copyright © 2021 Tutorcloud
 
 
 </footer><!-- #colophon -->
