@@ -230,10 +230,10 @@ h2 .bar {
 
 .apply-case-btn {
     color: #fff;
-    background: #4d91bb;
+    background: #4d91bb url(./assets/images/book-icon.png) no-repeat;
 }
 
 .reg-tutor-btn {
     color: #fff;
-    background: #46a879;
+    background: #46a879 url(./assets/images/tutor-icon.png) no-repeat;
 }
