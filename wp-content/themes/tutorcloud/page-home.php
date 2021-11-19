@@ -69,7 +69,7 @@ get_header();
 
     </div>
 
-    <div class="text-center">
+    <div class="text-center mt-5">
         <h2>使用流程
             <div class="bar"></div>
         </h2>
