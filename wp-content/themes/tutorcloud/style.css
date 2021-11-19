@@ -237,3 +237,12 @@ h2 .bar {
     color: #fff;
     background: #46a879 url(./assets/images/tutor-icon.png) no-repeat;
 }
+
+.bottom-btns {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-btns li {
+    list-style-type: none;
+}
