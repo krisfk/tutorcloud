@@ -220,4 +220,10 @@ h2 .bar {
     color: #fff;
     width: 50px;
     background: #95c4c2;
+    display: block;
+    text-align: center;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 50px;
+    margin: 0 0.5rem 0 0;
 }
