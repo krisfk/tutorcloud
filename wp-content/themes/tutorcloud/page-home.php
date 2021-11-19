@@ -75,7 +75,7 @@ get_header();
         </h2>
     </div>
 
-    <div class="row">
+    <div class="row align-items-center">
         <div class="col-2"><img class="w-100"
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
         </div>
