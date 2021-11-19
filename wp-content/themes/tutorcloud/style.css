@@ -231,10 +231,11 @@ h2 .bar {
 .apply-case-btn {
     color: #fff;
     background: #4d91bb url(./assets/images/book-icon.png) no-repeat;
-    padding: 1rem 1.5rem 1rem 5rem;
+    padding: 1rem 1.5rem 1rem 4rem;
     background-position: 1rem center;
     text-decoration: none;
     font-size: 24px;
+    background-size: auto 42%;
 }
 
 .reg-tutor-btn {
@@ -242,7 +243,7 @@ h2 .bar {
     background: #46a879 url(./assets/images/tutor-icon.png) no-repeat;
     color: #fff;
     /* background: #4d91bb url(./assets/images/book-icon.png) no-repeat; */
-    padding: 1rem 1.5rem 1rem 5.5rem;
+    padding: 1rem 1.5rem 1rem 5.3rem;
     background-position: 1rem center;
     text-decoration: none;
     font-size: 24px;
