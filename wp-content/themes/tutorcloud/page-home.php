@@ -105,7 +105,7 @@ get_header();
                 <tr>
                     <td><span class="num-pt">2</span></td>
                     <td>
-                        <div class="pt-title text-start ">網上登記</div>
+                        <div class="pt-title text-start ">快速配對</div>
                     </td>
                 </tr>
                 <tr>
