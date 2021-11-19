@@ -75,7 +75,7 @@ get_header();
         </h2>
     </div>
 
-    <div class="row align-items-center">
+    z <div class="row align-items-center">
         <div class="col-3"><img class="w-100"
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
         </div>
@@ -96,6 +96,33 @@ get_header();
 
         </div>
     </div>
+
+
+    <div class="row align-items-center">
+
+        <div class="col-9">
+            <table>
+                <tr>
+                    <td><span class="num-pt">2</span></td>
+                    <td>
+                        <div class="pt-title text-start ">網上登記</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pt-4">
+                        填妥表格後，TutorCloud會在短時間內為您配對最合適的導師，亦可以於網站內尋
+                        找心水導師。</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="col-3"><img class="w-100"
+                src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
+        </div>
+
+    </div>
+
 
 
 
