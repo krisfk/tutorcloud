@@ -75,7 +75,7 @@ get_header();
         </h2>
     </div>
 
-    <div class="row align-items-center">
+    <div class="row align-items-center justify-content-center">
         <div class="col-3"><img class="w-100"
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
         </div>
@@ -98,7 +98,7 @@ get_header();
     </div>
 
 
-    <div class="row align-items-center">
+    <div class="row align-items-center justify-content-center">
 
         <div class="col-7">
             <table>
@@ -124,7 +124,7 @@ get_header();
     </div>
 
 
-    <div class="row align-items-center">
+    <div class="row align-items-center justify-content-center">
         <div class="col-3"><img class="w-100"
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-3.jpg" alt="">
         </div>
@@ -147,7 +147,7 @@ get_header();
     </div>
 
 
-    <div class="row align-items-center">
+    <div class="row align-items-center justify-content-center">
 
         <div class="col-7">
             <table>
