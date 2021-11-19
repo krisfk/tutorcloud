@@ -147,6 +147,32 @@ get_header();
     </div>
 
 
+    <div class="row align-items-center">
+
+        <div class="col-9">
+            <table>
+                <tr>
+                    <td><span class="num-pt">4</span></td>
+                    <td>
+                        <div class="pt-title text-start ">課後評價</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pt-4">
+                        - 完成兩星期課堂後，TutorCloud會聯絡您，讓您提供對導師的評價。</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="col-3"><img class="w-100"
+                src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-2.jpg" alt="">
+        </div>
+
+    </div>
+
+
+
 
 
 
