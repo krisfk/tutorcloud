@@ -38,7 +38,7 @@ get_header();
     <div class="row align-items-top justify-content-center mt-5">
 
         <div class="col-3">
-            <img class="w-100" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/money-back-icon.jpg"
+            <img class="w-100 pe-4" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/money-back-icon.jpg"
                 alt="">
 
         </div>
