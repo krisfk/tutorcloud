@@ -21,7 +21,7 @@ get_header();
         </div>
 
         <div class="text-center mt-5">
-            <a href="#" class="know-more-btn">了解更多</a>
+            <a href="<?php echo get_site_url();?>/promotion" class="know-more-btn">了解更多</a>
         </div>
     </div>
 </div>
