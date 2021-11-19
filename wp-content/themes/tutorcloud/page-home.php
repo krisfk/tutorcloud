@@ -75,7 +75,7 @@ get_header();
         </h2>
     </div>
 
-    z <div class="row align-items-center">
+    <div class="row align-items-center">
         <div class="col-3"><img class="w-100"
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
         </div>
@@ -118,9 +118,32 @@ get_header();
 
         </div>
         <div class="col-3"><img class="w-100"
-                src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
+                src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-2.jpg" alt="">
         </div>
 
+    </div>
+
+
+    <div class="row align-items-center">
+        <div class="col-3"><img class="w-100"
+                src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-3.jpg" alt="">
+        </div>
+        <div class="col-9">
+            <table>
+                <tr>
+                    <td><span class="num-pt">3</span></td>
+                    <td>
+                        <div class="pt-title text-start ">預備補習</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pt-4">
+                        - 成功配對及按照TutorCloud指示繳交學費後，學生可以預備進行線上或上門補習。</td>
+                </tr>
+            </table>
+
+        </div>
     </div>
 
 
