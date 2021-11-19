@@ -231,18 +231,33 @@ h2 .bar {
 .apply-case-btn {
     color: #fff;
     background: #4d91bb url(./assets/images/book-icon.png) no-repeat;
+    padding: 1rem 1.5rem 1rem 5rem;
+    background-position: 1rem center;
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .reg-tutor-btn {
     color: #fff;
     background: #46a879 url(./assets/images/tutor-icon.png) no-repeat;
+    color: #fff;
+    /* background: #4d91bb url(./assets/images/book-icon.png) no-repeat; */
+    padding: 1rem 1.5rem 1rem 5.5rem;
+    background-position: 1rem center;
+    text-decoration: none;
+    font-size: 24px;
+    background-size: auto 60%;
 }
 
 .bottom-btns {
     margin: 0;
     padding: 0;
+    text-align: center;
+    /* display: block; */
 }
 
 .bottom-btns li {
     list-style-type: none;
+    margin: 0.5rem;
+    display: inline-block;
 }
