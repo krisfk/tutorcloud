@@ -214,3 +214,9 @@ h2 .bar {
     color: #00374f;
     text-align: center;
 }
+
+.pt-num {
+    font-size: 38px;
+    color: #fff;
+    background: #95c4c2;
+}
