@@ -35,7 +35,7 @@ get_header();
         </h2>
     </div>
 
-    <div class="row align-items-center justify-content-center mt-5">
+    <div class="row align-items-top justify-content-center mt-5">
 
         <div class="col-3">
             <img class="w-100" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-4.jpg" alt="">
@@ -59,7 +59,7 @@ get_header();
 
     </div>
 
-    <div class="row align-items-center justify-content-center mt-5">
+    <div class="row align-items-top justify-content-center mt-5">
 
         <div class="col-6">
             <div class="pt-title mt-3 text-start">行政費優惠</div>
