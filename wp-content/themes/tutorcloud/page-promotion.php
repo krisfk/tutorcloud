@@ -20,12 +20,13 @@ get_header();
             家長可獲高達 <span class="large-txt">$100</span> 現金回贈
         </div>
 
-        <div class="text-center mt-5">
-            <a href="#" class="know-more-btn">了解更多</a>
-        </div>
     </div>
 </div>
 
+<div class="breadcrumb">
+
+    主頁 > 開業優惠
+</div>
 <div class="container mt-5">
 
     <div class="text-center">

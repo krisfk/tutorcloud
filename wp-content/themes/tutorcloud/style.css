@@ -272,3 +272,7 @@ h2 .bar {
     margin: 0.5rem;
     display: inline-block;
 }
+
+.breadcrumb {
+    text-align: center;
+}
