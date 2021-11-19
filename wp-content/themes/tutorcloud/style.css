@@ -218,5 +218,6 @@ h2 .bar {
 .num-pt {
     font-size: 38px;
     color: #fff;
+    width: 50px;
     background: #95c4c2;
 }
