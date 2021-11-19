@@ -83,7 +83,9 @@ get_header();
             <table>
                 <tr>
                     <td><span class="num-pt">1</span></td>
-                    <td>網上登記</td>
+                    <td>
+                        <h3>網上登記</h3>
+                    </td>
                 </tr>
                 <tr>
                     <td></td>
