@@ -42,7 +42,7 @@ get_header();
 
         </div>
         <div class="col-6">
-            <div class="pt-title mt-3">現金回贈</div>
+            <div class="pt-title mt-3 text-start">現金回贈</div>
             <div class="mt-4">
                 當補習個案成功配對，即已完成首兩星期課堂，家長可獲半堂學費為現金回贈，上限為$100。 <br><br>
                 例如： <br><br>
