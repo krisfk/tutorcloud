@@ -173,7 +173,7 @@ get_header();
 
 
 
-    <div class="mt-4">
+    <div class="mt-5">
 
         <ul class="bottom-btns">
             <li><a href="" class="apply-case-btn">申請補習個案</a></li>
