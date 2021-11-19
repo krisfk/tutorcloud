@@ -166,7 +166,7 @@ get_header();
 
         </div>
         <div class="col-3"><img class="w-100"
-                src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-2.jpg" alt="">
+                src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-4.jpg" alt="">
         </div>
 
     </div>
