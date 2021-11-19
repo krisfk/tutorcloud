@@ -84,12 +84,13 @@ get_header();
                 <tr>
                     <td><span class="num-pt">1</span></td>
                     <td>
-                        <div class="pt-title text-start mb-4">網上登記</div>
+                        <div class="pt-title text-start ">網上登記</div>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>於網站上方的目錄按“學生尋補”，填上網上表格中，填寫補習表格後，會有客服專員聯絡您。於網站上方的目錄按“學生尋補”，填上網上表格中，填寫補習表格後，會有客服專員聯絡您。</td>
+                    <td class="pt-4">
+                        於網站上方的目錄按“學生尋補”，填上網上表格中，填寫補習表格後，會有客服專員聯絡您。於網站上方的目錄按“學生尋補”，填上網上表格中，填寫補習表格後，會有客服專員聯絡您。</td>
                 </tr>
             </table>
 
