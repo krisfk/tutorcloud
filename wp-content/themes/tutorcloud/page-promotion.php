@@ -38,7 +38,7 @@ get_header();
     <div class="row align-items-top justify-content-center mt-5">
 
         <div class="col-3">
-            <img class="w-100 pe-4" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/money-back-icon.jpg"
+            <img class="w-100 pe-3" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/money-back-icon.jpg"
                 alt="">
 
         </div>
@@ -74,7 +74,7 @@ get_header();
             <a href="" class="reg-tutor-btn apply-case-btn mt-5 d-inline-block">新導師登記</a>
         </div>
         <div class="col-3">
-            <img class="w-100 ps-4" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/discount-icon.jpg"
+            <img class="w-100 ps-3" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/discount-icon.jpg"
                 alt="">
 
         </div>
