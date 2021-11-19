@@ -274,5 +274,6 @@ h2 .bar {
 }
 
 .breadcrumb {
-    text-align: center;
+    text-align: center !important;
+    display: block !important;
 }
