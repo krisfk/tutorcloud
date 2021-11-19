@@ -35,16 +35,25 @@ get_header();
         </h2>
     </div>
 
+    <div class="row align-items-center justify-content-center">
 
+        <div class="col-3">
+            <img class="w-100" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-4.jpg" alt="">
 
+        </div>
+        <div class="col-6">
+            當補習個案成功配對，即已完成首兩星期課堂，家長可獲半堂學費為現金回贈，上限為$100。 <br>
+            例如： <br><br>
 
+            一星期兩堂，每堂1.5小時，每小時$130，則可獲 $130 × 1.5 ÷ 2＝$97.5 現金回贈 或 <br>
+            一星期兩堂，每堂1.5小時，每小時$160，$160 × 1.5 ÷ 2＝$120，則可獲$100 現金回贈 <br><br>
 
-    ]
+            家長可選擇通過銀行轉賬或轉數快 (FPS) 收取現金回贈。當個案確認成功配對，TutorCloud將於
+            一星期內過數。
+        </div>
 
+    </div>
 
-
-
-    ]
 
 
     <div class="mt-5">
