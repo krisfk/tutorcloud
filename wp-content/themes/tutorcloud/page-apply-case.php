@@ -24,8 +24,9 @@ get_header();
         </h2>
     </div>
 
-    <a href="#" class="filter-btn">導師選項</a>
-
+    <div class="text-center">
+        <a href="#" class="filter-btn">導師選項</a>
+    </div>
     <div class="row">
 
         <div class="col-4"></div>
