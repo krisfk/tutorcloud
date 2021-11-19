@@ -284,6 +284,6 @@ h2 .bar {
     color: #fff;
 }
 
-.filter-btn {
+.filter-btn:hover {
     color: #fff;
 }
