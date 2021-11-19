@@ -79,7 +79,19 @@ get_header();
         <div class="col-2"><img class="w-100"
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
         </div>
-        <div class="col-10">fds</div>
+        <div class="col-10">
+            <table>
+                <tr>
+                    <td><span class="num-pt">1</span></td>
+                    <td>網上登記</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>於網站上方的目錄按“學生尋補”，填上網上表格中，填寫補習表格後，會有客服專員聯絡您。於網站上方的目錄按“學生尋補”，填上網上表格中，填寫補習表格後，會有客服專員聯絡您。</td>
+                </tr>
+            </table>
+
+        </div>
     </div>
 
 
