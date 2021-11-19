@@ -149,7 +149,7 @@ get_header();
 
     <div class="row align-items-center justify-content-center">
 
-        <div class="col-7">
+        <div class="col-5">
             <table>
                 <tr>
                     <td><span class="num-pt">4</span></td>
