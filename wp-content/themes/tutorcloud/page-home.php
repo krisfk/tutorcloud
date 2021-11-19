@@ -173,6 +173,15 @@ get_header();
 
 
 
+    <div class="mt-4">
+
+        <ul class="bottom-btns">
+            <li><a href="" class="apply-case-btn">申請補習個案</a></li>
+            <li><a href="" class="reg-tutor-btn">新導師登記</a></li>
+        </ul>
+    </div>
+
+
 
 
 

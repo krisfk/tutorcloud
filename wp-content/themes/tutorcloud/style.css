@@ -227,3 +227,13 @@ h2 .bar {
     line-height: 50px;
     margin: 0 0.5rem 0 0;
 }
+
+.apply-case-btn {
+    color: #fff;
+    background: #4d91bb;
+}
+
+.reg-tutor-btn {
+    color: #fff;
+    background: #46a879;
+}
