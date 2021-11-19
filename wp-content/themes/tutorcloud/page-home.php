@@ -79,7 +79,7 @@ get_header();
         <div class="col-3"><img class="w-100"
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
         </div>
-        <div class="col-7">
+        <div class="col-6">
             <table>
                 <tr>
                     <td><span class="num-pt">1</span></td>
@@ -100,7 +100,7 @@ get_header();
 
     <div class="row align-items-center justify-content-center">
 
-        <div class="col-7">
+        <div class="col-6">
             <table>
                 <tr>
                     <td><span class="num-pt">2</span></td>
@@ -128,7 +128,7 @@ get_header();
         <div class="col-3"><img class="w-100"
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-3.jpg" alt="">
         </div>
-        <div class="col-7">
+        <div class="col-6">
             <table>
                 <tr>
                     <td><span class="num-pt">3</span></td>
