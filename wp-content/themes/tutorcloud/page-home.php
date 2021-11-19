@@ -34,7 +34,7 @@ get_header();
         </h2>
     </div>
 
-    <div class="row gx-5  mb-5">
+    <div class="row gx-5  ">
         <div class="col-4 mb-4 text-center"> <img class="pt-icon"
                 src="<?php echo get_template_directory_uri();?>/assets/images/icon-1.png" alt="">
             <div class="pt-title mt-3">優良師資</div>
