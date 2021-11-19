@@ -68,6 +68,13 @@ get_header();
         </div>
 
     </div>
+
+    <div class="text-center">
+        <h2>使用流程
+            <div class="bar"></div>
+        </h2>
+    </div>
+
 </div>
 <?php
 get_footer();
