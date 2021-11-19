@@ -76,10 +76,10 @@ get_header();
     </div>
 
     <div class="row align-items-center">
-        <div class="col-2"><img class="w-100"
+        <div class="col-3"><img class="w-100"
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
         </div>
-        <div class="col-10">
+        <div class="col-9">
             <table>
                 <tr>
                     <td><span class="num-pt">1</span></td>
