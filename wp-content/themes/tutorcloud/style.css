@@ -301,5 +301,6 @@ h2 .bar {
 .step-txt {
     color: #00374f;
     opacity: 0.5;
+    list-style-type: none;
     font-size: 1.5rem;
 }
