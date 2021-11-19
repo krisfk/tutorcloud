@@ -292,3 +292,13 @@ h2 .bar {
 .filter-btn:hover {
     color: #fff;
 }
+
+.step-txt.active {
+    color: #00374f;
+    opacity: 1;
+}
+
+.step-txt {
+    color: #00374f;
+    opacity: 0.5;
+}

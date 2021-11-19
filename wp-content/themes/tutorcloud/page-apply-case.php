@@ -29,7 +29,10 @@ get_header();
     </div>
     <div class="row">
 
-        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="step-txt active">1. 選擇心儀導師</div>
+            <div class="step-txt">2. 登記學生資料</div>
+        </div>
         <div class="col-6"></div>
         <div class="col-2"></div>
 
