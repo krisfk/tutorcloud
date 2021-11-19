@@ -52,6 +52,9 @@ get_header();
 
                 家長可選擇通過銀行轉賬或轉數快 (FPS) 收取現金回贈。當個案確認成功配對，TutorCloud將於
                 一星期內過數。</div>
+
+            <a href="" class="apply-case-btn">申請補習個案</a>
+
         </div>
 
     </div>
