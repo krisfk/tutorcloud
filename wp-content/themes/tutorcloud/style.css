@@ -308,3 +308,8 @@ h2 .bar {
 .deep-green {
   color: #00374f !important;
 }
+
+.added-list {
+  display: block;
+  background: #e1eeed;
+}
