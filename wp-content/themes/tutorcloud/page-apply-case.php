@@ -36,8 +36,11 @@ get_header();
             </ul>
             <div class="added-list">
 
-                <div>心儀導師名單</div>
+                <div class="deep-green">心儀導師名單</div>
 
+                <ul>
+                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
+                </ul>
 
             </div>
         </div>
