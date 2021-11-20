@@ -322,6 +322,8 @@ h2 .bar {
 
 .added-list ul {
   padding: 0;
+  text-align: center;
+  margin: 0.5rem 0 0 0;
 }
 
 .list-close-btn {
