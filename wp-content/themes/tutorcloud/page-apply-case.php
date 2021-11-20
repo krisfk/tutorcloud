@@ -36,7 +36,7 @@ get_header();
             </ul>
             <div class="added-list">
 
-                <div class="deep-green"><img
+                <div class="deep-green"><img class="tutor-deep-icon"
                         src="<?php echo get_template_directory_uri();?>/assets/images/tutor-deep-icon.png" alt="">
                     心儀導師名單</div>
 
