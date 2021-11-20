@@ -50,7 +50,7 @@ get_header();
 
             </div>
 
-            <div class="text-end mt-5">
+            <div class="text-end mt-4">
                 <a href="#" class="next-step-btn">下一步</a>
             </div>
         </div>
