@@ -323,3 +323,10 @@ h2 .bar {
 .added-list ul {
   padding: 0;
 }
+
+.list-close-btn {
+  display: inline-block;
+  background: url(./assets/images/list-close-btn.png);
+  width: 12px;
+  height: 12px;
+}
