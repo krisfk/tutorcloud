@@ -312,4 +312,14 @@ h2 .bar {
 .added-list {
   display: block;
   background: #e1eeed;
+  padding: 1rem;
+  margin: 0;
+}
+
+.added-list li {
+  list-style-type: none;
+}
+
+.added-list ul {
+  padding: 0;
 }
