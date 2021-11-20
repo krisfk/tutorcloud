@@ -278,7 +278,8 @@ h2 .bar {
   display: block !important;
 }
 
-.filter-btn {
+.filter-btn,
+.next-step-btn {
   display: inline-block;
   background: #618382;
   color: #fff;

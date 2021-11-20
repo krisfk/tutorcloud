@@ -49,6 +49,9 @@ get_header();
                 </ul>
 
             </div>
+
+            <a href="#" class="next-step-btn">下一步</a>
+
         </div>
         <div class="col-10"></div>
         <!-- <div class="col-2"></div> -->
