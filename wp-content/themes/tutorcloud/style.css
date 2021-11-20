@@ -299,6 +299,10 @@ h2 .bar {
   box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
 }
 
+.next-step-btn:hover {
+  color: #fff;
+}
+
 .filter-btn:hover {
   color: #fff;
 }
