@@ -278,8 +278,7 @@ h2 .bar {
   display: block !important;
 }
 
-.filter-btn,
-.next-step-btn {
+.filter-btn {
   display: inline-block;
   background: #618382;
   color: #fff;
@@ -288,6 +287,16 @@ h2 .bar {
   border-radius: 10px;
   box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
   /* margin: 0 auto; */
+}
+
+.next-step-btn {
+  display: inline-block;
+  background: #618382;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
 }
 
 .filter-btn:hover {
