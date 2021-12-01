@@ -203,20 +203,20 @@ get_header();
             <div class="step-content step-content-2">
                 <table>
                     <tr>
-                        <td><label for="">登入電郵*</label></td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><label for="email">登入電郵*</label></td>
+                        <td><input id="email" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td><label for="">確認登入電郵*</label></td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><label for="confirm_email">確認登入電郵*</label></td>
+                        <td><input id="confirm_email" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td><label for="">登入密碼*</label></td>
-                        <td><input type="password" class="form-control"></td>
+                        <td><label for="login_password">登入密碼*</label></td>
+                        <td><input id="login_password" type="password" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td><label for="">確認登入密碼*</label></td>
-                        <td></td>
+                        <td><label for="confirm_login_password">確認登入密碼*</label></td>
+                        <td><input id="confirm_login_password" type="password" class="form-control"></td>
                     </tr>
                 </table>
             </div>
