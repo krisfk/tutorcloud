@@ -370,3 +370,7 @@ h2 .bar {
 .step-content ul li {
     list-style-type: none;
 }
+
+.terms-a {
+    background: url(assets/images/minus.png);
+}
