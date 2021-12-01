@@ -34,21 +34,7 @@ get_header();
                 <li class="step-txt active">1. 選擇心儀導師</li>
                 <li class="step-txt">2. 登記學生資料</li>
             </ul>
-            <div class="added-list">
 
-                <div class="deep-green"><img class="tutor-deep-icon"
-                        src="<?php echo get_template_directory_uri();?>/assets/images/tutor-deep-icon.png" alt="">
-                    心儀導師名單</div>
-
-                <ul>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                </ul>
-
-            </div>
 
             <div class="text-end mt-4">
                 <a href="#" class="next-step-btn">下一步</a>
