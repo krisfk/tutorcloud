@@ -382,14 +382,14 @@ h2 .bar {
 }
 
 .terms-a {
-    background: url(assets/images/minus.png);
+    background: url(assets/images/add.png);
     background-repeat: no-repeat;
     background-position: 100% center;
     background-size: 25px;
 }
 
 .terms-a.active {
-    background: url(assets/images/add.png);
+    background: url(assets/images/minus.png);
     background-repeat: no-repeat;
     background-position: 100% center;
     background-size: 25px;
