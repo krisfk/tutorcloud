@@ -31,8 +31,13 @@ get_header();
 
         <div class="col-2">
             <ul class="m-0 p-0 text-center">
-                <li class="step-txt active">1. 選擇心儀導師</li>
-                <li class="step-txt">2. 登記學生資料</li>
+                <li class="step-txt active">1. 條款及細則</li>
+                <li class="step-txt">2. 個人資料</li>
+                <li class="step-txt">3. 聯絡資料</li>
+                <li class="step-txt">4. 上載履歷</li>
+                <li class="step-txt">5. 授課資料</li>
+                <li class="step-txt">6. 自我簡介</li>
+                <li class="step-txt">7. 完成</li>
             </ul>
 
 
