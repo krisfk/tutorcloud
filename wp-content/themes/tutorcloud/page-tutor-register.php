@@ -80,12 +80,16 @@ get_header();
 </div>
 
 <script type="text/javascript">
-$('.terms-a').click(function() {
+$(function() {
 
-    $(this).toggleClass('active');
-    if ($(this).hasClass('active')) {
-        $(this).next('.terms-content').slideDown(200);
-    }
+    $('.terms-a').click(function() {
+
+
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $(this).next('.terms-content').slideDown(200);
+        }
+    })
 })
 </script>
 <?php
