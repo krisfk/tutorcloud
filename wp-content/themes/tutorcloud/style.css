@@ -399,3 +399,7 @@ h2 .bar {
 .terms-content {
     display: none;
 }
+
+.step-content ol li {
+    list-style-type: decimal;
+}
