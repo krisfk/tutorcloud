@@ -201,7 +201,8 @@ get_header();
 
 
             <div class="step-content step-content-2">
-                <table>
+                <div>登入資料</div>
+                <table class="mt-3">
                     <tr>
                         <td><label for="email">登入電郵*</label></td>
                         <td><input id="email" type="text" class="form-control"></td>
@@ -218,6 +219,48 @@ get_header();
                         <td><label for="confirm_login_password">確認登入密碼*</label></td>
                         <td><input id="confirm_login_password" type="password" class="form-control"></td>
                     </tr>
+                </table>
+
+                <div class="mt-4">個人資料</div>
+
+                <table class="mt-3">
+                    <tr>
+                        <td>中文全名 *</td>
+                        <td><input id="chi-name" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>英文全名 *</td>
+                        <td><input id="eng-name" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>別名</td>
+                        <td><input id="nick-name" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>WhatsApp 電話號碼 *</td>
+                        <td><input id="whatsapp-tel" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>年齡*</td>
+                        <td><input id="age" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>性別*</td>
+                        <td>
+                            <div class="radio">
+                                <label><input type="radio" name="opt-gender">男</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="opt-gender">女</label>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>職業</td>
+                        <td></td>
+                    </tr>
+
                 </table>
             </div>
 
