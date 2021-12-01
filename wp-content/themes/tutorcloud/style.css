@@ -394,3 +394,7 @@ h2 .bar {
     background-position: 100% center;
     background-size: 25px;
 }
+
+.terms-content {
+    display: none;
+}

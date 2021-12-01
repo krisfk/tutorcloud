@@ -55,7 +55,7 @@ get_header();
                         <a href="javascript:void(0);" class="terms-a">
                             <h3>TutorCloud 師魂 的職責</h3>
                         </a>
-                        <div class="mt-3">TutorCloud 師魂作為一個網上教育配對平台，其責任僅為導師及家長或學生進行相互配對，以使導師可以向家
+                        <div class="mt-3 terms-content">TutorCloud 師魂作為一個網上教育配對平台，其責任僅為導師及家長或學生進行相互配對，以使導師可以向家
                             長或學生提供補習或教育服務。 導師與家長其間只為獨立合作聘約，並不存在僱傭關係。 <br>
                             導師與TutorCloud 師魂亦只存在服務提供者與服務使用者之關係，雙方沒有任何僱傭關係，因此TutorCloud
                             師魂有權依本公司與導師所訂定之「導師收費」收取行政費用，成功登記即代表導師同意條款全部內容。而「條
@@ -83,6 +83,9 @@ get_header();
 $('.terms-a').click(function() {
 
     $(this).toggleClass('active');
+    if ($(this).hasClass('active')) {
+        $(this).next('.terms-content').slideDown(200);
+    }
 })
 </script>
 <?php
