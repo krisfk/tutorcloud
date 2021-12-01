@@ -195,6 +195,9 @@ get_header();
                 </ul>
             </div>
 
+
+            <a href="javascript:void(0);" class="agree-terms-btn">同意以上條款</a>
+
         </div>
         <!-- <div class="col-2"></div> -->
 
@@ -224,6 +227,8 @@ $(function() {
 
         }
     })
+
+    $('.agree-terms-btn').click(function() {})
 })
 </script>
 <?php
