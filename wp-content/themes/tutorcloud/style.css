@@ -373,4 +373,7 @@ h2 .bar {
 
 .terms-a {
     background: url(assets/images/minus.png);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 25px;
 }
