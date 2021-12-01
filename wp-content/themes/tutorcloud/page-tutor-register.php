@@ -238,7 +238,7 @@ get_header();
                         <td><input id="nick-name" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td><label for="whatsapp-tel"> WhatsApp<br>電話號碼 *</label></td>
+                        <td><label for="whatsapp-tel"> WhatsApp 電話號碼 *</label></td>
                         <td><input id="whatsapp-tel" type="text" class="form-control"></td>
                     </tr>
                     <tr>
