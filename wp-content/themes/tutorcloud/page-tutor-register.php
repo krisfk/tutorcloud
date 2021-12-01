@@ -65,14 +65,23 @@ get_header();
                     <li>
 
                         <a href="javascript:void(0);" class="terms-a">
-                            <h3>TutorCloud 師魂 的職責</h3>
+                            <h3>TutorCloud 師魂 的權利</h3>
                         </a>
-                        <div class="mt-3 terms-content">TutorCloud 師魂作為一個網上教育配對平台，其責任僅為導師及家長或學生進行相互配對，以使導師可以向家
-                            長或學生提供補習或教育服務。 導師與家長其間只為獨立合作聘約，並不存在僱傭關係。 <br>
-                            導師與TutorCloud 師魂亦只存在服務提供者與服務使用者之關係，雙方沒有任何僱傭關係，因此TutorCloud
-                            師魂有權依本公司與導師所訂定之「導師收費」收取行政費用，成功登記即代表導師同意條款全部內容。而「條
-                            款及細則」所訂之內容等同TutorCloud 師魂與導師之間所定之合約，而TutorCloud 師魂網站內所列出的任何
-                            規則或指示都屬於導師合約的一部份，本網站導師亦須格守。</div>
+                        <div class="mt-3 terms-content"></div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="terms-a">
+                            <h3>有關補習中介服務之條款</h3>
+                        </a>
+                        <div class="mt-3 terms-content"></div>
+
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="terms-a">
+                            <h3>收費</h3>
+                        </a>
+                        <div class="mt-3 terms-content"></div>
+
                     </li>
 
                 </ul>
