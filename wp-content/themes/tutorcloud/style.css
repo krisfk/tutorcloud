@@ -430,3 +430,7 @@ h2 .bar {
 .agree-terms-btn:hover {
     color: #fff;
 }
+
+.step-content table td {
+    padding: 0 0 1rem 0;
+}
