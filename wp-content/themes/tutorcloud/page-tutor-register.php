@@ -67,7 +67,17 @@ get_header();
                         <a href="javascript:void(0);" class="terms-a">
                             <h3>TutorCloud 師魂 的權利</h3>
                         </a>
-                        <div class="mt-3 terms-content"></div>
+                        <div class="mt-3 terms-content">
+                            <ol>
+                                <li>暫停或終止用戶資格的權利</li>
+                                <li>處理由用戶提供的資料的權利
+                                </li>
+                                <li>撤回提供中介服務之權利</li>
+                                <li>拒絕提供服務之權利</li>
+                                <li>更改有關收費的權利</li>
+                                <li>增刪本合約的權利</li>
+                            </ol>
+                        </div>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="terms-a">
