@@ -89,6 +89,9 @@ $(function() {
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
             $(this).next('.terms-content').slideDown(200);
+        } else {
+            $(this).next('.terms-content').fadeOut(0);
+
         }
     })
 })
