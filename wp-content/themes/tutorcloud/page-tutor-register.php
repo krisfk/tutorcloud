@@ -80,6 +80,7 @@ get_header();
 </div>
 
 <script type="text/javascript">
+var $ = jQuery;
 $(function() {
 
     $('.terms-a').click(function() {
