@@ -212,7 +212,7 @@ $(function() {
         if ($(this).hasClass('active')) {
             $(this).next('.terms-content').slideDown(200);
         } else {
-            $(this).next('.terms-content').fadeOut(200);
+            $(this).next('.terms-content').slideUp(200);
 
         }
     })
