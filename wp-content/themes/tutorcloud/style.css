@@ -404,4 +404,5 @@ h2 .bar {
 
 .step-content ol li {
     list-style-type: decimal;
+    border: none;
 }
