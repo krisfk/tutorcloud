@@ -443,3 +443,7 @@ h2 .bar {
 .step-content table td label {
     padding: 0 1rem 0 0;
 }
+
+input[type='radio'] {
+    margin: 0 1rem 0 0;
+}
