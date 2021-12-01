@@ -421,3 +421,7 @@ h2 .bar {
     background-size: auto 60%;
     box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
 }
+
+.agree-terms-btn:hover {
+    color: #fff;
+}
