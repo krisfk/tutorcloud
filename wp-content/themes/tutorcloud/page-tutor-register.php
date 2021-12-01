@@ -24,9 +24,9 @@ get_header();
         </h2>
     </div>
 
-    <div class="text-center mt-3">
+    <!-- <div class="text-center mt-3">
         <a href="#" class="filter-btn">導師選項</a>
-    </div>
+    </div> -->
     <div class="row">
 
         <div class="col-2">
