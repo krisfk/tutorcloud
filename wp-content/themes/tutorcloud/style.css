@@ -425,10 +425,15 @@ h2 .bar {
     text-align: center;
     width: fit-content;
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .agree-terms-btn:hover {
     color: #fff;
+}
+
+.step-content table {
+    /* margin: 1rem 0 0 0; */
 }
 
 .step-content table td {
