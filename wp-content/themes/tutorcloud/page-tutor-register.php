@@ -201,7 +201,7 @@ get_header();
 
 
             <div class="step-content step-content-2">
-                <div>登入資料</div>
+                <h5>登入資料</h5>
                 <table class="mt-3">
                     <tr>
                         <td><label for="email">登入電郵*</label></td>
