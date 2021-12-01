@@ -247,12 +247,8 @@ get_header();
                     <tr>
                         <td>性別*</td>
                         <td>
-                            <div class="radio">
-                                <label><input type="radio" name="opt-gender">男</label>
-                            </div>
-                            <div class="radio">
-                                <label><input type="radio" name="opt-gender">女</label>
-                            </div>
+                            <label><input type="radio" name="opt-gender">男</label>
+                            <label><input type="radio" name="opt-gender">女</label>
 
                         </td>
                     </tr>
