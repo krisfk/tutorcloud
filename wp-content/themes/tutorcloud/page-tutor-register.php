@@ -78,5 +78,12 @@ get_header();
 
 
 </div>
+
+<script type="text/javascript">
+$('.terms-a').click(function() {
+
+    $(this).toggleClass('active');
+})
+</script>
 <?php
 get_footer();
