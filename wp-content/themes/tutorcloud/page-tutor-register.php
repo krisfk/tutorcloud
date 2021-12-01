@@ -35,7 +35,7 @@ get_header();
             不符合上述資格者不得使用服務。</div>
 
     </div>
-    <div class="row mt-4">
+    <div class="row mt-5">
 
         <div class="col-2">
             <ul class="m-0 p-0 text-start">
