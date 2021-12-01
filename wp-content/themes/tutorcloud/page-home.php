@@ -177,7 +177,7 @@ get_header();
 
         <ul class="bottom-btns">
             <li><a href="" class="apply-case-btn">申請補習個案</a></li>
-            <li><a href="" class="reg-tutor-btn">新導師登記</a></li>
+            <li><a href="<?php echo get_site_url();?>/tutor-register" class="reg-tutor-btn">新導師登記</a></li>
         </ul>
     </div>
 
