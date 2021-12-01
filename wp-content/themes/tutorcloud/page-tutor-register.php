@@ -221,9 +221,13 @@ get_header();
                     </tr>
                 </table>
 
-                <h5 class="mt-4">個人資料</h5>
 
                 <table class="mt-3">
+                    <tr>
+                        <td colspan="2">
+                            <h5 class="mt-4">個人資料</h5>
+                        </td>
+                    </tr>
                     <tr>
                         <td><label for="chi-name"> 中文全名 *</label></td>
                         <td><input id="chi-name" type="text" class="form-control"></td>
