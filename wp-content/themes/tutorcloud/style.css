@@ -420,6 +420,11 @@ h2 .bar {
     font-size: 24px;
     background-size: auto 60%;
     box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin-top: 3rem;
 }
 
 .agree-terms-btn:hover {
