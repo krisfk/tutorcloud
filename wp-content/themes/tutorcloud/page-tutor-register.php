@@ -225,27 +225,27 @@ get_header();
 
                 <table class="mt-3">
                     <tr>
-                        <td>中文全名 *</td>
+                        <td><label for="chi-name"> 中文全名 *</label></td>
                         <td><input id="chi-name" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td>英文全名 *</td>
+                        <td><label for="eng-name">英文全名 *</label></td>
                         <td><input id="eng-name" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td>別名</td>
+                        <td><label for="nick-name">別名</label></td>
                         <td><input id="nick-name" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td>WhatsApp 電話號碼 *</td>
+                        <td><label for="whatsapp-tel"> WhatsApp 電話號碼 *</label></td>
                         <td><input id="whatsapp-tel" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td>年齡*</td>
+                        <td><label for="age"> 年齡*</label></td>
                         <td><input id="age" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td>性別*</td>
+                        <td> <label for=""> 性別*</label></td>
                         <td>
                             <label><input type="radio" name="opt-gender">男</label>
                             <label><input type="radio" name="opt-gender">女</label>
@@ -253,8 +253,18 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td>職業</td>
-                        <td></td>
+                        <td> <label for="occupation"> 職業</label></td>
+                        <td>
+                            <select id="occupation" class="form-select" aria-label="">
+                                <option selected>學生</option>
+                                <option value="全職教師">全職教師</option>
+                                <option value="全職教學助理">全職教學助理</option>
+                                <option value="全職補習老師">全職補習老師</option>
+                                <option value="退休教師">退休教師</option>
+                                <option value="其他在職人仕">其他在職人仕</option>
+
+                            </select>
+                        </td>
                     </tr>
 
                 </table>
