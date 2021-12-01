@@ -198,6 +198,31 @@ get_header();
 
             <a href="javascript:void(0);" class="agree-terms-btn">同意以上條款</a>
 
+
+
+            <div class="step-content step-content-2">
+                <table>
+                    <tr>
+                        <td><label for="">登入電郵*</label></td>
+                        <td><input type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">確認登入電郵*</label></td>
+                        <td><input type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">登入密碼*</label></td>
+                        <td><input type="password" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">確認登入密碼*</label></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+
+
         </div>
         <!-- <div class="col-2"></div> -->
 
