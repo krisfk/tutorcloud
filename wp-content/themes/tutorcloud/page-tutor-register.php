@@ -219,10 +219,7 @@ get_header();
                         <td><label for="confirm_login_password">確認登入密碼*</label></td>
                         <td><input id="confirm_login_password" type="password" class="form-control"></td>
                     </tr>
-                </table>
 
-
-                <table class="mt-3">
                     <tr>
                         <td colspan="2">
                             <h5 class="mt-4">個人資料</h5>
