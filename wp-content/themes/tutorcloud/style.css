@@ -356,3 +356,13 @@ h2 .bar {
 .terms-a {
     display: block;
 }
+
+.step-content h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.step-content ul {
+    margin: 0;
+    padding: 0;
+}
