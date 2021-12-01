@@ -15,11 +15,11 @@ get_header();
 
 <div class="breadcrumb mt-4">
 
-    主頁 > 申請補習個案</div>
+    主頁 > 新導師登記</div>
 <div class="container mt-5">
 
     <div class="text-center">
-        <h2>申請補習個案
+        <h2>導師登記資格
             <div class="bar"></div>
         </h2>
     </div>
