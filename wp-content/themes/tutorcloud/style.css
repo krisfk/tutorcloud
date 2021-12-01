@@ -366,3 +366,7 @@ h2 .bar {
     margin: 0;
     padding: 0;
 }
+
+.step-content ul li {
+    list-style-type: none;
+}
