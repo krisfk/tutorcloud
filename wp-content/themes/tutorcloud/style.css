@@ -379,6 +379,7 @@ h2 .bar {
 
 .step-content ul li {
     list-style-type: none;
+    margin: 0 0 1rem 0;
 }
 
 .terms-a {
