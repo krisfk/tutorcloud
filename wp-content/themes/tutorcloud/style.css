@@ -400,6 +400,7 @@ h2 .bar {
 
 .terms-content {
     display: none;
+    padding: 0 0 2rem 0;
 }
 
 .step-content ol li {
