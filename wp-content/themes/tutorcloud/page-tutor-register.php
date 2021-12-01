@@ -53,7 +53,7 @@ get_header();
                     <li>
 
                         <a href="javascript:void(0);" class="terms-a">
-                            <h2>TutorCloud 師魂 的職責</h2>
+                            <h3>TutorCloud 師魂 的職責</h3>
                         </a>
                         <div class="mt-3">TutorCloud 師魂作為一個網上教育配對平台，其責任僅為導師及家長或學生進行相互配對，以使導師可以向家
                             長或學生提供補習或教育服務。 導師與家長其間只為獨立合作聘約，並不存在僱傭關係。 <br>
