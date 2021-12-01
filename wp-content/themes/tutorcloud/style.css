@@ -410,10 +410,10 @@ h2 .bar {
 
 .agree-terms-btn {
     color: #fff;
-    background: #46a879 url(./assets/images/tutor-icon.png) no-repeat;
+    /* background: #46a879 url(./assets/images/tutor-icon.png) no-repeat; */
     color: #fff;
     /* background: #4d91bb url(./assets/images/book-icon.png) no-repeat; */
-    padding: 1rem 1.5rem 1rem 5.3rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     background-position: 1rem center;
     text-decoration: none;
     font-size: 24px;
