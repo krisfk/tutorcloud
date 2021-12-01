@@ -49,9 +49,9 @@ get_header();
             </ul>
 
 
-            <div class="text-end mt-4">
+            <!-- <div class="text-end mt-4">
                 <a href="#" class="next-step-btn">下一步</a>
-            </div>
+            </div> -->
         </div>
         <div class="col-10">
 
