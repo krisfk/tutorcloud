@@ -30,7 +30,7 @@ get_header();
     <div class="row">
 
         <div class="col-2">
-            <ul class="m-0 p-0 text-center">
+            <ul class="m-0 p-0 text-start">
                 <li class="step-txt active">1. 條款及細則</li>
                 <li class="step-txt">2. 個人資料</li>
                 <li class="step-txt">3. 聯絡資料</li>
