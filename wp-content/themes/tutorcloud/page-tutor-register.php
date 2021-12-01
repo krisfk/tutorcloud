@@ -27,6 +27,14 @@ get_header();
     <!-- <div class="text-center mt-3">
         <a href="#" class="filter-btn">導師選項</a>
     </div> -->
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9">年滿十七歲或以上，正就讀大學及具大學學士學位或以上程度學歷之自然人且擁有簽訂合約的心智和法律能
+            力之人士，以及獲其憲章、附例及公司組織章程大綱批准其與TutorCloud 師魂簽訂此合約的公司，方可申請成
+            為導師。TutorCloud 師魂保留拒絕任何人士申請成為導師或終止任何人士之導師資格而不作任何解釋之權利。
+            不符合上述資格者不得使用服務。</div>
+
+    </div>
     <div class="row mt-3">
 
         <div class="col-2">
