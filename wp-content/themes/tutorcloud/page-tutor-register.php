@@ -221,7 +221,7 @@ get_header();
                     </tr>
                 </table>
 
-                <div class="mt-4">個人資料</div>
+                <h5 class="mt-4">個人資料</h5>
 
                 <table class="mt-3">
                     <tr>
