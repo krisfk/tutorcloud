@@ -251,8 +251,8 @@ get_header();
                     <tr>
                         <td> <label for=""> 性別*</label></td>
                         <td>
-                            <label><input type="radio" name="opt-gender">男</label>
-                            <label><input type="radio" name="opt-gender">女</label>
+                            <label><input type="radio" name="opt-gender" value="男">男</label>
+                            <label><input type="radio" name="opt-gender" value="女">女</label>
 
                         </td>
                     </tr>
@@ -377,173 +377,173 @@ get_header();
                     </tr>
                     <tr>
                         <td><label for="">中文</label></td>
-                        <td><input type="radio" name="opt-sub-1"></td>
-                        <td><input type="radio" name="opt-sub-1"></td>
-                        <td><input type="radio" name="opt-sub-1"></td>
-                        <td><input type="radio" name="opt-sub-1"></td>
+                        <td><input type="radio" value="5**" name="opt-sub-1"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-1"></td>
+                        <td><input type="radio" value="5" name="opt-sub-1"></td>
+                        <td><input type="radio" value="4" name="opt-sub-1"></td>
                     </tr>
                     <tr>
                         <td><label for="">英文</label></td>
-                        <td><input type="radio" name="opt-sub-2"></td>
-                        <td><input type="radio" name="opt-sub-2"></td>
-                        <td><input type="radio" name="opt-sub-2"></td>
-                        <td><input type="radio" name="opt-sub-2"></td>
+                        <td><input type="radio" value="5**" name="opt-sub-2"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-2"></td>
+                        <td><input type="radio" value="5" name="opt-sub-2"></td>
+                        <td><input type="radio" value="4" name="opt-sub-2"></td>
 
                     </tr>
                     <tr>
                         <td><label for="">數學</label></td>
-                        <td><input type="radio" name="opt-sub-3"></td>
-                        <td><input type="radio" name="opt-sub-3"></td>
-                        <td><input type="radio" name="opt-sub-3"></td>
-                        <td><input type="radio" name="opt-sub-3"></td>
+                        <td><input type="radio" value="5**" name="opt-sub-3"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-3"></td>
+                        <td><input type="radio" value="5" name="opt-sub-3"></td>
+                        <td><input type="radio" value="4" name="opt-sub-3"></td>
                     </tr>
                     <tr>
                         <td><label for="">數學(M1)</label></td>
-                        <td><input type="radio" name="opt-sub-4"></td>
-                        <td><input type="radio" name="opt-sub-4"></td>
-                        <td><input type="radio" name="opt-sub-4"></td>
-                        <td><input type="radio" name="opt-sub-4"></td>
+                        <td><input type="radio" value="5**" name="opt-sub-4"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-4"></td>
+                        <td><input type="radio" value="5" name="opt-sub-4"></td>
+                        <td><input type="radio" value="4" name="opt-sub-4"></td>
 
                     </tr>
                     <tr>
                         <td><label for="">數學(M2)</label></td>
-                        <td><input type="radio" name="opt-sub-5"></td>
-                        <td><input type="radio" name="opt-sub-5"></td>
-                        <td><input type="radio" name="opt-sub-5"></td>
-                        <td><input type="radio" name="opt-sub-5"></td>
+                        <td><input type="radio" value="5**" name="opt-sub-5"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-5"></td>
+                        <td><input type="radio" value="5" name="opt-sub-5"></td>
+                        <td><input type="radio" value="4" name="opt-sub-5"></td>
 
                     </tr>
                     <tr>
                         <td><label for="">通識</label></td>
-                        <td><input type="radio" name="opt-sub-6"></td>
-                        <td><input type="radio" name="opt-sub-6"></td>
-                        <td><input type="radio" name="opt-sub-6"></td>
-                        <td><input type="radio" name="opt-sub-6"></td>
+                        <td><input type="radio" value="5**" name="opt-sub-6"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-6"></td>
+                        <td><input type="radio" value="5" name="opt-sub-6"></td>
+                        <td><input type="radio" value="4" name="opt-sub-6"></td>
                     </tr>
                     <tr>
                         <td><label for="">物理</label></td>
-                        <td><input type="radio" name="opt-sub-7"></td>
-                        <td><input type="radio" name="opt-sub-7"></td>
-                        <td><input type="radio" name="opt-sub-7"></td>
-                        <td><input type="radio" name="opt-sub-7"></td>
+                        <td><input type="radio" value="5**" name="opt-sub-7"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-7"></td>
+                        <td><input type="radio" value="5" name="opt-sub-7"></td>
+                        <td><input type="radio" value="4" name="opt-sub-7"></td>
                     </tr>
                     <tr>
                         <td><label for="">化學</label></td>
-                        <td><input type="radio" name="opt-sub-8"></td>
-                        <td><input type="radio" name="opt-sub-8"></td>
-                        <td><input type="radio" name="opt-sub-8"></td>
-                        <td><input type="radio" name="opt-sub-8"></td>
+                        <td><input type="radio" value="5**" name="opt-sub-8"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-8"></td>
+                        <td><input type="radio" value="5" name="opt-sub-8"></td>
+                        <td><input type="radio" value="4" name="opt-sub-8"></td>
                     </tr>
                     <tr>
                         <td><label for="">生物</label></td>
-                        <td><input type="radio" name="opt-sub-9"></td>
-                        <td><input type="radio" name="opt-sub-9"></td>
-                        <td><input type="radio" name="opt-sub-9"></td>
-                        <td><input type="radio" name="opt-sub-9"></td>
+                        <td><input type="radio" value="5**" name="opt-sub-9"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-9"></td>
+                        <td><input type="radio" value="5" name="opt-sub-9"></td>
+                        <td><input type="radio" value="4" name="opt-sub-9"></td>
                     </tr>
                     <tr>
                         <td><label for="">組合科學：物理 化學
                             </label></td>
-                        <td><input type="radio" name="opt-sub-10"></td>
-                        <td><input type="radio" name="opt-sub-10"></td>
-                        <td><input type="radio" name="opt-sub-10"></td>
-                        <td><input type="radio" name="opt-sub-10"></td>
+                        <td><input type="radio" value="5**" name="opt-sub-10"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-10"></td>
+                        <td><input type="radio" value="5" name="opt-sub-10"></td>
+                        <td><input type="radio" value="4" name="opt-sub-10"></td>
                     </tr>
                     <tr>
                         <td><label for="">組合科學：化學 生物
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-11"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-11"></td>
+                        <td><input type="radio" value="5" name="opt-sub-11"></td>
+                        <td><input type="radio" value="4" name="opt-sub-11"></td>
                     </tr>
                     <tr>
                         <td><label for="">綜合科學
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-12"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-12"></td>
+                        <td><input type="radio" value="5" name="opt-sub-12"></td>
+                        <td><input type="radio" value="4" name="opt-sub-12"></td>
                     </tr>
                     <tr>
                         <td><label for="">資訊及通訊科技
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-13"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-13"></td>
+                        <td><input type="radio" value="5" name="opt-sub-13"></td>
+                        <td><input type="radio" value="4" name="opt-sub-13"></td>
                     </tr>
                     <tr>
                         <td><label for="">地理</label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-14"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-14"></td>
+                        <td><input type="radio" value="5" name="opt-sub-14"></td>
+                        <td><input type="radio" value="4" name="opt-sub-14"></td>
                     </tr>
                     <tr>
                         <td><label for="">中史
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-15"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-15"></td>
+                        <td><input type="radio" value="5" name="opt-sub-15"></td>
+                        <td><input type="radio" value="4" name="opt-sub-15"></td>
                     </tr>
                     <tr>
                         <td><label for="">西史
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-16"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-16"></td>
+                        <td><input type="radio" value="5" name="opt-sub-16"></td>
+                        <td><input type="radio" value="4" name="opt-sub-16"></td>
                     </tr>
                     <tr>
                         <td><label for="">中國文學
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-17"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-17"></td>
+                        <td><input type="radio" value="5" name="opt-sub-17"></td>
+                        <td><input type="radio" value="4" name="opt-sub-17"></td>
                     </tr>
                     <tr>
                         <td><label for="">英國文學
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-18"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-18"></td>
+                        <td><input type="radio" value="5" name="opt-sub-18"></td>
+                        <td><input type="radio" value="4" name="opt-sub-18"></td>
                     </tr>
                     <tr>
                         <td><label for="">倫理與宗教
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-19"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-19"></td>
+                        <td><input type="radio" value="5" name="opt-sub-19"></td>
+                        <td><input type="radio" value="4" name="opt-sub-19"></td>
                     </tr>
                     <tr>
                         <td><label for="">經濟
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-20"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-20"></td>
+                        <td><input type="radio" value="5" name="opt-sub-20"></td>
+                        <td><input type="radio" value="4" name="opt-sub-20"></td>
                     </tr>
                     <tr>
                         <td><label for="">企業、會計與財務概論
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-21"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-21"></td>
+                        <td><input type="radio" value="5" name="opt-sub-21"></td>
+                        <td><input type="radio" value="4" name="opt-sub-21"></td>
                     </tr>
                     <tr>
                         <td><label for="">旅遊與款待
 
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" value="5**" name="opt-sub-22"></td>
+                        <td><input type="radio" value="5*" name="opt-sub-22"></td>
+                        <td><input type="radio" value="5" name="opt-sub-22"></td>
+                        <td><input type="radio" value="4" name="opt-sub-22"></td>
                     </tr>
                 </table>
             </div>
