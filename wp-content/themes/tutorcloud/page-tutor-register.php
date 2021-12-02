@@ -1793,26 +1793,26 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="2"
+                                        id="t-subjects-music-value-2" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-2">
                                         小提琴
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="3"
+                                        id="t-subjects-music-value-3" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-3">
                                         中提琴
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="4"
+                                        id="t-subjects-music-value-4" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-4">
                                         大提琴
 
 
@@ -1820,89 +1820,89 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-music-value-5" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-5">
                                         小號
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="6"
+                                        id="t-subjects-music-value-6" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-6">
                                         長號
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-music-value-7" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-7">
                                         法國號
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="8"
+                                        id="t-subjects-music-value-8" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-8">
                                         色士風
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="9"
+                                        id="t-subjects-music-value-9" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-9">
                                         單簧管
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="10"
+                                        id="t-subjects-music-value-10" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-10">
                                         雙簧管
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="11"
+                                        id="t-subjects-music-value-11" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-11">
                                         長笛
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="12"
+                                        id="t-subjects-music-value-12" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-12">
                                         木笛
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="13"
+                                        id="t-subjects-music-value-13" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-13">
                                         口琴
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="14"
+                                        id="t-subjects-music-value-14" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-14">
                                         牧童笛
 
 
@@ -1910,35 +1910,35 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="15"
+                                        id="t-subjects-music-value-15" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-15">
                                         結他
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="16"
+                                        id="t-subjects-music-value-16" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-16">
                                         低音結他
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="17"
+                                        id="t-subjects-music-value-17" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-17">
                                         聲樂
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
+                                    <input class="form-check-input" type="checkbox" value="18"
+                                        id="t-subjects-music-value-18" name="t-subjects-music[]">
+                                    <label class="form-check-label" for="t-subjects-music-value-18">
                                         樂理
 
 
