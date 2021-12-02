@@ -257,7 +257,8 @@ get_header();
                         <td> <label for="occupation"> 職業</label></td>
                         <td>
                             <select id="occupation" class="form-select" aria-label="">
-                                <option selected>學生</option>
+
+                                <option selected>選擇</option>
                                 <option value="全職教師">全職教師</option>
                                 <option value="全職教學助理">全職教學助理</option>
                                 <option value="全職補習老師">全職補習老師</option>
