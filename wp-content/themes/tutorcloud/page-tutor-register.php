@@ -319,8 +319,8 @@ get_header();
                     <tr>
                         <td><label for="">是否擁有教育文憑 *
                             </label></td>
-                        <td> <label><input type="radio" name="opt-gender">是</label>
-                            <label><input type="radio" name="opt-gender">否</label>
+                        <td> <label><input type="radio" name="opt-diploma">是</label>
+                            <label><input type="radio" name="opt-diploma">否</label>
                         </td>
                     </tr>
                     <tr>
@@ -328,14 +328,26 @@ get_header();
                             <label for="">年級 (2021-2022年度) *
                             </label>
                         </td>
-                        <td></td>
+                        <td>
+                            <select id="tutor-level" class="form-select" aria-label="">
+                                <option selected>選擇</option>
+                                <option value="Year 1">Year 1</option>
+                                <option value="Year 2">Year 2</option>
+                                <option value="Year 3">Year 3</option>
+                                <option value="Year 4">Year 4</option>
+                                <option value="Year 5">Year 5</option>
+                                <option value="Year 6">Year 6</option>
+                                <option value="已畢業">已畢業</option>
+
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <td>
 
                             <label for="">大學主修科目 *</label>
                         </td>
-                        <td></td>
+                        <td><input type="text" class="form-control"></td>
                     </tr>
                 </table>
             </div>
