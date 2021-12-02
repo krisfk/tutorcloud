@@ -1695,66 +1695,66 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                    <input class="form-check-input" type="checkbox" value="2"
+                                        id="t-subjects-sat-value-2" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-2">
 
                                         Biology M
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                    <input class="form-check-input" type="checkbox" value="3"
+                                        id="t-subjects-sat-value-3" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-3">
                                         Chemistry
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                    <input class="form-check-input" type="checkbox" value="4"
+                                        id="t-subjects-sat-value-4" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-4">
                                         Physics
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-sat-value-5" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-5">
                                         U.S. History
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                    <input class="form-check-input" type="checkbox" value="6"
+                                        id="t-subjects-sat-value-6" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-6">
                                         World History
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-sat-value-7" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-7">
                                         Literature
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                    <input class="form-check-input" type="checkbox" value="8"
+                                        id="t-subjects-sat-value-8" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-8">
                                         Maths Level 1
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                    <input class="form-check-input" type="checkbox" value="9"
+                                        id="t-subjects-sat-value-9" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-9">
                                         Maths Level 2
 
                                     </label>
