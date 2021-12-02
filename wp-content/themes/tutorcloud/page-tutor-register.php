@@ -603,6 +603,17 @@ get_header();
                             </label></td>
                         <td><textarea id="self-intro" class="form-control" rows="4" cols="50"></textarea></td>
                     </tr>
+                    <tr>
+                        <td colspan="2"><label for="t-subjects-kin">
+                                <h5> 可教授科目(幼稚園)</h5>
+                            </label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            fds
+                        </td>
+                    </tr>
+
                 </table>
 
             </div>
