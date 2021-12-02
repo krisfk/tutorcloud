@@ -546,6 +546,25 @@ get_header();
                         <td class="grade-col"><input type="radio" value="4" name="opt-sub-22"></td>
                     </tr>
                 </table>
+
+
+                <table>
+
+                    <tr>
+                        <td> <label for="exam-lang"> 應考主要語言 *
+                            </label></td>
+                        <td>
+                            <select id="exam-lang" class="form-select" aria-label="">
+
+                                <option selected>選擇</option>
+                                <option value="中文">中文</option>
+                                <option value="英文">英文</option>
+
+
+                            </select>
+                        </td>
+                    </tr>
+                </table>
             </div>
 
 
