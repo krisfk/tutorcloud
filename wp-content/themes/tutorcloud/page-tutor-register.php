@@ -274,10 +274,10 @@ get_header();
 
                 </table>
 
-                <a href="javascript:void(0);" class="prev-step">下一步</a>
+                <a href="javascript:void(0);" class="prev-step-btn">下一步</a>
 
 
-                <a href="javascript:void(0);" class="next-step">下一步</a>
+                <a href="javascript:void(0);" class="next-step-btn">下一步</a>
 
             </div>
 
