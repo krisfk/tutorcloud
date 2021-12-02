@@ -601,7 +601,8 @@ get_header();
                     <tr>
                         <td><label for="self-intro">自我介紹 (50字或以上) *
                             </label></td>
-                        <td><textarea id="self-intro" class="form-control" rows="4" cols="50"></textarea></td>
+                        <td><textarea max-length="50" id="self-intro" class="form-control" rows="4"
+                                cols="50"></textarea></td>
                     </tr>
                 </table>
 
