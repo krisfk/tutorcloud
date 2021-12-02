@@ -356,6 +356,13 @@ get_header();
                         </td>
                         <td><input type="text" class="form-control"></td>
                     </tr>
+                    <tr>
+                        <td> <label for="">曾就讀中學 *
+                            </label>
+                        </td>
+                        <td><input type="text" class="form-control"></td>
+                    </tr>
+
                 </table>
             </div>
 
