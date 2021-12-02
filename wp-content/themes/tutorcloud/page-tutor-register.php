@@ -1679,6 +1679,102 @@ get_header();
                 </div>
 
 
+                <h5>SAT科目列</h5>
+
+                <div class="subject-list subject-list-sat">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+
+
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                        Biology E
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+
+                                        Biology M
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                        Chemistry
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                        Physics
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                        U.S. History
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                        World History
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                        Literature
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                        Maths Level 1
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
+                                    <label class="form-check-label" for="t-subjects-sat-value-1">
+                                        Maths Level 2
+
+                                    </label>
+                                </div>
+                                <div class="mt-2">
+                                    <label for="t-subjects-sat-value-flang">Foreign Languages:</label>
+                                    <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-flang"
+                                        type="text">
+                                </div>
+
+                                <div class="mt-2">
+                                    <label for="t-subjects-sat-value-other">Other:</label>
+                                    <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-other"
+                                        type="text">
+                                </div>
+
+                </div>
+
+
+
                 </td>
                 </tr>
                 </table>
