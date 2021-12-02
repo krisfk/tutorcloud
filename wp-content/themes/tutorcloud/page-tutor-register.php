@@ -284,6 +284,37 @@ get_header();
 
             <div class="step-content step-content-3">
 
+                <table>
+                    <tr>
+                        <td><label for="">就讀大學 (學士學位課程) *
+                            </label></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="">教育程度 *
+                            </label></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">是否擁有教育文憑 *
+                            </label></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">年級 (2021-2022年度) *
+                            </label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <label for="">大學主修科目 *</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
             </div>
 
 
