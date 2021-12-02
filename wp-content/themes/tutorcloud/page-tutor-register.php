@@ -399,53 +399,55 @@ get_header();
                     </tr>
                     <tr>
                         <td><label for="">數學(M1)</label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" name="opt-sub-4"></td>
+                        <td><input type="radio" name="opt-sub-4"></td>
+                        <td><input type="radio" name="opt-sub-4"></td>
+                        <td><input type="radio" name="opt-sub-4"></td>
+
                     </tr>
                     <tr>
                         <td><label for="">數學(M2)</label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" name="opt-sub-5"></td>
+                        <td><input type="radio" name="opt-sub-5"></td>
+                        <td><input type="radio" name="opt-sub-5"></td>
+                        <td><input type="radio" name="opt-sub-5"></td>
+
                     </tr>
                     <tr>
                         <td><label for="">通識</label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" name="opt-sub-6"></td>
+                        <td><input type="radio" name="opt-sub-6"></td>
+                        <td><input type="radio" name="opt-sub-6"></td>
+                        <td><input type="radio" name="opt-sub-6"></td>
                     </tr>
                     <tr>
                         <td><label for="">物理</label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" name="opt-sub-7"></td>
+                        <td><input type="radio" name="opt-sub-7"></td>
+                        <td><input type="radio" name="opt-sub-7"></td>
+                        <td><input type="radio" name="opt-sub-7"></td>
                     </tr>
                     <tr>
                         <td><label for="">化學</label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" name="opt-sub-8"></td>
+                        <td><input type="radio" name="opt-sub-8"></td>
+                        <td><input type="radio" name="opt-sub-8"></td>
+                        <td><input type="radio" name="opt-sub-8"></td>
                     </tr>
                     <tr>
                         <td><label for="">生物</label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" name="opt-sub-9"></td>
+                        <td><input type="radio" name="opt-sub-9"></td>
+                        <td><input type="radio" name="opt-sub-9"></td>
+                        <td><input type="radio" name="opt-sub-9"></td>
                     </tr>
                     <tr>
                         <td><label for="">組合科學：物理 化學
                             </label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" name="opt-sub-10"></td>
+                        <td><input type="radio" name="opt-sub-10"></td>
+                        <td><input type="radio" name="opt-sub-10"></td>
+                        <td><input type="radio" name="opt-sub-10"></td>
                     </tr>
                     <tr>
                         <td><label for="">組合科學：化學 生物
