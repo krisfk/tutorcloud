@@ -624,7 +624,8 @@ get_header();
 
                             <div class="mt-2">
                                 <label for="t-subjects-kin-value-other">其他：</label>
-                                <input class="limit-input-w form-control" id="t-subjects-kin-value-other" type="text">
+                                <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
+                                    type="text">
                             </div>
 
                         </td>
