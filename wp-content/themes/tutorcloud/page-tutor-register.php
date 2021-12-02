@@ -377,24 +377,25 @@ get_header();
                     </tr>
                     <tr>
                         <td><label for="">中文</label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" name="opt-sub-1"></td>
+                        <td><input type="radio" name="opt-sub-1"></td>
+                        <td><input type="radio" name="opt-sub-1"></td>
+                        <td><input type="radio" name="opt-sub-1"></td>
                     </tr>
                     <tr>
                         <td><label for="">英文</label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" name="opt-sub-2"></td>
+                        <td><input type="radio" name="opt-sub-2"></td>
+                        <td><input type="radio" name="opt-sub-2"></td>
+                        <td><input type="radio" name="opt-sub-2"></td>
+
                     </tr>
                     <tr>
                         <td><label for="">數學</label></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="radio" name="opt-sub-3"></td>
+                        <td><input type="radio" name="opt-sub-3"></td>
+                        <td><input type="radio" name="opt-sub-3"></td>
+                        <td><input type="radio" name="opt-sub-3"></td>
                     </tr>
                     <tr>
                         <td><label for="">數學(M1)</label></td>
