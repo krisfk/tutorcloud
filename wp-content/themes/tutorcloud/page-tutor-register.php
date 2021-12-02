@@ -1159,52 +1159,52 @@ get_header();
 
 
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-kin-value-1" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-1">
+                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-1">
                                         Chinese (A) HL
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Chinese (A) SL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Chinese (B)
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         English (A) HL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         English (A) SL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         English (B)
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Mathematics HL
 
 
@@ -1212,82 +1212,82 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Mathematics SL
 
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Mathematics Study HL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Physics HL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Physics SL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Chemistry HL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Chemistry SL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Biology HL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Biology SL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Economics HL
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         Economics SL
                                     </label>
                                 </div>
 
                                 <div class="mt-2">
-                                    <label for="t-subjects-kin-value-other">Other:</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
+                                    <label for="t-subjects-ib-value-other">Other:</label>
+                                    <input class="limit-input-w form-control mt-2" id="t-subjects-ib-value-other"
                                         type="text">
                                 </div>
 
