@@ -1152,7 +1152,7 @@ get_header();
 
                 <h5>IB科目列</h5>
 
-                <div class="subject-list subject-list-hkdse">
+                <div class="subject-list subject-list-ib">
                     <table>
                         <tr>
                             <td colspan="2">
@@ -1296,6 +1296,35 @@ get_header();
                     </table>
                 </div>
 
+                <h5>GCE AL科目列</h5>
+
+                <div class="subject-list subject-list-gceal">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+
+
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
+                                        name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                        Chinese (A) HL
+
+                                    </label>
+                                </div>
+
+
+
+                                <div class="mt-2">
+                                    <label for="t-subjects-ib-value-other">Other:</label>
+                                    <input class="limit-input-w form-control mt-2" id="t-subjects-ib-value-other"
+                                        type="text">
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <!-- <div class="col-2"></div> -->
 
