@@ -633,74 +633,74 @@ get_header();
 
 
                     <tr>
-                        <td colspan="2"><label for="t-subjects-kin">
+                        <td colspan="2"><label for="t-subjects-pri">
                                 <h5>小學</h5>
                             </label>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="1" id="t-subjects-kin-value-1"
-                                    name="t-subjects-kin[]">
-                                <label class="form-check-label" for="t-subjects-kin-value-1">
+                                <input class="form-check-input" type="checkbox" value="1" id="t-subjects-pri-value-1"
+                                    name="t-subjects-pri[]">
+                                <label class="form-check-label" for="t-subjects-pri-value-1">
                                     全科
 
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="2" id="t-subjects-kin-value-2"
-                                    name="t-subjects-kin[]" checked>
-                                <label class="form-check-label" for="t-subjects-kin-value-2">
+                                <input class="form-check-input" type="checkbox" value="2" id="t-subjects-pri-value-2"
+                                    name="t-subjects-pri[]" checked>
+                                <label class="form-check-label" for="t-subjects-pri-value-2">
 
                                     功課輔導
 
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="2" id="t-subjects-kin-value-2"
-                                    name="t-subjects-kin[]" checked>
-                                <label class="form-check-label" for="t-subjects-kin-value-2">
+                                <input class="form-check-input" type="checkbox" value="3" id="t-subjects-pri-value-2"
+                                    name="t-subjects-pri[]" checked>
+                                <label class="form-check-label" for="t-subjects-pri-value-2">
 
                                     中文
 
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="2" id="t-subjects-kin-value-2"
-                                    name="t-subjects-kin[]" checked>
-                                <label class="form-check-label" for="t-subjects-kin-value-2">
+                                <input class="form-check-input" type="checkbox" value="4" id="t-subjects-pri-value-2"
+                                    name="t-subjects-pri[]" checked>
+                                <label class="form-check-label" for="t-subjects-pri-value-2">
 
                                     英文
 
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="2" id="t-subjects-kin-value-2"
-                                    name="t-subjects-kin[]" checked>
-                                <label class="form-check-label" for="t-subjects-kin-value-2">
+                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-pri-value-2"
+                                    name="t-subjects-pri[]" checked>
+                                <label class="form-check-label" for="t-subjects-pri-value-2">
 
                                     數學
 
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="2" id="t-subjects-kin-value-2"
-                                    name="t-subjects-kin[]" checked>
-                                <label class="form-check-label" for="t-subjects-kin-value-2">
+                                <input class="form-check-input" type="checkbox" value="6" id="t-subjects-pri-value-2"
+                                    name="t-subjects-pri[]" checked>
+                                <label class="form-check-label" for="t-subjects-pri-value-2">
 
                                     常識
 
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="2" id="t-subjects-kin-value-2"
-                                    name="t-subjects-kin[]" checked>
-                                <label class="form-check-label" for="t-subjects-kin-value-2">
+                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-pri-value-2"
+                                    name="t-subjects-pri[]" checked>
+                                <label class="form-check-label" for="t-subjects-pri-value-2">
 
                                     普通話
 
                                 </label>
                             </div>
                             <div class="mt-2">
-                                <label for="t-subjects-kin-value-other">其他：</label>
-                                <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
+                                <label for="t-subjects-pri-value-other">其他：</label>
+                                <input class="limit-input-w form-control mt-2" id="t-subjects-pri-value-other"
                                     type="text">
                             </div>
 
