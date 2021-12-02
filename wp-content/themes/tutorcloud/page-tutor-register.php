@@ -610,543 +610,581 @@ get_header();
 
                 <h5>HKDSE科目列</h5>
 
-                <table>
-                    <tr>
-                        <td colspan="2">
+                <div class="subject-list subject-list-hkdse">
+                    <table>
+                        <tr>
+                            <td colspan="2">
 
-                            <label for="t-subjects-kin">
-                                <h5> 幼稚園</h5>
-                            </label>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="1" id="t-subjects-kin-value-1"
-                                    name="t-subjects-kin[]">
-                                <label class="form-check-label" for="t-subjects-kin-value-1">
-                                    英語
+                                <label for="t-subjects-kin">
+                                    <h5> 幼稚園</h5>
                                 </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="2" id="t-subjects-kin-value-2"
-                                    name="t-subjects-kin[]">
-                                <label class="form-check-label" for="t-subjects-kin-value-2">
-                                    普通話
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-kin-value-1" name="t-subjects-kin[]">
+                                    <label class="form-check-label" for="t-subjects-kin-value-1">
+                                        英語
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="2"
+                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
+                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                        普通話
+                                    </label>
+                                </div>
+
+                                <div class="mt-2">
+                                    <label for="t-subjects-kin-value-other">其他：</label>
+                                    <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
+                                        type="text">
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td colspan="2"><label for="t-subjects-pri">
+                                    <h5>小學</h5>
                                 </label>
-                            </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-pri-value-1" name="t-subjects-pri[]">
+                                    <label class="form-check-label" for="t-subjects-pri-value-1">
+                                        全科
 
-                            <div class="mt-2">
-                                <label for="t-subjects-kin-value-other">其他：</label>
-                                <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
-                                    type="text">
-                            </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="2"
+                                        id="t-subjects-pri-value-2" name="t-subjects-pri[]">
+                                    <label class="form-check-label" for="t-subjects-pri-value-2">
 
-                        </td>
-                    </tr>
+                                        功課輔導
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="3"
+                                        id="t-subjects-pri-value-3" name="t-subjects-pri[]">
+                                    <label class="form-check-label" for="t-subjects-pri-value-3">
+
+                                        中文
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="4"
+                                        id="t-subjects-pri-value-4" name="t-subjects-pri[]">
+                                    <label class="form-check-label" for="t-subjects-pri-value-4">
+
+                                        英文
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-pri-value-5" name="t-subjects-pri[]">
+                                    <label class="form-check-label" for="t-subjects-pri-value-5">
+
+                                        數學
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="6"
+                                        id="t-subjects-pri-value-6" name="t-subjects-pri[]">
+                                    <label class="form-check-label" for="t-subjects-pri-value-6">
+
+                                        常識
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-pri-value-7" name="t-subjects-pri[]">
+                                    <label class="form-check-label" for="t-subjects-pri-value-7">
+
+                                        普通話
+
+                                    </label>
+                                </div>
+                                <div class="mt-2">
+                                    <label for="t-subjects-pri-value-other">其他：</label>
+                                    <input class="limit-input-w form-control mt-2" id="t-subjects-pri-value-other"
+                                        type="text">
+                                </div>
+
+                            </td>
+                        </tr>
 
 
-                    <tr>
-                        <td colspan="2"><label for="t-subjects-pri">
-                                <h5>小學</h5>
-                            </label>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="1" id="t-subjects-pri-value-1"
-                                    name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-1">
-                                    全科
 
+
+                        <tr>
+                            <td colspan="2"><label for="t-subjects-f13">
+                                    <h5>中學(中一至中三)</h5>
                                 </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="2" id="t-subjects-pri-value-2"
-                                    name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-2">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-f13-value-1" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-1">
+                                        全科
 
-                                    功課輔導
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="2"
+                                        id="t-subjects-f13-value-2" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-2">
 
+                                        功課輔導
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="3"
+                                        id="t-subjects-f13-value-3" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-3">
+
+                                        中文
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="4"
+                                        id="t-subjects-f13-value-4" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-4">
+
+                                        英文
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f13-value-5" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-5">
+
+                                        數學
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="6"
+                                        id="t-subjects-f13-value-6" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-6">
+
+                                        通識
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-7" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-7">
+
+                                        物理
+
+                                    </label>
+                                </div>
+
+
+
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-8" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-8">
+
+                                        化學
+
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-9" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-9">
+
+                                        生物
+
+
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-10" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-10">
+
+                                        綜合科學
+
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-11" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-11">
+
+                                        資訊及通訊科技
+
+
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-12" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-12">
+
+
+                                        地理
+
+
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-13" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-13">
+
+                                        中史
+
+
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-14" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-14">
+
+
+                                        西史
+
+
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-15" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-15">
+
+
+                                        英國文學
+
+
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-16" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-16">
+
+
+                                        經濟
+
+
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-17" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-17">
+
+
+                                        企業、會計與財務概論
+
+
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="7"
+                                        id="t-subjects-f13-value-18" name="t-subjects-f13[]">
+                                    <label class="form-check-label" for="t-subjects-f13-value-18">
+
+
+                                        普通話
+
+
+
+                                    </label>
+                                </div>
+
+
+                                <div class="mt-2">
+                                    <label for="t-subjects-f13-value-other">其他：</label>
+                                    <input class="limit-input-w form-control mt-2" id="t-subjects-f13-value-other"
+                                        type="text">
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td colspan="2"><label for="t-subjects-f46">
+                                    <h5>中學(中四至中六)</h5>
                                 </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="3" id="t-subjects-pri-value-3"
-                                    name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-3">
-
-                                    中文
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="4" id="t-subjects-pri-value-4"
-                                    name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-4">
-
-                                    英文
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-pri-value-5"
-                                    name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-5">
-
-                                    數學
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="6" id="t-subjects-pri-value-6"
-                                    name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-6">
-
-                                    常識
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-pri-value-7"
-                                    name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-7">
-
-                                    普通話
-
-                                </label>
-                            </div>
-                            <div class="mt-2">
-                                <label for="t-subjects-pri-value-other">其他：</label>
-                                <input class="limit-input-w form-control mt-2" id="t-subjects-pri-value-other"
-                                    type="text">
-                            </div>
 
-                        </td>
-                    </tr>
 
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="3"
+                                        id="t-subjects-f46-value-3" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-3">
+
+                                        中文
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="4"
+                                        id="t-subjects-f46-value-4" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-4">
+
+                                        英文
+
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-5" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-5">
+
+                                        數學
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-6" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-6">
+
+                                        數學(M1)
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-7" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-7">
+
+                                        數學(M2)
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-8" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-8">
+
+                                        通識
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-9" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-9">
+
+                                        物理
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-10" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-10">
+
+                                        化學
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-11" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-11">
+
+                                        生物
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-12" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-12">
+
+                                        組合科學：物理 化學
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-13" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-13">
+
+                                        組合科學：化學 生物
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-14" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-14">
+
+                                        綜合科學
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-15" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-15">
 
+                                        資訊及通訊科技
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-16" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-16">
 
+                                        地理
 
-                    <tr>
-                        <td colspan="2"><label for="t-subjects-f13">
-                                <h5>中學(中一至中三)</h5>
-                            </label>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="1" id="t-subjects-f13-value-1"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-1">
-                                    全科
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-17" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-17">
 
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="2" id="t-subjects-f13-value-2"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-2">
+                                        中史
 
-                                    功課輔導
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-18" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-18">
+
+                                        西史
 
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="3" id="t-subjects-f13-value-3"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-3">
-
-                                    中文
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="4" id="t-subjects-f13-value-4"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-4">
-
-                                    英文
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f13-value-5"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-5">
-
-                                    數學
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="6" id="t-subjects-f13-value-6"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-6">
-
-                                    通識
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-7"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-7">
-
-                                    物理
-
-                                </label>
-                            </div>
-
-
-
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-8"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-8">
-
-                                    化學
-
-                                </label>
-                            </div>
-
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-9"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-9">
-
-                                    生物
-
-
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-10"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-10">
-
-                                    綜合科學
-
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-11"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-11">
-
-                                    資訊及通訊科技
-
-
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-12"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-12">
-
-
-                                    地理
-
-
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-13"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-13">
-
-                                    中史
-
-
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-14"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-14">
-
-
-                                    西史
-
-
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-15"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-15">
-
-
-                                    英國文學
-
-
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-16"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-16">
-
-
-                                    經濟
-
-
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-17"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-17">
-
-
-                                    企業、會計與財務概論
-
-
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-f13-value-18"
-                                    name="t-subjects-f13[]">
-                                <label class="form-check-label" for="t-subjects-f13-value-18">
-
-
-                                    普通話
-
-
-
-                                </label>
-                            </div>
-
-
-                            <div class="mt-2">
-                                <label for="t-subjects-f13-value-other">其他：</label>
-                                <input class="limit-input-w form-control mt-2" id="t-subjects-f13-value-other"
-                                    type="text">
-                            </div>
-
-                        </td>
-                    </tr>
-
-
-
-                    <tr>
-                        <td colspan="2"><label for="t-subjects-f46">
-                                <h5>中學(中四至中六)</h5>
-                            </label>
-
-
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="3" id="t-subjects-f46-value-3"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-3">
-
-                                    中文
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="4" id="t-subjects-f46-value-4"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-4">
-
-                                    英文
-
-                                </label>
-                            </div>
-
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-5"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-5">
-
-                                    數學
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-6"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-6">
-
-                                    數學(M1)
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-7"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-7">
-
-                                    數學(M2)
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-8"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-8">
-
-                                    通識
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-9"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-9">
-
-                                    物理
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-10"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-10">
-
-                                    化學
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-11"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-11">
-
-                                    生物
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-12"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-12">
-
-                                    組合科學：物理 化學
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-13"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-13">
-
-                                    組合科學：化學 生物
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-14"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-14">
-
-                                    綜合科學
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-15"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-15">
-
-                                    資訊及通訊科技
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-16"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-16">
-
-                                    地理
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-17"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-17">
-
-                                    中史
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-18"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-18">
-
-                                    西史
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-19"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-19">
-
-                                    中國文學
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-20"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-20">
-
-                                    英國文學
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-21"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-21">
-
-                                    經濟
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-22"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-22">
-
-                                    企業、會計與財務概論
-
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-23"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-23">
-
-                                    旅遊與款待
-
-                                </label>
-                            </div>
-
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-f46-value-24"
-                                    name="t-subjects-f46[]">
-                                <label class="form-check-label" for="t-subjects-f46-value-24">
-
-                                    倫理與宗教
-
-                                </label>
-                            </div>
-
-
-
-                            <div class="mt-2">
-                                <label for="t-subjects-f46-value-other">其他：</label>
-                                <input class="limit-input-w form-control mt-2" id="t-subjects-f46-value-other"
-                                    type="text">
-                            </div>
-
-                        </td>
-                    </tr>
-
-
-                </table>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-19" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-19">
+
+                                        中國文學
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-20" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-20">
+
+                                        英國文學
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-21" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-21">
+
+                                        經濟
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-22" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-22">
+
+                                        企業、會計與財務概論
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-23" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-23">
+
+                                        旅遊與款待
+
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="5"
+                                        id="t-subjects-f46-value-24" name="t-subjects-f46[]">
+                                    <label class="form-check-label" for="t-subjects-f46-value-24">
+
+                                        倫理與宗教
+
+                                    </label>
+                                </div>
+
+
+
+                                <div class="mt-2">
+                                    <label for="t-subjects-f46-value-other">其他：</label>
+                                    <input class="limit-input-w form-control mt-2" id="t-subjects-f46-value-other"
+                                        type="text">
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+                <h5>IB科目列</h5>
+
+                <div class="subject-list subject-list-hkdse">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+
+
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1"
+                                        id="t-subjects-kin-value-1" name="t-subjects-kin[]">
+                                    <label class="form-check-label" for="t-subjects-kin-value-1">
+                                        Chinese (A) HL
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="2"
+                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
+                                    <label class="form-check-label" for="t-subjects-kin-value-2">
+                                        Chinese (A) SL
+
+                                    </label>
+                                </div>
+
+                                <div class="mt-2">
+                                    <label for="t-subjects-kin-value-other">其他：</label>
+                                    <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
+                                        type="text">
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
             </div>
             <!-- <div class="col-2"></div> -->
