@@ -565,8 +565,18 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td><label for="other-cert"> 其他資格 (可填寫ielts/樂器級數等)
+                            </label></td>
+                        <td>
+                            <input id="other-cert" type="text" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="proof1">公開試成績證明 *</label>
+                        </td>
+                        <td>
+                            <input id="proof1" type="file" class="form-control">
+                        </td>
                     </tr>
                 </table>
             </div>
