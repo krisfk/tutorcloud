@@ -41,7 +41,7 @@ get_header();
             <ul class="m-0 p-0 text-start">
                 <li class="step-txt active">1. 條款及細則</li>
                 <li class="step-txt">2. 個人資料</li>
-                <li class="step-txt">3. 聯絡資料</li>
+                <li class="step-txt">3. 學歷資料</li>
                 <li class="step-txt">4. 上載履歷</li>
                 <li class="step-txt">5. 授課資料</li>
                 <li class="step-txt">6. 自我簡介</li>
@@ -193,10 +193,13 @@ get_header();
                     </li>
 
                 </ul>
+
+                <a href="javascript:void(0);" class="agree-terms-btn">同意以上條款</a>
+
+
             </div>
 
 
-            <a href="javascript:void(0);" class="agree-terms-btn">同意以上條款</a>
 
 
 
@@ -270,7 +273,14 @@ get_header();
                     </tr>
 
                 </table>
+
+                <a href="javascript:void(0);" class="agree-terms-btn">同意以上條款</a>
+
             </div>
+
+
+
+
 
 
 
