@@ -791,7 +791,7 @@ get_header();
 
 
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="8"
                                         id="t-subjects-f13-value-8" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-8">
 
@@ -801,7 +801,7 @@ get_header();
                                 </div>
 
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="9"
                                         id="t-subjects-f13-value-9" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-9">
 
@@ -812,7 +812,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="10"
                                         id="t-subjects-f13-value-10" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-10">
 
@@ -822,7 +822,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="11"
                                         id="t-subjects-f13-value-11" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-11">
 
@@ -833,7 +833,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="12"
                                         id="t-subjects-f13-value-12" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-12">
 
@@ -845,7 +845,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="13"
                                         id="t-subjects-f13-value-13" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-13">
 
@@ -856,7 +856,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="14"
                                         id="t-subjects-f13-value-14" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-14">
 
@@ -868,7 +868,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="15"
                                         id="t-subjects-f13-value-15" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-15">
 
@@ -880,7 +880,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="16"
                                         id="t-subjects-f13-value-16" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-16">
 
@@ -892,7 +892,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="17"
                                         id="t-subjects-f13-value-17" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-17">
 
@@ -904,7 +904,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
+                                    <input class="form-check-input" type="checkbox" value="18"
                                         id="t-subjects-f13-value-18" name="t-subjects-f13[]">
                                     <label class="form-check-label" for="t-subjects-f13-value-18">
 
@@ -935,7 +935,7 @@ get_header();
 
 
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="3"
+                                    <input class="form-check-input" type="checkbox" value="1"
                                         id="t-subjects-f46-value-3" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-3">
 
@@ -944,7 +944,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="4"
+                                    <input class="form-check-input" type="checkbox" value="2"
                                         id="t-subjects-f46-value-4" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-4">
 
@@ -954,7 +954,7 @@ get_header();
                                 </div>
 
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="3"
                                         id="t-subjects-f46-value-5" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-5">
 
@@ -963,7 +963,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="4"
                                         id="t-subjects-f46-value-6" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-6">
 
@@ -981,7 +981,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="6"
                                         id="t-subjects-f46-value-8" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-8">
 
@@ -990,7 +990,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="7"
                                         id="t-subjects-f46-value-9" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-9">
 
@@ -999,7 +999,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="8"
                                         id="t-subjects-f46-value-10" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-10">
 
@@ -1008,7 +1008,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="9"
                                         id="t-subjects-f46-value-11" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-11">
 
@@ -1017,7 +1017,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="10"
                                         id="t-subjects-f46-value-12" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-12">
 
@@ -1026,7 +1026,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="11"
                                         id="t-subjects-f46-value-13" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-13">
 
@@ -1035,7 +1035,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="12"
                                         id="t-subjects-f46-value-14" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-14">
 
@@ -1044,7 +1044,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="13"
                                         id="t-subjects-f46-value-15" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-15">
 
@@ -1053,7 +1053,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="14"
                                         id="t-subjects-f46-value-16" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-16">
 
@@ -1062,7 +1062,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="15"
                                         id="t-subjects-f46-value-17" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-17">
 
@@ -1071,7 +1071,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="16"
                                         id="t-subjects-f46-value-18" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-18">
 
@@ -1080,7 +1080,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="17"
                                         id="t-subjects-f46-value-19" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-19">
 
@@ -1089,7 +1089,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="18"
                                         id="t-subjects-f46-value-20" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-20">
 
@@ -1098,7 +1098,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="19"
                                         id="t-subjects-f46-value-21" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-21">
 
@@ -1107,7 +1107,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="20"
                                         id="t-subjects-f46-value-22" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-22">
 
@@ -1116,7 +1116,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="21"
                                         id="t-subjects-f46-value-23" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-23">
 
@@ -1126,7 +1126,7 @@ get_header();
                                 </div>
 
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
+                                    <input class="form-check-input" type="checkbox" value="22"
                                         id="t-subjects-f46-value-24" name="t-subjects-f46[]">
                                     <label class="form-check-label" for="t-subjects-f46-value-24">
 
@@ -1174,35 +1174,35 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="3"
                                         id="t-subjects-gceal-value-3" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-3">
                                         Chinese (B)
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="4"
                                         id="t-subjects-gceal-value-4" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-4">
                                         English (A) HL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="5"
                                         id="t-subjects-gceal-value-5" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-5">
                                         English (A) SL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="6"
                                         id="t-subjects-gceal-value-6" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-6">
                                         English (B)
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="7"
                                         id="t-subjects-gceal-value-7" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-7">
                                         Mathematics HL
@@ -1212,7 +1212,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="8"
                                         id="t-subjects-gceal-value-8" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-8">
                                         Mathematics SL
@@ -1221,56 +1221,56 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="9"
                                         id="t-subjects-gceal-value-9" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-9">
                                         Mathematics Study HL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="10"
                                         id="t-subjects-gceal-value-10" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-10">
                                         Physics HL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="11"
                                         id="t-subjects-gceal-value-11" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-11">
                                         Physics SL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="12"
                                         id="t-subjects-gceal-value-12" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-12">
                                         Chemistry HL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="13"
                                         id="t-subjects-gceal-value-13" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-13">
                                         Chemistry SL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="14"
                                         id="t-subjects-gceal-value-14" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-14">
                                         Biology HL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="15"
                                         id="t-subjects-gceal-value-15" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-15">
                                         Biology SL
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="16"
                                         id="t-subjects-gceal-value-16" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-16">
                                         Economics HL
@@ -1278,7 +1278,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
+                                    <input class="form-check-input" type="checkbox" value="17"
                                         id="t-subjects-gceal-value-17" name="t-subjects-gceal[]">
                                     <label class="form-check-label" for="t-subjects-gceal-value-17">
                                         Economics SL
@@ -1312,167 +1312,167 @@ get_header();
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
+                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
                                         name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <label class="form-check-label" for="t-subjects-ib-value-2">
                                         English Language
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
+                                    <input class="form-check-input" type="checkbox" value="3" id="t-subjects-ib-value-3"
                                         name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <label class="form-check-label" for="t-subjects-ib-value-3">
                                         English Literature
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
+                                    <input class="form-check-input" type="checkbox" value="4" id="t-subjects-ib-value-4"
                                         name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <label class="form-check-label" for="t-subjects-ib-value-4">
                                         Mathematics
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
+                                    <input class="form-check-input" type="checkbox" value="5" id="t-subjects-ib-value-5"
                                         name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <label class="form-check-label" for="t-subjects-ib-value-5">
                                         Further Mathematics
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
+                                    <input class="form-check-input" type="checkbox" value="6" id="t-subjects-ib-value-6"
                                         name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <label class="form-check-label" for="t-subjects-ib-value-6">
                                         Pure Mathematics
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
+                                    <input class="form-check-input" type="checkbox" value="7" id="t-subjects-ib-value-7"
                                         name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <label class="form-check-label" for="t-subjects-ib-value-7">
                                         Physics
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
+                                    <input class="form-check-input" type="checkbox" value="8" id="t-subjects-ib-value-8"
                                         name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <label class="form-check-label" for="t-subjects-ib-value-8">
                                         Chemistry
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
+                                    <input class="form-check-input" type="checkbox" value="9" id="t-subjects-ib-value-9"
                                         name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <label class="form-check-label" for="t-subjects-ib-value-9">
                                         Biology
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="10"
+                                        id="t-subjects-ib-value-10" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-10">
                                         Statistics
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="11"
+                                        id="t-subjects-ib-value-11" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-11">
                                         Geography
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="12"
+                                        id="t-subjects-ib-value-12" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-12">
                                         Psychology
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="13"
+                                        id="t-subjects-ib-value-13" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-13">
                                         Law
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="14"
+                                        id="t-subjects-ib-value-14" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-14">
                                         French
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="15"
+                                        id="t-subjects-ib-value-15" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-15">
                                         Spanish
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="16"
+                                        id="t-subjects-ib-value-16" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-16">
                                         History
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="17"
+                                        id="t-subjects-ib-value-17" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-17">
                                         Politics
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="18"
+                                        id="t-subjects-ib-value-18" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-18">
                                         Economics
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="19"
+                                        id="t-subjects-ib-value-19" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-19">
                                         Accounting
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="20"
+                                        id="t-subjects-ib-value-20" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-20">
                                         Business Studies
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="21"
+                                        id="t-subjects-ib-value-21" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-21">
                                         General Studies
 
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
+                                    <input class="form-check-input" type="checkbox" value="22"
+                                        id="t-subjects-ib-value-22" name="t-subjects-ib[]">
+                                    <label class="form-check-label" for="t-subjects-ib-value-22">
                                         Art
                                     </label>
                                 </div>
