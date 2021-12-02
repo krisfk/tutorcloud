@@ -42,10 +42,10 @@ get_header();
                 <li class="step-txt active">1. 條款及細則</li>
                 <li class="step-txt">2. 個人資料</li>
                 <li class="step-txt">3. 學歷資料</li>
-                <li class="step-txt">4. 上載履歷</li>
+                <!-- <li class="step-txt">4. 上載履歷</li>
                 <li class="step-txt">5. 授課資料</li>
-                <li class="step-txt">6. 自我簡介</li>
-                <li class="step-txt">7. 完成</li>
+                <li class="step-txt">6. 自我簡介</li> -->
+                <li class="step-txt">4. 完成</li>
             </ul>
 
 
@@ -281,6 +281,10 @@ get_header();
 
             </div>
 
+
+            <div class="step-content step-content-3">
+
+            </div>
 
 
 
