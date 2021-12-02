@@ -1789,23 +1789,7 @@ get_header();
                                         id="t-subjects-music-value-1" name="t-subjects-music[]">
                                     <label class="form-check-label" for="t-subjects-music-value-1">
                                         鋼琴
-                                        小提琴
-                                        中提琴
-                                        大提琴
-                                        小號
-                                        長號
-                                        法國號
-                                        色士風
-                                        單簧管
-                                        雙簧管
-                                        長笛
-                                        木笛
-                                        口琴
-                                        牧童笛
-                                        結他
-                                        低音結他
-                                        聲樂
-                                        樂理
+
                                     </label>
                                 </div>
                                 <div>
