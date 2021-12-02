@@ -594,44 +594,52 @@ get_header();
 
 
             </div>
+            <div class="step-content step-content-4">
+
+
+                <table>
+                    <tr>
+                        <td><label for="">自我介紹 (50字或以上) *
+                            </label></td>
+                        <td><input type="text" class="form-control"></td>
+                    </tr>
+                </table>
 
 
 
 
-
+            </div>
+            <!-- <div class="col-2"></div> -->
 
         </div>
-        <!-- <div class="col-2"></div> -->
+
+
+
+
+
+
+
 
     </div>
 
+    <script type="text/javascript">
+    // var $ = jQuery;
+    $(function() {
+
+        $('.terms-a').click(function() {
 
 
+            $(this).toggleClass('active');
+            if ($(this).hasClass('active')) {
+                $(this).next('.terms-content').slideDown(200);
+            } else {
+                $(this).next('.terms-content').slideUp(200);
 
+            }
+        })
 
-
-
-
-</div>
-
-<script type="text/javascript">
-// var $ = jQuery;
-$(function() {
-
-    $('.terms-a').click(function() {
-
-
-        $(this).toggleClass('active');
-        if ($(this).hasClass('active')) {
-            $(this).next('.terms-content').slideDown(200);
-        } else {
-            $(this).next('.terms-content').slideUp(200);
-
-        }
+        $('.agree-terms-btn').click(function() {})
     })
-
-    $('.agree-terms-btn').click(function() {})
-})
-</script>
-<?php
+    </script>
+    <?php
 get_footer();
