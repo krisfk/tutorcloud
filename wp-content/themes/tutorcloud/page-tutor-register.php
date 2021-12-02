@@ -599,14 +599,11 @@ get_header();
 
                 <table>
                     <tr>
-                        <td><label for="">自我介紹 (50字或以上) *
+                        <td><label for="self-intro">自我介紹 (50字或以上) *
                             </label></td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><textarea id="self-intro" class="form-control" rows="4" cols="50"></textarea></td>
                     </tr>
                 </table>
-
-
-
 
             </div>
             <!-- <div class="col-2"></div> -->
