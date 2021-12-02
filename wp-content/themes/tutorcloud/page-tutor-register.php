@@ -606,12 +606,22 @@ get_header();
                     <tr>
                         <td colspan="2"><label for="t-subjects-kin">
                                 <h5> 可教授科目(幼稚園)</h5>
-                            </label></td>
+                            </label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            fds
-                        </td>
                     </tr>
 
                 </table>
