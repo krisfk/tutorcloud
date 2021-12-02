@@ -364,7 +364,7 @@ get_header();
                     </tr>
                 </table>
 
-                <table>
+                <table class="mt-4">
                     <td colspan="5">
                         DSE 成績 / 相關公開試成續
                     </td>
