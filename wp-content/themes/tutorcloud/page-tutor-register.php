@@ -608,6 +608,8 @@ get_header();
 
                 <h5> 可教授科目</h5>
 
+                <h5>HKDSE科目列</h5>
+
                 <table>
                     <tr>
                         <td colspan="2">
