@@ -469,6 +469,10 @@ h2 .bar {
     margin-bottom: 3rem;
 }
 
+.prev-step-btn:hover {
+    color: #fff;
+}
+
 .agree-terms-btn:hover {
     color: #fff;
 }
