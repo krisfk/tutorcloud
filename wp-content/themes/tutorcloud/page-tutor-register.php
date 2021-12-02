@@ -288,17 +288,40 @@ get_header();
                     <tr>
                         <td><label for="">就讀大學 (學士學位課程) *
                             </label></td>
-                        <td></td>
+                        <td> <select id="bac-degree" class="form-select" aria-label="">
+
+                                <option selected>選擇</option>
+                                <option value="香港大學">香港大學</option>
+                                <option value="香港中文大學">香港中文大學</option>
+                                <option value="香港科技大學">香港科技大學</option>
+                                <option value="香港理工大學">香港理工大學</option>
+                                <option value="香港城市大學">香港城市大學</option>
+                                <option value="香港浸會大學">香港浸會大學</option>
+                                <option value="香港都會大學">香港都會大學</option>
+                                <option value="香港恒生大學">香港恒生大學</option>
+                                <option value="嶺南大學">嶺南大學</option>
+
+                            </select></td>
                     </tr>
                     <tr>
                         <td> <label for="">教育程度 *
                             </label></td>
-                        <td></td>
+                        <td><select id="tutor-level" class="form-select" aria-label="">
+                                <option selected>選擇</option>
+                                <option value="大學生">大學生</option>
+                                <option value="學士畢業">學士畢業</option>
+                                <option value="碩士生">碩士生</option>
+                                <option value="碩士畢業">碩士畢業</option>
+                                <option value="博士生">博士生</option>
+                                <option value="博士畢業">博士畢業</option>
+                            </select></td>
                     </tr>
                     <tr>
                         <td><label for="">是否擁有教育文憑 *
                             </label></td>
-                        <td></td>
+                        <td> <label><input type="radio" name="opt-gender">是</label>
+                            <label><input type="radio" name="opt-gender">否</label>
+                        </td>
                     </tr>
                     <tr>
                         <td>
