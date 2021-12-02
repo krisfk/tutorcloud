@@ -579,10 +579,10 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="proof1">學生證/畢業證書 *</label>
+                        <td><label for="proof2">學生證/畢業證書 *</label>
                         </td>
                         <td>
-                            <input id="proof1" type="file" class="form-control">
+                            <input id="proof2" type="file" class="form-control">
                         </td>
                     </tr>
                 </table>
