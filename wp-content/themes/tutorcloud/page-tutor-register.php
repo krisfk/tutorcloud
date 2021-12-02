@@ -608,6 +608,9 @@ get_header();
                             <h5> 可教授科目</h5>
                         </td>
                     </tr>
+                </table>
+
+                <table>
                     <tr>
                         <td colspan="2">
 
