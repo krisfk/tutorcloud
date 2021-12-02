@@ -349,6 +349,13 @@ get_header();
                         </td>
                         <td><input type="text" class="form-control"></td>
                     </tr>
+
+                    <tr>
+                        <td> <label for="">大學副修科目
+                            </label>
+                        </td>
+                        <td><input type="text" class="form-control"></td>
+                    </tr>
                 </table>
             </div>
 
