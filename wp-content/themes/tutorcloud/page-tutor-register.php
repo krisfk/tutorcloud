@@ -941,15 +941,7 @@ get_header();
 
                                 </label>
                             </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-pri-value-5"
-                                    name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-5">
 
-                                    數學
-
-                                </label>
-                            </div>
                             <div>
                                 <input class="form-check-input" type="checkbox" value="5" id="t-subjects-pri-value-5"
                                     name="t-subjects-pri[]">
