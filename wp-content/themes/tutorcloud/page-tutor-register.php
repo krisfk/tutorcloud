@@ -607,20 +607,25 @@ get_header();
                         <td colspan="2"><label for="t-subjects-kin">
                                 <h5> 可教授科目(幼稚園)</h5>
                             </label>
-                            <div class="form-check">
+                            <div>
                                 <input class="form-check-input" type="checkbox" value="1" id="t-subjects-kin-value-1"
                                     name="t-subjects-kin[]">
                                 <label class="form-check-label" for="t-subjects-kin-value-1">
                                     英語
                                 </label>
                             </div>
-                            <div class="form-check">
+                            <div>
                                 <input class="form-check-input" type="checkbox" value="2" id="t-subjects-kin-value-2"
                                     name="t-subjects-kin[]" checked>
                                 <label class="form-check-label" for="t-subjects-kin-value-2">
                                     普通話
                                 </label>
                             </div>
+                            <div>
+                                <label for="t-subjects-kin-value-other">其他：</label>
+                                <input id="t-subjects-kin-value-other" type="text" class="form-control">
+                            </div>
+
                         </td>
                     </tr>
                     <tr>
