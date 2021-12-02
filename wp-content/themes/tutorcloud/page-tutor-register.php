@@ -654,45 +654,45 @@ get_header();
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="3" id="t-subjects-pri-value-2"
+                                <input class="form-check-input" type="checkbox" value="3" id="t-subjects-pri-value-3"
                                     name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-2">
+                                <label class="form-check-label" for="t-subjects-pri-value-3">
 
                                     中文
 
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="4" id="t-subjects-pri-value-2"
+                                <input class="form-check-input" type="checkbox" value="4" id="t-subjects-pri-value-4"
                                     name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-2">
+                                <label class="form-check-label" for="t-subjects-pri-value-4">
 
                                     英文
 
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-pri-value-2"
+                                <input class="form-check-input" type="checkbox" value="5" id="t-subjects-pri-value-5"
                                     name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-2">
+                                <label class="form-check-label" for="t-subjects-pri-value-5">
 
                                     數學
 
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="6" id="t-subjects-pri-value-2"
+                                <input class="form-check-input" type="checkbox" value="6" id="t-subjects-pri-value-6"
                                     name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-2">
+                                <label class="form-check-label" for="t-subjects-pri-value-6">
 
                                     常識
 
                                 </label>
                             </div>
                             <div>
-                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-pri-value-2"
+                                <input class="form-check-input" type="checkbox" value="7" id="t-subjects-pri-value-7"
                                     name="t-subjects-pri[]">
-                                <label class="form-check-label" for="t-subjects-pri-value-2">
+                                <label class="form-check-label" for="t-subjects-pri-value-7">
 
                                     普通話
 
