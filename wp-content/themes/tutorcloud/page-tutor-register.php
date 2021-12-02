@@ -622,7 +622,7 @@ get_header();
                                 </label>
                             </div>
                             <div class="mt-2">
-                                <label for="t-subjects-kin-value-other mb-1">其他：</label>
+                                <label for="t-subjects-kin-value-other mb-2">其他：</label>
                                 <input class="limit-input-w form-control" id="t-subjects-kin-value-other" type="text">
                             </div>
 
