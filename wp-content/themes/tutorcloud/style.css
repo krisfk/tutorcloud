@@ -495,5 +495,6 @@ input[type='radio'] {
 }
 
 .grade-col {
+    text-align: center;
     width: 40px;
 }
