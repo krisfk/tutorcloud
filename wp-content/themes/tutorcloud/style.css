@@ -493,3 +493,7 @@ h2 .bar {
 input[type='radio'] {
     margin: 0 0.5rem 0 0;
 }
+
+.grade-col {
+    width: 20px;
+}

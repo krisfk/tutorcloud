@@ -370,10 +370,10 @@ get_header();
                     </td>
                     <tr>
                         <td></td>
-                        <td>5**</td>
-                        <td>5*</td>
-                        <td>5</td>
-                        <td>4</td>
+                        <td class="grade-col">5**</td>
+                        <td class="grade-col">5*</td>
+                        <td class="grade-col">5</td>
+                        <td class="grade-col">4</td>
                     </tr>
                     <tr>
                         <td><label for="">中文</label></td>
