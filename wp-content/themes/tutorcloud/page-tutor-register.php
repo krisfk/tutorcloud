@@ -621,9 +621,10 @@ get_header();
                                     普通話
                                 </label>
                             </div>
-                            <div>
+                            <div class="mt-2">
                                 <label for="t-subjects-kin-value-other">其他：</label>
-                                <input id="t-subjects-kin-value-other" type="text" class="form-control">
+                                <input class="limit-input-w" id="t-subjects-kin-value-other" type="text"
+                                    class="form-control">
                             </div>
 
                         </td>

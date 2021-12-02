@@ -502,3 +502,7 @@ input[type='radio'] {
 .grade-col input[type='radio'] {
     margin: 0;
 }
+
+.limit-input-w {
+    max-width: 100px;
+}
