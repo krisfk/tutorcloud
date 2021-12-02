@@ -604,8 +604,15 @@ get_header();
                         <td><textarea id="self-intro" class="form-control" rows="4" cols="50"></textarea></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><label for="t-subjects-kin">
-                                <h5> 可教授科目(幼稚園)</h5>
+                        <td colspan="2">
+                            <h5> 可教授科目</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+                            <label for="t-subjects-kin">
+                                <h5> 幼稚園</h5>
                             </label>
                             <div>
                                 <input class="form-check-input" type="checkbox" value="1" id="t-subjects-kin-value-1"
