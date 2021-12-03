@@ -247,9 +247,11 @@ if($_POST)
     //proof1
     //proof2
     $self_intro=$_POST['self-intro'];
-    $t_subjects_kin=$_POST['t-subjects-kin'];
-    print_r($t_subjects_kin);
-    
+    $t_subjects_kin=$_POST['t-subjects-kin']; //array
+    $t_subjects_kin_value_other=$_POST['t-subjects-kin-value-other'];
+    $t_subjects_pri=$_POST['t-subjects-pri'];//array
+    $t_subjects_pri_value_other=$_POST['t-subjects-pri-value-other'];
+    $t_subjects_f13=$_POST['t-subjects-f13'];//array    
     
     
 
@@ -695,7 +697,7 @@ if($_POST)
                                     <div class="mt-2">
                                         <label for="t-subjects-kin-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
-                                            type="text">
+                                            name="t-subjects-kin-value-other" type="text">
                                     </div>
 
                                 </td>
@@ -771,7 +773,7 @@ if($_POST)
                                     <div class="mt-2">
                                         <label for="t-subjects-pri-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-pri-value-other"
-                                            type="text">
+                                            name="t-subjects-pri-value-other" type="text">
                                     </div>
 
                                 </td>
