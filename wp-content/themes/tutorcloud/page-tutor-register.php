@@ -204,7 +204,22 @@ get_header();
 
 if($_POST)
 {
-    echo 11;
+    $email=$_POST['email'];
+    $login_password=$_POST['login_password'];  
+    $chi_name = $_POST['chi-name'];
+    $eng_name = $_POST['eng-name'];
+    $nick_name = $_POST['nick-name'];
+    $whatsapp_tel=$_POST['whatsapp_tel'];
+    $age=$_POST['age'];
+    $gender=$_POST['gender'];
+    $occupation=$_POST['occupation'];
+    $bac_degree=$_POST['bac-degree'];
+    $tutor_level=$_POST['tutor-level'];
+    $diploma = $_POST['diploma'];
+    $tutor_level=$_POST['tutor_level'];
+    
+    
+
 }
 ?>
 
@@ -297,7 +312,7 @@ if($_POST)
 
                     <table>
                         <tr>
-                            <td><label for="">就讀大學 (學士學位課程) *
+                            <td><label for="bac-degree">就讀大學 (學士學位課程) *
                                 </label></td>
                             <td> <select id="bac-degree" name="bac-degree" class="form-select" aria-label="">
 
@@ -315,7 +330,7 @@ if($_POST)
                                 </select></td>
                         </tr>
                         <tr>
-                            <td> <label for="">教育程度 *
+                            <td> <label for="tutor-level">教育程度 *
                                 </label></td>
                             <td><select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
                                     <option selected>選擇</option>
@@ -336,11 +351,11 @@ if($_POST)
                         </tr>
                         <tr>
                             <td>
-                                <label for="">年級 (2021-2022年度) *
+                                <label for="tutor-year">年級 (2021-2022年度) *
                                 </label>
                             </td>
                             <td>
-                                <select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
+                                <select id="tutor-year" name="tutor-year" class="form-select" aria-label="">
                                     <option selected>選擇</option>
                                     <option value="Year 1">Year 1</option>
                                     <option value="Year 2">Year 2</option>
