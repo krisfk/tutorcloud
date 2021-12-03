@@ -248,7 +248,7 @@ if($_POST)
     //proof2
     $self_intro=$_POST['self-intro'];
     $t_subjects_kin=$_POST['t-subjects-kin'];
-    echo $t_subjects_kin;
+    print_r($t_subjects_kin);
     
     
     
