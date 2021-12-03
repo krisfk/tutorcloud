@@ -242,6 +242,16 @@ if($_POST)
     $dse_sub_20 = $_POST['dse-sub-20'];
     $dse_sub_21 = $_POST['dse-sub-21'];
     $dse_sub_22 = $_POST['dse-sub-22'];
+    $exam_lang=$_POST['exam-lang'];
+    $other_cert= $_POST['other-cert'];
+    //proof1
+    //proof2
+    $self_intro=$_POST['self-intro'];
+    $t_subjects_kin=$_POST['t-subjects-kin'];
+    echo $t_subjects_kin;
+    
+    
+    
 
 }
 ?>
