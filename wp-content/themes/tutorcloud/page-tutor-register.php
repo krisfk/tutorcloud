@@ -251,10 +251,29 @@ if($_POST)
     $t_subjects_kin_value_other=$_POST['t-subjects-kin-value-other'];
     $t_subjects_pri=$_POST['t-subjects-pri'];//array
     $t_subjects_pri_value_other=$_POST['t-subjects-pri-value-other'];
-    $t_subjects_f13=$_POST['t-subjects-f13'];//array    
-    
-    
+    $t_subjects_f13=$_POST['t-subjects-f13'];//array  
+    $t_subjects_f13_value_other=$_POST['t-subjects-f13-value-other'];  
+    $t_subjects_f46=$_POST['t-subjects-f46'];//array  
+    $t_subjects_f46_value_other=$_POST['t-subjects-f46-value-other']; 
+    $t_subjects_ib=$_POST['t-subjects-ib'];//array  
+    $t_subjects_ib_value_other=$_POST['t-subjects-ib-value-other'];
 
+    $t_subjects_gceal=$_POST['t-subjects-gceal'];//array  
+    $t_subjects_gceal_value_other=$_POST['t-subjects-gceal-value-other'];
+   
+    $t_subjects_igcse=$_POST['t-subjects-igcse'];//array  
+    $t_subjects_igcse_value_other=$_POST['t-subjects-igcse-value-other'];
+
+    $t_subjects_sat=$_POST['t-subjects-sat'];//array  
+    $t_subjects_sat_value_other=$_POST['t-subjects-sat-value-other'];
+ 
+    $t_subjects_sat=$_POST['t-subjects-sat'];//array  
+    $t_subjects_sat_value_other=$_POST['t-subjects-sat-value-other'];
+ 
+    $t_subjects_music=$_POST['t-subjects-music'];//array  
+    $t_subjects_music_value_other=$_POST['t-subjects-music-value-other'];
+ 
+    
 }
 ?>
 
@@ -981,7 +1000,7 @@ if($_POST)
                                     <div class="mt-2">
                                         <label for="t-subjects-f13-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-f13-value-other"
-                                            type="text">
+                                            name="t-subjects-f13-value-other" type="text">
                                     </div>
 
                                 </td>
@@ -1201,7 +1220,7 @@ if($_POST)
                                     <div class="mt-2">
                                         <label for="t-subjects-f46-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-f46-value-other"
-                                            type="text">
+                                            name="t-subjects-f46-value-other" type="text">
                                     </div>
 
                                 </td>
@@ -1349,7 +1368,7 @@ if($_POST)
                                     <div class="mt-2">
                                         <label for="t-subjects-ib-value-other">Other:</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-ib-value-other"
-                                            type="text">
+                                            name="t-subjects-ib-value-other" type="text">
                                     </div>
 
                                 </td>
@@ -1543,7 +1562,7 @@ if($_POST)
                                     <div class="mt-2">
                                         <label for="t-subjects-gceal-value-other">Other:</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-gceal-value-other"
-                                            type="text">
+                                            name="t-subjects-gceal-value-other" type="text">
                                     </div>
 
                     </div>
@@ -1734,7 +1753,7 @@ if($_POST)
                                     <div class="mt-2">
                                         <label for="t-subjects-igcse-value-other">Other:</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-igcse-value-other"
-                                            type="text">
+                                            name="t-subjects-igcse-value-other" type="text">
                                     </div>
 
                     </div>
@@ -1830,7 +1849,7 @@ if($_POST)
                                     <div class="mt-2">
                                         <label for="t-subjects-sat-value-other">Other:</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-other"
-                                            type="text">
+                                            name="t-subjects-sat-value-other" type="text">
                                     </div>
 
                     </div>
@@ -2010,7 +2029,7 @@ if($_POST)
                                     <div class="mt-2">
                                         <label for="t-subjects-music-value-other">Other:</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-music-value-other"
-                                            type="text">
+                                            name="t-subjects-music-value-other" type="text">
                                     </div>
 
                     </div>
