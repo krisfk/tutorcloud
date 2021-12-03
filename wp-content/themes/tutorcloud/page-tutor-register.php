@@ -220,9 +220,8 @@ if($_POST)
     $u_major =$_POST['u-major'];
     $u_minor =$_POST['u-minor'];
     $s_school = $_POST['s-school'];
-
-    
-    
+    $dse_sub_1 = $_POST['dse-sub-1'];
+    echo $dse_sub_1;
 
 }
 ?>
