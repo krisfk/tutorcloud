@@ -211,7 +211,7 @@ if($_POST)
 
 
 
-            <form action="">
+            <form action="" method="post">
                 <div class="step-content step-content-2">
                     <h5>登入資料</h5>
                     <table class="mt-3">
