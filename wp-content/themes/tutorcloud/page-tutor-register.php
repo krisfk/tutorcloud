@@ -208,19 +208,21 @@ get_header();
                     <table class="mt-3">
                         <tr>
                             <td><label for="email">登入電郵*</label></td>
-                            <td><input id="email" type="text" class="form-control"></td>
+                            <td><input id="email" name="email" type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td><label for="confirm_email">確認登入電郵*</label></td>
-                            <td><input id="confirm_email" type="text" class="form-control"></td>
+                            <td><input id="confirm_email" name="confirm_email" type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td><label for="login_password">登入密碼*</label></td>
-                            <td><input id="login_password" type="password" class="form-control"></td>
+                            <td><input id="login_password" name="login_password" type="password" class="form-control">
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="confirm_login_password">確認登入密碼*</label></td>
-                            <td><input id="confirm_login_password" type="password" class="form-control"></td>
+                            <td><input id="confirm_login_password" name="confirm_login_password" type="password"
+                                    class="form-control"></td>
                         </tr>
 
                         <tr>
@@ -230,36 +232,36 @@ get_header();
                         </tr>
                         <tr>
                             <td><label for="chi-name"> 中文全名 *</label></td>
-                            <td><input id="chi-name" type="text" class="form-control"></td>
+                            <td><input id="chi-name" name="chi-name" type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td><label for="eng-name">英文全名 *</label></td>
-                            <td><input id="eng-name" type="text" class="form-control"></td>
+                            <td><input id="eng-name" name="eng-name" type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td><label for="nick-name">別名</label></td>
-                            <td><input id="nick-name" type="text" class="form-control"></td>
+                            <td><input id="nick-name" name="nick-name" type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td><label for="whatsapp-tel"> WhatsApp 電話號碼 *</label></td>
-                            <td><input id="whatsapp-tel" type="text" class="form-control"></td>
+                            <td><input id="whatsapp-tel" name="whatsapp-tel" type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td><label for="age"> 年齡*</label></td>
-                            <td><input id="age" type="text" class="form-control"></td>
+                            <td><input id="age" name="age" type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td> <label for=""> 性別*</label></td>
                             <td>
-                                <label><input type="radio" name="opt-gender" value="男">男</label>
-                                <label><input type="radio" name="opt-gender" value="女">女</label>
+                                <label><input type="radio" name="gender" value="男">男</label>
+                                <label><input type="radio" name="gender" value="女">女</label>
 
                             </td>
                         </tr>
                         <tr>
                             <td> <label for="occupation"> 職業</label></td>
                             <td>
-                                <select id="occupation" class="form-select" aria-label="">
+                                <select id="occupation" name="occupation" class="form-select" aria-label="">
 
                                     <option selected>選擇</option>
                                     <option value="全職教師">全職教師</option>
@@ -288,7 +290,7 @@ get_header();
                         <tr>
                             <td><label for="">就讀大學 (學士學位課程) *
                                 </label></td>
-                            <td> <select id="bac-degree" class="form-select" aria-label="">
+                            <td> <select id="bac-degree" name="bac-degree" class="form-select" aria-label="">
 
                                     <option selected>選擇</option>
                                     <option value="香港大學">香港大學</option>
@@ -306,7 +308,7 @@ get_header();
                         <tr>
                             <td> <label for="">教育程度 *
                                 </label></td>
-                            <td><select id="tutor-level" class="form-select" aria-label="">
+                            <td><select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
                                     <option selected>選擇</option>
                                     <option value="大學生">大學生</option>
                                     <option value="學士畢業">學士畢業</option>
@@ -319,8 +321,8 @@ get_header();
                         <tr>
                             <td><label for="">是否擁有教育文憑 *
                                 </label></td>
-                            <td> <label><input type="radio" name="opt-diploma">是</label>
-                                <label><input type="radio" name="opt-diploma">否</label>
+                            <td> <label><input type="radio" name="diploma">是</label>
+                                <label><input type="radio" name="diploma">否</label>
                             </td>
                         </tr>
                         <tr>
@@ -329,7 +331,7 @@ get_header();
                                 </label>
                             </td>
                             <td>
-                                <select id="tutor-level" class="form-select" aria-label="">
+                                <select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
                                     <option selected>選擇</option>
                                     <option value="Year 1">Year 1</option>
                                     <option value="Year 2">Year 2</option>
@@ -345,22 +347,22 @@ get_header();
                         <tr>
                             <td>
 
-                                <label for="">大學主修科目 *</label>
+                                <label for="u-major">大學主修科目 *</label>
                             </td>
-                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" id="u-major" name="u-major" class="form-control"></td>
                         </tr>
 
                         <tr>
-                            <td> <label for="">大學副修科目
+                            <td> <label for="u-minor">大學副修科目
                                 </label>
                             </td>
-                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" id="u-minor" name="u-minor" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td> <label for="">曾就讀中學 *
+                            <td> <label for="p-school">曾就讀中學 *
                                 </label>
                             </td>
-                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" id="p-school" name="p-school" class="form-control"></td>
                         </tr>
                     </table>
 
@@ -377,173 +379,173 @@ get_header();
                         </tr>
                         <tr>
                             <td><label for="">中文</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-1"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-1"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-1"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-1"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-1"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-1"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-1"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-1"></td>
                         </tr>
                         <tr>
                             <td><label for="">英文</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-2"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-2"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-2"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-2"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-2"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-2"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-2"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-2"></td>
 
                         </tr>
                         <tr>
                             <td><label for="">數學</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-3"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-3"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-3"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-3"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-3"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-3"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-3"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-3"></td>
                         </tr>
                         <tr>
                             <td><label for="">數學(M1)</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-4"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-4"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-4"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-4"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-4"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-4"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-4"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-4"></td>
 
                         </tr>
                         <tr>
                             <td><label for="">數學(M2)</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-5"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-5"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-5"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-5"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-5"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-5"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-5"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-5"></td>
 
                         </tr>
                         <tr>
                             <td><label for="">通識</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-6"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-6"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-6"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-6"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-6"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-6"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-6"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-6"></td>
                         </tr>
                         <tr>
                             <td><label for="">物理</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-7"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-7"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-7"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-7"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-7"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-7"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-7"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-7"></td>
                         </tr>
                         <tr>
                             <td><label for="">化學</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-8"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-8"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-8"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-8"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-8"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-8"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-8"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-8"></td>
                         </tr>
                         <tr>
                             <td><label for="">生物</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-9"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-9"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-9"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-9"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-9"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-9"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-9"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-9"></td>
                         </tr>
                         <tr>
                             <td><label for="">組合科學：物理 化學
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-10"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-10"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-10"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-10"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-10"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-10"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-10"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-10"></td>
                         </tr>
                         <tr>
                             <td><label for="">組合科學：化學 生物
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-11"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-11"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-11"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-11"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-11"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-11"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-11"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-11"></td>
                         </tr>
                         <tr>
                             <td><label for="">綜合科學
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-12"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-12"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-12"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-12"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-12"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-12"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-12"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-12"></td>
                         </tr>
                         <tr>
                             <td><label for="">資訊及通訊科技
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-13"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-13"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-13"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-13"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-13"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-13"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-13"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-13"></td>
                         </tr>
                         <tr>
                             <td><label for="">地理</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-14"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-14"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-14"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-14"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-14"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-14"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-14"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-14"></td>
                         </tr>
                         <tr>
                             <td><label for="">中史
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-15"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-15"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-15"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-15"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-15"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-15"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-15"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-15"></td>
                         </tr>
                         <tr>
                             <td><label for="">西史
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-16"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-16"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-16"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-16"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-16"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-16"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-16"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-16"></td>
                         </tr>
                         <tr>
                             <td><label for="">中國文學
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-17"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-17"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-17"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-17"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-17"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-17"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-17"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-17"></td>
                         </tr>
                         <tr>
                             <td><label for="">英國文學
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-18"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-18"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-18"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-18"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-18"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-18"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-18"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-18"></td>
                         </tr>
                         <tr>
                             <td><label for="">倫理與宗教
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-19"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-19"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-19"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-19"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-19"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-19"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-19"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-19"></td>
                         </tr>
                         <tr>
                             <td><label for="">經濟
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-20"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-20"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-20"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-20"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-20"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-20"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-20"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-20"></td>
                         </tr>
                         <tr>
                             <td><label for="">企業、會計與財務概論
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-21"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-21"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-21"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-21"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-21"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-21"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-21"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-21"></td>
                         </tr>
                         <tr>
                             <td><label for="">旅遊與款待
 
                                 </label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-22"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-22"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-22"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-22"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-22"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-22"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-22"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-22"></td>
                         </tr>
                     </table>
 
@@ -554,7 +556,7 @@ get_header();
                             <td> <label for="exam-lang"> 應考主要語言 *
                                 </label></td>
                             <td>
-                                <select id="exam-lang" class="form-select" aria-label="">
+                                <select id="exam-lang" name="exam-lang" class="form-select" aria-label="">
 
                                     <option selected>選擇</option>
                                     <option value="中文">中文</option>
@@ -568,21 +570,21 @@ get_header();
                             <td><label for="other-cert"> 其他資格 (可填寫ielts/樂器級數等)
                                 </label></td>
                             <td>
-                                <input id="other-cert" type="text" class="form-control">
+                                <input id="other-cert" name="other-cert" type="text" class="form-control">
                             </td>
                         </tr>
                         <tr>
                             <td><label for="proof1">公開試成績證明 *</label>
                             </td>
                             <td>
-                                <input id="proof1" type="file" class="form-control">
+                                <input id="proof1" name="proof1" type="file" class="form-control">
                             </td>
                         </tr>
                         <tr>
                             <td><label for="proof2">學生證/畢業證書 *</label>
                             </td>
                             <td>
-                                <input id="proof2" type="file" class="form-control">
+                                <input id="proof2" name="proof2" type="file" class="form-control">
                             </td>
                         </tr>
                     </table>
@@ -1983,10 +1985,22 @@ get_header();
 
 
 </div>
+<?php
+
+if($_POST)
+{
+    echo 11;
+}
+?>
 
 <script type="text/javascript">
 // var $ = jQuery;
 $(function() {
+
+    $('.submit-btn').click(function() {
+
+        $('form').submit();
+    })
 
     $('.terms-a').click(function() {
 
