@@ -2028,7 +2028,7 @@ if($_POST)
 
 
                                     <div class="mt-2">
-                                        <label for="t-subjects-music-value-other">Other:</label>
+                                        <label for="t-subjects-music-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-music-value-other"
                                             name="t-subjects-music-value-other" type="text">
                                     </div>
