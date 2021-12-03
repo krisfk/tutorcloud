@@ -273,6 +273,7 @@ if($_POST)
     $t_subjects_music=$_POST['t-subjects-music'];//array  
     $t_subjects_music_value_other=$_POST['t-subjects-music-value-other'];
  
+    echo $t_subjects_music_value_other;
     
 }
 ?>
