@@ -200,6 +200,15 @@ get_header();
             </div>
 
 
+            <?php
+
+if($_POST)
+{
+    echo 11;
+}
+?>
+
+
 
 
             <form action="">
@@ -1985,13 +1994,6 @@ get_header();
 
 
 </div>
-<?php
-
-if($_POST)
-{
-    echo 11;
-}
-?>
 
 <script type="text/javascript">
 // var $ = jQuery;
