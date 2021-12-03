@@ -202,1765 +202,1774 @@ get_header();
 
 
 
+            <form action="">
+                <div class="step-content step-content-2">
+                    <h5>登入資料</h5>
+                    <table class="mt-3">
+                        <tr>
+                            <td><label for="email">登入電郵*</label></td>
+                            <td><input id="email" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="confirm_email">確認登入電郵*</label></td>
+                            <td><input id="confirm_email" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="login_password">登入密碼*</label></td>
+                            <td><input id="login_password" type="password" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="confirm_login_password">確認登入密碼*</label></td>
+                            <td><input id="confirm_login_password" type="password" class="form-control"></td>
+                        </tr>
 
-            <div class="step-content step-content-2">
-                <h5>登入資料</h5>
-                <table class="mt-3">
-                    <tr>
-                        <td><label for="email">登入電郵*</label></td>
-                        <td><input id="email" type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="confirm_email">確認登入電郵*</label></td>
-                        <td><input id="confirm_email" type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="login_password">登入密碼*</label></td>
-                        <td><input id="login_password" type="password" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="confirm_login_password">確認登入密碼*</label></td>
-                        <td><input id="confirm_login_password" type="password" class="form-control"></td>
-                    </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h5 class="mt-4">個人資料</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="chi-name"> 中文全名 *</label></td>
+                            <td><input id="chi-name" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="eng-name">英文全名 *</label></td>
+                            <td><input id="eng-name" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="nick-name">別名</label></td>
+                            <td><input id="nick-name" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="whatsapp-tel"> WhatsApp 電話號碼 *</label></td>
+                            <td><input id="whatsapp-tel" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="age"> 年齡*</label></td>
+                            <td><input id="age" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td> <label for=""> 性別*</label></td>
+                            <td>
+                                <label><input type="radio" name="opt-gender" value="男">男</label>
+                                <label><input type="radio" name="opt-gender" value="女">女</label>
 
-                    <tr>
-                        <td colspan="2">
-                            <h5 class="mt-4">個人資料</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="occupation"> 職業</label></td>
+                            <td>
+                                <select id="occupation" class="form-select" aria-label="">
+
+                                    <option selected>選擇</option>
+                                    <option value="全職教師">全職教師</option>
+                                    <option value="全職教學助理">全職教學助理</option>
+                                    <option value="全職補習老師">全職補習老師</option>
+                                    <option value="退休教師">退休教師</option>
+                                    <option value="其他在職人仕">其他在職人仕</option>
+
+                                </select>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <a href="javascript:void(0);" class="prev-step-btn me-3">下一步</a>
+
+
+                    <a href="javascript:void(0);" class="next-step-btn">下一步</a>
+
+                </div>
+
+
+                <div class="step-content step-content-3">
+
+                    <table>
+                        <tr>
+                            <td><label for="">就讀大學 (學士學位課程) *
+                                </label></td>
+                            <td> <select id="bac-degree" class="form-select" aria-label="">
+
+                                    <option selected>選擇</option>
+                                    <option value="香港大學">香港大學</option>
+                                    <option value="香港中文大學">香港中文大學</option>
+                                    <option value="香港科技大學">香港科技大學</option>
+                                    <option value="香港理工大學">香港理工大學</option>
+                                    <option value="香港城市大學">香港城市大學</option>
+                                    <option value="香港浸會大學">香港浸會大學</option>
+                                    <option value="香港都會大學">香港都會大學</option>
+                                    <option value="香港恒生大學">香港恒生大學</option>
+                                    <option value="嶺南大學">嶺南大學</option>
+
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="">教育程度 *
+                                </label></td>
+                            <td><select id="tutor-level" class="form-select" aria-label="">
+                                    <option selected>選擇</option>
+                                    <option value="大學生">大學生</option>
+                                    <option value="學士畢業">學士畢業</option>
+                                    <option value="碩士生">碩士生</option>
+                                    <option value="碩士畢業">碩士畢業</option>
+                                    <option value="博士生">博士生</option>
+                                    <option value="博士畢業">博士畢業</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">是否擁有教育文憑 *
+                                </label></td>
+                            <td> <label><input type="radio" name="opt-diploma">是</label>
+                                <label><input type="radio" name="opt-diploma">否</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="">年級 (2021-2022年度) *
+                                </label>
+                            </td>
+                            <td>
+                                <select id="tutor-level" class="form-select" aria-label="">
+                                    <option selected>選擇</option>
+                                    <option value="Year 1">Year 1</option>
+                                    <option value="Year 2">Year 2</option>
+                                    <option value="Year 3">Year 3</option>
+                                    <option value="Year 4">Year 4</option>
+                                    <option value="Year 5">Year 5</option>
+                                    <option value="Year 6">Year 6</option>
+                                    <option value="已畢業">已畢業</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <label for="">大學主修科目 *</label>
+                            </td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="">大學副修科目
+                                </label>
+                            </td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="">曾就讀中學 *
+                                </label>
+                            </td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                    </table>
+
+                    <table class="mt-4">
+                        <td colspan="5">
+                            DSE 成績 / 相關公開試成續
                         </td>
-                    </tr>
-                    <tr>
-                        <td><label for="chi-name"> 中文全名 *</label></td>
-                        <td><input id="chi-name" type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="eng-name">英文全名 *</label></td>
-                        <td><input id="eng-name" type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="nick-name">別名</label></td>
-                        <td><input id="nick-name" type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="whatsapp-tel"> WhatsApp 電話號碼 *</label></td>
-                        <td><input id="whatsapp-tel" type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="age"> 年齡*</label></td>
-                        <td><input id="age" type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td> <label for=""> 性別*</label></td>
-                        <td>
-                            <label><input type="radio" name="opt-gender" value="男">男</label>
-                            <label><input type="radio" name="opt-gender" value="女">女</label>
+                        <tr>
+                            <td></td>
+                            <td class="grade-col">5**</td>
+                            <td class="grade-col">5*</td>
+                            <td class="grade-col">5</td>
+                            <td class="grade-col">4</td>
+                        </tr>
+                        <tr>
+                            <td><label for="">中文</label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-1"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-1"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-1"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-1"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">英文</label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-2"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-2"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-2"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-2"></td>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <label for="occupation"> 職業</label></td>
-                        <td>
-                            <select id="occupation" class="form-select" aria-label="">
+                        </tr>
+                        <tr>
+                            <td><label for="">數學</label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-3"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-3"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-3"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-3"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">數學(M1)</label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-4"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-4"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-4"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-4"></td>
 
-                                <option selected>選擇</option>
-                                <option value="全職教師">全職教師</option>
-                                <option value="全職教學助理">全職教學助理</option>
-                                <option value="全職補習老師">全職補習老師</option>
-                                <option value="退休教師">退休教師</option>
-                                <option value="其他在職人仕">其他在職人仕</option>
+                        </tr>
+                        <tr>
+                            <td><label for="">數學(M2)</label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-5"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-5"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-5"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-5"></td>
 
-                            </select>
-                        </td>
-                    </tr>
+                        </tr>
+                        <tr>
+                            <td><label for="">通識</label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-6"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-6"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-6"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-6"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">物理</label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-7"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-7"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-7"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-7"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">化學</label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-8"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-8"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-8"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-8"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">生物</label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-9"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-9"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-9"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-9"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">組合科學：物理 化學
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-10"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-10"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-10"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-10"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">組合科學：化學 生物
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-11"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-11"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-11"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-11"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">綜合科學
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-12"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-12"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-12"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-12"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">資訊及通訊科技
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-13"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-13"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-13"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-13"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">地理</label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-14"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-14"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-14"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-14"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">中史
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-15"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-15"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-15"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-15"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">西史
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-16"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-16"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-16"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-16"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">中國文學
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-17"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-17"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-17"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-17"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">英國文學
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-18"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-18"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-18"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-18"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">倫理與宗教
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-19"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-19"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-19"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-19"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">經濟
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-20"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-20"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-20"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-20"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">企業、會計與財務概論
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-21"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-21"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-21"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-21"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">旅遊與款待
 
-                </table>
+                                </label></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="opt-sub-22"></td>
+                            <td class="grade-col"><input type="radio" value="5*" name="opt-sub-22"></td>
+                            <td class="grade-col"><input type="radio" value="5" name="opt-sub-22"></td>
+                            <td class="grade-col"><input type="radio" value="4" name="opt-sub-22"></td>
+                        </tr>
+                    </table>
 
-                <a href="javascript:void(0);" class="prev-step-btn me-3">下一步</a>
+
+                    <table class="mt-4">
+
+                        <tr>
+                            <td> <label for="exam-lang"> 應考主要語言 *
+                                </label></td>
+                            <td>
+                                <select id="exam-lang" class="form-select" aria-label="">
+
+                                    <option selected>選擇</option>
+                                    <option value="中文">中文</option>
+                                    <option value="英文">英文</option>
 
 
-                <a href="javascript:void(0);" class="next-step-btn">下一步</a>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="other-cert"> 其他資格 (可填寫ielts/樂器級數等)
+                                </label></td>
+                            <td>
+                                <input id="other-cert" type="text" class="form-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="proof1">公開試成績證明 *</label>
+                            </td>
+                            <td>
+                                <input id="proof1" type="file" class="form-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="proof2">學生證/畢業證書 *</label>
+                            </td>
+                            <td>
+                                <input id="proof2" type="file" class="form-control">
+                            </td>
+                        </tr>
+                    </table>
 
-            </div>
+                    <a href="javascript:void(0);" class="prev-step-btn me-3">下一步</a>
 
 
-            <div class="step-content step-content-3">
+                    <a href="javascript:void(0);" class="next-step-btn">下一步</a>
 
-                <table>
-                    <tr>
-                        <td><label for="">就讀大學 (學士學位課程) *
-                            </label></td>
-                        <td> <select id="bac-degree" class="form-select" aria-label="">
 
-                                <option selected>選擇</option>
-                                <option value="香港大學">香港大學</option>
-                                <option value="香港中文大學">香港中文大學</option>
-                                <option value="香港科技大學">香港科技大學</option>
-                                <option value="香港理工大學">香港理工大學</option>
-                                <option value="香港城市大學">香港城市大學</option>
-                                <option value="香港浸會大學">香港浸會大學</option>
-                                <option value="香港都會大學">香港都會大學</option>
-                                <option value="香港恒生大學">香港恒生大學</option>
-                                <option value="嶺南大學">嶺南大學</option>
+                </div>
+                <div class="step-content step-content-4">
 
-                            </select></td>
-                    </tr>
-                    <tr>
-                        <td> <label for="">教育程度 *
-                            </label></td>
-                        <td><select id="tutor-level" class="form-select" aria-label="">
-                                <option selected>選擇</option>
-                                <option value="大學生">大學生</option>
-                                <option value="學士畢業">學士畢業</option>
-                                <option value="碩士生">碩士生</option>
-                                <option value="碩士畢業">碩士畢業</option>
-                                <option value="博士生">博士生</option>
-                                <option value="博士畢業">博士畢業</option>
-                            </select></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">是否擁有教育文憑 *
-                            </label></td>
-                        <td> <label><input type="radio" name="opt-diploma">是</label>
-                            <label><input type="radio" name="opt-diploma">否</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="">年級 (2021-2022年度) *
-                            </label>
-                        </td>
-                        <td>
-                            <select id="tutor-level" class="form-select" aria-label="">
-                                <option selected>選擇</option>
-                                <option value="Year 1">Year 1</option>
-                                <option value="Year 2">Year 2</option>
-                                <option value="Year 3">Year 3</option>
-                                <option value="Year 4">Year 4</option>
-                                <option value="Year 5">Year 5</option>
-                                <option value="Year 6">Year 6</option>
-                                <option value="已畢業">已畢業</option>
 
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+                    <table>
+                        <tr>
+                            <td><label for="self-intro">自我介紹 (50字或以上) *
+                                </label></td>
+                            <td><textarea id="self-intro" class="form-control" rows="4" cols="50"></textarea></td>
+                        </tr>
 
-                            <label for="">大學主修科目 *</label>
-                        </td>
-                        <td><input type="text" class="form-control"></td>
-                    </tr>
+                    </table>
 
-                    <tr>
-                        <td> <label for="">大學副修科目
-                            </label>
-                        </td>
-                        <td><input type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td> <label for="">曾就讀中學 *
-                            </label>
-                        </td>
-                        <td><input type="text" class="form-control"></td>
-                    </tr>
-                </table>
+                    <h5> 可教授科目</h5>
 
-                <table class="mt-4">
-                    <td colspan="5">
-                        DSE 成績 / 相關公開試成續
+                    <h5>HKDSE科目列</h5>
+
+                    <div class="subject-list subject-list-hkdse">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+
+                                    <label for="t-subjects-kin">
+                                        <h5> 幼稚園</h5>
+                                    </label>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="1"
+                                            id="t-subjects-kin-value-1" name="t-subjects-kin[]">
+                                        <label class="form-check-label" for="t-subjects-kin-value-1">
+                                            英語
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="2"
+                                            id="t-subjects-kin-value-2" name="t-subjects-kin[]">
+                                        <label class="form-check-label" for="t-subjects-kin-value-2">
+                                            普通話
+                                        </label>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <label for="t-subjects-kin-value-other">其他：</label>
+                                        <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
+                                            type="text">
+                                    </div>
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td colspan="2"><label for="t-subjects-pri">
+                                        <h5>小學</h5>
+                                    </label>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="1"
+                                            id="t-subjects-pri-value-1" name="t-subjects-pri[]">
+                                        <label class="form-check-label" for="t-subjects-pri-value-1">
+                                            全科
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="2"
+                                            id="t-subjects-pri-value-2" name="t-subjects-pri[]">
+                                        <label class="form-check-label" for="t-subjects-pri-value-2">
+
+                                            功課輔導
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="3"
+                                            id="t-subjects-pri-value-3" name="t-subjects-pri[]">
+                                        <label class="form-check-label" for="t-subjects-pri-value-3">
+
+                                            中文
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="4"
+                                            id="t-subjects-pri-value-4" name="t-subjects-pri[]">
+                                        <label class="form-check-label" for="t-subjects-pri-value-4">
+
+                                            英文
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="5"
+                                            id="t-subjects-pri-value-5" name="t-subjects-pri[]">
+                                        <label class="form-check-label" for="t-subjects-pri-value-5">
+
+                                            數學
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="6"
+                                            id="t-subjects-pri-value-6" name="t-subjects-pri[]">
+                                        <label class="form-check-label" for="t-subjects-pri-value-6">
+
+                                            常識
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="7"
+                                            id="t-subjects-pri-value-7" name="t-subjects-pri[]">
+                                        <label class="form-check-label" for="t-subjects-pri-value-7">
+
+                                            普通話
+
+                                        </label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="t-subjects-pri-value-other">其他：</label>
+                                        <input class="limit-input-w form-control mt-2" id="t-subjects-pri-value-other"
+                                            type="text">
+                                    </div>
+
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <td colspan="2"><label for="t-subjects-f13">
+                                        <h5>中學(中一至中三)</h5>
+                                    </label>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="1"
+                                            id="t-subjects-f13-value-1" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-1">
+                                            全科
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="2"
+                                            id="t-subjects-f13-value-2" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-2">
+
+                                            功課輔導
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="3"
+                                            id="t-subjects-f13-value-3" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-3">
+
+                                            中文
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="4"
+                                            id="t-subjects-f13-value-4" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-4">
+
+                                            英文
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="5"
+                                            id="t-subjects-f13-value-5" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-5">
+
+                                            數學
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="6"
+                                            id="t-subjects-f13-value-6" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-6">
+
+                                            通識
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="7"
+                                            id="t-subjects-f13-value-7" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-7">
+
+                                            物理
+
+                                        </label>
+                                    </div>
+
+
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="8"
+                                            id="t-subjects-f13-value-8" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-8">
+
+                                            化學
+
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="9"
+                                            id="t-subjects-f13-value-9" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-9">
+
+                                            生物
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="10"
+                                            id="t-subjects-f13-value-10" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-10">
+
+                                            綜合科學
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="11"
+                                            id="t-subjects-f13-value-11" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-11">
+
+                                            資訊及通訊科技
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="12"
+                                            id="t-subjects-f13-value-12" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-12">
+
+
+                                            地理
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="13"
+                                            id="t-subjects-f13-value-13" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-13">
+
+                                            中史
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="14"
+                                            id="t-subjects-f13-value-14" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-14">
+
+
+                                            西史
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="15"
+                                            id="t-subjects-f13-value-15" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-15">
+
+
+                                            英國文學
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="16"
+                                            id="t-subjects-f13-value-16" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-16">
+
+
+                                            經濟
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="17"
+                                            id="t-subjects-f13-value-17" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-17">
+
+
+                                            企業、會計與財務概論
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="18"
+                                            id="t-subjects-f13-value-18" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-18">
+
+
+                                            普通話
+
+
+
+                                        </label>
+                                    </div>
+
+
+                                    <div class="mt-2">
+                                        <label for="t-subjects-f13-value-other">其他：</label>
+                                        <input class="limit-input-w form-control mt-2" id="t-subjects-f13-value-other"
+                                            type="text">
+                                    </div>
+
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td colspan="2"><label for="t-subjects-f46">
+                                        <h5>中學(中四至中六)</h5>
+                                    </label>
+
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="1"
+                                            id="t-subjects-f46-value-3" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-3">
+
+                                            中文
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="2"
+                                            id="t-subjects-f46-value-4" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-4">
+
+                                            英文
+
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="3"
+                                            id="t-subjects-f46-value-5" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-5">
+
+                                            數學
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="4"
+                                            id="t-subjects-f46-value-6" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-6">
+
+                                            數學(M1)
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="5"
+                                            id="t-subjects-f46-value-7" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-7">
+
+                                            數學(M2)
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="6"
+                                            id="t-subjects-f46-value-8" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-8">
+
+                                            通識
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="7"
+                                            id="t-subjects-f46-value-9" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-9">
+
+                                            物理
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="8"
+                                            id="t-subjects-f46-value-10" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-10">
+
+                                            化學
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="9"
+                                            id="t-subjects-f46-value-11" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-11">
+
+                                            生物
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="10"
+                                            id="t-subjects-f46-value-12" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-12">
+
+                                            組合科學：物理 化學
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="11"
+                                            id="t-subjects-f46-value-13" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-13">
+
+                                            組合科學：化學 生物
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="12"
+                                            id="t-subjects-f46-value-14" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-14">
+
+                                            綜合科學
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="13"
+                                            id="t-subjects-f46-value-15" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-15">
+
+                                            資訊及通訊科技
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="14"
+                                            id="t-subjects-f46-value-16" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-16">
+
+                                            地理
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="15"
+                                            id="t-subjects-f46-value-17" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-17">
+
+                                            中史
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="16"
+                                            id="t-subjects-f46-value-18" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-18">
+
+                                            西史
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="17"
+                                            id="t-subjects-f46-value-19" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-19">
+
+                                            中國文學
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="18"
+                                            id="t-subjects-f46-value-20" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-20">
+
+                                            英國文學
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="19"
+                                            id="t-subjects-f46-value-21" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-21">
+
+                                            經濟
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="20"
+                                            id="t-subjects-f46-value-22" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-22">
+
+                                            企業、會計與財務概論
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="21"
+                                            id="t-subjects-f46-value-23" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-23">
+
+                                            旅遊與款待
+
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="22"
+                                            id="t-subjects-f46-value-24" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-24">
+
+                                            倫理與宗教
+
+                                        </label>
+                                    </div>
+
+
+
+                                    <div class="mt-2">
+                                        <label for="t-subjects-f46-value-other">其他：</label>
+                                        <input class="limit-input-w form-control mt-2" id="t-subjects-f46-value-other"
+                                            type="text">
+                                    </div>
+
+                                </td>
+                            </tr>
+
+
+                        </table>
+                    </div>
+
+                    <h5>IB科目列</h5>
+
+                    <div class="subject-list subject-list-ib">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="1"
+                                            id="t-subjects-ib-value-1" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-1">
+                                            Chinese (A) HL
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="2"
+                                            id="t-subjects-ib-value-2" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-2">
+                                            Chinese (A) SL
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="3"
+                                            id="t-subjects-ib-value-3" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-3">
+                                            Chinese (B)
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="4"
+                                            id="t-subjects-ib-value-4" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-4">
+                                            English (A) HL
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="5"
+                                            id="t-subjects-ib-value-5" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-5">
+                                            English (A) SL
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="6"
+                                            id="t-subjects-ib-value-6" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-6">
+                                            English (B)
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="7"
+                                            id="t-subjects-ib-value-7" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-7">
+                                            Mathematics HL
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="8"
+                                            id="t-subjects-ib-value-8" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-8">
+                                            Mathematics SL
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="9"
+                                            id="t-subjects-ib-value-9" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-9">
+                                            Mathematics Study HL
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="10"
+                                            id="t-subjects-ib-value-10" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-10">
+                                            Physics HL
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="11"
+                                            id="t-subjects-ib-value-11" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-11">
+                                            Physics SL
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="12"
+                                            id="t-subjects-ib-value-12" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-12">
+                                            Chemistry HL
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="13"
+                                            id="t-subjects-ib-value-13" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-13">
+                                            Chemistry SL
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="14"
+                                            id="t-subjects-ib-value-14" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-14">
+                                            Biology HL
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="15"
+                                            id="t-subjects-ib-value-15" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-15">
+                                            Biology SL
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="16"
+                                            id="t-subjects-ib-value-16" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-16">
+                                            Economics HL
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="17"
+                                            id="t-subjects-ib-value-17" name="t-subjects-ib[]">
+                                        <label class="form-check-label" for="t-subjects-ib-value-17">
+                                            Economics SL
+                                        </label>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <label for="t-subjects-ib-value-other">Other:</label>
+                                        <input class="limit-input-w form-control mt-2" id="t-subjects-ib-value-other"
+                                            type="text">
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <h5>GCE AL科目列</h5>
+
+                    <div class="subject-list subject-list-gceal">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="1"
+                                            id="t-subjects-gceal-value-1" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-1">
+                                            Chinese Language
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="2"
+                                            id="t-subjects-gceal-value-2" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-2">
+                                            English Language
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="3"
+                                            id="t-subjects-gceal-value-3" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-3">
+                                            English Literature
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="4"
+                                            id="t-subjects-gceal-value-4" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-4">
+                                            Mathematics
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="5"
+                                            id="t-subjects-gceal-value-5" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-5">
+                                            Further Mathematics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="6"
+                                            id="t-subjects-gceal-value-6" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-6">
+                                            Pure Mathematics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="7"
+                                            id="t-subjects-gceal-value-7" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-7">
+                                            Physics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="8"
+                                            id="t-subjects-gceal-value-8" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-8">
+                                            Chemistry
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="9"
+                                            id="t-subjects-gceal-value-9" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-9">
+                                            Biology
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="10"
+                                            id="t-subjects-gceal-value-10" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-10">
+                                            Statistics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="11"
+                                            id="t-subjects-gceal-value-11" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-11">
+                                            Geography
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="12"
+                                            id="t-subjects-gceal-value-12" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-12">
+                                            Psychology
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="13"
+                                            id="t-subjects-gceal-value-13" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-13">
+                                            Law
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="14"
+                                            id="t-subjects-gceal-value-14" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-14">
+                                            French
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="15"
+                                            id="t-subjects-gceal-value-15" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-15">
+                                            Spanish
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="16"
+                                            id="t-subjects-gceal-value-16" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-16">
+                                            History
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="17"
+                                            id="t-subjects-gceal-value-17" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-17">
+                                            Politics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="18"
+                                            id="t-subjects-gceal-value-18" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-18">
+                                            Economics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="19"
+                                            id="t-subjects-gceal-value-19" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-19">
+                                            Accounting
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="20"
+                                            id="t-subjects-gceal-value-20" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-20">
+                                            Business Studies
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="21"
+                                            id="t-subjects-gceal-value-21" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-21">
+                                            General Studies
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="22"
+                                            id="t-subjects-gceal-value-22" name="t-subjects-gceal[]">
+                                        <label class="form-check-label" for="t-subjects-gceal-value-22">
+                                            Art
+                                        </label>
+                                    </div>
+
+
+
+                                    <div class="mt-2">
+                                        <label for="t-subjects-gceal-value-other">Other:</label>
+                                        <input class="limit-input-w form-control mt-2" id="t-subjects-gceal-value-other"
+                                            type="text">
+                                    </div>
+
+                    </div>
+
+                    <h5>IGCSE科目列</h5>
+
+                    <div class="subject-list subject-list-igcse">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="1"
+                                            id="t-subjects-igcse-value-1" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-1">
+                                            Chinese Language
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="2"
+                                            id="t-subjects-igcse-value-2" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-2">
+                                            English Language
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="3"
+                                            id="t-subjects-igcse-value-3" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-3">
+                                            English Literature
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="4"
+                                            id="t-subjects-igcse-value-4" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-4">
+                                            Mathematics
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="5"
+                                            id="t-subjects-igcse-value-5" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-5">
+                                            Further Mathematics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="6"
+                                            id="t-subjects-igcse-value-6" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-6">
+                                            Pure Mathematics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="7"
+                                            id="t-subjects-igcse-value-7" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-7">
+                                            Physics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="8"
+                                            id="t-subjects-igcse-value-8" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-8">
+                                            Chemistry
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="9"
+                                            id="t-subjects-igcse-value-9" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-9">
+                                            Biology
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="10"
+                                            id="t-subjects-igcse-value-10" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-10">
+                                            Statistics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="11"
+                                            id="t-subjects-igcse-value-11" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-11">
+                                            Geography
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="12"
+                                            id="t-subjects-igcse-value-12" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-12">
+                                            Psychology
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="13"
+                                            id="t-subjects-igcse-value-13" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-13">
+                                            Law
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="14"
+                                            id="t-subjects-igcse-value-14" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-14">
+                                            French
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="15"
+                                            id="t-subjects-igcse-value-15" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-15">
+                                            Spanish
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="16"
+                                            id="t-subjects-igcse-value-16" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-16">
+                                            History
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="17"
+                                            id="t-subjects-igcse-value-17" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-17">
+                                            Politics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="18"
+                                            id="t-subjects-igcse-value-18" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-18">
+                                            Economics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="19"
+                                            id="t-subjects-igcse-value-19" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-19">
+                                            Accounting
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="20"
+                                            id="t-subjects-igcse-value-20" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-20">
+                                            Business Studies
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="21"
+                                            id="t-subjects-igcse-value-21" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-21">
+                                            General Studies
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="22"
+                                            id="t-subjects-igcse-value-22" name="t-subjects-igcse[]">
+                                        <label class="form-check-label" for="t-subjects-igcse-value-22">
+                                            Art
+                                        </label>
+                                    </div>
+
+
+
+                                    <div class="mt-2">
+                                        <label for="t-subjects-igcse-value-other">Other:</label>
+                                        <input class="limit-input-w form-control mt-2" id="t-subjects-igcse-value-other"
+                                            type="text">
+                                    </div>
+
+                    </div>
+
+
+
+                    <h5>SAT科目列</h5>
+
+                    <div class="subject-list subject-list-sat">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="1"
+                                            id="t-subjects-sat-value-1" name="t-subjects-sat[]">
+                                        <label class="form-check-label" for="t-subjects-sat-value-1">
+                                            Biology E
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="2"
+                                            id="t-subjects-sat-value-2" name="t-subjects-sat[]">
+                                        <label class="form-check-label" for="t-subjects-sat-value-2">
+
+                                            Biology M
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="3"
+                                            id="t-subjects-sat-value-3" name="t-subjects-sat[]">
+                                        <label class="form-check-label" for="t-subjects-sat-value-3">
+                                            Chemistry
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="4"
+                                            id="t-subjects-sat-value-4" name="t-subjects-sat[]">
+                                        <label class="form-check-label" for="t-subjects-sat-value-4">
+                                            Physics
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="5"
+                                            id="t-subjects-sat-value-5" name="t-subjects-sat[]">
+                                        <label class="form-check-label" for="t-subjects-sat-value-5">
+                                            U.S. History
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="6"
+                                            id="t-subjects-sat-value-6" name="t-subjects-sat[]">
+                                        <label class="form-check-label" for="t-subjects-sat-value-6">
+                                            World History
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="7"
+                                            id="t-subjects-sat-value-7" name="t-subjects-sat[]">
+                                        <label class="form-check-label" for="t-subjects-sat-value-7">
+                                            Literature
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="8"
+                                            id="t-subjects-sat-value-8" name="t-subjects-sat[]">
+                                        <label class="form-check-label" for="t-subjects-sat-value-8">
+                                            Maths Level 1
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="9"
+                                            id="t-subjects-sat-value-9" name="t-subjects-sat[]">
+                                        <label class="form-check-label" for="t-subjects-sat-value-9">
+                                            Maths Level 2
+
+                                        </label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="t-subjects-sat-value-flang">Foreign Languages:</label>
+                                        <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-flang"
+                                            type="text">
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <label for="t-subjects-sat-value-other">Other:</label>
+                                        <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-other"
+                                            type="text">
+                                    </div>
+
+                    </div>
+
+
+
+                    <h5>音樂科目列</h5>
+
+                    <div class="subject-list subject-list-music">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="1"
+                                            id="t-subjects-music-value-1" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-1">
+                                            鋼琴
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="2"
+                                            id="t-subjects-music-value-2" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-2">
+                                            小提琴
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="3"
+                                            id="t-subjects-music-value-3" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-3">
+                                            中提琴
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="4"
+                                            id="t-subjects-music-value-4" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-4">
+                                            大提琴
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="5"
+                                            id="t-subjects-music-value-5" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-5">
+                                            小號
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="6"
+                                            id="t-subjects-music-value-6" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-6">
+                                            長號
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="7"
+                                            id="t-subjects-music-value-7" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-7">
+                                            法國號
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="8"
+                                            id="t-subjects-music-value-8" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-8">
+                                            色士風
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="9"
+                                            id="t-subjects-music-value-9" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-9">
+                                            單簧管
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="10"
+                                            id="t-subjects-music-value-10" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-10">
+                                            雙簧管
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="11"
+                                            id="t-subjects-music-value-11" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-11">
+                                            長笛
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="12"
+                                            id="t-subjects-music-value-12" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-12">
+                                            木笛
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="13"
+                                            id="t-subjects-music-value-13" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-13">
+                                            口琴
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="14"
+                                            id="t-subjects-music-value-14" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-14">
+                                            牧童笛
+
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="15"
+                                            id="t-subjects-music-value-15" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-15">
+                                            結他
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="16"
+                                            id="t-subjects-music-value-16" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-16">
+                                            低音結他
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="17"
+                                            id="t-subjects-music-value-17" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-17">
+                                            聲樂
+
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="18"
+                                            id="t-subjects-music-value-18" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-18">
+                                            樂理
+
+
+                                        </label>
+                                    </div>
+
+
+                                    <div class="mt-2">
+                                        <label for="t-subjects-music-value-other">Other:</label>
+                                        <input class="limit-input-w form-control mt-2" id="t-subjects-music-value-other"
+                                            type="text">
+                                    </div>
+
+                    </div>
+
+
+
+
                     </td>
-                    <tr>
-                        <td></td>
-                        <td class="grade-col">5**</td>
-                        <td class="grade-col">5*</td>
-                        <td class="grade-col">5</td>
-                        <td class="grade-col">4</td>
                     </tr>
-                    <tr>
-                        <td><label for="">中文</label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-1"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-1"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-1"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-1"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">英文</label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-2"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-2"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-2"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-2"></td>
-
-                    </tr>
-                    <tr>
-                        <td><label for="">數學</label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-3"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-3"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-3"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-3"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">數學(M1)</label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-4"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-4"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-4"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-4"></td>
-
-                    </tr>
-                    <tr>
-                        <td><label for="">數學(M2)</label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-5"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-5"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-5"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-5"></td>
-
-                    </tr>
-                    <tr>
-                        <td><label for="">通識</label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-6"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-6"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-6"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-6"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">物理</label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-7"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-7"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-7"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-7"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">化學</label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-8"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-8"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-8"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-8"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">生物</label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-9"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-9"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-9"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-9"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">組合科學：物理 化學
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-10"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-10"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-10"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-10"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">組合科學：化學 生物
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-11"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-11"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-11"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-11"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">綜合科學
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-12"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-12"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-12"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-12"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">資訊及通訊科技
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-13"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-13"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-13"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-13"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">地理</label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-14"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-14"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-14"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-14"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">中史
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-15"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-15"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-15"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-15"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">西史
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-16"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-16"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-16"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-16"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">中國文學
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-17"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-17"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-17"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-17"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">英國文學
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-18"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-18"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-18"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-18"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">倫理與宗教
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-19"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-19"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-19"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-19"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">經濟
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-20"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-20"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-20"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-20"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">企業、會計與財務概論
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-21"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-21"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-21"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-21"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">旅遊與款待
-
-                            </label></td>
-                        <td class="grade-col"><input type="radio" value="5**" name="opt-sub-22"></td>
-                        <td class="grade-col"><input type="radio" value="5*" name="opt-sub-22"></td>
-                        <td class="grade-col"><input type="radio" value="5" name="opt-sub-22"></td>
-                        <td class="grade-col"><input type="radio" value="4" name="opt-sub-22"></td>
-                    </tr>
-                </table>
-
-
-                <table class="mt-4">
-
-                    <tr>
-                        <td> <label for="exam-lang"> 應考主要語言 *
-                            </label></td>
-                        <td>
-                            <select id="exam-lang" class="form-select" aria-label="">
-
-                                <option selected>選擇</option>
-                                <option value="中文">中文</option>
-                                <option value="英文">英文</option>
-
-
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="other-cert"> 其他資格 (可填寫ielts/樂器級數等)
-                            </label></td>
-                        <td>
-                            <input id="other-cert" type="text" class="form-control">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="proof1">公開試成績證明 *</label>
-                        </td>
-                        <td>
-                            <input id="proof1" type="file" class="form-control">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="proof2">學生證/畢業證書 *</label>
-                        </td>
-                        <td>
-                            <input id="proof2" type="file" class="form-control">
-                        </td>
-                    </tr>
-                </table>
-
-                <a href="javascript:void(0);" class="prev-step-btn me-3">下一步</a>
-
-
-                <a href="javascript:void(0);" class="next-step-btn">下一步</a>
-
-
-            </div>
-            <div class="step-content step-content-4">
-
-
-                <table>
-                    <tr>
-                        <td><label for="self-intro">自我介紹 (50字或以上) *
-                            </label></td>
-                        <td><textarea id="self-intro" class="form-control" rows="4" cols="50"></textarea></td>
-                    </tr>
-
-                </table>
-
-                <h5> 可教授科目</h5>
-
-                <h5>HKDSE科目列</h5>
-
-                <div class="subject-list subject-list-hkdse">
-                    <table>
-                        <tr>
-                            <td colspan="2">
-
-                                <label for="t-subjects-kin">
-                                    <h5> 幼稚園</h5>
-                                </label>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-kin-value-1" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-1">
-                                        英語
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
-                                        普通話
-                                    </label>
-                                </div>
-
-                                <div class="mt-2">
-                                    <label for="t-subjects-kin-value-other">其他：</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
-                                        type="text">
-                                </div>
-
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td colspan="2"><label for="t-subjects-pri">
-                                    <h5>小學</h5>
-                                </label>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-pri-value-1" name="t-subjects-pri[]">
-                                    <label class="form-check-label" for="t-subjects-pri-value-1">
-                                        全科
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-pri-value-2" name="t-subjects-pri[]">
-                                    <label class="form-check-label" for="t-subjects-pri-value-2">
-
-                                        功課輔導
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="3"
-                                        id="t-subjects-pri-value-3" name="t-subjects-pri[]">
-                                    <label class="form-check-label" for="t-subjects-pri-value-3">
-
-                                        中文
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="4"
-                                        id="t-subjects-pri-value-4" name="t-subjects-pri[]">
-                                    <label class="form-check-label" for="t-subjects-pri-value-4">
-
-                                        英文
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
-                                        id="t-subjects-pri-value-5" name="t-subjects-pri[]">
-                                    <label class="form-check-label" for="t-subjects-pri-value-5">
-
-                                        數學
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="6"
-                                        id="t-subjects-pri-value-6" name="t-subjects-pri[]">
-                                    <label class="form-check-label" for="t-subjects-pri-value-6">
-
-                                        常識
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
-                                        id="t-subjects-pri-value-7" name="t-subjects-pri[]">
-                                    <label class="form-check-label" for="t-subjects-pri-value-7">
-
-                                        普通話
-
-                                    </label>
-                                </div>
-                                <div class="mt-2">
-                                    <label for="t-subjects-pri-value-other">其他：</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-pri-value-other"
-                                        type="text">
-                                </div>
-
-                            </td>
-                        </tr>
-
-
-
-
-                        <tr>
-                            <td colspan="2"><label for="t-subjects-f13">
-                                    <h5>中學(中一至中三)</h5>
-                                </label>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-f13-value-1" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-1">
-                                        全科
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-f13-value-2" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-2">
-
-                                        功課輔導
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="3"
-                                        id="t-subjects-f13-value-3" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-3">
-
-                                        中文
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="4"
-                                        id="t-subjects-f13-value-4" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-4">
-
-                                        英文
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
-                                        id="t-subjects-f13-value-5" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-5">
-
-                                        數學
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="6"
-                                        id="t-subjects-f13-value-6" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-6">
-
-                                        通識
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
-                                        id="t-subjects-f13-value-7" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-7">
-
-                                        物理
-
-                                    </label>
-                                </div>
-
-
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="8"
-                                        id="t-subjects-f13-value-8" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-8">
-
-                                        化學
-
-                                    </label>
-                                </div>
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="9"
-                                        id="t-subjects-f13-value-9" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-9">
-
-                                        生物
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="10"
-                                        id="t-subjects-f13-value-10" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-10">
-
-                                        綜合科學
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="11"
-                                        id="t-subjects-f13-value-11" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-11">
-
-                                        資訊及通訊科技
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="12"
-                                        id="t-subjects-f13-value-12" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-12">
-
-
-                                        地理
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="13"
-                                        id="t-subjects-f13-value-13" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-13">
-
-                                        中史
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="14"
-                                        id="t-subjects-f13-value-14" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-14">
-
-
-                                        西史
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="15"
-                                        id="t-subjects-f13-value-15" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-15">
-
-
-                                        英國文學
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="16"
-                                        id="t-subjects-f13-value-16" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-16">
-
-
-                                        經濟
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="17"
-                                        id="t-subjects-f13-value-17" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-17">
-
-
-                                        企業、會計與財務概論
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="18"
-                                        id="t-subjects-f13-value-18" name="t-subjects-f13[]">
-                                    <label class="form-check-label" for="t-subjects-f13-value-18">
-
-
-                                        普通話
-
-
-
-                                    </label>
-                                </div>
-
-
-                                <div class="mt-2">
-                                    <label for="t-subjects-f13-value-other">其他：</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-f13-value-other"
-                                        type="text">
-                                </div>
-
-                            </td>
-                        </tr>
-
-
-
-                        <tr>
-                            <td colspan="2"><label for="t-subjects-f46">
-                                    <h5>中學(中四至中六)</h5>
-                                </label>
-
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-f46-value-3" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-3">
-
-                                        中文
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-f46-value-4" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-4">
-
-                                        英文
-
-                                    </label>
-                                </div>
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="3"
-                                        id="t-subjects-f46-value-5" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-5">
-
-                                        數學
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="4"
-                                        id="t-subjects-f46-value-6" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-6">
-
-                                        數學(M1)
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
-                                        id="t-subjects-f46-value-7" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-7">
-
-                                        數學(M2)
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="6"
-                                        id="t-subjects-f46-value-8" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-8">
-
-                                        通識
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
-                                        id="t-subjects-f46-value-9" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-9">
-
-                                        物理
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="8"
-                                        id="t-subjects-f46-value-10" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-10">
-
-                                        化學
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="9"
-                                        id="t-subjects-f46-value-11" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-11">
-
-                                        生物
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="10"
-                                        id="t-subjects-f46-value-12" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-12">
-
-                                        組合科學：物理 化學
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="11"
-                                        id="t-subjects-f46-value-13" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-13">
-
-                                        組合科學：化學 生物
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="12"
-                                        id="t-subjects-f46-value-14" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-14">
-
-                                        綜合科學
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="13"
-                                        id="t-subjects-f46-value-15" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-15">
-
-                                        資訊及通訊科技
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="14"
-                                        id="t-subjects-f46-value-16" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-16">
-
-                                        地理
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="15"
-                                        id="t-subjects-f46-value-17" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-17">
-
-                                        中史
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="16"
-                                        id="t-subjects-f46-value-18" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-18">
-
-                                        西史
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="17"
-                                        id="t-subjects-f46-value-19" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-19">
-
-                                        中國文學
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="18"
-                                        id="t-subjects-f46-value-20" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-20">
-
-                                        英國文學
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="19"
-                                        id="t-subjects-f46-value-21" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-21">
-
-                                        經濟
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="20"
-                                        id="t-subjects-f46-value-22" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-22">
-
-                                        企業、會計與財務概論
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="21"
-                                        id="t-subjects-f46-value-23" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-23">
-
-                                        旅遊與款待
-
-                                    </label>
-                                </div>
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="22"
-                                        id="t-subjects-f46-value-24" name="t-subjects-f46[]">
-                                    <label class="form-check-label" for="t-subjects-f46-value-24">
-
-                                        倫理與宗教
-
-                                    </label>
-                                </div>
-
-
-
-                                <div class="mt-2">
-                                    <label for="t-subjects-f46-value-other">其他：</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-f46-value-other"
-                                        type="text">
-                                </div>
-
-                            </td>
-                        </tr>
-
-
                     </table>
-                </div>
 
-                <h5>IB科目列</h5>
 
-                <div class="subject-list subject-list-ib">
-                    <table>
-                        <tr>
-                            <td colspan="2">
-
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="1" id="t-subjects-ib-value-1"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-1">
-                                        Chinese (A) HL
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="2" id="t-subjects-ib-value-2"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-2">
-                                        Chinese (A) SL
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="3" id="t-subjects-ib-value-3"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-3">
-                                        Chinese (B)
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="4" id="t-subjects-ib-value-4"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-4">
-                                        English (A) HL
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="5" id="t-subjects-ib-value-5"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-5">
-                                        English (A) SL
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="6" id="t-subjects-ib-value-6"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-6">
-                                        English (B)
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="7" id="t-subjects-ib-value-7"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-7">
-                                        Mathematics HL
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="8" id="t-subjects-ib-value-8"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-8">
-                                        Mathematics SL
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="9" id="t-subjects-ib-value-9"
-                                        name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-9">
-                                        Mathematics Study HL
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="10"
-                                        id="t-subjects-ib-value-10" name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-10">
-                                        Physics HL
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="11"
-                                        id="t-subjects-ib-value-11" name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-11">
-                                        Physics SL
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="12"
-                                        id="t-subjects-ib-value-12" name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-12">
-                                        Chemistry HL
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="13"
-                                        id="t-subjects-ib-value-13" name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-13">
-                                        Chemistry SL
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="14"
-                                        id="t-subjects-ib-value-14" name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-14">
-                                        Biology HL
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="15"
-                                        id="t-subjects-ib-value-15" name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-15">
-                                        Biology SL
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="16"
-                                        id="t-subjects-ib-value-16" name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-16">
-                                        Economics HL
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="17"
-                                        id="t-subjects-ib-value-17" name="t-subjects-ib[]">
-                                    <label class="form-check-label" for="t-subjects-ib-value-17">
-                                        Economics SL
-                                    </label>
-                                </div>
-
-                                <div class="mt-2">
-                                    <label for="t-subjects-ib-value-other">Other:</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-ib-value-other"
-                                        type="text">
-                                </div>
-
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <h5>GCE AL科目列</h5>
-
-                <div class="subject-list subject-list-gceal">
-                    <table>
-                        <tr>
-                            <td colspan="2">
-
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-gceal-value-1" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-1">
-                                        Chinese Language
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-gceal-value-2" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-2">
-                                        English Language
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="3"
-                                        id="t-subjects-gceal-value-3" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-3">
-                                        English Literature
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="4"
-                                        id="t-subjects-gceal-value-4" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-4">
-                                        Mathematics
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
-                                        id="t-subjects-gceal-value-5" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-5">
-                                        Further Mathematics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="6"
-                                        id="t-subjects-gceal-value-6" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-6">
-                                        Pure Mathematics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
-                                        id="t-subjects-gceal-value-7" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-7">
-                                        Physics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="8"
-                                        id="t-subjects-gceal-value-8" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-8">
-                                        Chemistry
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="9"
-                                        id="t-subjects-gceal-value-9" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-9">
-                                        Biology
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="10"
-                                        id="t-subjects-gceal-value-10" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-10">
-                                        Statistics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="11"
-                                        id="t-subjects-gceal-value-11" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-11">
-                                        Geography
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="12"
-                                        id="t-subjects-gceal-value-12" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-12">
-                                        Psychology
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="13"
-                                        id="t-subjects-gceal-value-13" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-13">
-                                        Law
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="14"
-                                        id="t-subjects-gceal-value-14" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-14">
-                                        French
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="15"
-                                        id="t-subjects-gceal-value-15" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-15">
-                                        Spanish
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="16"
-                                        id="t-subjects-gceal-value-16" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-16">
-                                        History
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="17"
-                                        id="t-subjects-gceal-value-17" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-17">
-                                        Politics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="18"
-                                        id="t-subjects-gceal-value-18" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-18">
-                                        Economics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="19"
-                                        id="t-subjects-gceal-value-19" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-19">
-                                        Accounting
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="20"
-                                        id="t-subjects-gceal-value-20" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-20">
-                                        Business Studies
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="21"
-                                        id="t-subjects-gceal-value-21" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-21">
-                                        General Studies
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="22"
-                                        id="t-subjects-gceal-value-22" name="t-subjects-gceal[]">
-                                    <label class="form-check-label" for="t-subjects-gceal-value-22">
-                                        Art
-                                    </label>
-                                </div>
-
-
-
-                                <div class="mt-2">
-                                    <label for="t-subjects-gceal-value-other">Other:</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-gceal-value-other"
-                                        type="text">
-                                </div>
-
-                </div>
-
-                <h5>IGCSE科目列</h5>
-
-                <div class="subject-list subject-list-igcse">
-                    <table>
-                        <tr>
-                            <td colspan="2">
-
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-igcse-value-1" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-1">
-                                        Chinese Language
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-igcse-value-2" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-2">
-                                        English Language
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="3"
-                                        id="t-subjects-igcse-value-3" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-3">
-                                        English Literature
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="4"
-                                        id="t-subjects-igcse-value-4" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-4">
-                                        Mathematics
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
-                                        id="t-subjects-igcse-value-5" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-5">
-                                        Further Mathematics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="6"
-                                        id="t-subjects-igcse-value-6" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-6">
-                                        Pure Mathematics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
-                                        id="t-subjects-igcse-value-7" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-7">
-                                        Physics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="8"
-                                        id="t-subjects-igcse-value-8" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-8">
-                                        Chemistry
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="9"
-                                        id="t-subjects-igcse-value-9" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-9">
-                                        Biology
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="10"
-                                        id="t-subjects-igcse-value-10" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-10">
-                                        Statistics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="11"
-                                        id="t-subjects-igcse-value-11" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-11">
-                                        Geography
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="12"
-                                        id="t-subjects-igcse-value-12" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-12">
-                                        Psychology
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="13"
-                                        id="t-subjects-igcse-value-13" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-13">
-                                        Law
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="14"
-                                        id="t-subjects-igcse-value-14" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-14">
-                                        French
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="15"
-                                        id="t-subjects-igcse-value-15" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-15">
-                                        Spanish
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="16"
-                                        id="t-subjects-igcse-value-16" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-16">
-                                        History
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="17"
-                                        id="t-subjects-igcse-value-17" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-17">
-                                        Politics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="18"
-                                        id="t-subjects-igcse-value-18" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-18">
-                                        Economics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="19"
-                                        id="t-subjects-igcse-value-19" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-19">
-                                        Accounting
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="20"
-                                        id="t-subjects-igcse-value-20" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-20">
-                                        Business Studies
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="21"
-                                        id="t-subjects-igcse-value-21" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-21">
-                                        General Studies
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="22"
-                                        id="t-subjects-igcse-value-22" name="t-subjects-igcse[]">
-                                    <label class="form-check-label" for="t-subjects-igcse-value-22">
-                                        Art
-                                    </label>
-                                </div>
-
-
-
-                                <div class="mt-2">
-                                    <label for="t-subjects-igcse-value-other">Other:</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-igcse-value-other"
-                                        type="text">
-                                </div>
-
-                </div>
-
-
-
-                <h5>SAT科目列</h5>
-
-                <div class="subject-list subject-list-sat">
-                    <table>
-                        <tr>
-                            <td colspan="2">
-
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-sat-value-1" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-1">
-                                        Biology E
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-sat-value-2" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-2">
-
-                                        Biology M
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="3"
-                                        id="t-subjects-sat-value-3" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-3">
-                                        Chemistry
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="4"
-                                        id="t-subjects-sat-value-4" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-4">
-                                        Physics
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
-                                        id="t-subjects-sat-value-5" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-5">
-                                        U.S. History
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="6"
-                                        id="t-subjects-sat-value-6" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-6">
-                                        World History
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
-                                        id="t-subjects-sat-value-7" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-7">
-                                        Literature
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="8"
-                                        id="t-subjects-sat-value-8" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-8">
-                                        Maths Level 1
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="9"
-                                        id="t-subjects-sat-value-9" name="t-subjects-sat[]">
-                                    <label class="form-check-label" for="t-subjects-sat-value-9">
-                                        Maths Level 2
-
-                                    </label>
-                                </div>
-                                <div class="mt-2">
-                                    <label for="t-subjects-sat-value-flang">Foreign Languages:</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-flang"
-                                        type="text">
-                                </div>
-
-                                <div class="mt-2">
-                                    <label for="t-subjects-sat-value-other">Other:</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-other"
-                                        type="text">
-                                </div>
-
-                </div>
-
-
-
-                <h5>音樂科目列</h5>
-
-                <div class="subject-list subject-list-music">
-                    <table>
-                        <tr>
-                            <td colspan="2">
-
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-music-value-1" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-1">
-                                        鋼琴
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-music-value-2" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-2">
-                                        小提琴
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="3"
-                                        id="t-subjects-music-value-3" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-3">
-                                        中提琴
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="4"
-                                        id="t-subjects-music-value-4" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-4">
-                                        大提琴
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="5"
-                                        id="t-subjects-music-value-5" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-5">
-                                        小號
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="6"
-                                        id="t-subjects-music-value-6" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-6">
-                                        長號
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="7"
-                                        id="t-subjects-music-value-7" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-7">
-                                        法國號
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="8"
-                                        id="t-subjects-music-value-8" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-8">
-                                        色士風
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="9"
-                                        id="t-subjects-music-value-9" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-9">
-                                        單簧管
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="10"
-                                        id="t-subjects-music-value-10" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-10">
-                                        雙簧管
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="11"
-                                        id="t-subjects-music-value-11" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-11">
-                                        長笛
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="12"
-                                        id="t-subjects-music-value-12" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-12">
-                                        木笛
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="13"
-                                        id="t-subjects-music-value-13" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-13">
-                                        口琴
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="14"
-                                        id="t-subjects-music-value-14" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-14">
-                                        牧童笛
-
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="15"
-                                        id="t-subjects-music-value-15" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-15">
-                                        結他
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="16"
-                                        id="t-subjects-music-value-16" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-16">
-                                        低音結他
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="17"
-                                        id="t-subjects-music-value-17" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-17">
-                                        聲樂
-
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="18"
-                                        id="t-subjects-music-value-18" name="t-subjects-music[]">
-                                    <label class="form-check-label" for="t-subjects-music-value-18">
-                                        樂理
-
-
-                                    </label>
-                                </div>
-
-
-                                <div class="mt-2">
-                                    <label for="t-subjects-music-value-other">Other:</label>
-                                    <input class="limit-input-w form-control mt-2" id="t-subjects-music-value-other"
-                                        type="text">
-                                </div>
 
                 </div>
 
 
 
 
-                </td>
-                </tr>
-                </table>
-            </div>
+                <a href="javascript:void(0);" class="submit-btn">遞交表格</a>
+            </form>
         </div>
         <!-- <div class="col-2"></div> -->
 
