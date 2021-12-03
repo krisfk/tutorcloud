@@ -216,7 +216,11 @@ if($_POST)
     $bac_degree=$_POST['bac-degree'];
     $tutor_level=$_POST['tutor-level'];
     $diploma = $_POST['diploma'];
-    $tutor_level=$_POST['tutor_level'];
+    $tutor_year=$_POST['tutor-year'];
+    $u_major =$_POST['u-major'];
+    $u_minor =$_POST['u-minor'];
+    $s_school = $_POST['s-school'];
+
     
     
 
@@ -383,10 +387,10 @@ if($_POST)
                             <td><input type="text" id="u-minor" name="u-minor" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td> <label for="p-school">曾就讀中學 *
+                            <td> <label for="s-school">曾就讀中學 *
                                 </label>
                             </td>
-                            <td><input type="text" id="p-school" name="p-school" class="form-control"></td>
+                            <td><input type="text" id="s-school" name="s-school" class="form-control"></td>
                         </tr>
                     </table>
 
