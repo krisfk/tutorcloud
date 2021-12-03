@@ -531,3 +531,7 @@ input[type='checkbox'] {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
+.submit-btn:hover {
+    color: #fff;
+}
