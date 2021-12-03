@@ -221,7 +221,27 @@ if($_POST)
     $u_minor =$_POST['u-minor'];
     $s_school = $_POST['s-school'];
     $dse_sub_1 = $_POST['dse-sub-1'];
-    echo $dse_sub_1;
+    $dse_sub_2 = $_POST['dse-sub-2'];
+    $dse_sub_3 = $_POST['dse-sub-3'];
+    $dse_sub_4 = $_POST['dse-sub-4'];
+    $dse_sub_5 = $_POST['dse-sub-5'];
+    $dse_sub_6 = $_POST['dse-sub-6'];
+    $dse_sub_7 = $_POST['dse-sub-7'];
+    $dse_sub_8 = $_POST['dse-sub-8'];
+    $dse_sub_9 = $_POST['dse-sub-9'];
+    $dse_sub_10 = $_POST['dse-sub-10'];
+    $dse_sub_11 = $_POST['dse-sub-11'];
+    $dse_sub_12 = $_POST['dse-sub-12'];
+    $dse_sub_13 = $_POST['dse-sub-13'];
+    $dse_sub_14 = $_POST['dse-sub-14'];
+    $dse_sub_15 = $_POST['dse-sub-15'];
+    $dse_sub_16 = $_POST['dse-sub-16'];
+    $dse_sub_17 = $_POST['dse-sub-17'];
+    $dse_sub_18 = $_POST['dse-sub-18'];
+    $dse_sub_19 = $_POST['dse-sub-19'];
+    $dse_sub_20 = $_POST['dse-sub-20'];
+    $dse_sub_21 = $_POST['dse-sub-21'];
+    $dse_sub_22 = $_POST['dse-sub-22'];
 
 }
 ?>
