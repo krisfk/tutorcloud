@@ -2874,6 +2874,10 @@ if($_POST)
 // var $ = jQuery;
 $(function() {
 
+
+    $('#all-place').change(function() {
+        alert(5);
+    })
     $('.submit-btn').click(function() {
 
         $('form').submit();
