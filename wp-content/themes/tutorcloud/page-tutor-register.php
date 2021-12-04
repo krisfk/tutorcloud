@@ -2882,7 +2882,11 @@ $(function() {
             for (i = 1; i <= 69; i++) {
                 $('#class-area-value-' + i).attr('checked', 'checked');
             }
+
         } else {
+            for (i = 1; i <= 69; i++) {
+                $('#class-area-value-' + i).removeAttr('checked');
+            }
 
         }
 
