@@ -2864,6 +2864,15 @@ if($_POST)
                                     </div>
 
 
+                                    <table>
+                                        <tr>
+                                            <td> <label for="lowest-salary">可接受最低時薪</label> </td>
+                                            <td><input id="lowest-salary" name="lowest-salary" type="text"
+                                                    class="form-control"></td>
+                                        </tr>
+                                    </table>
+
+
 
 
 
