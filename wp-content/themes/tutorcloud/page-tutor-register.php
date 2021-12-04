@@ -2876,7 +2876,12 @@ $(function() {
 
 
     $('#all-place').change(function() {
-        alert(5);
+        // alert(5);
+        if ($(this).is(":checked")) {
+
+        }
+
+
     })
     $('.submit-btn').click(function() {
 
