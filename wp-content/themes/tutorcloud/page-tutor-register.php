@@ -2369,7 +2369,7 @@ if($_POST)
                                         </label>
                                     </div>
 
-                                    <div>
+                                    <div class="place-group">
                                         <div>
                                             <input class="form-check-input" type="checkbox" value="18"
                                                 id="class-area-value-18" name="class-area[]">
