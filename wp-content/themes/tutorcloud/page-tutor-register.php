@@ -2181,11 +2181,10 @@ if($_POST)
 
                     </table>
 
+
+                    <h5>可補習地區</h5>
                     <table>
 
-                        <tr>
-                            <td colspan="2"><label for="class-area"> 可補習地區</label></td>
-                        </tr>
                         <tr>
                             <td>
                                 <div>
@@ -2832,6 +2831,14 @@ if($_POST)
                                     </div>
 
 
+                                    <h2>可供補習方式</h2>
+
+                                    <table>
+
+                                        <tr>
+                                        </tr>
+
+                                    </table>
 
 
 
