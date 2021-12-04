@@ -520,13 +520,13 @@ if($_POST)
                         <td colspan="5">
                             DSE 成績 / 相關公開試成續
                         </td>
-                        <tr>
+                        <!-- <tr>
                             <td></td>
                             <td class="grade-col">5**</td>
                             <td class="grade-col">5*</td>
                             <td class="grade-col">5</td>
                             <td class="grade-col">4</td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <td><label for="">中文</label></td>
                             <td class="grade-col"><label><input type="radio" value="5**" name="dse-sub-1">5**</label>
