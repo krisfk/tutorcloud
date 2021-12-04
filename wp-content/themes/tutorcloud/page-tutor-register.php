@@ -2362,7 +2362,8 @@ if($_POST)
                                     </div>
 
 
-                                    <div>
+                                    <div class="mt-3">
+
                                         <input class="form-check-input" type="checkbox" id="kl-place" name="">
                                         <label class="form-check-label" for="kl-place">
                                             九龍區
@@ -2611,7 +2612,7 @@ if($_POST)
 
 
 
-                                    <div>
+                                    <div class="mt-3">
                                         <input class="form-check-input" type="checkbox" id="nt-place" name="">
                                         <label class="form-check-label" for="nt-place">
                                             新界區
