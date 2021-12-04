@@ -554,3 +554,7 @@ input[type='checkbox'] {
 .dse-big-radio-table {
     font-size: 0.8rem;
 }
+
+.place-group div {
+    float: left;
+}
