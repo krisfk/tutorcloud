@@ -331,6 +331,18 @@ if($_POST)
         add_post_meta($post_id, 'self_intro', $self_intro);
         add_post_meta($post_id, 't_subjects_kin', $t_subjects_kin);
         add_post_meta($post_id, 't_subjects_kin_value_other', $t_subjects_kin_value_other);
+        add_post_meta($post_id, 't_subjects_pri', $t_subjects_pri);
+        add_post_meta($post_id, 't_subjects_pri_value_other', $t_subjects_pri_value_other);
+        add_post_meta($post_id, 't_subjects_f13', $t_subjects_f13);
+        add_post_meta($post_id, 't_subjects_f13_value_other', $t_subjects_f13_value_other);
+        add_post_meta($post_id, 't_subjects_f46', $t_subjects_f46);
+        add_post_meta($post_id, 't_subjects_f46_value_other', $t_subjects_f46_value_other);
+        add_post_meta($post_id, 't_subjects_ib', $t_subjects_ib);
+        add_post_meta($post_id, 't_subjects_ib_value_other', $t_subjects_ib_value_other);
+        add_post_meta($post_id, 't_subjects_gceal', $t_subjects_gceal);
+        add_post_meta($post_id, 't_subjects_gceal_value_other', $t_subjects_gceal_value_other);
+        add_post_meta($post_id, 't_subjects_igcse', $t_subjects_igcse);
+        add_post_meta($post_id, 't_subjects_igcse_value_other', $t_subjects_igcse_value_other);
 
         
     }
@@ -517,10 +529,10 @@ if($_POST)
                         </tr>
                         <tr>
                             <td><label for="">中文</label></td>
-                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-1"></td>
-                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-1"></td>
-                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-1"></td>
-                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-1"></td>
+                            <td class="grade-col"><input type="radio" value="5**" name="dse-sub-1">5**</td>
+                            <td class="grade-col"><input type="radio" value="5*" name="dse-sub-1">5*</td>
+                            <td class="grade-col"><input type="radio" value="5" name="dse-sub-1">5</td>
+                            <td class="grade-col"><input type="radio" value="4" name="dse-sub-1">4</td>
                         </tr>
                         <tr>
                             <td><label for="">英文</label></td>
