@@ -2214,9 +2214,9 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="2"
+                                            id="class-area-value-2" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-2">
                                             薄扶林
                                         </label>
                                     </div>
