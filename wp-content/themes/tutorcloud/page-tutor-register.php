@@ -2198,7 +2198,7 @@ if($_POST)
                                     <div>
                                         <input class="form-check-input" type="checkbox" id="hk-place" name="">
                                         <label class="form-check-label" for="hk-place">
-                                            所有地區
+                                            香港島
                                         </label>
                                     </div>
 
