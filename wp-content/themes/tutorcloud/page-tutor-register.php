@@ -2191,7 +2191,7 @@ if($_POST)
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="1" id="class-area-value-1"
                                         name="class-area[]">
-                                    <label class="form-check-label" for="class-area-1">
+                                    <label class="form-check-label" for="class-area-value-1">
                                         英語
                                     </label>
                                 </div>
