@@ -2189,19 +2189,13 @@ if($_POST)
                         <tr>
                             <td>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="t-subjects-kin-value-1" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-1">
+                                    <input class="form-check-input" type="checkbox" value="1" id="class-area-value-1"
+                                        name="class-area[]">
+                                    <label class="form-check-label" for="class-area-1">
                                         英語
                                     </label>
                                 </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="2"
-                                        id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                    <label class="form-check-label" for="t-subjects-kin-value-2">
-                                        普通話
-                                    </label>
-                                </div>
+
                             </td>
                         </tr>
                     </table>
