@@ -2885,7 +2885,7 @@ $(function() {
 
         } else {
             for (i = 1; i <= 69; i++) {
-                $('#class-area-value-' + i).removeAttr('checked');
+                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).removeAttr('checked');
             }
         }
     })
