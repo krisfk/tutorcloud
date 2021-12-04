@@ -2194,8 +2194,13 @@ if($_POST)
                                     <label class="form-check-label" for="class-area-value-1">
                                         所有地區
                                     </label>
+                                    <input class="form-check-input" type="checkbox" value="1" id="class-area-value-1"
+                                        name="class-area[]">
+                                    <label class="form-check-label" for="class-area-value-1">
+                                        香港島
+                                    </label>
 
-                                    香港島
+
                                     中半山
                                     薄扶林
                                     中上環
