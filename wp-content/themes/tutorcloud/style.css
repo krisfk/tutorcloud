@@ -558,3 +558,7 @@ input[type='checkbox'] {
 .place-group div {
     float: left;
 }
+
+.place-group {
+    display: table;
+}
