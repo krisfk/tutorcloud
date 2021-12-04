@@ -2184,7 +2184,9 @@ if($_POST)
                     <table>
 
                         <tr>
-                            <td><label for="class-area"> 可補習地區</label></td>
+                            <td colspan="2"><label for="class-area"> 可補習地區</label></td>
+                        </tr>
+                        <tr>
                             <td>
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="1"
