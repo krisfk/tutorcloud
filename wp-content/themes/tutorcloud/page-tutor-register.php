@@ -2195,6 +2195,7 @@ if($_POST)
                                             所有地區
                                         </label>
                                     </div>
+
                                     <div>
                                         <input class="form-check-input" type="checkbox" id="hk-place" name="">
                                         <label class="form-check-label" for="hk-place">
@@ -2202,7 +2203,7 @@ if($_POST)
                                         </label>
                                     </div>
 
-                                    <div>
+                                    <div class="float-start">
                                         <input class="form-check-input" type="checkbox" value="1"
                                             id="class-area-value-1" name="class-area[]">
                                         <label class="form-check-label" for="class-area-value-1">
