@@ -2896,12 +2896,12 @@ $(function() {
         if ($(this).is(':checked')) {
 
             for (i = 1; i <= 17; i++) {
-                $('#class-area-value-' + i).attr('checked', 'checked');
+                $('#class-area-value-' + i).prop('checked', true);
             }
 
         } else {
             for (i = 1; i <= 17; i++) {
-                $('#class-area-value-' + i).removeAttr('checked');
+                $('#class-area-value-' + i).prop('checked', false);
             }
         }
     })
@@ -2913,12 +2913,12 @@ $(function() {
         if ($(this).is(':checked')) {
 
             for (i = 18; i <= 45; i++) {
-                $('#class-area-value-' + i).attr('checked', 'checked');
+                $('#class-area-value-' + i).prop('checked', true);
             }
 
         } else {
             for (i = 18; i <= 45; i++) {
-                $('#class-area-value-' + i).removeAttr('checked');
+                $('#class-area-value-' + i).prop('checked', false);
             }
         }
     })
@@ -2929,12 +2929,12 @@ $(function() {
         if ($(this).is(':checked')) {
 
             for (i = 46; i <= 69; i++) {
-                $('#class-area-value-' + i).attr('checked', 'checked');
+                $('#class-area-value-' + i).prop('checked', true);
             }
 
         } else {
             for (i = 46; i <= 69; i++) {
-                $('#class-area-value-' + i).removeAttr('checked');
+                $('#class-area-value-' + i).prop('checked', false);
             }
         }
     })
