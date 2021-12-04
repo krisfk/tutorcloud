@@ -209,7 +209,7 @@ if($_POST)
     $chi_name = $_POST['chi-name'];
     $eng_name = $_POST['eng-name'];
     $nick_name = $_POST['nick-name'];
-    $whatsapp_tel=$_POST['whatsapp_tel'];
+    $whatsapp_tel=$_POST['whatsapp-tel'];
     $age=$_POST['age'];
     $gender=$_POST['gender'];
     $occupation=$_POST['occupation'];
@@ -285,7 +285,7 @@ if($_POST)
     ));
     
     if ($post_id) {
-        add_post_meta($post_id, 'tutor', $email);
+        add_post_meta($post_id, 'email', $email);
         add_post_meta($post_id, 'login_password', $login_password);
         add_post_meta($post_id, 'chi_name', $chi_name);
         add_post_meta($post_id, 'eng_name', $eng_name);
