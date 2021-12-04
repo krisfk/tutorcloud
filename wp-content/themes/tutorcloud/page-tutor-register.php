@@ -273,8 +273,29 @@ if($_POST)
     $t_subjects_music=$_POST['t-subjects-music'];//array  
     $t_subjects_music_value_other=$_POST['t-subjects-music-value-other'];
  
-    echo $t_subjects_music_value_other;
+    // echo $t_subjects_music_value_other;
+ 
     
+    $post_id = wp_insert_post(array (
+        'post_type' => 'tutor',
+        'post_title' => $chi_name.' ('.$nick_name.')',
+        'post_status' => 'publish',
+        'comment_status' => 'closed',   // if you prefer
+        'ping_status' => 'closed',      // if you prefer
+    ));
+    
+    if ($post_id) {
+        add_post_meta($post_id, 'tutor', $email);
+        add_post_meta($post_id, 'login_password', $login_password);
+        add_post_meta($post_id, 'chi_name', $chi_name);
+        add_post_meta($post_id, 'eng_name', $eng_name);
+        add_post_meta($post_id, 'nick_name', $nick_name);
+        add_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
+        add_post_meta($post_id, 'age', $age);
+        add_post_meta($post_id, 'gender', $gender);
+        add_post_meta($post_id, 'occupation', $occupation);
+
+    }
 }
 ?>
 
@@ -400,8 +421,8 @@ if($_POST)
                         <tr>
                             <td><label for="">是否擁有教育文憑 *
                                 </label></td>
-                            <td> <label><input type="radio" name="diploma">是</label>
-                                <label><input type="radio" name="diploma">否</label>
+                            <td> <label><input type="radio" name="diploma" value="是">是</label>
+                                <label><input type="radio" name="diploma" value="否">否</label>
                             </td>
                         </tr>
                         <tr>
@@ -682,7 +703,8 @@ if($_POST)
                         <tr>
                             <td><label for="self-intro">自我介紹 (50字或以上) *
                                 </label></td>
-                            <td><textarea id="self-intro" class="form-control" rows="4" cols="50"></textarea></td>
+                            <td><textarea id="self-intro" name="self-intro" class="form-control" rows="4"
+                                    cols="50"></textarea></td>
                         </tr>
 
                     </table>
