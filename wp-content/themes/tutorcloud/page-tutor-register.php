@@ -2887,10 +2887,29 @@ $(function() {
             for (i = 1; i <= 69; i++) {
                 $('#class-area-value-' + i).removeAttr('checked');
             }
-
         }
-
     })
+
+
+    $('#hk-place').change(function() {
+        // alert(5);
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= 17; i++) {
+                $('#class-area-value-' + i).attr('checked', 'checked');
+            }
+
+        } else {
+            for (i = 1; i <= 17; i++) {
+                $('#class-area-value-' + i).removeAttr('checked');
+            }
+        }
+    })
+
+
+
+
+
     $('.submit-btn').click(function() {
 
         $('form').submit();
