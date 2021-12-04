@@ -2609,16 +2609,16 @@ if($_POST)
                                     </div>
 
 
+
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="nt-place" name="">
+                                        <label class="form-check-label" for="nt-place">
+                                            新界區
+                                        </label>
+                                    </div>
+
                                     <div class="place-group">
-
-                                        <div>
-                                            <input class="form-check-input" type="checkbox" id="nt-place" name="">
-                                            <label class="form-check-label" for="nt-place">
-                                                新界區
-                                            </label>
-                                        </div>
-
-
                                         <div>
                                             <input class="form-check-input" type="checkbox" value="46"
                                                 id="class-area-value-46" name="class-area[]">
