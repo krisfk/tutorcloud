@@ -294,7 +294,45 @@ if($_POST)
         add_post_meta($post_id, 'age', $age);
         add_post_meta($post_id, 'gender', $gender);
         add_post_meta($post_id, 'occupation', $occupation);
+        add_post_meta($post_id, 'bac_degree', $bac_degree);
+        add_post_meta($post_id, 'tutor_level', $tutor_level);
+        add_post_meta($post_id, 'diploma', $diploma);
+        add_post_meta($post_id, 'tutor_year', $tutor_year);
+        add_post_meta($post_id, 'u_major', $u_major);
+        add_post_meta($post_id, 'u_minor', $u_minor);
+        add_post_meta($post_id, 's_school', $s_school);
+        add_post_meta($post_id, 'dse_sub_1', $dse_sub_1);
+        add_post_meta($post_id, 'dse_sub_2', $dse_sub_2);
+        add_post_meta($post_id, 'dse_sub_3', $dse_sub_3);
+        add_post_meta($post_id, 'dse_sub_4', $dse_sub_4);
+        add_post_meta($post_id, 'dse_sub_5', $dse_sub_5);
+        add_post_meta($post_id, 'dse_sub_6', $dse_sub_6);
+        add_post_meta($post_id, 'dse_sub_7', $dse_sub_7);
+        add_post_meta($post_id, 'dse_sub_8', $dse_sub_8);
+        add_post_meta($post_id, 'dse_sub_9', $dse_sub_9);
+        add_post_meta($post_id, 'dse_sub_10', $dse_sub_10);
+        add_post_meta($post_id, 'dse_sub_11', $dse_sub_11);
+        add_post_meta($post_id, 'dse_sub_12', $dse_sub_12);
+        add_post_meta($post_id, 'dse_sub_13', $dse_sub_13);
+        add_post_meta($post_id, 'dse_sub_14', $dse_sub_14);
+        add_post_meta($post_id, 'dse_sub_15', $dse_sub_15);
+        add_post_meta($post_id, 'dse_sub_16', $dse_sub_16);
+        add_post_meta($post_id, 'dse_sub_17', $dse_sub_17);
+        add_post_meta($post_id, 'dse_sub_18', $dse_sub_18);
+        add_post_meta($post_id, 'dse_sub_19', $dse_sub_19);
+        add_post_meta($post_id, 'dse_sub_20', $dse_sub_20);
+        add_post_meta($post_id, 'dse_sub_21', $dse_sub_21);
+        add_post_meta($post_id, 'dse_sub_22', $dse_sub_22);
+        add_post_meta($post_id, 'exam_lang', $exam_lang);
+        add_post_meta($post_id, 'other_cert', $other_cert);
 
+        //proof1
+        //proof2
+        add_post_meta($post_id, 'self_intro', $self_intro);
+        add_post_meta($post_id, 't_subjects_kin', $t_subjects_kin);
+        add_post_meta($post_id, 't_subjects_kin_value_other', $t_subjects_kin_value_other);
+
+        
     }
 }
 ?>
