@@ -2924,6 +2924,22 @@ $(function() {
     })
 
 
+    $('#nt-place').change(function() {
+        // alert(5);
+        if ($(this).is(':checked')) {
+
+            for (i = 46; i <= 69; i++) {
+                $('#class-area-value-' + i).attr('checked', 'checked');
+            }
+
+        } else {
+            for (i = 46; i <= 69; i++) {
+                $('#class-area-value-' + i).removeAttr('checked');
+            }
+        }
+    })
+
+
 
 
 
