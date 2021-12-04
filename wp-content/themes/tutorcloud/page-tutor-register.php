@@ -2880,12 +2880,12 @@ $(function() {
         if ($(this).is(':checked')) {
 
             for (i = 1; i <= 69; i++) {
-                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).attr('checked', 'checked');
+                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).prop('checked', true);
             }
 
         } else {
             for (i = 1; i <= 69; i++) {
-                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).removeAttr('checked');
+                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).prop('checked', false);
             }
         }
     })
