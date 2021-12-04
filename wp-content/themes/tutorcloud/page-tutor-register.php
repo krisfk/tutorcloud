@@ -343,6 +343,10 @@ if($_POST)
         add_post_meta($post_id, 't_subjects_gceal_value_other', $t_subjects_gceal_value_other);
         add_post_meta($post_id, 't_subjects_igcse', $t_subjects_igcse);
         add_post_meta($post_id, 't_subjects_igcse_value_other', $t_subjects_igcse_value_other);
+        add_post_meta($post_id, 't_subjects_sat', $t_subjects_sat);
+        add_post_meta($post_id, 't_subjects_sat_value_other', $t_subjects_sat_value_other);
+        add_post_meta($post_id, 't_subjects_music', $t_subjects_music);
+        add_post_meta($post_id, 't_subjects_music_value_other', $t_subjects_music_value_other);
 
         
     }
