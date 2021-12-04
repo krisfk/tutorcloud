@@ -2880,7 +2880,7 @@ $(function() {
         if ($(this).is(':checked')) {
 
             for (i = 1; i <= 69; i++) {
-                $('#class-area-value-' + i).attr('checked', 'checked');
+                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).attr('checked', 'checked');
             }
 
         } else {
