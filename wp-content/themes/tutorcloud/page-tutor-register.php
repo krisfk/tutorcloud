@@ -520,7 +520,7 @@ if($_POST)
                         </tr>
                     </table>
 
-                    <table class="mt-4">
+                    <table class="mt-4 dse-big-radio-table">
                         <td colspan="5">
                             DSE 成績 / 相關公開試成續
                         </td>
