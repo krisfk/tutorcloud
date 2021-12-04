@@ -2877,10 +2877,9 @@ $(function() {
 
     $('#all-place').change(function() {
         // alert(5);
-        if ($(this).is(":checked")) {
-
+        if ($(this).is(':checked')) {
+            alert(6);
         }
-
 
     })
     $('.submit-btn').click(function() {
