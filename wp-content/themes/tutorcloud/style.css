@@ -500,11 +500,20 @@ input[type='checkbox'] {
 
 .grade-col {
     text-align: center;
-    width: 40px;
+    width: 3rem;
+    vertical-align: middle;
+}
+
+.grade-col label {
+    margin: 0;
+    padding: 0 !important;
+    font-size: 0.8rem;
 }
 
 .grade-col input[type='radio'] {
-    margin: 0;
+    margin: 0 0.2rem 0 0;
+    position: relative;
+    top: 2px;
 }
 
 .limit-input-w {
