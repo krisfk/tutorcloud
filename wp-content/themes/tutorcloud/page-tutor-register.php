@@ -538,6 +538,8 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-1">5*</label></td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-1">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-1">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
+
                         </tr>
                         <tr>
                             <td><label for="">英文</label></td>
@@ -547,6 +549,7 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-2">5*</label></td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-2">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-2">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
 
                         </tr>
                         <tr>
@@ -556,6 +559,8 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-3">5*</label></td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-3">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-3">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
+
                         </tr>
                         <tr>
                             <td><label for="">數學(M1)</label></td>
@@ -564,6 +569,7 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-4">5*</label></td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-4">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-4">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
 
                         </tr>
                         <tr>
@@ -573,6 +579,7 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-5">5*</label></td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-5">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-5">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
 
                         </tr>
                         <tr>
@@ -582,6 +589,7 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-6">5*</label></td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-6">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-6">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">物理</label></td>
@@ -590,6 +598,7 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-7">5*</label></td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-7">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-7">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">化學</label></td>
@@ -598,6 +607,7 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-8">5*</label></td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-8">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-8">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">生物</label></td>
@@ -606,6 +616,7 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-9">5*</label></td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-9">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-9">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">組合科學：物理 化學
@@ -616,6 +627,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-10">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-10">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">組合科學：化學 生物
@@ -626,6 +638,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-11">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-11">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">綜合科學
@@ -636,6 +649,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-12">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-12">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">資訊及通訊科技
@@ -646,6 +660,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-13">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-13">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">地理</label></td>
@@ -655,6 +670,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-14">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-14">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">中史
@@ -665,6 +681,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-15">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-15">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">西史
@@ -675,6 +692,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-16">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-16">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">中國文學
@@ -685,6 +703,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-17">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-17">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">英國文學
@@ -695,6 +714,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-18">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-18">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">倫理與宗教
@@ -705,6 +725,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-19">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-19">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">經濟
@@ -715,6 +736,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-20">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-20">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">企業、會計與財務概論
@@ -725,6 +747,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-21">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-21">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                         <tr>
                             <td><label for="">旅遊與款待
@@ -736,6 +759,7 @@ if($_POST)
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-22">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-22">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="cancel-btn">取消</a></td>
                         </tr>
                     </table>
 
