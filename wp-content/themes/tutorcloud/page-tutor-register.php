@@ -2834,10 +2834,25 @@ if($_POST)
                                     <h5>可供補習方式</h5>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="18"
-                                            id="t-subjects-music-value-18" name="t-subjects-music[]">
-                                        <label class="form-check-label" for="t-subjects-music-value-18">
-                                            樂理
+                                        <input class="form-check-input" type="checkbox" value="1" id="t-style-value-1"
+                                            name="t-style[]">
+                                        <label class="form-check-label" for="t-style-value-1">
+                                            上門
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="2" id="t-style-value-2"
+                                            name="t-style[]">
+                                        <label class="form-check-label" for="t-style-value-2">
+                                            不上門
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="3" id="t-style-value-3"
+                                            name="t-style[]">
+                                        <label class="form-check-label" for="t-style-value-3">
+                                            視像補習
 
 
                                         </label>
