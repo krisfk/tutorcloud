@@ -2249,7 +2249,7 @@ if($_POST)
 
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="6"
-                                            id="class-area-value-6 name=" class-area[]">
+                                            id="class-area-value-6" name="class-area[]">
                                         <label class="form-check-label" for="class-area-value-6">
                                             銅鑼灣
                                         </label>
