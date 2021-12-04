@@ -2189,20 +2189,18 @@ if($_POST)
                         <tr>
                             <td>
                                 <div>
-                                    <!-- <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="all-place" name="">
+                                        <label class="form-check-label" for="all-place">
                                             所有地區
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
-                                            香港島
+                                        <input class="form-check-input" type="checkbox" id="hk-place" name="">
+                                        <label class="form-check-label" for="hk-place">
+                                            所有地區
                                         </label>
-                                    </div> -->
+                                    </div>
 
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="1"
