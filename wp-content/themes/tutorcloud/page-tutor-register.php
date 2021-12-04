@@ -2908,6 +2908,23 @@ $(function() {
 
 
 
+    $('#kl-place').change(function() {
+        // alert(5);
+        if ($(this).is(':checked')) {
+
+            for (i = 18; i <= 45; i++) {
+                $('#class-area-value-' + i).attr('checked', 'checked');
+            }
+
+        } else {
+            for (i = 18; i <= 45; i++) {
+                $('#class-area-value-' + i).removeAttr('checked');
+            }
+        }
+    })
+
+
+
 
 
     $('.submit-btn').click(function() {
