@@ -545,3 +545,7 @@ input[type='checkbox'] {
 .submit-btn:hover {
     color: #fff;
 }
+
+.radio-cancel-btn {
+    font-size: 0.8rem;
+}
