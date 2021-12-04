@@ -2223,26 +2223,26 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="3"
+                                            id="class-area-value-3" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-3">
                                             中上環
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="4"
+                                            id="class-area-value-4" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-4">
                                             西環
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="5"
+                                            id="class-area-value-5" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-5">
                                             灣仔
                                         </label>
                                     </div>
@@ -2250,18 +2250,18 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="6"
+                                            id="class-area-value-6 name=" class-area[]">
+                                        <label class="form-check-label" for="class-area-value-6">
                                             銅鑼灣
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="7"
+                                            id="class-area-value-7" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-7">
                                             跑馬地
                                         </label>
                                     </div>
@@ -2269,43 +2269,43 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="8"
+                                            id="class-area-value-8" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-8">
                                             北角
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="9"
+                                            id="class-area-value-9" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-9">
                                             鰂魚涌
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="10"
+                                            id="class-area-value-10" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-10">
                                             太古
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="11"
+                                            id="class-area-value-11" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-11">
                                             筲箕灣
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="12"
+                                            id="class-area-value-12" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-12">
                                             西灣河
                                         </label>
                                     </div>
@@ -2315,17 +2315,17 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="13"
+                                            id="class-area-value-13" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-13">
                                             柴灣
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="14"
+                                            id="class-area-value-14" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-14">
                                             小西灣
                                         </label>
                                     </div>
@@ -2333,9 +2333,9 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="15"
+                                            id="class-area-value-15" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-15">
                                             香港仔
                                         </label>
                                     </div>
@@ -2344,18 +2344,18 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="16"
+                                            id="class-area-value-16" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-16">
                                             鴨利洲
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="17"
+                                            id="class-area-value-17" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-17">
                                             赤柱
                                         </label>
                                     </div>
@@ -2368,47 +2368,47 @@ if($_POST)
                                         </label>
                                     </div> -->
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="18"
+                                            id="class-area-value-18" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-18">
                                             美孚
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="19"
+                                            id="class-area-value-19" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-19">
                                             荔枝角
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="20"
+                                            id="class-area-value-20" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-20">
                                             長沙灣
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="21"
+                                            id="class-area-value-21" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-21">
                                             深水涉
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="22"
+                                            id="class-area-value-22" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-22">
                                             大角咀
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="23"
+                                            id="class-area-value-23" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-23">
                                             旺角
                                         </label>
                                     </div>
@@ -2416,18 +2416,18 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="24"
+                                            id="class-area-value-24" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-24">
                                             何文田
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="25"
+                                            id="class-area-value-25" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-25">
                                             油麻地
                                         </label>
                                     </div>
@@ -2435,34 +2435,34 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="26"
+                                            id="class-area-value-26" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-26">
                                             佐敦
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="27"
+                                            id="class-area-value-27" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-27">
                                             尖沙咀
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="28"
+                                            id="class-area-value-28" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-28">
                                             土瓜灣
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="29"
+                                            id="class-area-value-29" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-29">
                                             紅磡
                                         </label>
                                     </div>
@@ -2470,41 +2470,41 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="30"
+                                            id="class-area-value-30" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-30">
                                             石硤尾
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="31"
+                                            id="class-area-value-31" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-31">
                                             九龍塘
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="32"
+                                            id="class-area-value-32" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-32">
                                             樂富
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="33"
+                                            id="class-area-value-33" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-33">
                                             慈雲山
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="34"
+                                            id="class-area-value-34" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-34">
                                             黃大仙
                                         </label>
                                     </div>
@@ -2512,70 +2512,70 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="35"
+                                            id="class-area-value-35" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-35">
                                             鑽石山
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="36"
+                                            id="class-area-value-36" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-36">
                                             新蒲崗
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="37"
+                                            id="class-area-value-37" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-37">
                                             彩虹
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="38"
+                                            id="class-area-value-38" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-38">
                                             牛池灣
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="39"
+                                            id="class-area-value-39" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-39">
                                             牛頭角
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="40"
+                                            id="class-area-value-40" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-40">
                                             九龍灣
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="41"
+                                            id="class-area-value-41" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-41">
                                             秀茂坪
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="42"
+                                            id="class-area-value-42" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-42">
                                             觀塘
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="43"
+                                            id="class-area-value-43" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-43">
                                             藍田
                                         </label>
                                     </div>
@@ -2585,9 +2585,9 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="44"
+                                            id="class-area-value-44" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-44">
                                             油塘
                                         </label>
                                     </div>
@@ -2595,9 +2595,9 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="45"
+                                            id="class-area-value-45" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-45">
                                             九龍城
                                         </label>
                                     </div>
@@ -2613,42 +2613,42 @@ if($_POST)
                                     </div> -->
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="46"
+                                            id="class-area-value-46" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-46">
                                             將軍澳
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="47"
+                                            id="class-area-value-47" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-47">
                                             西貢
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="48"
+                                            id="class-area-value-48" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-48">
                                             荃灣
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="49"
+                                            id="class-area-value-49" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-49">
                                             深井
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="50"
+                                            id="class-area-value-50" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-50">
                                             馬灣
                                         </label>
                                     </div>
@@ -2656,9 +2656,9 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="51"
+                                            id="class-area-value-51" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-51">
                                             葵涌
                                         </label>
                                     </div>
@@ -2666,81 +2666,81 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="52"
+                                            id="class-area-value-52" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-52">
                                             荔景
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="53"
+                                            id="class-area-value-53" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-53">
                                             葵芳
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="54"
+                                            id="class-area-value-54" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-54">
                                             青衣
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="55"
+                                            id="class-area-value-55" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-55">
                                             大圍
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="56"
+                                            id="class-area-value-56" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-56">
                                             沙田
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="57"
+                                            id="class-area-value-57" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-57">
                                             沙田市中心
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="58"
+                                            id="class-area-value-58" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-58">
                                             小瀝源
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="59"
+                                            id="class-area-value-59" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-59">
                                             火炭
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="60"
+                                            id="class-area-value-60" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-60">
                                             馬鞍山
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="61"
+                                            id="class-area-value-61" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-61">
                                             大埔
                                         </label>
                                     </div>
@@ -2748,35 +2748,35 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="62"
+                                            id="class-area-value-62" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-62">
                                             粉嶺
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="63"
+                                            id="class-area-value-63" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-63">
                                             上水
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="64"
+                                            id="class-area-value-64" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-64">
                                             元朗
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="65"
+                                            id="class-area-value-65" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-65">
                                             天水圍
                                         </label>
                                     </div>
@@ -2786,9 +2786,9 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="66"
+                                            id="class-area-value-66" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-66">
                                             屯門
                                         </label>
                                     </div>
@@ -2797,27 +2797,27 @@ if($_POST)
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="67"
+                                            id="class-area-value-67" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-67">
                                             青龍頭
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="68"
+                                            id="class-area-value-68" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-68">
                                             東涌
                                         </label>
                                     </div>
 
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+                                        <input class="form-check-input" type="checkbox" value="69"
+                                            id="class-area-value-69" name="class-area[]">
+                                        <label class="form-check-label" for="class-area-value-69">
                                             離島
                                         </label>
                                     </div>
