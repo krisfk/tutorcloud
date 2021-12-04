@@ -2189,7 +2189,7 @@ if($_POST)
                         <tr>
                             <td>
                                 <div>
-                                    <div>
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="1"
                                             id="class-area-value-1" name="class-area[]">
                                         <label class="form-check-label" for="class-area-value-1">
@@ -2202,7 +2202,7 @@ if($_POST)
                                         <label class="form-check-label" for="class-area-value-1">
                                             香港島
                                         </label>
-                                    </div>
+                                    </div> -->
 
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="1"
@@ -2360,13 +2360,13 @@ if($_POST)
                                         </label>
                                     </div>
 
-                                    <div>
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="1"
                                             id="class-area-value-1" name="class-area[]">
                                         <label class="form-check-label" for="class-area-value-1">
                                             九龍區
                                         </label>
-                                    </div>
+                                    </div> -->
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="1"
                                             id="class-area-value-1" name="class-area[]">
@@ -2604,13 +2604,13 @@ if($_POST)
 
 
 
-                                    <div>
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="1"
                                             id="class-area-value-1" name="class-area[]">
                                         <label class="form-check-label" for="class-area-value-1">
                                             新界區
                                         </label>
-                                    </div>
+                                    </div> -->
 
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="1"
