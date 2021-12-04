@@ -2358,13 +2358,15 @@ if($_POST)
                                         </label>
                                     </div>
 
-                                    <!-- <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="kl-place" name="">
+                                        <label class="form-check-label" for="kl-place">
                                             九龍區
                                         </label>
-                                    </div> -->
+                                    </div>
+
+
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="18"
                                             id="class-area-value-18" name="class-area[]">
@@ -2602,13 +2604,15 @@ if($_POST)
 
 
 
-                                    <!-- <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
+
+
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="nt-place" name="">
+                                        <label class="form-check-label" for="nt-place">
                                             新界區
                                         </label>
-                                    </div> -->
+                                    </div>
+
 
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="46"
