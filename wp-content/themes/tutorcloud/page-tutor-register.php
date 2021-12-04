@@ -2833,13 +2833,15 @@ if($_POST)
 
                                     <h5>可供補習方式</h5>
 
-                                    <table>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="18"
+                                            id="t-subjects-music-value-18" name="t-subjects-music[]">
+                                        <label class="form-check-label" for="t-subjects-music-value-18">
+                                            樂理
 
-                                        <tr>
-                                        </tr>
 
-                                    </table>
-
+                                        </label>
+                                    </div>
 
 
 
