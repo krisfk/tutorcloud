@@ -2878,7 +2878,12 @@ $(function() {
     $('#all-place').change(function() {
         // alert(5);
         if ($(this).is(':checked')) {
-            alert(6);
+
+            for (i = 1; i <= 69; i++) {
+                $('#class-area-value-' + i).attr('checked', checked);
+            }
+        } else {
+
         }
 
     })
