@@ -916,7 +916,7 @@ if($_POST)
                 </div>
                 <div class="step-content step-content-4">
 
-                    <h3>補習資料</h3>
+                    <h3 class="mb-4">補習資料</h3>
                     <table>
                         <tr>
                             <td class="align-top"><label for="self-intro">自我介紹 (50字或以上) *
