@@ -3328,6 +3328,8 @@ $(function() {
     $('.submit-btn').click(function() {
 
         var self_intro = $('#self-intro').val();
+        var error_txt = '';
+
         // $('.class-area')
 
         // $('input[type=checkbox]:checked').map(function(_, el) {
@@ -3340,7 +3342,24 @@ $(function() {
             val[i] = $(this).val();
             // alert(5);
         });
-        console.log(val);
+        if (val.length == 0) {
+            error_txt += '請選擇可補習地區\n';
+        }
+        var val2 = [];
+        $('input[name="t-style[]"]:checked').each(function(i) {
+            val2[i] = $(this).val();
+            // alert(5);
+        });
+        if (val2.length == 0) {
+            error_txt += '請選擇可供補習方式\n';
+        }
+
+        if (error_txt) {
+            alert(error_txt);
+        }
+
+
+        // console.log(val);
         // });
 
 
