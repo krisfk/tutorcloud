@@ -488,7 +488,7 @@ h2 .bar {
 
 .step-content table td label {
     padding: 0 1rem 0 0;
-    display: block;
+    display: inline-block;
 }
 
 input[type='radio'] {
