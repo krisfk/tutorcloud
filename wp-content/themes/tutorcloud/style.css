@@ -663,3 +663,11 @@ input[type='checkbox'] {
 .tutor-reg-icon {
     width: 120px;
 }
+
+.description-div {
+    background: rgb(255 255 255 / 90%);
+    padding: 2rem;
+    border: 3px solid #4593ae;
+    margin: 0 0 0 3rem;
+    border-radius: 1.5rem;
+}
