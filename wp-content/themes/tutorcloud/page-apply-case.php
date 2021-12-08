@@ -95,5 +95,19 @@ get_header();
 
 
 </div>
+
+
+
+
+
+
+<script type="text/javascript">
+$(function() {
+
+    $('.add-btn-a').click(function() {
+        alert(87);
+    })
+})
+</script>
 <?php
 get_footer();
