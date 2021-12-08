@@ -67,7 +67,7 @@ get_header();
                             <div class='col-2'>大學生</div>
                             <div class='col-2'>可接受最低時薪： <br>$160</div>
                             <div class='col-2'>可教授科目： <br>數學 化學 經濟</div>
-                            <div class='col-2'>
+                            <div class='col-2 text-center'>
 
                                 <div class="add-btn-a">
 
