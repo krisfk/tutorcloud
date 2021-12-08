@@ -3328,7 +3328,7 @@ $(function() {
     $('.submit-btn').click(function() {
 
         var self_intro = $('#self-intro').val();
-        var error_txt = ''; =
+        var error_txt = '';
         var val = [];
 
 
