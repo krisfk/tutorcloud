@@ -228,13 +228,13 @@ h2 .bar {
 .num-pt {
     font-size: 38px;
     color: #fff;
-    width: 50px;
+    width: 45px;
     background: #95c4c2;
     display: block;
     text-align: center;
-    height: 50px;
+    height: 45px;
     border-radius: 50px;
-    line-height: 50px;
+    line-height: 45px;
     margin: 0 0.5rem 0 0;
 }
 
