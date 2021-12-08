@@ -3013,6 +3013,13 @@ if($_POST)
 $(function() {
 
 
+    $('.agree-terms-btn').click(function() {
+
+        $('.step-content').fadeOut(0);
+
+        $('.step-content.step-content-2').fadeIn(0);
+    })
+
     $('#proof1').on('change', function() {
         var size = this.files[0].size / 1024 / 1024;
         if (size > 5) {
