@@ -3021,6 +3021,7 @@ if($_POST)
                     </tr>
                 </table>
 
+                <a href="javascript:void(0);" class="submit-btn">遞交表格</a>
 
         </div>
 
@@ -3030,7 +3031,6 @@ if($_POST)
 
 
 
-        <a href="javascript:void(0);" class="submit-btn">遞交表格</a>
         </form>
     </div>
     <!-- <div class="col-2"></div> -->
