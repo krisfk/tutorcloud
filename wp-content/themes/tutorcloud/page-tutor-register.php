@@ -3338,8 +3338,9 @@ $(function() {
         var val = [];
         $('input[name="class-area[]"]:checked').each(function(i) {
             val[i] = $(this).val();
-            alert(5);
+            // alert(5);
         });
+        console.log(val);
         // });
 
 
