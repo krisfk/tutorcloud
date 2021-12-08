@@ -2115,8 +2115,8 @@ if($_POST)
                                     </div>
                                     <div class="mt-2 w-100">
                                         <label for="t-subjects-sat-value-flang">Foreign Languages:</label>
-                                        <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-flang"
-                                            type="text">
+                                        <input class="limit-input-w form-control mt-2 d-inline-block"
+                                            id="t-subjects-sat-value-flang" type="text">
                                     </div>
 
                                     <div class="mt-2 w-100">
