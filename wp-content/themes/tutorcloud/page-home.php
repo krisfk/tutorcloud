@@ -139,7 +139,7 @@ get_header();
                 <tr>
                     <td></td>
                     <td class="pt-4">
-                        - 成功配對及按照TutorCloud指示繳交學費後，學生可以預備進行線上或上門補習。</td>
+                        成功配對及按照TutorCloud指示繳交學費後，學生可以預備進行線上或上門補習。</td>
                 </tr>
             </table>
 
@@ -160,7 +160,7 @@ get_header();
                 <tr>
                     <td></td>
                     <td class="pt-4">
-                        - 完成兩星期課堂後，TutorCloud會聯絡您，讓您提供對導師的評價。</td>
+                        完成兩星期課堂後，TutorCloud會聯絡您，讓您提供對導師的評價。</td>
                 </tr>
             </table>
 
