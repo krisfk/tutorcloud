@@ -2295,10 +2295,11 @@ if($_POST)
 
                 </div>
 
-                <h5>可補習地區</h5>
+                <h5 class="mt-4">可補習地區</h5>
                 <table>
 
-                    <tr>
+                    <tr>可供補習方式
+
                         <td>
                             <div>
                                 <div>
