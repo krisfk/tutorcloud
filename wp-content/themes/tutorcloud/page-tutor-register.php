@@ -361,11 +361,11 @@ if($_POST)
 
         
     }
- print_r($_FILES);
+//  print_r($_FILES);
 
             if(!empty($_FILES))
             {
-                echo 999;
+                // echo 999;
                 
                 if($_FILES["proof1"]['size'])
                 {
@@ -414,7 +414,7 @@ if($_POST)
 
 
 
-            <form action="" method="post">
+            <form action="" method="post" enctype="multipart/form-data">
                 <div class="step-content step-content-2">
                     <h5>登入資料</h5>
                     <table class="mt-3">
