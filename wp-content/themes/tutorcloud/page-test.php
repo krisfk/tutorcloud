@@ -2,12 +2,12 @@
 
 if($_POST)
 {
-	echo 1;
+	 echo 2;
 	print_r($_FILES);
 }
 ?>
 
-<form enctype="multipart/form-data" action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
 
     <input type="file" name="upload_file" id="upload_file">
     <input type="submit">
