@@ -361,9 +361,9 @@ if($_POST)
 
         
     }
-echo 888;
+ print_r($_FILES);
 
-                if(!empty($_FILES))
+            if(!empty($_FILES))
             {
                 echo 999;
                 
