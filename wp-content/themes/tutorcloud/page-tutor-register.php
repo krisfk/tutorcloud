@@ -3020,6 +3020,7 @@ $(function() {
         // alert(bac_degree);
         var tutor_level = $('#tutor-level').val();
         var diploma = $('input[name="diploma"]').val();
+        alert(diploma);
         var tutor_year = $('#tutor-year').val();
         var u_major = $('#u-major').val();
         // var s_major = $('#s-major').val();
