@@ -3069,6 +3069,17 @@ $(function() {
             $(this).closest('.subject-list-top').next('.subject-list').slideUp(200);
         }
     })
+    $('.step-content-4 .prev-step-btn').click(function() {
+        $('.step-content').fadeOut(0);
+
+        $('.step-content.step-content-4').fadeIn(0);
+        $('html,body').animate({
+            'scrollTop': $('.main-content-div').offset().top - 50
+        }, 200);
+
+        $('.step-txt').removeClass('active');
+        $('.step-txt').eq(2).addClass('active');
+    })
     $('.step-content-3 .next-step-btn').click(function() {
 
         var error_txt = '';
