@@ -3327,7 +3327,23 @@ $(function() {
 
     $('.submit-btn').click(function() {
 
-        $('form').submit();
+        var self_intro = $('#self-intro').val();
+        // $('.class-area')
+
+        // $('input[type=checkbox]:checked').map(function(_, el) {
+        //     return $(el).val();
+        // }).get();
+
+        // $('#save_value').click(function() {
+        var val = [];
+        $('input[name="class-area[]"]:checked').each(function(i) {
+            val[i] = $(this).val();
+            alert(5);
+        });
+        // });
+
+
+        // $('form').submit();
     })
 
     $('.terms-a').click(function() {
