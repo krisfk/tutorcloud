@@ -2973,7 +2973,7 @@ if($_POST)
                                 </div>
 
 
-                                <table>
+                                <table class="mt-4">
                                     <tr>
                                         <td> <label for="lowest-salary">可接受最低時薪</label> </td>
                                         <td><input id="lowest-salary" name="lowest-salary" type="text"
