@@ -3017,6 +3017,8 @@ $(function() {
 
         // alert(6);
         var email = $('#email').val();
+        var confirm_email = $('#confirm_email').val();
+
         var login_password = $('#login_password').val();
         var chi_name = $('#chi-name').val();
         var eng_name = $('#eng-name').val();
@@ -3029,6 +3031,12 @@ $(function() {
         if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
             error_txt += '電話格式不正確\n';
         }
+
+        if (email != confirm_email) {
+            error_txt +=
+                '確認登入電郵輸入不相同\n';
+        }
+
         if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
             error_txt +=
                 '電郵格式不正確\n';
