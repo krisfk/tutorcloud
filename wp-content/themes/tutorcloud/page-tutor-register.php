@@ -371,7 +371,7 @@ if($_POST)
                 if($_FILES["proof1"]['size'])
                 {
 
-                    echo 22;
+                    // echo 22;
                 $wordpress_upload_dir = wp_upload_dir();
 
                 $new_file_path = $wordpress_upload_dir['path'] . '/' . $_FILES["proof1"]["name"];
@@ -395,6 +395,8 @@ if($_POST)
                 require_once( ABSPATH . 'wp-admin/includes/image.php' );
 
                 wp_update_attachment_metadata( $upload_id, wp_generate_attachment_metadata( $upload_id, $new_file_path ) );
+
+                echo $post_id;
 
                 update_field( 'proof1', $upload_id, $post_id );
             
