@@ -3019,7 +3019,7 @@ $(function() {
         var bac_degree = $('#bac-degree').val();
         // alert(bac_degree);
         var tutor_level = $('#tutor-level').val();
-        var diploma = $('input[name="diploma"]').val();
+        var diploma = $('input[name="diploma"]:checked').val();
         alert(diploma);
         var tutor_year = $('#tutor-year').val();
         var u_major = $('#u-major').val();
@@ -3088,7 +3088,7 @@ $(function() {
         var eng_name = $('#eng-name').val();
         var whatsapp_tel = $('#whatsapp-tel').val();
         var age = $('#age').val();
-        var gender = $('input[name="gender"]').val();
+        var gender = $('input[name="gender"]:checked').val();
         var error_txt = '';
         // var error = '';
 
