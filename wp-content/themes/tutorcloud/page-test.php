@@ -1,9 +1,9 @@
 <?php
 
-if($_POST)
+if($_FILES)
 {
-	 echo 3;
-	print_r($_FILES);
+	 echo 'have file';
+	// print_r($_FILES);
 }
 ?>
 
