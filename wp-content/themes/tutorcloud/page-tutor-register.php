@@ -58,7 +58,7 @@ get_header();
         <div class="col-10">
 
 
-            <div class="result-div">
+            <div class="result-div mt-5">
 
 
                 <div class="text-center">
