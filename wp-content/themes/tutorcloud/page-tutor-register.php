@@ -918,7 +918,7 @@ if($_POST)
 
                     <table>
                         <tr>
-                            <td style="vertial-align:top"><label for="self-intro">自我介紹 (50字或以上) *
+                            <td class="align-top"><label for="self-intro">自我介紹 (50字或以上) *
                                 </label></td>
                             <td><textarea id="self-intro" name="self-intro" class="form-control" rows="4"
                                     cols="50"></textarea></td>
