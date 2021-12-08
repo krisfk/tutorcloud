@@ -3047,6 +3047,15 @@ if($_POST)
 // var $ = jQuery;
 $(function() {
 
+
+    $('.subject-list-top a').click(function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $(this).closest('.subject-list-top').next('.subject-list').slideDown(200);
+        } else {
+            $(this).closest('.subject-list-top').next('.subject-list').slideUp(200);
+        }
+    })
     $('.step-content-3 .next-step-btn').click(function() {
 
         var error_txt = '';
