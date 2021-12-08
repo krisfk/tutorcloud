@@ -1,11 +1,11 @@
 <?php
 
 
-if($_FILES)
-{
-	 echo 'have file';
-	// print_r($_FILES);
-}
+// if($_FILES)
+// {
+	//  echo 'have file';
+	print_r($_FILES);
+// }
 ?>
 
 <form action="" method="post" enctype="multipart/form-data">
