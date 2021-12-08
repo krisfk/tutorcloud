@@ -660,6 +660,10 @@ input[type='checkbox'] {
     margin-right: auto;
 }
 
+.submit-login-btn:hover {
+    color: #fff;
+}
+
 .tutor-reg-icon {
     width: 100%;
     /* float: right; */
