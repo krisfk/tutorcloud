@@ -578,6 +578,11 @@ input[type='checkbox'] {
 
 .subject-list-top a {
     display: block;
+    background: url(assets/images/add.png);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 25px;
+    padding: 1rem 0 1rem;
 }
 
 .subject-list {
