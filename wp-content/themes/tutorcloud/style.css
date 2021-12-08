@@ -684,4 +684,6 @@ input[type='checkbox'] {
 
 .tutor-list-ul li {
     list-style-type: none;
+    background: #95c4c2;
+    color: #fff;
 }
