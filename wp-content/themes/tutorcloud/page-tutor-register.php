@@ -3078,7 +3078,9 @@ $(function() {
         if (error_txt) {
             alert(error_txt);
         } else {
-            $('.step-content.step-content-2').fadeIn(0);
+            $('.step-content').fadeOut(0);
+
+            $('.step-content.step-content-3').fadeIn(0);
 
         }
 
@@ -3088,6 +3090,14 @@ $(function() {
 
 
     })
+
+    $('.step-content-3 .prev-step-btn').click(function() {
+        $('.step-content').fadeOut(0);
+
+        $('.step-content.step-content-2').fadeIn(0);
+
+    })
+
     $('.step-content-2 .prev-step-btn').click(function() {
         $('.step-content').fadeOut(0);
 
