@@ -499,7 +499,7 @@ if($_POST)
                         </tr>
                         <tr>
                             <td><label for="whatsapp-tel"> WhatsApp 電話號碼 *</label></td>
-                            <td><input id="whatsapp-tel" name="whatsapp-tel" type="text" class="form-control"></td>
+                            <td><input id="whatsapp-tel" name="whatsapp-tel" type="number" class="form-control"></td>
                         </tr>
                         <tr>
                             <td><label for="age"> 年齡*</label></td>
