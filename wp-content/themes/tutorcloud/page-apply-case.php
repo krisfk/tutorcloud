@@ -58,28 +58,27 @@ get_header();
 
             <ul class="tutor-list-ul">
                 <li class="">
-                    <a href="javascript:void(0);">
-                        <div class="row gx-0 align-items-center">
-                            <div class='col-2 data-column'>T210001 <br>女 <img
-                                    src="<?php echo get_template_directory_uri();?>/assets/images/f-icon.png" alt="">
-                            </div>
-                            <div class='col-2 data-column'>香港中文大學 <br>護理系 </div>
-                            <div class='col-2 data-column'>大學生</div>
-                            <div class='col-2 data-column'>可接受最低時薪： <br>$160</div>
-                            <div class='col-2 data-column'>可教授科目： <br>數學 化學 經濟</div>
-                            <div class='col-2 add-btn-column text-center'>
-
-                                <div class="add-btn-a">
-
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/add-btn.png"
-                                        alt="">
-                                    <div>加入導師名單</div>
-
-                                </div>
-                            </div>
-
+                    <!-- <a href="javascript:void(0);"> -->
+                    <div class="row gx-0 align-items-center">
+                        <div class='col-2 data-column'>T210001 <br>女 <img
+                                src="<?php echo get_template_directory_uri();?>/assets/images/f-icon.png" alt="">
                         </div>
-                    </a>
+                        <div class='col-2 data-column'>香港中文大學 <br>護理系 </div>
+                        <div class='col-2 data-column'>大學生</div>
+                        <div class='col-2 data-column'>可接受最低時薪： <br>$160</div>
+                        <div class='col-2 data-column'>可教授科目： <br>數學 化學 經濟</div>
+                        <div class='col-2 add-btn-column text-center'>
+
+                            <div class="add-btn-a">
+
+                                <img src="<?php echo get_template_directory_uri();?>/assets/images/add-btn.png" alt="">
+                                <div>加入導師名單</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- </a> -->
                 </li>
             </ul>
         </div>
