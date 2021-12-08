@@ -62,6 +62,13 @@ get_header();
         if($_POST)
         {
         ?>
+            <script type="text/javascript">
+            $(function() {
+                $('.step-txt').removeClass('active');
+                $('.step-txt').eq(4).addClass('active');
+
+            })
+            </script>
             <div class="result-div mt-5">
 
 
@@ -69,8 +76,6 @@ get_header();
                     <h2>登記完成！</h2>
                 </div>
                 <a href="#" class="submit-login-btn">立即登入查看補習個案</a>
-
-
 
             </div>
             <?php
