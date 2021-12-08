@@ -488,6 +488,7 @@ h2 .bar {
 
 .step-content table td label {
     padding: 0 1rem 0 0;
+    display: block;
 }
 
 input[type='radio'] {
@@ -621,4 +622,8 @@ input[type='checkbox'] {
 
 .subject-list div {
     float: left;
+}
+
+.form-check-label {
+    display: inline-block !important;
 }
