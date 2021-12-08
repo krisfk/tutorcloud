@@ -631,7 +631,7 @@ input[type='checkbox'] {
 }
 
 .step-content {
-    display: none;
+    /* display: none; */
 }
 
 .step-content.step-content-1 {
