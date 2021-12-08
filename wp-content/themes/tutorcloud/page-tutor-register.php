@@ -3012,6 +3012,67 @@ if($_POST)
 // var $ = jQuery;
 $(function() {
 
+    $('.step-content-3 .next-step-btn').click(function() {
+
+        var error_txt = '';
+
+        var bac_degree = $('#bac-degree').val();
+        var tutor_level = $('#tutor-level').val();
+        var diploma = $('input[name="diploma"]').val();
+        var tutor_year = $('#tutor-year').val();
+        var u_major = $('#u-major').val();
+        // var s_major = $('#s-major').val();
+        var s_school = $('#s-school').val();
+        var exam_lang = $('#exam-lang').val();
+
+        if (!bac_degree) {
+            error_txt +=
+                '請輸入就讀大學 (學士學位課程)\n';
+        }
+
+        if (!tutor_level) {
+            error_txt +=
+                '請輸教育程度\n';
+        }
+
+        if (!diploma) {
+            error_txt +=
+                '是否擁有教育文憑\n';
+        }
+
+        if (!tutor_year) {
+            error_txt +=
+                '年級 (2021-2022年度)\n';
+        }
+        if (!u_major) {
+            error_txt +=
+                '大學主修科目\n';
+        }
+        if (!s_school) {
+            error_txt +=
+                '曾就讀中學\n';
+        }
+
+        if (!exam_lang) {
+            error_txt +=
+                '應考主要語言\n';
+        }
+
+
+        if (error_txt) {
+            alert(error_txt);
+        } else {
+            $('.step-content').fadeOut(0);
+
+            $('.step-content.step-content-4').fadeIn(0);
+
+        }
+
+
+
+
+    })
+
 
     $('.step-content-2 .next-step-btn').click(function() {
 
