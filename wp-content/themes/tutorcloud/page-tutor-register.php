@@ -371,7 +371,7 @@ if($_POST)
                 if($_FILES["proof1"]['size'])
                 {
 
-                    echo 11;
+                    echo 22;
                 $wordpress_upload_dir = wp_upload_dir();
 
                 $new_file_path = $wordpress_upload_dir['path'] . '/' . $_FILES["proof1"]["name"];
