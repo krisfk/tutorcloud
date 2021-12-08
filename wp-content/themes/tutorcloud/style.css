@@ -580,7 +580,8 @@ input[type='checkbox'] {
     background: url(assets/images/add.png);
     background-repeat: no-repeat;
     background-position: 100% center;
-    background-size: 25px;
+    background-size: 15px;
+    max-width: 350px;
     padding: 1rem 0 1rem;
 }
 
