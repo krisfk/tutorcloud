@@ -581,5 +581,5 @@ input[type='checkbox'] {
 }
 
 .subject-list {
-    /* display: none; */
+    display: none;
 }
