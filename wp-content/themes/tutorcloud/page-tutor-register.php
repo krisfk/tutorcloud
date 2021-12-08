@@ -3027,11 +3027,11 @@ $(function() {
         var error = '';
 
         if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
-            error_txt += '電話格式不正確<br/>';
+            error_txt += '電話格式不正確\n';
         }
         if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
             error_txt +=
-                '電郵格式不正確<br/>';
+                '電郵格式不正確\n';
         }
 
         if (error_txt) {
