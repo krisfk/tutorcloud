@@ -563,9 +563,10 @@ input[type='checkbox'] {
     display: table;
 }
 
-.step-content {
+
+/* .step-content {
     display: none;
-}
+} */
 
 .step-content.step-content-1 {
     display: block;

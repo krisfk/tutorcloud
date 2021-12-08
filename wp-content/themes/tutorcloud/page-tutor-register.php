@@ -3032,30 +3032,30 @@ $(function() {
 
         if (!tutor_level) {
             error_txt +=
-                '請輸教育程度\n';
+                '請輸入教育程度\n';
         }
 
         if (!diploma) {
             error_txt +=
-                '是否擁有教育文憑\n';
+                '請輸入是否擁有教育文憑\n';
         }
 
         if (!tutor_year) {
             error_txt +=
-                '年級 (2021-2022年度)\n';
+                '請輸入年級 (2021-2022年度)\n';
         }
         if (!u_major) {
             error_txt +=
-                '大學主修科目\n';
+                '請輸入大學主修科目\n';
         }
         if (!s_school) {
             error_txt +=
-                '曾就讀中學\n';
+                '請輸入曾就讀中學\n';
         }
 
         if (!exam_lang) {
             error_txt +=
-                '應考主要語言\n';
+                '請輸入應考主要語言\n';
         }
 
 
