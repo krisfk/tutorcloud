@@ -67,7 +67,16 @@ get_header();
                             <div class='col-2'>大學生</div>
                             <div class='col-2'>可接受最低時薪： <br>$160</div>
                             <div class='col-2'>可教授科目： <br>數學 化學 經濟</div>
-                            <div class='col-2'>fdas</div>
+                            <div class='col-2'>
+
+                                <a href="">
+
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/add-btn.png"
+                                        alt="">
+                                    <div>加入導師名單</div>
+
+                                </a>
+                            </div>
 
                         </div>
                     </a>
