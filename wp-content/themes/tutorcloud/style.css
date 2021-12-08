@@ -584,4 +584,6 @@ input[type='checkbox'] {
     display: none;
 }
 
-.terms-list-ul {}
+.terms-list-ul {
+    margin: -1rem 0 0 0 !important;
+}
