@@ -1805,6 +1805,9 @@ if($_POST)
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-gceal-value-other"
                                             name="t-subjects-gceal-value-other" type="text">
                                     </div>
+                                </td>
+                            </tr>
+                        </table>
 
                     </div>
                 </div>
@@ -1997,6 +2000,9 @@ if($_POST)
                                     <input class="limit-input-w form-control mt-2" id="t-subjects-igcse-value-other"
                                         name="t-subjects-igcse-value-other" type="text">
                                 </div>
+                            </td>
+                        </tr>
+                    </table>
 
                 </div>
 
@@ -2093,6 +2099,9 @@ if($_POST)
                                     <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-other"
                                         name="t-subjects-sat-value-other" type="text">
                                 </div>
+                            </td>
+                        </tr>
+                    </table>
 
                 </div>
 
