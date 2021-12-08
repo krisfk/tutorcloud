@@ -701,3 +701,7 @@ input[type='checkbox'] {
     background: #618382;
     color: #fff;
 }
+
+.tutor-list-ul .data-column {
+    padding: 1rem 0 1rem 0;
+}
