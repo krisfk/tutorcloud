@@ -503,7 +503,7 @@ if($_POST)
                         </tr>
                         <tr>
                             <td><label for="age"> 年齡*</label></td>
-                            <td><input id="age" name="age" type="text" class="form-control"></td>
+                            <td><input id="age" name="age" type="number" class="form-control"></td>
                         </tr>
                         <tr>
                             <td> <label for=""> 性別*</label></td>
