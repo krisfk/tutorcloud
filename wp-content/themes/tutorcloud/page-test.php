@@ -1,4 +1,4 @@
-<?php
+<form action="" method="post">
 
-echo 1;
-?>
+    <input type="file" name="upload_file" id="upload_file">
+</form>
