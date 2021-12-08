@@ -3120,6 +3120,9 @@ $(function() {
                 'scrollTop': $('.main-content-div').offset().top - 50
             }, 200);
 
+            $('.step-txt').removeClass('active');
+            $('.step-txt').eq(3).addClass('active');
+
         }
 
 
@@ -3199,6 +3202,10 @@ $(function() {
             $('html,body').animate({
                 'scrollTop': $('.main-content-div').offset().top - 50
             }, 200);
+
+            $('.step-txt').removeClass('active');
+            $('.step-txt').eq(2).addClass('active');
+
 
         }
 
