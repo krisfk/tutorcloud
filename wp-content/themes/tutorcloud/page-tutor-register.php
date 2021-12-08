@@ -3020,6 +3020,7 @@ $(function() {
         var confirm_email = $('#confirm_email').val();
 
         var login_password = $('#login_password').val();
+        var confirm_login_password = $('#confirm_login_password').val();
         var chi_name = $('#chi-name').val();
         var eng_name = $('#eng-name').val();
         var whatsapp_tel = $('#whatsapp-tel').val();
@@ -3028,18 +3029,49 @@ $(function() {
         var error_txt = $('#occupation').val();
         var error = '';
 
-        if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
-            error_txt += '電話格式不正確\n';
+
+        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
+            error_txt +=
+                '電郵格式不正確\n';
         }
+
 
         if (email != confirm_email) {
             error_txt +=
                 '確認登入電郵輸入不相同\n';
         }
 
-        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
+        if (!login_password) {
             error_txt +=
-                '電郵格式不正確\n';
+                '請輸入登入密碼\n';
+        }
+
+        if (login_password != confirm_login_password) {
+            error_txt +=
+                '確認登入密碼輸入不相同\n';
+        }
+
+
+        if (!chi_name) {
+            error_txt +=
+                '請輸入中文全名\n';
+        }
+        if (!eng_name) {
+            error_txt +=
+                '請輸入英文全名\n';
+        }
+
+        if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
+            error_txt += 'whatsapp電話格式不正確\n';
+        }
+        if (!age) {
+            error_txt +=
+                '請輸入年齡\n';
+        }
+
+        if (!gender) {
+            error_txt +=
+                '請輸入性別\n';
         }
 
         if (error_txt) {
