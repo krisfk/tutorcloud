@@ -700,6 +700,8 @@ input[type='checkbox'] {
     display: block;
     background: #618382;
     color: #fff;
+    position: relative;
+    z-index: 100;
 }
 
 .tutor-list-ul .data-column {
