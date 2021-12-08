@@ -708,6 +708,7 @@ input[type='checkbox'] {
 .tutor-list-ul .data-column {
     padding: 1rem;
     /* padding-bottom: 1rem; */
+    line-height: 2rem;
 }
 
 .add-btn-column {
