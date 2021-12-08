@@ -58,6 +58,10 @@ get_header();
         <div class="col-10">
 
 
+            <?php
+        if($_POST)
+        {
+        ?>
             <div class="result-div mt-5">
 
 
@@ -69,6 +73,9 @@ get_header();
 
 
             </div>
+            <?php
+            
+        }?>
 
             <div class="step-content step-content-1">
                 <!-- <h3 class="mb-4">條款及細則</h3> -->
