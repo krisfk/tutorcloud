@@ -3026,8 +3026,9 @@ $(function() {
         var whatsapp_tel = $('#whatsapp-tel').val();
         var age = $('#age').val();
         var gender = $('input[name="gender"]').val();
-        var error_txt = $('#occupation').val();
-        var error = '';
+        var error_txt = '';
+        // var error = '';
+
 
 
         if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
@@ -3076,6 +3077,9 @@ $(function() {
 
         if (error_txt) {
             alert(error_txt);
+        } else {
+            $('.step-content.step-content-2').fadeIn(0);
+
         }
 
 
