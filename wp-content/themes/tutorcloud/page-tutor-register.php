@@ -3072,7 +3072,7 @@ $(function() {
     $('.step-content-4 .prev-step-btn').click(function() {
         $('.step-content').fadeOut(0);
 
-        $('.step-content.step-content-4').fadeIn(0);
+        $('.step-content.step-content-3').fadeIn(0);
         $('html,body').animate({
             'scrollTop': $('.main-content-div').offset().top - 50
         }, 200);
