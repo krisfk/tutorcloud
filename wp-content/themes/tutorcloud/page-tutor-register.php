@@ -3013,6 +3013,15 @@ if($_POST)
 $(function() {
 
 
+    $('.step-content-2 .next-step-btn').click(function() {})
+    $('.step-content-2 .prev-step-btn').click(function() {
+        $('.step-content').fadeOut(0);
+
+        $('.step-content.step-content-1').fadeIn(0);
+
+    })
+
+
     $('.agree-terms-btn').click(function() {
 
         $('.step-content').fadeOut(0);
