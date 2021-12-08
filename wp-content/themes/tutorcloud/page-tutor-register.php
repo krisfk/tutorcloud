@@ -361,7 +361,8 @@ if($_POST)
 
         
     }
-//  print_r($_FILES);
+    
+ print_r($_FILES);
 
             if(!empty($_FILES))
             {
