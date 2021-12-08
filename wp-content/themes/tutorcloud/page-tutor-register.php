@@ -3015,7 +3015,7 @@ $(function() {
 
     $('.step-content-2 .next-step-btn').click(function() {
 
-        alert(6);
+        // alert(6);
         var email = $('#email').val();
         var login_password = $('#login_password').val();
         var chi_name = $('#chi-name').val();
@@ -3032,6 +3032,10 @@ $(function() {
         if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
             error_txt +=
                 '電郵格式不正確<br/>';
+        }
+
+        if (error_txt) {
+            alert(error_txt);
         }
 
 
