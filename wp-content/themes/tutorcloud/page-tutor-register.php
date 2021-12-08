@@ -956,7 +956,7 @@ if($_POST)
                                         </label>
                                     </div>
 
-                                    <div class="mt-2">
+                                    <div class="mt-2 w-100">
                                         <label for="t-subjects-kin-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
                                             name="t-subjects-kin-value-other" type="text">
@@ -1032,7 +1032,7 @@ if($_POST)
 
                                         </label>
                                     </div>
-                                    <div class="mt-2">
+                                    <div class="mt-2 w-100">
                                         <label for="t-subjects-pri-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-pri-value-other"
                                             name="t-subjects-pri-value-other" type="text">
@@ -1240,7 +1240,7 @@ if($_POST)
                                     </div>
 
 
-                                    <div class="mt-2">
+                                    <div class="mt-2 w-100">
                                         <label for="t-subjects-f13-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-f13-value-other"
                                             name="t-subjects-f13-value-other" type="text">
@@ -1460,7 +1460,7 @@ if($_POST)
 
 
 
-                                    <div class="mt-2">
+                                    <div class="mt-2 w-100">
                                         <label for="t-subjects-f46-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-f46-value-other"
                                             name="t-subjects-f46-value-other" type="text">
@@ -1611,7 +1611,7 @@ if($_POST)
                                         </label>
                                     </div>
 
-                                    <div class="mt-2">
+                                    <div class="mt-2 w-100">
                                         <label for="t-subjects-ib-value-other">Other:</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-ib-value-other"
                                             name="t-subjects-ib-value-other" type="text">
@@ -1810,7 +1810,7 @@ if($_POST)
 
 
 
-                                    <div class="mt-2">
+                                    <div class="mt-2 w-100">
                                         <label for="t-subjects-gceal-value-other">Other:</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-gceal-value-other"
                                             name="t-subjects-gceal-value-other" type="text">
@@ -2009,7 +2009,7 @@ if($_POST)
 
 
 
-                                    <div class="mt-2">
+                                    <div class="mt-2 w-100">
                                         <label for="t-subjects-igcse-value-other">Other:</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-igcse-value-other"
                                             name="t-subjects-igcse-value-other" type="text">
@@ -2105,13 +2105,13 @@ if($_POST)
 
                                         </label>
                                     </div>
-                                    <div class="mt-2">
+                                    <div class="mt-2 w-100">
                                         <label for="t-subjects-sat-value-flang">Foreign Languages:</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-flang"
                                             type="text">
                                     </div>
 
-                                    <div class="mt-2">
+                                    <div class="mt-2 w-100">
                                         <label for="t-subjects-sat-value-other">Other:</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-sat-value-other"
                                             name="t-subjects-sat-value-other" type="text">
@@ -2297,7 +2297,7 @@ if($_POST)
                                     </div>
 
 
-                                    <div class="mt-2">
+                                    <div class="mt-2 w-100">
                                         <label for="t-subjects-music-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2" id="t-subjects-music-value-other"
                                             name="t-subjects-music-value-other" type="text">
