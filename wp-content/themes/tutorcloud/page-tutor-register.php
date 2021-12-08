@@ -2298,7 +2298,7 @@ if($_POST)
                 <h5>可補習地區</h5>
                 <table class="mt-4">
 
-                    <tr>可供補習方式
+                    <tr>
 
                         <td>
                             <div>
@@ -2945,7 +2945,7 @@ if($_POST)
                                 </div>
 
 
-                                <h5>可供補習方式</h5>
+                                <h5 class="mt-4">可供補習方式</h5>
 
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="1" id="t-style-value-1"
