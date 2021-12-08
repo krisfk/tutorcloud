@@ -3013,7 +3013,32 @@ if($_POST)
 $(function() {
 
 
-    $('.step-content-2 .next-step-btn').click(function() {})
+    $('.step-content-2 .next-step-btn').click(function() {
+
+        var email = $('#email').val();
+        var login_password = $('#login_password').val();
+        var chi_name = $('#chi-name').val();
+        var eng_name = $('#eng-name').val();
+        var whatsapp_tel = $('#whatsapp-tel').val();
+        var age = $('#age').val();
+        var gender = $('input[name="gender"]').val();
+        var error_txt = $('#occupation').val();
+        var error = '';
+
+        if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
+            error_txt += '電話格式不正確<br/>';
+        }
+        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
+            error_txt +=
+                '電郵格式不正確<br/>';
+        }
+
+
+
+
+
+
+    })
     $('.step-content-2 .prev-step-btn').click(function() {
         $('.step-content').fadeOut(0);
 
