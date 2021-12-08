@@ -58,6 +58,16 @@ get_header();
         <div class="col-10">
 
 
+            <div class="result-div">
+
+
+                <h2>登記完成！</h2>
+                <a href="#" class="submit-login-btn">立即登入查看補習個案</a>
+
+
+
+            </div>
+
             <div class="step-content step-content-1">
                 <!-- <h3 class="mb-4">條款及細則</h3> -->
                 <ul class="terms-list-ul">

@@ -637,3 +637,13 @@ input[type='checkbox'] {
 .step-content.step-content-1 {
     display: block;
 }
+
+.submit-login-btn {
+    display: inline-block;
+    background: #46a879;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
+}
