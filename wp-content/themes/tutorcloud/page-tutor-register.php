@@ -365,6 +365,7 @@ if($_POST)
 
                 if(!empty($_FILES))
             {
+                echo 11;
                 
                 if($_FILES["proof1"]['size'])
                 {
