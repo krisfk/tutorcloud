@@ -3328,16 +3328,18 @@ $(function() {
     $('.submit-btn').click(function() {
 
         var self_intro = $('#self-intro').val();
-        var error_txt = '';
-
-        // $('.class-area')
-
-        // $('input[type=checkbox]:checked').map(function(_, el) {
-        //     return $(el).val();
-        // }).get();
-
-        // $('#save_value').click(function() {
+        var error_txt = ''; =
         var val = [];
+
+
+        if (!self_intro) {
+            error_txt += '請輸入自我介紹\n';
+        } else
+        if (self_intro.length < 50) {
+            error_txt += '請輸入自我介紹(50字或以上)\n';
+
+        }
+
         $('input[name="class-area[]"]:checked').each(function(i) {
             val[i] = $(this).val();
             // alert(5);
@@ -3352,6 +3354,12 @@ $(function() {
         });
         if (val2.length == 0) {
             error_txt += '請選擇可供補習方式\n';
+        }
+
+        var lowest_salary = $('#lowest-salary').val();
+        if (!lowest_salary) {
+            error_txt += '請輸入可接受最低時薪\n';
+
         }
 
         if (error_txt) {
