@@ -459,7 +459,7 @@ if($_POST)
 
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="step-content step-content-2">
-                    <h3>個人資料</h3>
+                    <h3 class="mb-3">個人資料</h3>
                     <h5>登入資料</h5>
                     <table class="mt-3">
                         <tr>
