@@ -3364,6 +3364,8 @@ $(function() {
 
         if (error_txt) {
             alert(error_txt);
+        } else {
+            $('form').submit();
         }
 
 
