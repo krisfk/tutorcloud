@@ -571,3 +571,7 @@ input[type='checkbox'] {
 .step-content.step-content-1 {
     display: block;
 }
+
+.subject-list-top {
+    display: block;
+}
