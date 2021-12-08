@@ -2318,7 +2318,7 @@ if($_POST)
 
                 </div>
 
-                <h5 class="mt-4">可補習地區</h5>
+                <h5 class="mt-4">可補習地區 *</h5>
                 <table>
 
                     <tr>
@@ -2968,7 +2968,7 @@ if($_POST)
                                 </div>
 
 
-                                <h5 class="mt-4">可供補習方式</h5>
+                                <h5 class="mt-4">可供補習方式 *</h5>
 
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="1" id="t-style-value-1"
@@ -2998,7 +2998,7 @@ if($_POST)
 
                                 <table class="mt-4">
                                     <tr>
-                                        <td> <label for="lowest-salary">可接受最低時薪</label> </td>
+                                        <td> <label for="lowest-salary">可接受最低時薪 *</label> </td>
                                         <td><input id="lowest-salary" name="lowest-salary" type="text"
                                                 class="form-control"></td>
                                     </tr>
