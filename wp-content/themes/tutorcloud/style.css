@@ -629,3 +629,11 @@ input[type='checkbox'] {
 .form-check-label {
     display: inline-block !important;
 }
+
+.step-content {
+    display: none;
+}
+
+.step-content.step-content-1 {
+    display: block;
+}
