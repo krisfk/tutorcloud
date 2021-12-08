@@ -66,6 +66,7 @@ get_header();
             $(function() {
                 $('.step-txt').removeClass('active');
                 $('.step-txt').eq(4).addClass('active');
+                $('.step-content').remove();
 
             })
             </script>
