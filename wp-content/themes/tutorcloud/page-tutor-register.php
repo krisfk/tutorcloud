@@ -396,7 +396,7 @@ if($_POST)
 
                 wp_update_attachment_metadata( $upload_id, wp_generate_attachment_metadata( $upload_id, $new_file_path ) );
 
-                update_field( 'proof1', $upload_id, $school_id );
+                update_field( 'proof1', $upload_id, $post_id );
             
                 } else {
                     echo "Sorry, there was an error uploading your file.";
