@@ -710,4 +710,5 @@ input[type='checkbox'] {
 .add-btn-column {
     background: #618382;
     color: #fff;
+    padding: 1rem;
 }
