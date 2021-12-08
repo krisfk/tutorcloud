@@ -534,7 +534,7 @@ if($_POST)
 
                     </table>
 
-                    <a href="javascript:void(0);" class="prev-step-btn me-3">下一步</a>
+                    <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
 
 
                     <a href="javascript:void(0);" class="next-step-btn">下一步</a>
@@ -908,7 +908,7 @@ if($_POST)
                         </tr>
                     </table>
 
-                    <a href="javascript:void(0);" class="prev-step-btn me-3">下一步</a>
+                    <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
 
 
                     <a href="javascript:void(0);" class="next-step-btn">下一步</a>
