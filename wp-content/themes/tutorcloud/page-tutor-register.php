@@ -59,7 +59,7 @@ get_header();
 
 
             <div class="step-content step-content-1">
-                <ul>
+                <ul class="terms-list-ul">
                     <li>
 
                         <a href="javascript:void(0);" class="terms-a">
