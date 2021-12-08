@@ -3017,7 +3017,7 @@ $(function() {
         var error_txt = '';
 
         var bac_degree = $('#bac-degree').val();
-        alert(bac_degree);
+        // alert(bac_degree);
         var tutor_level = $('#tutor-level').val();
         var diploma = $('input[name="diploma"]').val();
         var tutor_year = $('#tutor-year').val();
