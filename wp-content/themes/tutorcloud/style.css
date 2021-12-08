@@ -589,6 +589,10 @@ input[type='checkbox'] {
     font-weight: bold;
 }
 
+.subject-list-top a.active {
+    background: url(assets/images/minus.png);
+}
+
 .subject-list-top a:hover {
     color: #769e9c;
 }
