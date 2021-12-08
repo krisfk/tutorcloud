@@ -1472,7 +1472,10 @@ if($_POST)
                         </table>
                     </div>
 
-                    <h5>IB科目列</h5>
+                    <h5 class="subject-list-top">
+                        <a href="javascript:void(0);">
+                            IB科目列</a>
+                    </h5>
 
                     <div class="subject-list subject-list-ib">
                         <table>
