@@ -283,10 +283,11 @@ if($_POST)
     
     // echo $t_subjects_music_value_other;
  
-    
+
+    $post_title = $nick_name ?  $chi_name.' ('.$nick_name.')' : $chi_name;
     $post_id = wp_insert_post(array (
         'post_type' => 'tutor',
-        'post_title' => $chi_name.' ('.$nick_name.')',
+        'post_title' => $post_title,
         'post_status' => 'publish',
         'comment_status' => 'closed',   // if you prefer
         'ping_status' => 'closed',      // if you prefer
