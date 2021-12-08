@@ -59,7 +59,7 @@ get_header();
             <ul class="tutor-list-ul">
                 <li class="">
                     <a href="javascript:void(0);">
-                        <div class="row">
+                        <div class="row gx-0">
                             <div class='col-2 data-column'>T210001 <br>女 <img
                                     src="<?php echo get_template_directory_uri();?>/assets/images/f-icon.png" alt="">
                             </div>
