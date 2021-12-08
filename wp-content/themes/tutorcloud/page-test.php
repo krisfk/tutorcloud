@@ -3,6 +3,7 @@
 if($_POST)
 {
 	echo 1;
+	print_r($_FILES);
 }
 ?>
 
