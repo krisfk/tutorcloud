@@ -57,7 +57,7 @@ get_header();
         <div class="col-10">
 
             <ul>
-                <li>
+                <li class="tutor-list-ul">
                     <div class="row">
                         <div class='col-2'>T210001 <br>女</div>
                         <div class='col-2'>香港中文大學 <br>護理系 </div>
