@@ -27,7 +27,7 @@ get_header();
     <!-- <div class="text-center mt-3">
         <a href="#" class="filter-btn">導師選項</a>
     </div> -->
-    <div class="row mt-5">
+    <div class="row mt-5 justify-content-center align-items-center">
         <div class="col-2 text-end">
             <img class="tutor-reg-icon"
                 src="<?php echo get_template_directory_uri();?>/assets/images/tutor-reg-icon.png" alt="">
