@@ -579,3 +579,7 @@ input[type='checkbox'] {
 .subject-list-top a {
     display: block;
 }
+
+.subject-list {
+    display: none;
+}
