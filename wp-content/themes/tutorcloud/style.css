@@ -618,3 +618,7 @@ input[type='checkbox'] {
 .subject-list h5 {
     font-size: 1rem;
 }
+
+.subject-list div {
+    float: left;
+}
