@@ -695,3 +695,9 @@ input[type='checkbox'] {
     padding: 0.5rem 1rem;
     line-height: 2rem;
 }
+
+.add-btn-a {
+    display: block;
+    background: #618382;
+    color: #fff;
+}
