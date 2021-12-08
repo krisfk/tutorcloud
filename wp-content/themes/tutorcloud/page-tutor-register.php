@@ -518,7 +518,7 @@ if($_POST)
                             <td>
                                 <select id="occupation" name="occupation" class="form-select" aria-label="">
 
-                                    <option selected>選擇</option>
+                                    <option value="" selected>選擇</option>
                                     <option value="全職教師">全職教師</option>
                                     <option value="全職教學助理">全職教學助理</option>
                                     <option value="全職補習老師">全職補習老師</option>
@@ -547,7 +547,7 @@ if($_POST)
                                 </label></td>
                             <td> <select id="bac-degree" name="bac-degree" class="form-select" aria-label="">
 
-                                    <option selected>選擇</option>
+                                    <option value="" selected>選擇</option>
                                     <option value="香港大學">香港大學</option>
                                     <option value="香港中文大學">香港中文大學</option>
                                     <option value="香港科技大學">香港科技大學</option>
@@ -564,7 +564,7 @@ if($_POST)
                             <td> <label for="tutor-level">教育程度 *
                                 </label></td>
                             <td><select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
-                                    <option selected>選擇</option>
+                                    <option value="" selected>選擇</option>
                                     <option value="大學生">大學生</option>
                                     <option value="學士畢業">學士畢業</option>
                                     <option value="碩士生">碩士生</option>
@@ -587,7 +587,7 @@ if($_POST)
                             </td>
                             <td>
                                 <select id="tutor-year" name="tutor-year" class="form-select" aria-label="">
-                                    <option selected>選擇</option>
+                                    <option value="" selected>選擇</option>
                                     <option value="Year 1">Year 1</option>
                                     <option value="Year 2">Year 2</option>
                                     <option value="Year 3">Year 3</option>
@@ -873,7 +873,7 @@ if($_POST)
                             <td>
                                 <select id="exam-lang" name="exam-lang" class="form-select" aria-label="">
 
-                                    <option selected>選擇</option>
+                                    <option value="" selected>選擇</option>
                                     <option value="中文">中文</option>
                                     <option value="英文">英文</option>
 
