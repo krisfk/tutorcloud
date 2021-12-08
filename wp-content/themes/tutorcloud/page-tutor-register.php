@@ -61,7 +61,9 @@ get_header();
             <div class="result-div">
 
 
-                <h2>登記完成！</h2>
+                <div class="text-center">
+                    <h2>登記完成！</h2>
+                </div>
                 <a href="#" class="submit-login-btn">立即登入查看補習個案</a>
 
 
