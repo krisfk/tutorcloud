@@ -542,7 +542,7 @@ if($_POST)
 
                 <div class="step-content step-content-3">
 
-                    <h3>學歷資料</h3>
+                    <h3 class="mb-4">學歷資料</h3>
                     <table>
                         <tr>
                             <td><label for="bac-degree">就讀大學 (學士學位課程) *
