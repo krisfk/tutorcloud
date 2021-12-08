@@ -957,9 +957,10 @@ if($_POST)
                                     </div>
 
                                     <div class="mt-2 w-100">
-                                        <label for="t-subjects-kin-value-other">其他：</label>
-                                        <input class="limit-input-w form-control mt-2" id="t-subjects-kin-value-other"
-                                            name="t-subjects-kin-value-other" type="text">
+                                        <label for="t-subjects-kin-value-other d-inline-block">其他：</label>
+                                        <input class="limit-input-w form-control mt-2 d-inline-block"
+                                            id="t-subjects-kin-value-other" name="t-subjects-kin-value-other"
+                                            type="text">
                                     </div>
 
                                 </td>
