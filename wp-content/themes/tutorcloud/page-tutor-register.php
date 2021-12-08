@@ -2999,7 +2999,7 @@ if($_POST)
                                 <table class="mt-4">
                                     <tr>
                                         <td> <label for="lowest-salary">可接受最低時薪 *</label> </td>
-                                        <td><input id="lowest-salary" name="lowest-salary" type="text"
+                                        <td><input id="lowest-salary" name="lowest-salary" type="number"
                                                 class="form-control"></td>
                                     </tr>
                                 </table>
