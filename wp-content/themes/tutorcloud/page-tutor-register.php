@@ -59,7 +59,7 @@ get_header();
 
 
             <div class="step-content step-content-1">
-                <h3>條款及細則</h3>
+                <h3 class="mb-4">條款及細則</h3>
                 <ul class="terms-list-ul">
                     <li>
 
