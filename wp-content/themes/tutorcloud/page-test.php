@@ -1,5 +1,6 @@
 <?php
 
+
 if($_FILES)
 {
 	 echo 'have file';
@@ -12,3 +13,11 @@ if($_FILES)
     <input type="file" name="upload_file" id="upload_file">
     <input type="submit">
 </form>
+
+<?php 
+
+if($_POST)
+{
+    echo 'post';
+}
+?>
