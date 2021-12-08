@@ -587,6 +587,10 @@ input[type='checkbox'] {
     text-decoration: none;
 }
 
+.subject-list-top a:hover {
+    color: #769e9c;
+}
+
 .subject-list {
     display: none;
 }
