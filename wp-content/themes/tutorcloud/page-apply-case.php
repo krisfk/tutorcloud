@@ -59,12 +59,12 @@ get_header();
             <ul>
                 <li>
                     <div class="row">
-                        <div class='col-2'></div>
-                        <div class='col-2'></div>
-                        <div class='col-2'></div>
-                        <div class='col-2'></div>
-                        <div class='col-2'></div>
-                        <div class='col-2'></div>
+                        <div class='col-2'>T210001 <br>女</div>
+                        <div class='col-2'>香港中文大學 <br>護理系 </div>
+                        <div class='col-2'>大學生</div>
+                        <div class='col-2'>可接受最低時薪： <br>$160</div>
+                        <div class='col-2'>可教授科目： <br>數學 化學 經濟</div>
+                        <div class='col-2'>fdas</div>
 
                     </div>
                 </li>
