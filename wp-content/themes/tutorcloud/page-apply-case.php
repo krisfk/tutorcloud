@@ -69,12 +69,12 @@ get_header();
                         <div class='col-2 data-column'>可教授科目： <br>數學 化學 經濟</div>
                         <div class='col-2 add-btn-column text-center'>
 
-                            <div class="add-btn-a">
+                            <a class="add-btn-a" href="javascript:void(0);">
 
                                 <img src="<?php echo get_template_directory_uri();?>/assets/images/add-btn.png" alt="">
                                 <div>加入導師名單</div>
 
-                            </div>
+                            </a>
                         </div>
 
                     </div>
