@@ -3217,6 +3217,10 @@ $(function() {
             'scrollTop': $('.main-content-div').offset().top - 50
         }, 200);
 
+        $('.step-txt').removeClass('active');
+        $('.step-txt').eq(1).addClass('active');
+
+
     })
 
     $('.step-content-2 .prev-step-btn').click(function() {
@@ -3226,6 +3230,8 @@ $(function() {
         $('html,body').animate({
             'scrollTop': $('.main-content-div').offset().top - 50
         }, 200);
+        $('.step-txt').removeClass('active');
+        $('.step-txt').eq(0).addClass('active');
 
     })
 
@@ -3238,6 +3244,9 @@ $(function() {
         $('html,body').animate({
             'scrollTop': $('.main-content-div').offset().top - 50
         }, 200);
+        $('.step-txt').removeClass('active');
+        $('.step-txt').eq(1).addClass('active');
+
     })
 
     $('#proof1').on('change', function() {
