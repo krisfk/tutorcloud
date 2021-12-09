@@ -91,7 +91,7 @@ get_header();
 
 
             <div>
-                <h2>登記學生資料</h2>
+                <h2 class="mb-4">登記學生資料</h2>
             </div>
         </div>
         <!-- <div class="col-2"></div> -->
