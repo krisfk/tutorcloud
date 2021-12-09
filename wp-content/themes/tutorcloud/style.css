@@ -730,3 +730,7 @@ input[type='checkbox'] {
 .student-apply-case-content table td label {
     padding: 0 1rem 0 0;
 }
+
+.checkbox-div {
+    float: left;
+}
