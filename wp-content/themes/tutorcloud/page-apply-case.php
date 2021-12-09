@@ -170,15 +170,15 @@ get_header();
                                 </label></td>
                             <td>
 
+
                                 <select id="tutorial-course" name="tutorial-course" class="form-select" aria-label="">
-                                    <option value="" selected="">選擇</option>
-                                    <option value="HKDSE 香港文憑試">HKDSE 香港文憑試</option>
-                                    <option value="IB">IB</option>
-                                    <option value="GCE AL">GCE AL</option>
-                                    <option value="IGCSE ">IGCSE </option>
-                                    <option value="SAT ">SAT </option>
-                                    <option value="校內考試">校內考試</option>
-                                    <option value="音樂">音樂</option>
+                                    <option value="">選擇</option>
+                                    <option value="幼稚園">幼稚園</option>
+                                    <option value="小學">小學</option>
+                                    <option value="中國">中國</option>
+                                    <option value="國際學校">國際學校</option>
+                                    <option value="自修生">自修生</option>
+                                    <option value="大專">大專</option>
                                     <option value="其他">其他</option>
                                 </select>
 
