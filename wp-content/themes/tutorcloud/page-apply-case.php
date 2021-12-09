@@ -268,7 +268,7 @@ Year 6 -->
                             </td>
                         </tr>
                         <tr>
-                            <td>科目 *</td>
+                            <td class="align-top">科目 *</td>
                             <td>
                                 <div><input type="checkbox" class="form-check-input" id="subject_value_1"
                                         name="subjects[]" value="全科" /><label for="subject_value_1">全科</label></div>
