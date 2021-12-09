@@ -57,6 +57,7 @@ get_header();
         <div class="col-10">
 
             <ul class="tutor-list-ul">
+
                 <li class="">
                     <!-- <a href="javascript:void(0);"> -->
                     <div class="row gx-0 align-items-top">
@@ -78,7 +79,6 @@ get_header();
                         </div>
 
                     </div>
-                    <!-- </a> -->
                 </li>
             </ul>
         </div>

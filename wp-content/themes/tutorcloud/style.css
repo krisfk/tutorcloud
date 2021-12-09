@@ -709,6 +709,7 @@ input[type='checkbox'] {
     padding: 1rem;
     /* padding-bottom: 1rem; */
     line-height: 2rem;
+    cursor: pointer;
 }
 
 .add-btn-column {
