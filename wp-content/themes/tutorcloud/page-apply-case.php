@@ -386,7 +386,7 @@ Year 6 -->
                             <td colspan="2">
 
                                 <div>
-                                    <div><label for=""> 地區 *</label>
+                                    <div class="mb-3"><label for=""> 地區 *</label>
                                     </div>
                                     <div>
                                         <input class="form-check-input" type="checkbox" id="all-place" name="">
