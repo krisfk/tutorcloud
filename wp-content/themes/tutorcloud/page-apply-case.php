@@ -88,6 +88,11 @@ get_header();
             }
                 ?>
             </ul>
+
+
+            <div>
+                <h2>登記學生資料</h2>
+            </div>
         </div>
         <!-- <div class="col-2"></div> -->
 
@@ -110,6 +115,9 @@ get_header();
 <script type="text/javascript">
 $(function() {
 
+    $('.tutor-list-ul.data-column').click(function() {
+
+    });
     $('.add-btn-a').click(function() {
         alert(87);
     })
