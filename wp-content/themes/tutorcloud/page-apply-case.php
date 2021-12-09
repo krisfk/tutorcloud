@@ -116,6 +116,14 @@ get_header();
                             <td><label for="email"> 電郵地址 *</label></td>
                             <td><input id="email" name="email" type="text" class="form-control"></td>
                         </tr>
+                        <tr>
+                            <td> <label for=""> 性別*</label></td>
+                            <td>
+                                <label><input type="radio" name="gender" value="男">男</label>
+                                <label><input type="radio" name="gender" value="女">女</label>
+
+                            </td>
+                        </tr>
 
 
                     </table>
