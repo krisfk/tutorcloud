@@ -94,16 +94,27 @@ get_header();
                 <h2 class="mb-4">登記學生資料</h2>
 
 
-                <table>
-                    <tr>
-                        <td><label for="chi-name"> 中文全名 *</label></td>
-                        <td><input id="chi-name" name="chi-name" type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="chi-name"> 英文全名 *</label></td>
-                        <td><input id="chi-name" name="eng-name" type="text" class="form-control"></td>
-                    </tr>
-                </table>
+                <div class="step-content">
+                    <table>
+                        <tr>
+                            <td><label for="chi-name"> 中文全名 *</label></td>
+                            <td><input id="chi-name" name="chi-name" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="eng-name"> 英文全名 *</label></td>
+                            <td><input id="eng-name" name="eng-name" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="nick-name"> 別名</label></td>
+                            <td><input id="nick-name" name="nick-name" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="nick-name"> 別名</label></td>
+                            <td><input id="nick-name" name="nick-name" type="text" class="form-control"></td>
+                        </tr>
+
+                    </table>
+                </div>
             </div>
         </div>
         <!-- <div class="col-2"></div> -->
