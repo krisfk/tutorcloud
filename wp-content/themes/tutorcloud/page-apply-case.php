@@ -124,6 +124,24 @@ get_header();
 
                             </td>
                         </tr>
+                        <tr>
+                            <td> <label for="tutorial-course"> 補習課程</label></td>
+                            <td>
+
+                                <select id="tutorial-course" name="tutorial-course" class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="HKDSE 香港文憑試">HKDSE 香港文憑試</option>
+                                    <option value="IB">IB</option>
+                                    <option value="GCE AL">GCE AL</option>
+                                    <option value="IGCSE ">IGCSE </option>
+                                    <option value="SAT ">SAT </option>
+                                    <option value="校內考試">校內考試</option>
+                                    <option value="音樂">音樂</option>
+                                    <option value="其他">其他</option>
+                                </select>
+
+                            </td>
+                        </tr>
 
 
                     </table>
