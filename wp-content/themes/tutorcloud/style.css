@@ -688,6 +688,10 @@ input[type='checkbox'] {
     color: #fff;
 }
 
+.tutor-list-ul li:nth-child(2n) {
+    background: #000;
+}
+
 .tutor-list-ul li a {
     color: #fff;
     text-decoration: none;
