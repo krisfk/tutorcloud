@@ -99,6 +99,10 @@ get_header();
                         <td><label for="chi-name"> 中文全名 *</label></td>
                         <td><input id="chi-name" name="chi-name" type="text" class="form-control"></td>
                     </tr>
+                    <tr>
+                        <td><label for="chi-name"> 英文全名 *</label></td>
+                        <td><input id="chi-name" name="eng-name" type="text" class="form-control"></td>
+                    </tr>
                 </table>
             </div>
         </div>
