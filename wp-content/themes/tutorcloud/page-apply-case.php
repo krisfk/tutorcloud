@@ -58,6 +58,10 @@ get_header();
 
             <ul class="tutor-list-ul">
 
+                <?php 
+                for($i=0;$i<10;$i++)
+            {
+                ?>
                 <li class="">
                     <!-- <a href="javascript:void(0);"> -->
                     <div class="row gx-0 align-items-top">
@@ -80,6 +84,9 @@ get_header();
 
                     </div>
                 </li>
+                <?php
+            }
+                ?>
             </ul>
         </div>
         <!-- <div class="col-2"></div> -->
