@@ -210,6 +210,64 @@ get_header();
                             <td><input id="university" name="university" type="text" class="form-control"></td>
                         </tr>
 
+                        <tr>
+                            <td><label for="university"> 所屬年級 *
+                                </label></td>
+                            <!-- 選擇
+K1
+K2
+K3
+小一
+小二
+小三
+小四
+小五
+小六
+中一
+中二
+中三
+中四
+中五
+中六
+Year 1
+Year 2
+Year 3
+Year 4
+Year 5
+Year 6 -->
+
+
+
+                            <td>
+                                <select id="student-level-2" name="student-level-2" class="form-select" aria-label="">
+                                    <option value="選擇">選擇</option>
+                                    <option value="K1">K1</option>
+                                    <option value="K2">K2</option>
+                                    <option value="K3">K3</option>
+                                    <option value="小一">小一</option>
+                                    <option value="小二">小二</option>
+                                    <option value="小三">小三</option>
+                                    <option value="小四">小四</option>
+                                    <option value="小五">小五</option>
+                                    <option value="小六">小六</option>
+                                    <option value="中一">中一</option>
+                                    <option value="中二">中二</option>
+                                    <option value="中三">中三</option>
+                                    <option value="中四">中四</option>
+                                    <option value="中五">中五</option>
+                                    <option value="中六">中六</option>
+                                    <option value="Year 1">Year 1</option>
+                                    <option value="Year 2">Year 2</option>
+                                    <option value="Year 3">Year 3</option>
+                                    <option value="Year 4">Year 4</option>
+                                    <option value="Year 5">Year 5</option>
+                                    <option value="Year 6">Year 6</option>
+                                </select>
+
+
+                            </td>
+                        </tr>
+
 
 
 
