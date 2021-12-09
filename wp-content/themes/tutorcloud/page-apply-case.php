@@ -142,10 +142,13 @@ get_header();
 
                             </td>
                         </tr>
-                    </table>
-                    <h3 class="mb-4 p-0">補習資料
-                    </h3>
-                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <h3 class="mb-4 p-0">補習資料
+                                </h3>
+                            </td>
+                        </tr>
+
                         <tr>
                             <td> <label for="tutorial-course"> 補習課程 *</label></td>
                             <td>
