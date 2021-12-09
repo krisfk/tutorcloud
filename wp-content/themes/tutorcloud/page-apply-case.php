@@ -202,7 +202,7 @@ get_header();
                         </tr>
 
                         <tr>
-                            <td><label for="university"> 大專學校 <br> <span class="small"> (例如：HKU Space / 香港中文大學
+                            <td><label for="university"> 大專學校 <br> <span class="small"> (例如：HKU Space / <br> 香港中文大學
                                         )</span></label></td>
                             <td><input id="university" name="university" type="text" class="form-control"></td>
                         </tr>
