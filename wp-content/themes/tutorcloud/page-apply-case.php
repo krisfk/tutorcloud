@@ -109,9 +109,14 @@ get_header();
                             <td><input id="nick-name" name="nick-name" type="text" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td><label for="nick-name"> 別名</label></td>
-                            <td><input id="nick-name" name="nick-name" type="text" class="form-control"></td>
+                            <td><label for="whatsapp-tel"> WhatsApp 電話號碼 *</label></td>
+                            <td><input id="whatsapp-tel" name="whatsapp-tel" type="text" class="form-control"></td>
                         </tr>
+                        <tr>
+                            <td><label for="email"> 電郵地址 *</label></td>
+                            <td><input id="email" name="email" type="text" class="form-control"></td>
+                        </tr>
+
 
                     </table>
                 </div>
