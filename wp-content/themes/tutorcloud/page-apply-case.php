@@ -149,7 +149,15 @@ get_header();
                         <tr>
                             <td> <label for="tutorial-course"> 補習課程 *</label></td>
                             <td>
-
+                                <!-- 選擇
+                            HKDSE 香港文憑試
+                            IB
+                            GCE AL
+                            IGCSE
+                            SAT
+                            校內考試
+                            音樂
+                            其他 -->
                                 <select id="tutorial-course" name="tutorial-course" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <option value="HKDSE 香港文憑試">HKDSE 香港文憑試</option>
@@ -166,12 +174,20 @@ get_header();
                         </tr>
 
                         <tr>
-                            <td> <label for="tutorial-course"> 就讀年級 *
+                            <td> <label for="student-level"> 就讀年級 *
                                 </label></td>
                             <td>
+                                <!-- 選擇
+幼稚園
+小學
+中國
+國際學校
+自修生
+大專
+其他 -->
 
 
-                                <select id="tutorial-course" name="tutorial-course" class="form-select" aria-label="">
+                                <select id="student-level" name="student-level" class="form-select" aria-label="">
                                     <option value="">選擇</option>
                                     <option value="幼稚園">幼稚園</option>
                                     <option value="小學">小學</option>
@@ -184,6 +200,13 @@ get_header();
 
                             </td>
                         </tr>
+
+                        <tr>
+                            <td><label for="university"> 大專學校 <br> (例如：HKU Space / 香港中文大學
+                                    )</label></td>
+                            <td><input id="university" name="university" type="text" class="form-control"></td>
+                        </tr>
+
 
 
 
