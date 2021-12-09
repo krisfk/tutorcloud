@@ -366,7 +366,7 @@ Year 6 -->
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <h3>補習地區</h3>
+                                <h3 class="p-0">補習地區</h3>
 
                             </td>
                         </tr>
