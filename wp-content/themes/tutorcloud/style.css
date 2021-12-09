@@ -722,3 +722,7 @@ input[type='checkbox'] {
     color: #fff;
     /* padding: 1rem; */
 }
+
+.student-apply-case-content td {
+    padding: 0 0 1rem 0;
+}

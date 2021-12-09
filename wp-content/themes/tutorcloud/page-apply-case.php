@@ -94,7 +94,7 @@ get_header();
                 <h2 class="mb-4">登記學生資料</h2>
 
 
-                <div class="step-content">
+                <div class="student-apply-case-content">
                     <table>
                         <tr>
                             <td><label for="chi-name"> 中文全名 *</label></td>
