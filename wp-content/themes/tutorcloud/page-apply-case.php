@@ -354,6 +354,17 @@ Year 6 -->
                             </td>
                         </tr>
 
+                        <tr>
+                            <td> <label for=""> 語言 *</label></td>
+                            <td>
+                                <label><input type="radio" name="paper-lang" value="中文卷">中文卷
+                                </label>
+                                <label><input type="radio" name="paper-lang" value="英文卷">英文卷
+                                </label>
+
+                            </td>
+                        </tr>
+
 
 
 
