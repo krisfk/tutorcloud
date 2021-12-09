@@ -91,7 +91,7 @@ get_header();
 
 
             <div>
-                <h2 class="mb-4">登記學生資料</h2>
+                <h2 class="mb-4 p-0">登記學生資料</h2>
 
 
                 <div class="student-apply-case-content">
