@@ -143,7 +143,7 @@ get_header();
                             </td>
                         </tr>
                     </table>
-                    <h3 class="mb-4">補習資料
+                    <h3 class="mb-4 p-0">補習資料
                     </h3>
                     <table>
                         <tr>
