@@ -92,6 +92,14 @@ get_header();
 
             <div>
                 <h2 class="mb-4">登記學生資料</h2>
+
+
+                <table>
+                    <tr>
+                        <td><label for="chi-name"> 中文全名 *</label></td>
+                        <td><input id="chi-name" name="chi-name" type="text" class="form-control"></td>
+                    </tr>
+                </table>
             </div>
         </div>
         <!-- <div class="col-2"></div> -->
