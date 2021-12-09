@@ -1047,8 +1047,11 @@ Year 6 -->
 
                             </td>
                         </tr>
-
-
+                        <tr>
+                            <td><label for="short-address"> 詳細地址 *
+                                    <br> <span class="small"> 不需要完整地址</span></label></td>
+                            <td><input id="short-address" name="short-address" type="text" class="form-control"></td>
+                        </tr>
 
 
 
