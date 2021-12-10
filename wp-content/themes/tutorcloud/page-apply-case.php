@@ -1083,6 +1083,25 @@ Year 6 -->
                                     <br> <span class="small"> 請輸入一個補習預算，收費可再議</span></label></td>
                             <td><input id="cost-per-ppl" name="cost-per-ppl" type="text" class="form-control"></td>
                         </tr>
+                        <tr>
+                            <td> <label for="lesson-per-week"> 每星期堂數 *
+
+                                </label></td>
+                            <td>
+
+                                <select id="lesson-per-week" name="transport" class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5或以上">5或以上</option>
+
+                                </select>
+
+                            </td>
+                        </tr>
+
                     </table>
                 </div>
             </div>
