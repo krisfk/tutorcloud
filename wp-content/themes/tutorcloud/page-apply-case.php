@@ -1072,6 +1072,17 @@ Year 6 -->
                             </td>
                         </tr>
 
+                        <tr>
+                            <td colspan="2">
+                                <h3 class="mb-4 p-0">課堂資料</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="cost-per-ppl"> 每小時收費（每人） *
+                                    <br> <span class="small"> 請輸入一個補習預算，收費可再議</span></label></td>
+                            <td><input id="cost-per-ppl" name="cost-per-ppl" type="text" class="form-control"></td>
+                        </tr>
                     </table>
                 </div>
             </div>
