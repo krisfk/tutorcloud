@@ -85,18 +85,6 @@ get_header();
             $tutor_requirement_value_other = $_POST['tutor-requirement-value-other'];
             $other_remark = $_POST['other-remark'];
             
-            
-            
-
-
-
-            
-            
-            
-
-            
-
-            
         }
         ?>
 
@@ -138,7 +126,7 @@ get_header();
                 </ul>
 
 
-                <div>
+                <div class="student-form-div">
                     <h3 class="mt-5 mb-3 p-0">登記學生資料</h2>
 
 

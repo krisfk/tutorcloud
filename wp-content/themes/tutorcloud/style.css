@@ -742,3 +742,7 @@ input.form-control[type='text'] {
 select.form-select {
     max-width: 400px !important;
 }
+
+.student-form-div {
+    display: none;
+}
