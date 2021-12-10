@@ -75,6 +75,19 @@ get_header();
             $transport = $_POST['transport'];
             $cost_per_ppl = $_POST['cost-per-ppl'];
             $lesson_per_week = $_POST['lesson-per-week'];
+            $hour_per_lesson = $_POST['hour-per-lesson'];
+            $day = $_POST['day'];
+            $start_tutorial_time = $_POST['start-tutorial-time'];
+            $tutor_gender = $_POST['tutor-gender'];
+            $objective = $_POST['objective'];
+            $objective_value_other=$_POST['objective-value-other'];
+            $tutor_requirement = $_POST['tutor-requirement'];
+            $tutor_requirement_value_other = $_POST['tutor-requirement-value-other'];
+            $other_remark = $_POST['other-remark'];
+            
+            
+            
+
 
 
             
@@ -1214,9 +1227,9 @@ Year 6 -->
                                     <td> <label for=""> 導師性別要求 *
                                         </label></td>
                                     <td>
-                                        <label><input type="radio" name="tutor_gender" value="男">男</label>
-                                        <label><input type="radio" name="tutor_gender" value="女">女</label>
-                                        <label><input type="radio" name="tutor_gender" value="都可">都可</label>
+                                        <label><input type="radio" name="tutor-gender" value="男">男</label>
+                                        <label><input type="radio" name="tutor-gender" value="女">女</label>
+                                        <label><input type="radio" name="tutor-gender" value="都可">都可</label>
 
                                     </td>
                                 </tr>
