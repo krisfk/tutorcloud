@@ -66,7 +66,7 @@ get_header();
             $email = $_POST['email'];
             $gender=$_POST['gender'];
             $tutorial_course=$_POST['tutorial-course'];
-            $tutorial_course
+            
             
 
             
