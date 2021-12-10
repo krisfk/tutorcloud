@@ -735,6 +735,6 @@ input[type='checkbox'] {
     float: left;
 }
 
-.form-control[type='text'] {
+input.form-control[type='text'] {
     max-width: 200px !important;
 }
