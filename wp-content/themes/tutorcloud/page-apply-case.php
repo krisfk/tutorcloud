@@ -1161,6 +1161,14 @@ Year 6 -->
                             </td>
                         </tr>
 
+                        <tr>
+                            <td><label for="start-tutorial-time"> 補習開始時間 *
+                                    <br> <span class="small"> 例如：18:00 或者 16:30-17:30
+                                    </span></label></td>
+                            <td><input id="start-tutorial-time" name="start-tutorial-time" type="text"
+                                    class="form-control"></td>
+                        </tr>
+
 
                     </table>
                 </div>
