@@ -91,7 +91,7 @@ get_header();
 
 
             <div>
-                <h3 class="mb-3 p-0">登記學生資料</h2>
+                <h3 class="mt-5 mb-3 p-0">登記學生資料</h2>
 
 
                     <div class="student-apply-case-content">
@@ -145,7 +145,7 @@ get_header();
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <h3 class="mb-3 p-0">補習資料
+                                    <h3 class="mt-5 mb-3 p-0">補習資料
                                     </h3>
                                 </td>
                             </tr>
@@ -1078,7 +1078,7 @@ Year 6 -->
 
                             <tr>
                                 <td colspan="2">
-                                    <h3 class="mb-3 p-0">課堂資料</h3>
+                                    <h3 class="mt-5 mb-3 p-0">課堂資料</h3>
                                 </td>
                             </tr>
 
@@ -1182,7 +1182,7 @@ Year 6 -->
 
                             <tr>
                                 <td colspan="2">
-                                    <h3 class="mb-3 p-0">額外資料
+                                    <h3 class="mt-5 mb-3 p-0">額外資料
                                     </h3>
                                 </td>
                             </tr>
