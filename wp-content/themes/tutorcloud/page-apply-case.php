@@ -1219,8 +1219,8 @@ Year 6 -->
                                 </div>
 
                                 <div class="mt-2 w-100">
-                                    <label for="objective-value-other d-inline-block">其他：</label>
-                                    <input class="limit-input-w form-control mt-2 d-inline-block"
+                                    <label for="objective-value-other" class="d-inline-block">其他：</label>
+                                    <input class=" limit-input-w form-control mt-2 d-inline-block"
                                         id="objective-value-other" name="objective-value-other" type="text">
                                 </div>
 
