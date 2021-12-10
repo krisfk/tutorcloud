@@ -1218,7 +1218,7 @@ Year 6 -->
                                         for="objective_value_2">應付公開試</label>
                                 </div>
 
-                                <div class="mt-2 w-100">
+                                <div class="mt-2 w-100 float-start">
                                     <label for="objective-value-other" class="d-inline-block">其他：</label>
                                     <input class=" limit-input-w form-control mt-2 d-inline-block"
                                         id="objective-value-other" name="objective-value-other" type="text">
@@ -1247,7 +1247,7 @@ Year 6 -->
                                 </div>
 
 
-                                <div class="mt-2 w-100">
+                                <div class="mt-2 w-100  float-start">
                                     <label for="tutor-requirement-value-other" class="d-inline-block">其他：</label>
                                     <input class=" limit-input-w form-control mt-2 d-inline-block"
                                         id="tutor-requirement-value-other" name="tutor-requirement-value-other"
