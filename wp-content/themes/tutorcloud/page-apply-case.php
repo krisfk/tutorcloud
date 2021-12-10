@@ -1056,8 +1056,21 @@ Year 6 -->
                             <td><input id="short-address" name="short-address" type="text" class="form-control"></td>
                         </tr>
 
+                        <tr>
+                            <td> <label for="transport"> 交通方法 *
+                                </label></td>
+                            <td>
 
+                                <select id="transport" name="transport" class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="地鐵站步行到達">地鐵站步行到達</option>
+                                    <option value="地鐵站轉乘其他交通工具">地鐵站轉乘其他交通工具</option>
+                                    <option value="其他">其他</option>
 
+                                </select>
+
+                            </td>
+                        </tr>
 
                     </table>
                 </div>
