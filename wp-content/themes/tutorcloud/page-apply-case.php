@@ -1162,13 +1162,72 @@ Year 6 -->
                         </tr>
 
                         <tr>
-                            <td><label for="start-tutorial-time"> 補習開始時間 *
+                            <td><label for="start-tutorial-time"> 補習開始時間
                                     <br> <span class="small"> 例如：18:00 或者 16:30-17:30
                                     </span></label></td>
                             <td><input id="start-tutorial-time" name="start-tutorial-time" type="text"
                                     class="form-control"></td>
                         </tr>
 
+                        <tr>
+                            <td colspan="2">
+                                <h3 class="mb-4 p-0">額外資料
+                                </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for=""> 導師性別要求 *
+                                </label></td>
+                            <td>
+                                <label><input type="radio" name="tutor_gender" value="男">男</label>
+                                <label><input type="radio" name="tutor_gender" value="女">女</label>
+                                <label><input type="radio" name="tutor_gender" value="都可">都可</label>
+
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td> <label for="tutorial-time-slot"> 補習期望 ：
+                                </label></td>
+                            <td>
+
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_1" name="day[]" value="1" /><label for="day_value_1">拔尖</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_2" name="day[]" value="1" /><label for="day_value_2">補底</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_2" name="day[]" value="1" /><label
+                                        for="day_value_2">清concept</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_2" name="day[]" value="1" /><label
+                                        for="day_value_2">教授答題技巧</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_2" name="day[]" value="1" /><label
+                                        for="day_value_2">應付校內考試</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_2" name="day[]" value="1" /><label for="day_value_2">應付公開試</label>
+                                </div>
+
+                                <div class="mt-2 w-100">
+                                    <label for="t-subjects-pri-value-other d-inline-block">其他：</label>
+                                    <input class="limit-input-w form-control mt-2 d-inline-block"
+                                        id="t-subjects-pri-value-other" name="t-subjects-pri-value-other" type="text">
+                                </div>
+
+
+
+
+
+
+                            </td>
+                        </tr>
 
                     </table>
                 </div>
