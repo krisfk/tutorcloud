@@ -73,8 +73,8 @@ get_header();
         }
         ?>
 
-        <form action="" method="post">
-            <div class="col-10">
+        <div class="col-10">
+            <form action="" method="post">
 
                 <ul class="tutor-list-ul">
 
@@ -1291,8 +1291,9 @@ Year 6 -->
 
                         </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
+
         <!-- <div class="col-2"></div> -->
 
     </div>
