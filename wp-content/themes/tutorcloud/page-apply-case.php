@@ -66,7 +66,21 @@ get_header();
             $email = $_POST['email'];
             $gender=$_POST['gender'];
             $tutorial_course=$_POST['tutorial-course'];
+            $student_level=$_POST['student-level'];
+            $subjects=$_POST['subjects'];
+            $paper_lang=$_POST['paper-lang'];
+            $tutorial_style=$_POST['tutorial-style'];
+            $class_area=$_POST['class-area'];
+            $short_address=$_POST['short-address'];
+            $transport = $_POST['transport'];
+            $cost_per_ppl = $_POST['cost-per-ppl'];
+            $lesson_per_week = $_POST['lesson-per-week'];
+
+
             
+            
+            
+
             
 
             
@@ -1101,7 +1115,8 @@ Year 6 -->
                                         </label></td>
                                     <td>
 
-                                        <select id="lesson-per-week" name="transport" class="form-select" aria-label="">
+                                        <select id="lesson-per-week" name="lesson-per-week" class="form-select"
+                                            aria-label="">
                                             <option value="" selected="">選擇</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -1115,13 +1130,14 @@ Year 6 -->
                                 </tr>
 
                                 <tr>
-                                    <td> <label for="lesson-per-week"> 每堂時間（小時） *
+                                    <td> <label for="hour-per-lesson"> 每堂時間（小時） *
 
 
                                         </label></td>
                                     <td>
 
-                                        <select id="lesson-per-week" name="transport" class="form-select" aria-label="">
+                                        <select id="hour-per-lesson" name="hour-per-lesson" class="form-select"
+                                            aria-label="">
                                             <option value="" selected="">選擇</option>
                                             <option value="1">1</option>
                                             <option value="1.5">1.5</option>
