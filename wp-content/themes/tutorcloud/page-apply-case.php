@@ -1223,12 +1223,36 @@ Year 6 -->
                                     <input class=" limit-input-w form-control mt-2 d-inline-block"
                                         id="objective-value-other" name="objective-value-other" type="text">
                                 </div>
+                            </td>
+                        </tr>
 
 
 
+                        <tr>
+                            <td class="align-top"> <label for="tutorial-time-slot"> 對導師要求：
+                                </label></td>
+                            <td>
+
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="tutor-requirement_value_1" name="tutor-requirement[]" value="1" /><label
+                                        for="tutor-requirement_value_1">提供筆記</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="tutor-requirement_value_2" name="tutor-requirement[]" value="1" /><label
+                                        for="tutor-requirement_value_2">提供練習</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="tutor-requirement_value_2" name="tutor-requirement[]" value="1" /><label
+                                        for="tutor-requirement_value_2">可以長補</label>
+                                </div>
 
 
-
+                                <div class="mt-2 w-100">
+                                    <label for="tutor-requirement-value-other" class="d-inline-block">其他：</label>
+                                    <input class=" limit-input-w form-control mt-2 d-inline-block"
+                                        id="tutor-requirement-value-other" name="tutor-requirement-value-other"
+                                        type="text">
+                                </div>
                             </td>
                         </tr>
 
