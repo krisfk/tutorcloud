@@ -734,3 +734,7 @@ input[type='checkbox'] {
 .checkbox-div {
     float: left;
 }
+
+.form-control[type='text'] {
+    max-width: 200px;
+}
