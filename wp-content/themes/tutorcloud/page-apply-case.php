@@ -1253,8 +1253,16 @@ Year 6 -->
                                         id="tutor-requirement-value-other" name="tutor-requirement-value-other"
                                         type="text">
                                 </div>
+
+
+
                             </td>
                         </tr>
+                        <tr>
+                            <td><label for="other-remark"> 其他要求/備註 ： *</label></td>
+                            <td><input id="other-remark" name="other-remark" type="text" class="form-control"></td>
+                        </tr>
+
 
                     </table>
                 </div>
