@@ -1189,7 +1189,7 @@ Year 6 -->
 
 
                         <tr>
-                            <td> <label for="tutorial-time-slot"> 補習期望 ：
+                            <td class="align-top"> <label for="tutorial-time-slot"> 補習期望 ：
                                 </label></td>
                             <td>
 
