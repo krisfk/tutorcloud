@@ -1102,6 +1102,66 @@ Year 6 -->
                             </td>
                         </tr>
 
+                        <tr>
+                            <td> <label for="lesson-per-week"> 每堂時間（小時） *
+
+
+                                </label></td>
+                            <td>
+
+                                <select id="lesson-per-week" name="transport" class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+
+                                </select>
+
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td> <label for="tutorial-time-slot"> 可補習時間
+
+
+
+                                </label></td>
+                            <td>
+
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_1" name="day[]" value="1" /><label for="day_value_1">星期一</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_2" name="day[]" value="1" /><label for="day_value_2">星期二</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_3" name="day[]" value="1" /><label for="day_value_3">星期三</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_4" name="day[]" value="1" /><label for="day_value_4">星期四</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_5" name="day[]" value="1" /><label for="day_value_5">星期五</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_6" name="day[]" value="1" /><label for="day_value_6">星期六</label>
+                                </div>
+                                <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                        id="day_value_7" name="day[]" value="1" /><label for="day_value_7">星期日</label>
+                                </div>
+
+
+
+
+
+                            </td>
+                        </tr>
+
+
                     </table>
                 </div>
             </div>
