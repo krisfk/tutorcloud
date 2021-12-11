@@ -976,14 +976,14 @@ if($_POST)
                                         <h5> 幼稚園</h5>
                                     </label>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
+                                        <input class="form-check-input" type="checkbox" value="英語"
                                             id="t-subjects-kin-value-1" name="t-subjects-kin[]">
                                         <label class="form-check-label" for="t-subjects-kin-value-1">
                                             英語
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="2"
+                                        <input class="form-check-input" type="checkbox" value="普通話"
                                             id="t-subjects-kin-value-2" name="t-subjects-kin[]">
                                         <label class="form-check-label" for="t-subjects-kin-value-2">
                                             普通話
@@ -1006,7 +1006,7 @@ if($_POST)
                                         <h5>小學</h5>
                                     </label>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="1"
+                                        <input class="form-check-input" type="checkbox" value="全科"
                                             id="t-subjects-pri-value-1" name="t-subjects-pri[]">
                                         <label class="form-check-label" for="t-subjects-pri-value-1">
                                             全科
@@ -1014,7 +1014,7 @@ if($_POST)
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="2"
+                                        <input class="form-check-input" type="checkbox" value="功課輔導"
                                             id="t-subjects-pri-value-2" name="t-subjects-pri[]">
                                         <label class="form-check-label" for="t-subjects-pri-value-2">
 
@@ -1023,7 +1023,7 @@ if($_POST)
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="3"
+                                        <input class="form-check-input" type="checkbox" value="中文"
                                             id="t-subjects-pri-value-3" name="t-subjects-pri[]">
                                         <label class="form-check-label" for="t-subjects-pri-value-3">
 
@@ -1032,7 +1032,7 @@ if($_POST)
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="4"
+                                        <input class="form-check-input" type="checkbox" value="英文"
                                             id="t-subjects-pri-value-4" name="t-subjects-pri[]">
                                         <label class="form-check-label" for="t-subjects-pri-value-4">
 
@@ -1041,7 +1041,7 @@ if($_POST)
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="5"
+                                        <input class="form-check-input" type="checkbox" value="數學"
                                             id="t-subjects-pri-value-5" name="t-subjects-pri[]">
                                         <label class="form-check-label" for="t-subjects-pri-value-5">
 
@@ -1050,7 +1050,7 @@ if($_POST)
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="6"
+                                        <input class="form-check-input" type="checkbox" value="常識"
                                             id="t-subjects-pri-value-6" name="t-subjects-pri[]">
                                         <label class="form-check-label" for="t-subjects-pri-value-6">
 
@@ -1059,7 +1059,7 @@ if($_POST)
                                         </label>
                                     </div>
                                     <div>
-                                        <input class="form-check-input" type="checkbox" value="7"
+                                        <input class="form-check-input" type="checkbox" value="普通話"
                                             id="t-subjects-pri-value-7" name="t-subjects-pri[]">
                                         <label class="form-check-label" for="t-subjects-pri-value-7">
 
