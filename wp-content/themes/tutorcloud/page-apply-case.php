@@ -296,84 +296,82 @@ Year 6 -->
                                     <td class="align-top">科目 *</td>
                                     <td>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_1" name="subjects[]" value="1" /><label
+                                                id="subject_value_1" name="subjects[]" value="全科" /><label
                                                 for="subject_value_1">全科</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_2" name="subjects[]" value="2" /><label
+                                                id="subject_value_2" name="subjects[]" value="功課輔導" /><label
                                                 for="subject_value_2">功課輔導</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_3" name="subjects[]" value="3" /><label
+                                                id="subject_value_3" name="subjects[]" value="中文" /><label
                                                 for="subject_value_3">中文</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_4" name="subjects[]" value="4" /><label
+                                                id="subject_value_4" name="subjects[]" value="英文" /><label
                                                 for="subject_value_4">英文</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_5" name="subjects[]" value="5" /><label
+                                                id="subject_value_5" name="subjects[]" value="數學" /><label
                                                 for="subject_value_5">數學</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_6" name="subjects[]" value="6" /><label
+                                                id="subject_value_6" name="subjects[]" value="數學 (M1)" /><label
                                                 for="subject_value_6">數學 (M1)</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_7" name="subjects[]" value="7" /><label
+                                                id="subject_value_7" name="subjects[]" value="數學 (M2)" /><label
                                                 for="subject_value_7">數學 (M2)</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_8" name="subjects[]" value="8" /><label
+                                                id="subject_value_8" name="subjects[]" value="通識" /><label
                                                 for="subject_value_8">通識</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_9" name="subjects[]" value="9" /><label
+                                                id="subject_value_9" name="subjects[]" value="物理" /><label
                                                 for="subject_value_9">物理</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_10" name="subjects[]" value="10" /><label
+                                                id="subject_value_10" name="subjects[]" value="化學" /><label
                                                 for="subject_value_10">化學</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_11" name="subjects[]" value="11" /><label
+                                                id="subject_value_11" name="subjects[]" value="生物" /><label
                                                 for="subject_value_11">生物</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_12" name="subjects[]" value="12" /><label
-                                                for="subject_value_12">組合科學：物理
-                                                化學</label></div>
+                                                id="subject_value_12" name="subjects[]" value="組合科學：物理 化學" /><label
+                                                for="subject_value_12">組合科學：物理 化學</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_13" name="subjects[]" value="13" /><label
-                                                for="subject_value_13">組合科學：化學
-                                                生物</label></div>
+                                                id="subject_value_13" name="subjects[]" value="組合科學：化學 生物" /><label
+                                                for="subject_value_13">組合科學：化學 生物</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_14" name="subjects[]" value="14" /><label
+                                                id="subject_value_14" name="subjects[]" value="綜合科學" /><label
                                                 for="subject_value_14">綜合科學</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_15" name="subjects[]" value="15" /><label
+                                                id="subject_value_15" name="subjects[]" value="資訊及通訊科技" /><label
                                                 for="subject_value_15">資訊及通訊科技</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_16" name="subjects[]" value="16" /><label
+                                                id="subject_value_16" name="subjects[]" value="地理" /><label
                                                 for="subject_value_16">地理</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_17" name="subjects[]" value="17" /><label
+                                                id="subject_value_17" name="subjects[]" value="中史" /><label
                                                 for="subject_value_17">中史</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_18" name="subjects[]" value="18" /><label
+                                                id="subject_value_18" name="subjects[]" value="西史" /><label
                                                 for="subject_value_18">西史</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_19" name="subjects[]" value="19" /><label
+                                                id="subject_value_19" name="subjects[]" value="中國文學" /><label
                                                 for="subject_value_19">中國文學</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_20" name="subjects[]" value="20" /><label
+                                                id="subject_value_20" name="subjects[]" value="英國文學" /><label
                                                 for="subject_value_20">英國文學</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_21" name="subjects[]" value="21" /><label
+                                                id="subject_value_21" name="subjects[]" value="倫理與宗教" /><label
                                                 for="subject_value_21">倫理與宗教</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_22" name="subjects[]" value="22" /><label
+                                                id="subject_value_22" name="subjects[]" value="經濟" /><label
                                                 for="subject_value_22">經濟</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_23" name="subjects[]" value="23" /><label
+                                                id="subject_value_23" name="subjects[]" value="企業、會計與財務概論" /><label
                                                 for="subject_value_23">企業、會計與財務概論</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_24" name="subjects[]" value="24" /><label
+                                                id="subject_value_24" name="subjects[]" value="旅遊與款待" /><label
                                                 for="subject_value_24">旅遊與款待</label>
                                         </div>
                                     </td>
