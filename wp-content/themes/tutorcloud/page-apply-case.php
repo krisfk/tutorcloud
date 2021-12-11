@@ -127,7 +127,7 @@ get_header();
 
 
                 <div class="student-form-div">
-                    <h3 class="mt-2 mb-3 p-0">登記學生資料</h2>
+                    <h3 class="mt-1 mb-3 p-0">登記學生資料</h2>
 
 
                         <div class="student-apply-case-content">
