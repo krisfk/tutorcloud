@@ -427,7 +427,7 @@ Year 6 -->
                                             <div class="place-group">
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="1"
+                                                    <input class="form-check-input" type="checkbox" value="中半山"
                                                         id="class-area-value-1" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-1">
                                                         中半山
@@ -436,7 +436,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="2"
+                                                    <input class="form-check-input" type="checkbox" value="薄扶林"
                                                         id="class-area-value-2" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-2">
                                                         薄扶林
@@ -445,7 +445,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="3"
+                                                    <input class="form-check-input" type="checkbox" value="中上環"
                                                         id="class-area-value-3" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-3">
                                                         中上環
@@ -453,7 +453,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="4"
+                                                    <input class="form-check-input" type="checkbox" value="西環"
                                                         id="class-area-value-4" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-4">
                                                         西環
@@ -462,7 +462,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="5"
+                                                    <input class="form-check-input" type="checkbox" value="灣仔"
                                                         id="class-area-value-5" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-5">
                                                         灣仔
@@ -472,7 +472,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="6"
+                                                    <input class="form-check-input" type="checkbox" value="銅鑼灣"
                                                         id="class-area-value-6" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-6">
                                                         銅鑼灣
@@ -481,7 +481,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="7"
+                                                    <input class="form-check-input" type="checkbox" value="跑馬地"
                                                         id="class-area-value-7" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-7">
                                                         跑馬地
@@ -491,7 +491,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="8"
+                                                    <input class="form-check-input" type="checkbox" value="北角"
                                                         id="class-area-value-8" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-8">
                                                         北角
@@ -500,7 +500,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="9"
+                                                    <input class="form-check-input" type="checkbox" value="鰂魚涌"
                                                         id="class-area-value-9" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-9">
                                                         鰂魚涌
@@ -508,7 +508,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="10"
+                                                    <input class="form-check-input" type="checkbox" value="太古"
                                                         id="class-area-value-10" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-10">
                                                         太古
@@ -517,7 +517,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="11"
+                                                    <input class="form-check-input" type="checkbox" value="筲箕灣"
                                                         id="class-area-value-11" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-11">
                                                         筲箕灣
@@ -525,7 +525,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="12"
+                                                    <input class="form-check-input" type="checkbox" value="西灣河"
                                                         id="class-area-value-12" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-12">
                                                         西灣河
@@ -537,7 +537,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="13"
+                                                    <input class="form-check-input" type="checkbox" value="柴灣"
                                                         id="class-area-value-13" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-13">
                                                         柴灣
@@ -545,7 +545,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="14"
+                                                    <input class="form-check-input" type="checkbox" value="小西灣"
                                                         id="class-area-value-14" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-14">
                                                         小西灣
@@ -555,7 +555,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="15"
+                                                    <input class="form-check-input" type="checkbox" value="香港仔"
                                                         id="class-area-value-15" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-15">
                                                         香港仔
@@ -566,7 +566,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="16"
+                                                    <input class="form-check-input" type="checkbox" value="鴨利洲"
                                                         id="class-area-value-16" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-16">
                                                         鴨利洲
@@ -575,7 +575,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="17"
+                                                    <input class="form-check-input" type="checkbox" value="赤柱"
                                                         id="class-area-value-17" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-17">
                                                         赤柱
@@ -594,14 +594,14 @@ Year 6 -->
 
                                             <div class="place-group">
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="18"
+                                                    <input class="form-check-input" type="checkbox" value="美孚"
                                                         id="class-area-value-18" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-18">
                                                         美孚
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="19"
+                                                    <input class="form-check-input" type="checkbox" value="荔枝角"
                                                         id="class-area-value-19" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-19">
                                                         荔枝角
@@ -610,14 +610,14 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="20"
+                                                    <input class="form-check-input" type="checkbox" value="長沙灣"
                                                         id="class-area-value-20" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-20">
                                                         長沙灣
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="21"
+                                                    <input class="form-check-input" type="checkbox" value="深水涉"
                                                         id="class-area-value-21" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-21">
                                                         深水涉
@@ -625,14 +625,14 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="22"
+                                                    <input class="form-check-input" type="checkbox" value="大角咀"
                                                         id="class-area-value-22" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-22">
                                                         大角咀
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="23"
+                                                    <input class="form-check-input" type="checkbox" value="旺角"
                                                         id="class-area-value-23" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-23">
                                                         旺角
@@ -642,7 +642,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="24"
+                                                    <input class="form-check-input" type="checkbox" value="何文田"
                                                         id="class-area-value-24" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-24">
                                                         何文田
@@ -651,7 +651,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="25"
+                                                    <input class="form-check-input" type="checkbox" value="油麻地"
                                                         id="class-area-value-25" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-25">
                                                         油麻地
@@ -661,7 +661,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="26"
+                                                    <input class="form-check-input" type="checkbox" value="佐敦"
                                                         id="class-area-value-26" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-26">
                                                         佐敦
@@ -670,7 +670,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="27"
+                                                    <input class="form-check-input" type="checkbox" value="尖沙咀"
                                                         id="class-area-value-27" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-27">
                                                         尖沙咀
@@ -678,7 +678,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="28"
+                                                    <input class="form-check-input" type="checkbox" value="土瓜灣"
                                                         id="class-area-value-28" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-28">
                                                         土瓜灣
@@ -686,7 +686,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="29"
+                                                    <input class="form-check-input" type="checkbox" value="紅磡"
                                                         id="class-area-value-29" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-29">
                                                         紅磡
@@ -696,21 +696,21 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="30"
+                                                    <input class="form-check-input" type="checkbox" value="石硤尾"
                                                         id="class-area-value-30" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-30">
                                                         石硤尾
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="31"
+                                                    <input class="form-check-input" type="checkbox" value="九龍塘"
                                                         id="class-area-value-31" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-31">
                                                         九龍塘
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="32"
+                                                    <input class="form-check-input" type="checkbox" value="樂富"
                                                         id="class-area-value-32" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-32">
                                                         樂富
@@ -719,7 +719,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="33"
+                                                    <input class="form-check-input" type="checkbox" value="慈雲山"
                                                         id="class-area-value-33" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-33">
                                                         慈雲山
@@ -728,7 +728,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="34"
+                                                    <input class="form-check-input" type="checkbox" value="黃大仙"
                                                         id="class-area-value-34" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-34">
                                                         黃大仙
@@ -738,7 +738,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="35"
+                                                    <input class="form-check-input" type="checkbox" value="鑽石山"
                                                         id="class-area-value-35" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-35">
                                                         鑽石山
@@ -747,35 +747,35 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="36"
+                                                    <input class="form-check-input" type="checkbox" value="新蒲崗"
                                                         id="class-area-value-36" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-36">
                                                         新蒲崗
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="37"
+                                                    <input class="form-check-input" type="checkbox" value="彩虹"
                                                         id="class-area-value-37" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-37">
                                                         彩虹
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="38"
+                                                    <input class="form-check-input" type="checkbox" value="牛池灣"
                                                         id="class-area-value-38" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-38">
                                                         牛池灣
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="39"
+                                                    <input class="form-check-input" type="checkbox" value="牛頭角"
                                                         id="class-area-value-39" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-39">
                                                         牛頭角
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="40"
+                                                    <input class="form-check-input" type="checkbox" value="九龍灣"
                                                         id="class-area-value-40" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-40">
                                                         九龍灣
@@ -783,7 +783,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="41"
+                                                    <input class="form-check-input" type="checkbox" value="秀茂坪"
                                                         id="class-area-value-41" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-41">
                                                         秀茂坪
@@ -792,14 +792,14 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="42"
+                                                    <input class="form-check-input" type="checkbox" value="觀塘"
                                                         id="class-area-value-42" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-42">
                                                         觀塘
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="43"
+                                                    <input class="form-check-input" type="checkbox" value="藍田"
                                                         id="class-area-value-43" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-43">
                                                         藍田
@@ -811,7 +811,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="44"
+                                                    <input class="form-check-input" type="checkbox" value="油塘"
                                                         id="class-area-value-44" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-44">
                                                         油塘
@@ -821,7 +821,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="45"
+                                                    <input class="form-check-input" type="checkbox" value="九龍城"
                                                         id="class-area-value-45" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-45">
                                                         九龍城
@@ -843,7 +843,7 @@ Year 6 -->
 
                                             <div class="place-group">
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="46"
+                                                    <input class="form-check-input" type="checkbox" value="將軍澳"
                                                         id="class-area-value-46" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-46">
                                                         將軍澳
@@ -851,7 +851,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="47"
+                                                    <input class="form-check-input" type="checkbox" value="西貢"
                                                         id="class-area-value-47" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-47">
                                                         西貢
@@ -859,7 +859,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="48"
+                                                    <input class="form-check-input" type="checkbox" value="荃灣"
                                                         id="class-area-value-48" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-48">
                                                         荃灣
@@ -868,7 +868,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="49"
+                                                    <input class="form-check-input" type="checkbox" value="深井"
                                                         id="class-area-value-49" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-49">
                                                         深井
@@ -876,7 +876,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="50"
+                                                    <input class="form-check-input" type="checkbox" value="馬灣"
                                                         id="class-area-value-50" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-50">
                                                         馬灣
@@ -886,7 +886,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="51"
+                                                    <input class="form-check-input" type="checkbox" value="葵涌"
                                                         id="class-area-value-51" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-51">
                                                         葵涌
@@ -896,14 +896,14 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="52"
+                                                    <input class="form-check-input" type="checkbox" value="荔景"
                                                         id="class-area-value-52" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-52">
                                                         荔景
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="53"
+                                                    <input class="form-check-input" type="checkbox" value="葵芳"
                                                         id="class-area-value-53" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-53">
                                                         葵芳
@@ -911,7 +911,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="54"
+                                                    <input class="form-check-input" type="checkbox" value="青衣"
                                                         id="class-area-value-54" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-54">
                                                         青衣
@@ -920,21 +920,21 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="55"
+                                                    <input class="form-check-input" type="checkbox" value="大圍"
                                                         id="class-area-value-55" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-55">
                                                         大圍
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="56"
+                                                    <input class="form-check-input" type="checkbox" value="沙田"
                                                         id="class-area-value-56" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-56">
                                                         沙田
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="57"
+                                                    <input class="form-check-input" type="checkbox" value="沙田市中心"
                                                         id="class-area-value-57" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-57">
                                                         沙田市中心
@@ -942,7 +942,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="58"
+                                                    <input class="form-check-input" type="checkbox" value="小瀝源"
                                                         id="class-area-value-58" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-58">
                                                         小瀝源
@@ -950,7 +950,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="59"
+                                                    <input class="form-check-input" type="checkbox" value="火炭"
                                                         id="class-area-value-59" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-59">
                                                         火炭
@@ -959,7 +959,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="60"
+                                                    <input class="form-check-input" type="checkbox" value="馬鞍山"
                                                         id="class-area-value-60" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-60">
                                                         馬鞍山
@@ -968,7 +968,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="61"
+                                                    <input class="form-check-input" type="checkbox" value="大埔"
                                                         id="class-area-value-61" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-61">
                                                         大埔
@@ -978,7 +978,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="62"
+                                                    <input class="form-check-input" type="checkbox" value="粉嶺"
                                                         id="class-area-value-62" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-62">
                                                         粉嶺
@@ -987,7 +987,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="63"
+                                                    <input class="form-check-input" type="checkbox" value="上水"
                                                         id="class-area-value-63" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-63">
                                                         上水
@@ -995,7 +995,7 @@ Year 6 -->
                                                 </div>
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="64"
+                                                    <input class="form-check-input" type="checkbox" value="元朗"
                                                         id="class-area-value-64" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-64">
                                                         元朗
@@ -1004,7 +1004,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="65"
+                                                    <input class="form-check-input" type="checkbox" value="天水圍"
                                                         id="class-area-value-65" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-65">
                                                         天水圍
@@ -1016,7 +1016,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="66"
+                                                    <input class="form-check-input" type="checkbox" value="屯門"
                                                         id="class-area-value-66" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-66">
                                                         屯門
@@ -1027,7 +1027,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="67"
+                                                    <input class="form-check-input" type="checkbox" value="青龍頭"
                                                         id="class-area-value-67" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-67">
                                                         青龍頭
@@ -1036,7 +1036,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="68"
+                                                    <input class="form-check-input" type="checkbox" value="東涌"
                                                         id="class-area-value-68" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-68">
                                                         東涌
@@ -1045,7 +1045,7 @@ Year 6 -->
 
 
                                                 <div>
-                                                    <input class="form-check-input" type="checkbox" value="69"
+                                                    <input class="form-check-input" type="checkbox" value="離島"
                                                         id="class-area-value-69" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-69">
                                                         離島
