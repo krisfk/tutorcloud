@@ -428,7 +428,7 @@ if($_POST)
 
                 wp_update_attachment_metadata( $upload_id, wp_generate_attachment_metadata( $upload_id, $new_file_path ) );
 
-                echo $post_id;
+                // echo $post_id;
 
                 update_field( 'proof1', $upload_id, $post_id );
             
