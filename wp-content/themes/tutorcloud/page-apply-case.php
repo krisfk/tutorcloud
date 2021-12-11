@@ -1230,27 +1230,27 @@ Year 6 -->
                                     <td>
 
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_1" name="objective[]" value="1" /><label
+                                                id="objective_value_1" name="objective[]" value="拔尖" /><label
                                                 for="objective_value_1">拔尖</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="2" /><label
+                                                id="objective_value_2" name="objective[]" value="補底" /><label
                                                 for="objective_value_2">補底</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="3" /><label
+                                                id="objective_value_2" name="objective[]" value="清concept" /><label
                                                 for="objective_value_2">清concept</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="4" /><label
+                                                id="objective_value_2" name="objective[]" value="教授答題技巧" /><label
                                                 for="objective_value_2">教授答題技巧</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="5" /><label
+                                                id="objective_value_2" name="objective[]" value="應付校內考試" /><label
                                                 for="objective_value_2">應付校內考試</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="6" /><label
+                                                id="objective_value_2" name="objective[]" value="應付公開試" /><label
                                                 for="objective_value_2">應付公開試</label>
                                         </div>
 
