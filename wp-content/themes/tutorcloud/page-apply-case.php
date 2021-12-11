@@ -68,6 +68,7 @@ get_header();
             $tutorial_course=$_POST['tutorial-course'];
             $student_level=$_POST['student-level'];
             $subjects=$_POST['subjects'];
+            $student_level_2=$_POST['student-level-2'];
             $paper_lang=$_POST['paper-lang'];
             $tutorial_style=$_POST['tutorial-style'];
             $class_area=$_POST['class-area'];
@@ -85,7 +86,46 @@ get_header();
             $tutor_requirement_value_other = $_POST['tutor-requirement-value-other'];
             $other_remark = $_POST['other-remark'];
             
+
+            $post_title = $nick_name ?  $chi_name.' ('.$nick_name.')' : $chi_name;
+            $post_id = wp_insert_post(array (
+                'post_type' => 'student',
+                'post_title' => $post_title,
+                'post_status' => 'publish',
+                'comment_status' => 'closed',   // if you prefer
+                'ping_status' => 'closed',      // if you prefer
+            ));
+        
+        if ($post_id) {
+            add_post_meta($post_id, 'chi_name', $chi_name);
+            add_post_meta($post_id, 'eng_name', $eng_name);
+            add_post_meta($post_id, 'nick_name', $nick_name);
+            add_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
+            add_post_meta($post_id, 'email', $email);
+            add_post_meta($post_id, 'gender', $gender);
+            add_post_meta($post_id, 'tutorial_course', $tutorial_course);
+            add_post_meta($post_id, 'student_level', $student_level);
+            add_post_meta($post_id, 'university', $university);
+            add_post_meta($post_id, 'student_level_2', $student_level_2);
+            add_post_meta($post_id, 'subjects', $subjects);
+            add_post_meta($post_id, 'paper_lang', $paper_lang);
+            add_post_meta($post_id, 'tutorial_style', $tutorial_style);
+            add_post_meta($post_id, 'class_area', $class_area);
+            add_post_meta($post_id, 'short_address', $short_address);
+            add_post_meta($post_id, 'transport', $transport);
+            add_post_meta($post_id, 'cost_per_ppl', $cost_per_ppl);
+            add_post_meta($post_id, 'lesson_per_week', $lesson_per_week);
+            add_post_meta($post_id, 'hour_per_lesson', $hour_per_lesson);
+            add_post_meta($post_id, 'day', $day);
+            add_post_meta($post_id, 'start_tutorial_time', $start_tutorial_time);
+            add_post_meta($post_id, 'tutor_gender', $tutor_gender);
+            add_post_meta($post_id, 'objective', $objective);
+            add_post_meta($post_id, 'objective_value_other', $objective_value_other);
+            add_post_meta($post_id, 'tutor_requirement', $tutor_requirement);
+            add_post_meta($post_id, 'tutor_requirement_value_other', $tutor_requirement_value_other);
+            add_post_meta($post_id, 'other_remark', $other_remark);
         }
+    }
         ?>
 
         <div class="col-10">
