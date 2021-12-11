@@ -1166,27 +1166,27 @@ Year 6 -->
                                                 for="day_value_1">星期一</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_2" name="day[]" value="1" /><label
+                                                id="day_value_2" name="day[]" value="2" /><label
                                                 for="day_value_2">星期二</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_3" name="day[]" value="1" /><label
+                                                id="day_value_3" name="day[]" value="3" /><label
                                                 for="day_value_3">星期三</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_4" name="day[]" value="1" /><label
+                                                id="day_value_4" name="day[]" value="4" /><label
                                                 for="day_value_4">星期四</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_5" name="day[]" value="1" /><label
+                                                id="day_value_5" name="day[]" value="5" /><label
                                                 for="day_value_5">星期五</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_6" name="day[]" value="1" /><label
+                                                id="day_value_6" name="day[]" value="6" /><label
                                                 for="day_value_6">星期六</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_7" name="day[]" value="1" /><label
+                                                id="day_value_7" name="day[]" value="7" /><label
                                                 for="day_value_7">星期日</label>
                                         </div>
 
@@ -1234,23 +1234,23 @@ Year 6 -->
                                                 for="objective_value_1">拔尖</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="1" /><label
+                                                id="objective_value_2" name="objective[]" value="2" /><label
                                                 for="objective_value_2">補底</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="1" /><label
+                                                id="objective_value_2" name="objective[]" value="3" /><label
                                                 for="objective_value_2">清concept</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="1" /><label
+                                                id="objective_value_2" name="objective[]" value="4" /><label
                                                 for="objective_value_2">教授答題技巧</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="1" /><label
+                                                id="objective_value_2" name="objective[]" value="5" /><label
                                                 for="objective_value_2">應付校內考試</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="1" /><label
+                                                id="objective_value_2" name="objective[]" value="6" /><label
                                                 for="objective_value_2">應付公開試</label>
                                         </div>
 
@@ -1271,15 +1271,15 @@ Year 6 -->
 
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="tutor-requirement_value_1" name="tutor-requirement[]"
-                                                value="1" /><label for="tutor-requirement_value_1">提供筆記</label>
+                                                value="提供筆記" /><label for="tutor-requirement_value_1">提供筆記</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="tutor-requirement_value_2" name="tutor-requirement[]"
-                                                value="1" /><label for="tutor-requirement_value_2">提供練習</label>
+                                                value="提供練習" /><label for="tutor-requirement_value_2">提供練習</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="tutor-requirement_value_2" name="tutor-requirement[]"
-                                                value="1" /><label for="tutor-requirement_value_2">可以長補</label>
+                                                value="可以長補" /><label for="tutor-requirement_value_2">可以長補</label>
                                         </div>
 
 
