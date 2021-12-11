@@ -1335,7 +1335,7 @@ $(function() {
 
     $('.next-step-btn').click(function() {
         $('.tutor-list-ul').fadeOut(0);
-        $('.form-div').fadeIn(0);
+        $('.student-form-div').fadeIn(0);
     })
 
     $('.tutor-list-ul.data-column').click(function() {
