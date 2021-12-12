@@ -1316,8 +1316,8 @@ Year 6 -->
                                                 value="提供練習" /><label for="tutor-requirement_value_2">提供練習</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="tutor-requirement_value_2" name="tutor-requirement[]"
-                                                value="可以長補" /><label for="tutor-requirement_value_2">可以長補</label>
+                                                id="tutor-requirement_value_3" name="tutor-requirement[]"
+                                                value="可以長補" /><label for="tutor-requirement_value_3">可以長補</label>
                                         </div>
 
 
