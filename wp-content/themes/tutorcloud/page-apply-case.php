@@ -67,12 +67,15 @@ get_header();
             $gender=$_POST['gender'];
             $tutorial_course=$_POST['tutorial-course'];
             $student_level=$_POST['student-level'];
+            $university=$_POST['university'];
+
             $subjects=$_POST['subjects'];
             $student_level_2=$_POST['student-level-2'];
             $paper_lang=$_POST['paper-lang'];
             $tutorial_style=$_POST['tutorial-style'];
             $class_area=$_POST['class-area'];
             $short_address=$_POST['short-address'];
+            
             $transport = $_POST['transport'];
             $cost_per_ppl = $_POST['cost-per-ppl'];
             $lesson_per_week = $_POST['lesson-per-week'];
@@ -1371,7 +1374,36 @@ Year 6 -->
 $(function() {
 
     $('.submit-btn').click(function() {
-        $('form').submit();
+        var chi_name = $('#chi-name').val();
+        var eng_name = $('#eng-name').val();
+        var whatsapp_tel = $('#whatsapp-tel').val();
+        var email = $('#email').val();
+        var gender = $('input[name="gender"]:checked').val();
+        var tutorial_course = $('#tutorial-course').val();
+        var student_level = $('#student-level').val();
+        var student_level_2 = $('#student-level-2').val();
+
+        $('input[name="class-area[]"]:checked').each(function(i) {
+            val[i] = $(this).val();
+        });
+        if (val.length == 0) {
+            error_txt += '請選擇可補習地區\n';
+        }
+
+
+        $('input[name="t-style[]"]:checked').each(function(i) {
+            val[i] = $(this).val();
+        });
+        if (val.length == 0) {
+            error_txt += '請選擇可補習地區\n';
+        }
+
+        var lowest_salary = $('#lowest-salary').val();
+
+
+
+
+
     })
 
 
