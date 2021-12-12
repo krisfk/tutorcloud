@@ -1276,20 +1276,20 @@ Year 6 -->
                                                 for="objective_value_2">補底</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="清concept" /><label
-                                                for="objective_value_2">清concept</label>
+                                                id="objective_value_3" name="objective[]" value="清concept" /><label
+                                                for="objective_value_3">清concept</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="教授答題技巧" /><label
-                                                for="objective_value_2">教授答題技巧</label>
+                                                id="objective_value_4" name="objective[]" value="教授答題技巧" /><label
+                                                for="objective_value_4">教授答題技巧</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="應付校內考試" /><label
-                                                for="objective_value_2">應付校內考試</label>
+                                                id="objective_value_5" name="objective[]" value="應付校內考試" /><label
+                                                for="objective_value_5">應付校內考試</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="objective_value_2" name="objective[]" value="應付公開試" /><label
-                                                for="objective_value_2">應付公開試</label>
+                                                id="objective_value_6" name="objective[]" value="應付公開試" /><label
+                                                for="objective_value_6">應付公開試</label>
                                         </div>
 
                                         <div class="mt-2 w-100 float-start">
