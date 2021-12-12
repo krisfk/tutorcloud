@@ -1370,6 +1370,10 @@ Year 6 -->
 <script type="text/javascript">
 $(function() {
 
+    $('.submit-btn').click(function() {
+        $('form').submit();
+    })
+
 
     $('.next-step-btn').click(function() {
         $('.tutor-list-ul').fadeOut(0);
