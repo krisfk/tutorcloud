@@ -1200,31 +1200,31 @@ Year 6 -->
                                     <td>
 
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_1" name="day[]" value="星期一" /><label
+                                                id="day_value_1" name="days[]" value="星期一" /><label
                                                 for="day_value_1">星期一</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_2" name="day[]" value="星期二" /><label
+                                                id="day_value_2" name="days[]" value="星期二" /><label
                                                 for="day_value_2">星期二</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_3" name="day[]" value="星期三" /><label
+                                                id="day_value_3" name="days[]" value="星期三" /><label
                                                 for="day_value_3">星期三</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_4" name="day[]" value="星期四" /><label
+                                                id="day_value_4" name="days[]" value="星期四" /><label
                                                 for="day_value_4">星期四</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_5" name="day[]" value="星期五" /><label
+                                                id="day_value_5" name="days[]" value="星期五" /><label
                                                 for="day_value_5">星期五</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_6" name="day[]" value="星期六" /><label
+                                                id="day_value_6" name="days[]" value="星期六" /><label
                                                 for="day_value_6">星期六</label>
                                         </div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="day_value_7" name="day[]" value="星期日" /><label
+                                                id="day_value_7" name="days[]" value="星期日" /><label
                                                 for="day_value_7">星期日</label>
                                         </div>
 
