@@ -1383,13 +1383,16 @@ $(function() {
         var student_level = $('#student-level').val();
         var student_level_2 = $('#student-level-2').val();
 
+
+        if (!chi_name) {
+            alert(65);
+        }
         $('input[name="class-area[]"]:checked').each(function(i) {
             val[i] = $(this).val();
         });
         if (val.length == 0) {
             error_txt += '請選擇可補習地區\n';
         }
-
 
         $('input[name="t-style[]"]:checked').each(function(i) {
             val[i] = $(this).val();
