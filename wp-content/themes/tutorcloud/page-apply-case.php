@@ -1373,6 +1373,75 @@ Year 6 -->
 <script type="text/javascript">
 $(function() {
 
+
+
+
+
+
+    $('#all-place').change(function() {
+        // alert(5);
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= 69; i++) {
+                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= 69; i++) {
+                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
+
+    $('#hk-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= 17; i++) {
+                $('#class-area-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= 17; i++) {
+                $('#class-area-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
+
+
+    $('#kl-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 18; i <= 45; i++) {
+                $('#class-area-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 18; i <= 45; i++) {
+                $('#class-area-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
+
+    $('#nt-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 46; i <= 69; i++) {
+                $('#class-area-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 46; i <= 69; i++) {
+                $('#class-area-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
+
+
+
     $('.submit-btn').click(function() {
         var chi_name = $('#chi-name').val();
         var eng_name = $('#eng-name').val();

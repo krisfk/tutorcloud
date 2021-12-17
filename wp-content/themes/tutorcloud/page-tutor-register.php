@@ -3361,7 +3361,6 @@ $(function() {
 
 
     $('#hk-place').change(function() {
-        // alert(5);
         if ($(this).is(':checked')) {
 
             for (i = 1; i <= 17; i++) {
@@ -3378,7 +3377,6 @@ $(function() {
 
 
     $('#kl-place').change(function() {
-        // alert(5);
         if ($(this).is(':checked')) {
 
             for (i = 18; i <= 45; i++) {
@@ -3394,7 +3392,6 @@ $(function() {
 
 
     $('#nt-place').change(function() {
-        // alert(5);
         if ($(this).is(':checked')) {
 
             for (i = 46; i <= 69; i++) {
