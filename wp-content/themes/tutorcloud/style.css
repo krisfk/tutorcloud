@@ -773,3 +773,7 @@ select.form-select {
     padding: 1rem;
     transform: translate(0px, -50%);
 }
+
+.detail-content-table tr td:first-child {
+    background: #000;
+}

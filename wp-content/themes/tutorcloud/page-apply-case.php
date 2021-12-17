@@ -22,7 +22,7 @@ get_header();
 
         <div class="row">
             <div class="col-6">
-                <table>
+                <table class="detail-content-table">
 
                     <tr>
                         <td>導師編號 </td>
