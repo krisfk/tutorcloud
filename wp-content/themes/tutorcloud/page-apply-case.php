@@ -1445,58 +1445,47 @@ $(function() {
 
 
 
-        // var val = [];
 
-        // $('input[name="tutorial-style[]"]:checked').each(function(i) {
-        //     val[i] = $(this).val();
-        //     alert(val[i]);
-        // });
-        // if (val.length == 0) {
-        //     error_txt += '請選擇補習方式\n';
-        // }
+        val = []
+        $('input[name="class-area[]"]:checked').each(function(i) {
+            val[i] = $(this).val();
+        });
+        if (val.length == 0) {
+            error_txt += '請選擇補習地區\n';
+        }
 
+        if (!short_address) {
+            error_txt +=
+                '請輸入詳細地址\n';
+        }
 
+        if (!transport) {
+            error_txt +=
+                '請輸入交通方法\n';
 
-        // val = []
-        // $('input[name="class-area[]"]:checked').each(function(i) {
-        //     val[i] = $(this).val();
-        // });
-        // if (val.length == 0) {
-        //     error_txt += '請選擇補習地區\n';
-        // }
+        }
 
-        // if (!short_address) {
-        //     error_txt +=
-        //         '請輸入詳細地址\n';
-        // }
-
-        // if (!transport) {
-        //     error_txt +=
-        //         '請輸入交通方法\n';
-
-        // }
-
-        // if (!cost_per_ppl) {
-        //     error_txt +=
-        //         '請輸入每小時收費\n';
-        // }
+        if (!cost_per_ppl) {
+            error_txt +=
+                '請輸入每小時收費\n';
+        }
 
 
 
-        // if (!lesson_per_week) {
-        //     error_txt +=
-        //         '請輸入每星期堂數\n';
-        // }
+        if (!lesson_per_week) {
+            error_txt +=
+                '請輸入每星期堂數\n';
+        }
 
-        // if (!hour_per_lesson) {
-        //     error_txt +=
-        //         '每堂時間(小時)\n';
-        // }
+        if (!hour_per_lesson) {
+            error_txt +=
+                '每堂時間(小時)\n';
+        }
 
-        // if (!tutor_gender) {
-        //     error_txt +=
-        //         '導師性別要求\n';
-        // }
+        if (!tutor_gender) {
+            error_txt +=
+                '導師性別要求\n';
+        }
 
 
 
