@@ -1490,6 +1490,9 @@ $(function() {
 
 
 
+        if (!error_txt) {
+            $('form').submit();
+        }
 
 
 
