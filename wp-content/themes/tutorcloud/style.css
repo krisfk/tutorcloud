@@ -785,3 +785,7 @@ select.form-select {
     color: #00374f;
     padding: 0.5rem 1rem;
 }
+
+.detail-content-table {
+    width: 100%;
+}
