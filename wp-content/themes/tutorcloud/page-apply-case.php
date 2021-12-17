@@ -22,8 +22,9 @@ get_header();
 
             <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
         </a>
-        <div class=" deep-green">
-            香港中文大學及聖公會曾肇添中學畢業。全職補習。5年以上數學補習經驗。公開試HKDSE化學科奪得5**最高成績，提供超過20年公開試題目特訓，公開試HKDSE數學科5*級成績，小一至中六數學科及化學科成績保證。
+        <div class=" deep-green " id="lbc-self-intro">
+            <!-- 香港中文大學及聖公會曾肇添中學畢業。全職補習。5年以上數學補習經驗。公開試HKDSE化學科奪得5**最高成績，提供超過20年公開試題目特訓，公開試HKDSE數學科5*級成績，小一至中六數學科及化學科成績保證。 -->
+
         </div>
 
         <div class="row gx-0">
@@ -268,7 +269,7 @@ $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) { 
     $loop->the_post(); 
     ?>
-                    <li class="" data-tutor-id="<?php echo get_field('tutor_id');?>"
+                    <li class="tutor-content-li" data-tutor-id="<?php echo get_field('tutor_id');?>"
                         data-self-intro="<?php echo get_field('self_intro');?>">
                         <div class="row gx-0 align-items-top">
                             <div class='col-2 data-column'><?php echo get_field('tutor_id');?>
@@ -1547,7 +1548,9 @@ $(function() {
 
     $('.data-column').click(function() {
 
-        $('.lightbox').fadeIn(0);
+        // $('.lightbox').fadeIn(0);
+        $(this).closest('.tutor-content-li').fadeOut(0)
+        // $('#lbc-self-intro').html();
     })
 
     $('.close-btn').click(function() {
