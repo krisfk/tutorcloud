@@ -137,8 +137,8 @@ get_header();
                 <ul class="tutor-list-ul">
 
                     <?php 
-                for($i=0;$i<10;$i++)
-            {
+            //     for($i=0;$i<10;$i++)
+            // {
                 ?>
                     <li class="">
                         <!-- <a href="javascript:void(0);"> -->
@@ -164,7 +164,7 @@ get_header();
                         </div>
                     </li>
                     <?php
-            }
+            // }
                 ?>
                 </ul>
 
