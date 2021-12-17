@@ -14,14 +14,14 @@ get_header();
 
 <div class="lightbox">
 
-    <a href="" class="close-btn">
-
-        <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
-    </a>
 
 
     <div class="lightbox-content">
 
+        <a href="" class="close-btn">
+
+            <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
+        </a>
         <div class=" deep-green">
             香港中文大學及聖公會曾肇添中學畢業。全職補習。5年以上數學補習經驗。公開試HKDSE化學科奪得5**最高成績，提供超過20年公開試題目特訓，公開試HKDSE數學科5*級成績，小一至中六數學科及化學科成績保證。
         </div>
