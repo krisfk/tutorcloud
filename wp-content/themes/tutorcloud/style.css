@@ -770,5 +770,6 @@ select.form-select {
     margin: 0 auto;
     position: relative;
     top: 50%;
+    padding: 1rem;
     transform: translate(0px, -50%);
 }
