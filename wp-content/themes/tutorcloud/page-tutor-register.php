@@ -392,6 +392,12 @@ if($_POST)
         add_post_meta($post_id, 't_style', $t_style);
         add_post_meta($post_id, 'lowest_salary', $lowest_salary);
         
+        $tutor_id = 'T'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+        add_post_meta($post_id, 'tutor_id', $tutor_id);
+
+        // $tutor_id = 'T'.
+        // $post_id = str_pad($number, 2, '0', STR_PAD_LEFT);
+
 
         
     }
