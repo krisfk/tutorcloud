@@ -774,6 +774,10 @@ select.form-select {
     transform: translate(0px, -50%);
 }
 
+.detail-content-table tr td {
+    border: 1px solid #fff;
+}
+
 .detail-content-table tr td:first-child {
     background: #519b8c;
     color: #fff;
@@ -788,4 +792,5 @@ select.form-select {
 
 .detail-content-table {
     width: 100%;
+    margin: 1rem 0 0 0;
 }
