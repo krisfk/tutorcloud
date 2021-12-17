@@ -12,6 +12,7 @@
 get_header();
 ?>
 
+<div class="lightbox"></div>
 
 <div class="breadcrumb mt-4">
 
