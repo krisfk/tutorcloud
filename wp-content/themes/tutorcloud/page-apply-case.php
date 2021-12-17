@@ -1492,6 +1492,8 @@ $(function() {
 
         if (!error_txt) {
             $('form').submit();
+        } else {
+            alert(error_txt);
         }
 
 
