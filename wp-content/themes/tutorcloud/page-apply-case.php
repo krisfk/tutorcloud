@@ -18,7 +18,7 @@ get_header();
 
     <div class="lightbox-content">
 
-        <a href="" class="close-btn">
+        <a href="javascript:void(0);" class="close-btn">
 
             <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
         </a>
@@ -1547,6 +1547,10 @@ $(function() {
     $('.data-column').click(function() {
 
         $('.lightbox').fadeIn(0);
+    })
+
+    $('.close-btn').click(function() {
+        $('.lightbox').fadeOut(0);
     })
 
 
