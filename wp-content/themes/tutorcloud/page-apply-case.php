@@ -166,7 +166,9 @@ while ( $loop->have_posts() ) {
                                 <!--大學生--> <br>
                             </div>
                             <div class='col-2 data-column'>可接受最低時薪： <br>$<?php echo get_field('lowest_salary');?></div>
-                            <div class='col-2 data-column'>可教授科目： <br>數學 化學 經濟</div>
+                            <div class='col-2 data-column'>
+                                <!-- 可教授科目： <br>數學 化學 經濟 -->
+                            </div>
                             <div class='col-2 add-btn-column text-center'>
 
                                 <a class="add-btn-a" href="javascript:void(0);">
