@@ -1394,61 +1394,66 @@ $(function() {
         var error_txt = '';
 
 
-        // if (!chi_name) {
-        //     error_txt +=
-        //         '請輸入中文全名\n';
-        // }
-
-        // if (!eng_name) {
-        //     error_txt +=
-        //         '請輸入英文全名\n';
-        // }
-
-        // if (!whatsapp_tel) {
-        //     error_txt +=
-        //         'WhatsApp 電話號碼\n';
-        // }
-        // if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
-        //     error_txt += 'whatsapp電話格式不正確\n';
-        // }
-        // if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
-        //     error_txt +=
-        //         '電郵格式不正確\n';
-        // }
-
-        // if (!gender) {
-        //     error_txt +=
-        //         '請輸入性別\n';
-        // }
-
-        // if (!tutorial_course) {
-        //     error_txt +=
-        //         '請輸入補習課程\n';
-        // }
-        // if (!student_level) {
-        //     error_txt +=
-        //         '請輸入就讀年級\n';
-        // }
-        // if (!student_level_2) {
-        //     error_txt +=
-        //         '請輸入所屬年級\n';
-        // }
-
-        // if (!paper_lang) {
-        //     error_txt +=
-        //         '請輸入語言\n';
-        // }
-
-
-        var val = [];
-
-        $('input[name="tutorial-style[]"]:checked').each(function(i) {
-            val[i] = $(this).val();
-            alert(val[i]);
-        });
-        if (val.length == 0) {
-            error_txt += '請選擇補習方式\n';
+        if (!chi_name) {
+            error_txt +=
+                '請輸入中文全名\n';
         }
+
+        if (!eng_name) {
+            error_txt +=
+                '請輸入英文全名\n';
+        }
+
+        if (!whatsapp_tel) {
+            error_txt +=
+                'WhatsApp 電話號碼\n';
+        }
+        if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
+            error_txt += 'whatsapp電話格式不正確\n';
+        }
+        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
+            error_txt +=
+                '電郵格式不正確\n';
+        }
+
+        if (!gender) {
+            error_txt +=
+                '請輸入性別\n';
+        }
+
+        if (!tutorial_course) {
+            error_txt +=
+                '請輸入補習課程\n';
+        }
+        if (!student_level) {
+            error_txt +=
+                '請輸入就讀年級\n';
+        }
+        if (!student_level_2) {
+            error_txt +=
+                '請輸入所屬年級\n';
+        }
+
+        if (!paper_lang) {
+            error_txt +=
+                '請輸入語言\n';
+        }
+        if (!tutorial_style) {
+            error_txt +=
+                '請選擇補習方式\n';
+        }
+
+
+
+        // var val = [];
+
+        // $('input[name="tutorial-style[]"]:checked').each(function(i) {
+        //     val[i] = $(this).val();
+        //     alert(val[i]);
+        // });
+        // if (val.length == 0) {
+        //     error_txt += '請選擇補習方式\n';
+        // }
 
 
 
