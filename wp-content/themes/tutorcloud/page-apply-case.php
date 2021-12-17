@@ -1382,7 +1382,7 @@ $(function() {
         var tutorial_course = $('#tutorial-course').val();
         var student_level = $('#student-level').val();
         var student_level_2 = $('#student-level-2').val();
-        var paper_lang = $('#paper-lang').val();
+        var paper_lang = $('input[name="paper-lang"]:checked').val();
         // var subjects = $('')
         var tutorial_style = $('input[name="tutorial-style"]:checked').val();
         // alert()
