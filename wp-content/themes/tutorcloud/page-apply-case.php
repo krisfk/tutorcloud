@@ -1549,7 +1549,8 @@ $(function() {
     $('.data-column').click(function() {
 
         $('.lightbox').fadeIn(0);
-        $('lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
+        // alert($(this).closest('.tutor-content-li').attr('data-self-intro'));
+        $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
         // $('#lbc-self-intro').html();
     })
 
