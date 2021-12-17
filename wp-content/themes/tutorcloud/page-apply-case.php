@@ -136,6 +136,28 @@ get_header();
 
                 <ul class="tutor-list-ul">
 
+
+
+                    <?php
+  $args = array(  
+    'post_type' => 'tutor',
+    'post_status' => 'publish',
+    'posts_per_page' => 8, 
+    'orderby' => 'title', 
+    'order' => 'ASC', 
+);
+
+$loop = new WP_Query( $args ); 
+    
+while ( $loop->have_posts() ) { 
+    $loop->the_post(); 
+    echo 1;
+    // print the_title(); 
+    // the_excerpt(); 
+}
+                
+                
+                ?>
                     <?php 
             //     for($i=0;$i<10;$i++)
             // {
