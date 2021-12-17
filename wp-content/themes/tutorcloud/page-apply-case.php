@@ -51,7 +51,37 @@ get_header();
                 </table>
 
             </div>
-            <div class="col-6"></div>
+            <div class="col-6">
+
+                <table class="detail-content-table">
+
+                    <tr>
+                        <td>公開試 </td>
+                        <td>DSE</td>
+                    </tr>
+                    <tr>
+                        <td>可教授科目</td>
+                        <td>數學 化學 經濟</td>
+                    </tr>
+                    <tr>
+                        <td>成績</td>
+                        <td>數學（5*） 化學（5**） 經濟（5）</td>
+                    </tr>
+                    <tr>
+                        <td>可教授年級</td>
+                        <td>小學 初中 高中</td>
+                    </tr>
+                    <tr>
+                        <td>課堂語言</td>
+                        <td>中文 英文</td>
+                    </tr>
+                    <tr>
+                        <td>可接受最低時薪</td>
+                        <td>$160</td>
+                    </tr>
+                </table>
+
+            </div>
         </div>
     </div>
 
