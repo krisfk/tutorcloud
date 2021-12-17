@@ -767,4 +767,8 @@ select.form-select {
     width: 100px;
     height: 100px;
     background: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0px, -50%);
 }
