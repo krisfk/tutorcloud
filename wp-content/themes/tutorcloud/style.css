@@ -758,5 +758,6 @@ select.form-select {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #95c4c2;
+    background: rgb(149 196 194 / 80%);
+    z-index: 100;
 }
