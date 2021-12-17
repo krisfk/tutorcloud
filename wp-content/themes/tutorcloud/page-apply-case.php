@@ -1442,7 +1442,7 @@ $(function() {
 
         var val = [];
 
-        $('input[name="t-style[]"]:checked').each(function(i) {
+        $('input[name="tutorial-style[]"]:checked').each(function(i) {
             val[i] = $(this).val();
         });
         if (val.length == 0) {
