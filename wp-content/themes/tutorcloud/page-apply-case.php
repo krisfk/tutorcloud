@@ -90,11 +90,34 @@ get_header();
             <div class="mt-3">可補習地區：</div>
 
             <div class="mt-3">香港區：</div>
+            <div>
+                <span class="place-span">中半山</span>
+                <span class="place-span">薄扶林</span>
+                <span class="place-span">中上環</span>
+                <span class="place-span">西環</span>
+                <span class="place-span">灣仔</span>
+                <span class="place-span">銅鑼灣</span>
+                <span class="place-span">跑馬地</span>
+                <span class="place-span">北角</span>
+                <span class="place-span">鰂魚涌</span>
+                <span class="place-span">太古</span>
+                <span class="place-span">筲箕灣</span>
+                <span class="place-span">西灣河</span>
+                <span class="place-span"> 柴灣</span>
+                <span class="place-span">小西灣</span>
+                <span class="place-span">香港仔</span>
+                <span class="place-span">鴨利洲</span>
+                <span class="place-span">赤柱</span>
+
+            </div>
 
             <div class="mt-3">九龍區：</div>
-
+            <div> 美孚 荔枝角 長沙灣 深水涉 大角咀 旺角 何文田 油麻地 佐敦 尖沙咀 土瓜灣 紅磡 石硤尾 九龍塘 樂富 慈雲山 黃大仙 鑽石山 新蒲崗 彩虹 牛池灣 牛頭角 九龍灣 秀茂坪 觀塘 藍田 油塘 九龍城
+            </div>
 
             <div class="mt-3">新界區：</div>
+            <div> 將軍澳 西貢 荃灣 深井 馬灣 葵涌 荔景 葵芳 青衣 大圍 沙田 沙田市中心 小瀝源 火炭 馬鞍山 大埔 粉嶺 上水 元朗 天水圍 屯門 青龍頭 東涌 離島
+            </div>
         </div>
     </div>
 
