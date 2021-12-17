@@ -776,6 +776,12 @@ select.form-select {
     border-radius: 1rem;
 }
 
+.lightbox-content .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .detail-content-table tr td {
     border: 1px solid #fff;
 }
