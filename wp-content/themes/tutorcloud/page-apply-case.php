@@ -14,6 +14,11 @@ get_header();
 
 <div class="lightbox">
 
+    <a href="" class="close-btn">
+
+        <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
+    </a>
+
 
     <div class="lightbox-content">
 
