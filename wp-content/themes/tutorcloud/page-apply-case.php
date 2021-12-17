@@ -1388,6 +1388,7 @@ $(function() {
         var transport = $('#transport').val();
         var cost_per_ppl = $('#cost-per-ppl').val();
         var lesson_per_week = $('#lesson-per-week').val();
+        var hour_per_lesson = $('#hour-per-lesson').val();
         var error_txt = '';
 
 
