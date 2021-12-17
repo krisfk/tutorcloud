@@ -775,5 +775,6 @@ select.form-select {
 }
 
 .detail-content-table tr td:first-child {
-    background: #000;
+    background: #519b8c;
+    color: #fff;
 }
