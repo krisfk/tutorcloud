@@ -1444,6 +1444,7 @@ $(function() {
 
         $('input[name="tutorial-style[]"]:checked').each(function(i) {
             val[i] = $(this).val();
+            alert(val[i]);
         });
         if (val.length == 0) {
             error_txt += '請選擇補習方式\n';
