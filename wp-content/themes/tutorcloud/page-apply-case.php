@@ -151,7 +151,31 @@ $loop = new WP_Query( $args );
     
 while ( $loop->have_posts() ) { 
     $loop->the_post(); 
-    echo 1;
+    ?>
+                    <li class="">
+                        <div class="row gx-0 align-items-top">
+                            <div class='col-2 data-column'><?php echo get_field('tutor_id');?> <br>女 <img
+                                    src="<?php echo get_template_directory_uri();?>/assets/images/f-icon.png" alt="">
+                            </div>
+                            <div class='col-2 data-column'>香港中文大學 <br>護理系 </div>
+                            <div class='col-2 data-column'>大學生 <br> </div>
+                            <div class='col-2 data-column'>可接受最低時薪： <br>$160</div>
+                            <div class='col-2 data-column'>可教授科目： <br>數學 化學 經濟</div>
+                            <div class='col-2 add-btn-column text-center'>
+
+                                <a class="add-btn-a" href="javascript:void(0);">
+
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/add-btn.png"
+                                        alt="">
+                                    <div>加入導師名單</div>
+
+                                </a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <?php
+    // echo 1;
     // print the_title(); 
     // the_excerpt(); 
 }
