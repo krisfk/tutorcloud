@@ -478,6 +478,10 @@ h2 .bar {
     color: #fff;
 }
 
+.subject-list label {
+    display: block;
+}
+
 .step-content table {
     /* margin: 1rem 0 0 0; */
 }
@@ -631,7 +635,7 @@ input[type='checkbox'] {
 }
 
 .step-content {
-    display: none;
+    display: block;
 }
 
 .step-content.step-content-1 {
