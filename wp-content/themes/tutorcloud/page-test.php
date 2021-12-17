@@ -8,7 +8,8 @@
         // $tutor_id = 'T'.
         $post_id= 999;
         $tutor_id = str_pad($post_id, 9, '0', STR_PAD_LEFT);
-        echo date('Y');
+        
+        echo substr(date('Y'),2,2);
     echo $tutor_id;
 
 ?>
