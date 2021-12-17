@@ -82,18 +82,19 @@ get_header();
                 </table>
 
 
-                <div>可補習地區：</div>
-
-                <div>香港區：</div>
-
-                <div>九龍區：</div>
-
-
-                <div>新界區：</div>
 
 
 
             </div>
+
+            <div>可補習地區：</div>
+
+            <div>香港區：</div>
+
+            <div>九龍區：</div>
+
+
+            <div>新界區：</div>
         </div>
     </div>
 
