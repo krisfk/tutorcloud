@@ -1400,7 +1400,7 @@ $(function() {
 
         if (!eng_name) {
             error_txt +=
-                '請輸入中文全名\n';
+                '請輸入英文全名\n';
         }
 
         if (!whatsapp_tel) {
