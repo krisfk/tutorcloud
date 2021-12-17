@@ -1489,7 +1489,7 @@ $(function() {
 
 
 
-
+        alert(22);
         if (!error_txt) {
             $('form').submit();
         } else {
