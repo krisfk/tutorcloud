@@ -779,3 +779,9 @@ select.form-select {
     color: #fff;
     padding: 0.5rem 1rem;
 }
+
+.detail-content-table tr td:last-child {
+    background: #dcebe8;
+    color: #00374f;
+    padding: 0.5rem 1rem;
+}
