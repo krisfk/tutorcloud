@@ -87,14 +87,14 @@ get_header();
 
             </div>
 
-            <div>可補習地區：</div>
+            <div class="mt-3">可補習地區：</div>
 
-            <div>香港區：</div>
+            <div class="mt-3">香港區：</div>
 
-            <div>九龍區：</div>
+            <div class="mt-3">九龍區：</div>
 
 
-            <div>新界區：</div>
+            <div class="mt-3">新界區：</div>
         </div>
     </div>
 
