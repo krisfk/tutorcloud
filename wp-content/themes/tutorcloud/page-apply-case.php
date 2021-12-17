@@ -1384,12 +1384,13 @@ $(function() {
         var student_level_2 = $('#student-level-2').val();
         var paper_lang = $('#paper-lang').val();
         // var subjects = $('')
+        var tutorial_style = $('input[name="tutorial_style"]:checked').val();
         var short_address = $('#short-address').val();
         var transport = $('#transport').val();
         var cost_per_ppl = $('#cost-per-ppl').val();
         var lesson_per_week = $('#lesson-per-week').val();
         var hour_per_lesson = $('#hour-per-lesson').val();
-        var tutor_gender = $('#tutor-gender').val();
+        var tutor_gender = $('input[name="tutor-gender"]:checked').val();
         var error_txt = '';
 
 
