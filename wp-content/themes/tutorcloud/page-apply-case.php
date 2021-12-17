@@ -1436,6 +1436,7 @@ $(function() {
         }
 
 
+        var val = [];
 
         $('input[name="t-style[]"]:checked').each(function(i) {
             val[i] = $(this).val();
@@ -1446,7 +1447,7 @@ $(function() {
 
 
 
-
+        val = []
         $('input[name="class-area[]"]:checked').each(function(i) {
             val[i] = $(this).val();
         });
