@@ -20,6 +20,39 @@ get_header();
         <div>香港中文大學及聖公會曾肇添中學畢業。全職補習。5年以上數學補習經驗。公開試HKDSE化學科奪得5**最高成績，提供超過20年公開試題目特訓，公開試HKDSE數學科5*級成績，小一至中六數學科及化學科成績保證。
         </div>
 
+        <div class="row">
+            <div class="col-6">
+                <table>
+
+                    <tr>
+                        <td>導師編號 </td>
+                        <td>T210001 加入導師名單</td>
+                    </tr>
+                    <tr>
+                        <td>性别</td>
+                        <td>女</td>
+                    </tr>
+                    <tr>
+                        <td>出生年份</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>居住地區</td>
+                        <td>馬鞍山</td>
+                    </tr>
+                    <tr>
+                        <td>就讀中學</td>
+                        <td>聖公會曾肇添中學</td>
+                    </tr>
+                    <tr>
+                        <td>就讀大學</td>
+                        <td>香港中文大學</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="col-6"></div>
+        </div>
     </div>
 
 </div>
