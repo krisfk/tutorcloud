@@ -17,7 +17,8 @@ get_header();
 
     <div class="lightbox-content">
 
-        <div>香港中文大學及聖公會曾肇添中學畢業。全職補習。5年以上數學補習經驗。公開試HKDSE化學科奪得5**最高成績，提供超過20年公開試題目特訓，公開試HKDSE數學科5*級成績，小一至中六數學科及化學科成績保證。
+        <div class=" deep-green">
+            香港中文大學及聖公會曾肇添中學畢業。全職補習。5年以上數學補習經驗。公開試HKDSE化學科奪得5**最高成績，提供超過20年公開試題目特訓，公開試HKDSE數學科5*級成績，小一至中六數學科及化學科成績保證。
         </div>
 
         <div class="row gx-0">
@@ -87,9 +88,9 @@ get_header();
 
             </div>
 
-            <div class="mt-3">可補習地區：</div>
+            <div class="mt-3 deep-green">可補習地區：</div>
 
-            <div class="mt-3">香港區：</div>
+            <div class="mt-3 deep-green">香港區：</div>
             <div>
                 <span class="place-span">中半山</span>
                 <span class="place-span">薄扶林</span>
