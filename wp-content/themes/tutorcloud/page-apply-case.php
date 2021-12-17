@@ -1387,6 +1387,7 @@ $(function() {
         var short_address = $('#short-address').val();
         var transport = $('#transport').val();
         var cost_per_ppl = $('#cost-per-ppl').val();
+        var lesson_per_week = $('#lesson-per-week').val();
         var error_txt = '';
 
 
