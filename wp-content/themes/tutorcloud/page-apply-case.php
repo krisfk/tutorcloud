@@ -12,7 +12,15 @@
 get_header();
 ?>
 
-<div class="lightbox"></div>
+<div class="lightbox">
+
+
+    <div class="lightbox-content">
+
+
+    </div>
+
+</div>
 
 <div class="breadcrumb mt-4">
 

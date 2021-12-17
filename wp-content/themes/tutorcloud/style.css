@@ -761,3 +761,10 @@ select.form-select {
     background: rgb(149 196 194 / 80%);
     z-index: 200;
 }
+
+.lightbox-content {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+}
