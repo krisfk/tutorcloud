@@ -1544,6 +1544,11 @@ Year 6 -->
 <script type="text/javascript">
 $(function() {
 
+    $('.data-column').click(function() {
+
+        $('.lightbox').fadeIn(0);
+    })
+
 
 
 
