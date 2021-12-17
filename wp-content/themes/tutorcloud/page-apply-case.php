@@ -268,7 +268,8 @@ $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) { 
     $loop->the_post(); 
     ?>
-                    <li class="">
+                    <li class="" data-tutor-id="<?php echo get_field('tutor_id');?>"
+                        data-self-intro="<?php echo get_field('self_intro');?>">
                         <div class="row gx-0 align-items-top">
                             <div class='col-2 data-column'><?php echo get_field('tutor_id');?>
                                 <br><?php echo get_field('gender');?> <img
