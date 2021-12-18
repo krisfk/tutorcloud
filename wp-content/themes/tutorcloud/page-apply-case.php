@@ -230,9 +230,7 @@ get_header();
 
             <div class="text-end mt-4">
                 <a href="#" class="prev-step-btn">上一步</a>
-            </div>
 
-            <div class="text-end mt-4">
                 <a href="#" class="next-step-btn">下一步</a>
             </div>
         </div>
