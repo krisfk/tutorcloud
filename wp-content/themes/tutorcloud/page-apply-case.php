@@ -39,15 +39,15 @@ get_header();
                     </tr>
                     <tr>
                         <td>性别</td>
-                        <td>女</td>
+                        <td id="lbc-gender"></td>
                     </tr>
                     <tr>
                         <td>出生年份</td>
-                        <td>2000</td>
+                        <td>xxxx</td>
                     </tr>
                     <tr>
                         <td>居住地區</td>
-                        <td>馬鞍山</td>
+                        <td>xx</td>
                     </tr>
                     <tr>
                         <td>就讀中學</td>
@@ -271,7 +271,8 @@ $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) { 
     $loop->the_post(); 
     ?>
-                    <li class="tutor-content-li" data-tutor-id="<?php echo get_field('tutor_id');?>"
+                    <li class="tutor-content-li" data-gender="<?php echo get_field('gender');  ?>"
+                        data-tutor-id="<?php echo get_field('tutor_id');?>"
                         data-self-intro="<?php echo get_field('self_intro');?>">
                         <div class="row gx-0 align-items-top">
                             <div class='col-2 data-column'><?php echo get_field('tutor_id');?>
@@ -1555,6 +1556,7 @@ $(function() {
         // alert($(this).closest('.tutor-content-li').attr('data-self-intro'));
         $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
         $('#lbc-tutor-id').html($(this).closest('.tutor-content-li').attr('data-tutor-id'));
+        $('#lbc-gender').html($(this).closest('.tutor-content-li').attr('data-gender'));
 
         // $('#lbc-self-intro').html();
     })
