@@ -1622,6 +1622,8 @@ $(function() {
 
         if (!tutor_list_arr.includes(select_tutor_id)) {
             tutor_list_arr.push(select_tutor_id);
+            console.log(tutor_list_arr);
+
             var added_to_cart_html =
                 '<li><span>' + select_tutor_id +
                 '</span><a href="javascript:void(0);" class="list-close-btn"></a></li>';
@@ -1630,7 +1632,8 @@ $(function() {
 
             $('.list-close-btn').click(function() {
                 var select_tutor_id = $(this).prev('span').html();
-                // alert(select_tutor_id);
+                tutor_list_arr = tutor_list_arr.filter(tutor_id => tutor_id != select_tutor_id);
+                console.log(tutor_list_arr);
             });
 
 
