@@ -58,7 +58,10 @@ get_header();
                     </tr>
                     <tr>
                         <td>就讀大學</td>
-                        <td>香港中文大學</td>
+                        <td id="lbc-bac-degree">
+                            <!-- 香港中文大學 -->
+
+                        </td>
                     </tr>
                 </table>
 
@@ -274,7 +277,8 @@ $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) { 
     $loop->the_post(); 
     ?>
-                    <li class="tutor-content-li" data-s-school="<?php echo get_field('s_school');?>"
+                    <li class="tutor-content-li" data-bac-degree="<?php echo get_field('bac_degree');?>"
+                        data-s-school="<?php echo get_field('s_school');?>"
                         data-gender="<?php echo get_field('gender');  ?>"
                         data-tutor-id="<?php echo get_field('tutor_id');?>"
                         data-self-intro="<?php echo get_field('self_intro');?>">
@@ -1562,6 +1566,7 @@ $(function() {
         $('#lbc-tutor-id').html($(this).closest('.tutor-content-li').attr('data-tutor-id'));
         $('#lbc-gender').html($(this).closest('.tutor-content-li').attr('data-gender'));
         $('#lbc-s-school').html($(this).closest('.tutor-content-li').attr('data-s-school'));
+        $('#lbc-bac-degree').html($(this).closest('.tutor-content-li').attr('data-bac-degree'));
 
         // id="lbc-self-intro
 
