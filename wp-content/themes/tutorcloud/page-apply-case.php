@@ -1893,7 +1893,7 @@ $(function() {
 
     })
 
-    $('.next-step-btn').click(function() {
+    $('.prev-step-btn').click(function() {
         $('.next-step-btn').fadeIn(0);
         $('.prev-step-btn').fadeOut(0);
 
