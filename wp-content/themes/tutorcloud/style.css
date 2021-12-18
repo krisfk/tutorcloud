@@ -556,6 +556,10 @@ input[type='checkbox'] {
     color: #759e9c;
 }
 
+.radio-cancel-btn:hover {
+    color: #00374f;
+}
+
 .dse-big-radio-table {
     font-size: 0.8rem;
 }
