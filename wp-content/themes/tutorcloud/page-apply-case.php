@@ -1611,13 +1611,15 @@ Year 6 -->
 
 
 <script type="text/javascript">
+var tutor_list_arr = [];
 $(function() {
 
 
     $('.add-btn-a').click(function() {
 
         var select_tutor_id = $(this).closest('li').attr('data-tutor-id');
-
+        tutor_list_arr.push(select_tutor_id);
+        console.log(tutor_list_arr);
         var added_to_cart_html =
             '<li>' + select_tutor_id +
             ' <a href="javascript:void(0);" class="list-close-btn"></a></li>';
