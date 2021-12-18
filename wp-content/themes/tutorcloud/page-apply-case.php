@@ -92,7 +92,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>可接受最低時薪</td>
-                        <td>$160</td>
+                        <td>$<span id="lbc-lowest-salary"></span></td>
                     </tr>
                 </table>
 
@@ -277,7 +277,8 @@ $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) { 
     $loop->the_post(); 
     ?>
-                    <li class="tutor-content-li" data-bac-degree="<?php echo get_field('bac_degree');?>"
+                    <li class="tutor-content-li" data-lowest-salary="<?php echo get_field('lowest_salary');?>"
+                        data-bac-degree="<?php echo get_field('bac_degree');?>"
                         data-s-school="<?php echo get_field('s_school');?>"
                         data-gender="<?php echo get_field('gender');  ?>"
                         data-tutor-id="<?php echo get_field('tutor_id');?>"
@@ -1567,6 +1568,9 @@ $(function() {
         $('#lbc-gender').html($(this).closest('.tutor-content-li').attr('data-gender'));
         $('#lbc-s-school').html($(this).closest('.tutor-content-li').attr('data-s-school'));
         $('#lbc-bac-degree').html($(this).closest('.tutor-content-li').attr('data-bac-degree'));
+        $('#lbc-lowest-salary').html($(this).closest('.tutor-content-li').attr('data-lowest-salary'));
+
+
 
         // id="lbc-self-intro
 
