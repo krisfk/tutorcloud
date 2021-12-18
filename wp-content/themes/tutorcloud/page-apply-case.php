@@ -127,11 +127,63 @@ get_header();
             </div>
 
             <div class="mt-3 deep-green">九龍區：</div>
-            <div> 美孚 荔枝角 長沙灣 深水涉 大角咀 旺角 何文田 油麻地 佐敦 尖沙咀 土瓜灣 紅磡 石硤尾 九龍塘 樂富 慈雲山 黃大仙 鑽石山 新蒲崗 彩虹 牛池灣 牛頭角 九龍灣 秀茂坪 觀塘 藍田 油塘 九龍城
+            <div>
+                <span class="place-span">美孚</span>
+                <span class="place-span">荔枝角</span>
+                <span class="place-span">長沙灣</span>
+                <span class="place-span">深水涉</span>
+                <span class="place-span">大角咀</span>
+                <span class="place-span">旺角</span>
+                <span class="place-span">何文田</span>
+                <span class="place-span">油麻地</span>
+                <span class="place-span">佐敦</span>
+                <span class="place-span">尖沙咀</span>
+                <span class="place-span">土瓜灣</span>
+                <span class="place-span">紅磡</span>
+                <span class="place-span">石硤尾</span>
+                <span class="place-span">九龍塘</span>
+                <span class="place-span">樂富</span>
+                <span class="place-span">慈雲山</span>
+                <span class="place-span">黃大仙</span>
+                <span class="place-span">鑽石山</span>
+                <span class="place-span">新蒲崗</span>
+                <span class="place-span">彩虹</span>
+                <span class="place-span">牛池灣</span>
+                <span class="place-span">牛頭角</span>
+                <span class="place-span">九龍灣</span>
+                <span class="place-span">秀茂坪</span>
+                <span class="place-span">觀塘</span>
+                <span class="place-span">藍田</span>
+                <span class="place-span">油塘</span>
+                <span class="place-span">九龍城</span>
             </div>
 
             <div class="mt-3 deep-green">新界區：</div>
-            <div> 將軍澳 西貢 荃灣 深井 馬灣 葵涌 荔景 葵芳 青衣 大圍 沙田 沙田市中心 小瀝源 火炭 馬鞍山 大埔 粉嶺 上水 元朗 天水圍 屯門 青龍頭 東涌 離島
+            <div>
+                <span class="place-span">將軍澳</span>
+                <span class="place-span">西貢</span>
+                <span class="place-span">荃灣</span>
+                <span class="place-span">深井</span>
+                <span class="place-span">馬灣</span>
+                <span class="place-span">葵涌</span>
+                <span class="place-span">荔景</span>
+                <span class="place-span">葵芳</span>
+                <span class="place-span">青衣</span>
+                <span class="place-span">大圍</span>
+                <span class="place-span">沙田</span>
+                <span class="place-span">沙田市中心</span>
+                <span class="place-span">小瀝源</span>
+                <span class="place-span">火炭</span>
+                <span class="place-span">馬鞍山</span>
+                <span class="place-span">大埔</span>
+                <span class="place-span">粉嶺</span>
+                <span class="place-span">上水</span>
+                <span class="place-span">元朗</span>
+                <span class="place-span">天水圍</span>
+                <span class="place-span">屯門</span>
+                <span class="place-span">青龍頭</span>
+                <span class="place-span">東涌</span>
+                <span class="place-span">離島</span>
             </div>
         </div>
     </div>
