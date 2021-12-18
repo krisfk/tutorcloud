@@ -355,6 +355,7 @@ h2 .bar {
     background: url(./assets/images/list-close-btn.png);
     width: 12px;
     height: 12px;
+    margin: 0 0 0 0.3rem;
 }
 
 .tutor-deep-icon {
