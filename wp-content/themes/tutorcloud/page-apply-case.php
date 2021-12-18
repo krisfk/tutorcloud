@@ -1556,7 +1556,7 @@ $(function() {
         // $('#lbc-self-intro').html();
     })
 
-    $('.close-btn').click(function() {
+    $('.close-btn,.lightbox-bg-btn').click(function() {
         $('.lightbox').fadeOut(0);
     })
 
