@@ -1616,7 +1616,7 @@ $(function() {
 
     $('.add-btn-a').click(function() {
 
-        var select_tutor_id = $(this).closest('li').attr('tutor-id');
+        var select_tutor_id = $(this).closest('li').attr('data-tutor-id');
         alert(select_tutor_id);
     })
 
@@ -1863,9 +1863,9 @@ $(function() {
     $('.tutor-list-ul.data-column').click(function() {
 
     });
-    $('.add-btn-a').click(function() {
-        alert(87);
-    })
+    // $('.add-btn-a').click(function() {
+    //     // alert(87);
+    // })
 })
 </script>
 <?php
