@@ -276,7 +276,7 @@ while ( $loop->have_posts() ) {
                         <div class="row gx-0 align-items-top">
                             <div class='col-2 data-column'><?php echo get_field('tutor_id');?>
                                 <br><?php echo get_field('gender');?> <img
-                                    src="<?php echo get_template_directory_uri();?>/assets/images/f-icon.png" alt="">
+                                    src="<?php echo get_template_directory_uri();?>/assets/images/m-icon.png" alt="">
                             </div>
                             <div class='col-2 data-column'><?php echo get_field('bac_degree');?> <br>
                                 主修：<?php echo get_field('u_major');?>
