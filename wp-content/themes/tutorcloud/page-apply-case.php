@@ -218,11 +218,11 @@ get_header();
                     心儀導師名單</div>
 
                 <ul>
+                    <!-- <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
                     <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
                     <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
                     <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
+                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li> -->
                 </ul>
 
             </div>
