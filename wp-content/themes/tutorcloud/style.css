@@ -806,3 +806,12 @@ select.form-select {
     width: 100%;
     margin: 1rem 0 0 0;
 }
+
+.lightbox-bg-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

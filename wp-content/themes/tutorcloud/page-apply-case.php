@@ -14,7 +14,9 @@ get_header();
 
 <div class="lightbox">
 
+    <div class="lightbox-bg-btn">
 
+    </div>
 
     <div class="lightbox-content">
 
