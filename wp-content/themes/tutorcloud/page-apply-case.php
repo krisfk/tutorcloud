@@ -1633,6 +1633,7 @@ $(function() {
             $('.list-close-btn').click(function() {
                 var select_tutor_id = $(this).prev('span').html();
                 tutor_list_arr = tutor_list_arr.filter(tutor_id => tutor_id != select_tutor_id);
+                $(this).closest('li').remove();
                 console.log(tutor_list_arr);
             });
 
