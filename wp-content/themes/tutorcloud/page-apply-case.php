@@ -1624,7 +1624,16 @@ $(function() {
         $('#lbc-bac-degree').html($(this).closest('.tutor-content-li').attr('data-bac-degree'));
         $('#lbc-lowest-salary').html($(this).closest('.tutor-content-li').attr('data-lowest-salary'));
 
+        var class_area = $(this).closest('.tutor-content-li').attr('data-class-area');
+        var class_area_arr = class_area.split(',');
 
+        $('.place-span').removeClass('deep-green');
+        for (i = 0; i < $('.place-span').length; i++) {
+
+            if (class_area_arr.includes($('.place-span').eq(i).html())) {
+                $('.place-span').eq(i).addClass('deep-green');
+            }
+        }
 
         // id="lbc-self-intro
 
