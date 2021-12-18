@@ -35,7 +35,7 @@ get_header();
 
                     <tr>
                         <td>導師編號 </td>
-                        <td>T210001 加入導師名單</td>
+                        <td><span id="lbc-tutor-id"></span> 加入導師名單</td>
                     </tr>
                     <tr>
                         <td>性别</td>
@@ -1553,6 +1553,8 @@ $(function() {
         $('.lightbox').fadeIn(0);
         // alert($(this).closest('.tutor-content-li').attr('data-self-intro'));
         $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
+        $('#lbc-tutor-id').html($(this).closest('.tutor-content-li').attr('data-tutor-id'));
+
         // $('#lbc-self-intro').html();
     })
 
