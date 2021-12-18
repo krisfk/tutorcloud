@@ -1889,6 +1889,8 @@ $(function() {
         $('.tutor-list-ul').fadeOut(0);
         $('.student-form-div').fadeIn(0);
         $('.prev-step-btn').fadeIn(0);
+        $('.next-step-btn').fadeOut(0);
+
     })
 
     $('.tutor-list-ul.data-column').click(function() {
