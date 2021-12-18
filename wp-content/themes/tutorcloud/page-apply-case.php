@@ -1627,11 +1627,11 @@ $(function() {
 
             $('.added-list ul').append(added_to_cart_html);
         } else {
-            alert('這導師已加入心儀導師名單')；
+            alert('這導師已加入心儀導師名單');
         }
 
         // alert(select_tutor_id);
-    })
+    })；
 
     $('.data-column').click(function() {
 
