@@ -3119,7 +3119,8 @@ $(function() {
 
     $('.radio-cancel-btn').click(function() {
 
-        $(this).closest('tr').find('.grade-col input[type="radio"]').fadeOut(0);
+        $(this).closest('tr').find('.grade-col input[type="radio"]').prop('checked', false);
+
     })
 
     $('.subject-list-top a').click(function() {
