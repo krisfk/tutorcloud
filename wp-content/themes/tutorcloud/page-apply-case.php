@@ -1615,13 +1615,7 @@ var tutor_list_arr = [];
 $(function() {
 
 
-    $('.list-close-btn').click(function() {
 
-        var select_tutor_id = $(this).prev('span').html();
-        alert(select_tutor_id);
-        // $(this).closest('li').remove();
-
-    })
     $('.add-btn-a').click(function() {
 
         var select_tutor_id = $(this).closest('li').attr('data-tutor-id');
@@ -1633,6 +1627,12 @@ $(function() {
                 '</span><a href="javascript:void(0);" class="list-close-btn"></a></li>';
 
             $('.added-list ul').append(added_to_cart_html);
+
+            $('.list-close-btn').click(function() {
+                var select_tutor_id = $(this).prev('span').html();
+            });
+
+
         } else {
             alert('這導師已加入心儀導師名單');
         }
