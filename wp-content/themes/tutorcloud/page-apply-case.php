@@ -1895,6 +1895,10 @@ $(function() {
             $('.prev-step-btn').fadeIn(0);
             $('.next-step-btn').fadeOut(0);
             $('.list-close-btn').fadeOut(0);
+
+            $('.step-txt').removeClass('active');
+            $('.step-txt').eq(1).addClass('active');
+
         }
 
     })
@@ -1905,6 +1909,10 @@ $(function() {
         $('.tutor-list-ul').fadeIn(0);
         $('.student-form-div').fadeOut(0);
         $('.list-close-btn').fadeIn(0);
+
+        $('.step-txt').removeClass('active');
+
+        $('.step-txt').eq(0).addClass('active');
 
     })
 
