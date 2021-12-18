@@ -1890,6 +1890,7 @@ $(function() {
         $('.student-form-div').fadeIn(0);
         $('.prev-step-btn').fadeIn(0);
         $('.next-step-btn').fadeOut(0);
+        $('.list-close-btn').fadeOut(0);
 
     })
 
@@ -1898,6 +1899,7 @@ $(function() {
         $('.prev-step-btn').fadeOut(0);
         $('.tutor-list-ul').fadeIn(0);
         $('.student-form-div').fadeOut(0);
+        $('.list-close-btn').fadeIn(0);
 
     })
 
