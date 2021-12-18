@@ -329,7 +329,8 @@ $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) { 
     $loop->the_post(); 
     ?>
-                    <li class="tutor-content-li" data-lowest-salary="<?php echo get_field('lowest_salary');?>"
+                    <li class="tutor-content-li" data-class-area="<?php echo get_field('class-area');?>"
+                        data-lowest-salary="<?php echo get_field('lowest_salary');?>"
                         data-bac-degree="<?php echo get_field('bac_degree');?>"
                         data-s-school="<?php echo get_field('s_school');?>"
                         data-gender="<?php echo get_field('gender');  ?>"
