@@ -1617,7 +1617,13 @@ $(function() {
     $('.add-btn-a').click(function() {
 
         var select_tutor_id = $(this).closest('li').attr('data-tutor-id');
-        alert(select_tutor_id);
+
+        var added_to_cart_html =
+            '<li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>';
+
+        $('.added-list ul').append(added_to_cart_html);
+
+        // alert(select_tutor_id);
     })
 
     $('.data-column').click(function() {
