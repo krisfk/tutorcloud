@@ -1618,13 +1618,17 @@ $(function() {
     $('.add-btn-a').click(function() {
 
         var select_tutor_id = $(this).closest('li').attr('data-tutor-id');
-        tutor_list_arr.push(select_tutor_id);
-        console.log(tutor_list_arr);
-        var added_to_cart_html =
-            '<li>' + select_tutor_id +
-            ' <a href="javascript:void(0);" class="list-close-btn"></a></li>';
 
-        $('.added-list ul').append(added_to_cart_html);
+        if (!tutor_list_arr.includes(select_tutor_id)) {
+            tutor_list_arr.push(select_tutor_id);
+            var added_to_cart_html =
+                '<li>' + select_tutor_id +
+                ' <a href="javascript:void(0);" class="list-close-btn"></a></li>';
+
+            $('.added-list ul').append(added_to_cart_html);
+        } else {
+            alert('這導師已加入心儀導師名單')；
+        }
 
         // alert(select_tutor_id);
     })
