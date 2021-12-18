@@ -3117,6 +3117,11 @@ if($_POST)
 $(function() {
 
 
+    $('.radio-cancel-btn').click(function() {
+
+        $(this).closest('tr').find('.grade-col input[type="radio"]').fadeOut(0);
+    })
+
     $('.subject-list-top a').click(function() {
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
