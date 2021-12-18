@@ -1613,6 +1613,13 @@ Year 6 -->
 <script type="text/javascript">
 $(function() {
 
+
+    $('.add-btn-a').click(function() {
+
+        var select_tutor_id = $(this).closest('li').attr('tutor-id');
+        alert(select_tutor_id);
+    })
+
     $('.data-column').click(function() {
 
         $('.lightbox').fadeIn(0);
