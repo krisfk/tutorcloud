@@ -1893,6 +1893,12 @@ $(function() {
 
     })
 
+    $('.next-step-btn').click(function() {
+        $('.next-step-btn').fadeIn(0);
+        $('.prev-step-btn').fadeOut(0);
+
+    })
+
     $('.tutor-list-ul.data-column').click(function() {
 
     });
