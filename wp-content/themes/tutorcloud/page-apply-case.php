@@ -1615,6 +1615,13 @@ var tutor_list_arr = [];
 $(function() {
 
 
+    $('.list-close-btn').click(function() {
+
+        var select_tutor_id = $(this).prev('span').html();
+        alert(select_tutor_id);
+        // $(this).closest('li').remove();
+
+    })
     $('.add-btn-a').click(function() {
 
         var select_tutor_id = $(this).closest('li').attr('data-tutor-id');
@@ -1622,8 +1629,8 @@ $(function() {
         if (!tutor_list_arr.includes(select_tutor_id)) {
             tutor_list_arr.push(select_tutor_id);
             var added_to_cart_html =
-                '<li>' + select_tutor_id +
-                ' <a href="javascript:void(0);" class="list-close-btn"></a></li>';
+                '<li><span>' + select_tutor_id +
+                '</span><a href="javascript:void(0);" class="list-close-btn"></a></li>';
 
             $('.added-list ul').append(added_to_cart_html);
         } else {
