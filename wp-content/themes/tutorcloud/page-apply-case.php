@@ -1631,7 +1631,7 @@ $(function() {
         }
 
         // alert(select_tutor_id);
-    })；
+    });
 
     $('.data-column').click(function() {
 
