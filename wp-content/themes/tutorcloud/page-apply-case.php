@@ -229,7 +229,7 @@ get_header();
 
 
             <div class="text-end mt-4">
-                <a href="#" class="prev-step-btn mb-3 mt-0 d-none">上一步</a>
+                <a href="#" class="prev-step-btn mb-3 mt-0">上一步</a>
 
                 <a href="#" class="next-step-btn mb-3 mt-0">下一步</a>
             </div>
@@ -1619,6 +1619,8 @@ $(function() {
 
 
 
+    $('.prev-step-btn').fadeOut(0);
+
     $('.add-btn-a').click(function() {
 
         var select_tutor_id = $(this).closest('li').attr('data-tutor-id');
@@ -1886,6 +1888,7 @@ $(function() {
     $('.next-step-btn').click(function() {
         $('.tutor-list-ul').fadeOut(0);
         $('.student-form-div').fadeIn(0);
+        $('.prev-step-btn').fadeIn(0);
     })
 
     $('.tutor-list-ul.data-column').click(function() {
