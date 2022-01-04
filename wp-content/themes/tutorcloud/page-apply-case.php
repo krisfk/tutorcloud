@@ -537,7 +537,7 @@ while ( $loop->have_posts() ) {
 
 
                         <div class="student-apply-case-content">
-                            <input type="text" name="apply-case-form" type="hidden" value="1">
+                            <input name="apply-case-form" type="hidden" value="1">
                             <table>
                                 <tr>
                                     <td><label for="chi-name"> 中文全名 *</label></td>
