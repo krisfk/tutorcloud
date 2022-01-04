@@ -439,7 +439,7 @@ get_header();
         array(
             'key'     => 'tutor_level',
             'value'   =>  '碩士生',
-            'compare' => 'LIKE',
+            'compare' => 'IN',
         )
     )
     
