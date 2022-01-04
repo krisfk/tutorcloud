@@ -431,11 +431,11 @@ get_header();
     'order' => 'DESC', 
     'meta_query' => array(
         'relation' => 'AND',
-        // array(
-        //     'key' => 'gender',
-        //     'value' => '男',
-        //     'compare' => 'LIKE'
-        // ),
+        array(
+            'key' => 'gender',
+            'value' => '男',
+            'compare' => 'LIKE'
+        ),
         array(
             'key'     => 'tutor_level',
             'value'   =>  '大學生',
