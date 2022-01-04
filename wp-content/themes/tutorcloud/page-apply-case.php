@@ -47,12 +47,30 @@ get_header();
                         </label></td>
                     <td>
                         <div>
-                            <input class="form-check-input" type="checkbox" value="美孚" id="class-area-value-18"
+                            <input class="form-check-input" type="checkbox" value="" id="all-tutor-level"
                                 name="class-area[]">
-                            <label class="form-check-label" for="class-area-value-18">
-                                美孚
+                            <label class="form-check-label" for="all-tutor-level">
+                                所有程度
                             </label>
                         </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" value="" id="all-tutor-level"
+                                name="class-area[]">
+                            <label class="form-check-label" for="class-area-value-18">
+                                大學生
+                            </label>
+                        </div>
+
+                        <!-- 
+                        <select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
+                                    <option value="" selected="">選擇</option>
+                                    <option value="大學生">大學生</option>
+                                    <option value="學士畢業">學士畢業</option>
+                                    <option value="碩士生">碩士生</option>
+                                    <option value="碩士畢業">碩士畢業</option>
+                                    <option value="博士生">博士生</option>
+                                    <option value="博士畢業">博士畢業</option>
+                                </select> -->
                         <!-- <select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
                             <option value="大學生">大學生</option>
