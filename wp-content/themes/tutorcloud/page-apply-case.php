@@ -443,7 +443,8 @@ get_header();
                 }
                 if($_POST['tutor-level'])
                 {
-                    print_r($_POST['tutor-level']);
+                    echo 99;
+                    // print_r($_POST['tutor-level']);
                     // array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
                 }
            
