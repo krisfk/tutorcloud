@@ -12,15 +12,15 @@
 get_header();
 ?>
 
-<div class="lightbox">
+<div class="lightbox d-block">
 
-    <div class="lightbox-bg-btn">
+    <div class="lightbox-bg-btn ">
 
     </div>
 
-    <div class="lightbox-filter"></div>
+    <div class="lightbox-filter "></div>
 
-    <div class="lightbox-content">
+    <div class="lightbox-content ">
 
         <a href="javascript:void(0);" class="close-btn">
 
