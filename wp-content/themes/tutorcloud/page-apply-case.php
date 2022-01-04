@@ -1731,6 +1731,14 @@ var tutor_list_arr = [];
 $(function() {
 
 
+    $(document).on('keydown', function(e) {
+        if (e.keyCode === 27) { // ESC
+            // Do Something...
+            alert(87);
+        }
+    });
+
+
     $('.filter-btn').click(function() {
 
         $('.lightbox').fadeIn(0);
