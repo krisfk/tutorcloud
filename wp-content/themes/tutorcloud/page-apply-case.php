@@ -45,7 +45,15 @@ get_header();
                 <tr>
                     <td> <label for="tutor-level">教育程度 *
                         </label></td>
-                    <td><select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
+                    <td>
+                        <div>
+                            <input class="form-check-input" type="checkbox" value="美孚" id="class-area-value-18"
+                                name="class-area[]">
+                            <label class="form-check-label" for="class-area-value-18">
+                                美孚
+                            </label>
+                        </div>
+                        <!-- <select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
                             <option value="大學生">大學生</option>
                             <option value="學士畢業">學士畢業</option>
@@ -53,7 +61,10 @@ get_header();
                             <option value="碩士畢業">碩士畢業</option>
                             <option value="博士生">博士生</option>
                             <option value="博士畢業">博士畢業</option>
-                        </select></td>
+                        </select>
+                     -->
+
+                    </td>
                 </tr>
             </table>
         </div>
