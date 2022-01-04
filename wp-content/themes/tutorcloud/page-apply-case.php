@@ -12,15 +12,15 @@
 get_header();
 ?>
 
-<div class="lightbox d-block">
+<div class="lightbox">
 
     <div class="lightbox-bg-btn ">
 
     </div>
 
-    <div class="lightbox-filter "></div>
+    <!-- <div class="lightbox-filter "></div> -->
 
-    <div class="lightbox-content d-none">
+    <div class="lightbox-content tutor-intro">
 
         <a href="javascript:void(0);" class="close-btn">
 
@@ -1655,6 +1655,11 @@ $(function() {
     $('.data-column').click(function() {
 
         $('.lightbox').fadeIn(0);
+        $('.lightbox .lightbox-content').fadeOut(0);
+        $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
+
+        // lightbox-content 
+
         // alert($(this).closest('.tutor-content-li').attr('data-self-intro'));
         $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
         $('#lbc-tutor-id').html($(this).closest('.tutor-content-li').attr('data-tutor-id'));
