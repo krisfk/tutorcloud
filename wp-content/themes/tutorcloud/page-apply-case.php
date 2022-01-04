@@ -20,7 +20,7 @@ get_header();
 
     <div class="lightbox-content filter-content">
 
-        <div class="step-content">
+        <div class="step-content d-block">
             <table>
                 <tr>
                     <td> <label for=""> 性別*</label></td>
