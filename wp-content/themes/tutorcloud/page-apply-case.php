@@ -429,6 +429,15 @@ get_header();
     'posts_per_page' => 8, 
     'orderby' => 'title', 
     'order' => 'ASC', 
+    'meta_query' => array(
+        'relation' => 'AND',
+        array(
+            'key' => 'gender',
+            'value' => '男',
+            'compare' => 'LIKE'
+        )
+    )
+    
 );
 
 $loop = new WP_Query( $args ); 
