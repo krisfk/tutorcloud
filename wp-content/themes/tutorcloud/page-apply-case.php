@@ -427,7 +427,7 @@ get_header();
     'post_type' => 'tutor',
     'post_status' => 'publish',
     'posts_per_page' => 8, 
-    'orderby' => 'title', 
+    'orderby' => 'date', 
     'order' => 'ASC', 
     'meta_query' => array(
         'relation' => 'AND',
