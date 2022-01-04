@@ -20,79 +20,80 @@ get_header();
 
     <div class="lightbox-content filter-content">
 
-        <div class="step-content d-block">
-            <a href="javascript:void(0);" class="close-btn">
+        <form action="" method="post">
+            <div class="step-content d-block">
+                <a href="javascript:void(0);" class="close-btn">
 
-                <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
-            </a>
-            <input type="hidden" name="filter-form" value="1">
-            <table>
-                <tr>
-                    <td> <label for=""> 性別*</label></td>
-                    <td>
-                        <label><input type="radio" name="gender" value="">顯示全部</label>
-                        <label><input type="radio" name="gender" value="男">男</label>
-                        <label><input type="radio" name="gender" value="女">女</label>
-                    </td>
-                </tr>
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
+                </a>
+                <input type="hidden" name="filter-form" value="1">
+                <table>
+                    <tr>
+                        <td> <label for=""> 性別*</label></td>
+                        <td>
+                            <label><input type="radio" name="gender" value="">顯示全部</label>
+                            <label><input type="radio" name="gender" value="男">男</label>
+                            <label><input type="radio" name="gender" value="女">女</label>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td> <label for="tutor-level">教育程度 *
-                        </label></td>
-                    <td>
-                        <div class="filter-tutor-level-group">
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="" id="all-tutor-level"
-                                    name="class-area[]">
-                                <label class="form-check-label" for="all-tutor-level">
-                                    所有程度
-                                </label>
+                    <tr>
+                        <td> <label for="tutor-level">教育程度 *
+                            </label></td>
+                        <td>
+                            <div class="filter-tutor-level-group">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="all-tutor-level"
+                                        name="class-area[]">
+                                    <label class="form-check-label" for="all-tutor-level">
+                                        所有程度
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="大學生" id="tutor-level-value-1"
+                                        name="tutor-level[]">
+                                    <label class="form-check-label" for="tutor-level-value-1">
+                                        大學生
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="學士畢業"
+                                        id="tutor-level-value-1" name="tutor-level[]">
+                                    <label class="form-check-label" for="tutor-level-value-1">
+                                        學士畢業
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="碩士生" id="tutor-level-value-1"
+                                        name="tutor-level[]">
+                                    <label class="form-check-label" for="tutor-level-value-1">
+                                        碩士生
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="碩士畢業"
+                                        id="tutor-level-value-1" name="tutor-level[]">
+                                    <label class="form-check-label" for="tutor-level-value-1">
+                                        碩士畢業
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="博士生" id="tutor-level-value-1"
+                                        name="tutor-level[]">
+                                    <label class="form-check-label" for="tutor-level-value-1">
+                                        博士生
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="博士畢業"
+                                        id="tutor-level-value-1" name="tutor-level[]">
+                                    <label class="form-check-label" for="tutor-level-value-1">
+                                        博士畢業
+                                    </label>
+                                </div>
                             </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="大學生" id="tutor-level-value-1"
-                                    name="tutor-level[]">
-                                <label class="form-check-label" for="tutor-level-value-1">
-                                    大學生
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="學士畢業" id="tutor-level-value-1"
-                                    name="tutor-level[]">
-                                <label class="form-check-label" for="tutor-level-value-1">
-                                    學士畢業
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="碩士生" id="tutor-level-value-1"
-                                    name="tutor-level[]">
-                                <label class="form-check-label" for="tutor-level-value-1">
-                                    碩士生
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="碩士畢業" id="tutor-level-value-1"
-                                    name="tutor-level[]">
-                                <label class="form-check-label" for="tutor-level-value-1">
-                                    碩士畢業
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="博士生" id="tutor-level-value-1"
-                                    name="tutor-level[]">
-                                <label class="form-check-label" for="tutor-level-value-1">
-                                    博士生
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="checkbox" value="博士畢業" id="tutor-level-value-1"
-                                    name="tutor-level[]">
-                                <label class="form-check-label" for="tutor-level-value-1">
-                                    博士畢業
-                                </label>
-                            </div>
-                        </div>
 
-                        <!-- 
+                            <!-- 
                         <select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
                                     <option value="大學生">大學生</option>
@@ -102,7 +103,7 @@ get_header();
                                     <option value="博士生">博士生</option>
                                     <option value="博士畢業">博士畢業</option>
                                 </select> -->
-                        <!-- <select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
+                            <!-- <select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
                             <option value="" selected="">選擇</option>
                             <option value="大學生">大學生</option>
                             <option value="學士畢業">學士畢業</option>
@@ -113,11 +114,12 @@ get_header();
                         </select>
                      -->
 
-                    </td>
-                </tr>
-            </table>
-            <!-- </form> -->
-        </div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- </form> -->
+            </div>
+        </form>
 
     </div>
 
@@ -428,7 +430,6 @@ get_header();
 
          array_push($meta_query_arr,array('key' => 'gender','value' => '男','compare' => 'LIKE'));
 
-                echo 111;
         //  array('key'=>'tutor_level','value'=>array('碩士生','大學生'),'compare' => 'IN');
 
             // array(
