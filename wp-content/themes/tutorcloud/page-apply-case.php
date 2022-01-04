@@ -423,25 +423,27 @@ get_header();
 
 
                     <?php
+                    $meta_query_arr = array(
+                        'relation' => 'AND',
+                        array(
+                            'key' => 'gender',
+                            'value' => '男',
+                            'compare' => 'LIKE'
+                        ),
+                        array(
+                            'key'     => 'tutor_level',
+                            'value'   =>  array('碩士生','大學生'),
+                            'compare' => 'IN',
+                        )
+                        );
+
   $args = array(  
     'post_type' => 'tutor',
     'post_status' => 'publish',
     'posts_per_page' => 8, 
     'orderby' => 'date', 
     'order' => 'DESC', 
-    'meta_query' => array(
-        'relation' => 'AND',
-        array(
-            'key' => 'gender',
-            'value' => '男',
-            'compare' => 'LIKE'
-        ),
-        array(
-            'key'     => 'tutor_level',
-            'value'   =>  array(''),
-            'compare' => 'IN',
-        )
-    )
+    'meta_query' => $meta_query_arr
     
 );
 
