@@ -434,7 +434,7 @@ get_header();
         $meta_query_arr = array(
             'relation' => 'AND');
 
-            echo 99;
+            // echo 99;
             if($_POST && $_POST['filter-form'])
             {
                     echo 1;
