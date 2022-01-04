@@ -31,10 +31,12 @@ get_header();
                     <tr>
                         <td> <label for=""> 性別*</label></td>
                         <td>
-                            <label><input type="radio" name="gender" value="">顯示全部</label>
-                            <label><input type="radio" name="gender" value="男"
-                                    <?php echo $_POST['filter-form']&&$_POST['gender'] =='男' ? 'checked':''; ?>>男</label>
-                            <label><input type="radio" name="gender" value="女">女</label>
+                            <label><input type="radio" name="gender" value=""
+                                    <?php echo $_POST['filter-form']&& !$_POST['gender']  ? 'checked':''; ?>顯示全部</label>
+                                <label><input type="radio" name="gender" value="男"
+                                        <?php echo $_POST['filter-form']&&$_POST['gender'] =='男' ? 'checked':''; ?>>男</label>
+                                <label><input type="radio" name="gender" value="女"
+                                        <?php echo $_POST['filter-form']&&$_POST['gender'] =='女' ? 'checked':''; ?>>女</label>
                         </td>
                     </tr>
 
