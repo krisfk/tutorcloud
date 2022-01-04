@@ -32,7 +32,7 @@ get_header();
                         <td> <label for=""> 性別*</label></td>
                         <td>
                             <label><input type="radio" name="gender" value="">顯示全部</label>
-                            <label><input type="radio" name="gender" value="男">男</label>
+                            <label><input type="radio" name="gender" value="男" checked="checked">男</label>
                             <label><input type="radio" name="gender" value="女">女</label>
                         </td>
                     </tr>
@@ -443,11 +443,8 @@ get_header();
                 }
                 if($_POST['tutor-level'])
                 {
-                    // echo 99;
-                    // print_r($_POST['tutor-level']);
                     array_push($meta_query_arr,array('key'=>'tutor_level','value'=>$_POST['tutor-level'],'compare' => 'IN'));
                 }
-           
             }
         //  array_push($meta_query_arr,array('key' => 'gender','value' => '男','compare' => 'LIKE'));
 
