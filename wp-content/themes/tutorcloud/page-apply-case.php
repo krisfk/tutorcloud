@@ -428,7 +428,7 @@ get_header();
         $meta_query_arr = array(
             'relation' => 'AND');
 
-         array_push($meta_query_arr,array('key' => 'gender','value' => '男','compare' => 'LIKE'));
+        //  array_push($meta_query_arr,array('key' => 'gender','value' => '男','compare' => 'LIKE'));
 
         //  array('key'=>'tutor_level','value'=>array('碩士生','大學生'),'compare' => 'IN');
 
