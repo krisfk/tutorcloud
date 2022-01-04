@@ -497,8 +497,7 @@ while ( $loop->have_posts() ) {
             //     for($i=0;$i<10;$i++)
             // {
                 ?>
-                    <li class="">
-                        <!-- <a href="javascript:void(0);"> -->
+                    <!-- <li class="">
                         <div class="row gx-0 align-items-top">
                             <div class='col-2 data-column'>T210001 <br>女 <img
                                     src="<?php echo get_template_directory_uri();?>/assets/images/f-icon.png" alt="">
@@ -519,7 +518,7 @@ while ( $loop->have_posts() ) {
                             </div>
 
                         </div>
-                    </li>
+                    </li> -->
                     <?php
             // }
                 ?>
