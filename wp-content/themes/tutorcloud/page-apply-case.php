@@ -20,7 +20,7 @@ get_header();
 
     <div class="lightbox-content filter-content">
 
-        <form action="" method="post" id="">
+        <form action="" method="post" id="filter-form">
             <div class="step-content d-block">
                 <a href="javascript:void(0);" class="close-btn">
 
@@ -117,8 +117,14 @@ get_header();
                         </td>
                     </tr>
                 </table>
+
+                <a href="javascript:void(0);" class="submit-btn filter-case">查看結果</a>
+
+
                 <!-- </form> -->
             </div>
+
+
         </form>
 
     </div>
@@ -1903,6 +1909,11 @@ $(function() {
 
 
 
+    $('.filter-case.submit-btn').click(function() {
+
+        $('form#apply-case-form').submit();
+
+    })
 
     $('.apply-case.submit-btn').click(function() {
         var chi_name = $('#chi-name').val();
@@ -2071,6 +2082,7 @@ $(function() {
 
     $('.tutor-list-ul.data-column').click(function() {
 
+        $('form#filter-form').submit();
     });
     // $('.add-btn-a').click(function() {
     //     // alert(87);
