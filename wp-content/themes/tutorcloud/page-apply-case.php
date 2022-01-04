@@ -1733,8 +1733,9 @@ $(function() {
 
     $(document).on('keydown', function(e) {
         if (e.keyCode === 27) { // ESC
-            // Do Something...
-            alert(87);
+            $('.lightbox').fadeOut(0);
+
+
         }
     });
 
