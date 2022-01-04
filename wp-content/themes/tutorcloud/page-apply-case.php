@@ -18,7 +18,7 @@ get_header();
 
     </div>
 
-    <!-- <div class="lightbox-filter "></div> -->
+    <div class="lightbox-content filter-content"></div>
 
     <div class="lightbox-content tutor-intro">
 
@@ -1620,6 +1620,14 @@ var tutor_list_arr = [];
 $(function() {
 
 
+    $('.filter-btn').click(function() {
+
+        $('.lightbox').fadeIn(0);
+        $('.lightbox .lightbox-content').fadeOut(0);
+        $('.lightbox .lightbox-content.filter-content').fadeIn(0);
+
+    });
+
 
     $('.prev-step-btn').fadeOut(0);
 
@@ -1658,7 +1666,6 @@ $(function() {
         $('.lightbox .lightbox-content').fadeOut(0);
         $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
 
-        // lightbox-content 
 
         // alert($(this).closest('.tutor-content-li').attr('data-self-intro'));
         $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
