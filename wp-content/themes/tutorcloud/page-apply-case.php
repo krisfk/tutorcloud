@@ -444,6 +444,7 @@ $loop = new WP_Query( $args );
     
 while ( $loop->have_posts() ) { 
     $loop->the_post(); 
+    echo 1;
     // implode(', ', $Array)
     ?>
                     <li class="tutor-content-li" data-class-area="<?php echo implode(',', get_field('class_area'));?>"
