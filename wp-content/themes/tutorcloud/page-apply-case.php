@@ -36,14 +36,7 @@ get_header();
                         <label><input type="radio" name="gender" value="女">女</label>
                     </td>
                 </tr>
-                <tr>
-                    <td> <label for=""> 性別*</label></td>
-                    <td>
-                        <label><input type="radio" name="gender" value="">顯示全部</label>
-                        <label><input type="radio" name="gender" value="男">男</label>
-                        <label><input type="radio" name="gender" value="女">女</label>
-                    </td>
-                </tr>
+
                 <tr>
                     <td> <label for="tutor-level">教育程度 *
                         </label></td>
