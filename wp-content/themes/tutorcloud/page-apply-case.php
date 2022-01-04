@@ -435,6 +435,11 @@ get_header();
             'key' => 'gender',
             'value' => '男',
             'compare' => 'LIKE'
+        ),
+        array(
+            'key'     => 'tutor_level',
+            'value'   =>  array('"大學生"', '"碩士生"'),
+            'compare' => 'LIKE',
         )
     )
     
