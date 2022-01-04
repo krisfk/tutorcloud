@@ -1912,7 +1912,7 @@ $(function() {
 
     $('.filter-case.submit-btn').click(function() {
 
-        $('form#apply-case-form').submit();
+        $('form#filter-form').submit();
 
     })
 
@@ -2083,7 +2083,7 @@ $(function() {
 
     $('.tutor-list-ul.data-column').click(function() {
 
-        $('form#filter-form').submit();
+        // $('form#filter-form').submit();
     });
     // $('.add-btn-a').click(function() {
     //     // alert(87);
