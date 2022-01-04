@@ -428,7 +428,7 @@ get_header();
     'post_status' => 'publish',
     'posts_per_page' => 8, 
     'orderby' => 'date', 
-    'order' => 'ASC', 
+    'order' => 'DESC', 
     'meta_query' => array(
         'relation' => 'AND',
         array(
