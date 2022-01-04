@@ -437,7 +437,8 @@ get_header();
             // echo 99;
             if($_POST && $_POST['filter-form'])
             {
-                    echo 1;
+                echo $_POST['gender'];
+                    // echo 1;
             }
         //  array_push($meta_query_arr,array('key' => 'gender','value' => '男','compare' => 'LIKE'));
 
