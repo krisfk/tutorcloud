@@ -58,36 +58,36 @@ get_header();
                                 </div>
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="學士畢業"
-                                        id="tutor-level-value-1" name="tutor-level[]">
-                                    <label class="form-check-label" for="tutor-level-value-1">
+                                        id="tutor-level-value-2" name="tutor-level[]">
+                                    <label class="form-check-label" for="tutor-level-value-2">
                                         學士畢業
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="碩士生" id="tutor-level-value-1"
+                                    <input class="form-check-input" type="checkbox" value="碩士生" id="tutor-level-value-3"
                                         name="tutor-level[]">
-                                    <label class="form-check-label" for="tutor-level-value-1">
+                                    <label class="form-check-label" for="tutor-level-value-3">
                                         碩士生
                                     </label>
                                 </div>
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="碩士畢業"
-                                        id="tutor-level-value-1" name="tutor-level[]">
-                                    <label class="form-check-label" for="tutor-level-value-1">
+                                        id="tutor-level-value-4" name="tutor-level[]">
+                                    <label class="form-check-label" for="tutor-level-value-4">
                                         碩士畢業
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="博士生" id="tutor-level-value-1"
+                                    <input class="form-check-input" type="checkbox" value="博士生" id="tutor-level-value-5"
                                         name="tutor-level[]">
-                                    <label class="form-check-label" for="tutor-level-value-1">
+                                    <label class="form-check-label" for="tutor-level-value-5">
                                         博士生
                                     </label>
                                 </div>
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="博士畢業"
-                                        id="tutor-level-value-1" name="tutor-level[]">
-                                    <label class="form-check-label" for="tutor-level-value-1">
+                                        id="tutor-level-value-6" name="tutor-level[]">
+                                    <label class="form-check-label" for="tutor-level-value-6">
                                         博士畢業
                                     </label>
                                 </div>
@@ -1853,7 +1853,18 @@ $(function() {
 
 
 
+    $('#all-tutor-level').change(function() {
+        if ($(this).is(':checked')) {
+            for (i = 1; i <= 6; i++) {
+                $('#tutor-level-value-' + i).prop('checked', true);
+            }
 
+        } else {
+            for (i = 1; i <= 6; i++) {
+                $('#tutor-level-value-' + i).prop('checked', false);
+            }
+        }
+    })
 
 
     $('#all-place').change(function() {
