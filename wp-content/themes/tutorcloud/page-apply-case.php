@@ -20,7 +20,7 @@ get_header();
 
     <div class="lightbox-content filter-content">
 
-        <form action="" method="post">
+        <form action="" method="post" id="">
             <div class="step-content d-block">
                 <a href="javascript:void(0);" class="close-btn">
 
@@ -417,7 +417,7 @@ get_header();
         ?>
 
         <div class="col-10">
-            <form action="" method="post">
+            <form action="" method="post" id="apply-case-form">
 
                 <ul class="tutor-list-ul">
 
@@ -428,6 +428,10 @@ get_header();
         $meta_query_arr = array(
             'relation' => 'AND');
 
+            if($_POST && $_POST['filter-form'])
+            {
+                    // echo 1;
+            }
         //  array_push($meta_query_arr,array('key' => 'gender','value' => '男','compare' => 'LIKE'));
 
         //  array('key'=>'tutor_level','value'=>array('碩士生','大學生'),'compare' => 'IN');
@@ -1715,7 +1719,7 @@ Year 6 -->
 
 
                             </table>
-                            <a href="javascript:void(0);" class="submit-btn">遞交表格</a>
+                            <a href="javascript:void(0);" class="submit-btn apply-case">遞交表格</a>
 
 
                         </div>
@@ -1900,7 +1904,7 @@ $(function() {
 
 
 
-    $('.submit-btn').click(function() {
+    $('.apply-case.submit-btn').click(function() {
         var chi_name = $('#chi-name').val();
         var eng_name = $('#eng-name').val();
         var whatsapp_tel = $('#whatsapp-tel').val();
@@ -2018,7 +2022,7 @@ $(function() {
 
 
         if (!error_txt) {
-            $('form').submit();
+            $('form#apply-case-form').submit();
         } else {
             alert(error_txt);
         }
