@@ -21,6 +21,10 @@ get_header();
     <div class="lightbox-content filter-content">
 
         <div class="step-content d-block">
+            <a href="javascript:void(0);" class="close-btn">
+
+                <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
+            </a>
             <table>
                 <tr>
                     <td> <label for=""> 性別*</label></td>
