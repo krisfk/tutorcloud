@@ -25,7 +25,7 @@ get_header();
 
                 <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
             </a>
-
+            <input type="hidden" name="filter-form" value="1">
             <table>
                 <tr>
                     <td> <label for=""> 性別*</label></td>
@@ -424,18 +424,22 @@ get_header();
                     <?php
                     
         $meta_query_arr = array(
-            'relation' => 'AND',
-            array(
-                'key' => 'gender',
-                'value' => '男',
-                'compare' => 'LIKE'
-            ),
-            array(
-                'key'     => 'tutor_level',
-                'value'   =>  array('碩士生','大學生'),
-                'compare' => 'IN',
-            )
-            );
+            'relation' => 'AND');
+
+         array_push($meta_query_arr,array('key' => 'gender','value' => '男','compare' => 'LIKE'));
+
+         
+            // array(
+            //     'key' => 'gender',
+            //     'value' => '男',
+            //     'compare' => 'LIKE'
+            // ),
+            // array(
+            //     'key'     => 'tutor_level',
+            //     'value'   =>  array('碩士生','大學生'),
+            //     'compare' => 'IN',
+            // )
+            ;
 
   $args = array(  
     'post_type' => 'tutor',
