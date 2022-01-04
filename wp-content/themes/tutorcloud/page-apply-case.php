@@ -441,9 +441,28 @@ get_header();
                 {
                     array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
                 }
+                if($_POST['tutor-level'])
+                {
+                    print_r($_POST['tutor-level']);
+                    // array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
+                }
            
             }
-     
+        //  array_push($meta_query_arr,array('key' => 'gender','value' => '男','compare' => 'LIKE'));
+
+        //  array('key'=>'tutor_level','value'=>array('碩士生','大學生'),'compare' => 'IN');
+
+            // array(
+            //     'key' => 'gender',
+            //     'value' => '男',
+            //     'compare' => 'LIKE'
+            // ),
+            // array(
+            //     'key'     => 'tutor_level',
+            //     'value'   =>  array('碩士生','大學生'),
+            //     'compare' => 'IN',
+            // )
+            ;
 
   $args = array(  
     'post_type' => 'tutor',
