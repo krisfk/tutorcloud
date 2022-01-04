@@ -433,7 +433,7 @@ get_header();
         'relation' => 'AND',
         array(
             'key' => 'gender',
-            'value' => '女',
+            'value' => '男',
             'compare' => 'LIKE'
         )
     )
