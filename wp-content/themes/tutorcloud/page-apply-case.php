@@ -54,7 +54,8 @@ get_header();
                                 </div>
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="大學生" id="tutor-level-value-1"
-                                        name="tutor-level[]">
+                                        name="tutor-level[]"
+                                        <?php echo $_POST['filter-form']&&in_array("大學生", $_POST['tutor-level']) ? 'checked':''; ?>>
                                     <label class="form-check-label" for="tutor-level-value-1">
                                         大學生
                                     </label>
