@@ -63,7 +63,7 @@ get_header();
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="學士畢業"
                                         id="tutor-level-value-2" name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("大學生", $_POST['tutor-level']) ? 'checked':''; ?>>
+                                        <?php echo $_POST['filter-form']&&in_array("學士畢業", $_POST['tutor-level']) ? 'checked':''; ?>>
                                     <label class="form-check-label" for="tutor-level-value-2">
                                         學士畢業
                                     </label>
