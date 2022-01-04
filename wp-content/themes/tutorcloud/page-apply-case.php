@@ -29,10 +29,31 @@ get_header();
                 <tr>
                     <td> <label for=""> 性別*</label></td>
                     <td>
+                        <label><input type="radio" name="gender" value="">顯示全部</label>
                         <label><input type="radio" name="gender" value="男">男</label>
                         <label><input type="radio" name="gender" value="女">女</label>
-
                     </td>
+                </tr>
+                <tr>
+                    <td> <label for=""> 性別*</label></td>
+                    <td>
+                        <label><input type="radio" name="gender" value="">顯示全部</label>
+                        <label><input type="radio" name="gender" value="男">男</label>
+                        <label><input type="radio" name="gender" value="女">女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="tutor-level">教育程度 *
+                        </label></td>
+                    <td><select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
+                            <option value="" selected="">選擇</option>
+                            <option value="大學生">大學生</option>
+                            <option value="學士畢業">學士畢業</option>
+                            <option value="碩士生">碩士生</option>
+                            <option value="碩士畢業">碩士畢業</option>
+                            <option value="博士生">博士生</option>
+                            <option value="博士畢業">博士畢業</option>
+                        </select></td>
                 </tr>
             </table>
         </div>
