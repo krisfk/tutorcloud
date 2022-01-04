@@ -18,7 +18,22 @@ get_header();
 
     </div>
 
-    <div class="lightbox-content filter-content"></div>
+    <div class="lightbox-content filter-content">
+
+        <div class="step-content">
+            <table>
+                <tr>
+                    <td> <label for=""> 性別*</label></td>
+                    <td>
+                        <label><input type="radio" name="gender" value="男">男</label>
+                        <label><input type="radio" name="gender" value="女">女</label>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
 
     <div class="lightbox-content tutor-intro">
 
