@@ -25,6 +25,8 @@ get_header();
 
                 <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
             </a>
+
+            <!-- <form action="" action="post"> -->
             <table>
                 <tr>
                     <td> <label for=""> 性別*</label></td>
@@ -122,6 +124,7 @@ get_header();
                     </td>
                 </tr>
             </table>
+            <!-- </form> -->
         </div>
 
     </div>
