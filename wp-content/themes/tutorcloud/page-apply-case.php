@@ -20,7 +20,7 @@ get_header();
 
     <div class="lightbox-filter "></div>
 
-    <div class="lightbox-content ">
+    <div class="lightbox-content d-none">
 
         <a href="javascript:void(0);" class="close-btn">
 
