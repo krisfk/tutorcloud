@@ -26,7 +26,6 @@ get_header();
                 <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
             </a>
 
-            <!-- <form action="" action="post"> -->
             <table>
                 <tr>
                     <td> <label for=""> 性別*</label></td>
@@ -341,7 +340,7 @@ get_header();
 
         <?php
         
-        if($_POST)
+        if($_POST &&  $_POST['apply-case-form'])
         {
             $chi_name = $_POST['chi-name'];
             $eng_name = $_POST['eng-name'];
@@ -423,19 +422,20 @@ get_header();
 
 
                     <?php
-                    $meta_query_arr = array(
-                        'relation' => 'AND',
-                        array(
-                            'key' => 'gender',
-                            'value' => '男',
-                            'compare' => 'LIKE'
-                        ),
-                        array(
-                            'key'     => 'tutor_level',
-                            'value'   =>  array('碩士生','大學生'),
-                            'compare' => 'IN',
-                        )
-                        );
+                    
+        $meta_query_arr = array(
+            'relation' => 'AND',
+            array(
+                'key' => 'gender',
+                'value' => '男',
+                'compare' => 'LIKE'
+            ),
+            array(
+                'key'     => 'tutor_level',
+                'value'   =>  array('碩士生','大學生'),
+                'compare' => 'IN',
+            )
+            );
 
   $args = array(  
     'post_type' => 'tutor',
@@ -537,6 +537,7 @@ while ( $loop->have_posts() ) {
 
 
                         <div class="student-apply-case-content">
+                            <input type="text" name="apply-case-form" type="hidden" value="1">
                             <table>
                                 <tr>
                                     <td><label for="chi-name"> 中文全名 *</label></td>
