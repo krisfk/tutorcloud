@@ -201,8 +201,8 @@ get_header();
                                 <!-- <div class="mb-3"><label for=""> 地區 *</label>
                                 </div> -->
                                 <div>
-                                    <input class="form-check-input" type="checkbox" id="all-place" name="">
-                                    <label class="form-check-label" for="all-place">
+                                    <input class="form-check-input" type="checkbox" id="all-place-1" name="">
+                                    <label class="form-check-label" for="all-place-1">
                                         所有地區
                                     </label>
                                 </div>
@@ -1593,8 +1593,9 @@ Year 6 -->
                                             <div class="mb-3"><label for=""> 地區 *</label>
                                             </div>
                                             <div>
-                                                <input class="form-check-input" type="checkbox" id="all-place" name="">
-                                                <label class="form-check-label" for="all-place">
+                                                <input class="form-check-input" type="checkbox" id="all-place-2"
+                                                    name="">
+                                                <label class="form-check-label" for="all-place-2">
                                                     所有地區
                                                 </label>
                                             </div>
@@ -2614,7 +2615,7 @@ $(function() {
     })
 
 
-    $('form#filter-form #all-place,form#apply-case-form #all-place ').change(function() {
+    $('#all-place-1, #all-place-2 ').change(function() {
         // alert(5);
         if ($(this).is(':checked')) {
 
