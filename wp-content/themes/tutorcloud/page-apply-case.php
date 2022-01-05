@@ -375,8 +375,7 @@ get_header();
 
                                 <div class="mt-3">
 
-                                    <input class="form-check-input" type="checkbox" id="kl-place-1" class="kl-place"
-                                        name="">
+                                    <input class="form-check-input kl-place" type="checkbox" id="kl-place-1" name="">
                                     <label class="form-check-label" for="kl-place-1">
                                         九龍區
                                     </label>
