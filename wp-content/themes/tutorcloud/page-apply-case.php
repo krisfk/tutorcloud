@@ -2642,13 +2642,17 @@ $(function() {
     $('#hk-place').change(function() {
         if ($(this).is(':checked')) {
 
+
             for (i = 1; i <= 17; i++) {
-                $('#class-area-value-' + i).prop('checked', true);
+                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                    'checked', true);
             }
 
         } else {
             for (i = 1; i <= 17; i++) {
-                $('#class-area-value-' + i).prop('checked', false);
+                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                    'checked', false);
+                // $('#class-area-value-' + i).prop('checked', false);
             }
         }
     })
