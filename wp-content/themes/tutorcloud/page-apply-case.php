@@ -2614,7 +2614,7 @@ $(function() {
     })
 
 
-    $('#all-place').change(function() {
+    $('form#filter-form #all-place,form#apply-case-form #all-place ').change(function() {
         // alert(5);
         if ($(this).is(':checked')) {
 
