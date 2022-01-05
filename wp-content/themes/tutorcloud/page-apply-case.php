@@ -2652,7 +2652,7 @@ $(function() {
             for (i = 1; i <= 17; i++) {
                 $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
                     'checked', true);
-                $(this).next('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
                     'checked', true);
             }
 
@@ -2660,7 +2660,7 @@ $(function() {
             for (i = 1; i <= 17; i++) {
                 $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
                     'checked', false);
-                $(this).next('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
                     'checked', false);
                 // $('#class-area-value-' + i).prop('checked', false);
             }
@@ -2690,7 +2690,7 @@ $(function() {
             for (i = 18; i <= 45; i++) {
                 $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
                     'checked', true);
-                $(this).next('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
                     'checked', true);
             }
 
@@ -2698,7 +2698,7 @@ $(function() {
             for (i = 18; i <= 45; i++) {
                 $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
                     'checked', false);
-                $(this).next('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
                     'checked', false);
             }
         }
@@ -2711,7 +2711,7 @@ $(function() {
             for (i = 46; i <= 69; i++) {
                 $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
                     'checked', true);
-                $(this).next('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
                     'checked', true);
             }
 
@@ -2719,7 +2719,7 @@ $(function() {
             for (i = 46; i <= 69; i++) {
                 $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
                     'checked', false);
-                $(this).next('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
                     'checked', false);
             }
         }
