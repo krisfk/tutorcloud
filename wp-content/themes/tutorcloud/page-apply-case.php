@@ -2616,16 +2616,24 @@ $(function() {
 
 
     $('#all-place-1, #all-place-2 ').change(function() {
-        // alert(5);
         if ($(this).is(':checked')) {
 
+            $(this).parent('div').parent('div').find('#hk-place').prop('checked', true);
+            $(this).parent('div').parent('div').find('#kl-place').prop('checked', true);
+            $(this).parent('div').parent('div').find('#nt-place').prop('checked', true);
+
             for (i = 1; i <= 69; i++) {
-                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).prop('checked', true);
+                $('#class-area-value-' + i).prop('checked', true);
             }
 
         } else {
+            $(this).parent('div').parent('div').find('#hk-place').prop('checked', false);
+            $(this).parent('div').parent('div').find('#kl-place').prop('checked', false);
+            $(this).parent('div').parent('div').find('#nt-place').prop('checked', false);
+
+
             for (i = 1; i <= 69; i++) {
-                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).prop('checked', false);
+                $('#class-area-value-' + i).prop('checked', false);
             }
         }
     })
