@@ -29,7 +29,9 @@ get_header();
                 <input type="hidden" name="filter-form" value="1">
                 <table>
                     <tr>
-                        <label for=""> 性別*</label></td>
+                        <td>
+                            <label for=""> 性別*</label>
+                        </td>
                         <td>
                             <label><input type="radio" name="gender" value=""
                                     <?php echo !$_POST['filter-form']|| !$_POST['gender']  ? 'checked':''; ?>>顯示全部</label>
