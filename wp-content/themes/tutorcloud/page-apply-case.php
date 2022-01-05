@@ -2633,10 +2633,10 @@ $(function() {
 
 
                 if ($(this).attr('id') == 'all-place-1') {
-                    alert(6);
+                    $('form#filter-form #class-area-value-' + i).prop('checked', true);
                 }
                 if ($(this).attr('id') == 'all-place-2') {
-
+                    $('form#apply-case-form #class-area-value-' + i).prop('checked', true);
                 }
 
                 // $('form#  #class-area-value-' + i).prop('checked', true);
@@ -2649,8 +2649,14 @@ $(function() {
 
 
             for (i = 1; i <= 69; i++) {
-                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
-                    'checked', false);
+                if ($(this).attr('id') == 'all-place-1') {
+                    $('form#filter-form #class-area-value-' + i).prop('checked', false);
+                }
+                if ($(this).attr('id') == 'all-place-2') {
+                    $('form#apply-case-form #class-area-value-' + i).prop('checked', false);
+                }
+                // $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                //     'checked', false);
                 // $('#class-area-value-' + i).prop('checked', false);
             }
         }
