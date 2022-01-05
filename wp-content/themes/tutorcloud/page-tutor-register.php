@@ -245,7 +245,7 @@ if($_POST)
     $eng_name = $_POST['eng-name'];
     $nick_name = $_POST['nick-name'];
     $whatsapp_tel=$_POST['whatsapp-tel'];
-    $both_year=$_POST['both_year'];
+    $born_year=$_POST['born_year'];
     $gender=$_POST['gender'];
     $occupation=$_POST['occupation'];
     $bac_degree=$_POST['bac-degree'];
@@ -332,7 +332,7 @@ if($_POST)
         add_post_meta($post_id, 'eng_name', $eng_name);
         add_post_meta($post_id, 'nick_name', $nick_name);
         add_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
-        add_post_meta($post_id, 'both_year', $both_year);
+        add_post_meta($post_id, 'born_year', $born_year);
         add_post_meta($post_id, 'gender', $gender);
         add_post_meta($post_id, 'occupation', $occupation);
         add_post_meta($post_id, 'bac_degree', $bac_degree);
@@ -543,8 +543,8 @@ if($_POST)
                             <td><input id="whatsapp-tel" name="whatsapp-tel" type="number" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td><label for="both_year"> 出生年份*</label></td>
-                            <td><input id="both_year" name="both_year" type="number" class="form-control"></td>
+                            <td><label for="born_year"> 出生年份*</label></td>
+                            <td><input id="born_year" name="born_year" type="number" class="form-control"></td>
                         </tr>
                         <tr>
                             <td> <label for=""> 性別*</label></td>
@@ -3224,7 +3224,7 @@ $(function() {
         var chi_name = $('#chi-name').val();
         var eng_name = $('#eng-name').val();
         var whatsapp_tel = $('#whatsapp-tel').val();
-        var both_year = $('#both_year').val();
+        var born_year = $('#born_year').val();
         var gender = $('input[name="gender"]:checked').val();
         var error_txt = '';
         // var error = '';
@@ -3265,7 +3265,7 @@ $(function() {
         if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
             error_txt += 'whatsapp電話格式不正確\n';
         }
-        if (!both_year) {
+        if (!born_year) {
             error_txt +=
                 '請輸入出生年份\n';
         }
