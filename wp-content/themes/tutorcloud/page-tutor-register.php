@@ -248,6 +248,7 @@ if($_POST)
     $born_year=$_POST['born_year'];
     $gender=$_POST['gender'];
     $occupation=$_POST['occupation'];
+    $living_area=$_POST['living_area'];
     $bac_degree=$_POST['bac-degree'];
     $tutor_level=$_POST['tutor-level'];
     $diploma = $_POST['diploma'];
@@ -335,6 +336,7 @@ if($_POST)
         add_post_meta($post_id, 'born_year', $born_year);
         add_post_meta($post_id, 'gender', $gender);
         add_post_meta($post_id, 'occupation', $occupation);
+        add_post_meta($post_id, 'living_area', $living_area);
         add_post_meta($post_id, 'bac_degree', $bac_degree);
         add_post_meta($post_id, 'tutor_level', $tutor_level);
         add_post_meta($post_id, 'diploma', $diploma);
