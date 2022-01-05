@@ -1600,8 +1600,9 @@ Year 6 -->
                                                 </label>
                                             </div>
                                             <div class="mt-3">
-                                                <input class="form-check-input" type="checkbox" id="hk-place" name="">
-                                                <label class="form-check-label" for="hk-place">
+                                                <input class="form-check-input hk-place" type="checkbox" id="hk-place-2"
+                                                    name="">
+                                                <label class="form-check-label" for="hk-place-2">
                                                     香港島
                                                 </label>
                                             </div>
@@ -1768,8 +1769,9 @@ Year 6 -->
 
                                             <div class="mt-3">
 
-                                                <input class="form-check-input kl-place" type="checkbox" name="">
-                                                <label class="form-check-label" for="kl-place">
+                                                <input class="form-check-input kl-place" id="kl-place-2" type="checkbox"
+                                                    name="">
+                                                <label class="form-check-label" for="kl-place-2">
                                                     九龍區
                                                 </label>
                                             </div>
@@ -2017,8 +2019,9 @@ Year 6 -->
 
 
                                             <div class="mt-3">
-                                                <input class="form-check-input" type="checkbox" id="nt-place" name="">
-                                                <label class="form-check-label" for="nt-place">
+                                                <input class="form-check-input nt-place" type="checkbox" id="nt-place-2"
+                                                    name="">
+                                                <label class="form-check-label" for="nt-place-2">
                                                     新界區
                                                 </label>
                                             </div>
