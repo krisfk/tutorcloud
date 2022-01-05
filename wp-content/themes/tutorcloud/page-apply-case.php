@@ -2632,10 +2632,10 @@ $(function() {
             for (i = 1; i <= 69; i++) {
 
 
-                if ($this.attr('id') == 'all-place-1') {
+                if ($(this).attr('id') == 'all-place-1') {
                     alert(6);
                 }
-                if ($this.attr('id') == 'all-place-2') {
+                if ($(this).attr('id') == 'all-place-2') {
 
                 }
 
