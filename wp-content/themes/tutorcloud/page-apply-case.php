@@ -128,65 +128,85 @@ get_header();
 
 
                     <tr>
-                        <td> <label for="tutor-level">教育程度 *
+                        <td> <label for="tutor-level">就讀大學
                             </label></td>
                         <td>
-                            <div class="filter-tutor-level-group">
+                            <div class="university-group">
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="" id="all-tutor-level"
-                                        name="class-area[]">
-                                    <label class="form-check-label" for="all-tutor-level">
-                                        所有程度
+                                    <input class="form-check-input" type="checkbox" value="" id="all-university"
+                                        name="">
+                                    <label class="form-check-label" for="all-university">
+                                        全部大學
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="香港大學" id="university-value-1"
+                                        name="university[]">
+                                    <label class="form-check-label" for="university-value-1">
+                                        香港大學
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="大學生" id="tutor-level-value-1"
-                                        name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("大學生", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-1">
-                                        大學生
+                                    <input class="form-check-input" type="checkbox" value="香港中文大學"
+                                        id="university-value-2" name="university[]">
+                                    <label class="form-check-label" for="university-value-2">
+                                        香港中文大學
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="學士畢業"
-                                        id="tutor-level-value-2" name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("學士畢業", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-2">
-                                        學士畢業
+                                    <input class="form-check-input" type="checkbox" value="香港科技大學"
+                                        id="university-value-3" name="university[]">
+                                    <label class="form-check-label" for="university-value-3">
+                                        香港科技大學
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="碩士生" id="tutor-level-value-3"
-                                        name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("碩士生", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-3">
-                                        碩士生
+                                    <input class="form-check-input" type="checkbox" value="香港城市大學"
+                                        id="university-value-4" name="university[]">
+                                    <label class="form-check-label" for="university-value-4">
+                                        香港城市大學
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="碩士畢業"
-                                        id="tutor-level-value-4" name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("碩士畢業", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-4">
-                                        碩士畢業
+                                    <input class="form-check-input" type="checkbox" value="香港城市大學"
+                                        id="university-value-5" name="university[]">
+                                    <label class="form-check-label" for="university-value-5">
+                                        香港城市大學
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="香港浸會大學"
+                                        id="university-value-6" name="university[]">
+                                    <label class="form-check-label" for="university-value-6">
+                                        香港浸會大學
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="博士生" id="tutor-level-value-5"
-                                        name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("博士生", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-5">
-                                        博士生
+                                    <input class="form-check-input" type="checkbox" value="香港都會大學"
+                                        id="university-value-7" name="university[]">
+                                    <label class="form-check-label" for="university-value-7">
+                                        香港都會大學
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="博士畢業"
-                                        id="tutor-level-value-6" name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("博士畢業", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-6">
-                                        博士畢業
+                                    <input class="form-check-input" type="checkbox" value="香港恒生大學"
+                                        id="university-value-8" name="university[]">
+                                    <label class="form-check-label" for="university-value-8">
+                                        香港恒生大學
                                     </label>
                                 </div>
+
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="嶺南大學" id="university-value-9"
+                                        name="university[]">
+                                    <label class="form-check-label" for="university-value-9">
+                                        嶺南大學
+                                    </label>
+                                </div>
+
+
                             </div>
 
 
@@ -1972,6 +1992,21 @@ $(function() {
         }
     })
 
+
+
+    $('#all-university').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= 9; i++) {
+                $('#university-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= 9; i++) {
+                $('#university-value-' + i).prop('checked', false);
+            }
+        }
+    })
 
 
     $('#kl-place').change(function() {
