@@ -824,3 +824,7 @@ select.form-select {
 .university-group div {
     float: left;
 }
+
+#filter-form table tr td:first-child {
+    width: 100px;
+}
