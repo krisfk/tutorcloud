@@ -574,7 +574,7 @@ if($_POST)
 
                         <tr>
                             <td><label for="living-area">居住地區 *</label></td>
-                            <td> <select id="living-area" name="living-area" class="form-select" aria-label="">
+                            <td> <select id="living-area" name="living_area" class="form-select" aria-label="">
                                     <option value="">選擇</option>
 
                                     <optgroup label="香港島">
