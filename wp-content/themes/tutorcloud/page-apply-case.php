@@ -2630,7 +2630,12 @@ $(function() {
             $(this).parent('div').find('.nt-place').prop('checked', true);
 
             for (i = 1; i <= 69; i++) {
-                $('#class-area-value-' + i).prop('checked', true);
+
+                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                    'checked', true);
+
+
+                // $('#class-area-value-' + i).prop('checked', true);
             }
 
         } else {
@@ -2640,7 +2645,9 @@ $(function() {
 
 
             for (i = 1; i <= 69; i++) {
-                $('#class-area-value-' + i).prop('checked', false);
+                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                    'checked', false);
+                // $('#class-area-value-' + i).prop('checked', false);
             }
         }
     })
