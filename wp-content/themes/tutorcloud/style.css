@@ -828,3 +828,7 @@ select.form-select {
 #filter-form table tr td:first-child {
     width: 100px;
 }
+
+#filter-form table tr td {
+    vertical-align: top;
+}
