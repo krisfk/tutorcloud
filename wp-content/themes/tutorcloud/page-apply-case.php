@@ -207,8 +207,9 @@ get_header();
                                     </label>
                                 </div>
                                 <div class="mt-3">
-                                    <input class="form-check-input" type="checkbox" id="hk-place" name="">
-                                    <label class="form-check-label" for="hk-place">
+                                    <input class="form-check-input" type="checkbox" id="hk-place-1" class="hk-place"
+                                        name="">
+                                    <label class="form-check-label" for="hk-place-1">
                                         香港島
                                     </label>
                                 </div>
@@ -375,8 +376,9 @@ get_header();
 
                                 <div class="mt-3">
 
-                                    <input class="form-check-input" type="checkbox" id="kl-place" name="">
-                                    <label class="form-check-label" for="kl-place">
+                                    <input class="form-check-input" type="checkbox" id="kl-place-1" class="kl-place"
+                                        name="">
+                                    <label class="form-check-label" for="kl-place-1">
                                         九龍區
                                     </label>
                                 </div>
@@ -624,8 +626,9 @@ get_header();
 
 
                                 <div class="mt-3">
-                                    <input class="form-check-input" type="checkbox" id="nt-place" name="">
-                                    <label class="form-check-label" for="nt-place">
+                                    <input class="form-check-input" type="checkbox" id="nt-place-1" class="nt-place"
+                                        name="">
+                                    <label class="form-check-label" for="nt-place-1">
                                         新界區
                                     </label>
                                 </div>
@@ -2618,18 +2621,18 @@ $(function() {
     $('#all-place-1, #all-place-2 ').change(function() {
         if ($(this).is(':checked')) {
 
-            $(this).parent('div').parent('div').find('#hk-place').prop('checked', true);
-            $(this).parent('div').parent('div').find('#kl-place').prop('checked', true);
-            $(this).parent('div').parent('div').find('#nt-place').prop('checked', true);
+            $(this).parent('div').parent('div').find('.hk-place').prop('checked', true);
+            $(this).parent('div').parent('div').find('.kl-place').prop('checked', true);
+            $(this).parent('div').parent('div').find('.nt-place').prop('checked', true);
 
             for (i = 1; i <= 69; i++) {
                 $('#class-area-value-' + i).prop('checked', true);
             }
 
         } else {
-            $(this).parent('div').parent('div').find('#hk-place').prop('checked', false);
-            $(this).parent('div').parent('div').find('#kl-place').prop('checked', false);
-            $(this).parent('div').parent('div').find('#nt-place').prop('checked', false);
+            $(this).parent('div').parent('div').find('.hk-place').prop('checked', false);
+            $(this).parent('div').parent('div').find('.kl-place').prop('checked', false);
+            $(this).parent('div').parent('div').find('.nt-place').prop('checked', false);
 
 
             for (i = 1; i <= 69; i++) {
