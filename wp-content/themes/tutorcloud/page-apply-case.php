@@ -2649,7 +2649,6 @@ $(function() {
     $('.hk-place').change(function() {
         if ($(this).is(':checked')) {
 
-
             for (i = 1; i <= 17; i++) {
                 $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
                     'checked', true);
