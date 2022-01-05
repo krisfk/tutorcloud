@@ -546,7 +546,7 @@ get_header();
                 }
                 if($_POST['university'])
                 {
-                    echo 1;
+                    echo $_POST['university'];
                     array_push($meta_query_arr,array('key'=>'bac_degree','value'=>$_POST['university'],'compare' => 'IN'));
                 }
 
