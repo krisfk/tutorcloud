@@ -820,3 +820,7 @@ select.form-select {
 .filter-tutor-level-group div {
     float: left;
 }
+
+.university-group div {
+    float: left;
+}
