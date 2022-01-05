@@ -125,6 +125,74 @@ get_header();
 
                         </td>
                     </tr>
+
+
+                    <tr>
+                        <td> <label for="tutor-level">教育程度 *
+                            </label></td>
+                        <td>
+                            <div class="filter-tutor-level-group">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="all-tutor-level"
+                                        name="class-area[]">
+                                    <label class="form-check-label" for="all-tutor-level">
+                                        所有程度
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="大學生" id="tutor-level-value-1"
+                                        name="tutor-level[]"
+                                        <?php echo $_POST['filter-form']&&in_array("大學生", $_POST['tutor-level']) ? 'checked':''; ?>>
+                                    <label class="form-check-label" for="tutor-level-value-1">
+                                        大學生
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="學士畢業"
+                                        id="tutor-level-value-2" name="tutor-level[]"
+                                        <?php echo $_POST['filter-form']&&in_array("學士畢業", $_POST['tutor-level']) ? 'checked':''; ?>>
+                                    <label class="form-check-label" for="tutor-level-value-2">
+                                        學士畢業
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="碩士生" id="tutor-level-value-3"
+                                        name="tutor-level[]"
+                                        <?php echo $_POST['filter-form']&&in_array("碩士生", $_POST['tutor-level']) ? 'checked':''; ?>>
+                                    <label class="form-check-label" for="tutor-level-value-3">
+                                        碩士生
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="碩士畢業"
+                                        id="tutor-level-value-4" name="tutor-level[]"
+                                        <?php echo $_POST['filter-form']&&in_array("碩士畢業", $_POST['tutor-level']) ? 'checked':''; ?>>
+                                    <label class="form-check-label" for="tutor-level-value-4">
+                                        碩士畢業
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="博士生" id="tutor-level-value-5"
+                                        name="tutor-level[]"
+                                        <?php echo $_POST['filter-form']&&in_array("博士生", $_POST['tutor-level']) ? 'checked':''; ?>>
+                                    <label class="form-check-label" for="tutor-level-value-5">
+                                        博士生
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="博士畢業"
+                                        id="tutor-level-value-6" name="tutor-level[]"
+                                        <?php echo $_POST['filter-form']&&in_array("博士畢業", $_POST['tutor-level']) ? 'checked':''; ?>>
+                                    <label class="form-check-label" for="tutor-level-value-6">
+                                        博士畢業
+                                    </label>
+                                </div>
+                            </div>
+
+
+                        </td>
+                    </tr>
+
                 </table>
 
                 <a href="javascript:void(0);" class="submit-btn filter-case">查看結果</a>
