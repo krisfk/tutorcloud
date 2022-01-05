@@ -2625,6 +2625,10 @@ $(function() {
             $(this).parent('div').parent('div').find('.kl-place').prop('checked', true);
             $(this).parent('div').parent('div').find('.nt-place').prop('checked', true);
 
+            $(this).parent('div').find('.hk-place').prop('checked', true);
+            $(this).parent('div').find('.kl-place').prop('checked', true);
+            $(this).parent('div').find('.nt-place').prop('checked', true);
+
             for (i = 1; i <= 69; i++) {
                 $('#class-area-value-' + i).prop('checked', true);
             }
