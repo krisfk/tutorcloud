@@ -571,7 +571,7 @@ if($_POST)
                         </tr>
 
                         <tr>
-                            <td><label for="living-area">居住地區</label></td>
+                            <td><label for="living-area">居住地區 *</label></td>
                             <td> <select id="living-area" name="living-area" class="form-select" aria-label="">
                                     <option value="">選擇</option>
 
@@ -3313,6 +3313,7 @@ $(function() {
         var whatsapp_tel = $('#whatsapp-tel').val();
         var born_year = $('#born_year').val();
         var gender = $('input[name="gender"]:checked').val();
+        var living_area = $('#living-area').val();
         var error_txt = '';
         // var error = '';
 
@@ -3361,6 +3362,11 @@ $(function() {
             error_txt +=
                 '請輸入性別\n';
         }
+        if (!living_area) {
+            error_txt +=
+                '請輸入居住地區\n';
+        }
+
 
         if (error_txt) {
             alert(error_txt);
