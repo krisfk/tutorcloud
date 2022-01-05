@@ -896,7 +896,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>出生年份</td>
-                        <td>xxxx</td>
+                        <td id="lbc-born-year"></td>
                     </tr>
                     <tr>
                         <td>居住地區</td>
@@ -2578,6 +2578,8 @@ $(function() {
         $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
         $('#lbc-tutor-id').html($(this).closest('.tutor-content-li').attr('data-tutor-id'));
         $('#lbc-gender').html($(this).closest('.tutor-content-li').attr('data-gender'));
+        $('#lbc-born-year').html($(this).closest('.tutor-content-li').attr('data-born-year'));
+
         $('#lbc-s-school').html($(this).closest('.tutor-content-li').attr('data-s-school'));
         $('#lbc-bac-degree').html($(this).closest('.tutor-content-li').attr('data-bac-degree'));
         $('#lbc-lowest-salary').html($(this).closest('.tutor-content-li').attr('data-lowest-salary'));
