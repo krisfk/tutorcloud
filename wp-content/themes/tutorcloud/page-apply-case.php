@@ -2674,31 +2674,35 @@ $(function() {
     })
 
 
-    $('#kl-place').change(function() {
+    $('.kl-place').change(function() {
         if ($(this).is(':checked')) {
 
             for (i = 18; i <= 45; i++) {
-                $('#class-area-value-' + i).prop('checked', true);
+                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                    'checked', true);
             }
 
         } else {
             for (i = 18; i <= 45; i++) {
-                $('#class-area-value-' + i).prop('checked', false);
+                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                    'checked', false);
             }
         }
     })
 
 
-    $('#nt-place').change(function() {
+    $('.nt-place').change(function() {
         if ($(this).is(':checked')) {
 
             for (i = 46; i <= 69; i++) {
-                $('#class-area-value-' + i).prop('checked', true);
+                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                    'checked', true);
             }
 
         } else {
             for (i = 46; i <= 69; i++) {
-                $('#class-area-value-' + i).prop('checked', false);
+                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                    'checked', false);
             }
         }
     })
