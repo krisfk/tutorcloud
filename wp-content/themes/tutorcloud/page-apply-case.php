@@ -207,8 +207,7 @@ get_header();
                                     </label>
                                 </div>
                                 <div class="mt-3">
-                                    <input class="form-check-input" type="checkbox" id="hk-place-1" class="hk-place"
-                                        name="">
+                                    <input class="form-check-input hk-place" type="checkbox" id="hk-place-1" name="">
                                     <label class="form-check-label" for="hk-place-1">
                                         香港島
                                     </label>
@@ -626,8 +625,7 @@ get_header();
 
 
                                 <div class="mt-3">
-                                    <input class="form-check-input" type="checkbox" id="nt-place-1" class="nt-place"
-                                        name="">
+                                    <input class="form-check-input nt-place" type="checkbox" id="nt-place-1" name="">
                                     <label class="form-check-label" for="nt-place-1">
                                         新界區
                                     </label>
@@ -1771,7 +1769,7 @@ Year 6 -->
 
                                             <div class="mt-3">
 
-                                                <input class="form-check-input" type="checkbox" id="kl-place" name="">
+                                                <input class="form-check-input kl-place" type="checkbox" name="">
                                                 <label class="form-check-label" for="kl-place">
                                                     九龍區
                                                 </label>
