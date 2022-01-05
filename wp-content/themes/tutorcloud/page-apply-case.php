@@ -2639,7 +2639,7 @@ $(function() {
     })
 
 
-    $('#hk-place').change(function() {
+    $('.hk-place').change(function() {
         if ($(this).is(':checked')) {
 
 
