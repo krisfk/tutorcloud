@@ -836,3 +836,7 @@ select.form-select {
 .past-exam-group div {
     float: left;
 }
+
+.lesson-lang-group div {
+    float: left;
+}
