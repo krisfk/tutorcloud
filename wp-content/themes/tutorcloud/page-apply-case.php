@@ -925,7 +925,7 @@ get_header();
 
                     <tr>
                         <td>公開試 </td>
-                        <td>DSE</td>
+                        <td id="lbc-past-exam"></td>
                     </tr>
                     <tr>
                         <td>可教授科目</td>
@@ -1236,7 +1236,8 @@ while ( $loop->have_posts() ) {
                         data-tutor-id="<?php echo get_field('tutor_id');?>"
                         data-self-intro="<?php echo get_field('self_intro');?>"
                         data-born-year="<?php echo get_field('born_year');?>"
-                        data-living-area="<?php echo get_field('living_area');?>">
+                        data-living-area="<?php echo get_field('living_area');?>"
+                        data-past-exam="<?php echo get_field('past_exam');?>">
                         <div class="row gx-0 align-items-top">
                             <div class='col-2 data-column'><?php echo get_field('tutor_id');?>
                                 <br><?php echo get_field('gender');?> <img
@@ -2587,6 +2588,7 @@ $(function() {
         $('#lbc-s-school').html($(this).closest('.tutor-content-li').attr('data-s-school'));
         $('#lbc-bac-degree').html($(this).closest('.tutor-content-li').attr('data-bac-degree'));
         $('#lbc-lowest-salary').html($(this).closest('.tutor-content-li').attr('data-lowest-salary'));
+        $('#lbc-past-exam').html($(this).closest('.tutor-content-li').attr('data-past-exam'));
 
         var class_area = $(this).closest('.tutor-content-li').attr('data-class-area');
         var class_area_arr = class_area.split(',');
