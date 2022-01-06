@@ -3644,6 +3644,15 @@ $(function() {
 
         }
 
+        var val3 = [];
+        $('input[name="lesson-lang[]"]:checked').each(function(i) {
+            val3[i] = $(this).val();
+        });
+        if (val3.length == 0) {
+            error_txt += '請選擇課堂語言\n';
+        }
+
+
         $('input[name="class-area[]"]:checked').each(function(i) {
             val[i] = $(this).val();
             // alert(5);
