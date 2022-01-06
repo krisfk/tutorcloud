@@ -1253,7 +1253,7 @@ while ( $loop->have_posts() ) {
                                 // 數學（5*） 化學（5**） 經濟（5） 
 
                                 $label = get_field_object('dse_sub_'.$i)['label'];
-                                $str=$label.' ('.get_field('dse_sub_'.$i).')'.' ';
+                                $str.=$label.' ('.get_field('dse_sub_'.$i).')'.' ';
                             }
                         }
                         echo $str;
