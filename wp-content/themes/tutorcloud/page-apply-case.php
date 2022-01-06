@@ -900,7 +900,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>居住地區</td>
-                        <td>xx</td>
+                        <td id="lbc-living-area"></td>
                     </tr>
                     <tr>
                         <td>就讀中學</td>
@@ -1235,7 +1235,8 @@ while ( $loop->have_posts() ) {
                         data-gender="<?php echo get_field('gender');  ?>"
                         data-tutor-id="<?php echo get_field('tutor_id');?>"
                         data-self-intro="<?php echo get_field('self_intro');?>"
-                        data-born-year="<?php echo get_field('born_year');?>">
+                        data-born-year="<?php echo get_field('born_year');?>"
+                        data-living-area="<?php echo get_field('living_area');?>">
                         <div class="row gx-0 align-items-top">
                             <div class='col-2 data-column'><?php echo get_field('tutor_id');?>
                                 <br><?php echo get_field('gender');?> <img
@@ -2576,6 +2577,9 @@ $(function() {
 
         // alert($(this).closest('.tutor-content-li').attr('data-self-intro'));
         $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
+
+        $('#lbc-living-area').html($(this).closest('.tutor-content-li').attr('data-living-area'));
+
         $('#lbc-tutor-id').html($(this).closest('.tutor-content-li').attr('data-tutor-id'));
         $('#lbc-gender').html($(this).closest('.tutor-content-li').attr('data-gender'));
         $('#lbc-born-year').html($(this).closest('.tutor-content-li').attr('data-born-year'));
