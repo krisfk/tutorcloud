@@ -755,55 +755,57 @@ if($_POST)
                                 </label>
                             </td>
                             <td>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="HKDSE" id="past-exam-value-1"
-                                        name="past-exam[]">
-                                    <label class="form-check-label" for="past-exam-value-1">
-                                        HKDSE
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="HKCEE" id="past-exam-value-2"
-                                        name="past-exam[]">
-                                    <label class="form-check-label" for="past-exam-value-2">
-                                        HKCEE
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="HKALE" id="past-exam-value-3"
-                                        name="past-exam[]">
-                                    <label class="form-check-label" for="past-exam-value-3">
-                                        HKALE
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="IB" id="past-exam-value-4"
-                                        name="past-exam[]">
-                                    <label class="form-check-label" for="past-exam-value-4">
-                                        IB
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="GCE AL"
-                                        id="past-exam-value-5" name="past-exam[]">
-                                    <label class="form-check-label" for="past-exam-value-5">
-                                        GCE AL
+                                <div class="past-exam-group">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="HKDSE"
+                                            id="past-exam-value-1" name="past-exam[]">
+                                        <label class="form-check-label" for="past-exam-value-1">
+                                            HKDSE
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="HKCEE"
+                                            id="past-exam-value-2" name="past-exam[]">
+                                        <label class="form-check-label" for="past-exam-value-2">
+                                            HKCEE
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="HKALE"
+                                            id="past-exam-value-3" name="past-exam[]">
+                                        <label class="form-check-label" for="past-exam-value-3">
+                                            HKALE
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="IB"
+                                            id="past-exam-value-4" name="past-exam[]">
+                                        <label class="form-check-label" for="past-exam-value-4">
+                                            IB
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="GCE AL"
+                                            id="past-exam-value-5" name="past-exam[]">
+                                        <label class="form-check-label" for="past-exam-value-5">
+                                            GCE AL
 
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="IGCSE" id="past-exam-value-6"
-                                        name="past-exam[]">
-                                    <label class="form-check-label" for="past-exam-value-6">
-                                        IGCSE
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="SAT" id="past-exam-value-7"
-                                        name="past-exam[]">
-                                    <label class="form-check-label" for="past-exam-value-7">
-                                        SAT
-                                    </label>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="IGCSE"
+                                            id="past-exam-value-6" name="past-exam[]">
+                                        <label class="form-check-label" for="past-exam-value-6">
+                                            IGCSE
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="SAT"
+                                            id="past-exam-value-7" name="past-exam[]">
+                                        <label class="form-check-label" for="past-exam-value-7">
+                                            SAT
+                                        </label>
+                                    </div>
                                 </div>
                             </td>
                         </tr>

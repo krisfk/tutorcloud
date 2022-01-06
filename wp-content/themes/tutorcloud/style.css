@@ -832,3 +832,7 @@ select.form-select {
 #filter-form table tr td {
     vertical-align: top;
 }
+
+.past-exam-group div {
+    float: left;
+}
