@@ -753,7 +753,7 @@ if($_POST)
                             <td><input type="text" id="s-school" name="s-school" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td> <label for="s-school">曾參加公開試 *
+                            <td> <label for="past-exam">曾參加公開試 *
                                 </label>
                             </td>
                             <td>
@@ -2513,6 +2513,17 @@ if($_POST)
                     </table>
 
                 </div>
+
+                <table>
+                    <tr>
+                        <td> <label class="form-check-label" for="">
+                                課堂語言 *
+                            </label></td>
+                        <td>fds</td>
+                    </tr>
+
+                </table>
+
 
                 <h5 class="mt-4">可補習地區 *</h5>
                 <table>
