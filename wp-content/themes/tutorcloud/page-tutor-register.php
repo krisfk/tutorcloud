@@ -2519,7 +2519,22 @@ if($_POST)
                         <td> <label class="form-check-label" for="">
                                 課堂語言 *
                             </label></td>
-                        <td>fds</td>
+                        <td>
+                            <div>
+                                <input class="form-check-input" type="checkbox" value="中文" id="lesson-lang-value-1"
+                                    name="lesson-lang[]">
+                                <label class="form-check-label" for="lesson-lang-value-1">
+                                    中文
+                                </label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="checkbox" value="英文" id="lesson-lang-value-2"
+                                    name="lesson-lang[]">
+                                <label class="form-check-label" for="lesson-lang-value-2">
+                                    英文
+                                </label>
+                            </div>
+                        </td>
                     </tr>
 
                 </table>
