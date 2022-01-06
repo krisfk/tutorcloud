@@ -1243,7 +1243,22 @@ while ( $loop->have_posts() ) {
                         data-born-year="<?php echo get_field('born_year');?>"
                         data-living-area="<?php echo get_field('living_area');?>"
                         data-past-exam="<?php  echo implode(',', get_field('past_exam'));?>"
-                        data-lesson-lang="<?php  echo implode(' ', get_field('lesson_lang'));?>">
+                        data-lesson-lang="<?php  echo implode(' ', get_field('lesson_lang'));?>" data-result="<?php  
+                        
+                        $str='';
+                        for($i=1;$i<=22;$i++)
+                        {
+                            if(get_field('dse_sub_'.$i))
+                            {
+                                // 數學（5*） 化學（5**） 經濟（5） 
+
+                                $label = get_field_object('dse_sub_'.$i)['label'];
+                                $str=$label.' ('.get_field('dse_sub_'.$i).')'.' ';
+                            }
+                        }
+                        echo $str;
+                        // echo implode(' ', get_field('lesson_lang'));
+                        ?>">
                         <div class="row gx-0 align-items-top">
                             <div class='col-2 data-column'><?php echo get_field('tutor_id');?>
                                 <br><?php echo get_field('gender');?> <img
@@ -2584,9 +2599,11 @@ $(function() {
 
 
         // alert($(this).closest('.tutor-content-li').attr('data-self-intro'));
+
         $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
         $('#lbc-lesson-lang').html($(this).closest('.tutor-content-li').attr('data-lesson-lang'));
 
+        $('#lbc-result').html($(this).closest('.tutor-content-li').attr('data-result'));
 
 
         $('#lbc-living-area').html($(this).closest('.tutor-content-li').attr('data-living-area'));
