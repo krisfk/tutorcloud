@@ -310,6 +310,8 @@ if($_POST)
     $t_subjects_music=$_POST['t-subjects-music'];//array  
     $t_subjects_music_value_other=$_POST['t-subjects-music-value-other'];
  
+    $lesson_lang=$_POST['lesson-lang'];
+
     $class_area = $_POST['class-area'];
     $t_style = $_POST['t-style'];
     $lowest_salary = $_POST['lowest-salary'];
@@ -392,6 +394,8 @@ if($_POST)
         add_post_meta($post_id, 't_subjects_sat_value_other', $t_subjects_sat_value_other);
         add_post_meta($post_id, 't_subjects_music', $t_subjects_music);
         add_post_meta($post_id, 't_subjects_music_value_other', $t_subjects_music_value_other);
+        add_post_meta($post_id, 'lesson_lang', $lesson_lang);
+
         add_post_meta($post_id, 'class_area', $class_area);
         add_post_meta($post_id, 't_style', $t_style);
         add_post_meta($post_id, 'lowest_salary', $lowest_salary);
