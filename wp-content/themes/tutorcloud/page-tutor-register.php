@@ -3343,9 +3343,17 @@ $(function() {
             error_txt +=
                 '請輸入曾就讀中學\n';
         }
-        if (!past_exam) {
-            error_txt +=
-                '請輸入曾參加的公開試\n';
+
+        var val = [];
+
+
+        $('input[name="past_exam[]"]:checked').each(function(i) {
+            val[i] = $(this).val();
+            // alert(5);
+        });
+
+        if (val.length == 0) {
+            error_txt += '請輸入曾參加的公開試\n';
         }
 
 
