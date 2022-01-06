@@ -941,7 +941,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>課堂語言</td>
-                        <td>中文 英文</td>
+                        <td id="lbc-lesson-lang"></td>
                     </tr>
                     <tr>
                         <td>可接受最低時薪</td>
@@ -1237,7 +1237,8 @@ while ( $loop->have_posts() ) {
                         data-self-intro="<?php echo get_field('self_intro');?>"
                         data-born-year="<?php echo get_field('born_year');?>"
                         data-living-area="<?php echo get_field('living_area');?>"
-                        data-past-exam="<?php  echo implode(',', get_field('past_exam'));?>">
+                        data-past-exam="<?php  echo implode(',', get_field('past_exam'));?>"
+                        data-lesson-lang="<?php  echo implode(',', get_field('lesson_lang'));?>">
                         <div class="row gx-0 align-items-top">
                             <div class='col-2 data-column'><?php echo get_field('tutor_id');?>
                                 <br><?php echo get_field('gender');?> <img
@@ -2578,6 +2579,9 @@ $(function() {
 
         // alert($(this).closest('.tutor-content-li').attr('data-self-intro'));
         $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
+        $('#lbc-lesson-lang').html($(this).closest('.tutor-content-li').attr('data-lesson-lang'));
+
+
 
         $('#lbc-living-area').html($(this).closest('.tutor-content-li').attr('data-living-area'));
 
