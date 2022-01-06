@@ -2514,7 +2514,7 @@ if($_POST)
 
                 </div>
 
-                <table>
+                <table class="mt-5">
                     <tr>
                         <td> <label class="form-check-label" for="">
                                 課堂語言 *
