@@ -3347,7 +3347,7 @@ $(function() {
         var val = [];
 
 
-        $('input[name="past_exam[]"]:checked').each(function(i) {
+        $('input[name="past-exam[]"]:checked').each(function(i) {
             val[i] = $(this).val();
             // alert(5);
         });
