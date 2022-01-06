@@ -1237,7 +1237,7 @@ while ( $loop->have_posts() ) {
                         data-self-intro="<?php echo get_field('self_intro');?>"
                         data-born-year="<?php echo get_field('born_year');?>"
                         data-living-area="<?php echo get_field('living_area');?>"
-                        data-past-exam="<?php echo get_field('past_exam');?>">
+                        data-past-exam="<?php print_r(get_field('past_exam'));?>">
                         <div class="row gx-0 align-items-top">
                             <div class='col-2 data-column'><?php echo get_field('tutor_id');?>
                                 <br><?php echo get_field('gender');?> <img
