@@ -256,6 +256,7 @@ if($_POST)
     $u_major =$_POST['u-major'];
     $u_minor =$_POST['u-minor'];
     $s_school = $_POST['s-school'];
+    $past_exam = $_POST['past-exam'];
     $dse_sub_1 = $_POST['dse-sub-1'];
     $dse_sub_2 = $_POST['dse-sub-2'];
     $dse_sub_3 = $_POST['dse-sub-3'];
@@ -344,6 +345,7 @@ if($_POST)
         add_post_meta($post_id, 'u_major', $u_major);
         add_post_meta($post_id, 'u_minor', $u_minor);
         add_post_meta($post_id, 's_school', $s_school);
+        add_post_meta($post_id, 'past_exam', $past_exam);
         add_post_meta($post_id, 'dse_sub_1', $dse_sub_1);
         add_post_meta($post_id, 'dse_sub_2', $dse_sub_2);
         add_post_meta($post_id, 'dse_sub_3', $dse_sub_3);
@@ -3304,6 +3306,8 @@ $(function() {
         var u_major = $('#u-major').val();
         // var s_major = $('#s-major').val();
         var s_school = $('#s-school').val();
+        var past_exam = $('#past-exam').val();
+
         var exam_lang = $('#exam-lang').val();
 
         if (!bac_degree) {
@@ -3333,6 +3337,19 @@ $(function() {
             error_txt +=
                 '請輸入曾就讀中學\n';
         }
+
+
+        if (!s_school) {
+            error_txt +=
+                '請輸入曾就讀中學\n';
+        }
+        if (!past_exam) {
+            error_txt +=
+                '請輸入曾參加的公開試\n';
+        }
+
+
+        // past-exam
 
         if (!exam_lang) {
             error_txt +=
