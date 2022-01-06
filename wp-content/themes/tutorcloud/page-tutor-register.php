@@ -3306,7 +3306,7 @@ $(function() {
         var u_major = $('#u-major').val();
         // var s_major = $('#s-major').val();
         var s_school = $('#s-school').val();
-        var past_exam = $('#past-exam').val();
+        var past_exam = $('input[name="past-exam"]:checked').val();
 
         var exam_lang = $('#exam-lang').val();
 
