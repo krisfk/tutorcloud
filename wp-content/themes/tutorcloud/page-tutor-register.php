@@ -750,6 +750,21 @@ if($_POST)
                             </td>
                             <td><input type="text" id="s-school" name="s-school" class="form-control"></td>
                         </tr>
+                        <tr>
+                            <td> <label for="s-school">曾參加公開試 *
+                                </label>
+                            </td>
+                            <td>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="HKDSE" id="past-exam-value-1"
+                                        name="past-exam[]">
+                                    <label class="form-check-label" for="past-exam-value-1">
+                                        HKDSE
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+
                     </table>
 
                     <table class="mt-4 dse-big-radio-table">
