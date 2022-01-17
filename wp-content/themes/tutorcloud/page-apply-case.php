@@ -2796,6 +2796,8 @@ $(function() {
         var chi_name = $('#chi-name').val();
         var eng_name = $('#eng-name').val();
         var whatsapp_tel = $('#whatsapp-tel').val();
+        var confirm_whatsapp_tel = $('#confirm-whatsapp-tel').val();
+
         var email = $('#email').val();
         var gender = $('input[name="gender"]:checked').val();
         var tutorial_course = $('#tutorial-course').val();
@@ -2828,6 +2830,14 @@ $(function() {
             error_txt +=
                 'WhatsApp 電話號碼\n';
         }
+
+
+        if (confirm_whatsapp_tel != whatsapp_tel) {
+            error_txt +=
+                '確認 WhatsApp 電話號碼輸入不相同\n';
+        }
+
+
         if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
             error_txt += 'whatsapp電話格式不正確\n';
         }
@@ -2835,6 +2845,8 @@ $(function() {
             error_txt +=
                 '電郵格式不正確\n';
         }
+
+
 
         if (!gender) {
             error_txt +=
