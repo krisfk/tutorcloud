@@ -1623,13 +1623,13 @@ Year 6 -->
                                         <div>
                                             <div class="mb-3"><label for=""> 地區 *</label>
                                             </div>
-                                            <div>
+                                            <!-- <div>
                                                 <input class="form-check-input" type="checkbox" id="all-place-2"
                                                     name="">
                                                 <label class="form-check-label" for="all-place-2">
                                                     所有地區
                                                 </label>
-                                            </div>
+                                            </div> -->
                                             <div class="mt-3">
                                                 <input class="form-check-input hk-place" type="checkbox" id="hk-place-2"
                                                     name="">
