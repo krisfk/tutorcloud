@@ -2839,7 +2839,7 @@ $(function() {
 
 
         if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
-            error_txt += 'whatsapp電話格式不正確\n';
+            error_txt += 'WhatsApp 電話格式不正確\n';
         }
         if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
             error_txt +=
