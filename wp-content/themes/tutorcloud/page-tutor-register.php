@@ -1086,14 +1086,14 @@ if($_POST)
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="proof1">公開試成績證明 *</label>
+                            <td><label for="proof1">公開試成績證明</label>
                             </td>
                             <td>
                                 <input id="proof1" name="proof1" type="file" class="form-control" accept=".jpg,pdf,png">
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="proof2">學生證/畢業證書 *</label>
+                            <td><label for="proof2">學生證/畢業證書</label>
                             </td>
                             <td>
                                 <input id="proof2" name="proof2" type="file" class="form-control" accept=".jpg,pdf,png">
