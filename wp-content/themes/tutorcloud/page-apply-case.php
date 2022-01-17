@@ -1419,7 +1419,8 @@ while ( $loop->have_posts() ) {
                                     <td> <label for="other-tutorial-course"> 其他補習課程</label></td>
                                     <td>
 
-
+                                        <input id="other-tutorial-course" name="other-tutorial-course" type="text"
+                                            class="form-control">
                                     </td>
                                 </tr>
 
