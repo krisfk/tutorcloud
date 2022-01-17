@@ -1609,13 +1609,13 @@ Year 6 -->
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="align-top">
+                                    <td class="">
                                         <label for="instrument">樂器</label>
                                     </td>
                                     <td><input type="text" class="form-control" id="instrument" name="instrument"></td>
                                 </tr>
                                 <tr>
-                                    <td class="align-top">
+                                    <td class="">
 
                                         <label for="other-subject">其他科目</label>
 
