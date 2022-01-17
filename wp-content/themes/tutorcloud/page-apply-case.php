@@ -1396,15 +1396,28 @@ while ( $loop->have_posts() ) {
                             其他 -->
                                         <select id="tutorial-course" name="tutorial-course" class="form-select"
                                             aria-label="">
+
+
                                             <option value="" selected="">選擇</option>
-                                            <option value="HKDSE 香港文憑試">HKDSE 香港文憑試</option>
-                                            <option value="IB">IB</option>
-                                            <option value="GCE AL">GCE AL</option>
-                                            <option value="IGCSE ">IGCSE </option>
-                                            <option value="SAT ">SAT </option>
-                                            <option value="校內考試">校內考試</option>
-                                            <option value="音樂">音樂</option>
-                                            <option value="其他">其他</option>
+
+                                            <optgroup label="高中">
+                                                <option value="HKDSE">HKDSE</option>
+                                                <option value="IB">IB</option>
+                                                <option value="GCE AL">GCE AL</option>
+                                                <option value="IGCSE ">IGCSE </option>
+                                                <option value="SAT ">SAT </option>
+                                            </optgroup>
+
+                                            <optgroup label="幼稚園至初中">
+                                                <option value="校內考試">校內考試</option>
+                                            </optgroup>
+
+
+                                            <optgroup label="其他">
+
+                                                <option value="音樂">音樂</option>
+                                            </optgroup>
+
                                         </select>
 
                                     </td>
