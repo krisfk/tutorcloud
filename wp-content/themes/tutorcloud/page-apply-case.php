@@ -1609,12 +1609,20 @@ Year 6 -->
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="align-top">樂器</td>
-                                    <td><input type="text" class="form-control"></td>
+                                    <td class="align-top">
+                                        <label for="instrument">樂器</label>
+                                    </td>
+                                    <td><input type="text" class="form-control" id="instrument" name="instrument"></td>
                                 </tr>
                                 <tr>
-                                    <td class="align-top">其他</td>
-                                    <td><input type="text" class="form-control"></td>
+                                    <td class="align-top">
+
+                                        <label for="other-subject">其他科目</label>
+
+
+                                    </td>
+                                    <td><input type="text" class="form-control" id="other-subject" name="other-subject">
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td> <label for=""> 語言 *</label></td>
