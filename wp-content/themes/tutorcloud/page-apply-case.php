@@ -1542,12 +1542,14 @@ Year 6 -->
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="subject_value_11" name="subjects[]" value="生物" /><label
                                                 for="subject_value_11">生物</label></div>
-                                        <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+
+                                        <!-- <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="subject_value_12" name="subjects[]" value="組合科學：物理 化學" /><label
                                                 for="subject_value_12">組合科學：物理 化學</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="subject_value_13" name="subjects[]" value="組合科學：化學 生物" /><label
-                                                for="subject_value_13">組合科學：化學 生物</label></div>
+                                                for="subject_value_13">組合科學：化學 生物</label></div> -->
+
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="subject_value_14" name="subjects[]" value="綜合科學" /><label
                                                 for="subject_value_14">綜合科學</label>
