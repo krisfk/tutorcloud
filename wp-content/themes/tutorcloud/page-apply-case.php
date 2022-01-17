@@ -1429,7 +1429,7 @@ while ( $loop->have_posts() ) {
                                             <option value="">選擇</option>
                                             <option value="幼稚園">幼稚園</option>
                                             <option value="小學">小學</option>
-                                            <option value="中國">中國</option>
+                                            <option value="中學">中學</option>
                                             <option value="國際學校">國際學校</option>
                                             <option value="自修生">自修生</option>
                                             <option value="大專">大專</option>
@@ -1440,7 +1440,7 @@ while ( $loop->have_posts() ) {
                                 </tr>
 
                                 <tr>
-                                    <td><label for="university"> 大專學校 <br> <span class="small"> (例如：HKU Space / <br>
+                                    <td><label for="university"> 就讀學校 <br> <span class="small"> (例如：HKU Space / <br>
                                                 香港中文大學
                                                 )</span></label></td>
                                     <td><input id="university" name="university" type="text" class="form-control"></td>
