@@ -1385,15 +1385,6 @@ while ( $loop->have_posts() ) {
                                 <tr>
                                     <td> <label for="tutorial-course"> 補習課程 *</label></td>
                                     <td>
-                                        <!-- 選擇
-                            HKDSE 香港文憑試
-                            IB
-                            GCE AL
-                            IGCSE
-                            SAT
-                            校內考試
-                            音樂
-                            其他 -->
                                         <select id="tutorial-course" name="tutorial-course" class="form-select"
                                             aria-label="">
 
@@ -1422,6 +1413,16 @@ while ( $loop->have_posts() ) {
 
                                     </td>
                                 </tr>
+
+
+                                <tr>
+                                    <td> <label for="other-tutorial-course"> 其他補習課程</label></td>
+                                    <td>
+
+
+                                    </td>
+                                </tr>
+
 
                                 <tr>
                                     <td> <label for="student-level"> 就讀年級 *
