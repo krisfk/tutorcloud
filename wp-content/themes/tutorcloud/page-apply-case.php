@@ -1104,6 +1104,8 @@ get_header();
             $email = $_POST['email'];
             $gender=$_POST['gender'];
             $tutorial_course=$_POST['tutorial-course'];
+            $other_tutorial_course=$_POST['other-tutorial-course'];
+
             $student_level=$_POST['student-level'];
             $university=$_POST['university'];
 
@@ -1145,6 +1147,7 @@ get_header();
             add_post_meta($post_id, 'email', $email);
             add_post_meta($post_id, 'gender', $gender);
             add_post_meta($post_id, 'tutorial_course', $tutorial_course);
+            add_post_meta($post_id, 'other_tutorial_course', $other_tutorial_course);
             add_post_meta($post_id, 'student_level', $student_level);
             add_post_meta($post_id, 'university', $university);
             add_post_meta($post_id, 'student_level_2', $student_level_2);
