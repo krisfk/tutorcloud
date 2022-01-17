@@ -2291,7 +2291,7 @@ Year 6 -->
                             <table>
                                 <tr>
                                     <td><label for="short-address"> 詳細地址 *
-                                            <br> <span class="small">(不需要完整地址)</span></label></td>
+                                            <br> <span class="small">(不需要完整地址。 E.g:美孚新邨)</span></label></td>
                                     <td><input id="short-address" name="short-address" type="text" class="form-control">
                                     </td>
                                 </tr>
