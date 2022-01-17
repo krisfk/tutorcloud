@@ -1404,8 +1404,8 @@ while ( $loop->have_posts() ) {
                                                 <option value="HKDSE">HKDSE</option>
                                                 <option value="IB">IB</option>
                                                 <option value="GCE AL">GCE AL</option>
-                                                <option value="IGCSE ">IGCSE </option>
-                                                <option value="SAT ">SAT </option>
+                                                <option value="IGCSE">IGCSE </option>
+                                                <option value="SAT">SAT </option>
                                             </optgroup>
 
                                             <optgroup label="幼稚園至初中">
