@@ -1356,6 +1356,12 @@ while ( $loop->have_posts() ) {
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td><label for="confirm-whatsapp-tel">確認 WhatsApp 電話號碼 *</label></td>
+                                    <td><input id="confirm-whatsapp-tel" name="confirm-whatsapp-tel" type="text"
+                                            class="form-control">
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td><label for="email"> 電郵地址 *</label></td>
                                     <td><input id="email" name="email" type="text" class="form-control"></td>
                                 </tr>
