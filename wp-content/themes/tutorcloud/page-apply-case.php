@@ -1110,6 +1110,9 @@ get_header();
             $university=$_POST['university'];
 
             $subjects=$_POST['subjects'];
+            $instrument=$_POST['instrument'];
+            $other_subject=$_POST['other_subject'];
+
             $student_level_2=$_POST['student-level-2'];
             $paper_lang=$_POST['paper-lang'];
             $tutorial_style=$_POST['tutorial-style'];
@@ -1152,6 +1155,13 @@ get_header();
             add_post_meta($post_id, 'university', $university);
             add_post_meta($post_id, 'student_level_2', $student_level_2);
             add_post_meta($post_id, 'subjects', $subjects);
+
+            add_post_meta($post_id, 'instrument', $instrument);
+            add_post_meta($post_id, 'other_subject', $other_subject);
+
+            
+            
+
             add_post_meta($post_id, 'paper_lang', $paper_lang);
             add_post_meta($post_id, 'tutorial_style', $tutorial_style);
             add_post_meta($post_id, 'class_area', $class_area);
