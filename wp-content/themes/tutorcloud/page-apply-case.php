@@ -929,7 +929,10 @@ get_header();
                     </tr>
                     <tr>
                         <td>可教授科目</td>
-                        <td>數學 化學 經濟</td>
+                        <td id="teach-subjects">
+                            <!-- 數學 化學 經濟 -->
+
+                        </td>
                     </tr>
                     <tr>
                         <td>成績</td>
