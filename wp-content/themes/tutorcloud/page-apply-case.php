@@ -1183,8 +1183,6 @@ get_header();
             add_post_meta($post_id, 'tutor_requirement_value_other', $tutor_requirement_value_other);
             add_post_meta($post_id, 'can_sep_tutor', $can_sep_tutor);
             add_post_meta($post_id, 'other_remark', $other_remark);
-
-
         }
     }
         ?>
