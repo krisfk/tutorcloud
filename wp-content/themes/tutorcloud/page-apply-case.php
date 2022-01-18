@@ -10,9 +10,9 @@
  */
 
 get_header();
-$arr1 = array('1','2','3','4','5');
-$arr2 = array('2','3','1','8');
-print_r(array_unique(array_merge($arr1,$arr2)));
+// $arr1 = array('1','2','3','4','5');
+// $arr2 = array('2','3','1','8');
+// print_r(array_unique(array_merge($arr1,$arr2)));
 ?>
 
 <div class="lightbox">
@@ -1268,9 +1268,26 @@ while ( $loop->have_posts() ) {
                         data-living-area="<?php echo get_field('living_area');?>"
                         data-past-exam="<?php  echo implode(',', get_field('past_exam'));?>"
                         data-lesson-lang="<?php  echo implode(' ', get_field('lesson_lang'));?>" data-teach-subjects="<?php
-                        // print_r(get_field('t_subjects_kin'));
-                        $subjects_list = array_merge(get_field('t_subjects_kin'), get_field('t_subjects_pri'), get_field('t_subjects_f13'),get_field('t_subjects_f46') );
-                        print_r($subjects_list);
+
+                        if (in_array("全科", get_field('t_subjects_pri'))) {
+                            $t_subjects_pri_arr=array('小學全科');
+                        }
+                        else
+                        {
+                            $t_subjects_pri_arr=get_field('t_subjects_pri');
+                        }
+
+                        if (in_array("全科", get_field('t_subjects_f13'))) {
+                            $t_subjects_f13_arr=array('初中全科');
+                        }
+                        else
+                        {
+                            $t_subjects_f13_arr=get_field('t_subjects_f13');
+                        }
+
+
+                        $subjects_list = array_unique(array_merge(get_field('t_subjects_kin'), $$t_subjects_pri_arr, $t_subjects_f13_arr,get_field('t_subjects_f46') ));
+                        // print_r($subjects_list);
                         ?>" data-teach-level="<?php 
                        
                        $teach_level_str='';
