@@ -1265,8 +1265,9 @@ while ( $loop->have_posts() ) {
                         data-living-area="<?php echo get_field('living_area');?>"
                         data-past-exam="<?php  echo implode(',', get_field('past_exam'));?>"
                         data-lesson-lang="<?php  echo implode(' ', get_field('lesson_lang'));?>" data-teach-subjects="<?php
-                        print_r(get_field('t_subjects_kin'));
-                        
+                        // print_r(get_field('t_subjects_kin'));
+                        $subjects_list = array_merge(get_field('t_subjects_kin'), get_field('t_subjects_pri'), get_field('t_subjects_f13'),get_field('t_subjects_f46') );
+                        print_r($subjects_list);
                         ?>" data-teach-level="<?php 
                        
                        $teach_level_str='';
