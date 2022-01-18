@@ -2759,6 +2759,10 @@ $(function() {
         $('#lbc-past-exam').html($(this).closest('.tutor-content-li').attr('data-past-exam'));
 
         $('#lbc-teach-level').html($(this).closest('.tutor-content-li').attr('data-teach-level'));
+        $('#lbc-teach-subjects').html($(this).closest('.tutor-content-li').attr('data-teach-subjects'));
+
+
+
 
 
         var class_area = $(this).closest('.tutor-content-li').attr('data-class-area');
