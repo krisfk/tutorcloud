@@ -1059,7 +1059,7 @@ if($_POST)
                         </tr>
 
                         <tr>
-                            <td class="pr-1"><label for="other-subject-1">科目</label><input type="text"
+                            <td class="pe-3"><label for="other-subject-1">科目</label><input type="text"
                                     class="form-control">
                             </td>
                             <td colspan="5"><label for="other-subject-1-grade">成績</label><input type="text"
