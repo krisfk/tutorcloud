@@ -10,7 +10,9 @@
  */
 
 get_header();
-echo 111;
+$arr1 = array(1,2,3,4,5);
+$arr2 = array(5,6,7,8);
+print_r($arr1,$arr2);
 ?>
 
 <div class="lightbox">
