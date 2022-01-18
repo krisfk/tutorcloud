@@ -929,7 +929,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>可教授科目</td>
-                        <td id="teach-subjects">
+                        <td id="lbc-teach-subjects">
                             <!-- 數學 化學 經濟 -->
 
                         </td>
@@ -942,7 +942,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>可教授年級</td>
-                        <td>
+                        <td id="lbc-teach-level">
                             <!-- 小學 初中 高中 -->
 
                         </td>
