@@ -279,6 +279,28 @@ if($_POST)
     $dse_sub_20 = $_POST['dse-sub-20'];
     $dse_sub_21 = $_POST['dse-sub-21'];
     $dse_sub_22 = $_POST['dse-sub-22'];
+    $other_subject_1 = $_POST['other-subject-1'];
+    $other_subject_2 = $_POST['other-subject-2'];
+    $other_subject_3 = $_POST['other-subject-3'];
+    $other_subject_4 = $_POST['other-subject-4'];
+    $other_subject_5 = $_POST['other-subject-5'];
+    $other_subject_6 = $_POST['other-subject-6'];
+    $other_subject_7 = $_POST['other-subject-7'];
+    $other_subject_8 = $_POST['other-subject-8'];
+    $other_subject_9 = $_POST['other-subject-9'];
+    $other_subject_10 = $_POST['other-subject-10'];
+
+    $other_subject_1_grade = $_POST['other-subject-1-grade'];
+    $other_subject_2_grade = $_POST['other-subject-2-grade'];
+    $other_subject_3_grade = $_POST['other-subject-3-grade'];
+    $other_subject_4_grade = $_POST['other-subject-4-grade'];
+    $other_subject_5_grade = $_POST['other-subject-5-grade'];
+    $other_subject_6_grade = $_POST['other-subject-6-grade'];
+    $other_subject_7_grade = $_POST['other-subject-7-grade'];
+    $other_subject_8_grade = $_POST['other-subject-8-grade'];
+    $other_subject_9_grade = $_POST['other-subject-9-grade'];
+    $other_subject_10_grade = $_POST['other-subject-10-grade'];
+
     $exam_lang=$_POST['exam-lang'];
     $other_cert= $_POST['other-cert'];
     //proof1
@@ -370,6 +392,31 @@ if($_POST)
         add_post_meta($post_id, 'dse_sub_20', $dse_sub_20);
         add_post_meta($post_id, 'dse_sub_21', $dse_sub_21);
         add_post_meta($post_id, 'dse_sub_22', $dse_sub_22);
+
+        add_post_meta($post_id, 'other_subject_1', $other_subject_1);
+        add_post_meta($post_id, 'other_subject_2', $other_subject_2);
+        add_post_meta($post_id, 'other_subject_3', $other_subject_3);
+        add_post_meta($post_id, 'other_subject_4', $other_subject_4);
+        add_post_meta($post_id, 'other_subject_5', $other_subject_5);
+        add_post_meta($post_id, 'other_subject_6', $other_subject_6);
+        add_post_meta($post_id, 'other_subject_7', $other_subject_7);
+        add_post_meta($post_id, 'other_subject_8', $other_subject_8);
+        add_post_meta($post_id, 'other_subject_9', $other_subject_9);
+        add_post_meta($post_id, 'other_subject_10', $other_subject_10);
+
+        add_post_meta($post_id, 'other_subject_1_grade', $other_subject_1_grade);
+        add_post_meta($post_id, 'other_subject_2_grade', $other_subject_2_grade);
+        add_post_meta($post_id, 'other_subject_3_grade', $other_subject_3_grade);
+        add_post_meta($post_id, 'other_subject_4_grade', $other_subject_4_grade);
+        add_post_meta($post_id, 'other_subject_5_grade', $other_subject_5_grade);
+        add_post_meta($post_id, 'other_subject_6_grade', $other_subject_6_grade);
+        add_post_meta($post_id, 'other_subject_7_grade', $other_subject_7_grade);
+        add_post_meta($post_id, 'other_subject_8_grade', $other_subject_8_grade);
+        add_post_meta($post_id, 'other_subject_9_grade', $other_subject_9_grade);
+        add_post_meta($post_id, 'other_subject_10_grade', $other_subject_10_grade);
+
+
+
         add_post_meta($post_id, 'exam_lang', $exam_lang);
         add_post_meta($post_id, 'other_cert', $other_cert);
 
@@ -1066,11 +1113,11 @@ if($_POST)
                         <tr>
                             <td class="pe-3"><label for="other-subject-<?php echo $i?>" class="mb-2">其他科目
                                     <?php echo $i?></label><input id="other-subject-<?php echo $i?>" type="text"
-                                    class="form-control other-subject-input">
+                                    class="form-control other-subject-input" name="other-subject-<?php echo $i?>">
                             </td>
                             <td colspan="5"><label for="other-subject-<?php echo $i?>-grade"
                                     class="mb-2">成績</label><input id="other-subject-<?php echo $i?>-grade" type="text"
-                                    class="form-control other-subject-input">
+                                    class="form-control other-subject-input" name="other-subject-<?php echo $i?>-grade">
                             </td>
                         </tr>
                         <?php
