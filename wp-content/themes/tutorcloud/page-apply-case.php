@@ -1130,6 +1130,10 @@ get_header();
             $objective_value_other=$_POST['objective-value-other'];
             $tutor_requirement = $_POST['tutor-requirement'];
             $tutor_requirement_value_other = $_POST['tutor-requirement-value-other'];
+
+
+            $can_sep_tutor = $_POST['can-sep-tutor'];
+
             $other_remark = $_POST['other-remark'];
             
 
@@ -1177,7 +1181,10 @@ get_header();
             add_post_meta($post_id, 'objective_value_other', $objective_value_other);
             add_post_meta($post_id, 'tutor_requirement', $tutor_requirement);
             add_post_meta($post_id, 'tutor_requirement_value_other', $tutor_requirement_value_other);
+            add_post_meta($post_id, 'can_sep_tutor', $can_sep_tutor);
             add_post_meta($post_id, 'other_remark', $other_remark);
+
+
         }
     }
         ?>
@@ -2563,19 +2570,12 @@ Year 6 -->
                                         </label>
                                     </td>
                                     <td>
-
-
-
-
                                         <select id="can-sep-tutor" name="can-sep-tutor" class="form-select"
                                             aria-label="">
                                             <option value="" selected="">選擇</option>
                                             <option value="同一導師">同一導師</option>
                                             <option value="不同導師">不同導師</option>
-
                                         </select>
-
-
                                     </td>
 
                                 </tr>
