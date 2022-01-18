@@ -10,6 +10,7 @@
  */
 
 get_header();
+echo 111;
 ?>
 
 <div class="lightbox">
