@@ -1066,11 +1066,11 @@ if($_POST)
                         <tr>
                             <td class="pe-3"><label for="other-subject-<?php echo $i?>" class="mb-2">其他科目
                                     <?php echo $i?></label><input id="other-subject-<?php echo $i?>" type="text"
-                                    class="form-control">
+                                    class="form-control other-subject-input">
                             </td>
                             <td colspan="5"><label for="other-subject-<?php echo $i?>-grade"
                                     class="mb-2">成績</label><input id="other-subject-<?php echo $i?>-grade" type="text"
-                                    class="form-control">
+                                    class="form-control other-subject-input">
                             </td>
                         </tr>
                         <?php
