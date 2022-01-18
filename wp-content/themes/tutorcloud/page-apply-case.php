@@ -2524,8 +2524,11 @@ Year 6 -->
 
 
                                 <tr>
-                                    <td class="align-top"> <label for="tutorial-time-slot"> 對導師要求：
-                                        </label></td>
+                                    <td class="align-top">
+                                        <label for="tutorial-time-slot"> 對導師要求：
+                                        </label>
+
+                                    </td>
                                     <td>
 
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
@@ -2554,6 +2557,29 @@ Year 6 -->
 
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <label for="can-sep-tutor"> 可否分開導師？
+                                        </label>
+                                    </td>
+                                    <td>
+
+
+
+
+                                        <select id="can-sep-tutor" name="can-sep-tutor" class="form-select"
+                                            aria-label="">
+                                            <option value="" selected="">選擇</option>
+                                            <option value="同一導師">同一導師</option>
+                                            <option value="不同導師">不同導師</option>
+
+                                        </select>
+
+
+                                    </td>
+
+                                </tr>
+
                                 <tr>
                                     <td><label for="other-remark"> 其他要求/備註：</label></td>
                                     <td><input id="other-remark" name="other-remark" type="text" class="form-control">
