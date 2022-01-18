@@ -1048,9 +1048,7 @@ if($_POST)
                             <td class="grade-col"><a href="javascript:void(0);" class="radio-cancel-btn">取消</a></td>
                         </tr>
                         <tr>
-                            <td><label for="">旅遊與款待
-
-                                </label></td>
+                            <td><label for="">旅遊與款待</label></td>
                             <td class="grade-col"><label><input type="radio" value="5**" name="dse-sub-22">5**</label>
                             </td>
                             <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-22">5*</label>
@@ -1058,6 +1056,13 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-22">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-22">4</label></td>
                             <td class="grade-col"><a href="javascript:void(0);" class="radio-cancel-btn">取消</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="other-subject-1">科目</label><input type="text" class="form-control">
+                            </td>
+                            <td><label for="other-subject-1-grade">成績</label><input type="text" class="form-control">
+                            </td>
                         </tr>
                     </table>
 
