@@ -1265,10 +1265,28 @@ while ( $loop->have_posts() ) {
                         data-living-area="<?php echo get_field('living_area');?>"
                         data-past-exam="<?php  echo implode(',', get_field('past_exam'));?>"
                         data-lesson-lang="<?php  echo implode(' ', get_field('lesson_lang'));?>" data-teach-level="<?php 
-                        if(count(get_field('t_subjects_kin'))>0)
+                       
+                       $teach_level_str='';
+                       if(count(get_field('t_subjects_kin'))>0 || get_field('t_subjects_kin_value_other'))
+                       {
+                           $teach_level_str.='幼稚園 ';
+                       }
+                       if(count(get_field('t_subjects_pri'))>0 || get_field('t_subjects_pri_value_other'))
                         {
-                            echo 111;
+                            $teach_level_str.='小學 ';
                         }
+                        if(count(get_field('t_subjects_f13'))>0 || get_field('t_subjects_f13_value_other'))
+                         {
+                             $teach_level_str.='初中 ';
+                         }
+
+                         if(count(get_field('t_subjects_f46'))>0 || get_field('t_subjects_f46_value_other'))
+                         {
+                             $teach_level_str.='高中 ';
+                         }
+
+                         echo $teach_level_str;
+
                         
                         ?>" data-result="<?php  
                         
