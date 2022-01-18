@@ -1264,7 +1264,13 @@ while ( $loop->have_posts() ) {
                         data-born-year="<?php echo get_field('born_year');?>"
                         data-living-area="<?php echo get_field('living_area');?>"
                         data-past-exam="<?php  echo implode(',', get_field('past_exam'));?>"
-                        data-lesson-lang="<?php  echo implode(' ', get_field('lesson_lang'));?>" data-result="<?php  
+                        data-lesson-lang="<?php  echo implode(' ', get_field('lesson_lang'));?>" data-teach-level="<?php 
+                        if(count(get_field('t_subjects_kin'))>0)
+                        {
+                            echo 111;
+                        }
+                        
+                        ?>" data-result="<?php  
                         
                         $str='';
                         for($i=1;$i<=22;$i++)
