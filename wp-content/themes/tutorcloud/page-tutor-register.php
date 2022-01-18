@@ -1061,7 +1061,8 @@ if($_POST)
                         <tr>
                             <td><label for="other-subject-1">科目</label><input type="text" class="form-control">
                             </td>
-                            <td><label for="other-subject-1-grade">成績</label><input type="text" class="form-control">
+                            <td colspan="5"><label for="other-subject-1-grade">成績</label><input type="text"
+                                    class="form-control">
                             </td>
                         </tr>
                     </table>
