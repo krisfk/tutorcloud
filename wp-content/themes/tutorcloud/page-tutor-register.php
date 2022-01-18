@@ -1604,7 +1604,7 @@ if($_POST)
 
                                         </label>
                                     </div>
-                                    <div>
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="組合科學：物理 化學"
                                             id="t-subjects-f46-value-12" name="t-subjects-f46[]">
                                         <label class="form-check-label" for="t-subjects-f46-value-12">
@@ -1621,7 +1621,7 @@ if($_POST)
                                             組合科學：化學 生物
 
                                         </label>
-                                    </div>
+                                    </div> -->
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="綜合科學"
                                             id="t-subjects-f46-value-14" name="t-subjects-f46[]">
