@@ -1301,6 +1301,17 @@ while ( $loop->have_posts() ) {
                                 $str.=$label.'('.get_field('dse_sub_'.$i).')'.' ';
                             }
                         }
+
+                        for($i=1;$i<=10;$i++)
+                        {
+                            if(get_field('other_subject_'.$i))
+                            {
+                                $str.=get_field('other_subject_'.$i).'('.get_field('other_subject_'.$i.'_grade').')'.' ';
+
+                            }
+                        }
+
+                        
                         echo $str;
                         // echo implode(' ', get_field('lesson_lang'));
                         ?>">
