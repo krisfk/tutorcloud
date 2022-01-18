@@ -1195,7 +1195,7 @@ if($_POST)
                             HKDSE科目列</a>
                     </h5>
 
-                    <div class="subject-list subject-list-hkdse d-block">
+                    <div class="subject-list subject-list-hkdse d-block mt-4">
                         <table>
                             <tr>
                                 <td colspan="2">
