@@ -1190,12 +1190,12 @@ if($_POST)
 
                     <h5> 可教授科目</h5>
 
-                    <h5 class="subject-list-top">
+                    <h5 class="subject-list-top d-none">
                         <a href="javascript:void(0);">
                             HKDSE科目列</a>
                     </h5>
 
-                    <div class="subject-list subject-list-hkdse">
+                    <div class="subject-list subject-list-hkdse d-block">
                         <table>
                             <tr>
                                 <td colspan="2">
