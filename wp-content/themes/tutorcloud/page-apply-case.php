@@ -1286,7 +1286,7 @@ while ( $loop->have_posts() ) {
                         }
 
 
-                        $subjects_list_arr = array_unique(array_merge(get_field('t_subjects_kin'), $$t_subjects_pri_arr, $t_subjects_f13_arr,get_field('t_subjects_f46') ));
+                        $subjects_list_arr = array_unique(array_merge(get_field('t_subjects_kin'), $t_subjects_pri_arr, $t_subjects_f13_arr,get_field('t_subjects_f46') ));
                         
                         $subjects_list = implode (" ", $subjects_list_arr);
                         
