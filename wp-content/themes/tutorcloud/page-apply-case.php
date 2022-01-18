@@ -1687,6 +1687,15 @@ Year 6 -->
                                                 id="subject_value_24" name="subjects[]" value="旅遊與款待" /><label
                                                 for="subject_value_24">旅遊與款待</label>
                                         </div>
+                                        <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                                id="subject_value_25" name="subjects[]" value="普通話" /><label
+                                                for="subject_value_25">普通話</label>
+                                        </div>
+                                        <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                                id="subject_value_26" name="subjects[]" value="常識" /><label
+                                                for="subject_value_26">常識</label>
+                                        </div>
+
                                     </td>
                                 </tr>
                                 <tr>
