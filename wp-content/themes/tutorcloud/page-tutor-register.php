@@ -1207,7 +1207,7 @@ if($_POST)
                                         <input class="form-check-input" type="checkbox" value="英語"
                                             id="t-subjects-kin-value-1" name="t-subjects-kin[]">
                                         <label class="form-check-label" for="t-subjects-kin-value-1">
-                                            英語
+                                            英文
                                         </label>
                                     </div>
                                     <div>
