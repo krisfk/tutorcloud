@@ -1739,7 +1739,7 @@ if($_POST)
                         </table>
                     </div>
 
-                    <h5 class="subject-list-top">
+                    <h5 class="subject-list-top d-none">
                         <a href="javascript:void(0);">
                             IB科目列</a>
                     </h5>
@@ -1888,7 +1888,7 @@ if($_POST)
                         </table>
                     </div>
 
-                    <h5 class="subject-list-top">
+                    <h5 class="subject-list-top d-none">
                         <a href="javascript:void(0);">
 
                             GCE AL科目列
@@ -2089,7 +2089,7 @@ if($_POST)
                     </div>
 
 
-                    <h5 class="subject-list-top">
+                    <h5 class="subject-list-top d-none">
                         <a href="javascript:void(0);">
                             IGCSE科目列
                         </a>
@@ -2290,7 +2290,7 @@ if($_POST)
 
 
 
-                    <h5 class="subject-list-top">
+                    <h5 class="subject-list-top d-none">
                         <a href="javascript:void(0);">
                             SAT科目列</a>
                     </h5>
@@ -2393,7 +2393,7 @@ if($_POST)
 
 
 
-                    <h5 class="subject-list-top">
+                    <h5 class="subject-list-top d-none">
                         <a href="javascript:void(0);">
                             音樂科目列</a>
                     </h5>
