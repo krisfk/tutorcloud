@@ -2719,6 +2719,9 @@ $(function() {
         $('#lbc-lowest-salary').html($(this).closest('.tutor-content-li').attr('data-lowest-salary'));
         $('#lbc-past-exam').html($(this).closest('.tutor-content-li').attr('data-past-exam'));
 
+        $('#lbc-teach-level').html($(this).closest('.tutor-content-li').attr('data-teach-level'));
+
+
         var class_area = $(this).closest('.tutor-content-li').attr('data-class-area');
         var class_area_arr = class_area.split(',');
 
