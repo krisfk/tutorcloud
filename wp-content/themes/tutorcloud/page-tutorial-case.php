@@ -886,7 +886,7 @@ get_header();
         </div>
 
         <div class="row gx-0">
-            <div class="col-12 text-center lbc-short-address">
+            <div class="col-12 text-center" id="lbc-short-address">
                 <!-- 馬鞍山新港城 -->
 
             </div>
