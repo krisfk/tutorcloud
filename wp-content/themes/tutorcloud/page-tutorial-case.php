@@ -958,7 +958,7 @@ get_header();
 
             <div class="col-3 mb-4">導師性別：<br><span id="lbc-tutor-gender"></span></div>
             <div class="col-3 mb-4">補習期望：<br><span id="lbc-tutorial-target">補底 清concept</div>
-            <div class="col-3 mb-4">對導師要求：<br><span id="lbc-tutor-requirement"></span>提供筆記</div>
+            <div class="col-3 mb-4">對導師要求：<br><span id="lbc-tutor-requirement"></span></div>
             <div class="col-3 mb-4">其他要求/備註：<br><span id="lbc-other-requirement"></span>test</div>
 
 
@@ -1048,7 +1048,7 @@ while ( $loop->have_posts() ) {
                     data-start-tutorial-time="<?php echo get_field('start_tutorial_time');?>"
                     data-tutor-gender="<?php  echo get_field('tutor_gender');?>"
                     data-tutorial-target="<?php echo implode(' ', get_field('objective'));?>"
-                    data-tutor-requirement="<?php echo get_field('tutor_requirement');?>"
+                    data-tutor-requirement="<?php echo implode(' ', get_field('tutor_requirement')); ?>"
                     data-other-requirement="<?php echo get_field('other_remark');?>">
                     <div class="row gx-0 align-items-top">
                         <div class='col-2 data-column'><?php echo get_field('student_id');?>
