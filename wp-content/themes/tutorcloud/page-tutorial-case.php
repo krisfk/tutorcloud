@@ -894,7 +894,7 @@ get_header();
                 <table class="detail-content-table">
                     <tr>
                         <td>補習編號 </td>
-                        <td><span id="lbc-tutor-id"></span> S210002.</td>
+                        <td><span id="lbc-tutor-id">S210002</span> </td>
                     </tr>
                     <tr>
                         <td>學生性別</td>
