@@ -1037,7 +1037,7 @@ while ( $loop->have_posts() ) {
     // echo 1;
     // implode(', ', $Array)
     ?>
-                <li class="tutor-content-li" data-student-id="<?php echo get_field('student_id');?>"
+                <li class="student-content-li" data-student-id="<?php echo get_field('student_id');?>"
                     data-student-gender="<?php echo get_field('gender');?>"
                     data-salary="<?php echo get_field('cost_per_ppl');?>"
                     data-tutorial-style="<?php echo get_field('tutorial_style');?>"
@@ -1168,63 +1168,66 @@ $(function() {
         $('.lightbox').fadeIn(0);
         $('.lightbox .lightbox-content').fadeOut(0);
         $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
-        $('#lbc-student-id').html($(this).closest('.tutor-content-li').attr('data-student-id'));
-        $('#lbc-student-gender').html($(this).closest('.tutor-content-li').attr('data-student-gender'));
-        $('#lbc-salary').html($(this).closest('.tutor-content-li').attr('data-salary'));
-        $('#lbc-tutorial-style').html($(this).closest('.tutor-content-li').attr('data-tutorial-style'));
-        $('#lbc-student-level').html($(this).closest('.tutor-content-li').attr('data-student-level'));
-        $('#lbc-subjects').html($(this).closest('.tutor-content-li').attr('data-subjects'));
+        $('#lbc-student-id').html($(this).closest('.student-content-li').attr('data-student-id'));
+        $('#lbc-student-gender').html($(this).closest('.student-content-li').attr(
+            'data-student-gender'));
+        $('#lbc-salary').html($(this).closest('.student-content-li').attr('data-salary'));
+        $('#lbc-tutorial-style').html($(this).closest('.student-content-li').attr(
+            'data-tutorial-style'));
+        $('#lbc-student-level').html($(this).closest('.student-content-li').attr('data-student-level'));
+        $('#lbc-subjects').html($(this).closest('.student-content-li').attr('data-subjects'));
 
 
 
-        var lesson_hour_str = '一星期' + $(this).closest('.tutor-content-li').attr('data-lesson-hour') +
-            '堂 ; 一堂' + $(this).closest('.tutor-content-li').attr('data-time') + '小時';
+        var lesson_hour_str = '一星期' + $(this).closest('.student-content-li').attr('data-lesson-hour') +
+            '堂 ; 一堂' + $(this).closest('.student-content-li').attr('data-time') + '小時';
         $('#lbc-lesson-hour').html(lesson_hour_str);
 
-        $('#lbc-time').html($(this).closest('.tutor-content-li').attr('data-start-tutorial-time'));
-        $('#lbc-tutor-gender').html($(this).closest('.tutor-content-li').attr('data-tutor-gender'));
-        $('#lbc-tutorial-target').html($(this).closest('.tutor-content-li').attr(
+        $('#lbc-time').html($(this).closest('.student-content-li').attr('data-start-tutorial-time'));
+        $('#lbc-tutor-gender').html($(this).closest('.student-content-li').attr('data-tutor-gender'));
+
+        $('#lbc-tutorial-target').html($(this).closest('.student-content-li').attr(
             'data-tutorial-target'));
 
-        $('#lbc-tutor-requirement').html($(this).closest('.tutor-content-li').attr(
+        $('#lbc-tutor-requirement').html($(this).closest('.student-content-li').attr(
             'data-tutor-requirement'));
-        $('#lbc-other-requirement').html($(this).closest('.tutor-content-li').attr(
+        $('#lbc-other-requirement').html($(this).closest('.student-content-li').attr(
             'data-other-requirement'));
 
 
 
 
 
-        // $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
+        // $('#lbc-self-intro').html($(this).closest('.student-content-li').attr('data-self-intro'));
 
 
-        // alert($(this).closest('.tutor-content-li').attr('data-self-intro'));
+        // alert($(this).closest('.student-content-li').attr('data-self-intro'));
 
-        // $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
-        // $('#lbc-lesson-lang').html($(this).closest('.tutor-content-li').attr('data-lesson-lang'));
+        // $('#lbc-self-intro').html($(this).closest('.student-content-li').attr('data-self-intro'));
+        // $('#lbc-lesson-lang').html($(this).closest('.student-content-li').attr('data-lesson-lang'));
 
-        // $('#lbc-result').html($(this).closest('.tutor-content-li').attr('data-result'));
-
-
-        // $('#lbc-living-area').html($(this).closest('.tutor-content-li').attr('data-living-area'));
-
-        // $('#lbc-student-id').html($(this).closest('.tutor-content-li').attr('data-student-id'));
-        // $('#lbc-gender').html($(this).closest('.tutor-content-li').attr('data-gender'));
-        // $('#lbc-born-year').html($(this).closest('.tutor-content-li').attr('data-born-year'));
-
-        // $('#lbc-s-school').html($(this).closest('.tutor-content-li').attr('data-s-school'));
-        // $('#lbc-bac-degree').html($(this).closest('.tutor-content-li').attr('data-bac-degree'));
-        // $('#lbc-lowest-salary').html($(this).closest('.tutor-content-li').attr('data-lowest-salary'));
-        // $('#lbc-past-exam').html($(this).closest('.tutor-content-li').attr('data-past-exam'));
-
-        // $('#lbc-teach-level').html($(this).closest('.tutor-content-li').attr('data-teach-level'));
-        // $('#lbc-teach-subjects').html($(this).closest('.tutor-content-li').attr('data-teach-subjects'));
+        // $('#lbc-result').html($(this).closest('.student-content-li').attr('data-result'));
 
 
+        // $('#lbc-living-area').html($(this).closest('.student-content-li').attr('data-living-area'));
+
+        // $('#lbc-student-id').html($(this).closest('.student-content-li').attr('data-student-id'));
+        // $('#lbc-gender').html($(this).closest('.student-content-li').attr('data-gender'));
+        // $('#lbc-born-year').html($(this).closest('.student-content-li').attr('data-born-year'));
+
+        // $('#lbc-s-school').html($(this).closest('.student-content-li').attr('data-s-school'));
+        // $('#lbc-bac-degree').html($(this).closest('.student-content-li').attr('data-bac-degree'));
+        // $('#lbc-lowest-salary').html($(this).closest('.student-content-li').attr('data-lowest-salary'));
+        // $('#lbc-past-exam').html($(this).closest('.student-content-li').attr('data-past-exam'));
+
+        // $('#lbc-teach-level').html($(this).closest('.student-content-li').attr('data-teach-level'));
+        // $('#lbc-teach-subjects').html($(this).closest('.student-content-li').attr('data-teach-subjects'));
 
 
 
-        var class_area = $(this).closest('.tutor-content-li').attr('data-class-area');
+
+
+        var class_area = $(this).closest('.student-content-li').attr('data-class-area');
         var class_area_arr = class_area.split(',');
 
         $('.place-span').removeClass('deep-green');
