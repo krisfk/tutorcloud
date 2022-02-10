@@ -1232,7 +1232,7 @@ while ( $loop->have_posts() ) {
                             <!-- XX XX XX -->
                             <!-- 數學 化學 經濟 -->
                         </div>
-                        <div class='col-2 add-btn-column text-center'>
+                        <div class='col-2 data-column'>
                             每週堂數 / 時數: <br>
                             一星期一堂;一堂1.5小時
                             <!-- <a class="add-btn-a" href="javascript:void(0);">
