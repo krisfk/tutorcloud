@@ -1214,7 +1214,7 @@ while ( $loop->have_posts() ) {
                                 src="<?php echo get_template_directory_uri();?>/assets/images/<?php echo get_field('gender') == '男' ? 'm':'f';?>-icon.png"
                                 alt="">
                         </div>
-                        <div class='col-2 data-column'><?php echo get_field('bac_degree');?> <br>
+                        <div class='col-2 data-column'><?php //echo get_field('bac_degree');?>
                             中三<?php //echo get_field('u_major');?>
                             <br />男
                         </div>
