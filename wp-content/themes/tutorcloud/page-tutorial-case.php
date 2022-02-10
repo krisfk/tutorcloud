@@ -1066,7 +1066,7 @@ get_header();
     </div>
 
     <div class="text-center mt-3">
-        <a href="#" class="filter-btn">導師選項</a>
+        <a href="#" class="filter-btn">個案選項</a>
     </div>
     <div class="row mt-5 gx-5">
 
