@@ -1233,13 +1233,14 @@ while ( $loop->have_posts() ) {
                             <!-- 數學 化學 經濟 -->
                         </div>
                         <div class='col-2 add-btn-column text-center'>
-
-                            <a class="add-btn-a" href="javascript:void(0);">
+                            每週堂數 / 時數: <br>
+                            一星期一堂;一堂1.5小時
+                            <!-- <a class="add-btn-a" href="javascript:void(0);">
 
                                 <img src="<?php echo get_template_directory_uri();?>/assets/images/add-btn.png" alt="">
                                 <div>加入導師名單</div>
 
-                            </a>
+                            </a> -->
                         </div>
 
                     </div>
