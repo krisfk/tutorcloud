@@ -36,12 +36,12 @@ get_header();
                             <label for=""> 性別*</label>
                         </td>
                         <td>
-                            <label><input type="radio" name="gender" value=""
-                                    <?php echo !$_POST['filter-form']|| !$_POST['gender']  ? 'checked':''; ?>>顯示全部</label>
+                            <label><input type="radio" name="filter-gender" value=""
+                                    <?php echo !$_POST['filter-form']|| !$_POST['filter-gender']  ? 'checked':''; ?>>顯示全部</label>
                             <label><input type="radio" name="gender" value="男"
-                                    <?php echo $_POST['filter-form']&&$_POST['gender'] =='男' ? 'checked':''; ?>>男</label>
+                                    <?php echo $_POST['filter-form']&&$_POST['filter-gender'] =='男' ? 'checked':''; ?>>男</label>
                             <label><input type="radio" name="gender" value="女"
-                                    <?php echo $_POST['filter-form']&&$_POST['gender'] =='女' ? 'checked':''; ?>>女</label>
+                                    <?php echo $_POST['filter-form']&&$_POST['filter-gender'] =='女' ? 'checked':''; ?>>女</label>
                         </td>
                     </tr>
 
@@ -1208,9 +1208,9 @@ get_header();
             // echo 99;
             if($_POST && $_POST['filter-form'])
             {
-                if($_POST['gender'])
+                if($_POST['filter-gender'])
                 {
-                    array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
+                    array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['filter-gender'] ,'compare' => 'LIKE'));
                 }
                 if($_POST['tutor-level'])
                 {
