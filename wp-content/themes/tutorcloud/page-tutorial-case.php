@@ -1210,7 +1210,7 @@ while ( $loop->have_posts() ) {
                         ?>">
                     <div class="row gx-0 align-items-top">
                         <div class='col-2 data-column'><?php echo get_field('student_id');?>
-                            <br>視像補習<?php echo get_field('tutorial_style');?>
+                            <br><?php echo get_field('tutorial_style');?>
                         </div>
                         <div class='col-2 data-column'><?php //echo get_field('bac_degree');?>
                             中三<?php //echo get_field('u_major');?>
