@@ -949,7 +949,7 @@ get_header();
 
             </div>
 
-            <div class="col-12">
+            <div class="col-12 mt-4 mb-4">
                 map
             </div>
             <div class="col-6">導師性別：<br>女</div>
