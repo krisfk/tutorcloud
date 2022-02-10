@@ -888,9 +888,9 @@ get_header();
         <div class="row gx-0">
             <div class="col-6">
                 <table class="detail-content-table">
-                    <tr>
+                    <!-- <tr>
                         <td colspan="4">馬鞍山新港城</td>
-                    </tr>
+                    </tr> -->
                     <tr>
                         <td>導師編號 </td>
                         <td><span id="lbc-tutor-id"></span> 加入導師名單</td>
