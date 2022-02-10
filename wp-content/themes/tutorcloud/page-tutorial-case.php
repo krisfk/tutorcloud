@@ -1229,7 +1229,7 @@ while ( $loop->have_posts() ) {
 
                         <div class='col-4 data-column'>
                             每週堂數 / 時數: <br>
-                            一星期一堂;一堂1.5小時
+                            <?php echo get_field('lesson_per_week');?>;<?php echo get_field('hour_per_lesson');?>
 
                         </div>
 
