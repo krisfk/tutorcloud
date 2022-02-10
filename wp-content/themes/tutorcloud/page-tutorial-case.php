@@ -958,7 +958,7 @@ get_header();
 
             <div class="col-3 mb-4">導師性別：<br><span class="lbc-tutor-gender"></span></div>
             <div class="col-3 mb-4">補習期望：<br><span class="lbc-tutorial-target">補底 清concept</div>
-            <div class="col-3 mb-4">對導師要求：<br><span class="lbc-tutorla-requirement"></span>提供筆記</div>
+            <div class="col-3 mb-4">對導師要求：<br><span class="lbc-tutor-requirement"></span>提供筆記</div>
             <div class="col-3 mb-4">其他要求/備註：<br><span class="lbc-other-requirement"></span>test</div>
 
 
@@ -1037,7 +1037,18 @@ while ( $loop->have_posts() ) {
     // echo 1;
     // implode(', ', $Array)
     ?>
-                <li class="tutor-content-li" data-student-id="<?php echo get_field('student_id');?>">
+                <li class="tutor-content-li" data-student-id="<?php echo get_field('student_id');?>"
+                    data-student-gender="<?php echo get_field('gender');?>"
+                    data-salary="<?php echo get_field('cost_per_ppl');?>"
+                    data-tutorial-style="<?php echo get_field('tutorial_style');?>"
+                    data-student-level="<?php echo get_field('student_level_2');?>"
+                    data-subjects="<?php implode(' ', get_field('subjects'));?>"
+                    data-lesson-hour="<? echo get_field('lesson_per_week');?>"
+                    data-time="<?php echo get_field('hour_per_lesson');?>"
+                    data-tutor-gender="<?php  echo get_field('tutor_gender');?>"
+                    data-tutorial-target="<?php echo get_field('objective');?>"
+                    data-tutor-requirement="<?php echo get_field('tutor_requirement');?>"
+                    data-other-requirement="<?php echo get_field('other_remark');?>">
                     <div class="row gx-0 align-items-top">
                         <div class='col-2 data-column'><?php echo get_field('student_id');?>
                             <br><?php echo get_field('tutorial_style');?>
@@ -1157,6 +1168,28 @@ $(function() {
         $('.lightbox .lightbox-content').fadeOut(0);
         $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
         $('#lbc-student-id').html($(this).closest('.tutor-content-li').attr('data-student-id'));
+        $('#lbc-student-gender').html($(this).closest('.tutor-content-li').attr('data-student-gender'));
+        $('#lbc-salary').html($(this).closest('.tutor-content-li').attr('data-salary'));
+        $('#lbc-tutorial-style').html($(this).closest('.tutor-content-li').attr('data-tutorial-style'));
+        $('#lbc-student-level').html($(this).closest('.tutor-content-li').attr('data-student-level'));
+        $('#lbc-subjects').html($(this).closest('.tutor-content-li').attr('data-subjects'));
+
+
+        $('#lbc-lesson-hour').html($(this).closest('.tutor-content-li').attr('data-lesson-hour'));
+
+        $('#lbc-time').html($(this).closest('.tutor-content-li').attr('data-time'));
+        $('#lbc-tutor-gender').html($(this).closest('.tutor-content-li').attr('data-tutor-gender'));
+        $('#lbc-tutorial-target').html($(this).closest('.tutor-content-li').attr(
+            'data-tutorial-target'));
+
+        $('#lbc-tutor-requirement').html($(this).closest('.tutor-content-li').attr(
+            'data-tutor-requirement'));
+        $('#lbc-other-requirement').html($(this).closest('.tutor-content-li').attr(
+            'data-other-requirement'));
+
+
+
+
 
         // $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
 
