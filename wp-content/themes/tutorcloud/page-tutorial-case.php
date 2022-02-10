@@ -894,7 +894,7 @@ get_header();
                 <table class="detail-content-table">
                     <tr>
                         <td>補習編號 </td>
-                        <td><span id="lbc-tutor-id">S210002</span> </td>
+                        <td><span id="lbc-student-id">S210002</span> </td>
                     </tr>
                     <tr>
                         <td>學生性別</td>
@@ -1042,7 +1042,7 @@ while ( $loop->have_posts() ) {
                     data-bac-degree="<?php echo get_field('bac_degree');?>"
                     data-s-school="<?php echo get_field('s_school');?>"
                     data-gender="<?php echo get_field('gender');  ?>"
-                    data-tutor-id="<?php echo get_field('tutor_id');?>"
+                    data-student-id="<?php echo get_field('student_id');?>"
                     data-self-intro="<?php echo get_field('self_intro');?>"
                     data-born-year="<?php echo get_field('born_year');?>"
                     data-living-area="<?php echo get_field('living_area');?>"
@@ -1208,21 +1208,22 @@ $(function() {
 
     $('.add-btn-a').click(function() {
 
-        var select_tutor_id = $(this).closest('li').attr('data-tutor-id');
+        var select_student_id = $(this).closest('li').attr('data-student-id');
 
-        if (!tutor_list_arr.includes(select_tutor_id)) {
-            tutor_list_arr.push(select_tutor_id);
+        if (!tutor_list_arr.includes(select_student_id)) {
+            tutor_list_arr.push(select_student_id);
             console.log(tutor_list_arr);
 
             var added_to_cart_html =
-                '<li><span>' + select_tutor_id +
+                '<li><span>' + select_student_id +
                 '</span><a href="javascript:void(0);" class="list-close-btn"></a></li>';
 
             $('.added-list ul').append(added_to_cart_html);
 
             $('.list-close-btn').click(function() {
-                var select_tutor_id = $(this).prev('span').html();
-                tutor_list_arr = tutor_list_arr.filter(tutor_id => tutor_id != select_tutor_id);
+                var select_student_id = $(this).prev('span').html();
+                tutor_list_arr = tutor_list_arr.filter(student_id => student_id !=
+                    select_student_id);
                 $(this).closest('li').remove();
                 console.log(tutor_list_arr);
             });
@@ -1232,7 +1233,7 @@ $(function() {
             alert('這導師已加入心儀導師名單');
         }
 
-        // alert(select_tutor_id);
+        // alert(select_student_id);
     });
 
     $('.data-column').click(function() {
@@ -1252,7 +1253,7 @@ $(function() {
 
         $('#lbc-living-area').html($(this).closest('.tutor-content-li').attr('data-living-area'));
 
-        $('#lbc-tutor-id').html($(this).closest('.tutor-content-li').attr('data-tutor-id'));
+        $('#lbc-student-id').html($(this).closest('.tutor-content-li').attr('data-student-id'));
         $('#lbc-gender').html($(this).closest('.tutor-content-li').attr('data-gender'));
         $('#lbc-born-year').html($(this).closest('.tutor-content-li').attr('data-born-year'));
 
