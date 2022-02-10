@@ -1045,6 +1045,7 @@ while ( $loop->have_posts() ) {
                     data-subjects="<?php echo implode(' ', get_field('subjects'));?>"
                     data-lesson-hour="<?php echo get_field('lesson_per_week');?>"
                     data-time="<?php echo get_field('hour_per_lesson');?>"
+                    data-start-tutorial-time="<?php echo get_field('start_tutorial_time');?>"
                     data-tutor-gender="<?php  echo get_field('tutor_gender');?>"
                     data-tutorial-target="<?php echo get_field('objective');?>"
                     data-tutor-requirement="<?php echo get_field('tutor_requirement');?>"
@@ -1175,11 +1176,12 @@ $(function() {
         $('#lbc-subjects').html($(this).closest('.tutor-content-li').attr('data-subjects'));
 
 
+
         var lesson_hour_str = '一星期' + $(this).closest('.tutor-content-li').attr('data-lesson-hour') +
             '堂 ; 一堂' + $(this).closest('.tutor-content-li').attr('data-time') + '小時';
         $('#lbc-lesson-hour').html(lesson_hour_str);
 
-        // $('#lbc-time').html($(this).closest('.tutor-content-li').attr('data-time'));
+        $('#lbc-time').html($(this).closest('.tutor-content-li').attr('data-start-tutorial-time'));
         $('#lbc-tutor-gender').html($(this).closest('.tutor-content-li').attr('data-tutor-gender'));
         $('#lbc-tutorial-target').html($(this).closest('.tutor-content-li').attr(
             'data-tutorial-target'));
