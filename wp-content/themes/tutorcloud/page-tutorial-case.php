@@ -1220,7 +1220,7 @@ while ( $loop->have_posts() ) {
                         <div class='col-2 data-column'>
                             補習科目: <br>
                             <!-- 數學(中文卷) -->
-                            <?php echo implode(' , ', get_field('subjects'));?>
+                            <?php echo implode(' ', get_field('subjects'));?>
                             <!--大學生--> <br>
                         </div>
                         <div class='col-2 data-column'>
