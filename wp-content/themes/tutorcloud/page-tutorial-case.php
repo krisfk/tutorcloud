@@ -1224,7 +1224,7 @@ while ( $loop->have_posts() ) {
                             <!--大學生--> <br>
                         </div>
                         <div class='col-2 data-column'>
-                            時薪： <br>$160
+                            時薪： <br>$<?php echo get_field('cost_per_ppl');?>
                             <?php //echo get_field('lowest_salary');?></div>
 
                         <div class='col-4 data-column'>
