@@ -956,10 +956,10 @@ get_header();
             </div>
 
 
-            <div class="col-3 mb-4">導師性別：<br><span class="lbc-tutor-gender"></span></div>
-            <div class="col-3 mb-4">補習期望：<br><span class="lbc-tutorial-target">補底 清concept</div>
-            <div class="col-3 mb-4">對導師要求：<br><span class="lbc-tutor-requirement"></span>提供筆記</div>
-            <div class="col-3 mb-4">其他要求/備註：<br><span class="lbc-other-requirement"></span>test</div>
+            <div class="col-3 mb-4">導師性別：<br><span id="lbc-tutor-gender"></span></div>
+            <div class="col-3 mb-4">補習期望：<br><span id="lbc-tutorial-target">補底 清concept</div>
+            <div class="col-3 mb-4">對導師要求：<br><span id="lbc-tutor-requirement"></span>提供筆記</div>
+            <div class="col-3 mb-4">其他要求/備註：<br><span id="lbc-other-requirement"></span>test</div>
 
 
         </div>
@@ -1184,8 +1184,8 @@ $(function() {
         $('#lbc-lesson-hour').html(lesson_hour_str);
 
         $('#lbc-time').html($(this).closest('.student-content-li').attr('data-start-tutorial-time'));
-        // $('#lbc-tutor-gender').html($(this).closest('.student-content-li').attr('data-tutor-gender'));
-        $('#lbc-tutor-gender').html(999);
+        $('#lbc-tutor-gender').html($(this).closest('.student-content-li').attr('data-tutor-gender'));
+        // $('#lbc-tutor-gender').html(999);
 
         $('#lbc-tutorial-target').html($(this).closest('.student-content-li').attr(
             'data-tutorial-target'));
