@@ -1042,7 +1042,7 @@ while ( $loop->have_posts() ) {
                     data-salary="<?php echo get_field('cost_per_ppl');?>"
                     data-tutorial-style="<?php echo get_field('tutorial_style');?>"
                     data-student-level="<?php echo get_field('student_level_2');?>"
-                    data-subjects="<?php implode(' ', get_field('subjects'));?>"
+                    data-subjects="<?php echo implode(' ', get_field('subjects'));?>"
                     data-lesson-hour="<? echo get_field('lesson_per_week');?>"
                     data-time="<?php echo get_field('hour_per_lesson');?>"
                     data-tutor-gender="<?php  echo get_field('tutor_gender');?>"
