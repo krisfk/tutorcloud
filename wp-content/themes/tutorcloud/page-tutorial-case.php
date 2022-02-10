@@ -1184,7 +1184,8 @@ $(function() {
         $('#lbc-lesson-hour').html(lesson_hour_str);
 
         $('#lbc-time').html($(this).closest('.student-content-li').attr('data-start-tutorial-time'));
-        $('#lbc-tutor-gender').html($(this).closest('.student-content-li').attr('data-tutor-gender'));
+        // $('#lbc-tutor-gender').html($(this).closest('.student-content-li').attr('data-tutor-gender'));
+        $('#lbc-tutor-gender').html(999);
 
         $('#lbc-tutorial-target').html($(this).closest('.student-content-li').attr(
             'data-tutorial-target'));
