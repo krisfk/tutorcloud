@@ -949,8 +949,18 @@ get_header();
 
             </div>
 
+            <div class="col-12">
+                map
+            </div>
+            <div class="col-6">導師性別：<br>女</div>
+            <div class="col-6">補習期望：<br>補底 清concept</div>
+            <div class="col-6">對導師要求：<br>提供筆記</div>
+            <div class="col-6">其他要求/備註：<br>test</div>
+
 
         </div>
+
+
     </div>
 
 </div>
