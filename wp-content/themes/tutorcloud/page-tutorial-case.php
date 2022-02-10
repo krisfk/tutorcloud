@@ -918,7 +918,7 @@ get_header();
 
                     <tr>
                         <td>學生級別 </td>
-                        <td id="lbc-past-exam"></td>
+                        <td id="lbc-past-exam">中六</td>
                     </tr>
                     <tr>
                         <td>補習科目</td>
