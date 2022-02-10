@@ -1047,7 +1047,7 @@ while ( $loop->have_posts() ) {
                     data-time="<?php echo get_field('hour_per_lesson');?>"
                     data-start-tutorial-time="<?php echo get_field('start_tutorial_time');?>"
                     data-tutor-gender="<?php  echo get_field('tutor_gender');?>"
-                    data-tutorial-target="<?php echo get_field('objective');?>"
+                    data-tutorial-target="<?php echo implode(' ', get_field('objective'));?>"
                     data-tutor-requirement="<?php echo get_field('tutor_requirement');?>"
                     data-other-requirement="<?php echo get_field('other_remark');?>">
                     <div class="row gx-0 align-items-top">
