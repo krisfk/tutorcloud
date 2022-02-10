@@ -1176,7 +1176,7 @@ $(function() {
 
 
         var lesson_hour_str = '一星期' + $(this).closest('.tutor-content-li').attr('data-lesson-hour') +
-            '堂 ; 一堂' + $(this).closest('.tutor-content-li').attr('data-time') + '小時'；
+            '堂 ; 一堂' + $(this).closest('.tutor-content-li').attr('data-time') + '小時';
         $('#lbc-lesson-hour').html(lesson_hour_str);
 
         // $('#lbc-time').html($(this).closest('.tutor-content-li').attr('data-time'));
