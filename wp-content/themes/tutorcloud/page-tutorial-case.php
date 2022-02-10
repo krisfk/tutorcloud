@@ -1070,7 +1070,7 @@ get_header();
     </div>
     <div class="row mt-5 gx-5">
 
-        <div class="col-2">
+        <!-- <div class="col-2">
             <ul class="m-0 p-0 text-center">
                 <li class="step-txt active">1. 選擇心儀導師</li>
                 <li class="step-txt">2. 登記學生資料</li>
@@ -1082,11 +1082,7 @@ get_header();
                     心儀導師名單</div>
 
                 <ul>
-                    <!-- <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li> -->
+
                 </ul>
 
             </div>
@@ -1097,7 +1093,7 @@ get_header();
 
                 <a href="#" class="next-step-btn mb-3 mt-0">下一步</a>
             </div>
-        </div>
+        </div> -->
 
         <?php
         
@@ -1193,7 +1189,7 @@ get_header();
     }
         ?>
 
-        <div class="col-10">
+        <div class="col-12">
             <form action="" method="post" id="apply-case-form">
 
                 <ul class="tutor-list-ul">
