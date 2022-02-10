@@ -1215,13 +1215,18 @@ while ( $loop->have_posts() ) {
                                 alt="">
                         </div>
                         <div class='col-2 data-column'><?php echo get_field('bac_degree');?> <br>
-                            主修：<?php echo get_field('u_major');?>
-                            <!--護理系-->
+                            中三<?php //echo get_field('u_major');?>
+                            <br />男
                         </div>
-                        <div class='col-2 data-column'><?php echo get_field('tutor_level');?>
+                        <div class='col-2 data-column'>
+                            補習科目: <br>
+                            數學(中文卷)
+                            <?php //echo get_field('tutor_level');?>
                             <!--大學生--> <br>
                         </div>
-                        <div class='col-2 data-column'>可接受最低時薪： <br>$<?php echo get_field('lowest_salary');?></div>
+                        <div class='col-2 data-column'>
+                            時薪： <br>$160
+                            <?php //echo get_field('lowest_salary');?></div>
                         <div class='col-2 data-column'>
                             可教授科目： <br>
                             <!-- XX XX XX -->
