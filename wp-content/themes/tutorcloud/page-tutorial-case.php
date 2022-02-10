@@ -1213,12 +1213,13 @@ while ( $loop->have_posts() ) {
                             <br><?php echo get_field('tutorial_style');?>
                         </div>
                         <div class='col-2 data-column'>
-                            中三<?php echo get_field('student_level_2');?>
-                            <br />男
+                            <?php echo get_field('student_level_2');?>
+                            <br /> <?php echo get_field('gender');?>
+
                         </div>
                         <div class='col-2 data-column'>
                             補習科目: <br>
-                            數學(中文卷)
+                            <!-- 數學(中文卷) -->
                             <?php //echo get_field('tutor_level');?>
                             <!--大學生--> <br>
                         </div>
