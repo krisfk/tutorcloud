@@ -894,19 +894,19 @@ get_header();
                 <table class="detail-content-table">
                     <tr>
                         <td>補習編號 </td>
-                        <td><span id="lbc-student-id">S210002</span> </td>
+                        <td><span id="lbc-student-id"></span> </td>
                     </tr>
                     <tr>
                         <td>學生性別</td>
-                        <td id="lbc-gender">女</td>
+                        <td id="lbc-student-gender"></td>
                     </tr>
                     <tr>
                         <td>時薪</td>
-                        <td id="lbc-born-year">$180</td>
+                        <td>$<span class="lbc-salary">180</span></td>
                     </tr>
                     <tr>
                         <td>補習方式</td>
-                        <td id="lbc-living-area">上門</td>
+                        <td id="lbc-tutorial-style"></td>
                     </tr>
 
                 </table>
@@ -918,24 +918,24 @@ get_header();
 
                     <tr>
                         <td>學生級別 </td>
-                        <td id="lbc-past-exam">中六</td>
+                        <td id="lbc-student-level"></td>
                     </tr>
                     <tr>
                         <td>補習科目</td>
-                        <td id="lbc-teach-subjects">
+                        <td id="lbc-subjects">
                             <!-- 數學 化學 經濟 -->
 
                         </td>
                     </tr>
                     <tr>
                         <td>每週堂數 / 時數</td>
-                        <td id="lbc-result">
+                        <td id="lbc-lesson-hour">
                             <!-- 數學（5*） 化學（5**） 經濟（5） -->
                         </td>
                     </tr>
                     <tr>
                         <td>可補習時間(可議)</td>
-                        <td id="lbc-teach-level">
+                        <td id="lbc-time">
                             <!-- 小學 初中 高中 -->
 
                         </td>
@@ -956,10 +956,10 @@ get_header();
             </div>
 
 
-            <div class="col-3 mb-4">導師性別：<br>女</div>
-            <div class="col-3 mb-4">補習期望：<br>補底 清concept</div>
-            <div class="col-3 mb-4">對導師要求：<br>提供筆記</div>
-            <div class="col-3 mb-4">其他要求/備註：<br>test</div>
+            <div class="col-3 mb-4">導師性別：<br><span class="lbc-tutor-gender"></span></div>
+            <div class="col-3 mb-4">補習期望：<br><span class="lbc-tutorial-target">補底 清concept</div>
+            <div class="col-3 mb-4">對導師要求：<br><span class="lbc-tutorla-requirement"></span>提供筆記</div>
+            <div class="col-3 mb-4">其他要求/備註：<br><span class="lbc-other-requirement"></span>test</div>
 
 
         </div>
@@ -1156,7 +1156,7 @@ $(function() {
         $('.lightbox').fadeIn(0);
         $('.lightbox .lightbox-content').fadeOut(0);
         $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
-        $('#lbc-student-id').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
+        $('#lbc-student-id').html($(this).closest('.tutor-content-li').attr('data-student-id'));
 
         // $('#lbc-self-intro').html($(this).closest('.tutor-content-li').attr('data-self-intro'));
 
