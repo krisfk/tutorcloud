@@ -886,8 +886,8 @@ get_header();
         </div>
 
         <div class="row gx-0">
-            <div class="col-12 text-center">
-                馬鞍山新港城
+            <div class="col-12 text-center lbc-short-address">
+                <!-- 馬鞍山新港城 -->
 
             </div>
             <div class="col-6">
@@ -1046,6 +1046,7 @@ while ( $loop->have_posts() ) {
                     data-lesson-hour="<?php echo get_field('lesson_per_week');?>"
                     data-time="<?php echo get_field('hour_per_lesson');?>"
                     data-start-tutorial-time="<?php echo get_field('start_tutorial_time');?>"
+                    data-short-address="<?php echo get_field('short_address');?>"
                     data-tutor-gender="<?php  echo get_field('tutor_gender');?>"
                     data-tutorial-target="<?php echo implode(' ', get_field('objective')).' '.get_field('objective_value_other');?>"
                     data-tutor-requirement="<?php echo implode(' ', get_field('tutor_requirement')).' '.get_field('tutor_requirement_value_other'); ?>"
@@ -1169,6 +1170,8 @@ $(function() {
         $('.lightbox').fadeIn(0);
         $('.lightbox .lightbox-content').fadeOut(0);
         $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
+
+        $('#lbc-short-address').html($(this).closest('.student-content-li').attr('data-short-address'));
         $('#lbc-student-id').html($(this).closest('.student-content-li').attr('data-student-id'));
         $('#lbc-student-gender').html($(this).closest('.student-content-li').attr(
             'data-student-gender'));
