@@ -57,7 +57,25 @@ get_header();
                                         所有程度
                                     </label>
                                 </div>
+                                <?php 
+                                $tutor_level_arr=array("大學生","學士畢業","碩士生","碩士畢業","博士生","博士畢業");
+                                for($i=0;$i<count($tutor_level_arr);$i++)
+                                {
+                                    ?>
                                 <div>
+                                    <input class="form-check-input" type="checkbox"
+                                        value="<?php echo $tutor_level_arr[$i];?>"
+                                        id="tutor-level-value-<?php echo $i;?>" name="tutor-level[]"
+                                        <?php echo $_POST['filter-form']&&in_array($tutor_level_arr[$i], $_POST['tutor-level']) ? 'checked':''; ?>>
+                                    <label class="form-check-label" for="tutor-level-value-<?php echo $i;?>">
+                                        <?php echo $tutor_level_arr[$i];?>
+                                    </label>
+                                </div>
+
+                                <?php
+                                }
+                                ?>
+                                <!-- <div>
                                     <input class="form-check-input" type="checkbox" value="大學生" id="tutor-level-value-1"
                                         name="tutor-level[]"
                                         <?php echo $_POST['filter-form']&&in_array("大學生", $_POST['tutor-level']) ? 'checked':''; ?>>
@@ -104,7 +122,7 @@ get_header();
                                     <label class="form-check-label" for="tutor-level-value-6">
                                         博士畢業
                                     </label>
-                                </div>
+                                </div> -->
                             </div>
 
                         </td>
