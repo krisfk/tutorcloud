@@ -818,7 +818,8 @@ select.form-select {
     height: 100%;
 }
 
-.filter-tutor-level-group div {
+.filter-tutor-level-group div,
+.filter-student-level-group div {
     float: left;
 }
 
