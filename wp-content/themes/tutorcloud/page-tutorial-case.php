@@ -1005,15 +1005,15 @@ get_header();
                 {
                     array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
                 }
-                if($_POST['tutor-level'])
-                {
-                    array_push($meta_query_arr,array('key'=>'tutor_level','value'=>$_POST['tutor-level'],'compare' => 'IN'));
-                }
-                if($_POST['university'])
-                {
-                    // print_r($_POST['university']);
-                    array_push($meta_query_arr,array('key'=>'bac_degree','value'=>$_POST['university'],'compare' => 'IN'));
-                }
+                // if($_POST['tutor-level'])
+                // {
+                //     array_push($meta_query_arr,array('key'=>'tutor_level','value'=>$_POST['tutor-level'],'compare' => 'IN'));
+                // }
+                // if($_POST['university'])
+                // {
+                //     // print_r($_POST['university']);
+                //     array_push($meta_query_arr,array('key'=>'bac_degree','value'=>$_POST['university'],'compare' => 'IN'));
+                // }
 
                 
             }
