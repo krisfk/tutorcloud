@@ -436,7 +436,7 @@ get_header();
                                 <div class="mt-3">
 
                                     <input class="form-check-input kl-place" type="checkbox" id="kl-place-1"
-                                        name="kl-place-1" value="1" <?php echo $_POST['hk-place-1'] ? 'checked':'';?>>
+                                        name="kl-place-1" value="1" <?php echo $_POST['kl-place-1'] ? 'checked':'';?>>
                                     <label class="form-check-label" for="kl-place-1">
                                         九龍區
                                     </label>
