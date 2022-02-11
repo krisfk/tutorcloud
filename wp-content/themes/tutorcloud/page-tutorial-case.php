@@ -475,8 +475,8 @@ while ( $loop->have_posts() ) {
             'end_size'     => 2,
             'mid_size'     => 1,
             'prev_next'    => true,
-            'prev_text'    => sprintf( '<i></i> %1$s', __( '&gt;', 'text-domain' ) ),
-            'next_text'    => sprintf( '%1$s <i></i>', __( '&lt;', 'text-domain' ) ),
+            'prev_text'    => sprintf( '<i></i> %1$s', __( '&lt;', 'text-domain' ) ),
+            'next_text'    => sprintf( '%1$s <i></i>', __( '&gt;', 'text-domain' ) ),
             'add_args'     => false,
             'add_fragment' => '',
         ) );
