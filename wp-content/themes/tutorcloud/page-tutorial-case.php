@@ -379,7 +379,7 @@ get_header();
        
             
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-
+echo $paged;
   $args = array(  
     'post_type' => 'student',
     'post_status' => 'publish',
@@ -387,7 +387,6 @@ get_header();
     'orderby' => 'date', 
     'order' => 'DESC', 
     'paged' => $paged,
-
     'meta_query' => $meta_query_arr
     
 );
