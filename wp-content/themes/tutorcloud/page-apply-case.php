@@ -976,7 +976,8 @@ get_header();
 
             <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
         </a>
-        成功加入導師 <span class="lightbox-msg-tutor-id"></span> 往心儀名單。
+        <span class="lightbox-msg-txt"></span>
+
     </div>
 
     <div class="lightbox-content tutor-intro">
@@ -3000,7 +3001,8 @@ $(function() {
 
             $('.lightbox').fadeIn(0);
             $('.lightbox .lightbox-content').fadeOut(0);
-            $('.lightbox-msg-tutor-id').html(select_tutor_id);
+            $('.lightbox-msg-txt').html('成功加入導師' + select_tutor_id + '往心儀名單。');
+
             $('.lightbox .lightbox-content.lightbox-msg').fadeIn(0);
 
 
