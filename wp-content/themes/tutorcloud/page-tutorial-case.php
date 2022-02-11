@@ -846,14 +846,14 @@ $(function() {
                         $('#hk-place-1').prop('checked', true);
                         $('#kl-place-1').prop('checked', true);
                         $('#nt-place-1').prop('checked', true);
-                        $('input[name="class-area[]"]').prop('checked', true);
+                        // $('input[name="class-area[]"]').prop('checked', true);
                         // .prop('checked', false);
 
                     } else {
                         $('#hk-place-2').prop('checked', false);
                         $('#kl-place-2').prop('checked', false);
                         $('#nt-place-2').prop('checked', false);
-                        $('input[name="class-area[]"]').prop('checked', false);
+                        // $('input[name="class-area[]"]').prop('checked', false);
 
                     });
 
