@@ -19,7 +19,7 @@
 <?php //get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
 <footer id="colophon" class="site-footer mt-5 text-center mb-3" role="contentinfo">
-    Copyright © 2021 Tutorcloud
+    Copyright © <?php echo date('Y');?> Tutorcloud
 
 
 </footer><!-- #colophon -->
