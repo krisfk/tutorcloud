@@ -3348,6 +3348,8 @@ $(function() {
 
     $('.next-step-btn').click(function() {
 
+        $('.filter-btn,.pagination').fadeOut(0);
+
         if (tutor_list_arr.length == 0) {
             alert('請加入心儀導師');
         } else {
@@ -3365,6 +3367,10 @@ $(function() {
     })
 
     $('.prev-step-btn').click(function() {
+
+        $('.filter-btn,.pagination').fadeIn(0);
+
+
         $('.next-step-btn').fadeIn(0);
         $('.prev-step-btn').fadeOut(0);
         $('.tutor-list-ul').fadeIn(0);
