@@ -976,7 +976,7 @@ get_header();
 
             <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
         </a>
-        <span class="lightbox-msg-txt text-center"></span>
+        <span class="lightbox-msg-txt text-center d-block p-5"></span>
 
     </div>
 
