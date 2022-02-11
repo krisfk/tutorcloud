@@ -452,19 +452,10 @@ while ( $loop->have_posts() ) {
             </ul>
 
 
-            <div class="pagination">
+            <div class="pagination mt-5">
 
                 <?php 
-                //   $current_page = max(1, get_query_var('paged'));
-
-                //   echo paginate_links(array(
-                //       'base' => get_pagenum_link(1) . '%_%',
-                //       'format' => '/page/%#%',
-                //       'current' => $paged,
-                //       'total' => $query->max_num_pages,
-                //       'prev_text'    => __('« prev'),
-                //       'next_text'    => __('next »'),
-                //   ));
+               
         echo paginate_links( array(
             'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
             'total'        => $loop->max_num_pages,
