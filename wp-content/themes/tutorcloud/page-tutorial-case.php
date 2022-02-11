@@ -119,9 +119,9 @@ get_header();
                                     <div>
                                         <input class="form-check-input" type="checkbox"
                                             value="<?php echo $hk_place_arr[$i];?>"
-                                            id="class-area-value-<?php echo $i;?>" name="class-area[]"
+                                            id="hk-class-area-value-<?php echo $i;?>" name="class-area[]"
                                             <?php echo $_POST['filter-form']&&in_array($hk_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
-                                        <label class="form-check-label" for="class-area-value-<?php echo $i;?>">
+                                        <label class="form-check-label" for="hk-class-area-value-<?php echo $i;?>">
                                             <?php echo $hk_place_arr[$i];?>
                                         </label>
                                     </div>
@@ -1102,17 +1102,17 @@ $(function() {
         if ($(this).is(':checked')) {
 
             for (i = 1; i <= 17; i++) {
-                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', true);
-                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', true);
             }
 
         } else {
             for (i = 1; i <= 17; i++) {
-                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', false);
-                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', false);
                 // $('#class-area-value-' + i).prop('checked', false);
             }
