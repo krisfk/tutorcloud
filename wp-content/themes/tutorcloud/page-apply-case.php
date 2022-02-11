@@ -52,7 +52,8 @@ get_header();
                             <div class="filter-tutor-level-group">
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="" id="all-tutor-level"
-                                        name="">
+                                        name="all-tutor-level" value="1"
+                                        <?php echo $_POST['all-tutor-level'] ? 'checked':'';?>>
                                     <label class="form-check-label" for="all-tutor-level">
                                         所有程度
                                     </label>
@@ -135,8 +136,8 @@ get_header();
                         <td>
                             <div class="university-group">
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="" id="all-university"
-                                        name="">
+                                    <input class="form-check-input" type="checkbox" value="1" id="all-university"
+                                        name="all-university" <?php echo $_POST['all-tutor-level'] ? 'checked':'';?>>
                                     <label class="form-check-label" for="all-university">
                                         全部大學
                                     </label>
