@@ -1072,8 +1072,8 @@ get_header();
             </div>
 
             <div class="col-12 mt-4 mb-4">
-                <iframe id="map" width="100%" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=油塘中心
-                    &amp;key=AIzaSyBN611NFShALGyApUBivJPfvqlEIvbPRNU" allowfullscreen=""></iframe>
+                <iframe id="map" width="100%" height="200" frameborder="0" style="border:0" src=""
+                    allowfullscreen=""></iframe>
             </div>
 
 
