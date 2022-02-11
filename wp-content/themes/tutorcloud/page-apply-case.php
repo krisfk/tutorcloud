@@ -3025,12 +3025,12 @@ $(function() {
 
     $('#all-tutor-level').change(function() {
         if ($(this).is(':checked')) {
-            for (i = 1; i <= <?php echo count($tutor_level_arr);?>; i++) {
+            for (i = 0; i <= <?php echo count($tutor_level_arr);?>; i++) {
                 $('#tutor-level-value-' + i).prop('checked', true);
             }
 
         } else {
-            for (i = 1; i <= <?php echo count($tutor_level_arr);?>; i++) {
+            for (i = 0; i <= <?php echo count($tutor_level_arr);?>; i++) {
                 $('#tutor-level-value-' + i).prop('checked', false);
             }
         }
