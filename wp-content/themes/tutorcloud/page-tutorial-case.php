@@ -128,163 +128,6 @@ get_header();
                                     <?php
                                 }
                                 ?>
-
-
-                                    <!-- <div>
-                                        <input class="form-check-input" type="checkbox" value="中半山"
-                                            id="class-area-value-1" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-1">
-                                            中半山
-                                        </label>
-                                    </div>
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="薄扶林"
-                                            id="class-area-value-2" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-2">
-                                            薄扶林
-                                        </label>
-                                    </div>
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="中上環"
-                                            id="class-area-value-3" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-3">
-                                            中上環
-                                        </label>
-                                    </div>
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="西環"
-                                            id="class-area-value-4" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-4">
-                                            西環
-                                        </label>
-                                    </div>
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="灣仔"
-                                            id="class-area-value-5" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-5">
-                                            灣仔
-                                        </label>
-                                    </div>
-
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="銅鑼灣"
-                                            id="class-area-value-6" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-6">
-                                            銅鑼灣
-                                        </label>
-                                    </div>
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="跑馬地"
-                                            id="class-area-value-7" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-7">
-                                            跑馬地
-                                        </label>
-                                    </div>
-
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="北角"
-                                            id="class-area-value-8" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-8">
-                                            北角
-                                        </label>
-                                    </div>
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="鰂魚涌"
-                                            id="class-area-value-9" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-9">
-                                            鰂魚涌
-                                        </label>
-                                    </div>
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="太古"
-                                            id="class-area-value-10" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-10">
-                                            太古
-                                        </label>
-                                    </div>
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="筲箕灣"
-                                            id="class-area-value-11" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-11">
-                                            筲箕灣
-                                        </label>
-                                    </div>
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="西灣河"
-                                            id="class-area-value-12" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-12">
-                                            西灣河
-                                        </label>
-                                    </div>
-
-
-
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="柴灣"
-                                            id="class-area-value-13" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-13">
-                                            柴灣
-                                        </label>
-                                    </div>
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="小西灣"
-                                            id="class-area-value-14" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-14">
-                                            小西灣
-                                        </label>
-                                    </div>
-
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="香港仔"
-                                            id="class-area-value-15" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-15">
-                                            香港仔
-                                        </label>
-                                    </div>
-
-
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="鴨利洲"
-                                            id="class-area-value-16" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-16">
-                                            鴨利洲
-                                        </label>
-                                    </div>
-
-
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="赤柱"
-                                            id="class-area-value-17" name="class-area[]">
-                                        <label class="form-check-label" for="class-area-value-17">
-                                            赤柱
-                                        </label>
-                                    </div> -->
                                 </div>
 
 
@@ -297,7 +140,27 @@ get_header();
                                 </div>
 
                                 <div class="place-group">
+                                    <?php
+                                $kl_place_arr=array("美孚","荔枝角","長沙灣","深水涉","大角咀","旺角","何文田","油麻地","佐敦","尖沙咀","土瓜灣","紅磡","石硤尾","九龍塘","樂富","慈雲山","黃大仙","鑽石山","新蒲崗","彩虹","牛池灣","牛頭角","九龍灣","秀茂坪","觀塘","藍田","油塘","九龍城");
+                                for($i=1;$i<=count($kl_place_arr);$i++)
+                                {
+                                    ?>
                                     <div>
+                                        <input class="form-check-input" type="checkbox"
+                                            value="<?php echo $kl_place_arr[$i];?>"
+                                            id="class-area-value-<?php echo $i;?>" name="class-area[]"
+                                            <?php echo $_POST['filter-form']&&in_array($kl_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
+                                        <label class="form-check-label" for="class-area-value-<?php echo $i;?>">
+                                            <?php echo $kl_place_arr[$i];?>
+                                        </label>
+                                    </div>
+                                    <?php
+                                }
+                                ?>
+                                    <?php
+                                // 
+                                ?>
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="美孚"
                                             id="class-area-value-18" name="class-area[]">
                                         <label class="form-check-label" for="class-area-value-18">
@@ -530,7 +393,7 @@ get_header();
                                         <label class="form-check-label" for="class-area-value-45">
                                             九龍城
                                         </label>
-                                    </div>
+                                    </div> -->
 
 
                                 </div>
