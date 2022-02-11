@@ -843,21 +843,18 @@ $(function() {
         if ($(this).is(':checked')) {
 
             $('#hk-place-1').prop('checked', true);
-
             $('#kl-place-1').prop('checked', true);
-
             $('#nt-place-1').prop('checked', true);
-
+            $('input[name="class-area[]"]').prop('checked', true);
 
 
 
         } else {
 
             $('#hk-place-1').prop('checked', false);
-
             $('#kl-place-1').prop('checked', false);
-
             $('#nt-place-1').prop('checked', false);
+            $('input[name="class-area[]"]').prop('checked', false);
 
 
 
