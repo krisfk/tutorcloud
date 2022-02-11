@@ -1122,6 +1122,7 @@ get_header();
             // echo 99;
             if($_POST && $_POST['filter-form'])
             {
+                echo $_POST['class-area'];
                 if($_POST['gender'])
                 {
                     array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
