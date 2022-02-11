@@ -877,12 +877,17 @@ input[type='number'] {
     line-height: 1.9rem;
     margin: 0 0.2rem;
     border: none;
+    opacity: 0.8;
 }
 
 .page-numbers:hover {
     background: #618382;
     color: #fff;
     border: none;
+}
+
+.page-numbers.current {
+    opacity: 1;
 }
 
 .page-numbers a {}
