@@ -453,6 +453,7 @@ while ( $loop->have_posts() ) {
 
 
             <div class="pagination">
+                fdsf
                 <?php 
                   $current_page = max(1, get_query_var('paged'));
 
