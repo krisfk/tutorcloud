@@ -1123,14 +1123,14 @@ get_header();
             if($_POST && $_POST['filter-form'])
             {
                 // print_r( $_POST['class-area']);
-                // if($_POST['gender'])
-                // {
-                //     array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
-                // }
-                // if($_POST['student-level'])
-                // {
-                //     array_push($meta_query_arr,array('key'=>'student_level_2','value'=>$_POST['student-level'],'compare' => 'IN'));
-                // }
+                if($_POST['gender'])
+                {
+                    array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
+                }
+                if($_POST['student-level'])
+                {
+                    array_push($meta_query_arr,array('key'=>'student_level_2','value'=>$_POST['student-level'],'compare' => 'IN'));
+                }
 
                 if($_POST['class-area'])
                 {
