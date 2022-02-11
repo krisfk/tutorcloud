@@ -233,7 +233,7 @@ get_header();
                     </tr>
 
 
-                    <tr>
+                    <!-- <tr>
                         <td> <label for="tutor-level">就讀大學
                             </label></td>
                         <td>
@@ -317,9 +317,9 @@ get_header();
 
 
                         </td>
-                    </tr>
+                    </tr> -->
                     <tr>
-                        <td><label for="tutor-level">學生地區
+                        <td><label for="student-place">學生地區
                             </label></td>
                         <td>
                             <div>
