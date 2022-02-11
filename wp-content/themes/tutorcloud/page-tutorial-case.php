@@ -1024,7 +1024,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>時薪</td>
-                        <td>$<span class="lbc-salary">180</span></td>
+                        <td>$<span class="lbc-salary"></span></td>
                     </tr>
                     <tr>
                         <td>補習方式</td>
