@@ -1379,12 +1379,12 @@ $(function() {
 
     $('#all-student-level').change(function() {
         if ($(this).is(':checked')) {
-            for (i = 1; i <= 6; i++) {
+            for (i = 1; i <= 21; i++) {
                 $('#student-level-value-' + i).prop('checked', true);
             }
 
         } else {
-            for (i = 1; i <= 6; i++) {
+            for (i = 1; i <= 21; i++) {
                 $('#student-level-value-' + i).prop('checked', false);
             }
         }
