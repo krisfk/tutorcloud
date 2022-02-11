@@ -1122,7 +1122,6 @@ get_header();
             // echo 99;
             if($_POST && $_POST['filter-form'])
             {
-                // print_r( $_POST['class-area']);
                 if($_POST['gender'])
                 {
                     array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
@@ -1139,12 +1138,6 @@ get_header();
                 }
 
 
-                // class-area
-                // if($_POST['university'])
-                // {
-                //     // print_r($_POST['university']);
-                //     array_push($meta_query_arr,array('key'=>'bac_degree','value'=>$_POST['university'],'compare' => 'IN'));
-                // }
 
                 
             }
