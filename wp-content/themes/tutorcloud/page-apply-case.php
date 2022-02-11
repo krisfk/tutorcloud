@@ -51,7 +51,7 @@ get_header();
                         <td>
                             <div class="filter-tutor-level-group">
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="" id="all-tutor-level"
+                                    <input class="form-check-input" type="checkbox" id="all-tutor-level"
                                         name="all-tutor-level" value="1"
                                         <?php echo $_POST['all-tutor-level'] ? 'checked':'';?>>
                                     <label class="form-check-label" for="all-tutor-level">
