@@ -52,7 +52,7 @@ get_header();
                             <div class="filter-tutor-level-group">
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="" id="all-tutor-level"
-                                        name="class-area[]">
+                                        name="">
                                     <label class="form-check-label" for="all-tutor-level">
                                         所有程度
                                     </label>

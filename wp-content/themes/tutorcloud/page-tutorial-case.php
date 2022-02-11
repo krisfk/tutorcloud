@@ -33,7 +33,7 @@ get_header();
                 <table>
                     <tr>
                         <td>
-                            <label for=""> 性別*</label>
+                            <label for=""> 學生性別*</label>
                         </td>
                         <td>
                             <label><input type="radio" name="gender" value=""
@@ -46,65 +46,26 @@ get_header();
                     </tr>
 
                     <tr>
-                        <td> <label for="tutor-level">教育程度 *
+                        <td> <label for="student-level">學生級別 *
                             </label></td>
                         <td>
-                            <div class="filter-tutor-level-group">
+                            <div class="filter-student-level-group">
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="" id="all-tutor-level"
-                                        name="class-area[]">
-                                    <label class="form-check-label" for="all-tutor-level">
+                                    <input class="form-check-input" type="checkbox" value="" id="all-student-level"
+                                        name="student-level[]">
+                                    <label class="form-check-label" for="all-student-level">
                                         所有程度
                                     </label>
                                 </div>
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="大學生" id="tutor-level-value-1"
-                                        name="tutor-level[]"
+                                        name="student-level[]"
                                         <?php echo $_POST['filter-form']&&in_array("大學生", $_POST['tutor-level']) ? 'checked':''; ?>>
                                     <label class="form-check-label" for="tutor-level-value-1">
                                         大學生
                                     </label>
                                 </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="學士畢業"
-                                        id="tutor-level-value-2" name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("學士畢業", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-2">
-                                        學士畢業
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="碩士生" id="tutor-level-value-3"
-                                        name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("碩士生", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-3">
-                                        碩士生
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="碩士畢業"
-                                        id="tutor-level-value-4" name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("碩士畢業", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-4">
-                                        碩士畢業
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="博士生" id="tutor-level-value-5"
-                                        name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("博士生", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-5">
-                                        博士生
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="博士畢業"
-                                        id="tutor-level-value-6" name="tutor-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("博士畢業", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-6">
-                                        博士畢業
-                                    </label>
-                                </div>
+
                             </div>
 
                         </td>
