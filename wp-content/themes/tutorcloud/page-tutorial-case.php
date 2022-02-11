@@ -1296,7 +1296,7 @@ $(function() {
 
         $('#map').attr('src',
             'https://www.google.com/maps/embed/v1/place?q=' + $(this).closest('.student-content-li')
-            .attr('data-short-address') + '&amp;key=AIzaSyBN611NFShALGyApUBivJPfvqlEIvbPRNU'
+            .attr('data-short-address') + '&key=AIzaSyBN611NFShALGyApUBivJPfvqlEIvbPRNU'
         );
 
 
