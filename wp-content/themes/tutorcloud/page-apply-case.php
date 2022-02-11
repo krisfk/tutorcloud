@@ -137,7 +137,7 @@ get_header();
                             <div class="university-group">
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="1" id="all-university"
-                                        name="all-university" <?php echo $_POST['all-tutor-level'] ? 'checked':'';?>>
+                                        name="all-university" <?php echo $_POST['all-university'] ? 'checked':'';?>>
                                     <label class="form-check-label" for="all-university">
                                         全部大學
                                     </label>
@@ -241,13 +241,15 @@ get_header();
                                 <!-- <div class="mb-3"><label for=""> 地區 *</label>
                                 </div> -->
                                 <div>
-                                    <input class="form-check-input" type="checkbox" id="all-place-1" name="">
+                                    <input class="form-check-input" type="checkbox" id="all-place-1" name="all-place-1"
+                                        value="1" <?php echo $_POST['all-place-1'] ? 'checked':'';?>>
                                     <label class="form-check-label" for="all-place-1">
                                         所有地區
                                     </label>
                                 </div>
                                 <div class="mt-3">
-                                    <input class="form-check-input hk-place" type="checkbox" id="hk-place-1" name="">
+                                    <input class="form-check-input hk-place" type="checkbox" id="hk-place-1"
+                                        name="hk-place-1" value="1" <?php echo $_POST['hk-place-1'] ? 'checked':'';?>>
                                     <label class="form-check-label" for="hk-place-1">
                                         香港島
                                     </label>
@@ -432,7 +434,8 @@ get_header();
 
                                 <div class="mt-3">
 
-                                    <input class="form-check-input kl-place" type="checkbox" id="kl-place-1" name="">
+                                    <input class="form-check-input kl-place" type="checkbox" id="kl-place-1"
+                                        name="kl-place-1" value="1" <?php echo $_POST['hk-place-1'] ? 'checked':'';?>>
                                     <label class="form-check-label" for="kl-place-1">
                                         九龍區
                                     </label>
@@ -699,7 +702,8 @@ get_header();
 
 
                                 <div class="mt-3">
-                                    <input class="form-check-input nt-place" type="checkbox" id="nt-place-1" name="">
+                                    <input class="form-check-input nt-place" type="checkbox" id="nt-place-1"
+                                        name="nt-place-1" value="1" <?php echo $_POST['nt-place-1'] ? 'checked':'';?>>
                                     <label class="form-check-label" for="nt-place-1">
                                         新界區
                                     </label>
