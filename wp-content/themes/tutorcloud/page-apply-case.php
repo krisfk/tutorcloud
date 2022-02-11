@@ -1969,7 +1969,28 @@ Year 6 -->
                                             </div>
 
                                             <div class="place-group">
+
+                                                <?php
+                                $kl_place_arr=array("美孚","荔枝角","長沙灣","深水涉","大角咀","旺角","何文田","油麻地","佐敦","尖沙咀","土瓜灣","紅磡","石硤尾","九龍塘","樂富","慈雲山","黃大仙","鑽石山","新蒲崗","彩虹","牛池灣","牛頭角","九龍灣","秀茂坪","觀塘","藍田","油塘","九龍城");
+                                for($i=0;$i<count($kl_place_arr);$i++)
+                                {
+                                    ?>
                                                 <div>
+                                                    <input class="form-check-input" type="checkbox"
+                                                        value="<?php echo $kl_place_arr[$i];?>"
+                                                        id="kl-class-area-value-<?php echo $i;?>" name="class-area[]"
+                                                        <?php echo $_POST['filter-form']&&in_array($kl_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
+                                                    <label class="form-check-label"
+                                                        for="kl-class-area-value-<?php echo $i;?>">
+                                                        <?php echo $kl_place_arr[$i];?>
+                                                    </label>
+                                                </div>
+                                                <?php
+                                }
+                                ?>
+
+
+                                                <!-- <div>
                                                     <input class="form-check-input" type="checkbox" value="美孚"
                                                         id="class-area-value-18" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-18">
@@ -2202,7 +2223,7 @@ Year 6 -->
                                                     <label class="form-check-label" for="class-area-value-45">
                                                         九龍城
                                                     </label>
-                                                </div>
+                                                </div> -->
 
 
                                             </div>
