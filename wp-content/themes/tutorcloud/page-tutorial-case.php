@@ -1382,6 +1382,7 @@ $(function() {
 
     $('.close-btn,.lightbox-bg-btn').click(function() {
         $('.lightbox').fadeOut(0);
+        $('#map').attr('src', '');
     })
 
 
