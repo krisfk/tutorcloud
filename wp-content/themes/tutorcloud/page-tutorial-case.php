@@ -51,10 +51,11 @@ get_header();
                         <td>
                             <div class="filter-student-level-group">
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="" id="all-student-level"
-                                        name="">
-                                    <label class="form-check-label" for="all-student-level">
-                                        所有程度
+                                    <input class="form-check-input" type="checkbox" value="1" id="all-student-level"
+                                        name="all-student-level"
+                                        <?php echo $_POST['all-student-level'] ? 'checked':'';?> <label
+                                        class="form-check-label" for="all-student-level">
+                                    所有程度
                                     </label>
                                 </div>
 
