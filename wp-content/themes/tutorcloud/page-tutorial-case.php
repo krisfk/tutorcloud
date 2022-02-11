@@ -1377,15 +1377,15 @@ $(function() {
 
 
 
-    $('#all-tutor-level').change(function() {
+    $('#all-student-level').change(function() {
         if ($(this).is(':checked')) {
             for (i = 1; i <= 6; i++) {
-                $('#tutor-level-value-' + i).prop('checked', true);
+                $('#student-level-value-' + i).prop('checked', true);
             }
 
         } else {
             for (i = 1; i <= 6; i++) {
-                $('#tutor-level-value-' + i).prop('checked', false);
+                $('#student-level-value-' + i).prop('checked', false);
             }
         }
     })
