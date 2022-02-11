@@ -865,7 +865,7 @@ $(function() {
     $('.hk-place').change(function() {
         if ($(this).is(':checked')) {
 
-            for (i = 1; i <= <?php echo count($hk_place_arr);?>; i++) {
+            for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
                 $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', true);
                 $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
@@ -873,7 +873,7 @@ $(function() {
             }
 
         } else {
-            for (i = 1; i <= <?php echo count($hk_place_arr);?>; i++) {
+            for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
                 $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', false);
                 $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
@@ -903,7 +903,7 @@ $(function() {
     $('.kl-place').change(function() {
         if ($(this).is(':checked')) {
 
-            for (i = 1; i <= <?php echo count($kl_place_arr);?>; i++) {
+            for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
                 $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
                     'checked', true);
                 $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
@@ -911,7 +911,7 @@ $(function() {
             }
 
         } else {
-            for (i = 1; i <= <?php echo count($kl_place_arr);?>; i++) {
+            for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
                 $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
                     'checked', false);
                 $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
@@ -924,7 +924,7 @@ $(function() {
     $('.nt-place').change(function() {
         if ($(this).is(':checked')) {
 
-            for (i = 1; i <= <?php echo count($nt_place_arr);?>; i++) {
+            for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
                 $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
                     'checked', true);
                 $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
@@ -932,7 +932,7 @@ $(function() {
             }
 
         } else {
-            for (i = 1; i <= <?php echo count($nt_place_arr);?>; i++) {
+            for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
                 $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
                     'checked', false);
                 $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
