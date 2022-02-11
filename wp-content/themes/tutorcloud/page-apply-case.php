@@ -2240,7 +2240,30 @@ Year 6 -->
                                             </div>
 
                                             <div class="place-group">
+
+                                                <?php
+                                $nt_place_arr=array("將軍澳","西貢","荃灣","深井","馬灣","葵涌","荔景","葵芳","青衣","大圍","沙田","沙田市中心","小瀝源","火炭","馬鞍山","大埔","粉嶺","上水","元朗","天水圍","屯門","青龍頭","東涌","離島");
+                                for($i=0;$i<count($nt_place_arr);$i++)
+                                {
+                                    ?>
                                                 <div>
+                                                    <input class="form-check-input" type="checkbox"
+                                                        value="<?php echo $nt_place_arr[$i];?>"
+                                                        id="nt-class-area-value-<?php echo $i;?>" name="class-area[]"
+                                                        <?php echo $_POST['filter-form']&&in_array($nt_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
+                                                    <label class="form-check-label"
+                                                        for="nt-class-area-value-<?php echo $i;?>">
+                                                        <?php echo $nt_place_arr[$i];?>
+                                                    </label>
+                                                </div>
+                                                <?php
+                                }
+                                ?>
+
+
+
+
+                                                <!-- <div>
                                                     <input class="form-check-input" type="checkbox" value="將軍澳"
                                                         id="class-area-value-46" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-46">
@@ -2448,7 +2471,7 @@ Year 6 -->
                                                     <label class="form-check-label" for="class-area-value-69">
                                                         離島
                                                     </label>
-                                                </div>
+                                                </div> -->
                                             </div>
 
 
