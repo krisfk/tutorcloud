@@ -3108,12 +3108,12 @@ $(function() {
     $('#all-university').change(function() {
         if ($(this).is(':checked')) {
 
-            for (i = 1; i <= 9; i++) {
+            for (i = 0; i <= <?php echo count($university_arr);?>; i++) {
                 $('#university-value-' + i).prop('checked', true);
             }
 
         } else {
-            for (i = 1; i <= 9; i++) {
+            for (i = 0; i <= <?php echo count($university_arr);?>; i++) {
                 $('#university-value-' + i).prop('checked', false);
             }
         }
