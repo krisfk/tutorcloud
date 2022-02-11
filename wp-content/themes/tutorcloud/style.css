@@ -863,7 +863,19 @@ input[type='number'] {
     width: max-content;
 }
 
-.page-numbers {}
+.page-numbers {
+    display: inline-block;
+    border: 1px solid;
+    /* width: 10px; */
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    background: #618382;
+    color: #fff;
+    line-height: 1.9rem;
+    margin: 0 0.2rem;
+}
 
 .page-numbers a {}
 
