@@ -455,31 +455,31 @@ while ( $loop->have_posts() ) {
             <div class="pagination">
 
                 <?php 
-                  $current_page = max(1, get_query_var('paged'));
+                //   $current_page = max(1, get_query_var('paged'));
 
-                  echo paginate_links(array(
-                      'base' => get_pagenum_link(1) . '%_%',
-                      'format' => '/page/%#%',
-                      'current' => $paged,
-                      'total' => 8,
-                      'prev_text'    => __('« prev'),
-                      'next_text'    => __('next »'),
-                  ));
-        // echo paginate_links( array(
-        //     'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
-        //     'total'        => $query->max_num_pages,
-        //     'current'      => max( 1, get_query_var( 'paged' ) ),
-        //     'format'       => '?paged=%#%',
-        //     'show_all'     => false,
-        //     'type'         => 'plain',
-        //     'end_size'     => 2,
-        //     'mid_size'     => 1,
-        //     'prev_next'    => true,
-        //     'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'text-domain' ) ),
-        //     'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'text-domain' ) ),
-        //     'add_args'     => false,
-        //     'add_fragment' => '',
-        // ) );
+                //   echo paginate_links(array(
+                //       'base' => get_pagenum_link(1) . '%_%',
+                //       'format' => '/page/%#%',
+                //       'current' => $paged,
+                //       'total' => $query->max_num_pages,
+                //       'prev_text'    => __('« prev'),
+                //       'next_text'    => __('next »'),
+                //   ));
+        echo paginate_links( array(
+            'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+            'total'        => $loop->max_num_pages,
+            'current'      => max( 1, get_query_var( 'paged' ) ),
+            'format'       => '?paged=%#%',
+            'show_all'     => false,
+            'type'         => 'plain',
+            'end_size'     => 2,
+            'mid_size'     => 1,
+            'prev_next'    => true,
+            'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'text-domain' ) ),
+            'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'text-domain' ) ),
+            'add_args'     => false,
+            'add_fragment' => '',
+        ) );
     ?>
             </div>
 
