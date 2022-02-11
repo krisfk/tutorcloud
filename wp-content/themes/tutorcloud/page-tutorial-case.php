@@ -57,175 +57,29 @@ get_header();
                                         所有程度
                                     </label>
                                 </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="K1"
-                                        id="student-level-value-1" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("K1", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-1">
-                                        K1
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="K2"
-                                        id="student-level-value-2" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("K2", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-2">
-                                        K2
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="K3"
-                                        id="student-level-value-3" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("K3", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-3">
-                                        K3
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="小一"
-                                        id="student-level-value-4" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("小一", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-4">
-                                        小一
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="小二"
-                                        id="student-level-value-5" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("小二", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-5">
-                                        小二
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="小三"
-                                        id="student-level-value-6" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("小三", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-6">
-                                        小三
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="小四"
-                                        id="student-level-value-7" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("小四", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-7">
-                                        小四
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="小五"
-                                        id="student-level-value-8" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("小五", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-8">
-                                        小五
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="小六"
-                                        id="student-level-value-9" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("小六", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-9">
-                                        小六
-                                    </label>
-                                </div>
 
+                                <?php 
+                                $student_level_arr=array("K1","K2","K3","小一","小二","小三","小四","小五","小六","中一","中二","中三","中四","中五","中六","Year 1","Year 2","Year 3","Year 4","Year 5","Year 6");
+                                ?>
+                                <?php
+                                
+                                for($i=0;$i<=count($student_level_arr);$i++)
+                                {
+                                    ?>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="中一"
-                                        id="student-level-value-10" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("中一", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-10">
-                                        中一
+                                    <input class="form-check-input" type="checkbox"
+                                        value="<?php echo $student_level_arr[$i];?>"
+                                        id="student-level-value-<?php echo $i;?>" name="student-level[]"
+                                        <?php echo $_POST['filter-form']&&in_array($student_level_arr[$i], $_POST['student-level']) ? 'checked':''; ?>>
+                                    <label class="form-check-label" for="student-level-value-<?php echo $i;?>">
+                                        <?php echo $student_level_arr[$i];?>
                                     </label>
                                 </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="中二"
-                                        id="student-level-value-11" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("中二", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-11">
-                                        中二
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="中三"
-                                        id="student-level-value-12" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("中三", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-12">
-                                        中三
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="中四"
-                                        id="student-level-value-13" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("中四", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-13">
-                                        中四
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="中五"
-                                        id="student-level-value-14" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("中五", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-14">
-                                        中五
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="中六"
-                                        id="student-level-value-15" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("中六", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-15">
-                                        中六
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="Year 1"
-                                        id="student-level-value-16" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("Year 1", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-16">
-                                        Year 1
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="Year 2"
-                                        id="student-level-value-17" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("Year 2", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-17">
-                                        Year 2
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="Year 3"
-                                        id="student-level-value-18" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("Year 3", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-18">
-                                        Year 3
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="Year 4"
-                                        id="student-level-value-19" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("Year 4", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-19">
-                                        Year 4
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="Year 5"
-                                        id="student-level-value-20" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("Year 5", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-20">
-                                        Year 5
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="Year 6"
-                                        id="student-level-value-21" name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("Year 6", $_POST['student-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="student-level-value-21">
-                                        Year 6
-                                    </label>
-                                </div>
+                                <?php
+                                }
+                                ?>
+
+
 
                             </div>
 
