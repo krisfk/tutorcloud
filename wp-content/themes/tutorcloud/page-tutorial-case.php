@@ -1127,10 +1127,10 @@ get_header();
                 {
                     array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
                 }
-                // if($_POST['tutor-level'])
-                // {
-                //     array_push($meta_query_arr,array('key'=>'tutor_level','value'=>$_POST['tutor-level'],'compare' => 'IN'));
-                // }
+                if($_POST['student-level'])
+                {
+                    array_push($meta_query_arr,array('key'=>'student_level_2','value'=>$_POST['student-level'],'compare' => 'IN'));
+                }
                 // if($_POST['university'])
                 // {
                 //     // print_r($_POST['university']);
