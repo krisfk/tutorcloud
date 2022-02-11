@@ -1612,7 +1612,23 @@ Year 6 -->
                                 <tr>
                                     <td class="align-top">科目 *</td>
                                     <td>
+                                        <?php
+                                $subject_arr=array("全科","功課輔導","中文","英文","數學","數學 (M1)","數學 (M2)","通識","物理","化學","生物","綜合科學","資訊及通訊科技","地理","中史","西史","中國文學","英國文學","倫理與宗教","經濟","企業、會計與財務概論","旅遊與款待","普通話","常識");
+                                for($i=0;$i<count($subject_arr);$i++)
+                                {
+                                    ?>
+
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                                id="subject_value_<?php echo $i;?>" name="subjects[]"
+                                                value="<?php echo $subject_arr[$i];?>" /><label
+                                                for="subject_value_<?php echo $i;?>"><?php echo $subject_arr[$i];?></label>
+                                        </div>
+                                        <?php
+                                }
+                                ?>
+
+
+                                        <!-- <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="subject_value_1" name="subjects[]" value="全科" /><label
                                                 for="subject_value_1">全科</label></div>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
@@ -1648,13 +1664,8 @@ Year 6 -->
                                                 id="subject_value_11" name="subjects[]" value="生物" /><label
                                                 for="subject_value_11">生物</label></div>
 
-                                        <!-- <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_12" name="subjects[]" value="組合科學：物理 化學" /><label
-                                                for="subject_value_12">組合科學：物理 化學</label></div>
-                                        <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_13" name="subjects[]" value="組合科學：化學 生物" /><label
-                                                for="subject_value_13">組合科學：化學 生物</label></div> -->
-
+                                 
+                                                
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="subject_value_14" name="subjects[]" value="綜合科學" /><label
                                                 for="subject_value_14">綜合科學</label>
@@ -1700,7 +1711,7 @@ Year 6 -->
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="subject_value_26" name="subjects[]" value="常識" /><label
                                                 for="subject_value_26">常識</label>
-                                        </div>
+                                        </div> -->
 
                                     </td>
                                 </tr>
