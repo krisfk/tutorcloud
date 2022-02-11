@@ -877,6 +877,12 @@ input[type='number'] {
     margin: 0 0.2rem;
 }
 
+.page-numbers:hover {
+    background: #618382;
+    color: #fff;
+    border: none;
+}
+
 .page-numbers a {}
 
 .pagination {
