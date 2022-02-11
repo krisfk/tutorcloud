@@ -319,7 +319,7 @@ get_header();
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="tutor-level">可教授地區
+                        <td><label for="tutor-level">學生地區
                             </label></td>
                         <td>
                             <div>
