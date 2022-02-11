@@ -148,9 +148,9 @@ get_header();
                                     <div>
                                         <input class="form-check-input" type="checkbox"
                                             value="<?php echo $kl_place_arr[$i];?>"
-                                            id="class-area-value-<?php echo $i;?>" name="class-area[]"
+                                            id="kl-class-area-value-<?php echo $i;?>" name="class-area[]"
                                             <?php echo $_POST['filter-form']&&in_array($kl_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
-                                        <label class="form-check-label" for="class-area-value-<?php echo $i;?>">
+                                        <label class="form-check-label" for="kl-class-area-value-<?php echo $i;?>">
                                             <?php echo $kl_place_arr[$i];?>
                                         </label>
                                     </div>
@@ -1101,7 +1101,7 @@ $(function() {
     $('.hk-place').change(function() {
         if ($(this).is(':checked')) {
 
-            for (i = 1; i <= 17; i++) {
+            for (i = 1; i <= <?php echo count($hk_place_arr);?>; i++) {
                 $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', true);
                 $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
@@ -1109,7 +1109,7 @@ $(function() {
             }
 
         } else {
-            for (i = 1; i <= 17; i++) {
+            for (i = 1; i <= <?php echo count($hk_place_arr);?>; i++) {
                 $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', false);
                 $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
@@ -1139,18 +1139,18 @@ $(function() {
     $('.kl-place').change(function() {
         if ($(this).is(':checked')) {
 
-            for (i = 18; i <= 45; i++) {
-                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+            for (i = 1; i <= <?php echo count($kl_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
                     'checked', true);
-                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
                     'checked', true);
             }
 
         } else {
-            for (i = 18; i <= 45; i++) {
-                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+            for (i = 1; i <= <?php echo count($kl_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
                     'checked', false);
-                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
                     'checked', false);
             }
         }
