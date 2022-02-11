@@ -1130,6 +1130,14 @@ get_header();
                 {
                     array_push($meta_query_arr,array('key'=>'student_level_2','value'=>$_POST['student-level'],'compare' => 'IN'));
                 }
+
+                if($_POST['class-area'])
+                {
+                    array_push($meta_query_arr,array('key'=>'class_area','value'=>$_POST['class-area'],'compare' => 'IN'));
+                }
+
+
+                // class-area
                 // if($_POST['university'])
                 // {
                 //     // print_r($_POST['university']);
