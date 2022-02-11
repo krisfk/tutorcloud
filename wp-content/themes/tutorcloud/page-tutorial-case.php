@@ -677,459 +677,460 @@ var tutor_list_arr = [];
 $(function() {
 
 
-            $(document).on('keydown', function(e) {
-                if (e.keyCode === 27) { // ESC
-                    $('.lightbox').fadeOut(0);
+    $(document).on('keydown', function(e) {
+        if (e.keyCode === 27) { // ESC
+            $('.lightbox').fadeOut(0);
 
 
-                }
+        }
+    });
+
+
+    $('.filter-btn').click(function() {
+
+        $('.lightbox').fadeIn(0);
+        $('.lightbox .lightbox-content').fadeOut(0);
+        $('.lightbox .lightbox-content.filter-content').fadeIn(0);
+
+    });
+
+
+    $('.prev-step-btn').fadeOut(0);
+
+    $('.add-btn-a').click(function() {
+
+        var select_student_id = $(this).closest('li').attr('data-student-id');
+
+        if (!tutor_list_arr.includes(select_student_id)) {
+            tutor_list_arr.push(select_student_id);
+            console.log(tutor_list_arr);
+
+            var added_to_cart_html =
+                '<li><span>' + select_student_id +
+                '</span><a href="javascript:void(0);" class="list-close-btn"></a></li>';
+
+            $('.added-list ul').append(added_to_cart_html);
+
+            $('.list-close-btn').click(function() {
+                var select_student_id = $(this).prev('span').html();
+                tutor_list_arr = tutor_list_arr.filter(student_id => student_id !=
+                    select_student_id);
+                $(this).closest('li').remove();
+                console.log(tutor_list_arr);
             });
 
 
-            $('.filter-btn').click(function() {
+        } else {
+            alert('這導師已加入心儀導師名單');
+        }
 
-                $('.lightbox').fadeIn(0);
-                $('.lightbox .lightbox-content').fadeOut(0);
-                $('.lightbox .lightbox-content.filter-content').fadeIn(0);
+        // alert(select_student_id);
+    });
 
-            });
+    $('.data-column').click(function() {
 
+        $('.lightbox').fadeIn(0);
+        $('.lightbox .lightbox-content').fadeOut(0);
+        $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
 
-            $('.prev-step-btn').fadeOut(0);
+        $('#lbc-short-address').html($(this).closest('.student-content-li').attr('data-short-address'));
 
-            $('.add-btn-a').click(function() {
+        $('#map').attr('src',
+            'https://www.google.com/maps/embed/v1/place?q=' + $(this).closest('.student-content-li')
+            .attr('data-short-address') + '&key=AIzaSyBN611NFShALGyApUBivJPfvqlEIvbPRNU'
+        );
 
-                var select_student_id = $(this).closest('li').attr('data-student-id');
 
-                if (!tutor_list_arr.includes(select_student_id)) {
-                    tutor_list_arr.push(select_student_id);
-                    console.log(tutor_list_arr);
+        $('#lbc-student-id').html($(this).closest('.student-content-li').attr('data-student-id'));
+        $('#lbc-student-gender').html($(this).closest('.student-content-li').attr(
+            'data-student-gender'));
+        $('#lbc-salary').html($(this).closest('.student-content-li').attr('data-salary'));
+        $('#lbc-tutorial-style').html($(this).closest('.student-content-li').attr(
+            'data-tutorial-style'));
+        $('#lbc-student-level').html($(this).closest('.student-content-li').attr('data-student-level'));
+        $('#lbc-subjects').html($(this).closest('.student-content-li').attr('data-subjects'));
 
-                    var added_to_cart_html =
-                        '<li><span>' + select_student_id +
-                        '</span><a href="javascript:void(0);" class="list-close-btn"></a></li>';
 
-                    $('.added-list ul').append(added_to_cart_html);
 
-                    $('.list-close-btn').click(function() {
-                        var select_student_id = $(this).prev('span').html();
-                        tutor_list_arr = tutor_list_arr.filter(student_id => student_id !=
-                            select_student_id);
-                        $(this).closest('li').remove();
-                        console.log(tutor_list_arr);
-                    });
+        var lesson_hour_str = '一星期' + $(this).closest('.student-content-li').attr('data-lesson-hour') +
+            '堂 ; 一堂' + $(this).closest('.student-content-li').attr('data-time') + '小時';
+        $('#lbc-lesson-hour').html(lesson_hour_str);
 
+        $('#lbc-time').html($(this).closest('.student-content-li').attr('data-start-tutorial-time'));
+        $('#lbc-tutor-gender').html($(this).closest('.student-content-li').attr('data-tutor-gender'));
+        // $('#lbc-tutor-gender').html(999);
 
-                } else {
-                    alert('這導師已加入心儀導師名單');
-                }
+        $('#lbc-tutorial-target').html($(this).closest('.student-content-li').attr(
+            'data-tutorial-target'));
 
-                // alert(select_student_id);
-            });
+        $('#lbc-tutor-requirement').html($(this).closest('.student-content-li').attr(
+            'data-tutor-requirement'));
+        $('#lbc-other-requirement').html($(this).closest('.student-content-li').attr(
+            'data-other-requirement'));
 
-            $('.data-column').click(function() {
 
-                $('.lightbox').fadeIn(0);
-                $('.lightbox .lightbox-content').fadeOut(0);
-                $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
 
-                $('#lbc-short-address').html($(this).closest('.student-content-li').attr('data-short-address'));
 
-                $('#map').attr('src',
-                    'https://www.google.com/maps/embed/v1/place?q=' + $(this).closest('.student-content-li')
-                    .attr('data-short-address') + '&key=AIzaSyBN611NFShALGyApUBivJPfvqlEIvbPRNU'
-                );
 
+        // $('#lbc-self-intro').html($(this).closest('.student-content-li').attr('data-self-intro'));
 
-                $('#lbc-student-id').html($(this).closest('.student-content-li').attr('data-student-id'));
-                $('#lbc-student-gender').html($(this).closest('.student-content-li').attr(
-                    'data-student-gender'));
-                $('#lbc-salary').html($(this).closest('.student-content-li').attr('data-salary'));
-                $('#lbc-tutorial-style').html($(this).closest('.student-content-li').attr(
-                    'data-tutorial-style'));
-                $('#lbc-student-level').html($(this).closest('.student-content-li').attr('data-student-level'));
-                $('#lbc-subjects').html($(this).closest('.student-content-li').attr('data-subjects'));
 
+        // alert($(this).closest('.student-content-li').attr('data-self-intro'));
 
+        // $('#lbc-self-intro').html($(this).closest('.student-content-li').attr('data-self-intro'));
+        // $('#lbc-lesson-lang').html($(this).closest('.student-content-li').attr('data-lesson-lang'));
 
-                var lesson_hour_str = '一星期' + $(this).closest('.student-content-li').attr('data-lesson-hour') +
-                    '堂 ; 一堂' + $(this).closest('.student-content-li').attr('data-time') + '小時';
-                $('#lbc-lesson-hour').html(lesson_hour_str);
+        // $('#lbc-result').html($(this).closest('.student-content-li').attr('data-result'));
 
-                $('#lbc-time').html($(this).closest('.student-content-li').attr('data-start-tutorial-time'));
-                $('#lbc-tutor-gender').html($(this).closest('.student-content-li').attr('data-tutor-gender'));
-                // $('#lbc-tutor-gender').html(999);
 
-                $('#lbc-tutorial-target').html($(this).closest('.student-content-li').attr(
-                    'data-tutorial-target'));
+        // $('#lbc-living-area').html($(this).closest('.student-content-li').attr('data-living-area'));
 
-                $('#lbc-tutor-requirement').html($(this).closest('.student-content-li').attr(
-                    'data-tutor-requirement'));
-                $('#lbc-other-requirement').html($(this).closest('.student-content-li').attr(
-                    'data-other-requirement'));
+        // $('#lbc-student-id').html($(this).closest('.student-content-li').attr('data-student-id'));
+        // $('#lbc-gender').html($(this).closest('.student-content-li').attr('data-gender'));
+        // $('#lbc-born-year').html($(this).closest('.student-content-li').attr('data-born-year'));
 
+        // $('#lbc-s-school').html($(this).closest('.student-content-li').attr('data-s-school'));
+        // $('#lbc-bac-degree').html($(this).closest('.student-content-li').attr('data-bac-degree'));
+        // $('#lbc-lowest-salary').html($(this).closest('.student-content-li').attr('data-lowest-salary'));
+        // $('#lbc-past-exam').html($(this).closest('.student-content-li').attr('data-past-exam'));
 
+        // $('#lbc-teach-level').html($(this).closest('.student-content-li').attr('data-teach-level'));
+        // $('#lbc-teach-subjects').html($(this).closest('.student-content-li').attr('data-teach-subjects'));
 
 
 
-                // $('#lbc-self-intro').html($(this).closest('.student-content-li').attr('data-self-intro'));
 
 
-                // alert($(this).closest('.student-content-li').attr('data-self-intro'));
+        var class_area = $(this).closest('.student-content-li').attr('data-class-area');
+        var class_area_arr = class_area.split(',');
 
-                // $('#lbc-self-intro').html($(this).closest('.student-content-li').attr('data-self-intro'));
-                // $('#lbc-lesson-lang').html($(this).closest('.student-content-li').attr('data-lesson-lang'));
+        $('.place-span').removeClass('deep-green');
+        for (i = 0; i < $('.place-span').length; i++) {
 
-                // $('#lbc-result').html($(this).closest('.student-content-li').attr('data-result'));
+            if (class_area_arr.includes($('.place-span').eq(i).html())) {
+                $('.place-span').eq(i).addClass('deep-green');
+            }
+        }
 
+        // id="lbc-self-intro
 
-                // $('#lbc-living-area').html($(this).closest('.student-content-li').attr('data-living-area'));
 
-                // $('#lbc-student-id').html($(this).closest('.student-content-li').attr('data-student-id'));
-                // $('#lbc-gender').html($(this).closest('.student-content-li').attr('data-gender'));
-                // $('#lbc-born-year').html($(this).closest('.student-content-li').attr('data-born-year'));
+        // $('#lbc-self-intro').html();
+    })
 
-                // $('#lbc-s-school').html($(this).closest('.student-content-li').attr('data-s-school'));
-                // $('#lbc-bac-degree').html($(this).closest('.student-content-li').attr('data-bac-degree'));
-                // $('#lbc-lowest-salary').html($(this).closest('.student-content-li').attr('data-lowest-salary'));
-                // $('#lbc-past-exam').html($(this).closest('.student-content-li').attr('data-past-exam'));
+    $('.close-btn,.lightbox-bg-btn').click(function() {
+        $('.lightbox').fadeOut(0);
+        $('#map').attr('src', '');
+    })
 
-                // $('#lbc-teach-level').html($(this).closest('.student-content-li').attr('data-teach-level'));
-                // $('#lbc-teach-subjects').html($(this).closest('.student-content-li').attr('data-teach-subjects'));
 
 
+    $('#all-student-level').change(function() {
+        if ($(this).is(':checked')) {
+            for (i = 1; i <= 21; i++) {
+                $('#student-level-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= 21; i++) {
+                $('#student-level-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
+
+    $('#all-place-1, #all-place-2 ').change(function() {
+        if ($(this).is(':checked')) {
+
 
+            $('#hk-place-1').prop('checked', true);
+            $('#kl-place-1').prop('checked', true);
+            $('#nt-place-1').prop('checked', true);
+            $('input[name="class-area[]"]').prop('checked', true);
+            // .prop('checked', false);
 
+        } else {
+            $('#hk-place-2').prop('checked', false);
+            $('#kl-place-2').prop('checked', false);
+            $('#nt-place-2').prop('checked', false);
+            $('input[name="class-area[]"]').prop('checked', false);
 
-                var class_area = $(this).closest('.student-content-li').attr('data-class-area');
-                var class_area_arr = class_area.split(',');
+        }
+    });
+
+
+    $('.hk-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= <?php echo count($hk_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= <?php echo count($hk_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', false);
+                // $('#class-area-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
+
+
+    $('#all-university').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= 9; i++) {
+                $('#university-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= 9; i++) {
+                $('#university-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
+
+    $('.kl-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= <?php echo count($kl_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= <?php echo count($kl_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', false);
+            }
+        }
+    })
+
+
+    $('.nt-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= <?php echo count($nt_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
+                    'checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= <?php echo count($nt_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
+                    'checked', false);
+            }
+        }
+    })
+
+
+
+    $('.filter-case.submit-btn').click(function() {
+
+        $('form#filter-form').submit();
+
+    })
+
+    $('.apply-case.submit-btn').click(function() {
+        var chi_name = $('#chi-name').val();
+        var eng_name = $('#eng-name').val();
+        var whatsapp_tel = $('#whatsapp-tel').val();
+        var confirm_whatsapp_tel = $('#confirm-whatsapp-tel').val();
+
+        var email = $('#email').val();
+        var gender = $('input[name="gender"]:checked').val();
+        var tutorial_course = $('#tutorial-course').val();
+        var student_level = $('#student-level').val();
+        var student_level_2 = $('#student-level-2').val();
+        var paper_lang = $('input[name="paper-lang"]:checked').val();
+        // var subjects = $('')
+        var tutorial_style = $('input[name="tutorial-style"]:checked').val();
+        // alert()
+        var short_address = $('#short-address').val();
+        var transport = $('#transport').val();
+        var cost_per_ppl = $('#cost-per-ppl').val();
+        var lesson_per_week = $('#lesson-per-week').val();
+        var hour_per_lesson = $('#hour-per-lesson').val();
+        var tutor_gender = $('input[name="tutor-gender"]:checked').val();
+        var error_txt = '';
+
+
+        if (!chi_name) {
+            error_txt +=
+                '請輸入中文全名\n';
+        }
+
+        if (!eng_name) {
+            error_txt +=
+                '請輸入英文全名\n';
+        }
+
+        if (!whatsapp_tel) {
+            error_txt +=
+                'WhatsApp 電話號碼\n';
+        }
 
-                $('.place-span').removeClass('deep-green');
-                for (i = 0; i < $('.place-span').length; i++) {
 
-                    if (class_area_arr.includes($('.place-span').eq(i).html())) {
-                        $('.place-span').eq(i).addClass('deep-green');
-                    }
-                }
+        if (confirm_whatsapp_tel != whatsapp_tel) {
+            error_txt +=
+                '確認 WhatsApp 電話號碼輸入不相同\n';
+        }
 
-                // id="lbc-self-intro
 
+        if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
+            error_txt += 'WhatsApp 電話格式不正確\n';
+        }
+        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
+            error_txt +=
+                '電郵格式不正確\n';
+        }
 
-                // $('#lbc-self-intro').html();
-            })
 
-            $('.close-btn,.lightbox-bg-btn').click(function() {
-                $('.lightbox').fadeOut(0);
-                $('#map').attr('src', '');
-            })
 
+        if (!gender) {
+            error_txt +=
+                '請輸入性別\n';
+        }
 
+        if (!tutorial_course) {
+            error_txt +=
+                '請輸入補習課程\n';
+        }
+        if (!student_level) {
+            error_txt +=
+                '請輸入就讀年級\n';
+        }
+        if (!student_level_2) {
+            error_txt +=
+                '請輸入所屬年級\n';
+        }
 
-            $('#all-student-level').change(function() {
-                if ($(this).is(':checked')) {
-                    for (i = 1; i <= 21; i++) {
-                        $('#student-level-value-' + i).prop('checked', true);
-                    }
+        if (!paper_lang) {
+            error_txt +=
+                '請輸入語言\n';
+        }
+        if (!tutorial_style) {
+            error_txt +=
+                '請選擇補習方式\n';
+        }
 
-                } else {
-                    for (i = 1; i <= 21; i++) {
-                        $('#student-level-value-' + i).prop('checked', false);
-                    }
-                }
-            })
 
 
-            $('#all-place-1, #all-place-2 ').change(function() {
-                    if ($(this).is(':checked')) {
 
+        val = []
+        $('input[name="class-area[]"]:checked').each(function(i) {
+            val[i] = $(this).val();
+        });
+        if (val.length == 0) {
+            error_txt += '請選擇補習地區\n';
+        }
 
-                        $('#hk-place-1').prop('checked', true);
-                        $('#kl-place-1').prop('checked', true);
-                        $('#nt-place-1').prop('checked', true);
-                        // $('input[name="class-area[]"]').prop('checked', true);
-                        // .prop('checked', false);
+        if (!short_address) {
+            error_txt +=
+                '請輸入詳細地址\n';
+        }
 
-                    } else {
-                        $('#hk-place-2').prop('checked', false);
-                        $('#kl-place-2').prop('checked', false);
-                        $('#nt-place-2').prop('checked', false);
-                        // $('input[name="class-area[]"]').prop('checked', false);
+        if (!transport) {
+            error_txt +=
+                '請輸入交通方法\n';
 
-                    });
+        }
 
+        if (!cost_per_ppl) {
+            error_txt +=
+                '請輸入每小時收費\n';
+        }
 
-                $('.hk-place').change(function() {
-                    if ($(this).is(':checked')) {
 
-                        for (i = 1; i <= <?php echo count($hk_place_arr);?>; i++) {
-                            $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
-                                'checked', true);
-                            $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
-                                'checked', true);
-                        }
 
-                    } else {
-                        for (i = 1; i <= <?php echo count($hk_place_arr);?>; i++) {
-                            $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
-                                'checked', false);
-                            $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
-                                'checked', false);
-                            // $('#class-area-value-' + i).prop('checked', false);
-                        }
-                    }
-                })
+        if (!lesson_per_week) {
+            error_txt +=
+                '請輸入每星期堂數\n';
+        }
 
+        if (!hour_per_lesson) {
+            error_txt +=
+                '每堂時間(小時)\n';
+        }
 
+        if (!tutor_gender) {
+            error_txt +=
+                '導師性別要求\n';
+        }
 
-                $('#all-university').change(function() {
-                    if ($(this).is(':checked')) {
 
-                        for (i = 1; i <= 9; i++) {
-                            $('#university-value-' + i).prop('checked', true);
-                        }
 
-                    } else {
-                        for (i = 1; i <= 9; i++) {
-                            $('#university-value-' + i).prop('checked', false);
-                        }
-                    }
-                })
+        if (!error_txt) {
+            $('form#apply-case-form').submit();
+        } else {
+            alert(error_txt);
+        }
 
 
-                $('.kl-place').change(function() {
-                    if ($(this).is(':checked')) {
 
-                        for (i = 1; i <= <?php echo count($kl_place_arr);?>; i++) {
-                            $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
-                                'checked', true);
-                            $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
-                                'checked', true);
-                        }
+        var lowest_salary = $('#lowest-salary').val();
 
-                    } else {
-                        for (i = 1; i <= <?php echo count($kl_place_arr);?>; i++) {
-                            $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
-                                'checked', false);
-                            $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
-                                'checked', false);
-                        }
-                    }
-                })
 
 
-                $('.nt-place').change(function() {
-                    if ($(this).is(':checked')) {
 
-                        for (i = 1; i <= <?php echo count($nt_place_arr);?>; i++) {
-                            $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
-                                'checked', true);
-                            $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
-                                'checked', true);
-                        }
 
-                    } else {
-                        for (i = 1; i <= <?php echo count($nt_place_arr);?>; i++) {
-                            $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
-                                'checked', false);
-                            $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
-                                'checked', false);
-                        }
-                    }
-                })
+    })
 
 
+    $('.next-step-btn').click(function() {
 
-                $('.filter-case.submit-btn').click(function() {
+        if (tutor_list_arr.length == 0) {
+            alert('請加入心儀導師');
+        } else {
+            $('.tutor-list-ul').fadeOut(0);
+            $('.student-form-div').fadeIn(0);
+            $('.prev-step-btn').fadeIn(0);
+            $('.next-step-btn').fadeOut(0);
+            $('.list-close-btn').fadeOut(0);
 
-                    $('form#filter-form').submit();
+            $('.step-txt').removeClass('active');
+            $('.step-txt').eq(1).addClass('active');
 
-                })
+        }
 
-                $('.apply-case.submit-btn').click(function() {
-                    var chi_name = $('#chi-name').val();
-                    var eng_name = $('#eng-name').val();
-                    var whatsapp_tel = $('#whatsapp-tel').val();
-                    var confirm_whatsapp_tel = $('#confirm-whatsapp-tel').val();
+    })
 
-                    var email = $('#email').val();
-                    var gender = $('input[name="gender"]:checked').val();
-                    var tutorial_course = $('#tutorial-course').val();
-                    var student_level = $('#student-level').val();
-                    var student_level_2 = $('#student-level-2').val();
-                    var paper_lang = $('input[name="paper-lang"]:checked').val();
-                    // var subjects = $('')
-                    var tutorial_style = $('input[name="tutorial-style"]:checked').val();
-                    // alert()
-                    var short_address = $('#short-address').val();
-                    var transport = $('#transport').val();
-                    var cost_per_ppl = $('#cost-per-ppl').val();
-                    var lesson_per_week = $('#lesson-per-week').val();
-                    var hour_per_lesson = $('#hour-per-lesson').val();
-                    var tutor_gender = $('input[name="tutor-gender"]:checked').val();
-                    var error_txt = '';
+    $('.prev-step-btn').click(function() {
+        $('.next-step-btn').fadeIn(0);
+        $('.prev-step-btn').fadeOut(0);
+        $('.tutor-list-ul').fadeIn(0);
+        $('.student-form-div').fadeOut(0);
+        $('.list-close-btn').fadeIn(0);
 
+        $('.step-txt').removeClass('active');
 
-                    if (!chi_name) {
-                        error_txt +=
-                            '請輸入中文全名\n';
-                    }
+        $('.step-txt').eq(0).addClass('active');
 
-                    if (!eng_name) {
-                        error_txt +=
-                            '請輸入英文全名\n';
-                    }
+    })
 
-                    if (!whatsapp_tel) {
-                        error_txt +=
-                            'WhatsApp 電話號碼\n';
-                    }
+    $('.tutor-list-ul.data-column').click(function() {
 
-
-                    if (confirm_whatsapp_tel != whatsapp_tel) {
-                        error_txt +=
-                            '確認 WhatsApp 電話號碼輸入不相同\n';
-                    }
-
-
-                    if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
-                        error_txt += 'WhatsApp 電話格式不正確\n';
-                    }
-                    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
-                        error_txt +=
-                            '電郵格式不正確\n';
-                    }
-
-
-
-                    if (!gender) {
-                        error_txt +=
-                            '請輸入性別\n';
-                    }
-
-                    if (!tutorial_course) {
-                        error_txt +=
-                            '請輸入補習課程\n';
-                    }
-                    if (!student_level) {
-                        error_txt +=
-                            '請輸入就讀年級\n';
-                    }
-                    if (!student_level_2) {
-                        error_txt +=
-                            '請輸入所屬年級\n';
-                    }
-
-                    if (!paper_lang) {
-                        error_txt +=
-                            '請輸入語言\n';
-                    }
-                    if (!tutorial_style) {
-                        error_txt +=
-                            '請選擇補習方式\n';
-                    }
-
-
-
-
-                    val = []
-                    $('input[name="class-area[]"]:checked').each(function(i) {
-                        val[i] = $(this).val();
-                    });
-                    if (val.length == 0) {
-                        error_txt += '請選擇補習地區\n';
-                    }
-
-                    if (!short_address) {
-                        error_txt +=
-                            '請輸入詳細地址\n';
-                    }
-
-                    if (!transport) {
-                        error_txt +=
-                            '請輸入交通方法\n';
-
-                    }
-
-                    if (!cost_per_ppl) {
-                        error_txt +=
-                            '請輸入每小時收費\n';
-                    }
-
-
-
-                    if (!lesson_per_week) {
-                        error_txt +=
-                            '請輸入每星期堂數\n';
-                    }
-
-                    if (!hour_per_lesson) {
-                        error_txt +=
-                            '每堂時間(小時)\n';
-                    }
-
-                    if (!tutor_gender) {
-                        error_txt +=
-                            '導師性別要求\n';
-                    }
-
-
-
-                    if (!error_txt) {
-                        $('form#apply-case-form').submit();
-                    } else {
-                        alert(error_txt);
-                    }
-
-
-
-                    var lowest_salary = $('#lowest-salary').val();
-
-
-
-
-
-                })
-
-
-                $('.next-step-btn').click(function() {
-
-                    if (tutor_list_arr.length == 0) {
-                        alert('請加入心儀導師');
-                    } else {
-                        $('.tutor-list-ul').fadeOut(0);
-                        $('.student-form-div').fadeIn(0);
-                        $('.prev-step-btn').fadeIn(0);
-                        $('.next-step-btn').fadeOut(0);
-                        $('.list-close-btn').fadeOut(0);
-
-                        $('.step-txt').removeClass('active');
-                        $('.step-txt').eq(1).addClass('active');
-
-                    }
-
-                })
-
-                $('.prev-step-btn').click(function() {
-                    $('.next-step-btn').fadeIn(0);
-                    $('.prev-step-btn').fadeOut(0);
-                    $('.tutor-list-ul').fadeIn(0);
-                    $('.student-form-div').fadeOut(0);
-                    $('.list-close-btn').fadeIn(0);
-
-                    $('.step-txt').removeClass('active');
-
-                    $('.step-txt').eq(0).addClass('active');
-
-                })
-
-                $('.tutor-list-ul.data-column').click(function() {
-
-                    // $('form#filter-form').submit();
-                });
-                // $('.add-btn-a').click(function() {
-                //     // alert(87);
-                // })
-            })
+        // $('form#filter-form').submit();
+    });
+    // $('.add-btn-a').click(function() {
+    //     // alert(87);
+    // })
+})
 </script>
 <?php
 get_footer();
