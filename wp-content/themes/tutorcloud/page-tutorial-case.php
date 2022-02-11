@@ -23,7 +23,7 @@ get_header();
 
     <div class="lightbox-content filter-content">
 
-        <form action="" method="post" id="filter-form">
+        <form action="<?php echo get_site_url();?>/tutorial-case" method="post" id="filter-form">
             <div class="step-content d-block">
                 <a href="javascript:void(0);" class="close-btn">
 
