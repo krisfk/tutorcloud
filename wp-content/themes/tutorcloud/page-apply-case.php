@@ -3085,18 +3085,18 @@ $(function() {
     $('.hk-place').change(function() {
         if ($(this).is(':checked')) {
 
-            for (i = 1; i <= 17; i++) {
-                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+            for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', true);
-                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', true);
             }
 
         } else {
-            for (i = 1; i <= 17; i++) {
-                $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
+            for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', false);
-                $(this).parent('div').find('.place-group').find('#class-area-value-' + i).prop(
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', false);
                 // $('#class-area-value-' + i).prop('checked', false);
             }
