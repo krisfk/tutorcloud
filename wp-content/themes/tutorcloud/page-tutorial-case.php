@@ -855,7 +855,7 @@ $(function() {
                         $('#nt-place-2').prop('checked', false);
                         $('input[name="class-area[]"]').prop('checked', false);
 
-                    })
+                    });
 
 
                 $('.hk-place').change(function() {
