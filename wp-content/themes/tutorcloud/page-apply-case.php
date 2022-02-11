@@ -971,6 +971,14 @@ get_header();
 
     </div>
 
+    <div class="lightbox-content lightbox-msg">
+        <a href="javascript:void(0);" class="close-btn">
+
+            <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
+        </a>
+        fdsfdsfdsf
+    </div>
+
     <div class="lightbox-content tutor-intro">
 
         <a href="javascript:void(0);" class="close-btn">
@@ -2987,6 +2995,12 @@ $(function() {
                 $(this).closest('li').remove();
                 console.log(tutor_list_arr);
             });
+
+
+
+            $('.lightbox').fadeIn(0);
+            $('.lightbox .lightbox-content').fadeOut(0);
+            $('.lightbox .lightbox-content.lightbox-msg').fadeIn(0);
 
 
         } else {
