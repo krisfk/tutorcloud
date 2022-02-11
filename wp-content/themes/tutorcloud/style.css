@@ -862,3 +862,7 @@ input[type='number'] {
 .other-subject-input {
     width: max-content;
 }
+
+.page-numbers {}
+
+.page-numbers a {}
