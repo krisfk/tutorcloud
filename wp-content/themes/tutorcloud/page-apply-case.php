@@ -1365,7 +1365,7 @@ while ( $loop->have_posts() ) {
                             <div class='col-2 data-column'>可接受最低時薪： <br>$<?php echo get_field('lowest_salary');?></div>
                             <div class='col-2 data-column'>
                                 可教授科目： <br>
-                                <?php echo $teach_level_str;?>
+                                <?php echo $subjects_list;?>
                                 <!-- XX XX XX -->
                                 <!-- 數學 化學 經濟 -->
                             </div>
