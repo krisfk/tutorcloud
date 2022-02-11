@@ -386,9 +386,8 @@ get_header();
     'posts_per_page' => 2, 
     'orderby' => 'date', 
     'order' => 'DESC', 
-    'paged' => $paged,
-    'meta_query' => $meta_query_arr
-    
+    'meta_query' => $meta_query_arr,
+    'paged' => $paged
 );
 
 $loop = new WP_Query( $args ); 
