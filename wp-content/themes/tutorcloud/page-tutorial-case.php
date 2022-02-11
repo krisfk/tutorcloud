@@ -183,11 +183,11 @@ get_header();
                                     ?>
                                     <div>
                                         <input class="form-check-input" type="checkbox"
-                                            value="<?php echo $kl_place_arr[$i];?>"
+                                            value="<?php echo $nt_place_arr[$i];?>"
                                             id="nt-class-area-value-<?php echo $i;?>" name="class-area[]"
-                                            <?php echo $_POST['filter-form']&&in_array($kl_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
+                                            <?php echo $_POST['filter-form']&&in_array($nt_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
                                         <label class="form-check-label" for="nt-class-area-value-<?php echo $i;?>">
-                                            <?php echo $kl_place_arr[$i];?>
+                                            <?php echo $nt_place_arr[$i];?>
                                         </label>
                                     </div>
                                     <?php
