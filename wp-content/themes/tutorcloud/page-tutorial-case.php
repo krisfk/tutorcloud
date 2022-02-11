@@ -1008,10 +1008,10 @@ get_header();
         </div>
 
         <div class="row gx-0">
-            <h2 class="col-12 text-center" id="lbc-short-address">
+            <h3 class="col-12 text-center" id="lbc-short-address">
                 <!-- 馬鞍山新港城 -->
 
-            </h2>
+            </h3>
             <div class="col-6">
                 <table class="detail-content-table">
                     <tr>
@@ -1072,9 +1072,8 @@ get_header();
             </div>
 
             <div class="col-12 mt-4 mb-4">
-                <iframe width="100%" height="200" frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?q=油塘中心&amp;key=AIzaSyD4-tZJQ6d28E9K_42KdRLCIDSlns3iy9Q"
-                    allowfullscreen=""></iframe>
+                <iframe width="100%" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=油塘中心
+                    " allowfullscreen=""></iframe>
             </div>
 
 
