@@ -383,7 +383,7 @@ get_header();
   $args = array(  
     'post_type' => 'student',
     'post_status' => 'publish',
-    'posts_per_page' => 8, 
+    'posts_per_page' => 10, 
     'orderby' => 'date', 
     'order' => 'DESC', 
     'meta_query' => $meta_query_arr,
