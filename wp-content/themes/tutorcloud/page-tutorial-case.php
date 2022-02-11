@@ -53,9 +53,9 @@ get_header();
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="1" id="all-student-level"
                                         name="all-student-level"
-                                        <?php echo $_POST['all-student-level'] ? 'checked':'';?> <label
+                                        <?php echo $_POST['all-student-level'] ? 'checked':'';?>> <label
                                         class="form-check-label" for="all-student-level">
-                                    所有程度
+                                        所有程度
                                     </label>
                                 </div>
 
