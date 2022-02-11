@@ -151,7 +151,8 @@ get_header();
                                 <div>
                                     <input class="form-check-input" type="checkbox"
                                         value="<?php echo $university_arr[$i];?>" id="university-value-<?php echo $i;?>"
-                                        name="university[]">
+                                        name="university[]"
+                                        <?php echo $_POST['filter-form']&&in_array($university_arr[$i], $_POST['university']) ? 'checked':''; ?>>
                                     <label class="form-check-label" for="university-value-<?php echo $i;?>">
                                         <?php echo $university_arr[$i];?>
                                     </label>
