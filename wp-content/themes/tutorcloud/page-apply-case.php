@@ -1372,7 +1372,7 @@ while ( $loop->have_posts() ) {
                             <div class='col-2 add-btn-column text-center'>
 
 
-                                <table>
+                                <table class="w-100 h-100">
 
                                     <tr>
                                         <td> <a class="add-btn-a" href="javascript:void(0);">
