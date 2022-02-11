@@ -87,98 +87,14 @@ get_header();
                     </tr>
 
 
-                    <!-- <tr>
-                        <td> <label for="tutor-level">就讀大學
-                            </label></td>
-                        <td>
-                            <div class="university-group">
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="" id="all-university"
-                                        name="">
-                                    <label class="form-check-label" for="all-university">
-                                        全部大學
-                                    </label>
-                                </div>
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="香港大學" id="university-value-1"
-                                        name="university[]">
-                                    <label class="form-check-label" for="university-value-1">
-                                        香港大學
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="香港中文大學"
-                                        id="university-value-2" name="university[]">
-                                    <label class="form-check-label" for="university-value-2">
-                                        香港中文大學
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="香港科技大學"
-                                        id="university-value-3" name="university[]">
-                                    <label class="form-check-label" for="university-value-3">
-                                        香港科技大學
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="香港城市大學"
-                                        id="university-value-4" name="university[]">
-                                    <label class="form-check-label" for="university-value-4">
-                                        香港城市大學
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="香港城市大學"
-                                        id="university-value-5" name="university[]">
-                                    <label class="form-check-label" for="university-value-5">
-                                        香港城市大學
-                                    </label>
-                                </div>
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="香港浸會大學"
-                                        id="university-value-6" name="university[]">
-                                    <label class="form-check-label" for="university-value-6">
-                                        香港浸會大學
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="香港都會大學"
-                                        id="university-value-7" name="university[]">
-                                    <label class="form-check-label" for="university-value-7">
-                                        香港都會大學
-                                    </label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="香港恒生大學"
-                                        id="university-value-8" name="university[]">
-                                    <label class="form-check-label" for="university-value-8">
-                                        香港恒生大學
-                                    </label>
-                                </div>
-
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="嶺南大學" id="university-value-9"
-                                        name="university[]">
-                                    <label class="form-check-label" for="university-value-9">
-                                        嶺南大學
-                                    </label>
-                                </div>
 
 
-                            </div>
-
-
-                        </td>
-                    </tr> -->
                     <tr>
                         <td><label for="student-place">學生地區
                             </label></td>
                         <td>
                             <div>
-                                <!-- <div class="mb-3"><label for=""> 地區 *</label>
-                                </div> -->
+
                                 <div>
                                     <input class="form-check-input" type="checkbox" id="all-place-1" name="">
                                     <label class="form-check-label" for="all-place-1">
@@ -194,7 +110,27 @@ get_header();
 
                                 <div class="place-group">
 
+
+                                    <?php
+                                $hk_place_arr=array("中半山","薄扶林","中上環","西環","灣仔","銅鑼灣","跑馬地","北角","鰂魚涌","太古","筲箕灣","西灣河","柴灣","小西灣","香港仔","鴨利洲","赤柱");
+                                for($i=1;$i<=count($hk_place_arr);$i++)
+                                {
+                                    ?>
                                     <div>
+                                        <input class="form-check-input" type="checkbox"
+                                            value="<?php echo $hk_place_arr[$i];?>"
+                                            id="class-area-value-<?php echo $i;?>" name="class-area[]"
+                                            <?php echo $_POST['filter-form']&&in_array($hk_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
+                                        <label class="form-check-label" for="class-area-value-<?php echo $i;?>">
+                                            <?php echo $hk_place_arr[$i];?>
+                                        </label>
+                                    </div>
+                                    <?php
+                                }
+                                ?>
+
+
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="中半山"
                                             id="class-area-value-1" name="class-area[]">
                                         <label class="form-check-label" for="class-area-value-1">
@@ -348,7 +284,7 @@ get_header();
                                         <label class="form-check-label" for="class-area-value-17">
                                             赤柱
                                         </label>
-                                    </div>
+                                    </div> -->
                                 </div>
 
 
