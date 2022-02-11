@@ -2721,7 +2721,24 @@ Year 6 -->
                                     </td>
                                     <td>
 
+
+                                        <?php
+                                    
+                                    $tutor_requirement_arr=array("提供筆記","提供練習","可以長補");
+
+                                    for($i=0;$i<count($tutor_requirement_arr);$i++)
+                                    {
+                                        ?>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                                id="tutor-requirement_value_<?php echo $i;?>" name="tutor-requirement[]"
+                                                value="<?php echo $tutor_requirement_arr[$i];?>" /><label
+                                                for="tutor-requirement_value_<?php echo $i;?>"><?php echo $tutor_requirement_arr[$i];?></label>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
+
+                                        <!-- <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="tutor-requirement_value_1" name="tutor-requirement[]"
                                                 value="提供筆記" /><label for="tutor-requirement_value_1">提供筆記</label>
                                         </div>
@@ -2741,7 +2758,7 @@ Year 6 -->
                                             <input class=" limit-input-w form-control mt-2 d-inline-block"
                                                 id="tutor-requirement-value-other" name="tutor-requirement-value-other"
                                                 type="text">
-                                        </div>
+                                        </div> -->
 
 
 
