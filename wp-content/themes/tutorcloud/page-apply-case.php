@@ -1371,13 +1371,20 @@ while ( $loop->have_posts() ) {
                             </div>
                             <div class='col-2 add-btn-column text-center'>
 
-                                <a class="add-btn-a" href="javascript:void(0);">
 
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/add-btn.png"
-                                        alt="">
-                                    <div>加入導師名單</div>
+                                <table>
 
-                                </a>
+                                    <tr>
+                                        <td> <a class="add-btn-a" href="javascript:void(0);">
+
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/add-btn.png"
+                                                    alt="">
+                                                <div>加入導師名單</div>
+
+                                            </a></td>
+                                    </tr>
+                                </table>
+
                             </div>
 
                         </div>
