@@ -2579,8 +2579,23 @@ Year 6 -->
 
                                         </label></td>
                                     <td>
+                                        <?php
+                                        
+                                        $day_arr=array("星期一","星期二","星期三","星期四","星期五","星期六","星期日");
 
+                                        for($i=0;$i<count($day_arr);$i++)
+                                        {
+                                            ?>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                                id="day_value_<?php echo $i;?>" name="days[]"
+                                                value="<?php echo $day_arr[$i];?>" /><label
+                                                for="day_value_<?php echo $i;?>"><?php echo $day_arr[$i];?></label>
+                                        </div>
+                                        <?php
+                                        }
+                                        ?>
+
+                                        <!-- <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="day_value_1" name="days[]" value="星期一" /><label
                                                 for="day_value_1">星期一</label>
                                         </div>
@@ -2607,7 +2622,7 @@ Year 6 -->
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="day_value_7" name="days[]" value="星期日" /><label
                                                 for="day_value_7">星期日</label>
-                                        </div>
+                                        </div> -->
 
 
 
