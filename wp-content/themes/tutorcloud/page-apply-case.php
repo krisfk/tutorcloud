@@ -141,8 +141,26 @@ get_header();
                                         全部大學
                                     </label>
                                 </div>
+                                <?php
+                                $university_arr=array("香港大學","香港中文大學","香港科技大學","香港城市大學","香港城市大學","香港浸會大學","香港都會大學","香港恒生大學","嶺南大學");
 
+                                for($i=0;$i<count($university_arr);$i++)
+                                {
+                                    ?>
                                 <div>
+                                    <input class="form-check-input" type="checkbox"
+                                        value="<?php echo $university_arr[$i];?>" id="university-value-<?php echo $i;?>"
+                                        name="university[]">
+                                    <label class="form-check-label" for="university-value-<?php echo $i;?>">
+                                        <?php echo $university_arr[$i];?>
+                                    </label>
+                                </div>
+                                <?php
+                                }
+?>
+
+
+                                <!-- <div>
                                     <input class="form-check-input" type="checkbox" value="香港大學" id="university-value-1"
                                         name="university[]">
                                     <label class="form-check-label" for="university-value-1">
@@ -206,7 +224,7 @@ get_header();
                                     <label class="form-check-label" for="university-value-9">
                                         嶺南大學
                                     </label>
-                                </div>
+                                </div> -->
 
 
                             </div>
