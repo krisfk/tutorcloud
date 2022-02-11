@@ -827,12 +827,12 @@ $(function() {
 
     $('#all-student-level').change(function() {
         if ($(this).is(':checked')) {
-            for (i = 1; i <= 21; i++) {
+            for (i = 0; i <= <?php count($student_level_arr);?>; i++) {
                 $('#student-level-value-' + i).prop('checked', true);
             }
 
         } else {
-            for (i = 1; i <= 21; i++) {
+            for (i = 0; i <= <?php count($student_level_arr);?>; i++) {
                 $('#student-level-value-' + i).prop('checked', false);
             }
         }
