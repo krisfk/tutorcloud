@@ -2663,7 +2663,22 @@ Year 6 -->
                                         </label></td>
                                     <td>
 
+                                        <?php
+                                    
+                                    $objective_arr=array("拔尖","補底","清concept","教授答題技巧","應付校內考試","應付公開試");
+
+                                    for($i=0;$i<count($objective_arr);$i++)
+                                    {
+                                        ?>
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                                id="objective_value_<?php echo $i;?>" name="objective[]"
+                                                value="<?php echo $objective_arr[$i];?>" /><label
+                                                for="objective_value_<?php echo $i;?>"><?php echo $objective_arr[$i];?></label>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
+                                        <!-- <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="objective_value_1" name="objective[]" value="拔尖" /><label
                                                 for="objective_value_1">拔尖</label>
                                         </div>
@@ -2686,7 +2701,7 @@ Year 6 -->
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
                                                 id="objective_value_6" name="objective[]" value="應付公開試" /><label
                                                 for="objective_value_6">應付公開試</label>
-                                        </div>
+                                        </div> -->
 
                                         <div class="mt-2 w-100 float-start">
                                             <label for="objective-value-other" class="d-inline-block">其他：</label>
