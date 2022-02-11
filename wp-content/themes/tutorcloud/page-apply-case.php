@@ -1782,7 +1782,9 @@ Year 6 -->
 
                                             <div class="place-group">
 
-                                                <div>
+
+
+                                                <!-- <div>
                                                     <input class="form-check-input" type="checkbox" value="中半山"
                                                         id="class-area-value-1" name="class-area[]">
                                                     <label class="form-check-label" for="class-area-value-1">
@@ -1936,7 +1938,7 @@ Year 6 -->
                                                     <label class="form-check-label" for="class-area-value-17">
                                                         赤柱
                                                     </label>
-                                                </div>
+                                                </div> -->
                                             </div>
 
 
