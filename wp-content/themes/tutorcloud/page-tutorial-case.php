@@ -923,7 +923,6 @@ get_header();
 
                 if($_POST['class-area'])
                 {
-                    print_r($_POST['class-area']);
                     array_push($meta_query_arr,array('key'=>'class_area','value'=>$_POST['class-area'],'compare' => 'IN'));
                 }
 
