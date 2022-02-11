@@ -3037,47 +3037,26 @@ $(function() {
     })
 
 
+
     $('#all-place-1, #all-place-2 ').change(function() {
         if ($(this).is(':checked')) {
 
-            $(this).parent('div').parent('div').find('.hk-place').prop('checked', true);
-            $(this).parent('div').parent('div').find('.kl-place').prop('checked', true);
-            $(this).parent('div').parent('div').find('.nt-place').prop('checked', true);
-
-            $(this).parent('div').find('.hk-place').prop('checked', true);
-            $(this).parent('div').find('.kl-place').prop('checked', true);
-            $(this).parent('div').find('.nt-place').prop('checked', true);
-
-            for (i = 1; i <= 69; i++) {
+            $('#hk-place-1').prop('checked', true);
+            $('#kl-place-1').prop('checked', true);
+            $('#nt-place-1').prop('checked', true);
+            $('input[name="class-area[]"]').prop('checked', true);
 
 
-                if ($(this).attr('id') == 'all-place-1') {
-                    $('form#filter-form #class-area-value-' + i).prop('checked', true);
-                }
-                if ($(this).attr('id') == 'all-place-2') {
-                    $('form#apply-case-form #class-area-value-' + i).prop('checked', true);
-                }
-
-                // $('form#  #class-area-value-' + i).prop('checked', true);
-            }
 
         } else {
-            $(this).parent('div').parent('div').find('.hk-place').prop('checked', false);
-            $(this).parent('div').parent('div').find('.kl-place').prop('checked', false);
-            $(this).parent('div').parent('div').find('.nt-place').prop('checked', false);
+
+            $('#hk-place-1').prop('checked', false);
+            $('#kl-place-1').prop('checked', false);
+            $('#nt-place-1').prop('checked', false);
+            $('input[name="class-area[]"]').prop('checked', false);
 
 
-            for (i = 1; i <= 69; i++) {
-                if ($(this).attr('id') == 'all-place-1') {
-                    $('form#filter-form #class-area-value-' + i).prop('checked', false);
-                }
-                if ($(this).attr('id') == 'all-place-2') {
-                    $('form#apply-case-form #class-area-value-' + i).prop('checked', false);
-                }
-                // $(this).parent('div').next('.place-group').find('#class-area-value-' + i).prop(
-                //     'checked', false);
-                // $('#class-area-value-' + i).prop('checked', false);
-            }
+
         }
     })
 
