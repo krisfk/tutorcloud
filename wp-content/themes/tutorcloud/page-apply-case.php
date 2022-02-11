@@ -1782,7 +1782,24 @@ Year 6 -->
 
                                             <div class="place-group">
 
-
+                                                <?php
+                                $hk_place_arr=array("中半山","薄扶林","中上環","西環","灣仔","銅鑼灣","跑馬地","北角","鰂魚涌","太古","筲箕灣","西灣河","柴灣","小西灣","香港仔","鴨利洲","赤柱");
+                                for($i=0;$i<count($hk_place_arr);$i++)
+                                {
+                                    ?>
+                                                <div>
+                                                    <input class="form-check-input" type="checkbox"
+                                                        value="<?php echo $hk_place_arr[$i];?>"
+                                                        id="hk-class-area-value-<?php echo $i;?>" name="class-area[]"
+                                                        <?php echo $_POST['filter-form']&&in_array($hk_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
+                                                    <label class="form-check-label"
+                                                        for="hk-class-area-value-<?php echo $i;?>">
+                                                        <?php echo $hk_place_arr[$i];?>
+                                                    </label>
+                                                </div>
+                                                <?php
+                                }
+                                ?>
 
                                                 <!-- <div>
                                                     <input class="form-check-input" type="checkbox" value="中半山"
