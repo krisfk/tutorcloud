@@ -52,17 +52,17 @@ get_header();
                             <div class="filter-student-level-group">
                                 <div>
                                     <input class="form-check-input" type="checkbox" value="" id="all-student-level"
-                                        name="student-level[]">
+                                        name="">
                                     <label class="form-check-label" for="all-student-level">
                                         所有程度
                                     </label>
                                 </div>
                                 <div>
-                                    <input class="form-check-input" type="checkbox" value="大學生" id="tutor-level-value-1"
-                                        name="student-level[]"
-                                        <?php echo $_POST['filter-form']&&in_array("大學生", $_POST['tutor-level']) ? 'checked':''; ?>>
-                                    <label class="form-check-label" for="tutor-level-value-1">
-                                        大學生
+                                    <input class="form-check-input" type="checkbox" value="大學生"
+                                        id="student-level-value-1" name="student-level[]"
+                                        <?php echo $_POST['filter-form']&&in_array("K1", $_POST['student-level']) ? 'checked':''; ?>>
+                                    <label class="form-check-label" for="student-level-value-1">
+                                        K1
                                     </label>
                                 </div>
 
