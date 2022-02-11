@@ -63,7 +63,7 @@ get_header();
                                 ?>
                                 <?php
                                 
-                                for($i=1;$i<=count($student_level_arr);$i++)
+                                for($i=0;$i<count($student_level_arr);$i++)
                                 {
                                     ?>
                                 <div>
