@@ -3002,12 +3002,18 @@ $(function() {
             $('.lightbox').fadeIn(0);
             $('.lightbox .lightbox-content').fadeOut(0);
             $('.lightbox-msg-txt').html('成功加入導師' + select_tutor_id + '往心儀名單。');
-
             $('.lightbox .lightbox-content.lightbox-msg').fadeIn(0);
 
 
         } else {
-            alert('這導師已加入心儀導師名單');
+            // alert('這導師已加入心儀導師名單');
+
+
+            $('.lightbox').fadeIn(0);
+            $('.lightbox .lightbox-content').fadeOut(0);
+            $('.lightbox-msg-txt').html('這導師已加入心儀導師名單');
+            $('.lightbox .lightbox-content.lightbox-msg').fadeIn(0);
+
         }
 
         // alert(select_tutor_id);
