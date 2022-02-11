@@ -455,13 +455,13 @@ while ( $loop->have_posts() ) {
             <div class="pagination">
 
                 <?php 
-                  $current_page = max(1, get_query_var('paged'));
+                //   $current_page = max(1, get_query_var('paged'));
 
                   echo paginate_links(array(
                       'base' => get_pagenum_link(1) . '%_%',
                       'format' => '/page/%#%',
-                      'current' => $current_page,
-                      'total' => $total_pages,
+                      'current' => 1,
+                      'total' => 8,
                       'prev_text'    => __('« prev'),
                       'next_text'    => __('next »'),
                   ));
