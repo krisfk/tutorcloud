@@ -379,7 +379,7 @@ get_header();
        
             
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-echo $paged;
+// echo $paged;
   $args = array(  
     'post_type' => 'student',
     'post_status' => 'publish',
