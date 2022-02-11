@@ -221,8 +221,9 @@ get_header();
                     </tr>
                 </table>
 
-                <a href="javascript:void(0);" class="submit-btn filter-case">查看結果</a>
-
+                <div class="text-center">
+                    <a href="javascript:void(0);" class="submit-btn filter-case">查看結果</a>
+                </div>
 
                 <!-- </form> -->
             </div>
