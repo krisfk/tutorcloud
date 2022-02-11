@@ -871,6 +871,7 @@ input[type='number'] {
     height: 2rem;
     text-align: center;
     text-decoration: none;
+    border-radius: 0.5rem;
     background: #618382;
     color: #fff;
     line-height: 1.9rem;
