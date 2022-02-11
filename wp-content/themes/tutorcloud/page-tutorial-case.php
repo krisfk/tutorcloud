@@ -1072,7 +1072,7 @@ get_header();
             </div>
 
             <div class="col-12 mt-4 mb-4">
-                <iframe width="100%" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=油塘中心
+                <iframe id="map" width="100%" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=油塘中心
                     &amp;key=AIzaSyBN611NFShALGyApUBivJPfvqlEIvbPRNU" allowfullscreen=""></iframe>
             </div>
 
@@ -1293,6 +1293,13 @@ $(function() {
         $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
 
         $('#lbc-short-address').html($(this).closest('.student-content-li').attr('data-short-address'));
+
+        $('#map').attr('src',
+            'https://www.google.com/maps/embed/v1/place?q=' + $(this).closest('.student-content-li')
+            .attr('data-short-address') + '&amp;key=AIzaSyBN611NFShALGyApUBivJPfvqlEIvbPRNU'
+        );
+
+
         $('#lbc-student-id').html($(this).closest('.student-content-li').attr('data-student-id'));
         $('#lbc-student-gender').html($(this).closest('.student-content-li').attr(
             'data-student-gender'));
