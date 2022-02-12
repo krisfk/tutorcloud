@@ -904,6 +904,9 @@ input[type='number'] {
 .lightbox .add-btn-a {
     text-decoration: none;
     color: #fff;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
 }
 
 .lightbox .add-btn-a:hover {
