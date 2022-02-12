@@ -1162,7 +1162,7 @@ get_header();
             <a class="add-btn-a" href="javascript:void(0);">
 
                 <img src="http://64.227.13.14/tutorcloud/wp-content/themes/tutorcloud/assets/images/add-btn.png" alt="">
-                <div>加入導師名單</div>
+                <div class="mt-2">加入導師名單</div>
 
             </a>
         </div>
