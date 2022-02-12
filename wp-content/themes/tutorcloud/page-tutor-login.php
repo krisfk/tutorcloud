@@ -26,7 +26,33 @@ get_header();
 
 
 
+    <table class="mt-3">
+        <tbody>
+            <tr>
+                <td><label for="email">登入電郵*</label></td>
+                <td><input id="email" name="email" type="text" class="form-control"></td>
+            </tr>
+            <tr>
+                <td><label for="confirm_email">確認登入電郵*</label></td>
+                <td><input id="confirm_email" name="confirm_email" type="text" class="form-control"></td>
+            </tr>
+            <tr>
+                <td><label for="login_password">登入密碼*</label></td>
+                <td><input id="login_password" name="login_password" type="password" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="confirm_login_password">確認登入密碼*</label></td>
+                <td><input id="confirm_login_password" name="confirm_login_password" type="password"
+                        class="form-control"></td>
+            </tr>
 
+
+
+
+
+        </tbody>
+    </table>
 
 
 
