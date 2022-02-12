@@ -24,9 +24,8 @@ get_header();
         </h2>
     </div>
 
-    <?php 
-
-
+    <h3 class="text-center">
+        <?php 
 if($_POST)
 {
     // echo 11;
@@ -59,7 +58,7 @@ $query_args = array(
 
 }
 ?>
-
+    </h3>
     <?php
 
 if(!$_POST)
