@@ -916,10 +916,10 @@ input[type='number'] {
 .price-table th {
     background: rgb(149, 196, 194);
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
     border-right: 1px solid #fff;
 }
 
 .price-table td {
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
 }
