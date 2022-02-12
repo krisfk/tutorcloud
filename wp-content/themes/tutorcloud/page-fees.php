@@ -27,8 +27,8 @@ get_header();
     <div class="row align-items-top justify-content-center mt-5">
 
         <div class="col-3">
-            <img class="w-100 pe-3" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2022/02/fee-icon-24.png"
-                alt="">
+            <img class="w-100 pe-3"
+                src="http://64.227.13.14/tutorcloud/wp-content/uploads/2022/02/1200px-Calculator_icon.svg_.png" alt="">
 
         </div>
         <div class="col-6">
