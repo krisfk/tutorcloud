@@ -1157,7 +1157,15 @@ get_header();
             </div>
         </div>
 
-        <div>fdsf</div>
+        <div class="text-center">
+
+            <a class="add-btn-a" href="javascript:void(0);">
+
+                <img src="http://64.227.13.14/tutorcloud/wp-content/themes/tutorcloud/assets/images/add-btn.png" alt="">
+                <div>加入導師名單</div>
+
+            </a>
+        </div>
     </div>
 
 </div>
