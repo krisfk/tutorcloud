@@ -48,9 +48,9 @@ get_header();
 
             <table>
                 <tr>
-                    <td>項目說明</td>
-                    <td>費用 (HKD)</td>
-                    <td>付款期限</td>
+                    <th>項目說明</th>
+                    <th>費用 (HKD)</th>
+                    <th>付款期限</th>
                 </tr>
                 <tr>
                     <td>登記成為導師</td>
