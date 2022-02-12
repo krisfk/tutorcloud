@@ -30,7 +30,7 @@ get_header();
         <tbody>
             <tr>
                 <td class="pe-2 mb-3"><label for="email">登入電郵*</label></td>
-                <td><input id="email" name="email" type="text" class="form-control"></td>
+                <td class="mb-3"><input id="email" name="email" type="text" class="form-control"></td>
             </tr>
 
             <tr>
