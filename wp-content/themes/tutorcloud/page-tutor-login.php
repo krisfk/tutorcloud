@@ -29,12 +29,12 @@ get_header();
     <table class="mt-3 login-table">
         <tbody>
             <tr>
-                <td><label for="email">登入電郵*</label></td>
+                <td class="pe-2"><label for="email">登入電郵*</label></td>
                 <td><input id="email" name="email" type="text" class="form-control"></td>
             </tr>
 
             <tr>
-                <td><label for="login_password">登入密碼*</label></td>
+                <td class="pe-2"><label for="login_password">登入密碼*</label></td>
                 <td><input id="login_password" name="login_password" type="password" class="form-control">
                 </td>
             </tr>
