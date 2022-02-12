@@ -41,7 +41,7 @@ get_header();
             <tr>
                 <td colspan="2">
 
-                    <a href="javascript:void(0);" class="submit-btn">登入</a>
+                    <a href="javascript:void(0);" class="submit-btn m-0">登入</a>
 
                     <a href="#">忘記密碼</a>
                 </td>
