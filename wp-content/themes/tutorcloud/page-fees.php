@@ -49,6 +49,23 @@ get_header();
 
         </div>
 
+        <div class="col-12">
+
+            <table>
+                <tr>
+                    <td>項目說明</td>
+                    <td>費用 (HKD)</td>
+                    <td>付款期限</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </div>
+
     </div>
 
 
