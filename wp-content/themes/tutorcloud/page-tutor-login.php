@@ -29,7 +29,7 @@ get_header();
 
 if($_POST)
 {
-    echo 11;
+    // echo 11;
     
 $email = $_POST['email'];
 $password = $_POST['login_password'];
@@ -60,6 +60,12 @@ $query_args = array(
 }
 ?>
 
+    <?php
+
+if(!$_POST)
+{
+    ?>
+
     <form action="" method="post">
         <table class="mt-5 login-table mx-auto">
             <tbody>
@@ -84,6 +90,10 @@ $query_args = array(
             </tbody>
         </table>
     </form>
+
+    <?php
+}
+?>
 
 
 
