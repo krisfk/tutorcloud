@@ -46,11 +46,6 @@ get_header();
             </div>
 
 
-
-        </div>
-
-        <div class="col-12">
-
             <table>
                 <tr>
                     <td>項目說明</td>
@@ -58,13 +53,24 @@ get_header();
                     <td>付款期限</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>登記成為導師</td>
+                    <td>免費</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>口頭承諾確認個案</td>
+                    <td>一對一補習個案: <br>
+                        兩個星期的補習費</td>
+                    <td>原議定日期</td>
                 </tr>
             </table>
 
+
+
+
         </div>
+
+
 
     </div>
 
