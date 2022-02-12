@@ -931,11 +931,18 @@ input[type='number'] {
     padding: 0 1rem 0 0;
 }
 
-.login-table .submit-btn {}
+.login-table .submit-btn {
+    font-size: 1rem;
+    margin: 0 1rem 0 0 !important;
+}
 
 
 /*  */
 
 .login-table td {
     padding: 0 0rem 1rem 0;
+}
+
+.forgot-pw-a {
+    text-decoration: underline;
 }

@@ -43,7 +43,7 @@ get_header();
 
                     <a href="javascript:void(0);" class="submit-btn m-0">登入</a>
 
-                    <a href="#">忘記密碼</a>
+                    <a href="#" class="forgot-pw-a">忘記密碼</a>
                 </td>
             </tr>
 
