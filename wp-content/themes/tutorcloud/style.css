@@ -916,9 +916,9 @@ input[type='number'] {
 .price-table th {
     background: rgb(149, 196, 194);
     color: #fff;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .price-table td {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
