@@ -45,8 +45,7 @@ get_header();
                 </ul>
             </div>
 
-            <a href="<?php echo get_site_url();?>/apply-case"
-                class="apply-case-btn apply-case-btn mt-5 d-inline-block">申請補習個案</a>
+
 
         </div>
 
