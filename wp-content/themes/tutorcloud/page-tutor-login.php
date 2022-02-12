@@ -60,7 +60,7 @@ $query_args = array(
 }
 ?>
 
-    <form action="">
+    <form action="" method="post">
         <table class="mt-5 login-table mx-auto">
             <tbody>
                 <tr>
