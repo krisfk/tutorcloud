@@ -3027,7 +3027,7 @@ $(function() {
     }
     $('.lightbox .add-btn-a').click(function() {
 
-        var select_tutor_id = $(this).attr('lbc-tutor-id-2');
+        var select_tutor_id = $(this).attr('data-tutor-id');
         add_to_cart(select_tutor_id);
 
 
