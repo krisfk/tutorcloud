@@ -29,6 +29,7 @@ get_header();
 
 if($_POST['submit'])
 {
+    echo 11;
     
 $email = $_POST['email'];
 $password = $_POST['login_password'];
