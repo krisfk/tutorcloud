@@ -46,7 +46,7 @@ get_header();
             </div>
 
 
-            <table class="price-table">
+            <table class="price-table mt-5">
                 <thead>
                     <tr>
                         <th>項目說明</th>
