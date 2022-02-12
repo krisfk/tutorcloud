@@ -47,6 +47,7 @@ $query_args = array(
             if($email==get_field('email') && $password ==get_field('login_password'))
             {
                 echo '登入成功';
+                exit;
             }
             else
             {
