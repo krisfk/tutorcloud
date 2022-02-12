@@ -121,7 +121,7 @@ echo'</li>';
                                 <div class="col-2 text-end">
 
 
-                                    <a href="<?php echo get_site_url();?>/login" class="tutor-login-btn">導師登入</a>
+                                    <a href="<?php echo get_site_url();?>/member-login" class="tutor-login-btn">導師登入</a>
                                 </div>
                             </div>
                         </div>
