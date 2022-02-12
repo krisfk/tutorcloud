@@ -14,12 +14,12 @@ get_header();
 
 <div class="breadcrumb mt-4">
 
-    主頁 > 開業優惠
+    主頁 > 導師收費
 </div>
 <div class="container mt-5">
 
     <div class="text-center">
-        <h2>優惠條款
+        <h2>導師收費
             <div class="bar"></div>
         </h2>
     </div>
