@@ -14,12 +14,12 @@ get_header();
 
 <div class="breadcrumb mt-4">
 
-    主頁 > 導帥登入
+    主頁 > 導師登入
 </div>
 <div class="container mt-5">
 
     <div class="text-center">
-        <h2>導帥登入
+        <h2>導師登入
             <div class="bar"></div>
         </h2>
     </div>
