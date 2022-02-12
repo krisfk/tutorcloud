@@ -25,7 +25,7 @@ get_header();
     </div>
 
 
-    <h4 class="text-center d-block mt-5">
+    <h6 class="text-center d-block mt-5">
         <?php 
 if($_POST)
 {
@@ -60,7 +60,7 @@ $query_args = array(
 
 }
 ?>
-    </h4>
+    </h6>
 
 
     <form action="" method="post">
