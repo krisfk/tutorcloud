@@ -61,11 +61,7 @@ $query_args = array(
 }
 ?>
     </h4>
-    <?php
 
-if(!$_POST)
-{
-    ?>
 
     <form action="" method="post">
         <table class="mt-5 login-table mx-auto">
@@ -92,9 +88,6 @@ if(!$_POST)
         </table>
     </form>
 
-    <?php
-}
-?>
 
 
 
