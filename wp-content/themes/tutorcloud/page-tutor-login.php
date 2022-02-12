@@ -39,7 +39,12 @@ get_header();
                 </td>
             </tr>
             <tr>
-                <td colspan="2">fds</td>
+                <td colspan="2">
+
+                    <a href="javascript:void(0);" class="submit-btn">登入</a>
+
+                    <a href="#">忘記密碼</a>
+                </td>
             </tr>
 
 
