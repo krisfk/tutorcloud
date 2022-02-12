@@ -2986,7 +2986,7 @@ $(function() {
 
     $('.prev-step-btn').fadeOut(0);
 
-    $('.add-btn-a').click(function() {
+    $('.tutor-content-li .add-btn-a').click(function() {
 
         var select_tutor_id = $(this).closest('li').attr('data-tutor-id');
 
