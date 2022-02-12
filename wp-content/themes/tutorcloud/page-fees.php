@@ -35,7 +35,7 @@ get_header();
             <div class="pt-title mt-3 text-start">行政費計算方法</div>
             <div class="mt-4">
 
-                <ul>
+                <ul class="ps-3">
 
                     <li>一般補習個案: 2個星期的補習費
                     </li>
