@@ -26,6 +26,10 @@ get_header();
 
     <?php 
 
+
+if($_POST['submit'])
+{
+    
 $email = $_POST['email'];
 $password = $_POST['login_password'];
 
@@ -33,25 +37,26 @@ $query_args = array(
 	'post_type' => 'tutor',
 );
 
-$the_query = new WP_Query( $query_args );
-if ( $the_query->have_posts() ) {
-	while ( $the_query->have_posts() ) {
+    $the_query = new WP_Query( $query_args );
+    if ( $the_query->have_posts() ) {
+        while ( $the_query->have_posts() ) {
 
-        $the_query->the_post();
+            $the_query->the_post();
 
-        if($email==get_field('email') && $password ==get_field('login_password'))
-        {
-            echo '登入成功';
+            if($email==get_field('email') && $password ==get_field('login_password'))
+            {
+                echo '登入成功';
+            }
+            else
+            {
+                echo '登入電郵或密碼不正確。';
+            }
+            // echo 1;
         }
-        else
-        {
-            echo '登入電郵或密碼不正確。';
-        }
-        // echo 1;
+        wp_reset_postdata();
     }
-	wp_reset_postdata();
-}
 
+}
 ?>
 
     <form action="">
@@ -70,7 +75,8 @@ if ( $the_query->have_posts() ) {
                 <tr>
                     <td colspan="2" class="text-end pt-4">
 
-                        <input type="submit" href="javascript:void(0);" class="submit-btn m-0" value="登入"></input>
+                        <input type="submit" href="javascript:void(0);" class="submit-btn m-0" value="登入"
+                            name="submit"></input>
 
                         <a href="#" class="forgot-pw-a">忘記密碼</a>
                     </td>
