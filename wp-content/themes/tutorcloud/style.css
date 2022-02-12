@@ -947,3 +947,7 @@ input[type='number'] {
     text-decoration: underline;
     color: #769e9c;
 }
+
+#content {
+    min-height: 90vh;
+}
