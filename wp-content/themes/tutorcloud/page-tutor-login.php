@@ -38,7 +38,16 @@ if ( $the_query->have_posts() ) {
 	while ( $the_query->have_posts() ) {
 
         $the_query->the_post();
-echo 1;
+
+        if($email==get_field('email') && $password ==get_field('login_password'))
+        {
+            echo '登入成功';
+        }
+        else
+        {
+            echo '登入電郵或密碼不正確。';
+        }
+        // echo 1;
     }
 	wp_reset_postdata();
 }
