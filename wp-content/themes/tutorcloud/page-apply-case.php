@@ -1159,7 +1159,7 @@ get_header();
 
         <div class="text-center">
 
-            <a class="add-btn-a" href="javascript:void(0);" lbc-tutor-id-2="">
+            <a class="add-btn-a" href="javascript:void(0);" data-tutor-id="">
 
                 <img src="http://64.227.13.14/tutorcloud/wp-content/themes/tutorcloud/assets/images/add-btn.png" alt="">
                 <div class="mt-1">加入導師名單</div>
@@ -3092,7 +3092,10 @@ $(function() {
 
         $('#lbc-living-area').html($(this).closest('.tutor-content-li').attr('data-living-area'));
 
-        $('#lbc-tutor-id,#lbc-tutor-id-2').html($(this).closest('.tutor-content-li').attr(
+        $('#lbc-tutor-id').html($(this).closest('.tutor-content-li').attr(
+            'data-tutor-id'));
+
+        $('.lightbox .add-btn-a').attr('data-tutor-id', $(this).closest('.tutor-content-li').attr(
             'data-tutor-id'));
         $('#lbc-gender').html($(this).closest('.tutor-content-li').attr('data-gender'));
         $('#lbc-born-year').html($(this).closest('.tutor-content-li').attr('data-born-year'));
