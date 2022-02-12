@@ -46,12 +46,14 @@ get_header();
             </div>
 
 
-            <table>
-                <tr>
-                    <th>項目說明</th>
-                    <th>費用 (HKD)</th>
-                    <th>付款期限</th>
-                </tr>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>項目說明</th>
+                        <th>費用 (HKD)</th>
+                        <th>付款期限</th>
+                    </tr>
+                </thead>
                 <tr>
                     <td>登記成為導師</td>
                     <td>免費</td>

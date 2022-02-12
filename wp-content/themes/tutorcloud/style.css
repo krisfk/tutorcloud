@@ -912,3 +912,7 @@ input[type='number'] {
 .lightbox .add-btn-a:hover {
     color: #fff;
 }
+
+.price-table th {}
+
+.price-table td {}
