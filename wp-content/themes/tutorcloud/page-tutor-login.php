@@ -24,7 +24,26 @@ get_header();
         </h2>
     </div>
 
+    <?php 
 
+$email = $_POST['email'];
+$password = $_POST['login_password'];
+
+$query_args = array(
+	'post_type' => 'tutor',
+);
+
+$the_query = new WP_Query( $query_args );
+if ( $the_query->have_posts() ) {
+	while ( $the_query->have_posts() ) {
+
+        $the_query->the_post();
+echo 1;
+    }
+	wp_reset_postdata();
+}
+
+?>
 
     <form action="">
         <table class="mt-5 login-table mx-auto">
