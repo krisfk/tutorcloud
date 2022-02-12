@@ -39,7 +39,7 @@ get_header();
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td colspan="2" class="text-center">
 
                     <a href="javascript:void(0);" class="submit-btn m-0">登入</a>
 
