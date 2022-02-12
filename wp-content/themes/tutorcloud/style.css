@@ -923,3 +923,7 @@ input[type='number'] {
 .price-table td {
     padding: 0.2rem 1rem;
 }
+
+.login-table td {
+    padding: 1rem;
+}

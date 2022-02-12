@@ -26,7 +26,7 @@ get_header();
 
 
 
-    <table class="mt-3">
+    <table class="mt-3 login-table">
         <tbody>
             <tr>
                 <td><label for="email">登入電郵*</label></td>
