@@ -2987,10 +2987,47 @@ $(function() {
     $('.prev-step-btn').fadeOut(0);
 
     $('.lightbox .add-btn-a').click(function() {
-        $('.lightbox').fadeIn(0);
-        $('.lightbox .lightbox-content').fadeOut(0);
-        $('.lightbox-msg-txt').html('成功加入導師' + $(this).attr('lbc-tutor-id-2') + '往心儀名單。');
-        $('.lightbox .lightbox-content.lightbox-msg').fadeIn(0);
+
+        var select_tutor_id = $(this).attr('lbc-tutor-id-2');
+
+
+        if (!tutor_list_arr.includes(select_tutor_id)) {
+            tutor_list_arr.push(select_tutor_id);
+            console.log(tutor_list_arr);
+
+            var added_to_cart_html =
+                '<li><span>' + select_tutor_id +
+                '</span><a href="javascript:void(0);" class="list-close-btn"></a></li>';
+
+            $('.added-list ul').append(added_to_cart_html);
+
+            $('.list-close-btn').click(function() {
+                var select_tutor_id = $(this).prev('span').html();
+                tutor_list_arr = tutor_list_arr.filter(tutor_id => tutor_id !=
+                    select_tutor_id);
+                $(this).closest('li').remove();
+                console.log(tutor_list_arr);
+            });
+
+
+
+            $('.lightbox').fadeIn(0);
+            $('.lightbox .lightbox-content').fadeOut(0);
+            $('.lightbox-msg-txt').html('成功加入導師' + select_tutor_id + '往心儀名單。');
+            $('.lightbox .lightbox-content.lightbox-msg').fadeIn(0);
+
+
+        } else {
+            // alert('這導師已加入心儀導師名單');
+
+
+            $('.lightbox').fadeIn(0);
+            $('.lightbox .lightbox-content').fadeOut(0);
+            $('.lightbox-msg-txt').html('這導師已加入心儀導師名單');
+            $('.lightbox .lightbox-content.lightbox-msg').fadeIn(0);
+
+        }
+
     })
     $('.tutor-content-li .add-btn-a').click(function() {
 
