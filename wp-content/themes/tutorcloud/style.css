@@ -927,6 +927,10 @@ input[type='number'] {
 
 /*  */
 
-.login-table td {
+.login-table td label {
     padding: 0 1rem 0 0;
+}
+
+.login-table td {
+    padding: 0 0rem 1rem 0;
 }
