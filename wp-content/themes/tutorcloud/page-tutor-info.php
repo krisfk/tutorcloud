@@ -270,20 +270,15 @@ $the_query->the_post();
                                         value="<?php echo $tutor_level_arr[$i];?>"><?php echo $tutor_level_arr[$i];?>
                                     </option>
 
-                                    <!-- <option value="大學生">大學生</option>
-                                    <option value="學士畢業">學士畢業</option>
-                                    <option value="碩士生">碩士生</option>
-                                    <option value="碩士畢業">碩士畢業</option>
-                                    <option value="博士生">博士生</option>
-                                    <option value="博士畢業">博士畢業</option> -->
-
                                 </select></td>
                         </tr>
                         <tr>
                             <td><label for="">是否擁有教育文憑 *
                                 </label></td>
-                            <td> <label><input type="radio" name="diploma" value="是">是</label>
-                                <label><input type="radio" name="diploma" value="否">否</label>
+                            <td> <label><input type="radio" name="diploma" value="是"
+                                        <?php echo get_field('diploma') == '是' ? 'selected':''; ?>>是</label>
+                                <label><input type="radio" name="diploma" value="否"
+                                        <?php echo get_field('diploma') == '否' ? 'selected':''; ?>>否</label>
                             </td>
                         </tr>
                         <tr>
