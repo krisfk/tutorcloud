@@ -879,7 +879,7 @@ $the_query->the_post();
                                         <label for="t-subjects-kin-value-other d-inline-block">其他：</label>
                                         <input class="limit-input-w form-control mt-2 d-inline-block"
                                             id="t-subjects-kin-value-other" name="t-subjects-kin-value-other"
-                                            type="text">
+                                            type="text" value="<?php echo get_field('t_subjects_kin_value_other');?>">
                                     </div>
 
                                 </td>
