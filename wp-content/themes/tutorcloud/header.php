@@ -120,8 +120,16 @@ echo'</li>';
                                 </div>
                                 <div class="col-2 text-end">
 
+                                    <?php
 
+if(!$_SESSION['tutor_post_id'])
+{
+    ?>
                                     <a href="<?php echo get_site_url();?>/tutor-login" class="tutor-login-btn">導師登入</a>
+
+                                    <?php
+}
+?>
 
                                     <?php
                                     
