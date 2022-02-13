@@ -376,57 +376,6 @@ $the_query->the_post();
                                     }
                                     ?>
 
-
-                                    <!-- <div>
-                                        <input class="form-check-input" type="checkbox" value="HKDSE"
-                                            id="past-exam-value-1" name="past-exam[]">
-                                        <label class="form-check-label" for="past-exam-value-1">
-                                            HKDSE
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="HKCEE"
-                                            id="past-exam-value-2" name="past-exam[]">
-                                        <label class="form-check-label" for="past-exam-value-2">
-                                            HKCEE
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="HKALE"
-                                            id="past-exam-value-3" name="past-exam[]">
-                                        <label class="form-check-label" for="past-exam-value-3">
-                                            HKALE
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="IB"
-                                            id="past-exam-value-4" name="past-exam[]">
-                                        <label class="form-check-label" for="past-exam-value-4">
-                                            IB
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="GCE AL"
-                                            id="past-exam-value-5" name="past-exam[]">
-                                        <label class="form-check-label" for="past-exam-value-5">
-                                            GCE AL
-
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="IGCSE"
-                                            id="past-exam-value-6" name="past-exam[]">
-                                        <label class="form-check-label" for="past-exam-value-6">
-                                            IGCSE
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="SAT"
-                                            id="past-exam-value-7" name="past-exam[]">
-                                        <label class="form-check-label" for="past-exam-value-7">
-                                            SAT
-                                        </label>
-                                    </div> -->
                                 </div>
                             </td>
                         </tr>
@@ -448,7 +397,32 @@ $the_query->the_post();
                             <td class="grade-col">4</td>
                         </tr> -->
                         </tr>
+
+                        <?php 
+                        $subjects_arr=array("中文","英文","數學","數學(M1)","數學(M2)","通識","物理","化學","生物","組合科學：物理 化學","組合科學：化學 生物","綜合科學","資訊及通訊科技","地理","中史","西史","中國文學","英國文學","倫理與宗教","經濟","企業、會計與財務概論","旅遊與款待");
+                        
+                        for($i=0;$i<count($subjects_arr[$i]);$i++)
+                        {
+                            ?>
                         <tr>
+                            <td><label for=""><?php echo $subjects_arr[$i];?></label></td>
+                            <td class="grade-col"><label><input type="radio" value="5**"
+                                        name="dse-sub-<?php echo $i+1?>">5**</label>
+                            </td>
+                            <td class="grade-col"><label><input type="radio" value="5*"
+                                        name="dse-sub-<?php echo $i+1?>">5*</label></td>
+                            <td class="grade-col"><label><input type="radio" value="5"
+                                        name="dse-sub-<?php echo $i+1?>">5</label></td>
+                            <td class="grade-col"><label><input type="radio" value="4"
+                                        name="dse-sub-<?php echo $i+1?>">4</label></td>
+                            <td class="grade-col"><a href="javascript:void(0);" class="radio-cancel-btn">取消</a></td>
+
+                        </tr>
+                        <?php
+                        }
+                        ?>
+
+                        <!-- <tr>
                             <td><label for="">中文</label></td>
                             <td class="grade-col"><label><input type="radio" value="5**" name="dse-sub-1">5**</label>
                             </td>
@@ -777,7 +751,7 @@ $the_query->the_post();
                                     name="other-subject-10-grade">
                             </td>
                         </tr>
-
+ -->
 
 
                     </tbody>
