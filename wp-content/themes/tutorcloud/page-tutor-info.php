@@ -2965,7 +2965,9 @@ $(function() {
 
     $('.info-btn').click(function() {
         $('.info-btn').removeClass('active');
-        $(this).addClass('active')
+        $(this).addClass('active');
+        var idx = $(this).index();
+        alert(idx);
     })
 })
 </script>
