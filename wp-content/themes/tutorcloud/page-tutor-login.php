@@ -61,7 +61,7 @@ $query_args = array(
                 echo '登入成功';
                 echo get_the_ID();
                 $_SESSION['tutor_post_id']   = get_the_ID();
-                exit;
+                // exit;
             }
             else
             {
