@@ -352,6 +352,30 @@ $the_query->the_post();
                             <td>
                                 <div class="past-exam-group">
                                     <?php echo get_field('past_exam');?>
+                                    <?php //echo $_POST['filter-form']&&in_array($nt_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>
+                                    <?php
+                                    
+                                    $past_exam_arr= array("HKDSE","HKCEE","HKALE","IB","GCE AL","IGCSE","SAT");
+                                    
+                                    for($i=0;$i<count($past_exam_arr);$i++)
+                                    {
+                                        ?>
+                                    <div>
+                                        <input
+                                            <?php echo in_array($past_exam_arr[$i], $_GET['past_exam']) ? 'checked':''; ?>
+                                            class="form-check-input" type="checkbox"
+                                            value="<?php echo $past_exam_arr[$i];?>"
+                                            id="past-exam-value-<?php echo $i;?>" name="past-exam[]">
+                                        <label class="form-check-label" for="past-exam-value-<?php echo $i;?>">
+                                            <?php echo $past_exam_arr[$i];?>
+                                        </label>
+                                    </div>
+
+                                    <?php
+                                    }
+                                    ?>
+
+
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="HKDSE"
                                             id="past-exam-value-1" name="past-exam[]">
