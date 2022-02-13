@@ -260,12 +260,23 @@ $the_query->the_post();
                                 </label></td>
                             <td><select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="大學生">大學生</option>
+
+                                    <?php
+                                    
+                                    $tutor_level_arr = array('大學生','學士畢業','碩士生','碩士畢業','博士生','博士畢業');
+                                    ?>
+                                    <option
+                                        <?php echo get_field('tutor_level') == $tutor_level_arr[$i] ? 'selected':''; ?>
+                                        value="<?php echo $tutor_level_arr[$i];?>"><?php echo $tutor_level_arr[$i];?>
+                                    </option>
+
+                                    <!-- <option value="大學生">大學生</option>
                                     <option value="學士畢業">學士畢業</option>
                                     <option value="碩士生">碩士生</option>
                                     <option value="碩士畢業">碩士畢業</option>
                                     <option value="博士生">博士生</option>
-                                    <option value="博士畢業">博士畢業</option>
+                                    <option value="博士畢業">博士畢業</option> -->
+
                                 </select></td>
                         </tr>
                         <tr>
