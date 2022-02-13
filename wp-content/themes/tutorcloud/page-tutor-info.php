@@ -1184,7 +1184,7 @@ $the_query->the_post();
                                         <label for="t-subjects-f46-value-other">其他：</label>
                                         <input class="limit-input-w form-control mt-2 d-inline-block"
                                             id="t-subjects-f46-value-other" name="t-subjects-f46-value-other"
-                                            type="text">
+                                            type="text" value="<?php echo get_field('t_subjects_f46_value_other');?>">
                                     </div>
 
                                 </td>
