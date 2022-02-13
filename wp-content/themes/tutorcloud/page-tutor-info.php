@@ -362,7 +362,7 @@ $the_query->the_post();
                                         ?>
                                     <div>
                                         <input
-                                            <?php echo in_array($past_exam_arr[$i], $_GET['past_exam']) ? 'checked':''; ?>
+                                            <?php echo in_array($past_exam_arr[$i], get_field['past_exam']) ? 'checked':''; ?>
                                             class="form-check-input" type="checkbox"
                                             value="<?php echo $past_exam_arr[$i];?>"
                                             id="past-exam-value-<?php echo $i;?>" name="past-exam[]">
