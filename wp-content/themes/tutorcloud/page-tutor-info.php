@@ -2966,8 +2966,9 @@ $(function() {
     $('.info-btn').click(function() {
         $('.info-btn').removeClass('active');
         $(this).addClass('active');
-        var idx = $(this).index();
-        alert(idx);
+        var idx = $(this).index() + 1;
+        $('.tutor-info-form').fadeOut(0);
+        $('.tutor-info-form-' + idx).fadeIn(0);
     })
 })
 </script>
