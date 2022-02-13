@@ -297,13 +297,27 @@ $the_query->the_post();
                             <td>
                                 <select id="tutor-year" name="tutor-year" class="form-select" aria-label="">
                                     <option value="" selected="">選擇</option>
-                                    <option value="Year 1">Year 1</option>
+
+                                    <?php
+                                    $tutor_year_arr=array('Year 1','Year 2','Year 3','Year 4','Year 5','Year 6','已畢業');
+                                    for($i=0;$i<count($tutor_level_arr);$i++)
+                                    {
+                                        ?>
+                                    <option
+                                        <?php echo get_field('tutor_year') == $tutor_year_arr[$i] ? 'selected':''; ?>
+                                        value="<?php echo $tutor_year_arr[$i];?>"><?php echo $tutor_year_arr[$i];?>
+                                    </option>
+                                    <?php
+
+                                    }
+                                    ?>
+                                    <!-- <option value="Year 1">Year 1</option>
                                     <option value="Year 2">Year 2</option>
                                     <option value="Year 3">Year 3</option>
                                     <option value="Year 4">Year 4</option>
                                     <option value="Year 5">Year 5</option>
                                     <option value="Year 6">Year 6</option>
-                                    <option value="已畢業">已畢業</option>
+                                    <option value="已畢業">已畢業</option> -->
 
                                 </select>
                             </td>
