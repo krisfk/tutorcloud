@@ -860,20 +860,7 @@ $the_query->the_post();
                                     <?php
                                    }
                                    ?>
-                                    <!-- <div>
-                                        <input class="form-check-input" type="checkbox" value="英語"
-                                            id="t-subjects-kin-value-1" name="t-subjects-kin[]">
-                                        <label class="form-check-label" for="t-subjects-kin-value-1">
-                                            英文
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="普通話"
-                                            id="t-subjects-kin-value-2" name="t-subjects-kin[]">
-                                        <label class="form-check-label" for="t-subjects-kin-value-2">
-                                            普通話
-                                        </label>
-                                    </div> -->
+
 
                                     <div class="mt-2 w-100">
                                         <label for="t-subjects-kin-value-other d-inline-block">其他：</label>
@@ -890,7 +877,32 @@ $the_query->the_post();
                                 <td colspan="2"><label for="t-subjects-pri">
                                         <h5>小學</h5>
                                     </label>
+
+                                    <?php
+                                    
+                                
+                                    $pri_subjects=array("全科","功課輔導","中文","英文","數學","常識","普通話");
+                                  
+                                    for($i=0;$i<count($pri_subjects);$i++)
+                                    {
+                                        ?>
+
                                     <div>
+                                        <input class="form-check-input" type="checkbox"
+                                            value="<?php echo $pri_subjects[$i];?>"
+                                            id="t-subjects-pri-value-<?php echo $i+1;?>" name="t-subjects-pri[]">
+                                        <label class="form-check-label" for="t-subjects-pri-value-<?php echo $i+1;?>">
+                                            <?php echo $pri_subjects[$i];?>
+
+                                        </label>
+                                    </div>
+                                    <?php
+                                    }
+                                  
+                                  ?>
+
+
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="全科"
                                             id="t-subjects-pri-value-1" name="t-subjects-pri[]">
                                         <label class="form-check-label" for="t-subjects-pri-value-1">
@@ -957,7 +969,7 @@ $the_query->the_post();
                                         <input class="limit-input-w form-control mt-2 d-inline-block"
                                             id="t-subjects-pri-value-other" name="t-subjects-pri-value-other"
                                             type="text">
-                                    </div>
+                                    </div> -->
 
                                 </td>
                             </tr>
