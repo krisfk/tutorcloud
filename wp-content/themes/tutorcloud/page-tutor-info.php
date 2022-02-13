@@ -357,12 +357,13 @@ $the_query->the_post();
                                     
                                     $past_exam_arr= array("HKDSE","HKCEE","HKALE","IB","GCE AL","IGCSE","SAT");
                                     
+                                    print_r(get_field['past_exam']);
                                     for($i=0;$i<count($past_exam_arr);$i++)
                                     {
                                         ?>
                                     <div>
                                         <input
-                                            <?php echo in_array($past_exam_arr[$i], get_field['past_exam']) ? 'checked':''; ?>
+                                            <?php //echo in_array($past_exam_arr[$i], get_field['past_exam']) ? 'checked':''; ?>
                                             class="form-check-input" type="checkbox"
                                             value="<?php echo $past_exam_arr[$i];?>"
                                             id="past-exam-value-<?php echo $i;?>" name="past-exam[]">
