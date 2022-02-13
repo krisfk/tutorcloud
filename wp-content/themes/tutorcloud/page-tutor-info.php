@@ -351,6 +351,7 @@ $the_query->the_post();
                             </td>
                             <td>
                                 <div class="past-exam-group">
+                                    <?php echo get_field('past_exam');?>
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="HKDSE"
                                             id="past-exam-value-1" name="past-exam[]">
