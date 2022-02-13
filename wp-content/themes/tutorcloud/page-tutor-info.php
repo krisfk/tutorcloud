@@ -841,7 +841,26 @@ $the_query->the_post();
                                     <label for="t-subjects-kin">
                                         <h5> 幼稚園</h5>
                                     </label>
+
+                                    <?php
+                                    $kin_subjects=array('英文','普通話');
+                                   for($i=0;$i<count($kin_subjects);$i++)
+                                   {
+                                       ?>
                                     <div>
+                                        <input
+                                            <?php echo in_array($kin_subjects[$i], get_field('t-subjects-kin')) ? 'checked':''; ?>
+                                            class="form-check-input" type="checkbox"
+                                            value="<?php echo $kin_subjects[$i];?>"
+                                            id="t-subjects-kin-value-<?php echo $i+1?>" name="t-subjects-kin[]">
+                                        <label class="form-check-label" for="t-subjects-kin-value-<?php echo $i+1?>">
+                                            <?php echo $kin_subjects[$i];?>
+                                        </label>
+                                    </div>
+                                    <?php
+                                   }
+                                   ?>
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="英語"
                                             id="t-subjects-kin-value-1" name="t-subjects-kin[]">
                                         <label class="form-check-label" for="t-subjects-kin-value-1">
@@ -854,7 +873,7 @@ $the_query->the_post();
                                         <label class="form-check-label" for="t-subjects-kin-value-2">
                                             普通話
                                         </label>
-                                    </div>
+                                    </div> -->
 
                                     <div class="mt-2 w-100">
                                         <label for="t-subjects-kin-value-other d-inline-block">其他：</label>
