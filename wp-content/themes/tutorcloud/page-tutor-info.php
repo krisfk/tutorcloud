@@ -64,7 +64,7 @@ $the_query->the_post();
                     <tbody>
                         <tr>
                             <td><label for="email">登入電郵*</label></td>
-                            <td><input id="email" name="email" type="text" class="form-control"
+                            <td><input readonly id="email" name="email" type="text" class="form-control"
                                     value="<?php echo get_field('email'); ?>">
                             </td>
                         </tr>
