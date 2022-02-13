@@ -377,7 +377,7 @@ $the_query->the_post();
                                     ?>
 
 
-                                    <div>
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="HKDSE"
                                             id="past-exam-value-1" name="past-exam[]">
                                         <label class="form-check-label" for="past-exam-value-1">
@@ -426,7 +426,7 @@ $the_query->the_post();
                                         <label class="form-check-label" for="past-exam-value-7">
                                             SAT
                                         </label>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </td>
                         </tr>
