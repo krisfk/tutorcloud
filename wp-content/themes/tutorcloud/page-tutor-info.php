@@ -1200,7 +1200,7 @@ $the_query->the_post();
                         IB科目列</a>
                 </h5>
 
-                <div class="subject-list subject-list-ib">
+                <!-- <div class="subject-list subject-list-ib">
                     <table>
                         <tbody>
                             <tr>
@@ -2049,7 +2049,7 @@ $the_query->the_post();
                         </tbody>
                     </table>
 
-                </div>
+                </div> -->
 
                 <table class="mt-5">
                     <tbody>
@@ -2061,14 +2061,16 @@ $the_query->the_post();
                                 <div class="lesson-lang-group">
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="中文"
-                                            id="lesson-lang-value-1" name="lesson-lang[]">
+                                            id="lesson-lang-value-1" name="lesson-lang[]"
+                                            <?php echo in_array('中文', get_field('lesson_lang')) ? 'checked':''; ?>>
                                         <label class="form-check-label" for="lesson-lang-value-1">
                                             中文
                                         </label>
                                     </div>
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="英文"
-                                            id="lesson-lang-value-2" name="lesson-lang[]">
+                                            id="lesson-lang-value-2" name="lesson-lang[]"
+                                            <?php echo in_array('英文', get_field('lesson_lang')) ? 'checked':''; ?>>
                                         <label class="form-check-label" for="lesson-lang-value-2">
                                             英文
                                         </label>
