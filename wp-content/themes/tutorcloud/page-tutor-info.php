@@ -2830,6 +2830,70 @@ $the_query->the_post();
 <script type="text/javascript">
 $(function() {
 
+
+
+
+    $('#all-place').change(function() {
+        // alert(5);
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= 69; i++) {
+                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= 69; i++) {
+                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
+
+    $('#hk-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= 17; i++) {
+                $('#class-area-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= 17; i++) {
+                $('#class-area-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
+
+
+    $('#kl-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 18; i <= 45; i++) {
+                $('#class-area-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 18; i <= 45; i++) {
+                $('#class-area-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
+
+    $('#nt-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 46; i <= 69; i++) {
+                $('#class-area-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 46; i <= 69; i++) {
+                $('#class-area-value-' + i).prop('checked', false);
+            }
+        }
+    })
+
     $('.info-btn').click(function() {
         $('.info-btn').removeClass('active');
         $(this).addClass('active');

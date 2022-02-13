@@ -3753,11 +3753,6 @@ $(function() {
         }
 
 
-        // console.log(val);
-        // });
-
-
-        // $('form').submit();
     })
 
     $('.terms-a').click(function() {
