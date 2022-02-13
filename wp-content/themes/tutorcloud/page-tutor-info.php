@@ -204,10 +204,7 @@ if($_SESSION['tutor_post_id'])
                     </tbody>
                 </table>
 
-                <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
 
-
-                <a href="javascript:void(0);" class="next-step-btn">下一步</a>
 
             </div>
 
@@ -748,10 +745,7 @@ if($_SESSION['tutor_post_id'])
                     </tbody>
                 </table>
 
-                <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
 
-
-                <a href="javascript:void(0);" class="next-step-btn">下一步</a>
 
 
             </div>
@@ -2934,7 +2928,6 @@ if($_SESSION['tutor_post_id'])
                     </tbody>
                 </table>
 
-                <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
 
 
                 <a href="javascript:void(0);" class="submit-btn">遞交表格</a>
