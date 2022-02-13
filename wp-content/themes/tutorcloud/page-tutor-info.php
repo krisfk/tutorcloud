@@ -161,7 +161,9 @@ $the_query->the_post();
                                         for($i=0;$i<count($hk_place_arr);$i++)
                                         {
                                         ?>
-                                        <option value="<?php echo $hk_place_arr[$i];?>"><?php echo $hk_place_arr[$i];?>
+                                        <option
+                                            <?php echo get_field('living_area') == $hk_place_arr[$i] ? 'selected':''; ?>
+                                            value="<?php echo $hk_place_arr[$i];?>"><?php echo $hk_place_arr[$i];?>
                                         </option>
                                         <?php
                                         }
@@ -175,7 +177,9 @@ $the_query->the_post();
                                             {
                                                 ?>
 
-                                        <option value="<?php echo $kl_place_arr[$i];?>"><?php echo $kl_place_arr[$i];?>
+                                        <option
+                                            <?php echo get_field('living_area') == $kl_place_arr[$i] ? 'selected':''; ?>
+                                            value="<?php echo $kl_place_arr[$i];?>"><?php echo $kl_place_arr[$i];?>
                                         </option>
                                         <?php
                                             }
@@ -190,7 +194,9 @@ $the_query->the_post();
                                 {
                                     ?>
 
-                                        <option value="<?php echo $nt_place_arr[$i];?>"><?php echo $nt_place_arr[$i];?>
+                                        <option
+                                            <?php echo get_field('living_area') == $nt_place_arr[$i] ? 'selected':''; ?>
+                                            value="<?php echo $nt_place_arr[$i];?>"><?php echo $nt_place_arr[$i];?>
                                         </option>
                                         <?php
                                 }
