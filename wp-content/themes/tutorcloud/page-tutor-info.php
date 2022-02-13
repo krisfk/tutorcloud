@@ -39,6 +39,8 @@ if($_SESSION['tutor_post_id'])
 
     <div class="text-center mt-3">
         <a href="#" class="filter-btn">導師選項</a>
+        <a href="#" class="filter-btn">導師選項</a>
+
     </div>
 
     <div class="tutor-info-form-div">
