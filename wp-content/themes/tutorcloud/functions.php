@@ -706,3 +706,8 @@ function ur_theme_start_session()
         session_start();
 }
 add_action("init", "ur_theme_start_session", 1);
+
+function app_output_buffer() {
+    ob_start();
+} // soi_output_buffer
+add_action('init', 'app_output_buffer');
