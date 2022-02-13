@@ -700,4 +700,9 @@ function add_slug_body_class( $classes ) {
 	add_filter( 'body_class', 'add_slug_body_class' );
 	
 	
-	
+function ur_theme_start_session()
+{
+    if (!session_id())
+        session_start();
+}
+add_action("init", "ur_theme_start_session", 1);
