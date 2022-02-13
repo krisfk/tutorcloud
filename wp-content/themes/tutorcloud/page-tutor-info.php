@@ -129,26 +129,21 @@ $the_query->the_post();
                             <td> <label for="occupation"> 職業</label></td>
                             <td>
                                 <select id="occupation" name="occupation" class="form-select" aria-label="">
-
+                                    <?php 
+                                $occupation_arr=array("全職教師","全職教學助理","全職補習老師","退休教師","其他在職人仕");
+                                ?>
                                     <option value="" selected="">選擇</option>
-                                    <option value="全職教師"
-                                        <?php echo get_field('occupation') =='全職教師' ? 'selected':''; ?>>
-                                        全職教師
+                                    <?php 
+                                    for($i=0;$i<count($occupation_arr);$i++)
+                                    {
+                                    ?>
+                                    <option value="<?php echo $occupation_arr[$i];?>"
+                                        <?php echo get_field('occupation') == $occupation_arr[$i] ? 'selected':''; ?>>
+                                        <?php echo $occupation_arr[$i];?>
                                     </option>
-                                    <option value="全職教學助理"
-                                        <?php echo get_field('occupation') =='全職教學助理' ? 'selected':''; ?>>
-                                        全職教學助理</option>
-                                    <option value="全職補習老師"
-                                        <?php echo get_field('occupation') =='全職補習老師' ? 'selected':''; ?>>
-                                        全職補習老師</option>
-                                    <option value="退休教師"
-                                        <?php echo get_field('occupation') =='退休教師' ? 'selected':''; ?>>
-                                        退休教師
-                                    </option>
-                                    <option value="其他在職人仕"
-                                        <?php echo get_field('occupation') =='其他在職人仕' ? 'selected':''; ?>>
-                                        其他在職人仕</option>
-
+                                    <?php
+                                    }
+                                    ?>
                                 </select>
                             </td>
                         </tr>
