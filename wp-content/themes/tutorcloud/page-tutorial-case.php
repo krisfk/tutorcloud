@@ -708,19 +708,6 @@ $(function() {
 
 
 
-    $('#all-university').change(function() {
-        if ($(this).is(':checked')) {
-
-            for (i = 1; i <= 9; i++) {
-                $('#university-value-' + i).prop('checked', true);
-            }
-
-        } else {
-            for (i = 1; i <= 9; i++) {
-                $('#university-value-' + i).prop('checked', false);
-            }
-        }
-    })
 
 
     $('.kl-place').change(function() {
@@ -764,6 +751,20 @@ $(function() {
         }
     })
 
+
+    $('#all-university').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 1; i <= 9; i++) {
+                $('#university-value-' + i).prop('checked', true);
+            }
+
+        } else {
+            for (i = 1; i <= 9; i++) {
+                $('#university-value-' + i).prop('checked', false);
+            }
+        }
+    })
 
 
     $('.filter-case.submit-btn').click(function() {

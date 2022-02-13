@@ -2894,68 +2894,94 @@ $(function() {
 
 
 
-
-    $('#all-place').change(function() {
-        // alert(5);
+    $('#all-place-1, #all-place-2 ').change(function() {
         if ($(this).is(':checked')) {
 
-            for (i = 1; i <= 69; i++) {
-                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).prop('checked', true);
+            $('#hk-place-1').prop('checked', true);
+            $('#kl-place-1').prop('checked', true);
+            $('#nt-place-1').prop('checked', true);
+            $('input[name="class-area[]"]').prop('checked', true);
+
+
+
+        } else {
+
+            $('#hk-place-1').prop('checked', false);
+            $('#kl-place-1').prop('checked', false);
+            $('#nt-place-1').prop('checked', false);
+            $('input[name="class-area[]"]').prop('checked', false);
+
+
+
+        }
+    })
+
+
+    $('.hk-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', true);
             }
 
         } else {
-            for (i = 1; i <= 69; i++) {
-                $('#hk-place ,#kl-place ,#nt-place ,#class-area-value-' + i).prop('checked', false);
+            for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', false);
+                // $('#class-area-value-' + i).prop('checked', false);
             }
         }
     })
 
 
-    $('#hk-place').change(function() {
+
+
+
+    $('.kl-place').change(function() {
         if ($(this).is(':checked')) {
 
-            for (i = 1; i <= 17; i++) {
-                $('#class-area-value-' + i).prop('checked', true);
+            for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', true);
             }
 
         } else {
-            for (i = 1; i <= 17; i++) {
-                $('#class-area-value-' + i).prop('checked', false);
+            for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', false);
             }
         }
     })
 
 
-
-    $('#kl-place').change(function() {
+    $('.nt-place').change(function() {
         if ($(this).is(':checked')) {
 
-            for (i = 18; i <= 45; i++) {
-                $('#class-area-value-' + i).prop('checked', true);
+            for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
+                    'checked', true);
             }
 
         } else {
-            for (i = 18; i <= 45; i++) {
-                $('#class-area-value-' + i).prop('checked', false);
+            for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
+                    'checked', false);
             }
         }
     })
-
-
-    $('#nt-place').change(function() {
-        if ($(this).is(':checked')) {
-
-            for (i = 46; i <= 69; i++) {
-                $('#class-area-value-' + i).prop('checked', true);
-            }
-
-        } else {
-            for (i = 46; i <= 69; i++) {
-                $('#class-area-value-' + i).prop('checked', false);
-            }
-        }
-    })
-
     $('.info-btn').click(function() {
         $('.info-btn').removeClass('active');
         $(this).addClass('active');
