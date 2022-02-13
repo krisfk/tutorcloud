@@ -38,8 +38,8 @@ if($_SESSION['tutor_post_id'])
     </div>
 
     <div class="text-center mt-3">
-        <a href="#" class="filter-btn">導師選項</a>
-        <a href="#" class="filter-btn">導師選項</a>
+        <a href="#" class="info-btn info-btn-1">個人資料</a>
+        <a href="#" class="info-btn info-btn-2">學歷資料</a>
 
     </div>
 

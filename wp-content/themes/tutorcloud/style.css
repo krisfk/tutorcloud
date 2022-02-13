@@ -130,7 +130,8 @@ body {
 }
 
 .tutor-login-btn,
-.tutor-info-btn {
+.tutor-info-btn,
+.info-btn {
     display: inline-block;
     background: #46a879;
     padding: 0.5rem 1rem;
@@ -141,7 +142,8 @@ body {
 }
 
 .tutor-login-btn:hover,
-.tutor-info-btn:hover {
+.tutor-info-btn:hover,
+.info-btn:hover {
     color: #fff;
 }
 
