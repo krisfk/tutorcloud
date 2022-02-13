@@ -129,7 +129,8 @@ body {
     padding: 0;
 }
 
-.tutor-login-btn {
+.tutor-login-btn,
+.tutor-info-btn {
     display: inline-block;
     background: #46a879;
     padding: 0.5rem 1rem;

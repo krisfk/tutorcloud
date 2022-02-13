@@ -122,6 +122,19 @@ echo'</li>';
 
 
                                     <a href="<?php echo get_site_url();?>/tutor-login" class="tutor-login-btn">導師登入</a>
+
+                                    <?php
+                                    
+                                    if($_SESSION['tutor_post_id'])
+                                    {
+                                        ?>
+                                    <a href="<?php echo get_site_url();?>/tutor-info" class="tutor-info-btn">導師資料</a>
+
+                                    <?php
+                                    }
+                                    ?>
+
+
                                 </div>
                             </div>
                         </div>
