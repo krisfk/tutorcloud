@@ -2116,7 +2116,9 @@ $the_query->the_post();
                                 {
                                     ?>
                                             <div>
-                                                <input class="form-check-input" type="checkbox"
+                                                <input
+                                                    <?php echo in_array($hk_place_arr[$i], get_field('class_area')) ? 'checked':''; ?>
+                                                    class="form-check-input" type="checkbox"
                                                     value="<?php echo $hk_place_arr[$i];?>"
                                                     id="hk-class-area-value-<?php echo $i;?>" name="class-area[]"
                                                     <?php echo $_POST['filter-form']&&in_array($hk_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
@@ -2303,7 +2305,9 @@ $the_query->the_post();
                                 {
                                     ?>
                                             <div>
-                                                <input class="form-check-input" type="checkbox"
+                                                <input
+                                                    <?php echo in_array($kl_place_arr[$i], get_field('class_area')) ? 'checked':''; ?>
+                                                    class="form-check-input" type="checkbox"
                                                     value="<?php echo $kl_place_arr[$i];?>"
                                                     id="kl-class-area-value-<?php echo $i;?>" name="class-area[]"
                                                     <?php echo $_POST['filter-form']&&in_array($kl_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
@@ -2572,7 +2576,9 @@ $the_query->the_post();
                                 {
                                     ?>
                                             <div>
-                                                <input class="form-check-input" type="checkbox"
+                                                <input
+                                                    <?php echo in_array($nt_place_arr[$i], get_field('class_area')) ? 'checked':''; ?>
+                                                    class="form-check-input" type="checkbox"
                                                     value="<?php echo $nt_place_arr[$i];?>"
                                                     id="nt-class-area-value-<?php echo $i;?>" name="class-area[]"
                                                     <?php echo $_POST['filter-form']&&in_array($nt_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
