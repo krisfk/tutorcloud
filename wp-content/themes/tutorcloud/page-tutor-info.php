@@ -772,8 +772,10 @@ $the_query->the_post();
                                 <select id="exam-lang" name="exam-lang" class="form-select" aria-label="">
 
                                     <option value="" selected="">選擇</option>
-                                    <option value="中文">中文</option>
-                                    <option value="英文">英文</option>
+                                    <option value="中文" <?php echo get_field('exam_lang') =='中文' ? 'checked':''; ?>>中文
+                                    </option>
+                                    <option value="英文" <?php echo get_field('exam_lang') =='英文' ? 'checked':''; ?>>英文
+                                    </option>
 
 
                                 </select>
