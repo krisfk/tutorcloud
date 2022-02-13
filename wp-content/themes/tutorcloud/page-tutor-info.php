@@ -2965,7 +2965,7 @@ $(function() {
 
     $('.nt-place').change(function() {
         if ($(this).is(':checked')) {
-
+            alert(56);
             for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
                 $('#nt-class-area-value-' + i).prop(
                     'checked', true);
