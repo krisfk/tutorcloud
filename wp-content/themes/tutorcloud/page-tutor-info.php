@@ -922,7 +922,37 @@ $the_query->the_post();
                                 <td colspan="2"><label for="t-subjects-f13">
                                         <h5>中學(中一至中三)</h5>
                                     </label>
+
+                                    <?php
+                                
+                                $f13_subjects=array("全科","功課輔導","中文","英文","數學","通識","物理","化學","生物","綜合科學","資訊及通訊科技","地理","中史","西史","英國文學","經濟","企業、會計與財務概論","普通話");
+
+                                    ?>
+
+                                    <?php
+
+                                    for($i=0;$i<count($f13_subjects);$i++)
+                                    {
+                                        ?>
+
                                     <div>
+                                        <input
+                                            <?php echo in_array($f13_subjects[$i], get_field('t_subjects_f13')) ? 'checked':''; ?>
+                                            class="form-check-input" type="checkbox"
+                                            value="<?php echo $f13_subjects[$i];?>"
+                                            id="t-subjects-f13-value-<?php echo $i+1;?>" name="t-subjects-f13[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-<?php echo $i+1;?>">
+                                            <?php echo $f13_subjects[$i];?>
+
+                                        </label>
+                                    </div>
+                                    <?php
+                                    }
+
+                                    ?>
+
+
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="全科"
                                             id="t-subjects-f13-value-1" name="t-subjects-f13[]">
                                         <label class="form-check-label" for="t-subjects-f13-value-1">
@@ -1111,7 +1141,7 @@ $the_query->the_post();
 
 
                                         </label>
-                                    </div>
+                                    </div> -->
 
 
                                     <div class="mt-2 w-100">
