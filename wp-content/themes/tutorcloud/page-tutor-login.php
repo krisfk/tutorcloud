@@ -10,6 +10,15 @@
  */
 
 get_header();
+session_start();
+
+if($_SESSION['tutor_post_id'])
+{
+    wp_redirect( get_site_url() );
+exit;
+}
+
+
 ?>
 
 <div class="breadcrumb mt-4">
@@ -27,6 +36,7 @@ get_header();
 
     <h5 class="text-center d-block mt-5">
         <?php 
+
 if($_POST)
 {
     // echo 11;
@@ -47,6 +57,7 @@ $query_args = array(
             if($email==get_field('email') && $password ==get_field('login_password'))
             {
                 echo '登入成功';
+                $_SESSION['tutor_post_id']   = get_the_ID();
                 exit;
             }
             else
