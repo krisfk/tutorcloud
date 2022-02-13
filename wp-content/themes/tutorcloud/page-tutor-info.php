@@ -284,9 +284,9 @@ $the_query->the_post();
                             <td><label for="">是否擁有教育文憑 *
                                 </label></td>
                             <td> <label><input type="radio" name="diploma" value="是"
-                                        <?php echo get_field('diploma') == '是' ? 'selected':''; ?>>是</label>
+                                        <?php echo get_field('diploma') == '是' ? 'checked':''; ?>>是</label>
                                 <label><input type="radio" name="diploma" value="否"
-                                        <?php echo get_field('diploma') == '否' ? 'selected':''; ?>>否</label>
+                                        <?php echo get_field('diploma') == '否' ? 'checked':''; ?>>否</label>
                             </td>
                         </tr>
                         <tr>
