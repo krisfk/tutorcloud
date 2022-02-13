@@ -17,7 +17,7 @@ get_header();
 if($_SESSION['tutor_post_id'])
 {
     // echo 1;
-    wp_redirect( get_site_url() );
+    // wp_redirect( get_site_url() );
 
 exit;
 }
@@ -60,9 +60,17 @@ $query_args = array(
 
             if($email==get_field('email') && $password ==get_field('login_password'))
             {
-                echo '登入成功';
+                echo '登入成功，三秒後回到主頁。';
                 // echo get_the_ID();
                 $_SESSION['tutor_post_id']   = get_the_ID();
+                ?>
+        <script type="text/javascript">
+        window.setTimeout(function() {
+            window.location.href = '<?php echo get_site_url();?>';
+        }, 3000);
+        </script>
+
+        <?php
                 exit;
             }
             else
