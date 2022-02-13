@@ -11,7 +11,7 @@
 
 get_header();
 session_start();
-// echo 11;
+echo $_SESSION['tutor_post_id'];
 if($_SESSION['tutor_post_id'])
 {
     echo 1;
