@@ -849,7 +849,7 @@ $the_query->the_post();
                                        ?>
                                     <div>
                                         <input
-                                            <?php echo in_array($kin_subjects[$i], get_field('t-subjects-kin')) ? 'checked':''; ?>
+                                            <?php echo in_array($kin_subjects[$i], get_field('t_subjects_kin')) ? 'checked':''; ?>
                                             class="form-check-input" type="checkbox"
                                             value="<?php echo $kin_subjects[$i];?>"
                                             id="t-subjects-kin-value-<?php echo $i+1?>" name="t-subjects-kin[]">
