@@ -211,6 +211,7 @@ if($_SESSION['tutor_post_id'])
                     </tbody>
                 </table>
 
+                <input type="submit" class="submit-btn" value="遞交表格"></input>
 
 
             </div>
