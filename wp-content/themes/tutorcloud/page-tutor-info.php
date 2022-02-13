@@ -327,20 +327,23 @@ $the_query->the_post();
 
                                 <label for="u-major">大學主修科目 *</label>
                             </td>
-                            <td><input type="text" id="u-major" name="u-major" class="form-control"></td>
+                            <td><input type="text" id="u-major" name="u-major" class="form-control"
+                                    value="<?php echo get_field('u_major');?>"></td>
                         </tr>
 
                         <tr>
                             <td> <label for="u-minor">大學副修科目
                                 </label>
                             </td>
-                            <td><input type="text" id="u-minor" name="u-minor" class="form-control"></td>
+                            <td><input type="text" id="u-minor" name="u-minor" class="form-control"
+                                    value="<?php echo get_field('u_minor');?>"></td>
                         </tr>
                         <tr>
                             <td> <label for="s-school">曾就讀中學 *
                                 </label>
                             </td>
-                            <td><input type="text" id="s-school" name="s-school" class="form-control"></td>
+                            <td><input type="text" id="s-school" name="s-school" class="form-control"
+                                    value="<?php echo get_field('s_school');?>"></td>
                         </tr>
                         <tr>
                             <td> <label for="past-exam">曾參加公開試 *
