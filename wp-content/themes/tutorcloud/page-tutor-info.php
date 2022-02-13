@@ -351,7 +351,7 @@ $the_query->the_post();
                             </td>
                             <td>
                                 <div class="past-exam-group">
-                                    <?php print_r(get_field('past_exam'));?>
+                                    <?php// print_r(get_field('past_exam'));?>
                                     <?php //echo $_POST['filter-form']&&in_array($nt_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>
                                     <?php
                                     
@@ -363,7 +363,7 @@ $the_query->the_post();
                                         ?>
                                     <div>
                                         <input
-                                            <?php //echo in_array($past_exam_arr[$i], get_field['past_exam']) ? 'checked':''; ?>
+                                            <?php echo in_array($past_exam_arr[$i], get_field('past_exam')) ? 'checked':''; ?>
                                             class="form-check-input" type="checkbox"
                                             value="<?php echo $past_exam_arr[$i];?>"
                                             id="past-exam-value-<?php echo $i;?>" name="past-exam[]">
