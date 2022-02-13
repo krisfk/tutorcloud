@@ -904,74 +904,13 @@ $the_query->the_post();
                                   ?>
 
 
-                                    <!-- <div>
-                                        <input class="form-check-input" type="checkbox" value="全科"
-                                            id="t-subjects-pri-value-1" name="t-subjects-pri[]">
-                                        <label class="form-check-label" for="t-subjects-pri-value-1">
-                                            全科
 
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="功課輔導"
-                                            id="t-subjects-pri-value-2" name="t-subjects-pri[]">
-                                        <label class="form-check-label" for="t-subjects-pri-value-2">
-
-                                            功課輔導
-
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="中文"
-                                            id="t-subjects-pri-value-3" name="t-subjects-pri[]">
-                                        <label class="form-check-label" for="t-subjects-pri-value-3">
-
-                                            中文
-
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="英文"
-                                            id="t-subjects-pri-value-4" name="t-subjects-pri[]">
-                                        <label class="form-check-label" for="t-subjects-pri-value-4">
-
-                                            英文
-
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="數學"
-                                            id="t-subjects-pri-value-5" name="t-subjects-pri[]">
-                                        <label class="form-check-label" for="t-subjects-pri-value-5">
-
-                                            數學
-
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="常識"
-                                            id="t-subjects-pri-value-6" name="t-subjects-pri[]">
-                                        <label class="form-check-label" for="t-subjects-pri-value-6">
-
-                                            常識
-
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="普通話"
-                                            id="t-subjects-pri-value-7" name="t-subjects-pri[]">
-                                        <label class="form-check-label" for="t-subjects-pri-value-7">
-
-                                            普通話
-
-                                        </label>
-                                    </div>
                                     <div class="mt-2 w-100">
                                         <label for="t-subjects-pri-value-other d-inline-block">其他：</label>
                                         <input class="limit-input-w form-control mt-2 d-inline-block"
                                             id="t-subjects-pri-value-other" name="t-subjects-pri-value-other"
-                                            type="text">
-                                    </div> -->
+                                            type="text" value="<?php echo get_field('t_subjects_pri_value_other');?>">
+                                    </div>
 
                                 </td>
                             </tr>
