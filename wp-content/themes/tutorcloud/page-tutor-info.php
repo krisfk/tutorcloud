@@ -92,29 +92,36 @@ $the_query->the_post();
                         </tr>
                         <tr>
                             <td><label for="chi-name"> 中文全名 *</label></td>
-                            <td><input id="chi-name" name="chi-name" type="text" class="form-control"></td>
+                            <td><input id="chi-name" name="chi-name" type="text" class="form-control"
+                                    value="<?php echo get_field('chi_name');?>"></td>
                         </tr>
                         <tr>
                             <td><label for="eng-name">英文全名 *</label></td>
-                            <td><input id="eng-name" name="eng-name" type="text" class="form-control"></td>
+                            <td><input id="eng-name" name="eng-name" type="text" class="form-control"
+                                    value="<?php echo get_field('eng_name');?>"></td>
                         </tr>
                         <tr>
                             <td><label for="nick-name">別名</label></td>
-                            <td><input id="nick-name" name="nick-name" type="text" class="form-control"></td>
+                            <td><input id="nick-name" name="nick-name" type="text" class="form-control"
+                                    value="<?php echo get_field('nick_name');?>"></td>
                         </tr>
                         <tr>
                             <td><label for="whatsapp-tel"> WhatsApp 電話號碼 *</label></td>
-                            <td><input id="whatsapp-tel" name="whatsapp-tel" type="number" class="form-control"></td>
+                            <td><input id="whatsapp-tel" name="whatsapp-tel" type="number" class="form-control"
+                                    value="<?php echo get_field('whatsapp_tel');?>"></td>
                         </tr>
                         <tr>
                             <td><label for="born_year"> 出生年份*</label></td>
-                            <td><input id="born_year" name="born_year" type="number" class="form-control"></td>
+                            <td><input id="born_year" name="born_year" type="number" class="form-control"
+                                    value="<?php echo get_field('born_year');?>"></td>
                         </tr>
                         <tr>
                             <td> <label for=""> 性別*</label></td>
                             <td>
-                                <label><input type="radio" name="gender" value="男">男</label>
-                                <label><input type="radio" name="gender" value="女">女</label>
+                                <label><input type="radio" name="gender" value="男"
+                                        <?php echo get_field('gender') =='男' ? 'checked':''; ?>>男</label>
+                                <label><input type="radio" name="gender" value="女"
+                                        <?php echo get_field('gender') =='女' ? 'checked':''; ?>>女</label>
 
                             </td>
                         </tr>
