@@ -749,7 +749,7 @@ if($_SESSION['tutor_post_id'])
 
 
             </div>
-            <div class="step-content step-content-4">
+            <div class="step-content step-content-4 mt-5">
 
                 <h3 class="mb-4">補習資料</h3>
                 <table>
