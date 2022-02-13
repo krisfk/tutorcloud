@@ -954,3 +954,7 @@ input[type='number'] {
 #content {
     min-height: 90vh;
 }
+
+.tutor-info-form-div .step-content {
+    display: block;
+}

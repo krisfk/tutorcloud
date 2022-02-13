@@ -38,7 +38,7 @@ if($_SESSION['tutor_post_id'])
     </div>
 
 
-    <div>
+    <div class="tutor-info-form-div">
 
         <form action="" method="post" enctype="multipart/form-data">
             <div class="step-content step-content-2">
