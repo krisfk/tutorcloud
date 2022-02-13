@@ -878,7 +878,7 @@ $the_query->the_post();
                                             value="<?php echo $tutorial_style_arr[$i];?>"
                                             id="t-style-value-<?php echo $i+1;?>" name="t-style[]">
                                         <label class="form-check-label" for="t-style-value-<?php echo $i+1;?>">
-                                            上門
+                                            <?php echo $tutorial_style_arr[$i];?>
                                         </label>
                                     </div>
                                     <?php
