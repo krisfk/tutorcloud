@@ -290,7 +290,29 @@ h2 .bar {
     display: block !important;
 }
 
-.filter-btn,
+.filter-btn {
+    display: inline-block;
+    background: #618382;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
+    /* margin: 0 auto; */
+    margin: 0 0.3rem;
+}
+
+.filter-btn:hover {
+    display: inline-block;
+    background: #618382;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
+    /* margin: 0 auto; */
+}
+
 .info-btn {
     display: inline-block;
     background: #618382;
@@ -303,7 +325,6 @@ h2 .bar {
     margin: 0 0.3rem;
 }
 
-.filter-btn:hover,
 .info-btn:hover {
     display: inline-block;
     background: #618382;
@@ -313,6 +334,7 @@ h2 .bar {
     border-radius: 10px;
     box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
     /* margin: 0 auto; */
+    opacity: 0.8;
 }
 
 .filter-btn.active {
