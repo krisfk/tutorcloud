@@ -154,79 +154,48 @@ $the_query->the_post();
                                     <option value="">選擇</option>
 
                                     <optgroup label="香港島">
-                                        <option value="中半山">中半山</option>
-                                        <option value="薄扶林">薄扶林</option>
-                                        <option value="中上環">中上環</option>
-                                        <option value="西環">西環</option>
-                                        <option value="灣仔">灣仔</option>
-                                        <option value="銅鑼灣">銅鑼灣</option>
-                                        <option value="跑馬地">跑馬地</option>
-                                        <option value="北角">北角</option>
-                                        <option value="鰂魚涌">鰂魚涌</option>
-                                        <option value="太古">太古</option>
-                                        <option value="筲箕灣">筲箕灣</option>
-                                        <option value="西灣河">西灣河</option>
-                                        <option value="柴灣">柴灣</option>
-                                        <option value="小西灣">小西灣</option>
-                                        <option value="香港仔">香港仔</option>
-                                        <option value="鴨利洲">鴨利洲</option>
-                                        <option value="赤柱">赤柱</option>
+                                        <?php                                 
+                                        
+                                        $hk_place_arr=array("中半山","薄扶林","中上環","西環","灣仔","銅鑼灣","跑馬地","北角","鰂魚涌","太古","筲箕灣","西灣河","柴灣","小西灣","香港仔","鴨利洲","赤柱");
+                                        
+                                        for($i=0;$i<count($hk_place_arr);$i++)
+                                        {
+                                        ?>
+                                        <option value="<?php echo $hk_place_arr[$i];?>"><?php echo $hk_place_arr[$i];?>
+                                        </option>
+                                        <?php
+                                        }
+                                        ?>
+
                                     </optgroup>
                                     <optgroup label="九龍區">
-                                        <option value="美孚">美孚</option>
-                                        <option value="荔枝角">荔枝角</option>
-                                        <option value="長沙灣">長沙灣</option>
-                                        <option value="深水涉">深水涉</option>
-                                        <option value="大角咀">大角咀</option>
-                                        <option value="旺角">旺角</option>
-                                        <option value="何文田">何文田</option>
-                                        <option value="油麻地">油麻地</option>
-                                        <option value="佐敦">佐敦</option>
-                                        <option value="尖沙咀">尖沙咀</option>
-                                        <option value="土瓜灣">土瓜灣</option>
-                                        <option value="紅磡">紅磡</option>
-                                        <option value="石硤尾">石硤尾</option>
-                                        <option value="九龍塘">九龍塘</option>
-                                        <option value="樂富">樂富</option>
-                                        <option value="慈雲山">慈雲山</option>
-                                        <option value="黃大仙">黃大仙</option>
-                                        <option value="鑽石山">鑽石山</option>
-                                        <option value="新蒲崗">新蒲崗</option>
-                                        <option value="彩虹">彩虹</option>
-                                        <option value="牛池灣">牛池灣</option>
-                                        <option value="牛頭角">牛頭角</option>
-                                        <option value="九龍灣">九龍灣</option>
-                                        <option value="秀茂坪">秀茂坪</option>
-                                        <option value="觀塘">觀塘</option>
-                                        <option value="藍田">藍田</option>
-                                        <option value="油塘">油塘</option>
-                                        <option value="九龍城">九龍城</option>
+                                        <?php
+                                            $kl_place_arr=array("美孚","荔枝角","長沙灣","深水涉","大角咀","旺角","何文田","油麻地","佐敦","尖沙咀","土瓜灣","紅磡","石硤尾","九龍塘","樂富","慈雲山","黃大仙","鑽石山","新蒲崗","彩虹","牛池灣","牛頭角","九龍灣","秀茂坪","觀塘","藍田","油塘","九龍城");
+                                            for($i=0;$i<count($kl_place_arr);$i++)
+                                            {
+                                                ?>
+
+                                        <option value="<?php echo $kl_place_arr[$i];?>"><?php echo $kl_place_arr[$i];?>
+                                        </option>
+                                        <?php
+                                            }
+                                        ?>
+
                                     </optgroup>
                                     <optgroup label="新界區">
-                                        <option value="將軍澳">將軍澳</option>
-                                        <option value="西貢">西貢</option>
-                                        <option value="荃灣">荃灣</option>
-                                        <option value="深井">深井</option>
-                                        <option value="馬灣">馬灣</option>
-                                        <option value="葵涌">葵涌</option>
-                                        <option value="荔景">荔景</option>
-                                        <option value="葵芳">葵芳</option>
-                                        <option value="青衣">青衣</option>
-                                        <option value="大圍">大圍</option>
-                                        <option value="沙田">沙田</option>
-                                        <option value="沙田市中心">沙田市中心</option>
-                                        <option value="小瀝源">小瀝源</option>
-                                        <option value="火炭">火炭</option>
-                                        <option value="馬鞍山">馬鞍山</option>
-                                        <option value="大埔">大埔</option>
-                                        <option value="粉嶺">粉嶺</option>
-                                        <option value="上水">上水</option>
-                                        <option value="元朗">元朗</option>
-                                        <option value="天水圍">天水圍</option>
-                                        <option value="屯門">屯門</option>
-                                        <option value="青龍頭">青龍頭</option>
-                                        <option value="東涌">東涌</option>
-                                        <option value="離島">離島</option>
+
+                                        <?php
+                                $nt_place_arr=array("將軍澳","西貢","荃灣","深井","馬灣","葵涌","荔景","葵芳","青衣","大圍","沙田","沙田市中心","小瀝源","火炭","馬鞍山","大埔","粉嶺","上水","元朗","天水圍","屯門","青龍頭","東涌","離島");
+                                for($i=0;$i<count($nt_place_arr);$i++)
+                                {
+                                    ?>
+
+                                        <option value="<?php echo $nt_place_arr[$i];?>"><?php echo $nt_place_arr[$i];?>
+                                        </option>
+                                        <?php
+                                }
+                                    ?>
+
                                     </optgroup>
 
 
