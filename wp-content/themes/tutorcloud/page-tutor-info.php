@@ -14,13 +14,22 @@ get_header();
 // session_start();
 // $_SESSION['test']=111;
 
-if($_SESSION['tutor_post_id'])
-{
-    // echo 1;
-    // wp_redirect( get_site_url() );
 
-// exit;
-}
+$query_args = array(
+	'post_type' => 'tutor',
+    'p'=>$_SESSION['tutor_post_id']
+);
+
+// The Query
+$the_query = new WP_Query( $query_args );
+$the_query->have_posts();
+$the_query->the_post();
+
+echo 111;
+wp_reset_postdata();
+
+
+
 
 
 ?>
