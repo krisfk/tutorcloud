@@ -10,9 +10,10 @@
  */
 
 get_header();
+echo $_SESSION['test'];
 session_start();
 $_SESSION['test']=111;
-echo $_SESSION['test'];
+
 if($_SESSION['tutor_post_id'])
 {
     echo 1;
