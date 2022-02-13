@@ -264,11 +264,19 @@ $the_query->the_post();
                                     <?php
                                     
                                     $tutor_level_arr = array('大學生','學士畢業','碩士生','碩士畢業','博士生','博士畢業');
-                                    ?>
+                                    
+                                    for($i=0;$i<count($tutor_level_arr[$i]);$i++)
+                                    {
+                                        ?>
                                     <option
                                         <?php echo get_field('tutor_level') == $tutor_level_arr[$i] ? 'selected':''; ?>
                                         value="<?php echo $tutor_level_arr[$i];?>"><?php echo $tutor_level_arr[$i];?>
                                     </option>
+                                    <?php
+                                    }
+
+                                    ?>
+
 
                                 </select></td>
                         </tr>
