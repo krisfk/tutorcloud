@@ -265,7 +265,7 @@ $the_query->the_post();
                                     
                                     $tutor_level_arr = array('大學生','學士畢業','碩士生','碩士畢業','博士生','博士畢業');
                                     
-                                    for($i=0;$i<count($tutor_level_arr[$i]);$i++)
+                                    for($i=0;$i<count($tutor_level_arr);$i++)
                                     {
                                         ?>
                                     <option
