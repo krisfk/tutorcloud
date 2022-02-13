@@ -2917,7 +2917,7 @@ $(function() {
     })
 
 
-    $('.hk-place').change(function() {
+    $('#hk-place').change(function() {
         if ($(this).is(':checked')) {
 
             for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
@@ -2942,7 +2942,7 @@ $(function() {
 
 
 
-    $('.kl-place').change(function() {
+    $('#kl-place').change(function() {
         if ($(this).is(':checked')) {
 
             for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
@@ -2963,7 +2963,7 @@ $(function() {
     })
 
 
-    $('.nt-place').change(function() {
+    $('#nt-place').change(function() {
         if ($(this).is(':checked')) {
             alert(56);
             for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
