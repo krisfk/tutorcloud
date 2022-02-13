@@ -2894,7 +2894,7 @@ $(function() {
 
 
 
-    $('#all-place-1, #all-place-2 ').change(function() {
+    $('#all-place').change(function() {
         if ($(this).is(':checked')) {
 
             $('#hk-place-1').prop('checked', true);
