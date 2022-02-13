@@ -2967,17 +2967,17 @@ $(function() {
         if ($(this).is(':checked')) {
 
             for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
-                $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
+                $('#nt-class-area-value-' + i).prop(
                     'checked', true);
-                $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
+                $('#nt-class-area-value-' + i).prop(
                     'checked', true);
             }
 
         } else {
             for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
-                $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
+                $('#nt-class-area-value-' + i).prop(
                     'checked', false);
-                $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
+                $('#nt-class-area-value-' + i).prop(
                     'checked', false);
             }
         }
