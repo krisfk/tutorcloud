@@ -407,14 +407,16 @@ $the_query->the_post();
                         <tr>
                             <td><label for=""><?php echo $subjects_arr[$i];?></label></td>
                             <td class="grade-col"><label><input type="radio" value="5**"
-                                        name="dse-sub-<?php echo $i+1?>">5**</label>
+                                        name="dse-sub-<?php echo $i+1?>"
+                                        <?php echo get_field('dse_sub_'.$i+1) == '5**' ? 'checked' :'';?>>5**</label>
                             </td>
-                            <td class="grade-col"><label><input type="radio" value="5*"
-                                        name="dse-sub-<?php echo $i+1?>">5*</label></td>
-                            <td class="grade-col"><label><input type="radio" value="5"
-                                        name="dse-sub-<?php echo $i+1?>">5</label></td>
-                            <td class="grade-col"><label><input type="radio" value="4"
-                                        name="dse-sub-<?php echo $i+1?>">4</label></td>
+                            <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-<?php echo $i+1?>"
+                                        <?php echo get_field('dse_sub_'.$i+1) == '5**' ? 'checked' :'';?>>5*</label>
+                            </td>
+                            <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-<?php echo $i+1?>"
+                                        <?php echo get_field('dse_sub_'.$i+1) == '5**' ? 'checked' :'';?>>5</label></td>
+                            <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-<?php echo $i+1?>"
+                                        <?php echo get_field('dse_sub_'.$i+1) == '5**' ? 'checked' :'';?>>4</label></td>
                             <td class="grade-col"><a href="javascript:void(0);" class="radio-cancel-btn">取消</a></td>
 
                         </tr>
