@@ -885,30 +885,6 @@ $the_query->the_post();
                                     }
                                     ?>
 
-                                    <!-- <div>
-                                        <input class="form-check-input" type="checkbox" value="上門" id="t-style-value-1"
-                                            name="t-style[]">
-                                        <label class="form-check-label" for="t-style-value-1">
-                                            上門
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="不上門" id="t-style-value-2"
-                                            name="t-style[]">
-                                        <label class="form-check-label" for="t-style-value-2">
-                                            不上門
-
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="視像補習"
-                                            id="t-style-value-3" name="t-style[]">
-                                        <label class="form-check-label" for="t-style-value-3">
-                                            視像補習
-
-
-                                        </label>
-                                    </div> -->
 
 
                                     <table class="mt-4">
@@ -916,7 +892,8 @@ $the_query->the_post();
                                             <tr>
                                                 <td> <label for="lowest-salary">可接受最低時薪 *</label> </td>
                                                 <td><input id="lowest-salary" name="lowest-salary" type="number"
-                                                        class="form-control"></td>
+                                                        class="form-control"
+                                                        value="<?php echo get_field('lowest_salary');?>"></td>
                                             </tr>
                                         </tbody>
                                     </table>
