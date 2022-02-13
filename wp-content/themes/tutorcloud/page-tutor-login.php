@@ -11,7 +11,7 @@
 
 get_header();
 session_start();
-echo 11;
+// echo 11;
 if($_SESSION['tutor_post_id'])
 {
     echo 1;
@@ -59,6 +59,7 @@ $query_args = array(
             if($email==get_field('email') && $password ==get_field('login_password'))
             {
                 echo '登入成功';
+                echo get_the_ID();
                 $_SESSION['tutor_post_id']   = get_the_ID();
                 exit;
             }
