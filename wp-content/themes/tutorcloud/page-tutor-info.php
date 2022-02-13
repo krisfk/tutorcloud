@@ -2940,7 +2940,7 @@ if($_SESSION['tutor_post_id'])
 
 
 
-                <a href="javascript:void(0);" class="submit-btn">遞交表格</a>
+                <input type="submit" class="submit-btn" value="遞交表格"></input>
 
             </div>
 
