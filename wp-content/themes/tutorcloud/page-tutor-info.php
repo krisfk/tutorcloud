@@ -131,20 +131,22 @@ $the_query->the_post();
                                 <select id="occupation" name="occupation" class="form-select" aria-label="">
 
                                     <option value="" selected="">選擇</option>
-                                    <option value="全職教師" <?php echo get_field('occupation') =='全職教師' ? 'checked':''; ?>>
+                                    <option value="全職教師"
+                                        <?php echo get_field('occupation') =='全職教師' ? 'selected':''; ?>>
                                         全職教師
                                     </option>
                                     <option value="全職教學助理"
-                                        <?php echo get_field('occupation') =='全職教學助理' ? 'checked':''; ?>>
+                                        <?php echo get_field('occupation') =='全職教學助理' ? 'selected':''; ?>>
                                         全職教學助理</option>
                                     <option value="全職補習老師"
-                                        <?php echo get_field('occupation') =='全職補習老師' ? 'checked':''; ?>>
+                                        <?php echo get_field('occupation') =='全職補習老師' ? 'selected':''; ?>>
                                         全職補習老師</option>
-                                    <option value="退休教師" <?php echo get_field('occupation') =='退休教師' ? 'checked':''; ?>>
+                                    <option value="退休教師"
+                                        <?php echo get_field('occupation') =='退休教師' ? 'selected':''; ?>>
                                         退休教師
                                     </option>
                                     <option value="其他在職人仕"
-                                        <?php echo get_field('occupation') =='其他在職人仕' ? 'checked':''; ?>>
+                                        <?php echo get_field('occupation') =='其他在職人仕' ? 'selected':''; ?>>
                                         其他在職人仕</option>
 
                                 </select>
