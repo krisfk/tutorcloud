@@ -819,7 +819,7 @@ $the_query->the_post();
                             <td class="align-top"><label for="self-intro">自我介紹 (50字或以上) *
                                 </label></td>
                             <td><textarea id="self-intro" name="self-intro" class="form-control" rows="4"
-                                    cols="50"></textarea></td>
+                                    cols="50"><?php echo get_field('self_intro');?></textarea></td>
                         </tr>
 
                     </tbody>
