@@ -785,7 +785,8 @@ $the_query->the_post();
                             <td><label for="other-cert"> 其他資格 (可填寫ielts/樂器級數等)
                                 </label></td>
                             <td>
-                                <input id="other-cert" name="other-cert" type="text" class="form-control">
+                                <input id="other-cert" name="other-cert" type="text" class="form-control"
+                                    value="<?php echo get_field('other_cert');?>">
                             </td>
                         </tr>
                         <tr>
