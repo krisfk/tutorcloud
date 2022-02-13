@@ -969,9 +969,32 @@ $the_query->the_post();
                                 <td colspan="2"><label for="t-subjects-f46">
                                         <h5>中學(中四至中六)</h5>
                                     </label>
+                                    <?php
+                                $f46_subjects=array("中文","英文","數學","數學(M1)","數學(M2)","通識","物理","化學","生物","綜合科學","資訊及通訊科技","地理","中史","西史","中國文學","英國文學","經濟","企業、會計與財務概論","旅遊與款待","倫理與宗教");                                 
+                                  ?>
+                                    <?php
 
+                            for($i=0;$i<count($f46_subjects);$i++)
+                            {
+                                ?>
 
                                     <div>
+                                        <input
+                                            <?php echo in_array($f46_subjects[$i], get_field('t_subjects_f46')) ? 'checked':''; ?>
+                                            class="form-check-input" type="checkbox"
+                                            value="<?php echo $f46_subjects[$i];?>"
+                                            id="t-subjects-f46-value-<?php echo $i+1;?>" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f13-value-<?php echo $i+1;?>">
+                                            <?php echo $f46_subjects[$i];?>
+
+                                        </label>
+                                    </div>
+                                    <?php
+                            }
+
+                            ?>
+
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="中文"
                                             id="t-subjects-f46-value-3" name="t-subjects-f46[]">
                                         <label class="form-check-label" for="t-subjects-f46-value-3">
@@ -1053,24 +1076,7 @@ $the_query->the_post();
 
                                         </label>
                                     </div>
-                                    <!-- <div>
-                                        <input class="form-check-input" type="checkbox" value="組合科學：物理 化學"
-                                            id="t-subjects-f46-value-12" name="t-subjects-f46[]">
-                                        <label class="form-check-label" for="t-subjects-f46-value-12">
-
-                                            組合科學：物理 化學
-
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input class="form-check-input" type="checkbox" value="組合科學：化學 生物"
-                                            id="t-subjects-f46-value-13" name="t-subjects-f46[]">
-                                        <label class="form-check-label" for="t-subjects-f46-value-13">
-
-                                            組合科學：化學 生物
-
-                                        </label>
-                                    </div> -->
+                                  
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="綜合科學"
                                             id="t-subjects-f46-value-14" name="t-subjects-f46[]">
@@ -1170,7 +1176,7 @@ $the_query->the_post();
                                             倫理與宗教
 
                                         </label>
-                                    </div>
+                                    </div> -->
 
 
 
