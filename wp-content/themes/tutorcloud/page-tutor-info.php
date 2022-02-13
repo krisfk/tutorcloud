@@ -2954,5 +2954,14 @@ if($_SESSION['tutor_post_id'])
 
 
 </div>
+<script type="text/javascript">
+$(function() {
+
+    $('.info-btn').click(function() {
+        $('.info-btn').removeClass('active');
+        $(this).addClass('active')
+    })
+})
+</script>
 <?php
 get_footer();
