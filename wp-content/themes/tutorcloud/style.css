@@ -325,6 +325,10 @@ h2 .bar {
     margin: 0 0.3rem;
 }
 
+.info-btn.active {
+    opacity: 1;
+}
+
 .info-btn:hover {
     display: inline-block;
     background: #618382;
@@ -334,7 +338,7 @@ h2 .bar {
     border-radius: 10px;
     box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
     /* margin: 0 auto; */
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .filter-btn.active {
