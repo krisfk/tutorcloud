@@ -864,8 +864,28 @@ $the_query->the_post();
 
 
                                     <h5 class="mt-4">可供補習方式 *</h5>
+                                    <?php
+                                    
+                                    $tutorial_style_arr=array('上門','不上門','視像補習');
 
+                                    for($i=0;$i<count($tutorial_style_arr);$i++)
+                                    {
+                                        ?>
                                     <div>
+                                        <input
+                                            <?php echo in_array($tutorial_style_arr[$i], get_field('t_style')) ? 'checked':''; ?>
+                                            class="form-check-input" type="checkbox"
+                                            value="<?php echo $tutorial_style_arr[$i];?>"
+                                            id="t-style-value-<?php echo $i+1;?>" name="t-style[]">
+                                        <label class="form-check-label" for="t-style-value-<?php echo $i+1;?>">
+                                            上門
+                                        </label>
+                                    </div>
+                                    <?php
+                                    }
+                                    ?>
+
+                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="上門" id="t-style-value-1"
                                             name="t-style[]">
                                         <label class="form-check-label" for="t-style-value-1">
@@ -888,7 +908,7 @@ $the_query->the_post();
 
 
                                         </label>
-                                    </div>
+                                    </div> -->
 
 
                                     <table class="mt-4">
