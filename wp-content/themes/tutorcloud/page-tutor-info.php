@@ -45,7 +45,7 @@ if($_SESSION['tutor_post_id'])
 
     <div class="tutor-info-form-div">
 
-        <form action="" method="post" enctype="multipart/form-data">
+        <form class="tutor-info-form tutor-info-form-1" action="" method="post" enctype="multipart/form-data">
             <div class="step-content step-content-2 mt-5">
                 <h3 class="mb-4">個人資料</h3>
                 <h5>登入資料</h5>
@@ -215,6 +215,9 @@ if($_SESSION['tutor_post_id'])
 
             </div>
 
+        </form>
+
+        <form class="tutor-info-form tutor-info-form-2" action="" method="post" enctype="multipart/form-data">
 
             <div class="step-content step-content-3 mt-5">
 
