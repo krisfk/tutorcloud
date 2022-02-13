@@ -17,7 +17,7 @@ get_header();
 if($_SESSION['tutor_post_id'])
 {
     // echo 1;
-    // wp_redirect( get_site_url() );
+    wp_redirect( get_site_url() );
 
 exit;
 }
