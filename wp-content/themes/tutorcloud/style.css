@@ -1011,3 +1011,11 @@ input[type='number'] {
 .tutor-info-form-div .step-content {
     display: block;
 }
+
+.tutor-info-form {
+    display: none;
+}
+
+.tutor-info-form..tutor-info-form-1 {
+    display: block;
+}
