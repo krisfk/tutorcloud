@@ -211,7 +211,7 @@ if($_SESSION['tutor_post_id'])
                     </tbody>
                 </table>
 
-                <input type="submit" class="submit-btn" value="遞交表格"></input>
+                <input type="submit" class="submit-btn" value="更新資料"></input>
 
 
             </div>
@@ -2941,7 +2941,7 @@ if($_SESSION['tutor_post_id'])
 
 
 
-                <input type="submit" class="submit-btn" value="遞交表格"></input>
+                <input type="submit" class="submit-btn" value="更新資料"></input>
 
             </div>
 
