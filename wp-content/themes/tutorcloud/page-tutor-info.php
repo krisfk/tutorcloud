@@ -25,9 +25,9 @@ $the_query = new WP_Query( $query_args );
 $the_query->have_posts();
 $the_query->the_post();
 
-echo get_field('tutor_id');
+// echo get_field('tutor_id');
 // echo 111;
-wp_reset_postdata();
+// wp_reset_postdata();
 
 
 
@@ -64,7 +64,9 @@ wp_reset_postdata();
                     <tbody>
                         <tr>
                             <td><label for="email">登入電郵*</label></td>
-                            <td><input id="email" name="email" type="text" class="form-control"></td>
+                            <td><input id="email" name="email" type="text" class="form-control"
+                                    value="<?php echo get_field('email'); ?>">
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="login_password">登入密碼*</label></td>
