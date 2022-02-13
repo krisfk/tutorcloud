@@ -429,11 +429,14 @@ $the_query->the_post();
                             ?>
                         <tr>
                             <td class="pe-3"><label for="other-subject-<?php echo $i?>" class="mb-2">其他科目
-                                    <?php echo $i?></label><input id="other-subject-<?php echo $i?>" type="text"
+                                    <?php echo $i?></label><input value="<?php echo get_field('other_subject_'.$i);?>"
+                                    id="other-subject-<?php echo $i?>" type="text"
                                     class="form-control other-subject-input" name="other-subject-<?php echo $i?>">
                             </td>
                             <td colspan="5"><label for="other-subject-<?php echo $i?>-grade"
-                                    class="mb-2">成績</label><input id="other-subject-<?php echo $i?>-grade" type="text"
+                                    class="mb-2">成績</label><input
+                                    value="<?php echo get_field('other_subject_'.$i.'_grade');?>"
+                                    id="other-subject-<?php echo $i?>-grade" type="text"
                                     class="form-control other-subject-input" name="other-subject-<?php echo $i?>-grade">
                             </td>
                         </tr>
