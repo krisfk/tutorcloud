@@ -416,15 +416,37 @@ $the_query->the_post();
                             <td class="grade-col"><a href="javascript:void(0);" class="radio-cancel-btn">取消</a></td>
 
                         </tr>
+
+
+                        <?php
+                        }
+                        ?>
+
+                        <?php
+                        
+                        for($i=1;$i<=10;$i++)
+                        {
+                            ?>
+                        <tr>
+                            <td class="pe-3"><label for="other-subject-<?php echo $i?>" class="mb-2">其他科目
+                                    <?php echo $i?></label><input id="other-subject-<?php echo $i?>" type="text"
+                                    class="form-control other-subject-input" name="other-subject-<?php echo $i?>">
+                            </td>
+                            <td colspan="5"><label for="other-subject-<?php echo $i?>-grade"
+                                    class="mb-2">成績</label><input id="other-subject-<?php echo $i?>-grade" type="text"
+                                    class="form-control other-subject-input" name="other-subject-<?php echo $i?>-grade">
+                            </td>
+                        </tr>
                         <?php
                         }
                         ?>
 
 
 
-
                     </tbody>
                 </table>
+
+
 
 
                 <table class="mt-4">
