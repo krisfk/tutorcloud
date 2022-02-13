@@ -583,6 +583,7 @@ input[type='checkbox'] {
 }
 
 .submit-btn {
+    border: none;
     color: #fff;
     background: #46a879;
     /* url(./assets/images/tutor-icon.png) no-repeat; */
