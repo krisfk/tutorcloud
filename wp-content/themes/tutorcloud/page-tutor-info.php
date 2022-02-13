@@ -351,13 +351,13 @@ $the_query->the_post();
                             </td>
                             <td>
                                 <div class="past-exam-group">
-                                    <?php echo get_field('past_exam');?>
+                                    <?php print_r(get_field('past_exam'));?>
                                     <?php //echo $_POST['filter-form']&&in_array($nt_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>
                                     <?php
                                     
                                     $past_exam_arr= array("HKDSE","HKCEE","HKALE","IB","GCE AL","IGCSE","SAT");
                                     
-                                    print_r(get_field['past_exam']);
+                                    // print_r(get_field['past_exam']);
                                     for($i=0;$i<count($past_exam_arr);$i++)
                                     {
                                         ?>
