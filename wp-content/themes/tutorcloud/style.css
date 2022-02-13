@@ -315,6 +315,18 @@ h2 .bar {
     /* margin: 0 auto; */
 }
 
+.filter-btn.active {
+    opacity: 1;
+}
+
+.filter-btn {
+    opacity: 0.8;
+}
+
+.filter-btn:hover {
+    opacity: 1;
+}
+
 .next-step-btn {
     /* display: inline-block;
     background: #618382;
