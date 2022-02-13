@@ -2897,18 +2897,18 @@ $(function() {
     $('#all-place').change(function() {
         if ($(this).is(':checked')) {
 
-            $('#hk-place-1').prop('checked', true);
-            $('#kl-place-1').prop('checked', true);
-            $('#nt-place-1').prop('checked', true);
+            $('#hk-place').prop('checked', true);
+            $('#kl-place').prop('checked', true);
+            $('#nt-place').prop('checked', true);
             $('input[name="class-area[]"]').prop('checked', true);
 
 
 
         } else {
 
-            $('#hk-place-1').prop('checked', false);
-            $('#kl-place-1').prop('checked', false);
-            $('#nt-place-1').prop('checked', false);
+            $('#hk-place').prop('checked', false);
+            $('#kl-place').prop('checked', false);
+            $('#nt-place').prop('checked', false);
             $('input[name="class-area[]"]').prop('checked', false);
 
 
