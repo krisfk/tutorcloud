@@ -1016,6 +1016,6 @@ input[type='number'] {
     display: none;
 }
 
-.tutor-info-form..tutor-info-form-1 {
+.tutor-info-form.tutor-info-form-1 {
     display: block;
 }
