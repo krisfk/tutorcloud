@@ -10,13 +10,13 @@
  */
 
 get_header();
-echo $_SESSION['test'];
+// echo $_SESSION['test'];
 // session_start();
-$_SESSION['test']=111;
+// $_SESSION['test']=111;
 
 if($_SESSION['tutor_post_id'])
 {
-    echo 1;
+    // echo 1;
     wp_redirect( get_site_url() );
 
 exit;
@@ -63,7 +63,7 @@ $query_args = array(
                 echo '登入成功';
                 // echo get_the_ID();
                 $_SESSION['tutor_post_id']   = get_the_ID();
-                // exit;
+                exit;
             }
             else
             {
