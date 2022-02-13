@@ -888,7 +888,9 @@ $the_query->the_post();
                                         ?>
 
                                     <div>
-                                        <input class="form-check-input" type="checkbox"
+                                        <input
+                                            <?php echo in_array($pri_subjects[$i], get_field('t_subjects_pri')) ? 'checked':''; ?>
+                                            class="form-check-input" type="checkbox"
                                             value="<?php echo $pri_subjects[$i];?>"
                                             id="t-subjects-pri-value-<?php echo $i+1;?>" name="t-subjects-pri[]">
                                         <label class="form-check-label" for="t-subjects-pri-value-<?php echo $i+1;?>">
