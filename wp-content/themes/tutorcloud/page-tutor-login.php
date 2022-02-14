@@ -63,7 +63,7 @@ $query_args = array(
     if ( $the_query->have_posts() ) {
 
         $the_query->the_post();
-
+echo get_field('tutor_id');
         echo '登入成功，三秒後回到主頁。';
         $_SESSION['tutor_post_id']   = get_the_ID();
         ?>
