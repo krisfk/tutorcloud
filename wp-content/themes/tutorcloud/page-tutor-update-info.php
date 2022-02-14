@@ -10,10 +10,8 @@
  */
 
 get_header();
-// echo $_SESSION['test'];
-// session_start();
-// $_SESSION['test']=111;
 
+echo $_POST['form-type'];
 
 ?>
 
