@@ -971,6 +971,103 @@ $the_query->the_post();
 <script type="text/javascript">
 $(function() {
 
+    $('.tutor-info-form-1').submit(function() {
+
+        return false;
+    })
+
+
+
+    $('.step-content-2 .next-step-btn').click(function() {
+
+        // alert(6);
+        var email = $('#email').val();
+        var confirm_email = $('#confirm_email').val();
+
+        var login_password = $('#login_password').val();
+        var confirm_login_password = $('#confirm_login_password').val();
+        var chi_name = $('#chi-name').val();
+        var eng_name = $('#eng-name').val();
+        var whatsapp_tel = $('#whatsapp-tel').val();
+        var born_year = $('#born_year').val();
+        var gender = $('input[name="gender"]:checked').val();
+        var living_area = $('#living-area').val();
+        var error_txt = '';
+        // var error = '';
+
+
+
+        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
+            error_txt +=
+                '電郵格式不正確\n';
+        }
+
+
+        if (email != confirm_email) {
+            error_txt +=
+                '確認登入電郵輸入不相同\n';
+        }
+
+        if (!login_password) {
+            error_txt +=
+                '請輸入登入密碼\n';
+        }
+
+        if (login_password != confirm_login_password) {
+            error_txt +=
+                '確認登入密碼輸入不相同\n';
+        }
+
+
+        if (!chi_name) {
+            error_txt +=
+                '請輸入中文全名\n';
+        }
+        if (!eng_name) {
+            error_txt +=
+                '請輸入英文全名\n';
+        }
+
+        if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
+            error_txt += 'whatsapp電話格式不正確\n';
+        }
+        if (!born_year) {
+            error_txt +=
+                '請輸入出生年份\n';
+        }
+
+        if (!gender) {
+            error_txt +=
+                '請輸入性別\n';
+        }
+        if (!living_area) {
+            error_txt +=
+                '請輸入居住地區\n';
+        }
+
+
+        if (error_txt) {
+            alert(error_txt);
+        } else {
+            $('.step-content').fadeOut(0);
+
+            $('.step-content.step-content-3').fadeIn(0);
+            $('html,body').animate({
+                'scrollTop': $('.main-content-div').offset().top - 50
+            }, 200);
+
+            $('.step-txt').removeClass('active');
+            $('.step-txt').eq(2).addClass('active');
+
+
+        }
+
+
+
+
+
+
+    })
 
 
     $('#all-place').change(function() {

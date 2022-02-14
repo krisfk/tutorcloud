@@ -34,7 +34,6 @@ if($_POST['form-type']=='tutor-info-form-1')
     update_post_meta($post_id, 'gender', $gender);
     update_post_meta($post_id, 'occupation', $occupation);
     update_post_meta($post_id, 'living_area', $living_area);
-
 }
 
 ?>
