@@ -26,16 +26,54 @@ if($_POST['form-type']=='tutor-info-form-1')
     $living_area=$_POST['living_area'];
     $post_id = $_SESSION['tutor_post_id'];
     $login_password = $_POST['login_password'];
-    echo $login_password;
+    $new_password = $_POST['new_password'];
+    $password_wrong=false;
+    // echo $login_password;
     // echo $post_id;
-    update_post_meta($post_id, 'chi_name', $chi_name);
-    update_post_meta($post_id, 'eng_name', $eng_name);
-    update_post_meta($post_id, 'nick_name', $nick_name);
-    update_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
-    update_post_meta($post_id, 'born_year', $born_year);
-    update_post_meta($post_id, 'gender', $gender);
-    update_post_meta($post_id, 'occupation', $occupation);
-    update_post_meta($post_id, 'living_area', $living_area);
+
+    if($login_password){
+     
+        $query_args = array(
+            'post_type' => 'tutor',
+            'p'=>$_SESSION['tutor_post_id']
+        );
+        
+        // The Query
+        $the_query = new WP_Query( $query_args );
+        $the_query->have_posts();
+        $the_query->the_post();
+
+        if($login_password==get_field('login_password'))
+        {
+            update_post_meta($post_id, 'login_password', $new_password);
+            update_post_meta($post_id, 'chi_name', $chi_name);
+            update_post_meta($post_id, 'eng_name', $eng_name);
+            update_post_meta($post_id, 'nick_name', $nick_name);
+            update_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
+            update_post_meta($post_id, 'born_year', $born_year);
+            update_post_meta($post_id, 'gender', $gender);
+            update_post_meta($post_id, 'occupation', $occupation);
+            update_post_meta($post_id, 'living_area', $living_area);
+        }
+        else
+        {
+            $password_wrong=true;
+        }
+
+        
+    }
+    else
+    {
+        update_post_meta($post_id, 'chi_name', $chi_name);
+        update_post_meta($post_id, 'eng_name', $eng_name);
+        update_post_meta($post_id, 'nick_name', $nick_name);
+        update_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
+        update_post_meta($post_id, 'born_year', $born_year);
+        update_post_meta($post_id, 'gender', $gender);
+        update_post_meta($post_id, 'occupation', $occupation);
+        update_post_meta($post_id, 'living_area', $living_area);   
+    }
+
 }
 
 ?>
@@ -59,7 +97,15 @@ if($_POST['form-type']=='tutor-info-form-1')
 if($_POST)
 {
 
-    echo '導師資料更新成功，三秒後回到主頁。';
+    if($password_wrong)
+    {
+        echo '原有問題輸入不正確，三秒後回到主頁。';
+    }
+    else
+    {
+        echo '導師資料更新成功，三秒後回到主頁。';
+
+    }
 
 
     ?>
