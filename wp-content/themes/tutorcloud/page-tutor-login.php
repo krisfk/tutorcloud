@@ -53,7 +53,7 @@ $query_args = array(
     'meta_query' => array(
 	    array(
 			'key'   => 'login_password',
-			'value' => get_field('login_password'),
+			'value' => $password,
 	    ),
 	)
     
