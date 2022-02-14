@@ -37,12 +37,12 @@ if($_POST)
 {
     // echo 11;
     
-$email = $_POST['email'];
-$password = $_POST['login_password'];
+// $email = $_POST['email'];
+// $password = $_POST['login_password'];
 
-$query_args = array(
-	'post_type' => 'tutor',
-);
+// $query_args = array(
+	// 'post_type' => 'tutor',
+// );
       echo '導師資料更新成功，三秒後回到主頁。';
 
     // $the_query = new WP_Query( $query_args );
