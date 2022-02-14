@@ -85,38 +85,49 @@ $query_args = array(
     else
     {
         echo '登入電郵或密碼不正確。';
-
+        login_form();
     }
 
+}
+else
+{
+    login_form();
+
+}
+
+
+function login_form()
+{
+echo '<form action="" method="post">
+<table class="mt-5 login-table mx-auto">
+    <tbody>
+        <tr>
+            <td class="pe-2 mb-3"><label for="email">登入電郵*</label></td>
+            <td class="mb-3"><input id="email" name="email" type="text" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td class="pe-2 mb-3"><label for="login_password">登入密碼*</label></td>
+            <td><input id="login_password" name="login_password" type="password" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-end pt-4">
+
+                <input type="submit" href="javascript:void(0);" class="submit-btn m-0" value="登入"></input>
+
+                <a href="#" class="forgot-pw-a">忘記密碼</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</form>
+';
 }
 ?>
     </h5>
 
 
-    <form action="" method="post">
-        <table class="mt-5 login-table mx-auto">
-            <tbody>
-                <tr>
-                    <td class="pe-2 mb-3"><label for="email">登入電郵*</label></td>
-                    <td class="mb-3"><input id="email" name="email" type="text" class="form-control"></td>
-                </tr>
-
-                <tr>
-                    <td class="pe-2 mb-3"><label for="login_password">登入密碼*</label></td>
-                    <td><input id="login_password" name="login_password" type="password" class="form-control">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="text-end pt-4">
-
-                        <input type="submit" href="javascript:void(0);" class="submit-btn m-0" value="登入"></input>
-
-                        <a href="#" class="forgot-pw-a">忘記密碼</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </form>
 
 
 
