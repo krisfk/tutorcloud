@@ -37,7 +37,7 @@ get_header();
 // {
 
     echo '已登出，三秒後回到主頁。';
-
+    $_SESSION['tutor_post_id']='';
 
     ?>
         <script type="text/javascript">
