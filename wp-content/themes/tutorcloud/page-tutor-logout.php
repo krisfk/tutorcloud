@@ -33,8 +33,8 @@ get_header();
     <h5 class="text-center d-block mt-5">
         <?php 
 
-if($_POST)
-{
+// if($_POST)
+// {
 
     echo '已登出，三秒後回到主頁。';
 
@@ -47,7 +47,7 @@ if($_POST)
         </script>
         <?php
 
-}
+// }
 ?>
     </h5>
 
