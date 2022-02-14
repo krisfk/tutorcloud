@@ -11,7 +11,30 @@
 
 get_header();
 
-echo $_POST['form-type'];
+
+if($_POST['form-type']=='tutor-info-form-1')
+{
+    // $email=$_POST['email'];
+    // $login_password=$_POST['login_password'];  
+    $chi_name = $_POST['chi-name'];
+    $eng_name = $_POST['eng-name'];
+    $nick_name = $_POST['nick-name'];
+    $whatsapp_tel=$_POST['whatsapp-tel'];
+    $born_year=$_POST['born_year'];
+    $gender=$_POST['gender'];
+    $occupation=$_POST['occupation'];
+    $living_area=$_POST['living_area'];
+    
+  
+    add_post_meta($post_id, 'chi_name', $chi_name);
+    add_post_meta($post_id, 'eng_name', $eng_name);
+    add_post_meta($post_id, 'nick_name', $nick_name);
+    add_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
+    add_post_meta($post_id, 'born_year', $born_year);
+    add_post_meta($post_id, 'gender', $gender);
+    add_post_meta($post_id, 'occupation', $occupation);
+    
+}
 
 ?>
 
