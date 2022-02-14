@@ -14,25 +14,17 @@ get_header();
 // session_start();
 // $_SESSION['test']=111;
 
-if($_SESSION['tutor_post_id'])
-{
-    // echo 1;
-    wp_redirect( get_site_url() );
-
-exit;
-}
-
 
 ?>
 
 <div class="breadcrumb mt-4">
 
-    主頁 > 導師登入
+    主頁 > 導師資料更新
 </div>
 <div class="container mt-5">
 
     <div class="text-center">
-        <h2>導師登入
+        <h2>導師資料更新
             <div class="bar"></div>
         </h2>
     </div>
@@ -51,36 +43,10 @@ $password = $_POST['login_password'];
 $query_args = array(
 	'post_type' => 'tutor',
 );
+      echo '導師資料更新成功，三秒後回到主頁。';
 
-    $the_query = new WP_Query( $query_args );
-    if ( $the_query->have_posts() ) {
-        while ( $the_query->have_posts() ) {
-
-            $the_query->the_post();
-
-            if($email==get_field('email') && $password ==get_field('login_password'))
-            {
-                echo '登入成功，三秒後回到主頁。';
-                // echo get_the_ID();
-                $_SESSION['tutor_post_id']   = get_the_ID();
-                ?>
-        <script type="text/javascript">
-        window.setTimeout(function() {
-            window.location.href = '<?php echo get_site_url();?>';
-        }, 3000);
-        </script>
-
-        <?php
-                exit;
-            }
-            else
-            {
-                echo '登入電郵或密碼不正確。';
-            }
-            // echo 1;
-        }
-        wp_reset_postdata();
-    }
+    // $the_query = new WP_Query( $query_args );
+   
 
 }
 ?>
