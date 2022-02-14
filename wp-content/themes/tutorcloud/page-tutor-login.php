@@ -51,10 +51,15 @@ $password = $_POST['login_password'];
 $query_args = array(
 	'post_type' => 'tutor',
     'meta_query' => array(
+        'relation' => 'AND',
 	    array(
 			'key'   => 'login_password',
 			'value' => $password,
 	    ),
+        array(
+			'key'   => 'email',
+			'value' => $email,
+	    )
 	)
     
 );
@@ -63,7 +68,7 @@ $query_args = array(
     if ( $the_query->have_posts() ) {
 
         $the_query->the_post();
-echo get_field('tutor_id');
+// echo get_field('tutor_id');
         echo '登入成功，三秒後回到主頁。';
         $_SESSION['tutor_post_id']   = get_the_ID();
         ?>
