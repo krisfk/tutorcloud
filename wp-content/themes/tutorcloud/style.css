@@ -140,8 +140,19 @@ body {
     box-shadow: 0px 1px 12.32px 1.68px rgba(0, 0, 0, 0.18);
 }
 
+.tutor-logout-btn {
+    display: inline-block;
+    background: #46a879;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 12.32px 1.68px rgba(0, 0, 0, 0.18);
+}
+
 .tutor-login-btn:hover,
-.tutor-info-btn:hover {
+.tutor-info-btn:hover,
+.tutor-login-btn:hover {
     color: #fff;
 }
 
