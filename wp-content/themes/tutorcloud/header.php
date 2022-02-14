@@ -121,7 +121,7 @@ echo'</li>';
                                 <div class="col-2 text-end">
 
                                     <?php
-
+echo $_SESSION['tutor_post_id'];
 if(!$_SESSION['tutor_post_id'])
 {
     ?>
