@@ -55,7 +55,8 @@ $the_query->the_post();
 
     <div class="tutor-info-form-div">
 
-        <form class="tutor-info-form tutor-info-form-1" action="" method="post" enctype="multipart/form-data">
+        <form class="tutor-info-form tutor-info-form-1" action="<?php echo get_site_url();?>/tutor-update-info"
+            method="post" enctype="multipart/form-data">
             <input type="hidden" name="form-type" value="tutor-info-form-1">
             <div class="step-content step-content-2 mt-5">
                 <h3 class="mb-4">個人資料</h3>
@@ -220,7 +221,8 @@ $the_query->the_post();
 
         </form>
 
-        <form class="tutor-info-form tutor-info-form-2" action="" method="post" enctype="multipart/form-data">
+        <form class="tutor-info-form tutor-info-form-2" action="<?php echo get_site_url();?>/tutor-update-info"
+            method="post" enctype="multipart/form-data">
             <input type="hidden" name="form-type" value="tutor-info-form-2">
 
             <div class="step-content step-content-3 mt-5">
