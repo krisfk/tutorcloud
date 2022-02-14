@@ -82,13 +82,12 @@ $the_query->the_post();
                         </tr>
 
                         <tr>
-                            <td><label for="confirm_login_password">新密碼*</label></td>
-                            <td><input id="confirm_login_password" name="confirm_login_password" type="password"
-                                    class="form-control"></td>
+                            <td><label for="new_password">新密碼*</label></td>
+                            <td><input id="new_password" name="new_password" type="password" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td><label for="confirm_login_password">確認新密碼*</label></td>
-                            <td><input id="confirm_login_password" name="confirm_login_password" type="password"
+                            <td><label for="confirm_new_password">確認新密碼*</label></td>
+                            <td><input id="confirm_new_password" name="confirm_new_password" type="password"
                                     class="form-control"></td>
                         </tr>
 
@@ -977,7 +976,11 @@ $(function() {
         var confirm_email = $('#confirm_email').val();
 
         var login_password = $('#login_password').val();
-        var confirm_login_password = $('#confirm_login_password').val();
+        var new_password = $('#new_password').val();
+        var confirm_new_password = $('#confirm_new_password').val();
+
+
+
         var chi_name = $('#chi-name').val();
         var eng_name = $('#eng-name').val();
         var whatsapp_tel = $('#whatsapp-tel').val();
