@@ -25,6 +25,8 @@ if($_POST['form-type']=='tutor-info-form-1')
     $occupation=$_POST['occupation'];
     $living_area=$_POST['living_area'];
     $post_id = $_SESSION['tutor_post_id'];
+    $login_password = $_POST['login_password'];
+    echo $login_password;
     // echo $post_id;
     update_post_meta($post_id, 'chi_name', $chi_name);
     update_post_meta($post_id, 'eng_name', $eng_name);
