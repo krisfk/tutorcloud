@@ -973,7 +973,7 @@ $(function() {
     $('.tutor-info-form-1').submit(function() {
 
         var email = $('#email').val();
-        var confirm_email = $('#confirm_email').val();
+        // var confirm_email = $('#confirm_email').val();
 
         var login_password = $('#login_password').val();
         var new_password = $('#new_password').val();
@@ -995,10 +995,10 @@ $(function() {
         }
 
 
-        if (email != confirm_email) {
-            error_txt +=
-                '確認登入電郵輸入不相同\n';
-        }
+        // if (email != confirm_email) {
+        //     error_txt +=
+        //         '確認登入電郵輸入不相同\n';
+        // }
 
         if (new_password && (new_password != confirm_new_password)) {
             error_txt +=
