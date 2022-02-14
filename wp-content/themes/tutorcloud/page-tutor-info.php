@@ -14,6 +14,10 @@ get_header();
 // session_start();
 // $_SESSION['test']=111;
 
+if(!$_SESSION['tutor_post_id'])
+{
+    echo 11;
+}
 
 $query_args = array(
 	'post_type' => 'tutor',
@@ -67,7 +71,8 @@ $the_query->the_post();
                             <td><label for="email">登入電郵*</label></td>
                             <td><input readonly id="email" name="email" type="text" class="form-control"
                                     value="<?php echo get_field('email'); ?>">
-                                <?php echo get_field('email'); ?> </td>
+                                <?php //echo get_field('email'); ?>
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="login_password">登入密碼*</label></td>
