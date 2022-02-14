@@ -31,7 +31,7 @@ if($_POST['form-type']=='tutor-info-form-1')
     // echo $login_password;
     // echo $post_id;
 
-    if($login_password){
+    if($login_password || $new_password){
      
         $query_args = array(
             'post_type' => 'tutor',
