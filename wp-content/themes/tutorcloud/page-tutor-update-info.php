@@ -35,18 +35,17 @@ get_header();
 
 if($_POST)
 {
-    // echo 11;
-    
-// $email = $_POST['email'];
-// $password = $_POST['login_password'];
 
-// $query_args = array(
-	// 'post_type' => 'tutor',
-// );
-      echo '導師資料更新成功，三秒後回到主頁。';
+    echo '導師資料更新成功，三秒後回到主頁。';
 
-    // $the_query = new WP_Query( $query_args );
-   
+
+    ?>
+        <script type="text/javascript">
+        window.setTimeout(function() {
+            window.location.href = '<?php echo get_site_url();?>';
+        }, 3000);
+        </script>
+        <?php
 
 }
 ?>
