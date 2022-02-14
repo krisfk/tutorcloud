@@ -16,7 +16,8 @@ get_header();
 
 if(!$_SESSION['tutor_post_id'])
 {
-    echo 11;
+    wp_redirect(get_site_url());
+    // echo 11;
 }
 
 $query_args = array(
