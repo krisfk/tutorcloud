@@ -121,13 +121,12 @@ echo'</li>';
                                 <div class="col-2 text-end">
 
                                     <?php
-echo $_SESSION['tutor_post_id'];
+// echo $_SESSION['tutor_post_id'];
 if(!$_SESSION['tutor_post_id'])
 {
     ?>
                                     <a href="<?php echo get_site_url();?>/tutor-login" class="tutor-login-btn">導師登入</a>
 
-                                    <a href="<?php echo get_site_url();?>/tutor-logout" class="tutor-logout-btn">登出</a>
                                     <?php
 }
 ?>
@@ -138,6 +137,7 @@ if(!$_SESSION['tutor_post_id'])
                                     {
                                         ?>
                                     <a href="<?php echo get_site_url();?>/tutor-info" class="tutor-info-btn">導師資料</a>
+                                    <a href="<?php echo get_site_url();?>/tutor-logout" class="tutor-logout-btn">登出</a>
 
                                     <?php
                                     }
