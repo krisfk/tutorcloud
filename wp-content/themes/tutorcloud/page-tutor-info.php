@@ -979,8 +979,6 @@ $(function() {
         var new_password = $('#new_password').val();
         var confirm_new_password = $('#confirm_new_password').val();
 
-
-
         var chi_name = $('#chi-name').val();
         var eng_name = $('#eng-name').val();
         var whatsapp_tel = $('#whatsapp-tel').val();
@@ -1002,15 +1000,20 @@ $(function() {
                 '確認登入電郵輸入不相同\n';
         }
 
-        if (!login_password) {
+        if (new_password && (new_password != confirm_new_password)) {
             error_txt +=
-                '請輸入登入密碼\n';
+                '確認登入新密碼輸入不相同\n';
         }
 
-        if (login_password != confirm_login_password) {
-            error_txt +=
-                '確認登入密碼輸入不相同\n';
-        }
+        // if (!login_password) {
+        //     error_txt +=
+        //         '請輸入登入密碼\n';
+        // }
+
+        // if (login_password != confirm_login_password) {
+        //     error_txt +=
+        //         '確認登入密碼輸入不相同\n';
+        // }
 
 
         if (!chi_name) {
