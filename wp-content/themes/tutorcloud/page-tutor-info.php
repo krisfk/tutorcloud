@@ -973,14 +973,6 @@ $(function() {
 
     $('.tutor-info-form-1').submit(function() {
 
-        return false;
-    })
-
-
-
-    $('.step-content-2 .next-step-btn').click(function() {
-
-        // alert(6);
         var email = $('#email').val();
         var confirm_email = $('#confirm_email').val();
 
@@ -993,7 +985,6 @@ $(function() {
         var gender = $('input[name="gender"]:checked').val();
         var living_area = $('#living-area').val();
         var error_txt = '';
-        // var error = '';
 
 
 
@@ -1047,7 +1038,9 @@ $(function() {
 
 
         if (error_txt) {
+
             alert(error_txt);
+            return false;
         } else {
             $('.step-content').fadeOut(0);
 
@@ -1061,6 +1054,13 @@ $(function() {
 
 
         }
+
+    })
+
+
+
+    $('.step-content-2 .next-step-btn').click(function() {
+
 
 
 
