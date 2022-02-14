@@ -50,20 +50,24 @@ $password = $_POST['login_password'];
 
 $query_args = array(
 	'post_type' => 'tutor',
+    'meta_query' => array(
+	    array(
+			'key'   => 'login_password',
+			'value' => get_field('login_password'),
+	    ),
+	)
+    
 );
 
     $the_query = new WP_Query( $query_args );
     if ( $the_query->have_posts() ) {
-        while ( $the_query->have_posts() ) {
 
-            $the_query->the_post();
+        $the_query->the_post();
 
-            if($email==get_field('email') && $password ==get_field('login_password'))
-            {
-                echo '登入成功，三秒後回到主頁。';
-                // echo get_the_ID();
-                $_SESSION['tutor_post_id']   = get_the_ID();
-                ?>
+        echo '登入成功，三秒後回到主頁。';
+        $_SESSION['tutor_post_id']   = get_the_ID();
+        ?>
+
         <script type="text/javascript">
         window.setTimeout(function() {
             window.location.href = '<?php echo get_site_url();?>';
@@ -71,15 +75,12 @@ $query_args = array(
         </script>
 
         <?php
-                exit;
-            }
-            else
-            {
-                echo '登入電郵或密碼不正確。';
-            }
-            // echo 1;
-        }
-        wp_reset_postdata();
+                  
+    }
+    else
+    {
+        echo '登入電郵或密碼不正確。';
+
     }
 
 }
