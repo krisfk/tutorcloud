@@ -999,7 +999,7 @@ $(function() {
         //     error_txt +=
         //         '確認登入電郵輸入不相同\n';
         // }
-
+        alert(new_password);
         if ((new_password != '') && (new_password != confirm_new_password)) {
             error_txt +=
                 '確認登入新密碼輸入不相同\n';
