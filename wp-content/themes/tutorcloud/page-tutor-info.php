@@ -1048,15 +1048,16 @@ $(function() {
             alert(error_txt);
             return false;
         } else {
-            $('.step-content').fadeOut(0);
+            retur true;
+            // $('.step-content').fadeOut(0);
 
-            $('.step-content.step-content-3').fadeIn(0);
-            $('html,body').animate({
-                'scrollTop': $('.main-content-div').offset().top - 50
-            }, 200);
+            // $('.step-content.step-content-3').fadeIn(0);
+            // $('html,body').animate({
+            //     'scrollTop': $('.main-content-div').offset().top - 50
+            // }, 200);
 
-            $('.step-txt').removeClass('active');
-            $('.step-txt').eq(2).addClass('active');
+            // $('.step-txt').removeClass('active');
+            // $('.step-txt').eq(2).addClass('active');
 
 
         }
