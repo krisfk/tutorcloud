@@ -142,7 +142,7 @@ body {
 
 .tutor-logout-btn {
     display: inline-block;
-    background: #46a879;
+    background: #618382;
     padding: 0.5rem 1rem;
     color: #fff;
     text-decoration: none;
@@ -152,7 +152,7 @@ body {
 
 .tutor-login-btn:hover,
 .tutor-info-btn:hover,
-.tutor-login-btn:hover {
+.tutor-logout-btn:hover {
     color: #fff;
 }
 
