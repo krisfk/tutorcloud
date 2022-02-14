@@ -25,15 +25,15 @@ if($_POST['form-type']=='tutor-info-form-1')
     $occupation=$_POST['occupation'];
     $living_area=$_POST['living_area'];
     $post_id = $_SESSION['tutor_post_id'];
-    echo $post_id;
-    add_post_meta($post_id, 'chi_name', $chi_name);
-    add_post_meta($post_id, 'eng_name', $eng_name);
-    add_post_meta($post_id, 'nick_name', $nick_name);
-    add_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
-    add_post_meta($post_id, 'born_year', $born_year);
-    add_post_meta($post_id, 'gender', $gender);
-    add_post_meta($post_id, 'occupation', $occupation);
-    add_post_meta($post_id, 'living_area', $living_area);
+    // echo $post_id;
+    update_post_meta($post_id, 'chi_name', $chi_name);
+    update_post_meta($post_id, 'eng_name', $eng_name);
+    update_post_meta($post_id, 'nick_name', $nick_name);
+    update_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
+    update_post_meta($post_id, 'born_year', $born_year);
+    update_post_meta($post_id, 'gender', $gender);
+    update_post_meta($post_id, 'occupation', $occupation);
+    update_post_meta($post_id, 'living_area', $living_area);
 
 }
 
