@@ -157,11 +157,24 @@ if(!$_SESSION['tutor_post_id'])
                     <?php
                     if($_SESSION['tutor_post_id'])
                     {
+                        $query_args = array(
+                            'post_type' => 'tutor',
+                            'p'=>$_SESSION['tutor_post_id']
+                        );
+                        
+                        $the_query = new WP_Query( $query_args );
+                        
+                        $the_query->have_posts();
+                        $the_query->the_post();
+
+                        if(!get_field('proof1') || !get_field('proof2'))
+                        {
 ?>
                     <div class="msg-div">
                         <a href="<?php echo get_site_url();?>/tutor-info">請往「導師資料」上載您的「公開試成績證明」及「學生證/畢業證書」</a>
                     </div>
                     <?php
+                        }
                     }
                     ?>
 
