@@ -847,6 +847,7 @@ select.form-select {
     max-width: 90%;
     /* height: 100px; */
     background: #fff;
+    max-height: 90%;
     margin: 0 auto;
     position: relative;
     top: 50%;
@@ -855,6 +856,7 @@ select.form-select {
     transform: translate(0px, -50%);
     border-radius: 1rem;
     margin: 0 auto;
+    /* overflow: hidden; */
 }
 
 .lightbox-content .close-btn {
