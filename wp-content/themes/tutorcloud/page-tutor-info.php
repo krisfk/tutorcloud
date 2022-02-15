@@ -21,8 +21,9 @@ if(!$_SESSION['tutor_post_id'])
 }
 
 $query_args = array(
-	'post_type' => 'tutor',
-    'p'=>$_SESSION['tutor_post_id']
+	// 'post_type' => 'tutor',
+    'p'=>321
+    //$_SESSION['tutor_post_id']
 );
 
 // The Query
