@@ -1142,6 +1142,11 @@ input[type='number'] {
         margin-left: auto;
         margin-right: auto;
     }
+    .tutor-list-ul .data-column {
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        line-height: 2rem;
+        cursor: pointer;
+    }
 }
 
 @media only screen and (max-width: 640px) {}
