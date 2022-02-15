@@ -132,7 +132,7 @@ echo'</li>';
 
 ?>
 
-                                        <li> <?php
+                                        <li class="mobile-tutor-div"> <?php
 // echo $_SESSION['tutor_post_id'];
 if(!$_SESSION['tutor_post_id'])
 {
