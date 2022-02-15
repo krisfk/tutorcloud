@@ -716,11 +716,12 @@ if($_POST)
 
                     </table>
 
-                    <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
+                    <div class="next-prev-btn-div">
+                        <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
 
 
-                    <a href="javascript:void(0);" class="next-step-btn">下一步</a>
-
+                        <a href="javascript:void(0);" class="next-step-btn">下一步</a>
+                    </div>
                 </div>
 
 
@@ -1169,12 +1170,13 @@ if($_POST)
                             </td>
                         </tr>
                     </table>
+                    <div class="next-prev-btn-div">
 
-                    <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
+                        <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
 
 
-                    <a href="javascript:void(0);" class="next-step-btn">下一步</a>
-
+                        <a href="javascript:void(0);" class="next-step-btn">下一步</a>
+                    </div>
 
                 </div>
                 <div class="step-content step-content-4">
@@ -3336,11 +3338,13 @@ if($_POST)
                     </tr>
                 </table>
 
-                <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
+                <div class="next-prev-btn-div">
+
+                    <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
 
 
-                <a href="javascript:void(0);" class="submit-btn">遞交表格</a>
-
+                    <a href="javascript:void(0);" class="submit-btn">遞交表格</a>
+                </div>
         </div>
 
 

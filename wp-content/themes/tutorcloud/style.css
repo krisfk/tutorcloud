@@ -1178,6 +1178,9 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
+    .next-prev-btn-div {
+        text-align: center;
+    }
     .agree-terms-btn {
         margin-left: auto;
         margin-right: auto;
