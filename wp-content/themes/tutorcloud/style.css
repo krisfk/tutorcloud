@@ -1323,6 +1323,7 @@ input[type='number'] {
     }
     .apply-case-btn-div {
         text-align: center;
+        margin: 0 0 3rem 0;
     }
 }
 
