@@ -211,7 +211,7 @@ if(!$_SESSION['tutor_post_id'])
                         display: none !important;
                     }
 
-                    .tutorial-case {
+                    .tutorial-case-li {
                         display: block !important;
                     }
 
