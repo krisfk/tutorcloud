@@ -28,7 +28,7 @@ get_header();
 
 <div class="container mt-5">
 
-    <div class="text-center">
+    <div class="text-center mb-5">
         <h2>關於TutorCloud
             <div class="bar"></div>
         </h2>
