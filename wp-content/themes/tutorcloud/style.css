@@ -1185,6 +1185,9 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
+    .right-btn-div {
+        display: none;
+    }
     .top-menu-ul {
         margin: 0;
         padding: 0;

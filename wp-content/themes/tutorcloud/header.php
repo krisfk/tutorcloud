@@ -120,7 +120,7 @@ echo'</li>';
                                 </div>
 
 
-                                <div class="col-2 text-end">
+                                <div class="col-2 text-end right-btn-div">
 
                                     <?php
 // echo $_SESSION['tutor_post_id'];
