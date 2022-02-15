@@ -1197,6 +1197,7 @@ input[type='number'] {
     }
     .top-menu-ul li {
         display: block;
+        padding: 0;
         background: #95c4c1;
     }
     .price-table td {
