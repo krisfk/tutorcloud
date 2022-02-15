@@ -239,87 +239,91 @@ get_header();
 
             <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
         </a>
-        <div class=" deep-green " id="lbc-self-intro">
-            <!-- 香港中文大學及聖公會曾肇添中學畢業。全職補習。5年以上數學補習經驗。公開試HKDSE化學科奪得5**最高成績，提供超過20年公開試題目特訓，公開試HKDSE數學科5*級成績，小一至中六數學科及化學科成績保證。 -->
 
-        </div>
+        <div class="lightbox-content-inner">
 
-        <div class="row gx-0">
-            <h3 class="col-12 text-center" id="lbc-short-address">
-                <!-- 馬鞍山新港城 -->
-
-            </h3>
-            <div class="col-6">
-                <table class="detail-content-table">
-                    <tr>
-                        <td>補習編號 </td>
-                        <td><span id="lbc-student-id"></span> </td>
-                    </tr>
-                    <tr>
-                        <td>學生性別</td>
-                        <td id="lbc-student-gender"></td>
-                    </tr>
-                    <tr>
-                        <td>時薪</td>
-                        <td>$<span id="lbc-salary"></span></td>
-                    </tr>
-                    <tr>
-                        <td>補習方式</td>
-                        <td id="lbc-tutorial-style"></td>
-                    </tr>
-
-                </table>
-
-            </div>
-            <div class="col-6">
-
-                <table class="detail-content-table">
-
-                    <tr>
-                        <td>學生級別 </td>
-                        <td id="lbc-student-level"></td>
-                    </tr>
-                    <tr>
-                        <td>補習科目</td>
-                        <td id="lbc-subjects">
-                            <!-- 數學 化學 經濟 -->
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>每週堂數 / 時數</td>
-                        <td id="lbc-lesson-hour">
-                            <!-- 數學（5*） 化學（5**） 經濟（5） -->
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>可補習時間(可議)</td>
-                        <td id="lbc-time">
-                            <!-- 小學 初中 高中 -->
-
-                        </td>
-                    </tr>
-
-                </table>
-
-
-
-
+            <div class=" deep-green " id="lbc-self-intro">
+                <!-- 香港中文大學及聖公會曾肇添中學畢業。全職補習。5年以上數學補習經驗。公開試HKDSE化學科奪得5**最高成績，提供超過20年公開試題目特訓，公開試HKDSE數學科5*級成績，小一至中六數學科及化學科成績保證。 -->
 
             </div>
 
-            <div class="col-12 mt-4 mb-4">
-                <iframe id="map" width="100%" height="200" frameborder="0" style="border:0" src=""
-                    allowfullscreen=""></iframe>
+            <div class="row gx-0">
+                <h3 class="col-12 text-center" id="lbc-short-address">
+                    <!-- 馬鞍山新港城 -->
+
+                </h3>
+                <div class="col-6">
+                    <table class="detail-content-table">
+                        <tr>
+                            <td>補習編號 </td>
+                            <td><span id="lbc-student-id"></span> </td>
+                        </tr>
+                        <tr>
+                            <td>學生性別</td>
+                            <td id="lbc-student-gender"></td>
+                        </tr>
+                        <tr>
+                            <td>時薪</td>
+                            <td>$<span id="lbc-salary"></span></td>
+                        </tr>
+                        <tr>
+                            <td>補習方式</td>
+                            <td id="lbc-tutorial-style"></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                <div class="col-6">
+
+                    <table class="detail-content-table">
+
+                        <tr>
+                            <td>學生級別 </td>
+                            <td id="lbc-student-level"></td>
+                        </tr>
+                        <tr>
+                            <td>補習科目</td>
+                            <td id="lbc-subjects">
+                                <!-- 數學 化學 經濟 -->
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>每週堂數 / 時數</td>
+                            <td id="lbc-lesson-hour">
+                                <!-- 數學（5*） 化學（5**） 經濟（5） -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>可補習時間(可議)</td>
+                            <td id="lbc-time">
+                                <!-- 小學 初中 高中 -->
+
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+
+
+
+                </div>
+
+                <div class="col-12 mt-4 mb-4">
+                    <iframe id="map" width="100%" height="200" frameborder="0" style="border:0" src=""
+                        allowfullscreen=""></iframe>
+                </div>
+
+
+                <div class="col-3 mb-4">導師性別：<br><span id="lbc-tutor-gender"></span></div>
+                <div class="col-3 mb-4">補習期望：<br><span id="lbc-tutorial-target">補底 清concept</div>
+                <div class="col-3 mb-4">對導師要求：<br><span id="lbc-tutor-requirement"></span></div>
+                <div class="col-3 mb-4">其他要求/備註：<br><span id="lbc-other-requirement"></span>test</div>
+
+
             </div>
-
-
-            <div class="col-3 mb-4">導師性別：<br><span id="lbc-tutor-gender"></span></div>
-            <div class="col-3 mb-4">補習期望：<br><span id="lbc-tutorial-target">補底 清concept</div>
-            <div class="col-3 mb-4">對導師要求：<br><span id="lbc-tutor-requirement"></span></div>
-            <div class="col-3 mb-4">其他要求/備註：<br><span id="lbc-other-requirement"></span>test</div>
-
-
         </div>
 
 
