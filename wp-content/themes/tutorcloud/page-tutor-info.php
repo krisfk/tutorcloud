@@ -1161,6 +1161,12 @@ $(function() {
         $('.tutor-info-form').fadeOut(0);
         $('.tutor-info-form-' + idx).fadeIn(0);
     })
+
+    $('.radio-cancel-btn').click(function() {
+
+        $(this).closest('tr').find('.grade-col input[type="radio"]').prop('checked', false);
+
+    })
 })
 </script>
 <?php
