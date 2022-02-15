@@ -1178,6 +1178,10 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
+    .agree-terms-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .step-content.step-content-1 {
         display: block;
         margin: 2rem 0 0 0;
