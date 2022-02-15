@@ -1106,7 +1106,7 @@ input[type='number'] {
 .lightbox-content-inner {
     max-height: 90vh;
     overflow: auto;
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .top-div-blank {
@@ -1128,6 +1128,9 @@ input[type='number'] {
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {
+    .lightbox-content-inner {
+        height: 80vh;
+    }
     .lightbox .add-btn-a {
         text-decoration: none;
         color: #fff;
