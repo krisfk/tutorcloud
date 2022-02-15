@@ -233,3 +233,25 @@ if(!$_SESSION['tutor_post_id'])
 
                     </ul>
             </div>
+            <script type="text/javascript">
+            $(function() {
+                $('.mobile-menu-btn').click(function() {
+
+                    if ($(this).hasClass('opened')) {
+
+                        $('.top-menu-ul-outer-ul').fadeIn(200);
+                        // $(this).addClass('opened');
+
+
+                    } else {
+                        // alert(70);
+                        $('.top-menu-ul-outer-ul').fadeOut(200);
+                        // $(this).removeClass('opened');
+
+                    }
+
+
+                })
+
+            })
+            </script>
