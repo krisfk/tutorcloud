@@ -1113,7 +1113,7 @@ input[type='number'] {
         color: rgba(255, 255, 255, 0.851);
         /* line-height: 2.648; */
         text-align: center;
-        text-shadow: rgb(51 87 88) 0px 2px 5.24px, rgb(51 87 88) 0px 2px 10.24px;
+        text-shadow: rgb(51 87 88) 0px 0px 4.24px, rgb(51 87 88) 0px 1px 7.24px;
     }
     .banner-msg .large-txt {
         font-size: 2.4rem;
