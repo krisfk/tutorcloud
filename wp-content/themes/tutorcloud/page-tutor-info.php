@@ -497,10 +497,12 @@ $the_query->the_post();
                             </td>
                             <td>
 
+
                                 <?php
                                 $file_src = wp_get_attachment_url(get_field('proof1'));
-                                $pieces = explode("/", $file_src);                   
-                                ?>
+                                if($file_src)
+                                {
+                                    ?>
                                 <a class="file-a" href="<?php echo $file_src;?>">
                                     <img class="file-icon"
                                         src="<?php echo get_template_directory_uri().'/assets/images/file-icon.png';?>"
@@ -510,6 +512,13 @@ $the_query->the_post();
                                 </a>
 
                                 <a href="javascript:void(0);" class="change-file-btn">更改檔案</a>
+
+                                <?php
+                                }
+                                $pieces = explode("/", $file_src);    
+
+                                ?>
+
 
                                 <input id="proof1" name="proof1" type="file" class="form-control" accept=".jpg,pdf,png">
                             </td>
