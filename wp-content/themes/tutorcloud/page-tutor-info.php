@@ -1167,6 +1167,24 @@ $(function() {
         $(this).closest('tr').find('.grade-col input[type="radio"]').prop('checked', false);
 
     })
+
+    $('#proof1').on('change', function() {
+        var size = this.files[0].size / 1024 / 1024;
+        if (size > 5) {
+            alert('報告檔案大小上限為 5MB');
+            $(this).val('');
+        }
+    });
+    $('#proof2').on('change', function() {
+        var size = this.files[0].size / 1024 / 1024;
+        if (size > 5) {
+            alert('報告檔案大小上限為 5MB');
+            $(this).val('');
+        }
+    });
+
+
+
 })
 </script>
 <?php
