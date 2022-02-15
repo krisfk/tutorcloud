@@ -37,12 +37,12 @@ get_header();
 
     <div class="row align-items-top justify-content-center mt-5">
 
-        <div class="col-3">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-12 ">
             <img class="w-100 pe-3" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/money-back-icon.jpg"
                 alt="">
 
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12  ">
             <div class="pt-title mt-3 text-start">現金回贈</div>
             <div class="mt-4">
                 當補習個案成功配對，即已完成首兩星期課堂，家長可獲半堂學費為現金回贈，上限為$100。 <br><br>
