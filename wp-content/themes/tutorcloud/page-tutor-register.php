@@ -3388,7 +3388,7 @@ $(function() {
 
         $('.step-content.step-content-3').fadeIn(0);
         $('html,body').animate({
-            'scrollTop': $('.main-content-div').offset().top - 50
+            'scrollTop': $('.main-content-div').offset().top - 100
         }, 200);
 
         $('.step-txt').removeClass('active');
@@ -3474,7 +3474,7 @@ $(function() {
             $('.step-content.step-content-4').fadeIn(0);
 
             $('html,body').animate({
-                'scrollTop': $('.main-content-div').offset().top - 50
+                'scrollTop': $('.main-content-div').offset().top - 100
             }, 200);
 
             $('.step-txt').removeClass('active');
