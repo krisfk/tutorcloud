@@ -100,7 +100,7 @@ get_header();
     </div>
 
 
-    <div class="row align-items-center justify-content-center">
+    <div class="row align-items-center justify-content-center reverse-col">
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
             <table>
@@ -151,7 +151,7 @@ get_header();
     </div>
 
 
-    <div class="row align-items-center justify-content-center">
+    <div class="row align-items-center justify-content-center  reverse-col">
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
             <table>
