@@ -1001,6 +1001,7 @@ input[type='number'] {
 
 .price-table td {
     padding: 0.2rem 1rem;
+    border: 1px solid #95c4c1;
 }
 
 
