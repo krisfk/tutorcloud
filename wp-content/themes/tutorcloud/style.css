@@ -1027,6 +1027,7 @@ input[type='number'] {
 .forgot-pw-a {
     text-decoration: underline;
     color: #769e9c;
+    font-size: 1rem;
 }
 
 #content {
