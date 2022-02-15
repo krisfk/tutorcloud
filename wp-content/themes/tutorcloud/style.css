@@ -1068,5 +1068,5 @@ input[type='number'] {
 }
 
 .file-input-hide {
-    display: none;
+    display: none !important;
 }
