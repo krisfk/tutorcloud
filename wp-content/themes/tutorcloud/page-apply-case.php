@@ -29,6 +29,7 @@ get_header();
 
                     <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
                 </a>
+
                 <input type="hidden" name="filter-form" value="1">
                 <table>
                     <tr>
@@ -986,185 +987,188 @@ get_header();
 
             <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
         </a>
-        <div class=" deep-green " id="lbc-self-intro">
-            <!-- 香港中文大學及聖公會曾肇添中學畢業。全職補習。5年以上數學補習經驗。公開試HKDSE化學科奪得5**最高成績，提供超過20年公開試題目特訓，公開試HKDSE數學科5*級成績，小一至中六數學科及化學科成績保證。 -->
-
-        </div>
-
-        <div class="row gx-0">
-            <div class="col-6">
-                <table class="detail-content-table">
-
-                    <tr>
-                        <td>導師編號 </td>
-                        <td><span id="lbc-tutor-id"></span> 加入導師名單</td>
-                    </tr>
-                    <tr>
-                        <td>性别</td>
-                        <td id="lbc-gender"></td>
-                    </tr>
-                    <tr>
-                        <td>出生年份</td>
-                        <td id="lbc-born-year"></td>
-                    </tr>
-                    <tr>
-                        <td>居住地區</td>
-                        <td id="lbc-living-area"></td>
-                    </tr>
-                    <tr>
-                        <td>就讀中學</td>
-                        <td id="lbc-s-school">
-
-                            <!-- 聖公會曾肇添中學 -->
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>就讀大學</td>
-                        <td id="lbc-bac-degree">
-                            <!-- 香港中文大學 -->
-
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
-            <div class="col-6">
-
-                <table class="detail-content-table">
-
-                    <tr>
-                        <td>公開試 </td>
-                        <td id="lbc-past-exam"></td>
-                    </tr>
-                    <tr>
-                        <td>可教授科目</td>
-                        <td id="lbc-teach-subjects">
-                            <!-- 數學 化學 經濟 -->
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>成績</td>
-                        <td id="lbc-result">
-                            <!-- 數學（5*） 化學（5**） 經濟（5） -->
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>可教授年級</td>
-                        <td id="lbc-teach-level">
-                            <!-- 小學 初中 高中 -->
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>課堂語言</td>
-                        <td id="lbc-lesson-lang"></td>
-                    </tr>
-                    <tr>
-                        <td>可接受最低時薪</td>
-                        <td>$<span id="lbc-lowest-salary"></span></td>
-                    </tr>
-                </table>
-
-
-
-
+        <div class="lightbox-content-inner">
+            <div class=" deep-green " id="lbc-self-intro">
+                <!-- 香港中文大學及聖公會曾肇添中學畢業。全職補習。5年以上數學補習經驗。公開試HKDSE化學科奪得5**最高成績，提供超過20年公開試題目特訓，公開試HKDSE數學科5*級成績，小一至中六數學科及化學科成績保證。 -->
 
             </div>
 
-            <div class="mt-4 deep-green">可補習地區：</div>
+            <div class="row gx-0">
+                <div class="col-6">
+                    <table class="detail-content-table">
 
-            <div class="mt-3 deep-green">香港區：</div>
-            <div>
-                <span class="place-span">中半山</span>
-                <span class="place-span">薄扶林</span>
-                <span class="place-span">中上環</span>
-                <span class="place-span">西環</span>
-                <span class="place-span">灣仔</span>
-                <span class="place-span">銅鑼灣</span>
-                <span class="place-span">跑馬地</span>
-                <span class="place-span">北角</span>
-                <span class="place-span">鰂魚涌</span>
-                <span class="place-span">太古</span>
-                <span class="place-span">筲箕灣</span>
-                <span class="place-span">西灣河</span>
-                <span class="place-span"> 柴灣</span>
-                <span class="place-span">小西灣</span>
-                <span class="place-span">香港仔</span>
-                <span class="place-span">鴨利洲</span>
-                <span class="place-span">赤柱</span>
+                        <tr>
+                            <td>導師編號 </td>
+                            <td><span id="lbc-tutor-id"></span> 加入導師名單</td>
+                        </tr>
+                        <tr>
+                            <td>性别</td>
+                            <td id="lbc-gender"></td>
+                        </tr>
+                        <tr>
+                            <td>出生年份</td>
+                            <td id="lbc-born-year"></td>
+                        </tr>
+                        <tr>
+                            <td>居住地區</td>
+                            <td id="lbc-living-area"></td>
+                        </tr>
+                        <tr>
+                            <td>就讀中學</td>
+                            <td id="lbc-s-school">
 
+                                <!-- 聖公會曾肇添中學 -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>就讀大學</td>
+                            <td id="lbc-bac-degree">
+                                <!-- 香港中文大學 -->
+
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="col-6">
+
+                    <table class="detail-content-table">
+
+                        <tr>
+                            <td>公開試 </td>
+                            <td id="lbc-past-exam"></td>
+                        </tr>
+                        <tr>
+                            <td>可教授科目</td>
+                            <td id="lbc-teach-subjects">
+                                <!-- 數學 化學 經濟 -->
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>成績</td>
+                            <td id="lbc-result">
+                                <!-- 數學（5*） 化學（5**） 經濟（5） -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>可教授年級</td>
+                            <td id="lbc-teach-level">
+                                <!-- 小學 初中 高中 -->
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>課堂語言</td>
+                            <td id="lbc-lesson-lang"></td>
+                        </tr>
+                        <tr>
+                            <td>可接受最低時薪</td>
+                            <td>$<span id="lbc-lowest-salary"></span></td>
+                        </tr>
+                    </table>
+
+
+
+
+
+                </div>
+
+                <div class="mt-4 deep-green">可補習地區：</div>
+
+                <div class="mt-3 deep-green">香港區：</div>
+                <div>
+                    <span class="place-span">中半山</span>
+                    <span class="place-span">薄扶林</span>
+                    <span class="place-span">中上環</span>
+                    <span class="place-span">西環</span>
+                    <span class="place-span">灣仔</span>
+                    <span class="place-span">銅鑼灣</span>
+                    <span class="place-span">跑馬地</span>
+                    <span class="place-span">北角</span>
+                    <span class="place-span">鰂魚涌</span>
+                    <span class="place-span">太古</span>
+                    <span class="place-span">筲箕灣</span>
+                    <span class="place-span">西灣河</span>
+                    <span class="place-span"> 柴灣</span>
+                    <span class="place-span">小西灣</span>
+                    <span class="place-span">香港仔</span>
+                    <span class="place-span">鴨利洲</span>
+                    <span class="place-span">赤柱</span>
+
+                </div>
+
+                <div class="mt-3 deep-green">九龍區：</div>
+                <div>
+                    <span class="place-span">美孚</span>
+                    <span class="place-span">荔枝角</span>
+                    <span class="place-span">長沙灣</span>
+                    <span class="place-span">深水涉</span>
+                    <span class="place-span">大角咀</span>
+                    <span class="place-span">旺角</span>
+                    <span class="place-span">何文田</span>
+                    <span class="place-span">油麻地</span>
+                    <span class="place-span">佐敦</span>
+                    <span class="place-span">尖沙咀</span>
+                    <span class="place-span">土瓜灣</span>
+                    <span class="place-span">紅磡</span>
+                    <span class="place-span">石硤尾</span>
+                    <span class="place-span">九龍塘</span>
+                    <span class="place-span">樂富</span>
+                    <span class="place-span">慈雲山</span>
+                    <span class="place-span">黃大仙</span>
+                    <span class="place-span">鑽石山</span>
+                    <span class="place-span">新蒲崗</span>
+                    <span class="place-span">彩虹</span>
+                    <span class="place-span">牛池灣</span>
+                    <span class="place-span">牛頭角</span>
+                    <span class="place-span">九龍灣</span>
+                    <span class="place-span">秀茂坪</span>
+                    <span class="place-span">觀塘</span>
+                    <span class="place-span">藍田</span>
+                    <span class="place-span">油塘</span>
+                    <span class="place-span">九龍城</span>
+                </div>
+
+                <div class="mt-3 deep-green">新界區：</div>
+                <div>
+                    <span class="place-span">將軍澳</span>
+                    <span class="place-span">西貢</span>
+                    <span class="place-span">荃灣</span>
+                    <span class="place-span">深井</span>
+                    <span class="place-span">馬灣</span>
+                    <span class="place-span">葵涌</span>
+                    <span class="place-span">荔景</span>
+                    <span class="place-span">葵芳</span>
+                    <span class="place-span">青衣</span>
+                    <span class="place-span">大圍</span>
+                    <span class="place-span">沙田</span>
+                    <span class="place-span">沙田市中心</span>
+                    <span class="place-span">小瀝源</span>
+                    <span class="place-span">火炭</span>
+                    <span class="place-span">馬鞍山</span>
+                    <span class="place-span">大埔</span>
+                    <span class="place-span">粉嶺</span>
+                    <span class="place-span">上水</span>
+                    <span class="place-span">元朗</span>
+                    <span class="place-span">天水圍</span>
+                    <span class="place-span">屯門</span>
+                    <span class="place-span">青龍頭</span>
+                    <span class="place-span">東涌</span>
+                    <span class="place-span">離島</span>
+                </div>
             </div>
 
-            <div class="mt-3 deep-green">九龍區：</div>
-            <div>
-                <span class="place-span">美孚</span>
-                <span class="place-span">荔枝角</span>
-                <span class="place-span">長沙灣</span>
-                <span class="place-span">深水涉</span>
-                <span class="place-span">大角咀</span>
-                <span class="place-span">旺角</span>
-                <span class="place-span">何文田</span>
-                <span class="place-span">油麻地</span>
-                <span class="place-span">佐敦</span>
-                <span class="place-span">尖沙咀</span>
-                <span class="place-span">土瓜灣</span>
-                <span class="place-span">紅磡</span>
-                <span class="place-span">石硤尾</span>
-                <span class="place-span">九龍塘</span>
-                <span class="place-span">樂富</span>
-                <span class="place-span">慈雲山</span>
-                <span class="place-span">黃大仙</span>
-                <span class="place-span">鑽石山</span>
-                <span class="place-span">新蒲崗</span>
-                <span class="place-span">彩虹</span>
-                <span class="place-span">牛池灣</span>
-                <span class="place-span">牛頭角</span>
-                <span class="place-span">九龍灣</span>
-                <span class="place-span">秀茂坪</span>
-                <span class="place-span">觀塘</span>
-                <span class="place-span">藍田</span>
-                <span class="place-span">油塘</span>
-                <span class="place-span">九龍城</span>
+            <div class="text-center">
+
+                <a class="add-btn-a" href="javascript:void(0);" data-tutor-id="">
+
+                    <img src="http://64.227.13.14/tutorcloud/wp-content/themes/tutorcloud/assets/images/add-btn.png"
+                        alt="">
+                    <div class="mt-1">加入導師名單</div>
+
+                </a>
             </div>
-
-            <div class="mt-3 deep-green">新界區：</div>
-            <div>
-                <span class="place-span">將軍澳</span>
-                <span class="place-span">西貢</span>
-                <span class="place-span">荃灣</span>
-                <span class="place-span">深井</span>
-                <span class="place-span">馬灣</span>
-                <span class="place-span">葵涌</span>
-                <span class="place-span">荔景</span>
-                <span class="place-span">葵芳</span>
-                <span class="place-span">青衣</span>
-                <span class="place-span">大圍</span>
-                <span class="place-span">沙田</span>
-                <span class="place-span">沙田市中心</span>
-                <span class="place-span">小瀝源</span>
-                <span class="place-span">火炭</span>
-                <span class="place-span">馬鞍山</span>
-                <span class="place-span">大埔</span>
-                <span class="place-span">粉嶺</span>
-                <span class="place-span">上水</span>
-                <span class="place-span">元朗</span>
-                <span class="place-span">天水圍</span>
-                <span class="place-span">屯門</span>
-                <span class="place-span">青龍頭</span>
-                <span class="place-span">東涌</span>
-                <span class="place-span">離島</span>
-            </div>
-        </div>
-
-        <div class="text-center">
-
-            <a class="add-btn-a" href="javascript:void(0);" data-tutor-id="">
-
-                <img src="http://64.227.13.14/tutorcloud/wp-content/themes/tutorcloud/assets/images/add-btn.png" alt="">
-                <div class="mt-1">加入導師名單</div>
-
-            </a>
         </div>
     </div>
 
