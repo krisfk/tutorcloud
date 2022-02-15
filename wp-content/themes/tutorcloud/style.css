@@ -1133,6 +1133,9 @@ input[type='number'] {
         display: inline-block;
         margin: 0 0.5rem;
     }
+    .lightbox-content .filter-content {
+        height: 80vh;
+    }
     .lightbox-content-inner {
         height: 80vh;
     }
