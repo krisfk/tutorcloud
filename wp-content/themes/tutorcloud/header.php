@@ -161,7 +161,7 @@ if(!$_SESSION['tutor_post_id'])
 
                     <style type="text/css">
                     .tutor-register-li {
-                        display: none;
+                        display: none !important;
                     }
 
                     /* .top-menu-ul .tutor-register {
