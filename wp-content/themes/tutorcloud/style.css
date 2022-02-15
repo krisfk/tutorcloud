@@ -1120,7 +1120,9 @@ input[type='number'] {
     .add-btn-column {
         background: none;
     }
-    .add-btn-a {}
+    .add-btn-a {
+        padding: 0.3rem;
+    }
     .apply-step-col {
         width: 100% !important;
     }
