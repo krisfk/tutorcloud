@@ -1188,6 +1188,9 @@ input[type='number'] {
     .top-div {
         height: 70px;
     }
+    .top-div-blank {
+        height: 70px;
+    }
     .logo-a {
         position: fixed;
         top: 9px;
