@@ -153,7 +153,10 @@ if(!$_SESSION['tutor_post_id'])
 
 
                     </div>
-                    <div>fdsf</div>
+                    <div class="msg-div">
+
+                        <a href="<?php echo get_site_url();?>/tutor-info">請往「導師資料」上載您的「公開試成績證明」及「學生證/畢業證書」</a>
+                    </div>
 
                     <div class="container">
 
