@@ -61,7 +61,7 @@ get_header();
 
     </div>
 
-    <div class="row align-items-top justify-content-center mt-5">
+    <div class="row align-items-top justify-content-center mt-5 reverse-col">
 
         <div class="col-lg-6 col-md-12 col-sm-12 col-12  ">
             <div class="pt-title mt-3 text-start">行政費優惠</div>
