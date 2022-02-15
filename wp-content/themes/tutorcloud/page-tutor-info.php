@@ -496,7 +496,8 @@ $the_query->the_post();
                             <td><label for="proof1">公開試成績證明</label>
                             </td>
                             <td>
-                                <input id="proof1" name="proof1" type="file" class="form-control" accept=".jpg,pdf,png">
+                                fds
+                                <!-- <input id="proof1" name="proof1" type="file" class="form-control" accept=".jpg,pdf,png"> -->
                             </td>
                         </tr>
                         <tr>
