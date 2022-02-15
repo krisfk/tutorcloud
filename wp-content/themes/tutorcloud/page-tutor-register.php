@@ -44,7 +44,7 @@ get_header();
     </div>
     <div class="row mt-5 main-content-div">
 
-        <div class="col-2">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-12 ">
             <ul class="m-0 p-0 text-start">
                 <li class="step-txt active">1. 條款及細則</li>
                 <li class="step-txt">2. 個人資料</li>
