@@ -462,7 +462,7 @@ h2 .bar {
     background: url(assets/images/add.png);
     background-repeat: no-repeat;
     background-position: 100% center;
-    background-size: 25px;
+    background-size: 1rem;
     padding: 1rem 0 1rem;
 }
 
@@ -470,7 +470,7 @@ h2 .bar {
     background: url(assets/images/minus.png);
     background-repeat: no-repeat;
     background-position: 100% center;
-    background-size: 25px;
+    background-size: 1rem;
 }
 
 .terms-content {
