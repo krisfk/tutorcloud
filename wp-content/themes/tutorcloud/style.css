@@ -365,7 +365,7 @@ h2 .bar {
 }
 
 .filter-btn {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .filter-btn:hover {
