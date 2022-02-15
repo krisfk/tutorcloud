@@ -1040,6 +1040,6 @@ input[type='number'] {
 }
 
 .file-a {
-    /* text-decoration: none; */
+    text-decoration: none;
     color: #769e9c;
 }
