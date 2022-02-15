@@ -122,6 +122,11 @@ body {
     height: 103px;
     background: #95c4c2;
     color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .top-div ul {
