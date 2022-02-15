@@ -1099,6 +1099,137 @@ $(function() {
 
     $('.tutor-info-form-2').submit(function() {
 
+        var error_txt = '';
+
+        var bac_degree = $('#bac-degree').val();
+        // alert(bac_degree);
+        var tutor_level = $('#tutor-level').val();
+        var diploma = $('input[name="diploma"]:checked').val();
+        // alert(diploma);
+        var tutor_year = $('#tutor-year').val();
+        var u_major = $('#u-major').val();
+        // var s_major = $('#s-major').val();
+        var s_school = $('#s-school').val();
+        var past_exam = $('input[name="past-exam"]:checked').val();
+
+        var exam_lang = $('#exam-lang').val();
+
+        if (!bac_degree) {
+            error_txt +=
+                '請輸入就讀大學 (學士學位課程)\n';
+        }
+
+        if (!tutor_level) {
+            error_txt +=
+                '請輸入教育程度\n';
+        }
+
+        if (!diploma) {
+            error_txt +=
+                '請輸入是否擁有教育文憑\n';
+        }
+
+        if (!tutor_year) {
+            error_txt +=
+                '請輸入年級 (2021-2022年度)\n';
+        }
+        if (!u_major) {
+            error_txt +=
+                '請輸入大學主修科目\n';
+        }
+        if (!s_school) {
+            error_txt +=
+                '請輸入曾就讀中學\n';
+        }
+
+
+        if (!s_school) {
+            error_txt +=
+                '請輸入曾就讀中學\n';
+        }
+
+        var val = [];
+
+
+        $('input[name="past-exam[]"]:checked').each(function(i) {
+            val[i] = $(this).val();
+            // alert(5);
+        });
+
+        if (val.length == 0) {
+            error_txt += '請輸入曾參加的公開試\n';
+        }
+
+
+        // past-exam
+
+        if (!exam_lang) {
+            error_txt +=
+                '請輸入應考主要語言\n';
+        }
+
+
+        // if (error_txt) {
+        //     alert(error_txt);
+        // } else {
+
+        // }
+        var self_intro = $('#self-intro').val();
+        // var error_txt = '';
+        var val = [];
+
+
+        if (!self_intro) {
+            error_txt += '請輸入自我介紹\n';
+        } else
+        if (self_intro.length < 50) {
+            error_txt += '請輸入自我介紹(50字或以上)\n';
+
+        }
+
+        var val3 = [];
+        $('input[name="lesson-lang[]"]:checked').each(function(i) {
+            val3[i] = $(this).val();
+        });
+        if (val3.length == 0) {
+            error_txt += '請選擇課堂語言\n';
+        }
+
+
+        $('input[name="class-area[]"]:checked').each(function(i) {
+            val[i] = $(this).val();
+            // alert(5);
+        });
+        if (val.length == 0) {
+            error_txt += '請選擇可補習地區\n';
+        }
+        var val2 = [];
+        $('input[name="t-style[]"]:checked').each(function(i) {
+            val2[i] = $(this).val();
+            // alert(5);
+        });
+        if (val2.length == 0) {
+            error_txt += '請選擇可供補習方式\n';
+        }
+
+        var lowest_salary = $('#lowest-salary').val();
+        if (!lowest_salary) {
+            error_txt += '請輸入可接受最低時薪\n';
+
+        }
+
+
+        if (error_txt) {
+
+            alert(error_txt);
+            return false;
+        } else {
+            return true;
+
+        }
+
+
+
 
 
     })
