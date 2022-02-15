@@ -153,7 +153,7 @@ if(!$_SESSION['tutor_post_id'])
 
 
                     </div>
-
+                    <div class="top-div-blank"></div>
                     <?php
                     if($_SESSION['tutor_post_id'])
                     {
