@@ -1178,7 +1178,9 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
-    .main-content-div .step-li {}
+    .main-content-div .step-li {
+        text-align: center;
+    }
     .tutor-reg-icon {
         width: 100%;
         /* float: right; */
