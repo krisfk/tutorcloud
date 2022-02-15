@@ -496,7 +496,10 @@ $the_query->the_post();
                             <td><label for="proof1">公開試成績證明</label>
                             </td>
                             <td>
-                                fds
+                                <?php
+                           $file_src = wp_get_attachment_url($proof1);
+echo $file_src;
+                                ?>
                                 <!-- <input id="proof1" name="proof1" type="file" class="form-control" accept=".jpg,pdf,png"> -->
                             </td>
                         </tr>

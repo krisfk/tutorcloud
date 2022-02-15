@@ -249,6 +249,8 @@ if($_POST)
     $gender=$_POST['gender'];
     $occupation=$_POST['occupation'];
     $living_area=$_POST['living_area'];
+   
+   
     $bac_degree=$_POST['bac-degree'];
     $tutor_level=$_POST['tutor-level'];
     $diploma = $_POST['diploma'];
