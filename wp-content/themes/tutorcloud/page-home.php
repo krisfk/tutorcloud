@@ -81,7 +81,7 @@ get_header();
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
-            <table>
+            <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5 ">
                 <tr>
                     <td><span class="num-pt">1</span></td>
                     <td>
@@ -103,7 +103,7 @@ get_header();
     <div class="row align-items-center justify-content-center ">
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
-            <table>
+            <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5 ">
                 <tr>
                     <td><span class="num-pt">2</span></td>
                     <td>
@@ -133,7 +133,7 @@ get_header();
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-3.jpg" alt="">
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
-            <table>
+            <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5 ">
                 <tr>
                     <td><span class="num-pt">3</span></td>
                     <td>
@@ -154,7 +154,7 @@ get_header();
     <div class="row align-items-center justify-content-center  ">
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
-            <table>
+            <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5 ">
                 <tr>
                     <td><span class="num-pt">4</span></td>
                     <td>
