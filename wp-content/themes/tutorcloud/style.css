@@ -1098,15 +1098,14 @@ input[type='number'] {
     overflow: auto;
 }
 
-.pt-icon {
-    width: 100%;
-}
-
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 991px) {
+    .pt-icon {
+        width: 100%;
+    }
     .banner-msg {
         font-size: 1.3rem;
         text-align: center;
