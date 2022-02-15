@@ -1471,7 +1471,7 @@ while ( $loop->have_posts() ) {
                         // echo implode(' ', get_field('lesson_lang'));
                         ?>">
                         <div class="row gx-0 align-items-top">
-                            <div class='col-lg-2 col-md-2 col-sm-2 col-4 data-column'>
+                            <div class='col-lg-2 col-md-2 col-sm-2 col-5 data-column'>
                                 <?php echo get_field('tutor_id');?>
                                 <br><?php echo get_field('gender');?> <img
                                     src="<?php echo get_template_directory_uri();?>/assets/images/<?php echo get_field('gender') == '男' ? 'm':'f';?>-icon.png"
@@ -1482,14 +1482,14 @@ while ( $loop->have_posts() ) {
                                 主修：<?php echo get_field('u_major');?>
                                 <!--護理系-->
                             </div>
-                            <div class='col-lg-2 col-md-2 col-sm-6 col-4 data-column'>
+                            <div class='col-lg-2 col-md-2 col-sm-6 col-3 data-column'>
 
                                 <?php echo get_field('tutor_level');?>
                                 <!--大學生--> <br>
                             </div>
-                            <div class='col-lg-2 col-md-2 col-sm-6 col-8 data-column'>
+                            <div class='col-lg-2 col-md-2 col-sm-6 col-5 data-column'>
                                 可接受最低時薪： <br>$<?php echo get_field('lowest_salary');?></div>
-                            <div class='col-lg-2 col-md-2 col-sm-4 col-4 data-column'>
+                            <div class='col-lg-2 col-md-2 col-sm-4 col-7 data-column'>
                                 可教授科目： <br>
                                 <?php echo $subjects_list;?>
                                 <!-- XX XX XX -->
