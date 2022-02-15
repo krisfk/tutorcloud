@@ -21,13 +21,17 @@ if(!$_SESSION['tutor_post_id'])
 }
 
 $query_args = array(
-	// 'post_type' => 'tutor',
-    'p'=>321
-    //$_SESSION['tutor_post_id']
+	'post_type' => 'tutor',
+    'p'=>$_SESSION['tutor_post_id']
 );
 
 // The Query
 $the_query = new WP_Query( $query_args );
+
+if($the_query->have_posts())
+{
+    echo 999;
+}
 $the_query->have_posts();
 $the_query->the_post();
 echo 999;
