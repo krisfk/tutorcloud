@@ -1123,7 +1123,9 @@ input[type='number'] {
         font-size: 2.4rem;
         padding: 0 0.1rem;
     }
-    .reverse-col {}
+    .reverse-col {
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (max-width: 640px) {}
