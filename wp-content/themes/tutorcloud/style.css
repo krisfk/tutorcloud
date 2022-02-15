@@ -1260,6 +1260,12 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
+    .msg-div {
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        z-index: 99;
+    }
     .mobile-tutor-div {
         display: block !important;
     }
