@@ -1187,7 +1187,7 @@ input[type='number'] {
 @media only screen and (max-width: 991px) {
     .logo-a {
         position: fixed;
-        top: 2rem;
+        top: 1.5rem;
         left: 50%;
         transform: translate(-50%, 0px);
     }
