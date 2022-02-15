@@ -252,7 +252,7 @@ get_header();
                     <!-- 馬鞍山新港城 -->
 
                 </h3>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
                     <table class="detail-content-table">
                         <tr>
                             <td>補習編號 </td>
@@ -274,7 +274,7 @@ get_header();
                     </table>
 
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
 
                     <table class="detail-content-table">
 
