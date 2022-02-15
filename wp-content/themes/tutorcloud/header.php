@@ -239,13 +239,13 @@ if(!$_SESSION['tutor_post_id'])
 
                     if ($(this).hasClass('opened')) {
 
-                        $('.top-menu-ul-outer-ul').fadeIn(200);
+                        $('.top-menu-ul').fadeIn(200);
                         // $(this).addClass('opened');
 
 
                     } else {
                         // alert(70);
-                        $('.top-menu-ul-outer-ul').fadeOut(200);
+                        $('.top-menu-ul').fadeOut(200);
                         // $(this).removeClass('opened');
 
                     }
