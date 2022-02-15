@@ -1470,7 +1470,7 @@ while ( $loop->have_posts() ) {
                         echo $str;
                         // echo implode(' ', get_field('lesson_lang'));
                         ?>">
-                        <div class="row gx-0 align-items-top">
+                        <div class="row gx-0 align-items-top data-row-div">
                             <div class='col-lg-2 col-md-2 col-sm-2 col-5 data-column'>
                                 <?php echo get_field('tutor_id');?>
                                 <br><?php echo get_field('gender');?> <img
