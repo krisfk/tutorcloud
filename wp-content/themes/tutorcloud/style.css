@@ -1080,3 +1080,8 @@ input[type='number'] {
     color: #fff;
     text-decoration: none;
 }
+
+.msg-div a:hover {
+    color: #fff;
+    text-decoration: none;
+}
