@@ -1178,6 +1178,13 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
+    .tutor-reg-icon {
+        width: 100%;
+        /* float: right; */
+        max-width: 200px;
+        display: block;
+        margin: 0 auto 2rem auto;
+    }
     .add-btn-a div {
         display: inline-block;
     }
