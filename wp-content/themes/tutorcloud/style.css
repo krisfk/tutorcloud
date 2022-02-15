@@ -1106,7 +1106,11 @@ input[type='number'] {
 
 @media only screen and (max-width: 1200px) {}
 
-@media only screen and (max-width: 991px) {}
+@media only screen and (max-width: 991px) {
+    .banner-msg {
+        font-size: 1.3rem;
+    }
+}
 
 @media only screen and (max-width: 640px) {}
 
