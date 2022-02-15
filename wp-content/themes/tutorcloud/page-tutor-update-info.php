@@ -76,6 +76,183 @@ if($_POST['form-type']=='tutor-info-form-1')
 
 }
 
+
+if($_POST['form-type']=='tutor-info-form-2')
+{
+    $bac_degree = $_POST['bac-degree'];
+    $tutor_level = $_POST['tutor-level'];
+    $diploma = $_POST['diploma'];
+    $tutor_year = $_POST['tutor-year'];
+    $u_major = $_POST['u-major'];
+    $u_minor = $_POST['u-minor'];
+    $s_school = $_POST['s-school'];
+    $past_exam = $_POST['past-exam'];
+    $dse_sub_1 = $_POST['dse-sub-1'];
+    $dse_sub_2 = $_POST['dse-sub-2'];
+    $dse_sub_3 = $_POST['dse-sub-3'];
+    $dse_sub_4 = $_POST['dse-sub-4'];
+    $dse_sub_5 = $_POST['dse-sub-5'];
+    $dse_sub_6 = $_POST['dse-sub-6'];
+    $dse_sub_7 = $_POST['dse-sub-7'];
+    $dse_sub_8 = $_POST['dse-sub-8'];
+    $dse_sub_9 = $_POST['dse-sub-9'];
+    $dse_sub_10 = $_POST['dse-sub-10'];
+    $dse_sub_11 = $_POST['dse-sub-11'];
+    $dse_sub_12 = $_POST['dse-sub-12'];
+    $dse_sub_13 = $_POST['dse-sub-13'];
+    $dse_sub_14 = $_POST['dse-sub-14'];
+    $dse_sub_15 = $_POST['dse-sub-15'];
+    $dse_sub_16 = $_POST['dse-sub-16'];
+    $dse_sub_17 = $_POST['dse-sub-17'];
+    $dse_sub_18 = $_POST['dse-sub-18'];
+    $dse_sub_19 = $_POST['dse-sub-19'];
+    $dse_sub_20 = $_POST['dse-sub-20'];
+    $dse_sub_21 = $_POST['dse-sub-21'];
+    $dse_sub_22 = $_POST['dse-sub-22'];
+    $other_subject_1 = $_POST['other-subject-1'];
+    $other_subject_2 = $_POST['other-subject-2'];
+    $other_subject_3 = $_POST['other-subject-3'];
+    $other_subject_4 = $_POST['other-subject-4'];
+    $other_subject_5 = $_POST['other-subject-5'];
+    $other_subject_6 = $_POST['other-subject-6'];
+    $other_subject_7 = $_POST['other-subject-7'];
+    $other_subject_8 = $_POST['other-subject-8'];
+    $other_subject_9 = $_POST['other-subject-9'];
+    $other_subject_10 = $_POST['other-subject-10'];
+
+    $other_subject_1_grade = $_POST['other-subject-1-grade'];
+    $other_subject_2_grade = $_POST['other-subject-2-grade'];
+    $other_subject_3_grade = $_POST['other-subject-3-grade'];
+    $other_subject_4_grade = $_POST['other-subject-4-grade'];
+    $other_subject_5_grade = $_POST['other-subject-5-grade'];
+    $other_subject_6_grade = $_POST['other-subject-6-grade'];
+    $other_subject_7_grade = $_POST['other-subject-7-grade'];
+    $other_subject_8_grade = $_POST['other-subject-8-grade'];
+    $other_subject_9_grade = $_POST['other-subject-9-grade'];
+    $other_subject_10_grade = $_POST['other-subject-10-grade'];
+
+    $exam_lang = $_POST['exam-lang'];
+    $other_cert = $_POST['other-cert'];
+    //proof1
+    //proof2
+    $self_intro = $_POST['self-intro'];
+    $t_subjects_kin = $_POST['t-subjects-kin']; //array
+    $t_subjects_kin_value_other = $_POST['t-subjects-kin-value-other'];
+    $t_subjects_pri = $_POST['t-subjects-pri']; //array
+    $t_subjects_pri_value_other = $_POST['t-subjects-pri-value-other'];
+    $t_subjects_f13 = $_POST['t-subjects-f13']; //array  
+    $t_subjects_f13_value_other = $_POST['t-subjects-f13-value-other'];
+    $t_subjects_f46 = $_POST['t-subjects-f46']; //array  
+    $t_subjects_f46_value_other = $_POST['t-subjects-f46-value-other'];
+    $t_subjects_ib = $_POST['t-subjects-ib']; //array  
+    $t_subjects_ib_value_other = $_POST['t-subjects-ib-value-other'];
+
+    $t_subjects_gceal = $_POST['t-subjects-gceal']; //array  
+    $t_subjects_gceal_value_other = $_POST['t-subjects-gceal-value-other'];
+
+    $t_subjects_igcse = $_POST['t-subjects-igcse']; //array  
+    $t_subjects_igcse_value_other = $_POST['t-subjects-igcse-value-other'];
+
+    $t_subjects_sat = $_POST['t-subjects-sat']; //array  
+    $t_subjects_sat_value_other = $_POST['t-subjects-sat-value-other'];
+
+    $t_subjects_sat = $_POST['t-subjects-sat']; //array  
+    $t_subjects_sat_value_other = $_POST['t-subjects-sat-value-other'];
+
+    $t_subjects_music = $_POST['t-subjects-music']; //array  
+    $t_subjects_music_value_other = $_POST['t-subjects-music-value-other'];
+
+    $lesson_lang = $_POST['lesson-lang'];
+
+    $class_area = $_POST['class-area'];
+    $t_style = $_POST['t-style'];
+    $lowest_salary = $_POST['lowest-salary'];
+
+    add_post_meta($post_id, 'bac_degree', $bac_degree);
+    add_post_meta($post_id, 'tutor_level', $tutor_level);
+    add_post_meta($post_id, 'diploma', $diploma);
+    add_post_meta($post_id, 'tutor_year', $tutor_year);
+    add_post_meta($post_id, 'u_major', $u_major);
+    add_post_meta($post_id, 'u_minor', $u_minor);
+    add_post_meta($post_id, 's_school', $s_school);
+    add_post_meta($post_id, 'past_exam', $past_exam);
+    add_post_meta($post_id, 'dse_sub_1', $dse_sub_1);
+    add_post_meta($post_id, 'dse_sub_2', $dse_sub_2);
+    add_post_meta($post_id, 'dse_sub_3', $dse_sub_3);
+    add_post_meta($post_id, 'dse_sub_4', $dse_sub_4);
+    add_post_meta($post_id, 'dse_sub_5', $dse_sub_5);
+    add_post_meta($post_id, 'dse_sub_6', $dse_sub_6);
+    add_post_meta($post_id, 'dse_sub_7', $dse_sub_7);
+    add_post_meta($post_id, 'dse_sub_8', $dse_sub_8);
+    add_post_meta($post_id, 'dse_sub_9', $dse_sub_9);
+    add_post_meta($post_id, 'dse_sub_10', $dse_sub_10);
+    add_post_meta($post_id, 'dse_sub_11', $dse_sub_11);
+    add_post_meta($post_id, 'dse_sub_12', $dse_sub_12);
+    add_post_meta($post_id, 'dse_sub_13', $dse_sub_13);
+    add_post_meta($post_id, 'dse_sub_14', $dse_sub_14);
+    add_post_meta($post_id, 'dse_sub_15', $dse_sub_15);
+    add_post_meta($post_id, 'dse_sub_16', $dse_sub_16);
+    add_post_meta($post_id, 'dse_sub_17', $dse_sub_17);
+    add_post_meta($post_id, 'dse_sub_18', $dse_sub_18);
+    add_post_meta($post_id, 'dse_sub_19', $dse_sub_19);
+    add_post_meta($post_id, 'dse_sub_20', $dse_sub_20);
+    add_post_meta($post_id, 'dse_sub_21', $dse_sub_21);
+    add_post_meta($post_id, 'dse_sub_22', $dse_sub_22);
+
+    add_post_meta($post_id, 'other_subject_1', $other_subject_1);
+    add_post_meta($post_id, 'other_subject_2', $other_subject_2);
+    add_post_meta($post_id, 'other_subject_3', $other_subject_3);
+    add_post_meta($post_id, 'other_subject_4', $other_subject_4);
+    add_post_meta($post_id, 'other_subject_5', $other_subject_5);
+    add_post_meta($post_id, 'other_subject_6', $other_subject_6);
+    add_post_meta($post_id, 'other_subject_7', $other_subject_7);
+    add_post_meta($post_id, 'other_subject_8', $other_subject_8);
+    add_post_meta($post_id, 'other_subject_9', $other_subject_9);
+    add_post_meta($post_id, 'other_subject_10', $other_subject_10);
+
+    add_post_meta($post_id, 'other_subject_1_grade', $other_subject_1_grade);
+    add_post_meta($post_id, 'other_subject_2_grade', $other_subject_2_grade);
+    add_post_meta($post_id, 'other_subject_3_grade', $other_subject_3_grade);
+    add_post_meta($post_id, 'other_subject_4_grade', $other_subject_4_grade);
+    add_post_meta($post_id, 'other_subject_5_grade', $other_subject_5_grade);
+    add_post_meta($post_id, 'other_subject_6_grade', $other_subject_6_grade);
+    add_post_meta($post_id, 'other_subject_7_grade', $other_subject_7_grade);
+    add_post_meta($post_id, 'other_subject_8_grade', $other_subject_8_grade);
+    add_post_meta($post_id, 'other_subject_9_grade', $other_subject_9_grade);
+    add_post_meta($post_id, 'other_subject_10_grade', $other_subject_10_grade);
+
+
+
+    add_post_meta($post_id, 'exam_lang', $exam_lang);
+    add_post_meta($post_id, 'other_cert', $other_cert);
+
+    //proof1
+    //proof2
+    add_post_meta($post_id, 'self_intro', $self_intro);
+    add_post_meta($post_id, 't_subjects_kin', $t_subjects_kin);
+    add_post_meta($post_id, 't_subjects_kin_value_other', $t_subjects_kin_value_other);
+    add_post_meta($post_id, 't_subjects_pri', $t_subjects_pri);
+    add_post_meta($post_id, 't_subjects_pri_value_other', $t_subjects_pri_value_other);
+    add_post_meta($post_id, 't_subjects_f13', $t_subjects_f13);
+    add_post_meta($post_id, 't_subjects_f13_value_other', $t_subjects_f13_value_other);
+    add_post_meta($post_id, 't_subjects_f46', $t_subjects_f46);
+    add_post_meta($post_id, 't_subjects_f46_value_other', $t_subjects_f46_value_other);
+    add_post_meta($post_id, 't_subjects_ib', $t_subjects_ib);
+    add_post_meta($post_id, 't_subjects_ib_value_other', $t_subjects_ib_value_other);
+    add_post_meta($post_id, 't_subjects_gceal', $t_subjects_gceal);
+    add_post_meta($post_id, 't_subjects_gceal_value_other', $t_subjects_gceal_value_other);
+    add_post_meta($post_id, 't_subjects_igcse', $t_subjects_igcse);
+    add_post_meta($post_id, 't_subjects_igcse_value_other', $t_subjects_igcse_value_other);
+    add_post_meta($post_id, 't_subjects_sat', $t_subjects_sat);
+    add_post_meta($post_id, 't_subjects_sat_value_other', $t_subjects_sat_value_other);
+    add_post_meta($post_id, 't_subjects_music', $t_subjects_music);
+    add_post_meta($post_id, 't_subjects_music_value_other', $t_subjects_music_value_other);
+    add_post_meta($post_id, 'lesson_lang', $lesson_lang);
+
+    add_post_meta($post_id, 'class_area', $class_area);
+    add_post_meta($post_id, 't_style', $t_style);
+    add_post_meta($post_id, 'lowest_salary', $lowest_salary);
+}
 ?>
 
 <div class="breadcrumb mt-4">

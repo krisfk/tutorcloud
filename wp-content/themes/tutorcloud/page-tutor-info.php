@@ -1055,7 +1055,11 @@ $(function() {
 
     })
 
-    $('.tutor-info-form-2').submit(function() {})
+    $('.tutor-info-form-2').submit(function() {
+
+
+
+    })
 
 
     $('.step-content-2 .next-step-btn').click(function() {})
