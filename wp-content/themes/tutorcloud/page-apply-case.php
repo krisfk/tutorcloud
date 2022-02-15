@@ -1490,7 +1490,7 @@ while ( $loop->have_posts() ) {
                                 <!-- XX XX XX -->
                                 <!-- 數學 化學 經濟 -->
                             </div>
-                            <div class='col-2 add-btn-column text-center'>
+                            <div class='col-lg-2 col-md-2 col-sm-12 col-12  add-btn-column text-center'>
 
 
                                 <table class="w-100 h-100">
