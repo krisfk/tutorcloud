@@ -498,8 +498,12 @@ $the_query->the_post();
                             <td>
                                 <?php
                            $file_src = wp_get_attachment_url(get_field('proof1'));
-echo $file_src;
-                                ?>
+// echo $file_src;
+?>
+                                <a href="<?php echo $file_src;?>"> <img class="file-icon"
+                                        src="<?php echo get_template_directory_uri().'/assets/images/file-icon.png';?>"
+                                        alt=""></a>
+
                                 <!-- <input id="proof1" name="proof1" type="file" class="form-control" accept=".jpg,pdf,png"> -->
                             </td>
                         </tr>
