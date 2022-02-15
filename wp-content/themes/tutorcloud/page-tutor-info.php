@@ -521,7 +521,8 @@ $the_query->the_post();
 
 
                                 <input id="proof1" name="proof1" type="file"
-                                    class="form-control <?php echo $file_src ? 'd-none':'';?>" accept=".jpg,pdf,png">
+                                    class="form-control <?php echo $file_src ? 'file-input-hide':'';?>"
+                                    accept=".jpg,pdf,png">
                             </td>
                         </tr>
                         <tr>
