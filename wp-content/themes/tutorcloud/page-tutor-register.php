@@ -28,11 +28,11 @@ get_header();
         <a href="#" class="filter-btn">導師選項</a>
     </div> -->
     <div class="row mt-5 justify-content-center align-items-center">
-        <div class="col-2 text-end">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-12  text-end">
             <img class="tutor-reg-icon"
                 src="<?php echo get_template_directory_uri();?>/assets/images/tutor-reg-icon.png" alt="">
         </div>
-        <div class="col-5">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-12 ">
 
             <div class="description-div">
                 年滿十七歲或以上，正就讀大學及具大學學士學位或以上程度學歷之自然人且擁有簽訂合約的心智和法律能
