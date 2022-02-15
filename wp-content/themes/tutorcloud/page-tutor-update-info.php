@@ -79,8 +79,9 @@ if($_POST['form-type']=='tutor-info-form-1')
 
 if($_POST['form-type']=='tutor-info-form-2')
 {
-    echo 999;
+    // echo 999;
     $bac_degree = $_POST['bac-degree'];
+    
     $tutor_level = $_POST['tutor-level'];
     $diploma = $_POST['diploma'];
     $tutor_year = $_POST['tutor-year'];
@@ -171,90 +172,90 @@ if($_POST['form-type']=='tutor-info-form-2')
 
     $post_id = $_SESSION['tutor_post_id'];
 
-    add_post_meta($post_id, 'bac_degree', $bac_degree);
-    add_post_meta($post_id, 'tutor_level', $tutor_level);
-    add_post_meta($post_id, 'diploma', $diploma);
-    add_post_meta($post_id, 'tutor_year', $tutor_year);
-    add_post_meta($post_id, 'u_major', $u_major);
-    add_post_meta($post_id, 'u_minor', $u_minor);
-    add_post_meta($post_id, 's_school', $s_school);
-    add_post_meta($post_id, 'past_exam', $past_exam);
-    add_post_meta($post_id, 'dse_sub_1', $dse_sub_1);
-    add_post_meta($post_id, 'dse_sub_2', $dse_sub_2);
-    add_post_meta($post_id, 'dse_sub_3', $dse_sub_3);
-    add_post_meta($post_id, 'dse_sub_4', $dse_sub_4);
-    add_post_meta($post_id, 'dse_sub_5', $dse_sub_5);
-    add_post_meta($post_id, 'dse_sub_6', $dse_sub_6);
-    add_post_meta($post_id, 'dse_sub_7', $dse_sub_7);
-    add_post_meta($post_id, 'dse_sub_8', $dse_sub_8);
-    add_post_meta($post_id, 'dse_sub_9', $dse_sub_9);
-    add_post_meta($post_id, 'dse_sub_10', $dse_sub_10);
-    add_post_meta($post_id, 'dse_sub_11', $dse_sub_11);
-    add_post_meta($post_id, 'dse_sub_12', $dse_sub_12);
-    add_post_meta($post_id, 'dse_sub_13', $dse_sub_13);
-    add_post_meta($post_id, 'dse_sub_14', $dse_sub_14);
-    add_post_meta($post_id, 'dse_sub_15', $dse_sub_15);
-    add_post_meta($post_id, 'dse_sub_16', $dse_sub_16);
-    add_post_meta($post_id, 'dse_sub_17', $dse_sub_17);
-    add_post_meta($post_id, 'dse_sub_18', $dse_sub_18);
-    add_post_meta($post_id, 'dse_sub_19', $dse_sub_19);
-    add_post_meta($post_id, 'dse_sub_20', $dse_sub_20);
-    add_post_meta($post_id, 'dse_sub_21', $dse_sub_21);
-    add_post_meta($post_id, 'dse_sub_22', $dse_sub_22);
+    update_post_meta($post_id, 'bac_degree', $bac_degree);
+    update_post_meta($post_id, 'tutor_level', $tutor_level);
+    update_post_meta($post_id, 'diploma', $diploma);
+    update_post_meta($post_id, 'tutor_year', $tutor_year);
+    update_post_meta($post_id, 'u_major', $u_major);
+    update_post_meta($post_id, 'u_minor', $u_minor);
+    update_post_meta($post_id, 's_school', $s_school);
+    update_post_meta($post_id, 'past_exam', $past_exam);
+    update_post_meta($post_id, 'dse_sub_1', $dse_sub_1);
+    update_post_meta($post_id, 'dse_sub_2', $dse_sub_2);
+    update_post_meta($post_id, 'dse_sub_3', $dse_sub_3);
+    update_post_meta($post_id, 'dse_sub_4', $dse_sub_4);
+    update_post_meta($post_id, 'dse_sub_5', $dse_sub_5);
+    update_post_meta($post_id, 'dse_sub_6', $dse_sub_6);
+    update_post_meta($post_id, 'dse_sub_7', $dse_sub_7);
+    update_post_meta($post_id, 'dse_sub_8', $dse_sub_8);
+    update_post_meta($post_id, 'dse_sub_9', $dse_sub_9);
+    update_post_meta($post_id, 'dse_sub_10', $dse_sub_10);
+    update_post_meta($post_id, 'dse_sub_11', $dse_sub_11);
+    update_post_meta($post_id, 'dse_sub_12', $dse_sub_12);
+    update_post_meta($post_id, 'dse_sub_13', $dse_sub_13);
+    update_post_meta($post_id, 'dse_sub_14', $dse_sub_14);
+    update_post_meta($post_id, 'dse_sub_15', $dse_sub_15);
+    update_post_meta($post_id, 'dse_sub_16', $dse_sub_16);
+    update_post_meta($post_id, 'dse_sub_17', $dse_sub_17);
+    update_post_meta($post_id, 'dse_sub_18', $dse_sub_18);
+    update_post_meta($post_id, 'dse_sub_19', $dse_sub_19);
+    update_post_meta($post_id, 'dse_sub_20', $dse_sub_20);
+    update_post_meta($post_id, 'dse_sub_21', $dse_sub_21);
+    update_post_meta($post_id, 'dse_sub_22', $dse_sub_22);
 
-    add_post_meta($post_id, 'other_subject_1', $other_subject_1);
-    add_post_meta($post_id, 'other_subject_2', $other_subject_2);
-    add_post_meta($post_id, 'other_subject_3', $other_subject_3);
-    add_post_meta($post_id, 'other_subject_4', $other_subject_4);
-    add_post_meta($post_id, 'other_subject_5', $other_subject_5);
-    add_post_meta($post_id, 'other_subject_6', $other_subject_6);
-    add_post_meta($post_id, 'other_subject_7', $other_subject_7);
-    add_post_meta($post_id, 'other_subject_8', $other_subject_8);
-    add_post_meta($post_id, 'other_subject_9', $other_subject_9);
-    add_post_meta($post_id, 'other_subject_10', $other_subject_10);
+    update_post_meta($post_id, 'other_subject_1', $other_subject_1);
+    update_post_meta($post_id, 'other_subject_2', $other_subject_2);
+    update_post_meta($post_id, 'other_subject_3', $other_subject_3);
+    update_post_meta($post_id, 'other_subject_4', $other_subject_4);
+    update_post_meta($post_id, 'other_subject_5', $other_subject_5);
+    update_post_meta($post_id, 'other_subject_6', $other_subject_6);
+    update_post_meta($post_id, 'other_subject_7', $other_subject_7);
+    update_post_meta($post_id, 'other_subject_8', $other_subject_8);
+    update_post_meta($post_id, 'other_subject_9', $other_subject_9);
+    update_post_meta($post_id, 'other_subject_10', $other_subject_10);
 
-    add_post_meta($post_id, 'other_subject_1_grade', $other_subject_1_grade);
-    add_post_meta($post_id, 'other_subject_2_grade', $other_subject_2_grade);
-    add_post_meta($post_id, 'other_subject_3_grade', $other_subject_3_grade);
-    add_post_meta($post_id, 'other_subject_4_grade', $other_subject_4_grade);
-    add_post_meta($post_id, 'other_subject_5_grade', $other_subject_5_grade);
-    add_post_meta($post_id, 'other_subject_6_grade', $other_subject_6_grade);
-    add_post_meta($post_id, 'other_subject_7_grade', $other_subject_7_grade);
-    add_post_meta($post_id, 'other_subject_8_grade', $other_subject_8_grade);
-    add_post_meta($post_id, 'other_subject_9_grade', $other_subject_9_grade);
-    add_post_meta($post_id, 'other_subject_10_grade', $other_subject_10_grade);
+    update_post_meta($post_id, 'other_subject_1_grade', $other_subject_1_grade);
+    update_post_meta($post_id, 'other_subject_2_grade', $other_subject_2_grade);
+    update_post_meta($post_id, 'other_subject_3_grade', $other_subject_3_grade);
+    update_post_meta($post_id, 'other_subject_4_grade', $other_subject_4_grade);
+    update_post_meta($post_id, 'other_subject_5_grade', $other_subject_5_grade);
+    update_post_meta($post_id, 'other_subject_6_grade', $other_subject_6_grade);
+    update_post_meta($post_id, 'other_subject_7_grade', $other_subject_7_grade);
+    update_post_meta($post_id, 'other_subject_8_grade', $other_subject_8_grade);
+    update_post_meta($post_id, 'other_subject_9_grade', $other_subject_9_grade);
+    update_post_meta($post_id, 'other_subject_10_grade', $other_subject_10_grade);
 
 
 
-    add_post_meta($post_id, 'exam_lang', $exam_lang);
-    add_post_meta($post_id, 'other_cert', $other_cert);
+    update_post_meta($post_id, 'exam_lang', $exam_lang);
+    update_post_meta($post_id, 'other_cert', $other_cert);
 
     //proof1
     //proof2
-    add_post_meta($post_id, 'self_intro', $self_intro);
-    add_post_meta($post_id, 't_subjects_kin', $t_subjects_kin);
-    add_post_meta($post_id, 't_subjects_kin_value_other', $t_subjects_kin_value_other);
-    add_post_meta($post_id, 't_subjects_pri', $t_subjects_pri);
-    add_post_meta($post_id, 't_subjects_pri_value_other', $t_subjects_pri_value_other);
-    add_post_meta($post_id, 't_subjects_f13', $t_subjects_f13);
-    add_post_meta($post_id, 't_subjects_f13_value_other', $t_subjects_f13_value_other);
-    add_post_meta($post_id, 't_subjects_f46', $t_subjects_f46);
-    add_post_meta($post_id, 't_subjects_f46_value_other', $t_subjects_f46_value_other);
-    add_post_meta($post_id, 't_subjects_ib', $t_subjects_ib);
-    add_post_meta($post_id, 't_subjects_ib_value_other', $t_subjects_ib_value_other);
-    add_post_meta($post_id, 't_subjects_gceal', $t_subjects_gceal);
-    add_post_meta($post_id, 't_subjects_gceal_value_other', $t_subjects_gceal_value_other);
-    add_post_meta($post_id, 't_subjects_igcse', $t_subjects_igcse);
-    add_post_meta($post_id, 't_subjects_igcse_value_other', $t_subjects_igcse_value_other);
-    add_post_meta($post_id, 't_subjects_sat', $t_subjects_sat);
-    add_post_meta($post_id, 't_subjects_sat_value_other', $t_subjects_sat_value_other);
-    add_post_meta($post_id, 't_subjects_music', $t_subjects_music);
-    add_post_meta($post_id, 't_subjects_music_value_other', $t_subjects_music_value_other);
-    add_post_meta($post_id, 'lesson_lang', $lesson_lang);
+    update_post_meta($post_id, 'self_intro', $self_intro);
+    update_post_meta($post_id, 't_subjects_kin', $t_subjects_kin);
+    update_post_meta($post_id, 't_subjects_kin_value_other', $t_subjects_kin_value_other);
+    update_post_meta($post_id, 't_subjects_pri', $t_subjects_pri);
+    update_post_meta($post_id, 't_subjects_pri_value_other', $t_subjects_pri_value_other);
+    update_post_meta($post_id, 't_subjects_f13', $t_subjects_f13);
+    update_post_meta($post_id, 't_subjects_f13_value_other', $t_subjects_f13_value_other);
+    update_post_meta($post_id, 't_subjects_f46', $t_subjects_f46);
+    update_post_meta($post_id, 't_subjects_f46_value_other', $t_subjects_f46_value_other);
+    update_post_meta($post_id, 't_subjects_ib', $t_subjects_ib);
+    update_post_meta($post_id, 't_subjects_ib_value_other', $t_subjects_ib_value_other);
+    update_post_meta($post_id, 't_subjects_gceal', $t_subjects_gceal);
+    update_post_meta($post_id, 't_subjects_gceal_value_other', $t_subjects_gceal_value_other);
+    update_post_meta($post_id, 't_subjects_igcse', $t_subjects_igcse);
+    update_post_meta($post_id, 't_subjects_igcse_value_other', $t_subjects_igcse_value_other);
+    update_post_meta($post_id, 't_subjects_sat', $t_subjects_sat);
+    update_post_meta($post_id, 't_subjects_sat_value_other', $t_subjects_sat_value_other);
+    update_post_meta($post_id, 't_subjects_music', $t_subjects_music);
+    update_post_meta($post_id, 't_subjects_music_value_other', $t_subjects_music_value_other);
+    update_post_meta($post_id, 'lesson_lang', $lesson_lang);
 
-    add_post_meta($post_id, 'class_area', $class_area);
-    add_post_meta($post_id, 't_style', $t_style);
-    add_post_meta($post_id, 'lowest_salary', $lowest_salary);
+    update_post_meta($post_id, 'class_area', $class_area);
+    update_post_meta($post_id, 't_style', $t_style);
+    update_post_meta($post_id, 'lowest_salary', $lowest_salary);
 }
 ?>
 
