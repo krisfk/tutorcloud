@@ -1088,3 +1088,7 @@ input[type='number'] {
     color: #fff;
     text-decoration: none;
 }
+
+#lbc-self-intro {
+    word-wrap: break-word;
+}
