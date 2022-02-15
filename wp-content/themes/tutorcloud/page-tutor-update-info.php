@@ -79,6 +79,7 @@ if($_POST['form-type']=='tutor-info-form-1')
 
 if($_POST['form-type']=='tutor-info-form-2')
 {
+    echo 999;
     $bac_degree = $_POST['bac-degree'];
     $tutor_level = $_POST['tutor-level'];
     $diploma = $_POST['diploma'];
