@@ -496,6 +496,7 @@ $the_query->the_post();
                             <td><label for="proof1">公開試成績證明</label>
                             </td>
                             <td>
+
                                 <a class="file-a" href="<?php echo $file_src;?>">
 
                                     <img class="file-icon"
@@ -507,7 +508,9 @@ $the_query->the_post();
                                                               echo $pieces[count($pieces)-1];
                                 ?></a>
 
-                                <!-- <input id="proof1" name="proof1" type="file" class="form-control" accept=".jpg,pdf,png"> -->
+                                <a href="javascript:void(0);" class="change-file-btn">更改檔案</a>
+
+                                <input id="proof1" name="proof1" type="file" class="form-control" accept=".jpg,pdf,png">
                             </td>
                         </tr>
                         <tr>
