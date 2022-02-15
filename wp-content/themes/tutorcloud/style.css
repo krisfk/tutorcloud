@@ -1074,5 +1074,9 @@ input[type='number'] {
 .msg-div {
     display: block;
     background: #000;
+}
+
+.mag-div a {
     color: #fff;
+    text-decoration: none;
 }
