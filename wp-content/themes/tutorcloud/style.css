@@ -844,7 +844,7 @@ select.form-select {
 
 .lightbox-content {
     display: block;
-    max-width: 1000px;
+    max-width: 90%;
     /* height: 100px; */
     background: #fff;
     margin: 0 auto;
