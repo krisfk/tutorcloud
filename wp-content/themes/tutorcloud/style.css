@@ -1110,6 +1110,10 @@ input[type='number'] {
     height: 103px;
 }
 
+.apply-step-btn-div {
+    text-align: right;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {
@@ -1118,6 +1122,9 @@ input[type='number'] {
     }
     .apply-data-col {
         width: 100% !important;
+    }
+    .apply-step-btn-div {
+        text-align: center;
     }
 }
 
