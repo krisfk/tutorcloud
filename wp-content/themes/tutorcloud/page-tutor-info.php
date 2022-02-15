@@ -976,206 +976,207 @@ $the_query->the_post();
 <script type="text/javascript">
 $(function() {
 
-            $('.tutor-info-form-1').submit(function() {
+    $('.tutor-info-form-1').submit(function() {
 
-                var email = $('#email').val();
-                // var confirm_email = $('#confirm_email').val();
+        var email = $('#email').val();
+        // var confirm_email = $('#confirm_email').val();
 
-                var login_password = $('#login_password').val();
-                var new_password = $('#new_password').val();
-                var confirm_new_password = $('#confirm_new_password').val();
+        var login_password = $('#login_password').val();
+        var new_password = $('#new_password').val();
+        var confirm_new_password = $('#confirm_new_password').val();
 
-                var chi_name = $('#chi-name').val();
-                var eng_name = $('#eng-name').val();
-                var whatsapp_tel = $('#whatsapp-tel').val();
-                var born_year = $('#born_year').val();
-                var gender = $('input[name="gender"]:checked').val();
-                var living_area = $('#living-area').val();
-                var error_txt = '';
+        var chi_name = $('#chi-name').val();
+        var eng_name = $('#eng-name').val();
+        var whatsapp_tel = $('#whatsapp-tel').val();
+        var born_year = $('#born_year').val();
+        var gender = $('input[name="gender"]:checked').val();
+        var living_area = $('#living-area').val();
+        var error_txt = '';
 
 
 
-                if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
-                    error_txt +=
-                        '電郵格式不正確\n';
+        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
+            error_txt +=
+                '電郵格式不正確\n';
+        }
+
+
+        if ((new_password || confirm_new_password) && (new_password != confirm_new_password)) {
+            error_txt +=
+                '確認登入新密碼輸入不相同\n';
+        }
+
+        // if (!login_password) {
+        //     error_txt +=
+        //         '請輸入登入密碼\n';
+        // }
+
+        // if (login_password != confirm_login_password) {
+        //     error_txt +=
+        //         '確認登入密碼輸入不相同\n';
+        // }
+
+
+        if (!chi_name) {
+            error_txt +=
+                '請輸入中文全名\n';
+        }
+        if (!eng_name) {
+            error_txt +=
+                '請輸入英文全名\n';
+        }
+
+        if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
+            error_txt += 'whatsapp電話格式不正確\n';
+        }
+        if (!born_year) {
+            error_txt +=
+                '請輸入出生年份\n';
+        }
+
+        if (!gender) {
+            error_txt +=
+                '請輸入性別\n';
+        }
+        if (!living_area) {
+            error_txt +=
+                '請輸入居住地區\n';
+        }
+
+
+        if (error_txt) {
+
+            alert(error_txt);
+            return false;
+        } else {
+            return true;
+            // $('.step-content').fadeOut(0);
+
+            // $('.step-content.step-content-3').fadeIn(0);
+            // $('html,body').animate({
+            //     'scrollTop': $('.main-content-div').offset().top - 50
+            // }, 200);
+
+            // $('.step-txt').removeClass('active');
+            // $('.step-txt').eq(2).addClass('active');
+
+
+        }
+
+    })
+
+    $('.tutor-info-form-2').submit(function() {
+
+        }
+
+
+        $('.step-content-2 .next-step-btn').click(function() {
+
+
+
+
+
+
+
+        })
+
+
+        $('#all-place').change(function() {
+            if ($(this).is(':checked')) {
+
+                $('#hk-place').prop('checked', true);
+                $('#kl-place').prop('checked', true);
+                $('#nt-place').prop('checked', true);
+                $('input[name="class-area[]"]').prop('checked', true);
+
+
+
+            } else {
+
+                $('#hk-place').prop('checked', false);
+                $('#kl-place').prop('checked', false);
+                $('#nt-place').prop('checked', false);
+                $('input[name="class-area[]"]').prop('checked', false);
+
+
+
+            }
+        })
+
+
+        $('#hk-place').change(function() {
+            if ($(this).is(':checked')) {
+
+                for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
+                    $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
+                        'checked', true);
+                    $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
+                        'checked', true);
                 }
 
+            } else {
+                for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
+                    $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
+                        'checked', false);
+                    $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
+                        'checked', false);
+                    // $('#class-area-value-' + i).prop('checked', false);
+                }
+            }
+        })
 
-                if ((new_password || confirm_new_password) && (new_password != confirm_new_password)) {
-                    error_txt +=
-                        '確認登入新密碼輸入不相同\n';
+
+
+
+
+        $('#kl-place').change(function() {
+            if ($(this).is(':checked')) {
+
+                for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
+                    $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
+                        'checked', true);
+                    $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
+                        'checked', true);
                 }
 
-                // if (!login_password) {
-                //     error_txt +=
-                //         '請輸入登入密碼\n';
-                // }
-
-                // if (login_password != confirm_login_password) {
-                //     error_txt +=
-                //         '確認登入密碼輸入不相同\n';
-                // }
-
-
-                if (!chi_name) {
-                    error_txt +=
-                        '請輸入中文全名\n';
+            } else {
+                for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
+                    $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
+                        'checked', false);
+                    $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
+                        'checked', false);
                 }
-                if (!eng_name) {
-                    error_txt +=
-                        '請輸入英文全名\n';
-                }
+            }
+        })
 
-                if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
-                    error_txt += 'whatsapp電話格式不正確\n';
-                }
-                if (!born_year) {
-                    error_txt +=
-                        '請輸入出生年份\n';
+
+        $('#nt-place').change(function() {
+            if ($(this).is(':checked')) {
+                // alert(56);
+                for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
+                    $('#nt-class-area-value-' + i).prop(
+                        'checked', true);
+                    $('#nt-class-area-value-' + i).prop(
+                        'checked', true);
                 }
 
-                if (!gender) {
-                    error_txt +=
-                        '請輸入性別\n';
+            } else {
+                for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
+                    $('#nt-class-area-value-' + i).prop(
+                        'checked', false);
+                    $('#nt-class-area-value-' + i).prop(
+                        'checked', false);
                 }
-                if (!living_area) {
-                    error_txt +=
-                        '請輸入居住地區\n';
-                }
-
-
-                if (error_txt) {
-
-                    alert(error_txt);
-                    return false;
-                } else {
-                    return true;
-                    // $('.step-content').fadeOut(0);
-
-                    // $('.step-content.step-content-3').fadeIn(0);
-                    // $('html,body').animate({
-                    //     'scrollTop': $('.main-content-div').offset().top - 50
-                    // }, 200);
-
-                    // $('.step-txt').removeClass('active');
-                    // $('.step-txt').eq(2).addClass('active');
-
-
-                }
-
-            })
-
-            $('.tutor-info-form-2').submit(function() {
-
-                }
-
-
-                $('.step-content-2 .next-step-btn').click(function() {
-
-
-
-
-
-
-
-                })
-
-
-                $('#all-place').change(function() {
-                    if ($(this).is(':checked')) {
-
-                        $('#hk-place').prop('checked', true);
-                        $('#kl-place').prop('checked', true);
-                        $('#nt-place').prop('checked', true);
-                        $('input[name="class-area[]"]').prop('checked', true);
-
-
-
-                    } else {
-
-                        $('#hk-place').prop('checked', false);
-                        $('#kl-place').prop('checked', false);
-                        $('#nt-place').prop('checked', false);
-                        $('input[name="class-area[]"]').prop('checked', false);
-
-
-
-                    }
-                })
-
-
-                $('#hk-place').change(function() {
-                    if ($(this).is(':checked')) {
-
-                        for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
-                            $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
-                                'checked', true);
-                            $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
-                                'checked', true);
-                        }
-
-                    } else {
-                        for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
-                            $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
-                                'checked', false);
-                            $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
-                                'checked', false);
-                            // $('#class-area-value-' + i).prop('checked', false);
-                        }
-                    }
-                })
-
-
-
-
-
-                $('#kl-place').change(function() {
-                    if ($(this).is(':checked')) {
-
-                        for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
-                            $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
-                                'checked', true);
-                            $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
-                                'checked', true);
-                        }
-
-                    } else {
-                        for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
-                            $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
-                                'checked', false);
-                            $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
-                                'checked', false);
-                        }
-                    }
-                })
-
-
-                $('#nt-place').change(function() {
-                    if ($(this).is(':checked')) {
-                        alert(56);
-                        for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
-                            $('#nt-class-area-value-' + i).prop(
-                                'checked', true);
-                            $('#nt-class-area-value-' + i).prop(
-                                'checked', true);
-                        }
-
-                    } else {
-                        for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
-                            $('#nt-class-area-value-' + i).prop(
-                                'checked', false);
-                            $('#nt-class-area-value-' + i).prop(
-                                'checked', false);
-                        }
-                    }
-                }) $('.info-btn').click(function() {
-                    $('.info-btn').removeClass('active');
-                    $(this).addClass('active');
-                    var idx = $(this).index() + 1;
-                    $('.tutor-info-form').fadeOut(0);
-                    $('.tutor-info-form-' + idx).fadeIn(0);
-                })
-            })
+            }
+        }) $('.info-btn').click(function() {
+            $('.info-btn').removeClass('active');
+            $(this).addClass('active');
+            var idx = $(this).index() + 1;
+            $('.tutor-info-form').fadeOut(0);
+            $('.tutor-info-form-' + idx).fadeIn(0);
+        })
+    })
+})
 </script>
 <?php
 get_footer();
