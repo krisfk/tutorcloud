@@ -212,7 +212,7 @@ if(!$_SESSION['tutor_post_id'])
                     }
 
                     .tutorial-case-li {
-                        display: block !important;
+                        display: inline-block !important;
                     }
 
                     /* .top-menu-ul .tutor-register {
