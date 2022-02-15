@@ -1112,7 +1112,14 @@ input[type='number'] {
 
 @media only screen and (max-width: 1920px) {}
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+    .apply-step-col {
+        width: 100%;
+    }
+    .apply-data-col {
+        width: 100%;
+    }
+}
 
 @media only screen and (max-width: 991px) {
     .step-txt {
