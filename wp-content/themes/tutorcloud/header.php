@@ -157,6 +157,14 @@ if(!$_SESSION['tutor_post_id'])
                     <?php
                     if($_SESSION['tutor_post_id'])
                     {
+                        ?>
+
+                    <style type="text/css">
+                    .top-menu-ul .tutor-register {
+                        display: none;
+                    }
+                    </style>
+                    <?php
                         $query_args = array(
                             'post_type' => 'tutor',
                             'p'=>$_SESSION['tutor_post_id']
