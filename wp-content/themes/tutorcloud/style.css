@@ -1207,7 +1207,11 @@ input[type='number'] {
     .right-btn-div {
         display: none;
     }
+    .open .top-menu-ul {
+        display: block;
+    }
     .top-menu-ul {
+        display: none;
         margin: 0;
         padding: 0;
         text-align: center;
