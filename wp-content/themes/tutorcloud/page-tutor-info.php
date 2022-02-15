@@ -505,7 +505,7 @@ $the_query->the_post();
                                     $pieces = explode("/", $file_src);    
 
                                     ?>
-                                <a class="file-a" href="<?php echo $file_src;?>">
+                                <a target="_blank" class="file-a" href="<?php echo $file_src;?>">
                                     <img class="file-icon"
                                         src="<?php echo get_template_directory_uri().'/assets/images/file-icon.png';?>"
                                         alt="">
@@ -540,7 +540,7 @@ $the_query->the_post();
                                     $pieces = explode("/", $file_src);    
 
                                     ?>
-                                <a class="file-a" href="<?php echo $file_src;?>">
+                                <a target="_blank" class="file-a" href="<?php echo $file_src;?>">
                                     <img class="file-icon"
                                         src="<?php echo get_template_directory_uri().'/assets/images/file-icon.png';?>"
                                         alt="">
