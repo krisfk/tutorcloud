@@ -1251,7 +1251,7 @@ input[type='number'] {
         display: inline-grid;
         display: inline-table !important;
         padding: 0.5rem 1.23rem !important;
-        margin: 0.5rem 0 0 0;
+        margin: 0.5rem 0.25rem 0 0.25rem;
     }
     .mobile-menu-btn {
         display: block;
