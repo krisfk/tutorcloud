@@ -252,7 +252,7 @@ $the_query->the_post();
                                     
                                     $university_arr=array("香港中文大學","香港科技大學","香港理工大學","香港城市大學","香港浸會大學","香港都會大學","香港恒生大學","嶺南大學");
                                     
-                                    for($i=0;$i<count($university_arr[$i]);$i++)
+                                    for($i=0;$i<count($university_arr);$i++)
                                     {
                                         ?>
                                     <option
