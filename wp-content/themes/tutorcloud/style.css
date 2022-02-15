@@ -1266,7 +1266,7 @@ input[type='number'] {
         width: 100%;
         z-index: 99;
     }
-    .have-msg.msg-div-blank {
+    .have-msg.top-div-blank {
         height: 100px;
     }
     .mobile-tutor-div {
