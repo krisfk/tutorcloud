@@ -502,6 +502,8 @@ $the_query->the_post();
                                 $file_src = wp_get_attachment_url(get_field('proof1'));
                                 if($file_src)
                                 {
+                                    $pieces = explode("/", $file_src);    
+
                                     ?>
                                 <a class="file-a" href="<?php echo $file_src;?>">
                                     <img class="file-icon"
@@ -515,7 +517,6 @@ $the_query->the_post();
 
                                 <?php
                                 }
-                                $pieces = explode("/", $file_src);    
 // 
                                 ?>
 
