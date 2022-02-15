@@ -1321,6 +1321,12 @@ input[type='number'] {
         display: block;
         margin: 0 auto;
     }
+    .apply-case-btn-div {
+        text-align: center;
+    }
+    .reg-tutor-btn-div {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 640px) {}

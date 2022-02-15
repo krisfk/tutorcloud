@@ -54,8 +54,10 @@ get_header();
                 家長可選擇通過銀行轉賬或轉數快 (FPS) 收取現金回贈。當個案確認成功配對，TutorCloud將於
                 一星期內過數。</div>
 
-            <a href="<?php echo get_site_url();?>/apply-case" class="apply-case-btn apply-case-btn mt-5">申請補習個案</a>
-
+            <div class="apply-case-btn-div">
+                <a href="<?php echo get_site_url();?>/apply-case"
+                    class="apply-case-btn apply-case-btn mt-5 d-inline-block">申請補習個案</a>
+            </div>
         </div>
 
     </div>
@@ -71,7 +73,11 @@ get_header();
                 回贈金額上限為$200。<br><br>
 
                 導師可選擇通過銀行轉賬或轉數快 (FPS) 收取費用。</div>
-            <a href="<?php echo get_site_url();?>/tutor-register" class="reg-tutor-btn apply-case-btn mt-5 ">新導師登記</a>
+
+            <div class="reg-tutor-btn">
+                <a href="<?php echo get_site_url();?>/tutor-register"
+                    class="reg-tutor-btn apply-case-btn mt-5 d-inline-block">新導師登記</a>
+            </div>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 col-12 ">
             <img class="w-100 ps-3 content-img"
