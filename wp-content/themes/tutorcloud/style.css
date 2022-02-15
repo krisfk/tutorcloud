@@ -1128,6 +1128,11 @@ input[type='number'] {
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {
+    .added-list li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
     .lightbox-content-inner {
         height: 80vh;
     }
