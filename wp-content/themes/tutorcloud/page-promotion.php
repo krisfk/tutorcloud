@@ -74,7 +74,7 @@ get_header();
 
                 導師可選擇通過銀行轉賬或轉數快 (FPS) 收取費用。</div>
 
-            <div class="reg-tutor-btn">
+            <div class="apply-case-btn-div">
                 <a href="<?php echo get_site_url();?>/tutor-register"
                     class="reg-tutor-btn apply-case-btn mt-5 d-inline-block">新導師登記</a>
             </div>

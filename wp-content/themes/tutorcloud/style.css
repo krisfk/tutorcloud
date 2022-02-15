@@ -1324,9 +1324,6 @@ input[type='number'] {
     .apply-case-btn-div {
         text-align: center;
     }
-    .reg-tutor-btn-div {
-        text-align: center;
-    }
 }
 
 @media only screen and (max-width: 640px) {}
