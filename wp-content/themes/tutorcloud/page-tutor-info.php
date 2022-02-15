@@ -497,7 +497,7 @@ $the_query->the_post();
                             </td>
                             <td>
                                 <?php
-                           $file_src = wp_get_attachment_url($proof1);
+                           $file_src = wp_get_attachment_url(get_field('proof1'));
 echo $file_src;
                                 ?>
                                 <!-- <input id="proof1" name="proof1" type="file" class="form-control" accept=".jpg,pdf,png"> -->
