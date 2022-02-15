@@ -1185,6 +1185,16 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
+    .top-menu-ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+    .top-menu-ul li {}
     .price-table td {
         padding: 0.1rem 0.5rem;
         border: 1px solid #95c4c1;
