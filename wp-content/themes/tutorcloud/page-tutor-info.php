@@ -496,14 +496,12 @@ $the_query->the_post();
                             <td><label for="proof1">公開試成績證明</label>
                             </td>
                             <td>
-                                <?php
-                           $file_src = wp_get_attachment_url(get_field('proof1'));
-                         $pieces = explode("/", $file_src);
-                            // print_r($pieces);
-                            echo $pieces[count($pieces)-1];
-
-?>
                                 <a href="<?php echo $file_src;?>">
+                                    <?php
+                                                           $file_src = wp_get_attachment_url(get_field('proof1'));
+                                                           $pieces = explode("/", $file_src);
+                                                              echo $pieces[count($pieces)-1];
+                                ?>
                                     <img class="file-icon"
                                         src="<?php echo get_template_directory_uri().'/assets/images/file-icon.png';?>"
                                         alt=""></a>
