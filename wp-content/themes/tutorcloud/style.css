@@ -1128,6 +1128,8 @@ input[type='number'] {
 
 .cal-icon {
     max-width: 200px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 1920px) {}
