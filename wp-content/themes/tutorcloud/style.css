@@ -1133,7 +1133,9 @@ input[type='number'] {
         display: inline-block;
     }
     .add-btn-a img {
-        height: 10px;
+        height: 1rem;
+        position: relative;
+        top: -2px;
     }
     .step-txt {
         color: #00374f;
