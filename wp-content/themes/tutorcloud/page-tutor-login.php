@@ -67,8 +67,7 @@ $query_args = array(
     $the_query = new WP_Query( $query_args );
     if ( $the_query->have_posts() ) {
 
-        // $the_query->the_post();
-// echo get_field('tutor_id');
+        $the_query->the_post();
         echo '登入成功，三秒後回到主頁。';
         $_SESSION['tutor_post_id']   = get_the_ID();
         ?>

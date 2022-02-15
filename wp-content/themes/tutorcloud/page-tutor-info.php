@@ -13,7 +13,7 @@ get_header();
 // echo $_SESSION['test'];
 // session_start();
 // $_SESSION['test']=111;
-echo $_SESSION['tutor_post_id'];
+//echo $_SESSION['tutor_post_id'];
 if(!$_SESSION['tutor_post_id'])
 {
     wp_redirect(get_site_url());
@@ -23,19 +23,20 @@ if(!$_SESSION['tutor_post_id'])
 $query_args = array(
 	'post_type' => 'tutor',
     'p'=>$_SESSION['tutor_post_id']
+    //$_SESSION['tutor_post_id']
 );
 
 // The Query
 $the_query = new WP_Query( $query_args );
 
-if($the_query->have_posts())
-{
-    echo 999;
-}
+// if($the_query->have_posts())
+// {
+//     // echo 999;
+// }
 $the_query->have_posts();
 $the_query->the_post();
 // echo 999;
-echo get_field('tutor_id');
+// echo get_field('tutor_id');
 // echo 111;
 // wp_reset_postdata();
 
