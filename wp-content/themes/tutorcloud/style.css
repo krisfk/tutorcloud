@@ -1129,6 +1129,9 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
+    .add-btn-a div {
+        display: inline-block;
+    }
     .step-txt {
         color: #00374f;
         opacity: 0.5;
