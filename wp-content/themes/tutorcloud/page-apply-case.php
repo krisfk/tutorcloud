@@ -1482,7 +1482,7 @@ while ( $loop->have_posts() ) {
                                 主修：<?php echo get_field('u_major');?>
                                 <!--護理系-->
                             </div>
-                            <div class='col-lg-2 col-md-2 col-sm-6 col-2 data-column'>
+                            <div class='col-lg-2 col-md-2 col-sm-6 col-4 data-column'>
 
                                 <?php echo get_field('tutor_level');?>
                                 <!--大學生--> <br>
