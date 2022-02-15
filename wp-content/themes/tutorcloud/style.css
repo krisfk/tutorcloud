@@ -1190,11 +1190,15 @@ input[type='number'] {
         padding: 0;
         text-align: center;
         position: fixed;
-        top: 0;
+        top: 103px;
         left: 0;
         height: 100%;
+        width: 100%;
     }
-    .top-menu-ul li {}
+    .top-menu-ul li {
+        display: block;
+        background: #95c4c1;
+    }
     .price-table td {
         padding: 0.1rem 0.5rem;
         border: 1px solid #95c4c1;
