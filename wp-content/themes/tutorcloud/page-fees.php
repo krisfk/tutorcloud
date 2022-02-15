@@ -26,12 +26,12 @@ get_header();
 
     <div class="row align-items-top justify-content-center mt-5">
 
-        <div class="col-2">
+        <div class="col-lg-2 col-md-12 col-sm-12 col-12 ">
             <img class="w-100 pe-3"
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2022/02/1200px-Calculator_icon.svg_.png" alt="">
 
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 ">
             <div class="pt-title mt-3 text-start">行政費計算方法</div>
             <div class="mt-4">
 
