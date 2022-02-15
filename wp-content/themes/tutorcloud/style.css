@@ -846,8 +846,8 @@ select.form-select {
     display: block;
     max-width: 90%;
     /* height: 100px; */
-    background: #fff;
     max-height: 90%;
+    background: #fff;
     margin: 0 auto;
     position: relative;
     top: 50%;
