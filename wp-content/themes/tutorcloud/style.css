@@ -1038,3 +1038,8 @@ input[type='number'] {
 .file-icon {
     height: 40px;
 }
+
+.file-a {
+    /* text-decoration: none; */
+    color: #769e9c;
+}

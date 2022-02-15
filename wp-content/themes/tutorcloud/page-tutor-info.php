@@ -496,7 +496,7 @@ $the_query->the_post();
                             <td><label for="proof1">公開試成績證明</label>
                             </td>
                             <td>
-                                <a href="<?php echo $file_src;?>">
+                                <a class="file-a" href="<?php echo $file_src;?>">
                                     <?php
                                                            $file_src = wp_get_attachment_url(get_field('proof1'));
                                                            $pieces = explode("/", $file_src);
