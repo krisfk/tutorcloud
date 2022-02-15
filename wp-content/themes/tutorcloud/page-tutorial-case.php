@@ -422,12 +422,12 @@ while ( $loop->have_posts() ) {
                             <?php echo get_field('student_id');?>
                             <br><?php echo get_field('tutorial_style');?>
                         </div>
-                        <div class='col-lg-2 col-md-2 col-sm-2 col-4 data-column'>
+                        <div class='col-lg-2 col-md-2 col-sm-2 col-2 data-column'>
                             <?php echo get_field('student_level_2');?>
                             <br /> <?php echo get_field('gender');?>
 
                         </div>
-                        <div class='col-lg-2 col-md-2 col-sm-2 col-4 data-column'>
+                        <div class='col-lg-2 col-md-2 col-sm-2 col-6 data-column'>
                             補習科目: <br>
                             <!-- 數學(中文卷) -->
                             <?php echo implode(' ', get_field('subjects'));?>
