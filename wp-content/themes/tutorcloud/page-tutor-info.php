@@ -34,7 +34,7 @@ if($the_query->have_posts())
 }
 $the_query->have_posts();
 $the_query->the_post();
-echo 999;
+// echo 999;
 echo get_field('tutor_id');
 // echo 111;
 // wp_reset_postdata();
