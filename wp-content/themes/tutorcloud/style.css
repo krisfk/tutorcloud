@@ -1128,6 +1128,15 @@ input[type='number'] {
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {
+    .lightbox .add-btn-a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        line-height: 1rem;
+        margin: 1rem 0 1rem 0;
+    }
     .detail-content-table tr td:first-child {
         background: #519b8c;
         color: #fff;
