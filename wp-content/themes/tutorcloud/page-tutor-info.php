@@ -497,14 +497,15 @@ $the_query->the_post();
                             </td>
                             <td>
                                 <a class="file-a" href="<?php echo $file_src;?>">
+
+                                    <img class="file-icon"
+                                        src="<?php echo get_template_directory_uri().'/assets/images/file-icon.png';?>"
+                                        alt="">
                                     <?php
                                                            $file_src = wp_get_attachment_url(get_field('proof1'));
                                                            $pieces = explode("/", $file_src);
                                                               echo $pieces[count($pieces)-1];
-                                ?>
-                                    <img class="file-icon"
-                                        src="<?php echo get_template_directory_uri().'/assets/images/file-icon.png';?>"
-                                        alt=""></a>
+                                ?></a>
 
                                 <!-- <input id="proof1" name="proof1" type="file" class="form-control" accept=".jpg,pdf,png"> -->
                             </td>
