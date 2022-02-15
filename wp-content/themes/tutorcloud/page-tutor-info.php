@@ -498,7 +498,9 @@ $the_query->the_post();
                             <td>
                                 <?php
                            $file_src = wp_get_attachment_url(get_field('proof1'));
-// echo $file_src;
+                         $pieces = explode("/", $file_src);
+                            print_r($pieces);
+
 ?>
                                 <a href="<?php echo $file_src;?>">
                                     <img class="file-icon"
