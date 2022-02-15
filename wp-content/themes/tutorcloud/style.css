@@ -1043,3 +1043,8 @@ input[type='number'] {
     text-decoration: none;
     color: #769e9c;
 }
+
+.file-a:hover {
+    text-decoration: underline;
+    color: #769e9c;
+}
