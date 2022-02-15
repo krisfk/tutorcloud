@@ -1196,7 +1196,7 @@ input[type='number'] {
 }
 
 .mobile-tutor-div {
-    display: none;
+    display: none !important;
 }
 
 @media only screen and (max-width: 1920px) {}
@@ -1251,6 +1251,9 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
+    .mobile-tutor-div {
+        display: block !important;
+    }
     .mobile-tutor-div a {
         display: inline-grid;
         display: inline-table !important;
