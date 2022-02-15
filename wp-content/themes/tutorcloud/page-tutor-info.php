@@ -1050,131 +1050,112 @@ $(function() {
             return false;
         } else {
             return true;
-            // $('.step-content').fadeOut(0);
-
-            // $('.step-content.step-content-3').fadeIn(0);
-            // $('html,body').animate({
-            //     'scrollTop': $('.main-content-div').offset().top - 50
-            // }, 200);
-
-            // $('.step-txt').removeClass('active');
-            // $('.step-txt').eq(2).addClass('active');
-
 
         }
 
     })
 
-    $('.tutor-info-form-2').submit(function() {
+    $('.tutor-info-form-2').submit(function() {})
+
+
+    $('.step-content-2 .next-step-btn').click(function() {})
+
+
+    $('#all-place').change(function() {
+        if ($(this).is(':checked')) {
+
+            $('#hk-place').prop('checked', true);
+            $('#kl-place').prop('checked', true);
+            $('#nt-place').prop('checked', true);
+            $('input[name="class-area[]"]').prop('checked', true);
+
+
+
+        } else {
+
+            $('#hk-place').prop('checked', false);
+            $('#kl-place').prop('checked', false);
+            $('#nt-place').prop('checked', false);
+            $('input[name="class-area[]"]').prop('checked', false);
+
+
 
         }
+    })
 
 
-        $('.step-content-2 .next-step-btn').click(function() {
+    $('#hk-place').change(function() {
+        if ($(this).is(':checked')) {
 
-
-
-
-
-
-
-        })
-
-
-        $('#all-place').change(function() {
-            if ($(this).is(':checked')) {
-
-                $('#hk-place').prop('checked', true);
-                $('#kl-place').prop('checked', true);
-                $('#nt-place').prop('checked', true);
-                $('input[name="class-area[]"]').prop('checked', true);
-
-
-
-            } else {
-
-                $('#hk-place').prop('checked', false);
-                $('#kl-place').prop('checked', false);
-                $('#nt-place').prop('checked', false);
-                $('input[name="class-area[]"]').prop('checked', false);
-
-
-
+            for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', true);
             }
-        })
 
-
-        $('#hk-place').change(function() {
-            if ($(this).is(':checked')) {
-
-                for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
-                    $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
-                        'checked', true);
-                    $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
-                        'checked', true);
-                }
-
-            } else {
-                for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
-                    $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
-                        'checked', false);
-                    $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
-                        'checked', false);
-                    // $('#class-area-value-' + i).prop('checked', false);
-                }
+        } else {
+            for (i = 0; i < <?php echo count($hk_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', false);
+                // $('#class-area-value-' + i).prop('checked', false);
             }
-        })
+        }
+    })
 
 
 
 
 
-        $('#kl-place').change(function() {
-            if ($(this).is(':checked')) {
+    $('#kl-place').change(function() {
+        if ($(this).is(':checked')) {
 
-                for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
-                    $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
-                        'checked', true);
-                    $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
-                        'checked', true);
-                }
-
-            } else {
-                for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
-                    $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
-                        'checked', false);
-                    $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
-                        'checked', false);
-                }
+            for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', true);
             }
-        })
 
-
-        $('#nt-place').change(function() {
-            if ($(this).is(':checked')) {
-                // alert(56);
-                for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
-                    $('#nt-class-area-value-' + i).prop(
-                        'checked', true);
-                    $('#nt-class-area-value-' + i).prop(
-                        'checked', true);
-                }
-
-            } else {
-                for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
-                    $('#nt-class-area-value-' + i).prop(
-                        'checked', false);
-                    $('#nt-class-area-value-' + i).prop(
-                        'checked', false);
-                }
+        } else {
+            for (i = 0; i < <?php echo count($kl_place_arr);?>; i++) {
+                $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', false);
             }
-        }) $('.info-btn').click(function() {
-            $('.info-btn').removeClass('active');
-            $(this).addClass('active');
-            var idx = $(this).index() + 1;
-            $('.tutor-info-form').fadeOut(0);
-            $('.tutor-info-form-' + idx).fadeIn(0);
-        })
+        }
+    })
+
+
+    $('#nt-place').change(function() {
+        if ($(this).is(':checked')) {
+            // alert(56);
+            for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
+                $('#nt-class-area-value-' + i).prop(
+                    'checked', true);
+                $('#nt-class-area-value-' + i).prop(
+                    'checked', true);
+            }
+
+        } else {
+            for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
+                $('#nt-class-area-value-' + i).prop(
+                    'checked', false);
+                $('#nt-class-area-value-' + i).prop(
+                    'checked', false);
+            }
+        }
+    })
+
+    $('.info-btn').click(function() {
+        $('.info-btn').removeClass('active');
+        $(this).addClass('active');
+        var idx = $(this).index() + 1;
+        $('.tutor-info-form').fadeOut(0);
+        $('.tutor-info-form-' + idx).fadeIn(0);
     })
 })
 </script>
