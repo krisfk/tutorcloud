@@ -437,7 +437,7 @@ while ( $loop->have_posts() ) {
                             時薪： <br>$<?php echo get_field('cost_per_ppl');?>
                             <?php //echo get_field('lowest_salary');?></div>
 
-                        <div class='col-lg-4 col-md-4 col-sm-4 col-4 data-column'>
+                        <div class='col-lg-4 col-md-4 col-sm-4 col-8 data-column'>
                             每週堂數 / 時數: <br>
                             一星期<?php echo get_field('lesson_per_week');?>堂 ;
                             一堂<?php echo get_field('hour_per_lesson');?>小時
