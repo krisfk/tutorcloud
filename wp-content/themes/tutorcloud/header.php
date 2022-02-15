@@ -69,7 +69,7 @@ $slug=str_replace('/','',$slug);
 if(count($menu_item['children']))
 {
 
-echo '<li class="'.$class.'-li"><a class="level-1 parent '.$class.'" href="'.$url.'">'.$title;
+echo '<li><a class="level-1 parent '.$class.'" href="'.$url.'">'.$title;
 ?>
                                         <img class="arrow"
                                             src="<?php echo get_template_directory_uri();?>/assets/images/white-arrow-enter.png"
@@ -93,14 +93,14 @@ $sub_temp_arr=explode(get_site_url(),$sub_url);
 $sub_slug=str_replace('/en/','',$sub_temp_arr[1]);
 $sub_slug=str_replace('/cn/','',$sub_slug);
 $sub_slug=str_replace('/','',$sub_slug);
-echo'<li ><a class="'.$sub_slug.'" href="'.$sub_url.'">'.$sub_title.'</a></li>';
+echo'<li><a class="'.$sub_slug.'" href="'.$sub_url.'">'.$sub_title.'</a></li>';
 }
 echo '</ul>';
 
 }
 else
 {
-echo '<li  class="'.$class.'-li"><a class="level-1 '.$slug.' '.$class.'" href="'.$url.'">'.$title.'</a>';
+echo '<li><a class="level-1 '.$slug.' '.$class.'" href="'.$url.'">'.$title.'</a>';
 
 }
 echo'</li>';
@@ -160,9 +160,9 @@ if(!$_SESSION['tutor_post_id'])
                         ?>
 
                     <style type="text/css">
-                    .top-menu-ul .tutor-register {
+                    /* .top-menu-ul .tutor-register {
                         display: none;
-                    }
+                    } */
                     </style>
                     <?php
                         $query_args = array(
