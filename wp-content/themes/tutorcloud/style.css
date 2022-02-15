@@ -1124,6 +1124,12 @@ input[type='number'] {
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {
+    .detail-content-table tr td:first-child {
+        background: #519b8c;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        width: 50%;
+    }
     .data-row-div {
         padding: 1rem;
     }
