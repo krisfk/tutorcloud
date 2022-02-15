@@ -1034,3 +1034,7 @@ input[type='number'] {
 }
 
 .tutor-logout-btn {}
+
+.file-icon {
+    height: 40px;
+}
