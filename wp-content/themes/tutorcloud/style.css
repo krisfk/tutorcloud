@@ -1114,6 +1114,10 @@ input[type='number'] {
     text-align: right;
 }
 
+.data-row-div {
+    padding: 1rem;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {

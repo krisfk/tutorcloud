@@ -417,7 +417,7 @@ while ( $loop->have_posts() ) {
                     data-tutor-requirement="<?php echo implode(' ', get_field('tutor_requirement')).' '.get_field('tutor_requirement_value_other'); ?>"
                     data-other-requirement="<?php echo get_field('other_remark');?>">
 
-                    <div class="row gx-0 align-items-top">
+                    <div class="row gx-0 align-items-top data-row-div">
                         <div class='col-lg-2 col-md-2 col-sm-4 col-4 data-column'>
                             <?php echo get_field('student_id');?>
                             <br><?php echo get_field('tutorial_style');?>
