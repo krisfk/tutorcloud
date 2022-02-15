@@ -529,7 +529,7 @@ $the_query->the_post();
                         <tr>
                             <td><label for="proof2">學生證/畢業證書</label>
                             </td>
-                            <td>
+
                             <td>
 
 
