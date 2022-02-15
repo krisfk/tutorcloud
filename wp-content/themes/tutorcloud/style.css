@@ -1070,3 +1070,9 @@ input[type='number'] {
 .file-input-hide {
     display: none !important;
 }
+
+.msg-div {
+    display: block;
+    background: #000;
+    color: #fff;
+}
