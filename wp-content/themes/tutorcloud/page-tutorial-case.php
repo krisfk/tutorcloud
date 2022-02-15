@@ -418,7 +418,7 @@ while ( $loop->have_posts() ) {
                     data-other-requirement="<?php echo get_field('other_remark');?>">
 
                     <div class="row gx-0 align-items-top">
-                        <div class='col-lg-2 col-md-2 col-sm-2 col-4 data-column'>
+                        <div class='col-lg-2 col-md-2 col-sm-4 col-4 data-column'>
                             <?php echo get_field('student_id');?>
                             <br><?php echo get_field('tutorial_style');?>
                         </div>
@@ -427,17 +427,17 @@ while ( $loop->have_posts() ) {
                             <br /> <?php echo get_field('gender');?>
 
                         </div>
-                        <div class='col-lg-2 col-md-2 col-sm-2 col-6 data-column'>
+                        <div class='col-lg-2 col-md-2 col-sm-6 col-6 data-column'>
                             補習科目: <br>
                             <!-- 數學(中文卷) -->
                             <?php echo implode(' ', get_field('subjects'));?>
                             <!--大學生--> <br>
                         </div>
-                        <div class='col-lg-2 col-md-2 col-sm-2 col-4 data-column'>
+                        <div class='col-lg-2 col-md-2 col-sm-4 col-4 data-column'>
                             時薪： <br>$<?php echo get_field('cost_per_ppl');?>
                             <?php //echo get_field('lowest_salary');?></div>
 
-                        <div class='col-lg-4 col-md-4 col-sm-4 col-8 data-column'>
+                        <div class='col-lg-4 col-md-4 col-sm-8 col-8 data-column'>
                             每週堂數 / 時數: <br>
                             一星期<?php echo get_field('lesson_per_week');?>堂 ;
                             一堂<?php echo get_field('hour_per_lesson');?>小時
