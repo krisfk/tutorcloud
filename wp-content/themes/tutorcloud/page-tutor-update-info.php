@@ -257,6 +257,91 @@ if($_POST['form-type']=='tutor-info-form-2')
     update_post_meta($post_id, 't_style', $t_style);
     update_post_meta($post_id, 'lowest_salary', $lowest_salary);
 }
+
+if(!empty($_FILES))
+{
+            
+            if($_FILES["proof1"]['size'])
+            {
+
+                    $wordpress_upload_dir = wp_upload_dir();
+
+                    $new_file_path = $wordpress_upload_dir['path'] . '/' . $_FILES["proof1"]["name"];
+
+                        $i=0;
+                    while( file_exists( $new_file_path ) ) {
+                        $i++;
+                        $new_file_path = $wordpress_upload_dir['path'] . '/' . $i . '_' . $_FILES["proof1"]["name"];
+                    }
+                    
+                    if (move_uploaded_file($_FILES["proof1"]["tmp_name"], $new_file_path)) {
+
+                        $upload_id = wp_insert_attachment( array(
+                        'guid'           => $new_file_path, 
+                        'post_mime_type' => 'image/*',
+                        //$_FILES["file_upload"]["tmp_name"],
+                        'post_title'     => preg_replace( '/\.[^.]+$/', '', $_FILES["proof1"]["name"] ),
+                        'post_content'   => '',
+                        'post_status'    => 'inherit'
+                    ), $new_file_path );
+                    require_once( ABSPATH . 'wp-admin/includes/image.php' );
+
+                    wp_update_attachment_metadata( $upload_id, wp_generate_attachment_metadata( $upload_id, $new_file_path ) );
+
+                    // echo $post_id;
+
+                    update_field( 'proof1', $upload_id, $post_id );
+
+                    } else {
+                        echo "Sorry, there was an error uploading your file.";
+                    }
+            }
+
+
+    
+            if($_FILES["proof2"]['size'])
+            {
+            
+            $wordpress_upload_dir = wp_upload_dir();
+            
+            $new_file_path = $wordpress_upload_dir['path'] . '/' . $_FILES["proof2"]["name"];
+            
+                $i=0;
+            while( file_exists( $new_file_path ) ) {
+                $i++;
+                $new_file_path = $wordpress_upload_dir['path'] . '/' . $i . '_' . $_FILES["proof2"]["name"];
+            }
+            
+            if (move_uploaded_file($_FILES["proof2"]["tmp_name"], $new_file_path)) {
+            
+                $upload_id = wp_insert_attachment( array(
+                'guid'           => $new_file_path, 
+                'post_mime_type' => 'image/*',
+                //$_FILES["file_upload"]["tmp_name"],
+                'post_title'     => preg_replace( '/\.[^.]+$/', '', $_FILES["proof2"]["name"] ),
+                'post_content'   => '',
+                'post_status'    => 'inherit'
+            ), $new_file_path );
+            require_once( ABSPATH . 'wp-admin/includes/image.php' );
+            
+            wp_update_attachment_metadata( $upload_id, wp_generate_attachment_metadata( $upload_id, $new_file_path ) );
+            
+            // echo $post_id;
+            
+            update_field( 'proof2', $upload_id, $post_id );
+            
+            } else {
+                echo "Sorry, there was an error uploading your file.";
+            }
+            
+            
+            
+            }
+    
+}
+
+
+
 ?>
 
 <div class="breadcrumb mt-4">
