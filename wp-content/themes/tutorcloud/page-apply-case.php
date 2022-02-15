@@ -1477,18 +1477,19 @@ while ( $loop->have_posts() ) {
                                     src="<?php echo get_template_directory_uri();?>/assets/images/<?php echo get_field('gender') == '男' ? 'm':'f';?>-icon.png"
                                     alt="">
                             </div>
-                            <div class='col-lg-2 col-md-2 col-sm-2 col-2 data-column'>
+                            <div class='col-lg-2 col-md-2 col-sm-2 col-8 data-column'>
                                 <?php echo get_field('bac_degree');?> <br>
                                 主修：<?php echo get_field('u_major');?>
                                 <!--護理系-->
                             </div>
-                            <div class='col-lg-2 col-md-2 col-sm-6 col-6 data-column'>
+                            <div class='col-lg-2 col-md-2 col-sm-6 col-2 data-column'>
 
                                 <?php echo get_field('tutor_level');?>
                                 <!--大學生--> <br>
                             </div>
-                            <div class='col-2 data-column'>可接受最低時薪： <br>$<?php echo get_field('lowest_salary');?></div>
-                            <div class='col-lg-2 col-md-2 col-sm-4 col-4 data-column'>
+                            <div class='col-lg-2 col-md-2 col-sm-6 col-5 data-column'>
+                                可接受最低時薪： <br>$<?php echo get_field('lowest_salary');?></div>
+                            <div class='col-lg-2 col-md-2 col-sm-4 col-5 data-column'>
                                 可教授科目： <br>
                                 <?php echo $subjects_list;?>
                                 <!-- XX XX XX -->
