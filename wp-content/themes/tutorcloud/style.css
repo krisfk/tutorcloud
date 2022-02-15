@@ -1188,6 +1188,7 @@ input[type='number'] {
     }
     .main-content-div .step-li {
         text-align: center;
+        margin: 0 0 2rem 0 !important;
     }
     .tutor-reg-icon {
         width: 100%;
