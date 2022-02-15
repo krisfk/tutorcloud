@@ -1074,6 +1074,7 @@ input[type='number'] {
 .msg-div {
     display: block;
     background: #000;
+    text-align: center;
 }
 
 .msg-div a {
