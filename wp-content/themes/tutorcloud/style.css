@@ -1266,9 +1266,6 @@ input[type='number'] {
         width: 100%;
         z-index: 99;
     }
-    .have-msg.top-div-blank {
-        height: 100px;
-    }
     .mobile-tutor-div {
         display: block !important;
     }
@@ -1286,6 +1283,9 @@ input[type='number'] {
     }
     .top-div-blank {
         height: 70px;
+    }
+    .hv-msg.top-div-blank {
+        height: 100px;
     }
     .logo-a {
         position: fixed;
