@@ -1185,8 +1185,15 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
-    .logo-a {}
-    .logo-a img {}
+    .logo-a {
+        position: fixed;
+        top: 2rem;
+        left: 50%;
+        transform: translate(-50%, 0px);
+    }
+    .logo-a img {
+        height: 50px;
+    }
     .right-btn-div {
         display: none;
     }
