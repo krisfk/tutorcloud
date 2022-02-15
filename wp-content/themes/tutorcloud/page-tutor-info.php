@@ -499,7 +499,8 @@ $the_query->the_post();
                                 <?php
                            $file_src = wp_get_attachment_url(get_field('proof1'));
                          $pieces = explode("/", $file_src);
-                            print_r($pieces);
+                            // print_r($pieces);
+                            echo $pieces[count($pieces)-1];
 
 ?>
                                 <a href="<?php echo $file_src;?>">
