@@ -160,6 +160,10 @@ if(!$_SESSION['tutor_post_id'])
                         ?>
 
                     <style type="text/css">
+                    .tutor-register-li {
+                        display: none;
+                    }
+
                     /* .top-menu-ul .tutor-register {
                         display: none;
                     } */
