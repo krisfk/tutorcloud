@@ -150,10 +150,11 @@ if(!$_SESSION['tutor_post_id'])
                             </div>
                         </div>
 
-                        <div>fdsf</div>
 
 
                     </div>
+                    <div>fdsf</div>
+
                     <div class="container">
 
 
