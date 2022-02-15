@@ -260,6 +260,14 @@ if(!$_SESSION['tutor_post_id'])
             </div>
             <script type="text/javascript">
             $(function() {
+
+                $(window).resize(function() {
+                    if ($(window).width() > 991) {
+                        $('.top-menu-ul').fadeIn(0);
+                    } else {
+
+                    }
+                })
                 $('.mobile-menu-btn').click(function() {
 
                     if ($(this).hasClass('opened')) {
