@@ -239,7 +239,7 @@ if(!$_SESSION['tutor_post_id'])
                     <script type="text/javascript">
                     $(function() {
 
-                        $('.msg-div').addClass('hv-msg');
+                        $('.msg-div-blank').addClass('hv-msg');
                     })
                     </script>
                     <?php
