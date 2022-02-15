@@ -1058,8 +1058,9 @@ input[type='number'] {
     border-radius: 10px;
     box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
     /* margin: 0 auto; */
-    margin: 0 0.3rem;
+    /* margin: 0 0.3rem; */
     opacity: 1;
+    margin: 0 0 0 1rem;
 }
 
 .change-file-btn:hover {
