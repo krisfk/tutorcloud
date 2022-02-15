@@ -1132,6 +1132,9 @@ input[type='number'] {
     .add-btn-a div {
         display: inline-block;
     }
+    .add-btn-a img {
+        height: 10px;
+    }
     .step-txt {
         color: #00374f;
         opacity: 0.5;
