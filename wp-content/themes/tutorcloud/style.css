@@ -1129,7 +1129,7 @@ input[type='number'] {
 }
 
 .cal-icon {
-    max-width: 200px;
+    max-width: 350px;
     display: block;
     margin: 0 auto;
 }
@@ -1342,7 +1342,7 @@ input[type='number'] {
     .tutor-reg-icon {
         width: 100%;
         /* float: right; */
-        max-width: 200px;
+        max-width: 350px;
         display: block;
         margin: 0 auto 2rem auto;
     }
@@ -1400,7 +1400,7 @@ input[type='number'] {
         padding: 0.4em 0 0.4rem 0;
     }
     .content-img {
-        max-width: 300px;
+        max-width: 350px;
         display: block;
         margin: 0 auto;
     }
