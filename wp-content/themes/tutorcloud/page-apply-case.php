@@ -962,7 +962,7 @@ get_header();
                 </table>
 
                 <div class="text-center">
-                    <a href="javascript:void(0);" class="submit-btn filter-case mb-4 mt-4">查看結果</a>
+                    <a href="javascript:void(0);" class="submit-btn filter-case mb-0 mt-4">查看結果</a>
                 </div>
 
                 <!-- </form> -->
