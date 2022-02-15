@@ -168,6 +168,8 @@ if($_POST['form-type']=='tutor-info-form-2')
     $t_style = $_POST['t-style'];
     $lowest_salary = $_POST['lowest-salary'];
 
+    $post_id = $_SESSION['tutor_post_id'];
+
     add_post_meta($post_id, 'bac_degree', $bac_degree);
     add_post_meta($post_id, 'tutor_level', $tutor_level);
     add_post_meta($post_id, 'diploma', $diploma);
