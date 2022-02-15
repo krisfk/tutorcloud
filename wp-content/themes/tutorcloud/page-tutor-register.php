@@ -62,7 +62,7 @@ get_header();
                 <a href="#" class="next-step-btn">下一步</a>
             </div> -->
         </div>
-        <div class="col-10">
+        <div class="col-lg-10 col-md-12 col-sm-12 col-12">
 
 
             <?php
