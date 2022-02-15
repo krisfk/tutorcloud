@@ -995,7 +995,7 @@ get_header();
             </div>
 
             <div class="row gx-0">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <table class="detail-content-table">
 
                         <tr>
@@ -1031,7 +1031,7 @@ get_header();
                     </table>
 
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
 
                     <table class="detail-content-table">
 
