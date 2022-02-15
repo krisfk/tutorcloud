@@ -1091,6 +1091,7 @@ input[type='number'] {
     padding: 0.2rem;
     position: fixed;
     width: 100%;
+    top: 103px;
 }
 
 .msg-div a {
@@ -1116,6 +1117,10 @@ input[type='number'] {
 
 .top-div-blank {
     height: 103px;
+}
+
+.hv-msg.top-div-blank {
+    height: 134px;
 }
 
 .apply-step-btn-div {
