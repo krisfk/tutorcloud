@@ -1137,6 +1137,20 @@ input[type='number'] {
     height: 60px;
 }
 
+.mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    padding: 0;
+    margin: 25px 1.2rem 0 0;
+    float: right;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {
