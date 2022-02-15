@@ -407,6 +407,7 @@ h2 .bar {
 }
 
 .added-list {
+    text-align: center;
     display: block;
     background: #e1eeed;
     padding: 1rem 1.3rem;
