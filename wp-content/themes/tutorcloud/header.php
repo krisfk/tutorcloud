@@ -164,6 +164,10 @@ if(!$_SESSION['tutor_post_id'])
                         display: none !important;
                     }
 
+                    .apply-case-li {
+                        display: none !important;
+                    }
+
                     /* .top-menu-ul .tutor-register {
                         display: none;
                     } */
