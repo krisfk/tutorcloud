@@ -1200,7 +1200,7 @@ input[type='number'] {
 }
 
 .tutorial-case-li {
-    display: none;
+    display: none !important;
 }
 
 @media only screen and (max-width: 1920px) {}
