@@ -1316,6 +1316,9 @@ input[type='number'] {
         display: block;
         padding: 0.4em 0 0.4rem 0;
     }
+    .content-img {
+        max-width: 300px;
+    }
 }
 
 @media only screen and (max-width: 640px) {}
