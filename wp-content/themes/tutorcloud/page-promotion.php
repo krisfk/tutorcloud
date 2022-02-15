@@ -63,7 +63,7 @@ get_header();
 
     <div class="row align-items-top justify-content-center mt-5">
 
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12  ">
             <div class="pt-title mt-3 text-start">行政費優惠</div>
             <div class="mt-4">
                 首課堂前，家長會先將首兩星期的學費交給TutorCloud，代導師繳交行政費。 <br> <br>
@@ -75,7 +75,7 @@ get_header();
             <a href="<?php echo get_site_url();?>/tutor-register"
                 class="reg-tutor-btn apply-case-btn mt-5 d-inline-block">新導師登記</a>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-12 ">
             <img class="w-100 ps-3" src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/discount-icon.jpg"
                 alt="">
 
