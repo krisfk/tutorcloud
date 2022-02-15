@@ -1066,3 +1066,7 @@ input[type='number'] {
 .change-file-btn:hover {
     color: #fff;
 }
+
+.file-input-hide {
+    display: none;
+}
