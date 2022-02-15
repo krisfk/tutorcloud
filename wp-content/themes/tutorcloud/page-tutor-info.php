@@ -1212,7 +1212,7 @@ $(function() {
     $('.change-file-btn').click(function() {
 
         $(this).next('input[type="file"]').removeClass('file-input-hide');
-        $(this).fadeOut(0);
+        $(this).prev('a').fadeOut(0);
     })
 
 
