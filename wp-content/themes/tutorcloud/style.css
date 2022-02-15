@@ -1153,13 +1153,13 @@ input[type='number'] {
 
 .line {
     fill: none;
-    stroke: #38521a;
+    stroke: #fff;
     stroke-width: 6;
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-btn.opened .line {
-    stroke: #375118;
+    stroke: #fff;
 }
 
 .line1 {
@@ -1268,9 +1268,9 @@ input[type='number'] {
     .right-btn-div {
         display: none;
     }
-    .open .top-menu-ul {
+    /* .open .top-menu-ul {
         display: block;
-    }
+    } */
     .top-menu-ul {
         display: none;
         margin: 0;
