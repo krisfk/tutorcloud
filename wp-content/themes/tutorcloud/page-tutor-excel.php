@@ -154,11 +154,9 @@ endif;
 
         return (sa);
     }
-
-    <
-    iframe id = "txtArea1"
-    style = "display:none" > < /iframe>
     </script>
+    <iframe id="txtArea1" style="display:none"></iframe>
+
 </body>
 
 </html>
