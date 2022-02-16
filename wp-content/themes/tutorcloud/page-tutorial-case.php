@@ -411,6 +411,10 @@ get_header();
                     array_push($meta_query_arr,array('key'=>'class_area','value'=>$_POST['class-area'],'compare' => 'IN'));
                 }
 
+                array_push($meta_query_arr,array('key'=>'enable','value'=>'yes','compare' => '='));
+
+
+
 
 
                 
