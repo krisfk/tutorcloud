@@ -338,15 +338,15 @@ get_header();
 
                     <a class="tutor-apply-a" href="javascript:void(0);" data-student-id="" data-tutor-id="<?php
 
-                    $query_args = array(
-                        'post_type' => 'tutor',
-                        'p'=>$_SESSION['tutor_post_id']
-                    );
+                    // $query_args = array(
+                    //     'post_type' => 'tutor',
+                    //     'p'=>$_SESSION['tutor_post_id']
+                    // );
                     
-                    $the_query = new WP_Query( $query_args );
-                    $the_query->have_posts();
-                    $the_query->the_post();
-                    echo get_field('tutor_id');
+                    // $the_query = new WP_Query( $query_args );
+                    // $the_query->have_posts();
+                    // $the_query->the_post();
+                    // echo get_field('tutor_id');
 
                     
                     ?>">
@@ -419,15 +419,15 @@ get_header();
             
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 // echo $paged;
-  $args = array(  
-    'post_type' => 'student',
-    'post_status' => 'publish',
-    'posts_per_page' => 8, 
-    'orderby' => 'date', 
-    'order' => 'DESC', 
-    'meta_query' => $meta_query_arr,
-    'paged' => $paged
-);
+//   $args = array(  
+//     'post_type' => 'student',
+//     'post_status' => 'publish',
+//     'posts_per_page' => 8, 
+//     'orderby' => 'date', 
+//     'order' => 'DESC', 
+//     'meta_query' => $meta_query_arr,
+//     'paged' => $paged
+// );
 
 // $loop = new WP_Query( $args ); 
     
