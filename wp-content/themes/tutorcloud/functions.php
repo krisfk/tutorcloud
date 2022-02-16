@@ -743,6 +743,19 @@ add_action( 'rest_api_init', function () {
 	$to='krisfk@gmail.com';
 	$subject='導師'.$tutor_id.' 對'.'個案'.$student_id.'發出申請。';
 	$message='導師'.$tutor_id.' 對'.'個案'.$student_id.'發出申請。';
+
+
+	$post_id = wp_insert_post(array (
+		'post_type' => 'tutor_apply_case',
+		'post_title' => 'Submission from '.$tutor_id,
+		'post_content'  => $message,
+		'post_status' => 'publish',
+		'comment_status' => 'closed',   // if you prefer
+		'ping_status' => 'closed',      // if you prefer
+	));
+
+
+
 	if(wp_mail( $to, $subject, $message ))
 	{
 		echo json_encode(array("status"=>"1", "msg"=>"email sent"));
