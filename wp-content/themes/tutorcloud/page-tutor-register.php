@@ -3390,6 +3390,11 @@ if($_POST)
 // var $ = jQuery;
 $(function() {
 
+    $('.close-btn,.lightbox-bg-btn').click(function() {
+        $('.lightbox').fadeOut(0);
+    })
+
+
 
     $('.radio-cancel-btn').click(function() {
 
