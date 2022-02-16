@@ -46,7 +46,7 @@ endif;
 
 <table>
     <tr>
-        foreach
+
 
 
         <?php
@@ -61,3 +61,9 @@ endif;
 ?>
     </tr>
 </table>
+
+<style type="text/css">
+table {
+    width: max-content;
+}
+</style>
