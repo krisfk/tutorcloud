@@ -77,7 +77,7 @@ endif;
             else
             {
                 // echo '<td>'.$value.'</td>';
-                    echo gettype($value);
+                    echo print_r($value);
             }
         }
         echo'</tr>';
