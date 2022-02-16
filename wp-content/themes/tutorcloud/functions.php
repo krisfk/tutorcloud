@@ -749,16 +749,12 @@ add_action( 'rest_api_init', function () {
 		
 		$the_query = new WP_Query( $query_args );
 		
-		// The Loop
 		if ( $the_query->have_posts() ) {
-			echo 'have';
-		} else {
-			echo 'not have';
-			// no posts found
-		}
+			echo json_encode(array("status"=>"-1", "msg"=>"this email was existed"));
 
-		// echo   $reg_email;
-	//   echo json_encode(array("status"=>"1", "msg"=>"Record was added"));
+		} else {
+			echo json_encode(array("status"=>"1", "msg"=>"valid email"));
+		}
 
   }
   
