@@ -13,6 +13,24 @@ get_header();
 ?>
 
 
+<div class="lightbox">
+
+    <div class="lightbox-bg-btn ">
+
+    </div>
+
+    <div class="lightbox-content lightbox-msg">
+        <a href="javascript:void(0);" class="close-btn">
+
+            <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
+        </a>
+        <span class="lightbox-msg-txt text-center d-block p-3"></span>
+
+    </div>
+    <div class="lightbox-content filter-content">
+    </div>
+</div>
+
 <div class="breadcrumb mt-4">
 
     主頁 > 新導師登記</div>
@@ -3560,7 +3578,6 @@ $(function() {
 
 
         if (error_txt) {
-            alert(6);
             show_lightbox_msg(error_txt);
         } else {
             $('.step-content').fadeOut(0);
