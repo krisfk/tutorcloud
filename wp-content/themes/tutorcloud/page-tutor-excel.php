@@ -60,6 +60,15 @@ endif;
   
 ?>
     </tr>
+    <?php
+    for($i=0;$i<count($all_posts);$i++)
+    {
+        foreach($all_posts[$i] as $key => $item){
+                echo '<tr>'.$key.'</tr>';
+        }
+    }
+
+?>
 </table>
 
 <style type="text/css">
