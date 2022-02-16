@@ -20,6 +20,7 @@ if ( $the_query->have_posts() ):
 
 		// Get all fields
 		$fields = get_fields();
+        print_r($fields);
 
 		// Push each $fields array into the $all_posts array
 		array_push($all_posts, $fields);
@@ -39,8 +40,8 @@ endif;
     <tr>
         <?php
 foreach($all_posts[0] as $key => $item){
-    $field = get_field_object($key);
-    print_r($field);
+    // $field = get_field_object($key);
+    // print_r($field);
     //  echo '<th>'.$key.'</th>' ;
   }
   
