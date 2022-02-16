@@ -15,6 +15,11 @@ get_header();
 // print_r(array_unique(array_merge($arr1,$arr2)));
 ?>
 
+<style type="text/css">
+#primary {
+    display: none;
+}
+</style>
 <div class="lightbox">
 
     <div class="lightbox-bg-btn ">
