@@ -587,7 +587,7 @@ get_header();
   $args = array(  
     'post_type' => 'tutor',
     'post_status' => 'publish',
-    'p'=>get_the_ID(),
+    // 'p'=>get_the_ID(),
     'posts_per_page' => 8, 
     'orderby' => 'date', 
     'order' => 'DESC', 
