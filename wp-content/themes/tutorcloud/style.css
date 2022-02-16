@@ -808,6 +808,10 @@ input[type='checkbox'] {
     margin: 0 auto;
 }
 
+.tutor-apply-a:hover {
+    color: #fff;
+}
+
 .tutor-list-ul .data-column {
     padding: 1rem;
     /* padding-bottom: 1rem; */
