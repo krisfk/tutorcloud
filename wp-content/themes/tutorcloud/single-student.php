@@ -334,28 +334,6 @@ get_header();
                 <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4">其他要求/備註：<br><span
                         id="lbc-other-requirement"></span>test</div>
 
-                <div class="col-12 text-center">
-
-                    <a class="tutor-apply-a" href="javascript:void(0);" data-student-id="" data-tutor-id="<?php
-
-                    // $query_args = array(
-                    //     'post_type' => 'tutor',
-                    //     'p'=>$_SESSION['tutor_post_id']
-                    // );
-                    
-                    // $the_query = new WP_Query( $query_args );
-                    // $the_query->have_posts();
-                    // $the_query->the_post();
-                    // echo get_field('tutor_id');
-
-                    
-                    ?>">
-
-                        申請此個案
-
-                    </a>
-                </div>
-
 
             </div>
         </div>
