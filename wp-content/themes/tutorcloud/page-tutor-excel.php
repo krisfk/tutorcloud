@@ -66,9 +66,9 @@ endif;
         echo '<tr>';
         foreach($all_posts[$i] as $key => $value){
                 
-            if(typeof($value)=='Array')
+            if(gettype($value)=='Array')
             {
-                    echo '<td></td>';
+                    // echo '<td></td>';
             }
             else
             {
