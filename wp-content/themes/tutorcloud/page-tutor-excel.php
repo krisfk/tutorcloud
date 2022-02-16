@@ -32,45 +32,27 @@ $args = array(
     'posts_per_page' => -1,
 );
 
-// Create the array for all posts
 $all_posts = array();
 $table_th_arr= array();
-// Set up the query
 $the_query = new WP_Query( $args );
-
-// Setup the loop
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
-
-		// Get all fields
 		$fields = get_fields();
-        // print_r($fields);
-
-        
             foreach( $fields as $name => $value ){
                 $field = get_field_object($name); 
-                // $field['label']; 
                 array_push($table_th_arr,$field['label']);
             }
-
-
-// Push each $fields array into the $all_posts array
 array_push($all_posts, $fields);
 
 endwhile;
-
-// Restore original Post Data
 wp_reset_postdata();
-
-// Print the result here and do what you choose
-// print_r($all_posts);
 
 endif;
 ?>
 
     <?php
-$table='<table class="excel-table" id="excel-table">
+$table='<table class="excel-table mt-5" id="excel-table">
         <tr>';
 
 
