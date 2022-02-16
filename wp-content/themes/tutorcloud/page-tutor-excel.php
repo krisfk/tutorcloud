@@ -17,9 +17,9 @@
 
 <body>
 
-    <h1 class="text-center">tutorcloud tutor list export</h1>
+    <h1 class="text-start mt-5">tutorcloud tutor list export</h1>
 
-    <div class="text-center">
+    <div class="text-start mt-5">
         <a href="javascript:void(0);" class="getfile">EXPORT</a>
     </div>
 
