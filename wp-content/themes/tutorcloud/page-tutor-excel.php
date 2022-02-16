@@ -24,7 +24,7 @@ if ( $the_query->have_posts() ):
 
         
             foreach( $fields as $name => $value ){
-                 echo $name['label']; 
+                 echo $name; 
             }
 
 
