@@ -537,34 +537,7 @@ get_header();
     </div>
     <div class="row mt-5 gx-5">
 
-        <div class="apply-step-col col-lg-2 col-md-12 col-sm-12 col-12 ">
-            <ul class="m-0 p-0 text-center">
-                <li class="step-txt active">1. 選擇心儀導師</li>
-                <li class="step-txt">2. 登記學生資料</li>
-            </ul>
-            <div class="added-list">
 
-                <div class="deep-green"><img class="tutor-deep-icon"
-                        src="<?php echo get_template_directory_uri();?>/assets/images/tutor-deep-icon.png" alt="">
-                    心儀導師名單</div>
-
-                <ul>
-                    <!-- <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li>
-                    <li>T210001 <a href="javascript:void(0);" class="list-close-btn"></a></li> -->
-                </ul>
-
-            </div>
-
-
-            <div class="mt-4 apply-step-btn-div">
-                <a href="#" class="prev-step-btn mb-3 mt-0">上一步</a>
-
-                <a href="#" class="next-step-btn mb-3 mt-0">下一步</a>
-            </div>
-        </div>
 
         <?php
         
@@ -678,7 +651,7 @@ get_header();
     }
         ?>
 
-        <div class="apply-data-col col-lg-10 col-md-12 col-sm-12 col-12 ">
+        <div class="apply-data-col col-lg-12 col-md-12 col-sm-12 col-12 ">
             <form action="" method="post" id="apply-case-form">
 
                 <ul class="tutor-list-ul">
