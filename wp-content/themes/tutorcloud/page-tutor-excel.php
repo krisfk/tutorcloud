@@ -37,7 +37,7 @@ endif;
 
 <?php
 
-foreach($all_posts[0] as $key){
+foreach($all_posts[0] as $key => $item){
      echo $key ;
   }
   
