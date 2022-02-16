@@ -711,7 +711,7 @@ get_header();
                                 <!-- XX XX XX -->
                                 <!-- 數學 化學 經濟 -->
                             </div>
-                            <div class='col-lg-2 col-md-2 col-sm-12 col-12  add-btn-column text-center'>
+                            <!-- <div class='col-lg-2 col-md-2 col-sm-12 col-12  add-btn-column text-center'>
 
 
                                 <table class="w-100 h-100">
@@ -727,7 +727,7 @@ get_header();
                                     </tr>
                                 </table>
 
-                            </div>
+                            </div> -->
 
                         </div>
                     </li>
