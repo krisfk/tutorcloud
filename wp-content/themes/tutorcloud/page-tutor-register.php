@@ -3491,7 +3491,6 @@ $(function() {
 
 
     $('.step-content-2 .next-step-btn').click(function() {
-        alert(7);
 
         var email = $('#email').val();
         var confirm_email = $('#confirm_email').val();
@@ -3561,7 +3560,7 @@ $(function() {
 
 
         if (error_txt) {
-
+            alert(6);
             show_lightbox_msg(error_txt);
         } else {
             $('.step-content').fadeOut(0);
