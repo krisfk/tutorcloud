@@ -856,6 +856,11 @@ select.form-select {
     transform: translate(0px, -50%);
     border-radius: 1rem;
     margin: 0 auto;
+    width: max-content;
+    width: -moz-max-content;
+    /* Firefox/Gecko */
+    width: -webkit-max-content;
+    /* Chrome */
     /* overflow: hidden; */
 }
 
