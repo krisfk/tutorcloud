@@ -584,13 +584,13 @@ get_header();
             // )
             
 // echo get_the_ID();
-  $args = array(  
-    'post_type' => 'tutor',
-    // 'post_status' => 'publish',
-    'p'=>get_the_ID() 
-);
+//   $args = array(  
+//     'post_type' => 'tutor',
+//     // 'post_status' => 'publish',
+//     'p'=>get_the_ID() 
+// );
 
-$loop = new WP_Query( $args ); 
+// $loop = new WP_Query( $args ); 
     
 // while ( $loop->have_posts() ) { 
     // $loop->the_post(); 
