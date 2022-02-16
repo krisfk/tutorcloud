@@ -734,7 +734,30 @@ add_action( 'rest_api_init', function () {
   {
 	  
 		$reg_email = $request['reg_email'];
-		echo   $reg_email;
+		
+
+		$query_args = array(
+			'post_type' => 'tutor',
+			'meta_query' => array(
+				array(
+					'key' => 'email',
+					'value' => $reg_email,
+					'compare' => '=',
+				)
+			),
+		);
+		
+		$the_query = new WP_Query( $query_args );
+		
+		// The Loop
+		if ( $the_query->have_posts() ) {
+			echo 'have';
+		} else {
+			echo 'not have';
+			// no posts found
+		}
+
+		// echo   $reg_email;
 	//   echo json_encode(array("status"=>"1", "msg"=>"Record was added"));
 
   }
