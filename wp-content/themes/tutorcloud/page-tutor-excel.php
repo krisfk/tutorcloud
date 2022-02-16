@@ -17,7 +17,7 @@
 
 <body>
 
-    <a href="javascript:void(0);" class="getfile">EXPORT</a>
+    <button href="javascript:void(0);" class="getfile">EXPORT</button>
 
 
     <?php
