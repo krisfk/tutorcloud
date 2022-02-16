@@ -3792,7 +3792,7 @@ $(function() {
 
 
             $.ajax({
-                type: "GET",
+                type: "POST",
                 url: '<?php echo get_site_url();?>/wp-json/api/check_reg_email',
                 data: {
                     reg_email: $('#email').val();
@@ -3800,17 +3800,12 @@ $(function() {
                 dataType: "json",
             }).done(function(response) {
 
-                // if (response.status == -1) {
-                //     alert('What are you doing? Sir.');
-                // } else if (response.status == -2) {
-                //     alert('Verification code is wrong.');
-                // } else
-                // if (response.status) {
+                if (response.status == -1) {
+                    show_lightbox_msg('這電郵地址已被使用作登記。');
+                } else {
+                    $('form').submit();
+                }
 
-                //     $('.form-div').fadeOut(0);
-                //     $('.result-txt-div').html('您的申請已發送，我們會盡快再聯絡您，謝謝。');
-
-                // }
 
             }).fail(function(Response) {});
 
