@@ -86,6 +86,31 @@ get_header();
             <?php
         if($_POST)
         {
+
+            $reg_email=$_POST['email'];
+
+            $query_args = array(
+                'post_type' => 'tutor',
+                'meta_query' => array(
+                    array(
+                        'key' => 'email',
+                        'value' => $reg_email,
+                        'compare' => '=',
+                    )
+                ),
+            );
+            
+            $the_query = new WP_Query( $query_args );
+            
+            if ( $the_query->have_posts() ) {
+                wp_redirect(get_site_url().'/tutor-register?e=1');
+                exit;
+                // echo json_encode(array("status"=>"-1", "msg"=>"this email was existed"));
+            } else {
+                // echo json_encode(array("status"=>"1", "msg"=>"valid email"));
+            }
+
+            
         ?>
             <script type="text/javascript">
             $(function() {
