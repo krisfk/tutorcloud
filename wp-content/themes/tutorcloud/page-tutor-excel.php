@@ -26,7 +26,8 @@ if (!$is_admin) {
 }
 
 ?>
-    <h1 class="text-start mt-5">tutorcloud tutor list export(only can be viewed by admin)</h1>
+    <h1 class="text-start mt-5">tutorcloud tutor list export</h1>
+    <div class="small">(this page can be only viewed by admin)</div>
 
     <div class="text-start mt-5">
         <a href="javascript:void(0);" class="btn btn-info getfile">EXPORT</a>
