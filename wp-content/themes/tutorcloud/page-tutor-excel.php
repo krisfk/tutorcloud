@@ -59,37 +59,37 @@ endif;
 ?>
 
     <?php
-// $table='<table class="excel-table" id="excel-table">
-//         <tr>';
+$table='<table class="excel-table" id="excel-table">
+        <tr>';
 
 
 
-    //     foreach($table_th_arr as $th)
-    //     {
-    //         $table.='<th>'.$th.'</th>';
-    //     }
-    // $table .='</tr>';  
-    // for($i=0;$i<count($all_posts);$i++)
-    // {
-    //     $table .='<tr>';
-    //     foreach($all_posts[$i] as $key => $value){
+        foreach($table_th_arr as $th)
+        {
+            $table.='<th>'.$th.'</th>';
+        }
+    $table .='</tr>';  
+    for($i=0;$i<count($all_posts);$i++)
+    {
+        $table .='<tr>';
+        foreach($all_posts[$i] as $key => $value){
                 
-    //         // echo gettype($value);
-    //         if(is_array($value))
-    //         {
-    //               $table .='<td>'.implode(',', $value).'</td>';
+            // echo gettype($value);
+            if(is_array($value))
+            {
+                  $table .='<td>'.implode(',', $value).'</td>';
 
-    //         }
-    //         else
-    //         {
-    //             $table .='<td>'.$value.'</td>';
-    //         }
-    //     }
-    //     $table .='</tr>';
-    // }
+            }
+            else
+            {
+                $table .='<td>'.$value.'</td>';
+            }
+        }
+        $table .='</tr>';
+    }
 
-    // $table .='</table>';
-    // echo $table;
+    $table .='</table>';
+    echo $table;
 ?>
 
 
