@@ -3266,61 +3266,61 @@ $(function() {
 
         if (!chi_name) {
             error_txt +=
-                '請輸入中文全名\n';
+                '請輸入中文全名</br>';
         }
 
         if (!eng_name) {
             error_txt +=
-                '請輸入英文全名\n';
+                '請輸入英文全名</br>';
         }
 
         if (!whatsapp_tel) {
             error_txt +=
-                'WhatsApp 電話號碼\n';
+                'WhatsApp 電話號碼</br>';
         }
 
 
         if (confirm_whatsapp_tel != whatsapp_tel) {
             error_txt +=
-                '確認 WhatsApp 電話號碼輸入不相同\n';
+                '確認 WhatsApp 電話號碼輸入不相同</br>';
         }
 
 
         if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
-            error_txt += 'WhatsApp 電話格式不正確\n';
+            error_txt += 'WhatsApp 電話格式不正確</br>';
         }
         if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
             error_txt +=
-                '電郵格式不正確\n';
+                '電郵格式不正確</br>';
         }
 
 
 
         if (!gender) {
             error_txt +=
-                '請輸入性別\n';
+                '請輸入性別</br>';
         }
 
         if (!tutorial_course) {
             error_txt +=
-                '請輸入補習課程\n';
+                '請輸入補習課程</br>';
         }
         if (!student_level) {
             error_txt +=
-                '請輸入就讀年級\n';
+                '請輸入就讀年級</br>';
         }
         if (!student_level_2) {
             error_txt +=
-                '請輸入所屬年級\n';
+                '請輸入所屬年級</br>';
         }
 
         if (!paper_lang) {
             error_txt +=
-                '請輸入語言\n';
+                '請輸入語言</br>';
         }
         if (!tutorial_style) {
             error_txt +=
-                '請選擇補習方式\n';
+                '請選擇補習方式</br>';
         }
 
 
@@ -3331,40 +3331,40 @@ $(function() {
             val[i] = $(this).val();
         });
         if (val.length == 0) {
-            error_txt += '請選擇補習地區\n';
+            error_txt += '請選擇補習地區</br>';
         }
 
         if (!short_address) {
             error_txt +=
-                '請輸入詳細地址\n';
+                '請輸入詳細地址</br>';
         }
 
         if (!transport) {
             error_txt +=
-                '請輸入交通方法\n';
+                '請輸入交通方法</br>';
 
         }
 
         if (!cost_per_ppl) {
             error_txt +=
-                '請輸入每小時收費\n';
+                '請輸入每小時收費</br>';
         }
 
 
 
         if (!lesson_per_week) {
             error_txt +=
-                '請輸入每星期堂數\n';
+                '請輸入每星期堂數</br>';
         }
 
         if (!hour_per_lesson) {
             error_txt +=
-                '每堂時間(小時)\n';
+                '每堂時間(小時)</br>';
         }
 
         if (!tutor_gender) {
             error_txt +=
-                '導師性別要求\n';
+                '導師性別要求</br>';
         }
 
 
