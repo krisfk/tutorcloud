@@ -123,7 +123,7 @@ $table='<table class="excel-table" id="excel-table">
     $(function() {
         $('.getfile').click(
             function() {
-                exportTableToCSV.apply(this, [$('#thetable'), 'filename.csv']);
+                exportTableToCSV.apply(this, [$('#excel-table'), 'filename.csv']);
             });
 
     })
