@@ -3415,6 +3415,17 @@ if($_POST)
 // var $ = jQuery;
 $(function() {
 
+
+    <?php 
+if($_GET['e']==1)
+{
+    ?>
+    show_lightbox_msg('這電郵地址已被使用作登記。');
+
+    <?php
+}
+
+?>
     $(document).on('keydown', function(e) {
         if (e.keyCode === 27) { // ESC
             $('.lightbox').fadeOut(0);
