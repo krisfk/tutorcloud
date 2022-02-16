@@ -96,33 +96,33 @@ endif;
 
 
     <?php
-    $html = str_get_html($table);
+    // $html = str_get_html($table);
 
 
 
-    header('Content-type: application/ms-excel');
-    header('Content-Disposition: attachment; filename=sample.csv');
+    // header('Content-type: application/ms-excel');
+    // header('Content-Disposition: attachment; filename=sample.csv');
     
-    $fp = fopen("php://output", "w");
+    // $fp = fopen("php://output", "w");
     
-    foreach($html->find('tr') as $element)
-    {
-            $th = array();
-            foreach( $element->find('th') as $row)  
-            {
-                $th [] = $row->plaintext;
-            }
+    // foreach($html->find('tr') as $element)
+    // {
+    //         $th = array();
+    //         foreach( $element->find('th') as $row)  
+    //         {
+    //             $th [] = $row->plaintext;
+    //         }
     
-            $td = array();
-            foreach( $element->find('td') as $row)  
-            {
-                $td [] = $row->plaintext;
-            }
-            !empty($th) ? fputcsv($fp, $th) : fputcsv($fp, $td);
-    }
+    //         $td = array();
+    //         foreach( $element->find('td') as $row)  
+    //         {
+    //             $td [] = $row->plaintext;
+    //         }
+    //         !empty($th) ? fputcsv($fp, $th) : fputcsv($fp, $td);
+    // }
     
     
-    fclose($fp);
+    // fclose($fp);
     
     ?>
     <style type="text/css">
