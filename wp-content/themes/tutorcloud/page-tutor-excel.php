@@ -96,7 +96,7 @@ $table='<table class="excel-table" id="excel-table">
 
 
     <?php
-    // $html = str_get_html($table);
+    $html = str_get_html($table);
 
 
 
