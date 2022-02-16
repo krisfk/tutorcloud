@@ -46,12 +46,17 @@ endif;
 
 <table>
     <tr>
+        foreach
+
+
         <?php
-foreach($all_posts[0] as $key => $item){
-    // $field = get_field_object($key);
-    // print_r($field);
-    //  echo '<th>'.$key.'</th>' ;
-  }
+
+        foreach($table_th_arr as $th)
+        {
+            echo '<th>'.$th.'</th>';
+        }
+// foreach($all_posts[0] as $key => $item){
+//   }
   
 ?>
     </tr>
