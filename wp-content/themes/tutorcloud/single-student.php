@@ -529,13 +529,13 @@ $(function() {
     });
 
 
-    $('.filter-btn').click(function() {
+    // $('.filter-btn').click(function() {
 
-        $('.lightbox').fadeIn(0);
-        $('.lightbox .lightbox-content').fadeOut(0);
-        $('.lightbox .lightbox-content.filter-content').fadeIn(0);
+    //     $('.lightbox').fadeIn(0);
+    //     $('.lightbox .lightbox-content').fadeOut(0);
+    //     $('.lightbox .lightbox-content.filter-content').fadeIn(0);
 
-    });
+    // });
 
 
     $('.prev-step-btn').fadeOut(0);
