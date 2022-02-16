@@ -936,7 +936,7 @@ while ( $loop->have_posts() ) {
 
                 <div class="student-form-div">
                     <h3 class="mt-1 mb-3 p-0">登記學生資料</h2>
-                        <input type="hidden" id="tutor-list" value="">
+                        <input type="hidden" id="tutor-list" value="" name="tutor-list">
 
                         <div class="student-apply-case-content">
                             <input name="apply-case-form" type="hidden" value="1">
