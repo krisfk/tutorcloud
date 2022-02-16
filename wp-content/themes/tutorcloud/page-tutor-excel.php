@@ -67,17 +67,17 @@ endif;
         foreach($all_posts[$i] as $key => $value){
                 
             // echo gettype($value);
-            if($value=='Array')
+            if(is_array($value))
             {
                 //echo 111;
                   //  print_r($value);
-                  echo '<td>'.$value.'</td>';
+                  echo '<td>2'.$value.'</td>';
 
             }
             else
             {
-                // echo '<td>'.$value.'</td>';
-                    echo print_r($value);
+                echo '<td>'.$value.'</td>';
+                    // echo print_r($value);
             }
         }
         echo'</tr>';
