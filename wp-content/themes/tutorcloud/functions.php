@@ -722,13 +722,37 @@ add_action('init', 'app_output_buffer');
 
 add_action( 'rest_api_init', function () {
 	register_rest_route( 'api', '/check_reg_email', array(
-	  'methods' => 'POST',
-	  'callback' => 'check_reg_email_fuc',
-	) );
+		'methods' => 'POST',
+		'callback' => 'check_reg_email_fuc',
+	  ) );
+
+	register_rest_route( 'api', '/tutor_apply_case', array(
+		'methods' => 'POST',
+		'callback' => 'tutor_apply_case_func',
+	  ) );
+	
+
   } );
   
   
-  
+  function tutor_apply_case_func($request)
+  {
+	$student_id=$request['student_id'];
+	$tutor_id=$request['tutor_id'];
+
+	$to='krisfk@gmail.com';
+	$subject='subjectname';
+	$message='msg';
+	if(wp_mail( $to, $subject, $message ))
+	{
+		echo json_encode(array("status"=>"1", "msg"=>"email sent"));
+	}
+	else
+	{
+		echo json_encode(array("status"=>"-1", "msg"=>"email cannot be sent."));
+	}
+
+  }
   
   function check_reg_email_fuc($request)
   {

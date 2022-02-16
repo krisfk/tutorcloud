@@ -988,9 +988,34 @@ $(function() {
 
         // $('form#filter-form').submit();
     });
-    // $('.add-btn-a').click(function() {
-    //     // alert(87);
-    // })
+
+    $('.tutor-apply-a').click(function() {
+
+        $.ajax({
+            type: "POST",
+            url: '<?php echo get_site_url();?>/wp-json/api/tutor_apply_case',
+            data: {
+                student_id: $('.tutor-apply-a').attr('data-student-id'),
+                tutor_id: $('.tutor-apply-a').attr('data-tutor-id')
+            },
+            dataType: "json",
+        }).done(function(response) {
+            console.log(response);
+            // if (response.status == -1) {
+            //     // show_lightbox_msg('這電郵地址已被使用作登記。');
+            // } else {
+            //     // $('form').submit();
+            // }
+
+
+        }).fail(function(Response) {});
+
+
+
+
+
+    })
+
 })
 </script>
 <?php
