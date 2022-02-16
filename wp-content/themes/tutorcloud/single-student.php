@@ -431,8 +431,8 @@ get_header();
 
 $loop = new WP_Query( $args ); 
     
-while ( $loop->have_posts() ) { 
-    $loop->the_post(); 
+// while ( $loop->have_posts() ) { 
+    // $loop->the_post(); 
     // echo 1;
     // implode(', ', $Array)
     ?>
@@ -482,7 +482,7 @@ while ( $loop->have_posts() ) {
                     </div>
                 </li>
                 <?php
-}
+// }
                 
                 
 
