@@ -77,22 +77,19 @@ $table='<table class="excel-table" id="excel-table">
             // echo gettype($value);
             if(is_array($value))
             {
-                //echo 111;
-                  //  print_r($value);
                   $table .='<td>'.implode(',', $value).'</td>';
 
             }
             else
             {
                 $table .='<td>'.$value.'</td>';
-                    // echo print_r($value);
             }
         }
         $table .='</tr>';
     }
 
     $table .='</table>';
-echo $table;
+    echo $table;
 ?>
 
 
