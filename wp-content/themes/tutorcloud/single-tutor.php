@@ -534,7 +534,8 @@ get_header();
 
 
     <div class="text-center mt-3">
-        <a href="#" class="filter-btn">修改</a>
+        <a href="<?php echo get_site_url();?>/wp-admin/post.php?post=<?php echo get_the_ID();?>&action=edit"
+            class="filter-btn">修改</a>
     </div>
     <div class="row mt-5 gx-5">
         <?php
