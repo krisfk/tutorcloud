@@ -532,9 +532,7 @@ get_header();
         </h2>
     </div>
 
-    <div class="text-center mt-3">
-        <a href="#" class="filter-btn">導師選項</a>
-    </div>
+
     <div class="row mt-5 gx-5">
 
 
@@ -2315,14 +2313,6 @@ $(function() {
         }
     });
 
-
-    $('.filter-btn').click(function() {
-
-        $('.lightbox').fadeIn(0);
-        $('.lightbox .lightbox-content').fadeOut(0);
-        $('.lightbox .lightbox-content.filter-content').fadeIn(0);
-
-    });
 
 
     $('.prev-step-btn').fadeOut(0);
