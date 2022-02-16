@@ -66,10 +66,10 @@ endif;
         echo '<tr>';
         foreach($all_posts[$i] as $key => $value){
                 
-            echo gettype($value);
-            if(gettype($value)=='Array')
+            // echo gettype($value);
+            if($value=='Array')
             {
-                    // echo '<td></td>';
+                    print_r($value);
             }
             else
             {
