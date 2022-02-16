@@ -3795,7 +3795,7 @@ $(function() {
                 type: "POST",
                 url: '<?php echo get_site_url();?>/wp-json/api/check_reg_email',
                 data: {
-                    reg_email: $('#email').val();
+                    reg_email: $('#email').val()
                 },
                 dataType: "json",
             }).done(function(response) {
@@ -3807,8 +3807,7 @@ $(function() {
                 }
 
 
-            });
-            // .fail(function(Response) {});
+            }).fail(function(Response) {});
 
             // $('form').submit();
 
