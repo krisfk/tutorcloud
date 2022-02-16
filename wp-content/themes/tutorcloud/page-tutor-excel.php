@@ -10,7 +10,6 @@
 
 <body>
 
-    <button id="btnExport" onclick="fnExcelReport();"> EXPORT </button>
 
 
     <?php
@@ -59,26 +58,20 @@ wp_reset_postdata();
 endif;
 ?>
 
-    <table class="excel-table" id="excel-table">
-        <tr>
+    <?php
+$table='<table class="excel-table" id="excel-table">
+        <tr>';
 
 
-
-            <?php
 
         foreach($table_th_arr as $th)
         {
-            echo '<th>'.$th.'</th>';
+            $table.='<th>'.$th.'</th>';
         }
-// foreach($all_posts[0] as $key => $item){
-//   }
-  
-?>
-        </tr>
-        <?php
+    $table .='</tr>';  
     for($i=0;$i<count($all_posts);$i++)
     {
-        echo '<tr>';
+        $table .='<tr>';
         foreach($all_posts[$i] as $key => $value){
                 
             // echo gettype($value);
@@ -86,21 +79,55 @@ endif;
             {
                 //echo 111;
                   //  print_r($value);
-                  echo '<td>'.implode(',', $value).'</td>';
+                  $table .='<td>'.implode(',', $value).'</td>';
 
             }
             else
             {
-                echo '<td>'.$value.'</td>';
+                $table .='<td>'.$value.'</td>';
                     // echo print_r($value);
             }
         }
-        echo'</tr>';
+        $table .='</tr>';
     }
 
+    $table .='</table>';
+echo $table;
 ?>
-    </table>
 
+
+
+
+    <?php
+    $html = str_get_html($table);
+
+
+
+    header('Content-type: application/ms-excel');
+    header('Content-Disposition: attachment; filename=sample.csv');
+    
+    $fp = fopen("php://output", "w");
+    
+    foreach($html->find('tr') as $element)
+    {
+            $th = array();
+            foreach( $element->find('th') as $row)  
+            {
+                $th [] = $row->plaintext;
+            }
+    
+            $td = array();
+            foreach( $element->find('td') as $row)  
+            {
+                $td [] = $row->plaintext;
+            }
+            !empty($th) ? fputcsv($fp, $th) : fputcsv($fp, $td);
+    }
+    
+    
+    fclose($fp);
+    
+    ?>
     <style type="text/css">
     table {
         width: max-content;
@@ -122,40 +149,6 @@ endif;
     </style>
 
 
-    <script type="text/javascript">
-    function fnExcelReport() {
-        var tab_text = "<table border='2px'><tr bgcolor='#87AFC6'>";
-        var textRange;
-        var j = 0;
-        tab = document.getElementById('excel-table'); // id of table
-
-        for (j = 0; j < tab.rows.length; j++) {
-            tab_text = tab_text + tab.rows[j].innerHTML + "</tr>";
-            //tab_text=tab_text+"</tr>";
-        }
-
-        tab_text = tab_text + "</table>";
-        tab_text = tab_text.replace(/<A[^>]*>|<\/A>/g, ""); //remove if u want links in your table
-        tab_text = tab_text.replace(/<img[^>]*>/gi, ""); // remove if u want images in your table
-        tab_text = tab_text.replace(/<input[^>]*>|<\/input>/gi, ""); // reomves input params
-
-        var ua = window.navigator.userAgent;
-        var msie = ua.indexOf("MSIE ");
-
-        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) // If Internet Explorer
-        {
-            txtArea1.document.open("txt/html", "replace");
-            txtArea1.document.write(tab_text);
-            txtArea1.document.close();
-            txtArea1.focus();
-            sa = txtArea1.document.execCommand("SaveAs", true, "Say Thanks to Sumit.xls");
-        } else //other browser not tested on IE 11
-            sa = window.open('data:application/vnd.ms-excel,' + encodeURIComponent(tab_text));
-
-        return (sa);
-    }
-    </script>
-    <iframe id="txtArea1" style="display:none"></iframe>
 
 </body>
 
