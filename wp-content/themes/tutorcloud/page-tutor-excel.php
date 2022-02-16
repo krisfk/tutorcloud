@@ -20,18 +20,24 @@ if ( $the_query->have_posts() ):
 
 		// Get all fields
 		$fields = get_fields();
-        print_r($fields);
+        // print_r($fields);
 
-		// Push each $fields array into the $all_posts array
-		array_push($all_posts, $fields);
+        
+            foreach( $fields as $name => $value ){
+                 echo $name['label']; 
+            }
 
-	endwhile;
 
-	// Restore original Post Data
-	wp_reset_postdata();
+// Push each $fields array into the $all_posts array
+array_push($all_posts, $fields);
 
-	// Print the result here and do what you choose
-	// print_r($all_posts);
+endwhile;
+
+// Restore original Post Data
+wp_reset_postdata();
+
+// Print the result here and do what you choose
+// print_r($all_posts);
 
 endif;
 ?>
