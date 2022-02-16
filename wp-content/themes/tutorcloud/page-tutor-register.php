@@ -3807,7 +3807,8 @@ $(function() {
                 }
 
 
-            }).fail(function(Response) {});
+            });
+            // .fail(function(Response) {});
 
             // $('form').submit();
 
