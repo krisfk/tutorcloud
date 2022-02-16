@@ -794,6 +794,15 @@ input[type='checkbox'] {
     padding: 1rem 0 1rem 0;
 }
 
+.tutor-apply-a {
+    display: block;
+    background: #618382;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 0 1rem 0;
+}
+
 .tutor-list-ul .data-column {
     padding: 1rem;
     /* padding-bottom: 1rem; */
