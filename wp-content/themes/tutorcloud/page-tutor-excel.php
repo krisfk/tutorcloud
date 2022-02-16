@@ -59,8 +59,8 @@ endif;
 ?>
 
     <?php
-$table='<table class="excel-table" id="excel-table">
-        <tr>';
+// $table='<table class="excel-table" id="excel-table">
+//         <tr>';
 
 
 
@@ -88,7 +88,7 @@ $table='<table class="excel-table" id="excel-table">
     //     $table .='</tr>';
     // }
 
-    $table .='</table>';
+    // $table .='</table>';
     // echo $table;
 ?>
 
