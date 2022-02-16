@@ -741,8 +741,8 @@ add_action( 'rest_api_init', function () {
 	$tutor_id=$request['tutor_id'];
 
 	$to='krisfk@gmail.com';
-	$subject='subjectname';
-	$message='msg';
+	$subject='導師'.$tutor_id.' 對'.'個案'.$student_id.'發出申請。';
+	$message='導師'.$tutor_id.' 對'.'個案'.$student_id.'發出申請。';
 	if(wp_mail( $to, $subject, $message ))
 	{
 		echo json_encode(array("status"=>"1", "msg"=>"email sent"));
