@@ -3737,7 +3737,7 @@ $(function() {
 
 
 
-    $('form').submit(function() {
+    $('.submit-btn').click(function() {
         var self_intro = $('#self-intro').val();
         var error_txt = '';
         var val = [];
@@ -3799,10 +3799,8 @@ $(function() {
 
                 if (response.status == -1) {
                     show_lightbox_msg('這電郵地址已被使用作登記。');
-                    return false;
                 } else {
-                    return true;
-                    // $('form').submit();
+                    $('form').submit();
                 }
 
 
