@@ -64,8 +64,8 @@ endif;
     for($i=0;$i<count($all_posts);$i++)
     {
         echo '<tr>';
-        foreach($all_posts[$i] as $key => $item){
-                echo '<td>'.$key.'</td>';
+        foreach($all_posts[$i] as $key => $value){
+                echo '<td>'.$value.'</td>';
         }
         echo'</tr>';
     }
