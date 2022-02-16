@@ -509,7 +509,7 @@ get_header();
                 </div>
             </div>
 
-            <div class="text-center">
+            <!-- <div class="text-center">
 
                 <a class="add-btn-a" href="javascript:void(0);" data-tutor-id="">
 
@@ -518,7 +518,7 @@ get_header();
                     <div class="mt-1">加入導師名單</div>
 
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 
