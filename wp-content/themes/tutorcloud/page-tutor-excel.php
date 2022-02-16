@@ -127,7 +127,7 @@ $table='<table class="excel-table mt-5" id="excel-table">
     $(function() {
         $('.getfile').click(
             function() {
-                exportTableToCSV.apply(this, [$('#excel-table'), 'filename.csv']);
+                exportTableToCSV.apply(this, [$('#excel-table'), 'tutor-list.csv']);
             });
 
     })
