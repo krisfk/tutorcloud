@@ -533,6 +533,9 @@ get_header();
     </div>
 
     <div class="row mt-5 gx-5">
+        <?php
+      
+        ?>
 
         <div class="apply-data-col col-lg-12 col-md-12 col-sm-12 col-12 ">
             <form action="" method="post" id="apply-case-form">
@@ -581,9 +584,20 @@ get_header();
             // )
             ;
 
+  $args = array(  
+    'post_type' => 'tutor',
+    'post_status' => 'publish',
+    'posts_per_page' => 8, 
+    'orderby' => 'date', 
+    'order' => 'DESC', 
+    'meta_query' => $meta_query_arr
     
-// while ( $loop->have_posts() ) { 
-//     $loop->the_post(); 
+);
+
+$loop = new WP_Query( $args ); 
+    
+while ( $loop->have_posts() ) { 
+    $loop->the_post(); 
     // echo 1;
     // implode(', ', $Array)
     ?>
@@ -722,7 +736,7 @@ get_header();
     // echo 1;
     // print the_title(); 
     // the_excerpt(); 
-// }
+}
                 
                 
                 ?>
