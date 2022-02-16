@@ -733,7 +733,8 @@ add_action( 'rest_api_init', function () {
   function check_reg_email_fuc($request)
   {
 	  
-echo 999;  
+		$reg_email = $request['reg_email'];
+		echo   $reg_email;
 	//   echo json_encode(array("status"=>"1", "msg"=>"Record was added"));
 
   }

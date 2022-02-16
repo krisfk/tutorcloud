@@ -3789,7 +3789,33 @@ $(function() {
 
             show_lightbox_msg(error_txt);
         } else {
-            $('form').submit();
+
+
+            $.ajax({
+                type: "GET",
+                url: '<?php echo get_site_url();?>/wp-json/api/check_reg_email',
+                data: {
+                    reg_email: $('#email').val();
+                },
+                dataType: "json",
+            }).done(function(response) {
+
+                // if (response.status == -1) {
+                //     alert('What are you doing? Sir.');
+                // } else if (response.status == -2) {
+                //     alert('Verification code is wrong.');
+                // } else
+                // if (response.status) {
+
+                //     $('.form-div').fadeOut(0);
+                //     $('.result-txt-div').html('您的申請已發送，我們會盡快再聯絡您，謝謝。');
+
+                // }
+
+            }).fail(function(Response) {});
+
+            // $('form').submit();
+
         }
 
 
