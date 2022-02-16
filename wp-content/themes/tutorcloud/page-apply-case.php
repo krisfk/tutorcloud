@@ -624,14 +624,14 @@ get_header();
 
             $to='krisfk@gmail.com';
             $subject='補習個案'.$student_id.'已建立。';
-            $message='補習個案'.$student_id.'已建立。';
+            $message='補習個案'.$student_id.'已建立。<br/><br/> 心儀導師名單如下：<br/>'.$_POST['tutor-list'];
             if(wp_mail( $to, $subject, $message ))
             {
-                echo json_encode(array("status"=>"1", "msg"=>"email sent"));
+                // echo json_encode(array("status"=>"1", "msg"=>"email sent"));
             }
             else
             {
-                echo json_encode(array("status"=>"-1", "msg"=>"email cannot be sent."));
+                // echo json_encode(array("status"=>"-1", "msg"=>"email cannot be sent."));
             }
 
             
