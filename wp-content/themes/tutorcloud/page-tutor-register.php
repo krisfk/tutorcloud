@@ -3361,7 +3361,7 @@ if($_POST)
                     <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
 
 
-                    <input href="javascript:void(0);" type="submit" class="submit-btn">遞交表格</input>
+                    <a href="javascript:void(0);" type="submit" class="submit-btn">遞交表格</a>
                 </div>
         </div>
 
