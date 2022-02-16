@@ -21,7 +21,11 @@ if (!$is_admin) {
 }
 
 ?>
-
+<style type="text/css">
+#main {
+    display: none;
+}
+</style>
 <h1 class="text-start mt-5">tutorcloud tutor list export</h1>
 <div class="small">(this page can be only viewed by admin)</div>
 
