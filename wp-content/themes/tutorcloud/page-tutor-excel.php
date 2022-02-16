@@ -9,7 +9,7 @@ $args = array(
 
 // Create the array for all posts
 $all_posts = array();
-
+$table_th_arr= array();
 // Set up the query
 $the_query = new WP_Query( $args );
 
@@ -25,8 +25,8 @@ if ( $the_query->have_posts() ):
         
             foreach( $fields as $name => $value ){
                 $field = get_field_object($name); 
-                echo $field['label']; 
-
+                // $field['label']; 
+                array_push($table_th_arr,$field['label']);
             }
 
 
