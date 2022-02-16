@@ -59,7 +59,7 @@ wp_reset_postdata();
 endif;
 ?>
 
-    <table class="excel-table">
+    <table class="excel-table" id="excel-table">
         <tr>
 
 
@@ -127,7 +127,7 @@ endif;
         var tab_text = "<table border='2px'><tr bgcolor='#87AFC6'>";
         var textRange;
         var j = 0;
-        tab = document.getElementById('headerTable'); // id of table
+        tab = document.getElementById('excel-table'); // id of table
 
         for (j = 0; j < tab.rows.length; j++) {
             tab_text = tab_text + tab.rows[j].innerHTML + "</tr>";
