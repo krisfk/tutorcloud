@@ -3417,7 +3417,7 @@ $(function() {
 
 
     <?php 
-if($_GET['e']===1)
+if($_GET['e']=='1')
 {
     ?>
     show_lightbox_msg('這電郵地址已被使用作登記。');
