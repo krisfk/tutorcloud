@@ -1,23 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+/**
+ * The template for displaying all single posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty_One
+ * @since Twenty Twenty-One 1.0
+ */
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-</head>
-
-<body>
-    <?php
-
+get_header();
+// $arr1 = array('1','2','3','4','5');
+// $arr2 = array('2','3','1','8');
+// print_r(array_unique(array_merge($arr1,$arr2)));
 $is_admin = current_user_can('manage_options');  // all user they have mange option will get 
 
 if (!$is_admin) {
@@ -26,14 +21,15 @@ if (!$is_admin) {
 }
 
 ?>
-    <h1 class="text-start mt-5">tutorcloud tutor list export</h1>
-    <div class="small">(this page can be only viewed by admin)</div>
 
-    <div class="text-start mt-5">
-        <a href="javascript:void(0);" class="btn btn-info getfile">EXPORT</a>
-    </div>
+<h1 class="text-start mt-5">tutorcloud tutor list export</h1>
+<div class="small">(this page can be only viewed by admin)</div>
 
-    <?php
+<div class="text-start mt-5">
+    <a href="javascript:void(0);" class="btn btn-info getfile">EXPORT</a>
+</div>
+
+<?php
 
 // Get arguments for all posts
 $args = array( 
@@ -61,7 +57,7 @@ wp_reset_postdata();
 endif;
 ?>
 
-    <?php
+<?php
 $table='<table class="excel-table mt-5" id="excel-table">
         <tr>';
 
@@ -99,81 +95,81 @@ $table='<table class="excel-table mt-5" id="excel-table">
 
 
 
-    <style type="text/css">
-    body {
-        padding: 1rem;
-    }
+<style type="text/css">
+body {
+    padding: 1rem;
+}
 
-    table {
-        width: max-content;
-        border-spacing: 0;
-        border-collapse: collapse;
+table {
+    width: max-content;
+    border-spacing: 0;
+    border-collapse: collapse;
 
-    }
+}
 
-    table.excel-table th {
-        padding: 1rem;
-        border: 1px solid #000;
-    }
+table.excel-table th {
+    padding: 1rem;
+    border: 1px solid #000;
+}
 
-    table.excel-table td {
-        padding: 1rem;
+table.excel-table td {
+    padding: 1rem;
 
-        border: 1px solid #000;
-    }
-    </style>
+    border: 1px solid #000;
+}
+</style>
 
-    <script type="text/javascript">
-    $(function() {
-        $('.getfile').click(
-            function() {
-                exportTableToCSV.apply(this, [$('#excel-table'), 'tutor-list.csv']);
-            });
+<script type="text/javascript">
+$(function() {
+    $('.getfile').click(
+        function() {
+            exportTableToCSV.apply(this, [$('#excel-table'), 'tutor-list.csv']);
+        });
 
-    })
+})
 
-    function exportTableToCSV($table, filename) {
+function exportTableToCSV($table, filename) {
 
-        var $rows = $table.find('tr:has(td)'),
+    var $rows = $table.find('tr:has(td)'),
 
-            // Temporary delimiter characters unlikely to be typed by keyboard
-            // This is to avoid accidentally splitting the actual contents
-            tmpColDelim = String.fromCharCode(11), // vertical tab character
-            tmpRowDelim = String.fromCharCode(0), // null character
+        // Temporary delimiter characters unlikely to be typed by keyboard
+        // This is to avoid accidentally splitting the actual contents
+        tmpColDelim = String.fromCharCode(11), // vertical tab character
+        tmpRowDelim = String.fromCharCode(0), // null character
 
-            // actual delimiter characters for CSV format
-            colDelim = '","',
-            rowDelim = '"\r\n"',
+        // actual delimiter characters for CSV format
+        colDelim = '","',
+        rowDelim = '"\r\n"',
 
-            // Grab text from table into CSV formatted string
-            csv = '"' + $rows.map(function(i, row) {
-                var $row = $(row),
-                    $cols = $row.find('td');
+        // Grab text from table into CSV formatted string
+        csv = '"' + $rows.map(function(i, row) {
+            var $row = $(row),
+                $cols = $row.find('td');
 
-                return $cols.map(function(j, col) {
-                    var $col = $(col),
-                        text = $col.text();
+            return $cols.map(function(j, col) {
+                var $col = $(col),
+                    text = $col.text();
 
-                    return text.replace('"', '""'); // escape double quotes
+                return text.replace('"', '""'); // escape double quotes
 
-                }).get().join(tmpColDelim);
+            }).get().join(tmpColDelim);
 
-            }).get().join(tmpRowDelim)
-            .split(tmpRowDelim).join(rowDelim)
-            .split(tmpColDelim).join(colDelim) + '"',
+        }).get().join(tmpRowDelim)
+        .split(tmpRowDelim).join(rowDelim)
+        .split(tmpColDelim).join(colDelim) + '"',
 
-            // Data URI
-            csvData = 'data:application/csv;charset=utf-8,' + encodeURIComponent(csv);
+        // Data URI
+        csvData = 'data:application/csv;charset=utf-8,' + encodeURIComponent(csv);
 
-        $(this)
-            .attr({
-                'download': filename,
-                'href': csvData,
-                'target': '_blank'
-            });
-    }
-    </script>
+    $(this)
+        .attr({
+            'download': filename,
+            'href': csvData,
+            'target': '_blank'
+        });
+}
+</script>
+<?php
 
-</body>
-
-</html>
+get_footer();
+?>
