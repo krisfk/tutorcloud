@@ -1,4 +1,19 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btnExport" onclick="fnExcelReport();"> EXPORT </button>
+
+
+    <?php
 
 // Get arguments for all posts
 $args = array( 
@@ -44,12 +59,12 @@ wp_reset_postdata();
 endif;
 ?>
 
-<table class="excel-table">
-    <tr>
+    <table class="excel-table">
+        <tr>
 
 
 
-        <?php
+            <?php
 
         foreach($table_th_arr as $th)
         {
@@ -59,8 +74,8 @@ endif;
 //   }
   
 ?>
-    </tr>
-    <?php
+        </tr>
+        <?php
     for($i=0;$i<count($all_posts);$i++)
     {
         echo '<tr>';
@@ -84,24 +99,66 @@ endif;
     }
 
 ?>
-</table>
+    </table>
 
-<style type="text/css">
-table {
-    width: max-content;
-    border-spacing: 0;
-    border-collapse: collapse;
+    <style type="text/css">
+    table {
+        width: max-content;
+        border-spacing: 0;
+        border-collapse: collapse;
 
-}
+    }
 
-table.excel-table th {
-    padding: 1rem;
-    border: 1px solid #000;
-}
+    table.excel-table th {
+        padding: 1rem;
+        border: 1px solid #000;
+    }
 
-table.excel-table td {
-    padding: 1rem;
+    table.excel-table td {
+        padding: 1rem;
 
-    border: 1px solid #000;
-}
-</style>
+        border: 1px solid #000;
+    }
+    </style>
+
+
+    <script type="text/javascript">
+    function fnExcelReport() {
+        var tab_text = "<table border='2px'><tr bgcolor='#87AFC6'>";
+        var textRange;
+        var j = 0;
+        tab = document.getElementById('headerTable'); // id of table
+
+        for (j = 0; j < tab.rows.length; j++) {
+            tab_text = tab_text + tab.rows[j].innerHTML + "</tr>";
+            //tab_text=tab_text+"</tr>";
+        }
+
+        tab_text = tab_text + "</table>";
+        tab_text = tab_text.replace(/<A[^>]*>|<\/A>/g, ""); //remove if u want links in your table
+        tab_text = tab_text.replace(/<img[^>]*>/gi, ""); // remove if u want images in your table
+        tab_text = tab_text.replace(/<input[^>]*>|<\/input>/gi, ""); // reomves input params
+
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) // If Internet Explorer
+        {
+            txtArea1.document.open("txt/html", "replace");
+            txtArea1.document.write(tab_text);
+            txtArea1.document.close();
+            txtArea1.focus();
+            sa = txtArea1.document.execCommand("SaveAs", true, "Say Thanks to Sumit.xls");
+        } else //other browser not tested on IE 11
+            sa = window.open('data:application/vnd.ms-excel,' + encodeURIComponent(tab_text));
+
+        return (sa);
+    }
+
+    <
+    iframe id = "txtArea1"
+    style = "display:none" > < /iframe>
+    </script>
+</body>
+
+</html>
