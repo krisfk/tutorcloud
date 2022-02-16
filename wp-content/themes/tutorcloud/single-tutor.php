@@ -15,6 +15,7 @@ get_header();
 // print_r(array_unique(array_merge($arr1,$arr2)));
 
 echo is_admin();
+echo 999;
 // if(!is_admin()){
 // wp_redirect(get_site_url());
 //     exit;
