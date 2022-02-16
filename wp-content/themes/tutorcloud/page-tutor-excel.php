@@ -39,8 +39,8 @@ endif;
     <tr>
         <?php
 foreach($all_posts[0] as $key => $item){
-    $field = get_field_object($key);
-     echo '<th>'.$field['label'].'</th>' ;
+    // $field = get_field_object($key);
+     echo '<th>'.$key.'</th>' ;
   }
   
 ?>
