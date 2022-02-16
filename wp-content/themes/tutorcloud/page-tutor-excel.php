@@ -35,10 +35,13 @@ if ( $the_query->have_posts() ):
 endif;
 ?>
 
-<?php
-
+<table>
+    <tr>
+        <?php
 foreach($all_posts[0] as $key => $item){
-     echo $key ;
+     echo '<th>'.$key.'</th>' ;
   }
   
 ?>
+    </tr>
+</table>
