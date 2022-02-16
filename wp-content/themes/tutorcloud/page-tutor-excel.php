@@ -30,7 +30,11 @@ if ( $the_query->have_posts() ):
 	wp_reset_postdata();
 
 	// Print the result here and do what you choose
-	print_r($all_posts);
+	// print_r($all_posts);
 
 endif;
+?>
+
+<?php
+echo count($all_posts);
 ?>
