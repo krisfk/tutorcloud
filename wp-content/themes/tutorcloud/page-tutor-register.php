@@ -3491,7 +3491,7 @@ $(function() {
 
 
     $('.step-content-2 .next-step-btn').click(function() {
-
+        alert(7);
 
         var email = $('#email').val();
         var confirm_email = $('#confirm_email').val();
