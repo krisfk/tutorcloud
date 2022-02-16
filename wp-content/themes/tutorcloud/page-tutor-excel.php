@@ -20,7 +20,7 @@
     <h1 class="text-start mt-5">tutorcloud tutor list export</h1>
 
     <div class="text-start mt-5">
-        <button type="button" class="btn btn-info getfile">EXPORT</button>
+        <a href="javascript:void(0);" class="btn btn-info getfile">EXPORT</a>
     </div>
 
     <?php
