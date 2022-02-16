@@ -25,7 +25,7 @@ if ( $the_query->have_posts() ):
         
             foreach( $fields as $name => $value ){
                 $field = get_field_object($name); 
-                echo $field['value']; 
+                echo $field['label']; 
 
             }
 
