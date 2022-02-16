@@ -596,7 +596,9 @@ get_header();
     // $loop->the_post(); 
     // echo 1;
     // implode(', ', $Array)
-    echo 333;
+    // echo 333;
+
+    
     ?>
                     <li class="tutor-content-li" data-class-area="<?php echo implode(',', get_field('class_area'));?>"
                         data-lowest-salary="<?php echo get_field('lowest_salary');?>"
