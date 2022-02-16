@@ -71,13 +71,13 @@ endif;
             {
                 //echo 111;
                   //  print_r($value);
-                  echo '<td>2'.$value.'</td>';
+                  echo '<td>'.$value.'</td>';
 
             }
             else
             {
-                echo '<td>1'.$value.'</td>';
-       
+                // echo '<td>'.$value.'</td>';
+                    echo gettype($value);
             }
         }
         echo'</tr>';
