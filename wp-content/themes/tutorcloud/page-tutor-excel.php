@@ -17,8 +17,11 @@
 
 <body>
 
-    <a href="javascript:void(0);" class="getfile">EXPORT</a>
+    <h1 class="text-center">tutorcloud tutor list export</h1>
 
+    <div class="text-center">
+        <a href="javascript:void(0);" class="getfile">EXPORT</a>
+    </div>
 
     <?php
 
