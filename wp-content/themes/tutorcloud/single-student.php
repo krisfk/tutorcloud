@@ -586,7 +586,7 @@ get_header();
 // echo get_the_ID();
   $args = array(  
     'post_type' => 'tutor',
-    'post_status' => 'publish',
+    // 'post_status' => 'publish',
     'p'=>get_the_ID() 
 );
 
