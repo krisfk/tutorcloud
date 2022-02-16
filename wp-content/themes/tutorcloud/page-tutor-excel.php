@@ -59,7 +59,7 @@ $table='<table class="excel-table mt-5" id="excel-table">
 
         foreach($table_th_arr as $th)
         {
-            $table.='<td>'.$th.'</td>';
+            $table.='<td class="font-weight-bold">'.$th.'</td>';
         }
     $table .='</tr>';  
     for($i=0;$i<count($all_posts);$i++)
