@@ -44,7 +44,7 @@ wp_reset_postdata();
 endif;
 ?>
 
-<table>
+<table class="excel-table">
     <tr>
 
 
@@ -65,5 +65,9 @@ endif;
 <style type="text/css">
 table {
     width: max-content;
+}
+
+table.excel-table th {
+    padding: 1rem;
 }
 </style>
