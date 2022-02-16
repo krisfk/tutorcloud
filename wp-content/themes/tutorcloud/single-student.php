@@ -583,16 +583,11 @@ get_header();
             //     'compare' => 'IN',
             // )
             
-echo get_the_ID();
+// echo get_the_ID();
   $args = array(  
     'post_type' => 'tutor',
     'post_status' => 'publish',
-    // 'p'=>get_the_ID(),
-    'posts_per_page' => 8, 
-    'orderby' => 'date', 
-    'order' => 'DESC', 
-    'meta_query' => $meta_query_arr
-    
+    'p'=>get_the_ID() 
 );
 
 $loop = new WP_Query( $args ); 
