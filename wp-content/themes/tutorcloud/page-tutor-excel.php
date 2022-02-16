@@ -89,6 +89,9 @@ endif;
 <style type="text/css">
 table {
     width: max-content;
+    border-spacing: 0;
+    border-collapse: collapse;
+
 }
 
 table.excel-table th {
