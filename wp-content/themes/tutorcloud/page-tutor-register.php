@@ -24,7 +24,7 @@ get_header();
 
             <img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.png" alt="">
         </a>
-        <span class="lightbox-msg-txt text-center d-block p-3"></span>
+        <span class="lightbox-msg-txt  d-block p-3"></span>
 
     </div>
     <div class="lightbox-content filter-content">
