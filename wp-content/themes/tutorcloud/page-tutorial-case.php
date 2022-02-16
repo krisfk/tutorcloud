@@ -394,6 +394,9 @@ get_header();
         $meta_query_arr = array(
             'relation' => 'AND');
 
+            array_push($meta_query_arr,array('key'=>'enable','value'=>'yes','compare' => '='));
+
+            
             // echo 99;
             if($_POST && $_POST['filter-form'])
             {
@@ -411,7 +414,6 @@ get_header();
                     array_push($meta_query_arr,array('key'=>'class_area','value'=>$_POST['class-area'],'compare' => 'IN'));
                 }
 
-                array_push($meta_query_arr,array('key'=>'enable','value'=>'yes','compare' => '='));
 
 
 
