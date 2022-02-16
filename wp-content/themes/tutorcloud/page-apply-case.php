@@ -625,6 +625,19 @@ get_header();
             $to='krisfk@gmail.com';
             $subject='補習個案'.$student_id.'已建立。';
             $message='補習個案'.$student_id.'已建立。<br/><br/> 心儀導師名單如下：<br/>'.$_POST['tutor-list'];
+           
+                
+            $post_id = wp_insert_post(array (
+                'post_type' => 'student_find_tutors',
+                'post_title' => 'Case '.$student_id.' is created',
+                'post_content'  => $message,
+                'post_status' => 'publish',
+                'comment_status' => 'closed',   // if you prefer
+                'ping_status' => 'closed',      // if you prefer
+            ));
+
+
+            
             if(wp_mail( $to, $subject, $message ))
             {
                 // echo json_encode(array("status"=>"1", "msg"=>"email sent"));
