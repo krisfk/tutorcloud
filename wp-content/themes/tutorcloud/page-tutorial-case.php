@@ -325,6 +325,8 @@ get_header();
                 <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4">其他要求/備註：<br><span
                         id="lbc-other-requirement"></span>test</div>
 
+                <div class="col-12">fdsf</div>
+
 
             </div>
         </div>
