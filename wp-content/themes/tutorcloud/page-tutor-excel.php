@@ -63,9 +63,11 @@ endif;
     <?php
     for($i=0;$i<count($all_posts);$i++)
     {
+        echo '<tr>';
         foreach($all_posts[$i] as $key => $item){
-                echo '<tr>'.$key.'</tr>';
+                echo '<td>'.$key.'</td>';
         }
+        echo'</tr>';
     }
 
 ?>
