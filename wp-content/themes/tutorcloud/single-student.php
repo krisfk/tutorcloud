@@ -582,11 +582,12 @@ get_header();
             //     'value'   =>  array('碩士生','大學生'),
             //     'compare' => 'IN',
             // )
-            ;
+            
 
   $args = array(  
     'post_type' => 'tutor',
     'post_status' => 'publish',
+    'p'=>get_the_ID(),
     'posts_per_page' => 8, 
     'orderby' => 'date', 
     'order' => 'DESC', 
