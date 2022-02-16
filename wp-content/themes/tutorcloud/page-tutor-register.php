@@ -3390,6 +3390,15 @@ if($_POST)
 // var $ = jQuery;
 $(function() {
 
+    $(document).on('keydown', function(e) {
+        if (e.keyCode === 27) { // ESC
+            $('.lightbox').fadeOut(0);
+
+
+        }
+    });
+
+
     $('.close-btn,.lightbox-bg-btn').click(function() {
         $('.lightbox').fadeOut(0);
     })
