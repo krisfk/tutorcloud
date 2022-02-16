@@ -36,5 +36,9 @@ endif;
 ?>
 
 <?php
- print_r($all_posts);
+
+foreach($all_posts[0] as $key){
+     echo $key ;
+  }
+  
 ?>
