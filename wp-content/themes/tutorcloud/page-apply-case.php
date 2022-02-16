@@ -3359,12 +3359,12 @@ $(function() {
 
         if (!hour_per_lesson) {
             error_txt +=
-                '每堂時間(小時)</br>';
+                '請輸入每堂時間(小時)</br>';
         }
 
         if (!tutor_gender) {
             error_txt +=
-                '導師性別要求</br>';
+                '請輸入導師性別要求</br>';
         }
 
 
