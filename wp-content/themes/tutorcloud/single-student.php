@@ -583,7 +583,7 @@ get_header();
             //     'compare' => 'IN',
             // )
             
-
+echo get_the_ID();
   $args = array(  
     'post_type' => 'tutor',
     'post_status' => 'publish',
