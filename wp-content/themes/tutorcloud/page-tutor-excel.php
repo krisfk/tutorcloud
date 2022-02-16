@@ -68,7 +68,7 @@ endif;
                 
             if(typeof($value)=='Array')
             {
-
+                    echo '<td></td>';
             }
             else
             {
