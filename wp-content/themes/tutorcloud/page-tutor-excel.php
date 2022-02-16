@@ -36,5 +36,5 @@ endif;
 ?>
 
 <?php
-echo print_r($all_posts);
+ print_r($all_posts);
 ?>
