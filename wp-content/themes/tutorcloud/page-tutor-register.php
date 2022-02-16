@@ -3403,13 +3403,10 @@ $(function() {
         var error_txt = '';
 
         var bac_degree = $('#bac-degree').val();
-        // alert(bac_degree);
         var tutor_level = $('#tutor-level').val();
         var diploma = $('input[name="diploma"]:checked').val();
-        // alert(diploma);
         var tutor_year = $('#tutor-year').val();
         var u_major = $('#u-major').val();
-        // var s_major = $('#s-major').val();
         var s_school = $('#s-school').val();
         var past_exam = $('input[name="past-exam"]:checked').val();
 
@@ -3417,36 +3414,36 @@ $(function() {
 
         if (!bac_degree) {
             error_txt +=
-                '請輸入就讀大學 (學士學位課程)\n';
+                '請輸入就讀大學 (學士學位課程)</br>';
         }
 
         if (!tutor_level) {
             error_txt +=
-                '請輸入教育程度\n';
+                '請輸入教育程度</br>';
         }
 
         if (!diploma) {
             error_txt +=
-                '請輸入是否擁有教育文憑\n';
+                '請輸入是否擁有教育文憑</br>';
         }
 
         if (!tutor_year) {
             error_txt +=
-                '請輸入年級 (2021-2022年度)\n';
+                '請輸入年級 (2021-2022年度)</br>';
         }
         if (!u_major) {
             error_txt +=
-                '請輸入大學主修科目\n';
+                '請輸入大學主修科目</br>';
         }
         if (!s_school) {
             error_txt +=
-                '請輸入曾就讀中學\n';
+                '請輸入曾就讀中學</br>';
         }
 
 
         if (!s_school) {
             error_txt +=
-                '請輸入曾就讀中學\n';
+                '請輸入曾就讀中學</br>';
         }
 
         var val = [];
@@ -3454,11 +3451,11 @@ $(function() {
 
         $('input[name="past-exam[]"]:checked').each(function(i) {
             val[i] = $(this).val();
-            // alert(5);
+
         });
 
         if (val.length == 0) {
-            error_txt += '請輸入曾參加的公開試\n';
+            error_txt += '請輸入曾參加的公開試</br>';
         }
 
 
@@ -3466,12 +3463,13 @@ $(function() {
 
         if (!exam_lang) {
             error_txt +=
-                '請輸入應考主要語言\n';
+                '請輸入應考主要語言</br>';
         }
 
 
         if (error_txt) {
-            alert(error_txt);
+
+            show_lightbox_msg(error_txt);
         } else {
             $('.step-content').fadeOut(0);
 
@@ -3494,7 +3492,7 @@ $(function() {
 
     $('.step-content-2 .next-step-btn').click(function() {
 
-        // alert(6);
+
         var email = $('#email').val();
         var confirm_email = $('#confirm_email').val();
 
@@ -3507,61 +3505,64 @@ $(function() {
         var gender = $('input[name="gender"]:checked').val();
         var living_area = $('#living-area').val();
         var error_txt = '';
-        // var error = '';
+
+
+
 
 
 
         if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
             error_txt +=
-                '電郵格式不正確\n';
+                '電郵格式不正確</br>';
         }
 
 
         if (email != confirm_email) {
             error_txt +=
-                '確認登入電郵輸入不相同\n';
+                '確認登入電郵輸入不相同</br>';
         }
 
         if (!login_password) {
             error_txt +=
-                '請輸入登入密碼\n';
+                '請輸入登入密碼</br>';
         }
 
         if (login_password != confirm_login_password) {
             error_txt +=
-                '確認登入密碼輸入不相同\n';
+                '確認登入密碼輸入不相同</br>';
         }
 
 
         if (!chi_name) {
             error_txt +=
-                '請輸入中文全名\n';
+                '請輸入中文全名</br>';
         }
         if (!eng_name) {
             error_txt +=
-                '請輸入英文全名\n';
+                '請輸入英文全名</br>';
         }
 
         if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
-            error_txt += 'whatsapp電話格式不正確\n';
+            error_txt += 'whatsapp電話格式不正確</br>';
         }
         if (!born_year) {
             error_txt +=
-                '請輸入出生年份\n';
+                '請輸入出生年份</br>';
         }
 
         if (!gender) {
             error_txt +=
-                '請輸入性別\n';
+                '請輸入性別</br>';
         }
         if (!living_area) {
             error_txt +=
-                '請輸入居住地區\n';
+                '請輸入居住地區</br>';
         }
 
 
         if (error_txt) {
-            alert(error_txt);
+
+            show_lightbox_msg(error_txt);
         } else {
             $('.step-content').fadeOut(0);
 
@@ -3626,14 +3627,16 @@ $(function() {
     $('#proof1').on('change', function() {
         var size = this.files[0].size / 1024 / 1024;
         if (size > 5) {
-            alert('報告檔案大小上限為 5MB');
+
+            show_lightbox_msg('報告檔案大小上限為 5MB')
             $(this).val('');
         }
     });
     $('#proof2').on('change', function() {
         var size = this.files[0].size / 1024 / 1024;
         if (size > 5) {
-            alert('報告檔案大小上限為 5MB');
+
+            show_lightbox_msg('報告檔案大小上限為 5MB');
             $(this).val('');
         }
     });
@@ -3642,7 +3645,7 @@ $(function() {
 
 
     $('#all-place').change(function() {
-        // alert(5);
+
         if ($(this).is(':checked')) {
 
             for (i = 1; i <= 69; i++) {
@@ -3714,10 +3717,10 @@ $(function() {
 
 
         if (!self_intro) {
-            error_txt += '請輸入自我介紹\n';
+            error_txt += '請輸入自我介紹</br>';
         } else
         if (self_intro.length < 50) {
-            error_txt += '請輸入自我介紹(50字或以上)\n';
+            error_txt += '請輸入自我介紹(50字或以上)</br>';
 
         }
 
@@ -3726,34 +3729,35 @@ $(function() {
             val3[i] = $(this).val();
         });
         if (val3.length == 0) {
-            error_txt += '請選擇課堂語言\n';
+            error_txt += '請選擇課堂語言</br>';
         }
 
 
         $('input[name="class-area[]"]:checked').each(function(i) {
             val[i] = $(this).val();
-            // alert(5);
+
         });
         if (val.length == 0) {
-            error_txt += '請選擇可補習地區\n';
+            error_txt += '請選擇可補習地區</br>';
         }
         var val2 = [];
         $('input[name="t-style[]"]:checked').each(function(i) {
             val2[i] = $(this).val();
-            // alert(5);
+
         });
         if (val2.length == 0) {
-            error_txt += '請選擇可供補習方式\n';
+            error_txt += '請選擇可供補習方式</br>';
         }
 
         var lowest_salary = $('#lowest-salary').val();
         if (!lowest_salary) {
-            error_txt += '請輸入可接受最低時薪\n';
+            error_txt += '請輸入可接受最低時薪</br>';
 
         }
 
         if (error_txt) {
-            alert(error_txt);
+
+            show_lightbox_msg(error_txt);
         } else {
             $('form').submit();
         }
