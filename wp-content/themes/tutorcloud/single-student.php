@@ -351,13 +351,14 @@ get_header();
 <div class="container mt-5">
 
     <div class="text-center">
-        <h2>補習個案
+        <h2>補習個案<?php echo get_field('student_id');?> Preview
             <div class="bar"></div>
         </h2>
     </div>
 
     <div class="text-center mt-3">
-        <a href="#" class="filter-btn">個案選項</a>
+        <a href="<?php echo get_site_url();?>/wp-admin/post.php?post=<?php echo get_the_ID();?>&action=edit"
+            class="filter-btn">修改</a>
     </div>
     <div class="row mt-5 gx-5">
 
