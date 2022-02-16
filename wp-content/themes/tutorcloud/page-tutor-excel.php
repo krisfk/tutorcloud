@@ -90,6 +90,10 @@ $table='<table class="excel-table mt-5" id="excel-table">
 
 
     <style type="text/css">
+    body {
+        padding: 1rem;
+    }
+
     table {
         width: max-content;
         border-spacing: 0;
