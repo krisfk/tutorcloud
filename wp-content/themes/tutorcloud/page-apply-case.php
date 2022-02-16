@@ -688,7 +688,9 @@ get_header();
         $meta_query_arr = array(
             'relation' => 'AND');
 
-            // echo 99;
+            array_push($meta_query_arr,array('key'=>'enable','value'=>'yes','compare' => '='));
+
+            
             if($_POST && $_POST['filter-form'])
             {
                 if($_POST['filter-gender'])
