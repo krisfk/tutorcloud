@@ -69,12 +69,14 @@ endif;
             // echo gettype($value);
             if($value=='Array')
             {
-                echo 111;
-                    print_r($value);
+                //echo 111;
+                  //  print_r($value);
+                  echo '<td>2'.$value.'</td>';
+
             }
             else
             {
-                echo '<td>'.$value.'</td>';
+                echo '<td>1'.$value.'</td>';
        
             }
         }
