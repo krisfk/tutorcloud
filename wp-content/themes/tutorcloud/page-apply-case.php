@@ -3372,7 +3372,8 @@ $(function() {
         if (!error_txt) {
             $('form#apply-case-form').submit();
         } else {
-            alert(error_txt);
+
+            show_lightbox_msg(error_txt);
         }
 
 
@@ -3390,7 +3391,8 @@ $(function() {
 
 
         if (tutor_list_arr.length == 0) {
-            alert('請加入心儀導師');
+            // alert('請加入心儀導師');
+            show_lightbox_msg('請加入心儀導師');
         } else {
             $('.tutor-list-ul').fadeOut(0);
             $('.student-form-div').fadeIn(0);
