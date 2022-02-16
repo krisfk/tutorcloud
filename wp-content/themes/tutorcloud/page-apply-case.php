@@ -2357,7 +2357,7 @@ $(function() {
         if (!tutor_list_arr.includes(select_tutor_id)) {
             tutor_list_arr.push(select_tutor_id);
 
-            $('#tutor-list').value(tutor_list_arr.join());
+            $('#tutor-list').val(tutor_list_arr.join());
             // var tutor_list = tutor_list_arr.join();
 
 
@@ -2375,7 +2375,7 @@ $(function() {
                     select_tutor_id);
 
 
-                $('#tutor-list').value(tutor_list_arr.join());
+                $('#tutor-list').val(tutor_list_arr.join());
 
 
                 $(this).closest('li').remove();
