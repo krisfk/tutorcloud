@@ -711,3 +711,31 @@ function app_output_buffer() {
     ob_start();
 } // soi_output_buffer
 add_action('init', 'app_output_buffer');
+
+
+
+
+
+
+
+
+
+add_action( 'rest_api_init', function () {
+	register_rest_route( 'api', '/check_reg_email', array(
+	  'methods' => 'GET',
+	  'callback' => 'check_reg_email_fuc',
+	) );
+  } );
+  
+  
+  
+  
+  function check_reg_email_fuc($request)
+  {
+	  
+echo 999;  
+	//   echo json_encode(array("status"=>"1", "msg"=>"Record was added"));
+
+  }
+  
+  
