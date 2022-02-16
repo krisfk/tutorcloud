@@ -602,7 +602,6 @@ get_header();
             $tutor_requirement = $_POST['tutor-requirement'];
             $tutor_requirement_value_other = $_POST['tutor-requirement-value-other'];
 
-
             $can_sep_tutor = $_POST['can-sep-tutor'];
 
             $other_remark = $_POST['other-remark'];
@@ -620,10 +619,23 @@ get_header();
         if ($post_id) {
 
             $student_id = 'T'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-            add_post_meta($post_id, 'student_id', $student_id);
+
+            // $tutor_id=$request['tutor_id'];
+
+            $to='krisfk@gmail.com';
+            $subject='補習個案'.$student_id.'已建立。';
+            $message='補習個案'.$student_id.'已建立。';
+            if(wp_mail( $to, $subject, $message ))
+            {
+                echo json_encode(array("status"=>"1", "msg"=>"email sent"));
+            }
+            else
+            {
+                echo json_encode(array("status"=>"-1", "msg"=>"email cannot be sent."));
+            }
 
             
-
+            add_post_meta($post_id, 'student_id', $student_id);
             add_post_meta($post_id, 'chi_name', $chi_name);
             add_post_meta($post_id, 'eng_name', $eng_name);
             add_post_meta($post_id, 'nick_name', $nick_name);
@@ -924,7 +936,7 @@ while ( $loop->have_posts() ) {
 
                 <div class="student-form-div">
                     <h3 class="mt-1 mb-3 p-0">登記學生資料</h2>
-
+                        <input type="hidden" id="tutor-list" value="">
 
                         <div class="student-apply-case-content">
                             <input name="apply-case-form" type="hidden" value="1">
@@ -2344,6 +2356,11 @@ $(function() {
     function add_to_cart(select_tutor_id) {
         if (!tutor_list_arr.includes(select_tutor_id)) {
             tutor_list_arr.push(select_tutor_id);
+
+            $('#tutor-list').value(tutor_list_arr.join());
+            // var tutor_list = tutor_list_arr.join();
+
+
             console.log(tutor_list_arr);
 
             var added_to_cart_html =
@@ -2356,6 +2373,11 @@ $(function() {
                 var select_tutor_id = $(this).prev('span').html();
                 tutor_list_arr = tutor_list_arr.filter(tutor_id => tutor_id !=
                     select_tutor_id);
+
+
+                $('#tutor-list').value(tutor_list_arr.join());
+
+
                 $(this).closest('li').remove();
                 console.log(tutor_list_arr);
             });
