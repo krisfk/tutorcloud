@@ -80,5 +80,10 @@ table {
 
 table.excel-table th {
     padding: 1rem;
+
+}
+
+table.excel-table td {
+    padding: 1rem;
 }
 </style>
