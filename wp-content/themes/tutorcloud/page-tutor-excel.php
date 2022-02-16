@@ -71,7 +71,7 @@ endif;
             {
                 //echo 111;
                   //  print_r($value);
-                  echo '<td>2'.$value.'</td>';
+                  echo '<td>'.implode(',', $value).'</td>';
 
             }
             else
