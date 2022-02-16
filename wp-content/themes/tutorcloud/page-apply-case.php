@@ -629,7 +629,7 @@ get_header();
                 
             $post_id = wp_insert_post(array (
                 'post_type' => 'student_find_tutors',
-                'post_title' => 'Case '.$student_id.' is created',
+                'post_title' => 'Case Number '.$student_id.' is created',
                 'post_content'  => $message,
                 'post_status' => 'publish',
                 'comment_status' => 'closed',   // if you prefer
