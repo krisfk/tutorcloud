@@ -429,7 +429,7 @@ get_header();
     'paged' => $paged
 );
 
-$loop = new WP_Query( $args ); 
+// $loop = new WP_Query( $args ); 
     
 // while ( $loop->have_posts() ) { 
     // $loop->the_post(); 
