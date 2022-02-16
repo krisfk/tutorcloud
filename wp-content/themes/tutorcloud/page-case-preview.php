@@ -527,7 +527,7 @@ get_header();
 <div class="container mt-5">
 
     <div class="text-center">
-        <h2>申請補習個案
+        <h2>preview個案
             <div class="bar"></div>
         </h2>
     </div>
