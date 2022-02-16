@@ -65,7 +65,16 @@ endif;
     {
         echo '<tr>';
         foreach($all_posts[$i] as $key => $value){
+                
+            if(typeof($value)=='Array')
+            {
+
+            }
+            else
+            {
                 echo '<td>'.$value.'</td>';
+       
+            }
         }
         echo'</tr>';
     }
