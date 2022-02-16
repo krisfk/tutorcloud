@@ -3361,7 +3361,7 @@ if($_POST)
                     <a href="javascript:void(0);" class="prev-step-btn me-3">上一步</a>
 
 
-                    <a href="javascript:void(0);" class="submit-btn">遞交表格</a>
+                    <input href="javascript:void(0);" type="submit" class="submit-btn">遞交表格</input>
                 </div>
         </div>
 
@@ -3737,10 +3737,7 @@ $(function() {
 
 
 
-
-
-    $('.submit-btn').click(function() {
-
+    $('form').submit(function() {
         var self_intro = $('#self-intro').val();
         var error_txt = '';
         var val = [];
@@ -3802,8 +3799,10 @@ $(function() {
 
                 if (response.status == -1) {
                     show_lightbox_msg('這電郵地址已被使用作登記。');
+                    return false;
                 } else {
-                    $('form').submit();
+                    return true;
+                    // $('form').submit();
                 }
 
 
@@ -3812,6 +3811,14 @@ $(function() {
             // $('form').submit();
 
         }
+
+        return false;
+
+    })
+
+    $('.submit-btn').click(function() {
+
+
 
 
     })
