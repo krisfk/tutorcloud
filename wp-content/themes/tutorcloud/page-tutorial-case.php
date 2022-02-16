@@ -595,6 +595,10 @@ $(function() {
 
 
         $('#lbc-student-id').html($(this).closest('.student-content-li').attr('data-student-id'));
+
+        $('.tutor-apply-a').attr('data-student-id', $(this).closest('.student-content-li').attr(
+            'data-student-id'))
+
         $('#lbc-student-gender').html($(this).closest('.student-content-li').attr(
             'data-student-gender'));
         $('#lbc-salary').html($(this).closest('.student-content-li').attr('data-salary'));
