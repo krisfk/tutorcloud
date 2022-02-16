@@ -991,8 +991,8 @@ $(function() {
 
     $('.tutor-apply-a').click(function() {
 
-        show_lightbox_msg('你成功對個案'.$('.tutor-apply-a').attr('data-student-id').
-            '提出了申請，請稍後我們會盡快回覆您。謝謝！')
+        show_lightbox_msg('你成功對個案' + $('.tutor-apply-a').attr('data-student-id') +
+            '提出了申請，請稍後我們會盡快回覆您。謝謝！');
         $.ajax({
             type: "POST",
             url: '<?php echo get_site_url();?>/wp-json/api/tutor_apply_case',
