@@ -89,7 +89,7 @@ $table='<table class="excel-table" id="excel-table">
     }
 
     $table .='</table>';
-    echo $table;
+    // echo $table;
 ?>
 
 
