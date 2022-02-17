@@ -25,7 +25,7 @@ get_header();
     </div>
 
 
-    <div>
+    <div class="text-center">
 
 
         <?php
