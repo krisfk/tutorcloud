@@ -531,7 +531,7 @@ get_header();
     </div>
 
 
-    <h5 class="text-center d-block mt-5 submitted-msg">
+    <h5 class="text-center  mt-5 submitted-msg">
         資料提交完成，我們會盡快聯絡您，謝謝。三秒後回到主頁。
     </h5>
 
