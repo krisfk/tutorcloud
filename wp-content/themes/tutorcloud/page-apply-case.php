@@ -583,8 +583,8 @@ if($_POST &&  $_POST['apply-case-form'])
         <script type="text/javascript">
         $(function() {
 
-            $('.submitted-hide').fadeOut(0);
-            $('.submitted-msg').fadeIn(0);
+            // $('.submitted-hide').fadeOut(0);
+            // $('.submitted-msg').fadeIn(0);
 
             window.setTimeout(function() {
                 window.location.href = '<?php echo get_site_url();?>';
