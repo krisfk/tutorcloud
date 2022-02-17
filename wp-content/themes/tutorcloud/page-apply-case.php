@@ -661,7 +661,13 @@ get_header();
 
             // if ( $the_query->have_posts() ) {
             // }
-            $student_url = get_permalink($student_id);
+
+         
+            
+            $the_query = new WP_Query( $query_args );
+            $the_query->the_post();
+
+            $student_url = get_permalink($post_id);
             $tutor_list = $_POST['tutor-list'];
             
             $tutor_arr = explode(",", $tutor_list);
