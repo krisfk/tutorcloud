@@ -69,7 +69,7 @@ $query_args = array(
 
         $the_query->the_post();
 
-        if(get_field('enable')=='true')
+        if(get_field('enable')=='yes')
         {
             echo '登入成功，三秒後回到主頁。';
             $_SESSION['tutor_post_id']   = get_the_ID();
