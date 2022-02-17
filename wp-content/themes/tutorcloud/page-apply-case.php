@@ -601,7 +601,7 @@ get_header();
 
             $subjects=$_POST['subjects'];
             $instrument=$_POST['instrument'];
-            $other_subject=$_POST['other_subject'];
+            $other_subject=$_POST['other-subject'];
 
             $student_level_2=$_POST['student-level-2'];
             $paper_lang=$_POST['paper-lang'];
@@ -691,10 +691,22 @@ get_header();
             //send email
             $to='krisfk@gmail.com';
             $subject='補習個案'.$student_id.'已建立。';
+
+            $query_args = array(
+                'post_type' => 'student',
+                'meta_query' => array(
+                    array(
+                        'key' => 'student_id',
+                        'value' => $student_id,
+                        'compare' => '=',
+                    )
+                ),
+            );
+            
+            
             $the_query = new WP_Query( $query_args );
             $the_query->the_post();
-
-            $student_url = get_permalink($post_id);
+            $student_url = get_permalink();
             $tutor_list = $_POST['tutor-list'];
             
             $tutor_arr = explode(",", $tutor_list);
