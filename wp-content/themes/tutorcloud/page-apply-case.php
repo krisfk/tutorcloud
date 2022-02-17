@@ -530,10 +530,15 @@ get_header();
         </h2>
     </div>
 
-    <div class="text-center mt-3">
+
+    <h5 class="text-center d-block mt-5 submitted-msg">
+        資料提交完成，我們會盡快聯絡您，謝謝。三秒後回到主頁。
+    </h5>
+
+    <div class="text-center mt-3 submitted-hide">
         <a href="#" class="filter-btn">導師選項</a>
     </div>
-    <div class="row mt-5 gx-5">
+    <div class="row mt-5 gx-5 submitted-hide">
 
         <div class="apply-step-col col-lg-2 col-md-12 col-sm-12 col-12 ">
             <ul class="m-0 p-0 text-center">
@@ -568,6 +573,16 @@ get_header();
         
         if($_POST &&  $_POST['apply-case-form'])
         {
+            ?>
+        <script type="text/javascript">
+        $(function() {
+
+            $('.submitted-hide').fadeOut(0);
+            $('.submitted-msg').fadeIn(0);
+
+        })
+        </script>
+        <?php
             $chi_name = $_POST['chi-name'];
             $eng_name = $_POST['eng-name'];
             $nick_name = $_POST['nick-name'];
