@@ -1391,10 +1391,10 @@ Year 6 -->
                                                 <div>
                                                     <input class="form-check-input" type="checkbox"
                                                         value="<?php echo $hk_place_arr[$i];?>"
-                                                        id="hk-class-area-value-<?php echo $i;?>" name="class-area[]"
+                                                        id="hk-class-area-value2-<?php echo $i;?>" name="class-area[]"
                                                         <?php echo $_POST['filter-form']&&in_array($hk_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
                                                     <label class="form-check-label"
-                                                        for="hk-class-area-value-<?php echo $i;?>">
+                                                        for="hk-class-area-value2-<?php echo $i;?>">
                                                         <?php echo $hk_place_arr[$i];?>
                                                     </label>
                                                 </div>
