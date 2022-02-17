@@ -344,8 +344,6 @@ $the_query->the_post();
                             </td>
                             <td>
                                 <div class="past-exam-group">
-                                    <?php// print_r(get_field('past_exam'));?>
-                                    <?php //echo $_POST['filter-form']&&in_array($nt_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>
                                     <?php
                                     
                                     $past_exam_arr= array("HKDSE","HKCEE","HKALE","IB","GCE AL","IGCSE","SAT");
@@ -382,13 +380,7 @@ $the_query->the_post();
                             <td colspan="5">
                                 DSE 成績 / 相關公開試成續
                             </td>
-                            <!-- <tr>
-                            <td></td>
-                            <td class="grade-col">5**</td>
-                            <td class="grade-col">5*</td>
-                            <td class="grade-col">5</td>
-                            <td class="grade-col">4</td>
-                        </tr> -->
+
                         </tr>
 
                         <?php 
