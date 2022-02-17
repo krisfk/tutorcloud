@@ -1255,6 +1255,8 @@ input[type='number'] {
     text-align: left;
 }
 
+.wpcf7-submit {}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {
