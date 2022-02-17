@@ -639,65 +639,7 @@ get_header();
 
             $student_id = 'S'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
 
-            // $tutor_id=$request['tutor_id'];
-
-            $to='krisfk@gmail.com';
-            $subject='補習個案'.$student_id.'已建立。';
-
-
-            // $query_args = array(
-            //     'post_type' => 'student',
-            //     'meta_query' => array(
-            //         array(
-            //             'key' => 'student_id',
-            //             'value' => $student_id,
-            //             'compare' => '=',
-            //         )
-            //     ),
-            // );
-            
-            // $the_query = new WP_Query( $query_args );
-            // $the_query->the_post();
-
-            // if ( $the_query->have_posts() ) {
-            // }
-
          
-            
-            $the_query = new WP_Query( $query_args );
-            $the_query->the_post();
-
-            $student_url = get_permalink($post_id);
-            $tutor_list = $_POST['tutor-list'];
-            
-            $tutor_arr = explode(",", $tutor_list);
-            $tutors_str='';
-            for($i=0;$i<count($tutor_arr);$i++)
-            {
-                    $query_args = array(
-                    'post_type' => 'tutor',
-                    'meta_query' => array(
-                        array(
-                            'key' => 'tutor_id',
-                            'value' => $tutor_arr[$i],
-                            'compare' => '=',
-                        )
-                    ),
-                );
-                
-                $the_query = new WP_Query( $query_args );
-                $the_query->the_post();
-                $tutors_str.=' <a href="'.get_permalink().'">'.$tutor_arr[$i].'</a>';
-
-                // if ( $the_query->have_posts() ) {
-                    // $the_query->the_post();
-                // }
-            }
-
-                
-            $message='補習個案<a href="'.$student_url.'" target="_blank">'.$student_id.'</a>已建立。<br/><br/> 心儀導師名單如下：<br/>'.$tutors_str;
-           
-                
             $post_id = wp_insert_post(array (
                 'post_type' => 'student_find_tutors',
                 'post_title' => 'Case Number '.$student_id.' is created',
@@ -710,16 +652,7 @@ get_header();
             
 
 
-            
-            if(wp_mail( $to, $subject, $message ))
-            {
-                // echo json_encode(array("status"=>"1", "msg"=>"email sent"));
-            }
-            else
-            {
-                // echo json_encode(array("status"=>"-1", "msg"=>"email cannot be sent."));
-            }
-
+       
             
             add_post_meta($post_id, 'student_id', $student_id);
             add_post_meta($post_id, 'chi_name', $chi_name);
@@ -758,6 +691,44 @@ get_header();
             add_post_meta($post_id, 'tutor_requirement_value_other', $tutor_requirement_value_other);
             add_post_meta($post_id, 'can_sep_tutor', $can_sep_tutor);
             add_post_meta($post_id, 'other_remark', $other_remark);
+
+
+
+            $to='krisfk@gmail.com';
+            $subject='補習個案'.$student_id.'已建立。';
+            $the_query = new WP_Query( $query_args );
+            $the_query->the_post();
+
+            $student_url = get_permalink($post_id);
+            $tutor_list = $_POST['tutor-list'];
+            
+            $tutor_arr = explode(",", $tutor_list);
+            $tutors_str='';
+            for($i=0;$i<count($tutor_arr);$i++)
+            {
+                    $query_args = array(
+                    'post_type' => 'tutor',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'tutor_id',
+                            'value' => $tutor_arr[$i],
+                            'compare' => '=',
+                        )
+                    ),
+                );
+                
+                $the_query = new WP_Query( $query_args );
+                $the_query->the_post();
+                $tutors_str.=' <a href="'.get_permalink().'">'.$tutor_arr[$i].'</a>';
+
+            }
+
+               
+            $message='補習個案<a href="'.$student_url.'" target="_blank">'.$student_id.'</a>已建立。<br/><br/> 心儀導師名單如下：<br/>'.$tutors_str;
+           
+            wp_mail( $to, $subject, $message );
+
+            
         }
     }
         ?>
