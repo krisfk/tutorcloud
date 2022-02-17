@@ -2432,7 +2432,7 @@ $(function() {
     });
 
 
-    $('.prev-step-btn').fadeOut(0);
+    // $('.prev-step-btn').fadeOut(0);
 
 
     function add_to_cart(select_tutor_id) {
