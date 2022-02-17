@@ -662,7 +662,7 @@ get_header();
                 
                 $the_query = new WP_Query( $query_args );
                 $the_query->the_post();
-                $tutors_str.='<a href="'.get_permalink().'">'.$tutor_arr[$i].'</a>';
+                $tutors_str.=' <a href="'.get_permalink().'">'.$tutor_arr[$i].'</a>';
 
                 // if ( $the_query->have_posts() ) {
                     // $the_query->the_post();
