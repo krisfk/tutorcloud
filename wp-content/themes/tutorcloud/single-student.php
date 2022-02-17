@@ -367,6 +367,33 @@ if (!$is_admin) {
         <a href="<?php echo get_site_url();?>/wp-admin/post.php?post=<?php echo get_the_ID();?>&action=edit"
             class="filter-btn">修改</a>
     </div>
+
+
+    <table class="w-50 mx-auto mt-5 preview-table">
+        <tr>
+            <td class="fw-bold">Email:</td>
+            <td><?php echo get_field('email');?></td>
+        </tr>
+        <tr>
+            <td class="fw-bold">Chinese Name:</td>
+            <td><?php echo get_field('chi_name');?></td>
+        </tr>
+        <tr>
+            <td class="fw-bold">English Name:</td>
+            <td><?php echo get_field('eng_name');?></td>
+        </tr>
+        <tr>
+            <td class="fw-bold">Nick Name:</td>
+            <td><?php echo get_field('nick_name');?></td>
+        </tr>
+        <tr>
+            <td class="fw-bold">Whatsapp</td>
+            <td><?php echo get_field('whatsapp_tel');?></td>
+
+        </tr>
+
+    </table>
+
     <div class="row mt-5 gx-5">
 
 
