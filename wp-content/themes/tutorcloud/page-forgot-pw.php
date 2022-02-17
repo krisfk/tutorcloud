@@ -32,7 +32,7 @@ get_header();
             <label for="login-email">登入電郵</label>
             <input type="text" class="form-control mt-2" id="login-email">
 
-            <a href="javascript:void(0);" class="submit-btn">發送</a>
+            <a href="javascript:void(0);" class="forgot-fw-submit-btn">發送</a>
         </div>
     </div>
 
