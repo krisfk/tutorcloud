@@ -740,8 +740,6 @@ add_action( 'rest_api_init', function () {
 	$student_id=$request['student_id'];
 	$tutor_id=$request['tutor_id'];
 
-	$to='krisfk@gmail.com';
-	$subject='導師'.$tutor_id.' 對'.'個案'.$student_id.'發出申請。';
 
 	$query_args = array(
 		'post_type' => 'tutor',
@@ -774,7 +772,8 @@ add_action( 'rest_api_init', function () {
 
 	
 
-	
+	$to='krisfk@gmail.com';
+	$subject='導師'.$tutor_id.' 對'.'個案'.$student_id.'發出申請。';
 	$message='導師'.$tutor_url.' 對'.'個案'.$student_url.'發出申請。';
 
 

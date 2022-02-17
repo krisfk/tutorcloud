@@ -110,6 +110,8 @@ get_header();
                 // echo json_encode(array("status"=>"1", "msg"=>"valid email"));
             }
 
+
+
             
         ?>
             <script type="text/javascript">
@@ -494,6 +496,14 @@ if($_POST)
         
         $tutor_id = 'T'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
         add_post_meta($post_id, 'tutor_id', $tutor_id);
+
+
+        $to='krisfk@gmail.com';
+        $subject='新導師'.$tutor_id.'檔案已建立。';
+        $message='新導師<a target="_blank" href="'.get_permalink($post_id).'">'.$tutor_id.'</a>檔案已建立。<br>請按上面連結double check導師資料再enable該導師的使用權限。';
+    
+
+        wp_mail( $to, $subject, $message );
 
         // $tutor_id = 'T'.
         // $post_id = str_pad($number, 2, '0', STR_PAD_LEFT);
