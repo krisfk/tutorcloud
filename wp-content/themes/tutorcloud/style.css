@@ -1054,7 +1054,7 @@ input[type='number'] {
     font-size: 1rem;
 }
 
-.forgot-pw-a :hover {
+.forgot-pw-a:hover {
     color: #769e9c;
 }
 
