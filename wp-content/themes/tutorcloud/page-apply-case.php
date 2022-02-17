@@ -638,22 +638,6 @@ get_header();
         if ($post_id) {
 
             $student_id = 'S'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-
-         
-            $post_id = wp_insert_post(array (
-                'post_type' => 'student_find_tutors',
-                'post_title' => 'Case Number '.$student_id.' is created',
-                'post_content'  => $message,
-                'post_status' => 'publish',
-                'comment_status' => 'closed',   // if you prefer
-                'ping_status' => 'closed',      // if you prefer
-            ));
-
-            
-
-
-       
-            
             add_post_meta($post_id, 'student_id', $student_id);
             add_post_meta($post_id, 'chi_name', $chi_name);
             add_post_meta($post_id, 'eng_name', $eng_name);
@@ -694,6 +678,17 @@ get_header();
 
 
 
+            //create record
+            $post_id = wp_insert_post(array (
+                'post_type' => 'student_find_tutors',
+                'post_title' => 'Case Number '.$student_id.' is created',
+                'post_content'  => $message,
+                'post_status' => 'publish',
+                'comment_status' => 'closed',   // if you prefer
+                'ping_status' => 'closed',      // if you prefer
+            ));
+
+            //send email
             $to='krisfk@gmail.com';
             $subject='補習個案'.$student_id.'已建立。';
             $the_query = new WP_Query( $query_args );
