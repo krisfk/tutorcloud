@@ -26,7 +26,10 @@ get_header();
 
     <div class="text-center">
 
-        <?php echo do_shortcode('[contact-form-7 id="378" title="Forgot pw"]');?>
+        <?php //echo do_shortcode('[contact-form-7 id="378" title="Forgot pw"]');?>
+
+        <label for="login-email">登入電郵</label>
+        <input type="text" class="form-control" id="login-email">
     </div>
 
 
