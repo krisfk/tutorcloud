@@ -580,6 +580,10 @@ get_header();
             $('.submitted-hide').fadeOut(0);
             $('.submitted-msg').fadeIn(0);
 
+            window.setTimeout(function() {
+                window.location.href = '<?php echo get_site_url();?>';
+            }, 3000);
+
         })
         </script>
         <?php
