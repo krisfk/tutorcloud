@@ -31,6 +31,8 @@ get_header();
         <div class="form-div">
             <label for="login-email">登入電郵</label>
             <input type="text" class="form-control mt-2" id="login-email">
+
+            <a href="javascript:void(0);" class="submit-btn">發送</a>
         </div>
     </div>
 
