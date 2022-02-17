@@ -38,7 +38,11 @@ get_header();
 
 
 </div>
-
+<style type="text/css">
+.wpcf7-submit {
+    display: none;
+}
+</style>
 <script type="text/javascript">
 $(function() {
 
