@@ -742,7 +742,40 @@ add_action( 'rest_api_init', function () {
 
 	$to='krisfk@gmail.com';
 	$subject='導師'.$tutor_id.' 對'.'個案'.$student_id.'發出申請。';
-	$message='導師'.$tutor_id.' 對'.'個案'.$student_id.'發出申請。';
+
+	$query_args = array(
+		'post_type' => 'tutor',
+		'meta_query' => array(
+			array(
+				'key' => 'tutor_id',
+				'value' => $tutor_id,
+				'compare' => '=',
+			)
+		),
+	);
+	$the_query = new WP_Query( $query_args );
+	$the_query->the_post();
+	$tutor_url = '<a href="'.get_permalink().'" target="_blank">'.$tutor_id.'</a>';
+
+	$query_args = array(
+		'post_type' => 'student',
+		'meta_query' => array(
+			array(
+				'key' => 'student_id',
+				'value' => $student_id,
+				'compare' => '=',
+			)
+		),
+	);
+	$the_query = new WP_Query( $query_args );
+	$the_query->the_post();
+	$student_url = '<a href="'.get_permalink().'" target="_blank">'.$student_id.'</a>';
+
+
+	
+
+	
+	$message='導師'.$tutor_url.' 對'.'個案'.$student_url.'發出申請。';
 
 
 	$post_id = wp_insert_post(array (
