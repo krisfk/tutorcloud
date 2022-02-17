@@ -30,7 +30,7 @@ get_header();
 
         <div class="form-div">
             <label for="login-email">登入電郵</label>
-            <input type="text" class="form-control" id="login-email">
+            <input type="text" class="form-control mt-2" id="login-email">
         </div>
     </div>
 
@@ -44,9 +44,12 @@ get_header();
 
 </div>
 <style type="text/css">
-.wpcf7-submit {
-    display: none;
+.form-div {
+    display: inline-block;
+    text-align: left;
 }
+
+.form-div {}
 </style>
 <script type="text/javascript">
 $(function() {
