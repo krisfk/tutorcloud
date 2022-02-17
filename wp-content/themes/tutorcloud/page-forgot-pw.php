@@ -24,6 +24,11 @@ get_header();
         </h2>
     </div>
 
+    <div class="text-center">
+
+        <?php echo do_shortcode('[contact-form-7 id="378" title="Forgot pw"]');?>
+    </div>
+
 
 
 
