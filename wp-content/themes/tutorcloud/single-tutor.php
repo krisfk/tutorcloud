@@ -552,23 +552,23 @@ if (!$is_admin) {
 
     <table class="w-50 mx-auto mt-5 preview-table">
         <tr>
-            <td>Email:</td>
+            <td class="fw-bold">Email:</td>
             <td><?php echo get_field('email');?></td>
         </tr>
         <tr>
-            <td>Chinese Name:</td>
+            <td class="fw-bold">Chinese Name:</td>
             <td><?php echo get_field('chi_name');?></td>
         </tr>
         <tr>
-            <td>English Name:</td>
+            <td class="fw-bold">English Name:</td>
             <td><?php echo get_field('eng_name');?></td>
         </tr>
         <tr>
-            <td>Nick Name:</td>
+            <td class="fw-bold">Nick Name:</td>
             <td><?php echo get_field('nick_name');?></td>
         </tr>
         <tr>
-            <td>Whatsapp</td>
+            <td class="fw-bold">Whatsapp</td>
             <td><?php echo get_field('whatsapp_tel');?></td>
 
         </tr>
