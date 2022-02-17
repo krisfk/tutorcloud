@@ -658,26 +658,13 @@ if($_POST)
                             <td> <label for="occupation"> 職業</label></td>
                             <td>
                                 <select id="occupation" name="occupation" class="form-select" aria-label="">
-                                    <?php 
-                                $occupation_arr=array("全職教師","全職教學助理","全職補習老師","退休教師","其他在職人仕");
-                                ?>
-                                    <option value="" selected="">選擇</option>
-                                    <?php 
-                                    for($i=0;$i<count($occupation_arr);$i++)
-                                    {
-                                    ?>
-                                    <option value="<?php echo $occupation_arr[$i];?>">
-                                        <?php echo $occupation_arr[$i];?>
-                                    </option>
-                                    <?php
-                                    }
-                                    ?>
-                                    <!-- <option value="" selected>選擇</option>
+
+                                    <option value="" selected>選擇</option>
                                     <option value="全職教師">全職教師</option>
                                     <option value="全職教學助理">全職教學助理</option>
                                     <option value="全職補習老師">全職補習老師</option>
                                     <option value="退休教師">退休教師</option>
-                                    <option value="其他在職人仕">其他在職人仕</option> -->
+                                    <option value="其他在職人仕">其他在職人仕</option>
 
                                 </select>
                             </td>
@@ -689,7 +676,7 @@ if($_POST)
                                     <option value="">選擇</option>
 
                                     <optgroup label="香港島">
-                                        <!-- <option value="中半山">中半山</option>
+                                        <option value="中半山">中半山</option>
                                         <option value="薄扶林">薄扶林</option>
                                         <option value="中上環">中上環</option>
                                         <option value="西環">西環</option>
@@ -705,22 +692,10 @@ if($_POST)
                                         <option value="小西灣">小西灣</option>
                                         <option value="香港仔">香港仔</option>
                                         <option value="鴨利洲">鴨利洲</option>
-                                        <option value="赤柱">赤柱</option> -->
-                                        <?php                                 
-                                        
-                                        $hk_place_arr=array("中半山","薄扶林","中上環","西環","灣仔","銅鑼灣","跑馬地","北角","鰂魚涌","太古","筲箕灣","西灣河","柴灣","小西灣","香港仔","鴨利洲","赤柱");
-                                        
-                                        for($i=0;$i<count($hk_place_arr);$i++)
-                                        {
-                                        ?>
-                                        <option value="<?php echo $hk_place_arr[$i];?>"><?php echo $hk_place_arr[$i];?>
-                                        </option>
-                                        <?php
-                                        }
-                                        ?>
+                                        <option value="赤柱">赤柱</option>
                                     </optgroup>
                                     <optgroup label="九龍區">
-                                        <!-- <option value="美孚">美孚</option>
+                                        <option value="美孚">美孚</option>
                                         <option value="荔枝角">荔枝角</option>
                                         <option value="長沙灣">長沙灣</option>
                                         <option value="深水涉">深水涉</option>
@@ -747,21 +722,10 @@ if($_POST)
                                         <option value="觀塘">觀塘</option>
                                         <option value="藍田">藍田</option>
                                         <option value="油塘">油塘</option>
-                                        <option value="九龍城">九龍城</option> -->
-                                        <?php
-                                            $kl_place_arr=array("美孚","荔枝角","長沙灣","深水涉","大角咀","旺角","何文田","油麻地","佐敦","尖沙咀","土瓜灣","紅磡","石硤尾","九龍塘","樂富","慈雲山","黃大仙","鑽石山","新蒲崗","彩虹","牛池灣","牛頭角","九龍灣","秀茂坪","觀塘","藍田","油塘","九龍城");
-                                            for($i=0;$i<count($kl_place_arr);$i++)
-                                            {
-                                                ?>
-
-                                        <option value="<?php echo $kl_place_arr[$i];?>"><?php echo $kl_place_arr[$i];?>
-                                        </option>
-                                        <?php
-                                            }
-                                        ?>
+                                        <option value="九龍城">九龍城</option>
                                     </optgroup>
                                     <optgroup label="新界區">
-                                        <!-- <option value="將軍澳">將軍澳</option>
+                                        <option value="將軍澳">將軍澳</option>
                                         <option value="西貢">西貢</option>
                                         <option value="荃灣">荃灣</option>
                                         <option value="深井">深井</option>
@@ -784,18 +748,7 @@ if($_POST)
                                         <option value="屯門">屯門</option>
                                         <option value="青龍頭">青龍頭</option>
                                         <option value="東涌">東涌</option>
-                                        <option value="離島">離島</option> -->
-                                        <?php
-                                $nt_place_arr=array("將軍澳","西貢","荃灣","深井","馬灣","葵涌","荔景","葵芳","青衣","大圍","沙田","沙田市中心","小瀝源","火炭","馬鞍山","大埔","粉嶺","上水","元朗","天水圍","屯門","青龍頭","東涌","離島");
-                                for($i=0;$i<count($nt_place_arr);$i++)
-                                {
-                                    ?>
-
-                                        <option value="<?php echo $nt_place_arr[$i];?>"><?php echo $nt_place_arr[$i];?>
-                                        </option>
-                                        <?php
-                                }
-                                    ?>
+                                        <option value="離島">離島</option>
                                     </optgroup>
 
 
@@ -825,7 +778,7 @@ if($_POST)
                             <td> <select id="bac-degree" name="bac-degree" class="form-select" aria-label="">
 
                                     <option value="" selected>選擇</option>
-                                    <!-- <option value="香港大學">香港大學</option>
+                                    <option value="香港大學">香港大學</option>
                                     <option value="香港中文大學">香港中文大學</option>
                                     <option value="香港科技大學">香港科技大學</option>
                                     <option value="香港理工大學">香港理工大學</option>
@@ -833,21 +786,7 @@ if($_POST)
                                     <option value="香港浸會大學">香港浸會大學</option>
                                     <option value="香港都會大學">香港都會大學</option>
                                     <option value="香港恒生大學">香港恒生大學</option>
-                                    <option value="嶺南大學">嶺南大學</option> -->
-                                    <?php 
-                                    
-                                    $university_arr=array("香港中文大學","香港科技大學","香港理工大學","香港城市大學","香港浸會大學","香港都會大學","香港恒生大學","嶺南大學");
-                                    
-                                    for($i=0;$i<count($university_arr);$i++)
-                                    {
-                                        ?>
-                                    <option value="<?php echo $university_arr[$i];?>"><?php echo $university_arr[$i];?>
-                                    </option>
-
-                                    <?php
-                                    }
-                                    
-                                    ?>
+                                    <option value="嶺南大學">嶺南大學</option>
 
                                 </select></td>
                         </tr>
@@ -856,26 +795,12 @@ if($_POST)
                                 </label></td>
                             <td><select id="tutor-level" name="tutor-level" class="form-select" aria-label="">
                                     <option value="" selected>選擇</option>
-                                    <!-- <option value="大學生">大學生</option>
+                                    <option value="大學生">大學生</option>
                                     <option value="學士畢業">學士畢業</option>
                                     <option value="碩士生">碩士生</option>
                                     <option value="碩士畢業">碩士畢業</option>
                                     <option value="博士生">博士生</option>
-                                    <option value="博士畢業">博士畢業</option> -->
-                                    <?php
-                                    
-                                    $tutor_level_arr = array('大學生','學士畢業','碩士生','碩士畢業','博士生','博士畢業');
-                                    
-                                    for($i=0;$i<count($tutor_level_arr);$i++)
-                                    {
-                                        ?>
-                                    <option value="<?php echo $tutor_level_arr[$i];?>">
-                                        <?php echo $tutor_level_arr[$i];?>
-                                    </option>
-                                    <?php
-                                    }
-
-                                    ?>
+                                    <option value="博士畢業">博士畢業</option>
                                 </select></td>
                         </tr>
                         <tr>
@@ -893,25 +818,13 @@ if($_POST)
                             <td>
                                 <select id="tutor-year" name="tutor-year" class="form-select" aria-label="">
                                     <option value="" selected>選擇</option>
-                                    <?php
-                                    $tutor_year_arr=array('Year 1','Year 2','Year 3','Year 4','Year 5','Year 6','已畢業');
-                                    for($i=0;$i<count($tutor_level_arr);$i++)
-                                    {
-                                        ?>
-                                    <option value="<?php echo $tutor_year_arr[$i];?>"><?php echo $tutor_year_arr[$i];?>
-                                    </option>
-                                    <?php
-
-                                    }
-                                    ?>
-
-                                    <!-- <option value="Year 1">Year 1</option>
+                                    <option value="Year 1">Year 1</option>
                                     <option value="Year 2">Year 2</option>
                                     <option value="Year 3">Year 3</option>
                                     <option value="Year 4">Year 4</option>
                                     <option value="Year 5">Year 5</option>
                                     <option value="Year 6">Year 6</option>
-                                    <option value="已畢業">已畢業</option> -->
+                                    <option value="已畢業">已畢業</option>
 
                                 </select>
                             </td>
@@ -942,27 +855,7 @@ if($_POST)
                             </td>
                             <td>
                                 <div class="past-exam-group">
-                                    <?php
-                                    
-                                    $past_exam_arr= array("HKDSE","HKCEE","HKALE","IB","GCE AL","IGCSE","SAT");
-                                    
-                                    // print_r(get_field['past_exam']);
-                                    for($i=0;$i<count($past_exam_arr);$i++)
-                                    {
-                                        ?>
                                     <div>
-                                        <input class="form-check-input" type="checkbox"
-                                            value="<?php echo $past_exam_arr[$i];?>"
-                                            id="past-exam-value-<?php echo $i;?>" name="past-exam[]">
-                                        <label class="form-check-label" for="past-exam-value-<?php echo $i;?>">
-                                            <?php echo $past_exam_arr[$i];?>
-                                        </label>
-                                    </div>
-
-                                    <?php
-                                    }
-                                    ?>
-                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="HKDSE"
                                             id="past-exam-value-1" name="past-exam[]">
                                         <label class="form-check-label" for="past-exam-value-1">
@@ -1011,7 +904,7 @@ if($_POST)
                                         <label class="form-check-label" for="past-exam-value-7">
                                             SAT
                                         </label>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </td>
                         </tr>
@@ -1022,37 +915,14 @@ if($_POST)
                         <td colspan="5">
                             DSE 成績 / 相關公開試成續
                         </td>
-
-                        <?php 
-                        $subjects_arr=array("中文","英文","數學","數學(M1)","數學(M2)","通識","物理","化學","生物","組合科學：物理 化學","組合科學：化學 生物","綜合科學","資訊及通訊科技","地理","中史","西史","中國文學","英國文學","倫理與宗教","經濟","企業、會計與財務概論","旅遊與款待");
-                        
-                        for($i=0;$i<count($subjects_arr);$i++)
-                        {
-                            ?>
-                        <tr>
-                            <td><label for=""><?php echo $subjects_arr[$i];?></label></td>
-                            <td class="grade-col"><label><input type="radio" value="5**"
-                                        name="dse-sub-<?php echo $i+1?>"
-                                        <?php echo get_field('dse_sub_'.($i+1)) == '5**' ? 'checked' :'';?>>5**</label>
-                            </td>
-                            <td class="grade-col"><label><input type="radio" value="5*" name="dse-sub-<?php echo $i+1?>"
-                                        <?php echo get_field('dse_sub_'.($i+1)) == '5*' ? 'checked' :'';?>>5*</label>
-                            </td>
-                            <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-<?php echo $i+1?>"
-                                        <?php echo get_field('dse_sub_'.($i+1)) == '5' ? 'checked' :'';?>>5</label>
-                            </td>
-                            <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-<?php echo $i+1?>"
-                                        <?php echo get_field('dse_sub_'.($i+1)) == '4' ? 'checked' :'';?>>4</label>
-                            </td>
-                            <td class="grade-col"><a href="javascript:void(0);" class="radio-cancel-btn">取消</a></td>
-
-                        </tr>
-
-
-                        <?php
-                        }
-                        ?>
                         <!-- <tr>
+                            <td></td>
+                            <td class="grade-col">5**</td>
+                            <td class="grade-col">5*</td>
+                            <td class="grade-col">5</td>
+                            <td class="grade-col">4</td>
+                        </tr> -->
+                        <tr>
                             <td><label for="">中文</label></td>
                             <td class="grade-col"><label><input type="radio" value="5**" name="dse-sub-1">5**</label>
                             </td>
@@ -1279,7 +1149,7 @@ if($_POST)
                             <td class="grade-col"><label><input type="radio" value="5" name="dse-sub-22">5</label></td>
                             <td class="grade-col"><label><input type="radio" value="4" name="dse-sub-22">4</label></td>
                             <td class="grade-col"><a href="javascript:void(0);" class="radio-cancel-btn">取消</a></td>
-                        </tr> -->
+                        </tr>
 
                         <?php
                         
@@ -1380,7 +1250,7 @@ if($_POST)
                                     <label for="t-subjects-kin">
                                         <h5> 幼稚園</h5>
                                     </label>
-                                    <!-- <div>
+                                    <div>
                                         <input class="form-check-input" type="checkbox" value="英語"
                                             id="t-subjects-kin-value-1" name="t-subjects-kin[]">
                                         <label class="form-check-label" for="t-subjects-kin-value-1">
@@ -1393,26 +1263,7 @@ if($_POST)
                                         <label class="form-check-label" for="t-subjects-kin-value-2">
                                             普通話
                                         </label>
-                                    </div> -->
-                                    <?php
-                                    $kin_subjects=array('英文','普通話');
-                                   for($i=0;$i<count($kin_subjects);$i++)
-                                   {
-                                       ?>
-                                    <div>
-                                        <input
-                                            <?php echo in_array($kin_subjects[$i], get_field('t_subjects_kin')) ? 'checked':''; ?>
-                                            class="form-check-input" type="checkbox"
-                                            value="<?php echo $kin_subjects[$i];?>"
-                                            id="t-subjects-kin-value-<?php echo $i+1?>" name="t-subjects-kin[]">
-                                        <label class="form-check-label" for="t-subjects-kin-value-<?php echo $i+1?>">
-                                            <?php echo $kin_subjects[$i];?>
-                                        </label>
                                     </div>
-                                    <?php
-                                   }
-                                   ?>
-
 
                                     <div class="mt-2 w-100">
                                         <label for="t-subjects-kin-value-other d-inline-block">其他：</label>
@@ -1429,33 +1280,7 @@ if($_POST)
                                 <td colspan="2"><label for="t-subjects-pri">
                                         <h5>小學</h5>
                                     </label>
-                                    <?php
-                                    
-                                
-                                    $pri_subjects=array("全科","功課輔導","中文","英文","數學","常識","普通話");
-                                  
-                                    for($i=0;$i<count($pri_subjects);$i++)
-                                    {
-                                        ?>
-
                                     <div>
-                                        <input
-                                            <?php echo in_array($pri_subjects[$i], get_field('t_subjects_pri')) ? 'checked':''; ?>
-                                            class="form-check-input" type="checkbox"
-                                            value="<?php echo $pri_subjects[$i];?>"
-                                            id="t-subjects-pri-value-<?php echo $i+1;?>" name="t-subjects-pri[]">
-                                        <label class="form-check-label" for="t-subjects-pri-value-<?php echo $i+1;?>">
-                                            <?php echo $pri_subjects[$i];?>
-
-                                        </label>
-                                    </div>
-                                    <?php
-                                    }
-                                  
-                                  ?>
-
-
-                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="全科"
                                             id="t-subjects-pri-value-1" name="t-subjects-pri[]">
                                         <label class="form-check-label" for="t-subjects-pri-value-1">
@@ -1516,7 +1341,7 @@ if($_POST)
                                             普通話
 
                                         </label>
-                                    </div> -->
+                                    </div>
                                     <div class="mt-2 w-100">
                                         <label for="t-subjects-pri-value-other d-inline-block">其他：</label>
                                         <input class="limit-input-w form-control mt-2 d-inline-block"
@@ -1534,36 +1359,7 @@ if($_POST)
                                 <td colspan="2"><label for="t-subjects-f13">
                                         <h5>中學(中一至中三)</h5>
                                     </label>
-                                    <?php
-                                
-                                $f13_subjects=array("全科","功課輔導","中文","英文","數學","通識","物理","化學","生物","綜合科學","資訊及通訊科技","地理","中史","西史","英國文學","經濟","企業、會計與財務概論","普通話");
-
-                                    ?>
-
-                                    <?php
-
-                                    for($i=0;$i<count($f13_subjects);$i++)
-                                    {
-                                        ?>
-
                                     <div>
-                                        <input
-                                            <?php echo in_array($f13_subjects[$i], get_field('t_subjects_f13')) ? 'checked':''; ?>
-                                            class="form-check-input" type="checkbox"
-                                            value="<?php echo $f13_subjects[$i];?>"
-                                            id="t-subjects-f13-value-<?php echo $i+1;?>" name="t-subjects-f13[]">
-                                        <label class="form-check-label" for="t-subjects-f13-value-<?php echo $i+1;?>">
-                                            <?php echo $f13_subjects[$i];?>
-
-                                        </label>
-                                    </div>
-                                    <?php
-                                    }
-
-                                    ?>
-
-
-                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="全科"
                                             id="t-subjects-f13-value-1" name="t-subjects-f13[]">
                                         <label class="form-check-label" for="t-subjects-f13-value-1">
@@ -1752,7 +1548,7 @@ if($_POST)
 
 
                                         </label>
-                                    </div> -->
+                                    </div>
 
 
                                     <div class="mt-2 w-100">
@@ -1772,35 +1568,8 @@ if($_POST)
                                         <h5>中學(中四至中六)</h5>
                                     </label>
 
-                                    <?php
-                                $f46_subjects=array("中文","英文","數學","數學(M1)","數學(M2)","通識","物理","化學","生物","綜合科學","資訊及通訊科技","地理","中史","西史","中國文學","英國文學","經濟","企業、會計與財務概論","旅遊與款待","倫理與宗教");                                 
-                                  ?>
-                                    <?php
-
-                            for($i=0;$i<count($f46_subjects);$i++)
-                            {
-                                ?>
 
                                     <div>
-                                        <input
-                                            <?php echo in_array($f46_subjects[$i], get_field('t_subjects_f46')) ? 'checked':''; ?>
-                                            class="form-check-input" type="checkbox"
-                                            value="<?php echo $f46_subjects[$i];?>"
-                                            id="t-subjects-f46-value-<?php echo $i+1;?>" name="t-subjects-f46[]">
-                                        <label class="form-check-label" for="t-subjects-f13-value-<?php echo $i+1;?>">
-                                            <?php echo $f46_subjects[$i];?>
-
-                                        </label>
-                                    </div>
-                                    <?php
-                            }
-
-                            ?>
-
-
-
-
-                                    <!-- <div>
                                         <input class="form-check-input" type="checkbox" value="中文"
                                             id="t-subjects-f46-value-3" name="t-subjects-f46[]">
                                         <label class="form-check-label" for="t-subjects-f46-value-3">
@@ -1882,8 +1651,24 @@ if($_POST)
 
                                         </label>
                                     </div>
-                                  
-                                    
+                                    <!-- <div>
+                                        <input class="form-check-input" type="checkbox" value="組合科學：物理 化學"
+                                            id="t-subjects-f46-value-12" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-12">
+
+                                            組合科學：物理 化學
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="組合科學：化學 生物"
+                                            id="t-subjects-f46-value-13" name="t-subjects-f46[]">
+                                        <label class="form-check-label" for="t-subjects-f46-value-13">
+
+                                            組合科學：化學 生物
+
+                                        </label>
+                                    </div> -->
                                     <div>
                                         <input class="form-check-input" type="checkbox" value="綜合科學"
                                             id="t-subjects-f46-value-14" name="t-subjects-f46[]">
@@ -1983,7 +1768,7 @@ if($_POST)
                                             倫理與宗教
 
                                         </label>
-                                    </div> -->
+                                    </div>
 
 
 
@@ -2005,7 +1790,7 @@ if($_POST)
                         <a href="javascript:void(0);">
                             IB科目列</a>
                     </h5>
-                    <!-- 
+
                     <div class="subject-list subject-list-ib">
                         <table>
                             <tr>
@@ -2835,7 +2620,7 @@ if($_POST)
                                             type="text">
                                     </div>
 
-                    </div> -->
+                    </div>
 
 
 
@@ -2898,7 +2683,7 @@ if($_POST)
                                         </label>
                                     </div>
 
-                                    <!-- <div class="place-group">
+                                    <div class="place-group">
 
                                         <div>
                                             <input class="form-check-input" type="checkbox" value="中半山"
@@ -3055,33 +2840,8 @@ if($_POST)
                                                 赤柱
                                             </label>
                                         </div>
-                                    </div> -->
-                                    <div class="place-group">
-
-
-                                        <?php
-$hk_place_arr=array("中半山","薄扶林","中上環","西環","灣仔","銅鑼灣","跑馬地","北角","鰂魚涌","太古","筲箕灣","西灣河","柴灣","小西灣","香港仔","鴨利洲","赤柱");
-for($i=0;$i<count($hk_place_arr);$i++)
-{
-?>
-                                        <div>
-                                            <input
-                                                <?php echo in_array($hk_place_arr[$i], get_field('class_area')) ? 'checked':''; ?>
-                                                class="form-check-input" type="checkbox"
-                                                value="<?php echo $hk_place_arr[$i];?>"
-                                                id="hk-class-area-value-<?php echo $i;?>" name="class-area[]"
-                                                <?php echo $_POST['filter-form']&&in_array($hk_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
-                                            <label class="form-check-label" for="hk-class-area-value-<?php echo $i;?>">
-                                                <?php echo $hk_place_arr[$i];?>
-                                            </label>
-                                        </div>
-                                        <?php
-}
-?>
-
-
-
                                     </div>
+
 
                                     <div class="mt-3">
 
@@ -3091,7 +2851,7 @@ for($i=0;$i<count($hk_place_arr);$i++)
                                         </label>
                                     </div>
 
-                                    <!-- <div class="place-group">
+                                    <div class="place-group">
                                         <div>
                                             <input class="form-check-input" type="checkbox" value="美孚"
                                                 id="class-area-value-18" name="class-area[]">
@@ -3328,34 +3088,8 @@ for($i=0;$i<count($hk_place_arr);$i++)
                                         </div>
 
 
-                                    </div> -->
-                                    <div class="place-group">
-
-                                        <?php
-$kl_place_arr=array("美孚","荔枝角","長沙灣","深水涉","大角咀","旺角","何文田","油麻地","佐敦","尖沙咀","土瓜灣","紅磡","石硤尾","九龍塘","樂富","慈雲山","黃大仙","鑽石山","新蒲崗","彩虹","牛池灣","牛頭角","九龍灣","秀茂坪","觀塘","藍田","油塘","九龍城");
-for($i=0;$i<count($kl_place_arr);$i++)
-{
-?>
-                                        <div>
-                                            <input
-                                                <?php echo in_array($kl_place_arr[$i], get_field('class_area')) ? 'checked':''; ?>
-                                                class="form-check-input" type="checkbox"
-                                                value="<?php echo $kl_place_arr[$i];?>"
-                                                id="kl-class-area-value-<?php echo $i;?>" name="class-area[]"
-                                                <?php echo $_POST['filter-form']&&in_array($kl_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
-                                            <label class="form-check-label" for="kl-class-area-value-<?php echo $i;?>">
-                                                <?php echo $kl_place_arr[$i];?>
-                                            </label>
-                                        </div>
-                                        <?php
-}
-?>
-
-
-
-
-
                                     </div>
+
 
 
 
@@ -3366,7 +3100,7 @@ for($i=0;$i<count($kl_place_arr);$i++)
                                         </label>
                                     </div>
 
-                                    <!-- <div class="place-group">
+                                    <div class="place-group">
                                         <div>
                                             <input class="form-check-input" type="checkbox" value="將軍澳"
                                                 id="class-area-value-46" name="class-area[]">
@@ -3576,35 +3310,9 @@ for($i=0;$i<count($kl_place_arr);$i++)
                                                 離島
                                             </label>
                                         </div>
-                                    </div> -->
-
-                                    <div class="place-group">
-
-                                        <?php
-$nt_place_arr=array("將軍澳","西貢","荃灣","深井","馬灣","葵涌","荔景","葵芳","青衣","大圍","沙田","沙田市中心","小瀝源","火炭","馬鞍山","大埔","粉嶺","上水","元朗","天水圍","屯門","青龍頭","東涌","離島");
-for($i=0;$i<count($nt_place_arr);$i++)
-{
-?>
-                                        <div>
-                                            <input
-                                                <?php echo in_array($nt_place_arr[$i], get_field('class_area')) ? 'checked':''; ?>
-                                                class="form-check-input" type="checkbox"
-                                                value="<?php echo $nt_place_arr[$i];?>"
-                                                id="nt-class-area-value-<?php echo $i;?>" name="class-area[]"
-                                                <?php echo $_POST['filter-form']&&in_array($nt_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
-                                            <label class="form-check-label" for="nt-class-area-value-<?php echo $i;?>">
-                                                <?php echo $nt_place_arr[$i];?>
-                                            </label>
-                                        </div>
-                                        <?php
-}
-?>
-
-
-
-
-
                                     </div>
+
+
 
 
 
@@ -3622,7 +3330,7 @@ for($i=0;$i<count($nt_place_arr);$i++)
 
                                 <h5 class="mt-4">可供補習方式 *</h5>
 
-                                <!-- <div>
+                                <div>
                                     <input class="form-check-input" type="checkbox" value="上門" id="t-style-value-1"
                                         name="t-style[]">
                                     <label class="form-check-label" for="t-style-value-1">
@@ -3645,27 +3353,8 @@ for($i=0;$i<count($nt_place_arr);$i++)
 
 
                                     </label>
-                                </div> -->
-                                <?php
-                                    
-                                    $tutorial_style_arr=array('上門','不上門','視像補習');
-
-                                    for($i=0;$i<count($tutorial_style_arr);$i++)
-                                    {
-                                        ?>
-                                <div>
-                                    <input
-                                        <?php echo in_array($tutorial_style_arr[$i], get_field('t_style')) ? 'checked':''; ?>
-                                        class="form-check-input" type="checkbox"
-                                        value="<?php echo $tutorial_style_arr[$i];?>"
-                                        id="t-style-value-<?php echo $i+1;?>" name="t-style[]">
-                                    <label class="form-check-label" for="t-style-value-<?php echo $i+1;?>">
-                                        <?php echo $tutorial_style_arr[$i];?>
-                                    </label>
                                 </div>
-                                <?php
-                                    }
-                                    ?>
+
 
                                 <table class="mt-4">
                                     <tr>
