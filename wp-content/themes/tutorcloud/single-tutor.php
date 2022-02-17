@@ -553,7 +553,8 @@ if (!$is_admin) {
     <table class="w-50 mx-auto mt-5 preview-table">
         <tr>
             <td class="fw-bold">Email:</td>
-            <td><?php echo get_field('email');?></td>
+            <td> <a href="mailto:<?php echo get_field('email');?>"><?php echo get_field('email');?></a>
+            </td>
         </tr>
         <tr>
             <td class="fw-bold">Chinese Name:</td>
