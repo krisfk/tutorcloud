@@ -38,5 +38,16 @@ get_header();
 
 
 </div>
+
+<script type="text/javascript">
+$(function() {
+
+    $('.wpcf7-form').submit(function() {
+        return false;
+    })
+
+
+})
+</script>
 <?php
 get_footer();
