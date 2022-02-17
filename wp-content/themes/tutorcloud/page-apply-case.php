@@ -2615,6 +2615,10 @@ $(function() {
                     'checked', true);
                 $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', true);
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value2-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value2-' + i).prop(
+                    'checked', true);
             }
 
         } else {
@@ -2622,6 +2626,10 @@ $(function() {
                 $(this).parent('div').next('.place-group').find('#hk-class-area-value-' + i).prop(
                     'checked', false);
                 $(this).parent('div').find('.place-group').find('#hk-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').next('.place-group').find('#hk-class-area-value2-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#hk-class-area-value2-' + i).prop(
                     'checked', false);
                 // $('#class-area-value-' + i).prop('checked', false);
             }
@@ -2653,6 +2661,11 @@ $(function() {
                     'checked', true);
                 $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
                     'checked', true);
+
+                $(this).parent('div').next('.place-group').find('#kl-class-area-value2-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#kl-class-area-value2-' + i).prop(
+                    'checked', true);
             }
 
         } else {
@@ -2660,6 +2673,10 @@ $(function() {
                 $(this).parent('div').next('.place-group').find('#kl-class-area-value-' + i).prop(
                     'checked', false);
                 $(this).parent('div').find('.place-group').find('#kl-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').next('.place-group').find('#kl-class-area-value2-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#kl-class-area-value2-' + i).prop(
                     'checked', false);
             }
         }
@@ -2674,13 +2691,23 @@ $(function() {
                     'checked', true);
                 $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
                     'checked', true);
+                $(this).parent('div').next('.place-group').find('#nt-class-area-value2-' + i).prop(
+                    'checked', true);
+                $(this).parent('div').find('.place-group').find('#nt-class-area-value2-' + i).prop(
+                    'checked', true);
+
             }
+
 
         } else {
             for (i = 0; i < <?php echo count($nt_place_arr);?>; i++) {
                 $(this).parent('div').next('.place-group').find('#nt-class-area-value-' + i).prop(
                     'checked', false);
                 $(this).parent('div').find('.place-group').find('#nt-class-area-value-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').next('.place-group').find('#nt-class-area-value2-' + i).prop(
+                    'checked', false);
+                $(this).parent('div').find('.place-group').find('#nt-class-area-value2-' + i).prop(
                     'checked', false);
             }
         }
