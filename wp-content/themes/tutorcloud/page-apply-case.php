@@ -530,15 +530,21 @@ get_header();
         </h2>
     </div>
 
-
+    <?php
+    $submit_success=false;
+if($_POST &&  $_POST['apply-case-form'])
+{
+    $submit_success=true;
+}
+?>
     <h5 class="text-center  mt-5 submitted-msg">
         資料提交完成，我們會盡快聯絡您，謝謝。三秒後回到主頁。
     </h5>
 
-    <div class="text-center mt-3 submitted-hide">
+    <div class="text-center mt-3 submitted-hide <?php echo $submit_success ? 'd-none' :''; ?>">
         <a href="#" class="filter-btn">導師選項</a>
     </div>
-    <div class="row mt-5 gx-5 submitted-hide">
+    <div class="row mt-5 gx-5 submitted-hide <?php echo $submit_success ? 'd-none' :''; ?>">
 
         <div class="apply-step-col col-lg-2 col-md-12 col-sm-12 col-12 ">
             <ul class="m-0 p-0 text-center">
