@@ -548,6 +548,32 @@ if (!$is_admin) {
         <a href="<?php echo get_site_url();?>/wp-admin/post.php?post=<?php echo get_the_ID();?>&action=edit"
             class="filter-btn">修改</a>
     </div>
+
+
+    <table>
+        <tr>
+            <td>Email:</td>
+            <td><?php echo get_field('email');?></td>
+        </tr>
+        <tr>
+            <td>Chinese Name:</td>
+            <td><?php echo get_field('chi_name');?></td>
+        </tr>
+        <tr>
+            <td>English Name:</td>
+            <td><?php echo get_field('eng_name');?></td>
+        </tr>
+        <tr>
+            <td>Nick Name:</td>
+            <td><?php echo get_field('nick_name');?></td>
+        </tr>
+        <tr>
+            <td>Whatsapp</td>
+            <td><?php echo get_field('whatsapp');?></td>
+
+        </tr>
+
+    </table>
     <div class="row mt-5 gx-5">
         <?php
       
