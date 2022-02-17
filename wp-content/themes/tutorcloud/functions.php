@@ -767,10 +767,10 @@ add_action( 'rest_api_init', function () {
 
 			wp_mail( $to, $subject, $message);
 
-			// echo json_encode(array("status"=>"-1", "msg"=>"this email was existed"));
+			echo json_encode(array("status"=>"1", "msg"=>"email found"));
 
 		} else {
-			// echo json_encode(array("status"=>"1", "msg"=>"valid email"));
+			echo json_encode(array("status"=>"-1", "msg"=>"找不到這個登記電郵。"));
 		}
 		
 		
