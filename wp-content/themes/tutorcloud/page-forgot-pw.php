@@ -78,7 +78,7 @@ $(function() {
 
             } else {
 
-                $('.form-div').html(response.msg)；
+                $('.form-div').html(response.msg);
 
             }
 
