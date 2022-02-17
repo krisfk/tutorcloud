@@ -115,7 +115,7 @@ echo '<form action="" method="post">
 
                 <input type="submit" href="javascript:void(0);" class="submit-btn m-0" value="登入"></input>
 
-                <a href="#" class="forgot-pw-a">忘記密碼</a>
+                <a href="'.get_site_url().'/forgot-pw" class="forgot-pw-a">忘記密碼</a>
             </td>
         </tr>
     </tbody>
