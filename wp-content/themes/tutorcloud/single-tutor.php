@@ -569,7 +569,7 @@ if (!$is_admin) {
         </tr>
         <tr>
             <td>Whatsapp</td>
-            <td><?php echo get_field('whatsapp');?></td>
+            <td><?php echo get_field('whatsapp_tel');?></td>
 
         </tr>
 
