@@ -624,7 +624,53 @@ get_header();
 
             $to='krisfk@gmail.com';
             $subject='補習個案'.$student_id.'已建立。';
-            $message='補習個案'.$student_id.'已建立。<br/><br/> 心儀導師名單如下：<br/>'.$_POST['tutor-list'];
+
+
+            // $query_args = array(
+            //     'post_type' => 'student',
+            //     'meta_query' => array(
+            //         array(
+            //             'key' => 'student_id',
+            //             'value' => $student_id,
+            //             'compare' => '=',
+            //         )
+            //     ),
+            // );
+            
+            // $the_query = new WP_Query( $query_args );
+            // $the_query->the_post();
+
+            // if ( $the_query->have_posts() ) {
+            // }
+            $student_url = get_permalink($student_id);
+            $tutor_list = $_POST['tutor-list'];
+            
+            $tutor_arr = explode(",", $tutor_list);
+            $tutors_str='';
+            for($i=0;$i<count($tutor_arr);$i++)
+            {
+                    $query_args = array(
+                    'post_type' => 'tutor',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'tutor_id',
+                            'value' => $tutor_arr[$i],
+                            'compare' => '=',
+                        )
+                    ),
+                );
+                
+                $the_query = new WP_Query( $query_args );
+                $the_query->the_post();
+
+                if ( $the_query->have_posts() ) {
+                    $the_query->the_post();
+                    $tutors_str.='<a href="'.get_permalink().'">'.$tutor_arr[$i].'</a>';
+                }
+            }
+
+                
+            $message='補習個案<a href="'.$student_url.'" target="_blank">'.$student_id.'</a>已建立。<br/><br/> 心儀導師名單如下：<br/>'.$tutors_str;
            
                 
             $post_id = wp_insert_post(array (
@@ -635,6 +681,8 @@ get_header();
                 'comment_status' => 'closed',   // if you prefer
                 'ping_status' => 'closed',      // if you prefer
             ));
+
+            
 
 
             
