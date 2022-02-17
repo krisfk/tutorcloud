@@ -637,7 +637,7 @@ get_header();
         
         if ($post_id) {
 
-            $student_id = 'T'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+            $student_id = 'S'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
 
             // $tutor_id=$request['tutor_id'];
 
