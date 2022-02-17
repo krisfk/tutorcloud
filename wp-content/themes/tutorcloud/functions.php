@@ -740,7 +740,7 @@ add_action( 'rest_api_init', function () {
 
   } );
   
-  function forgot_pw_func($repuest)
+  function forgot_pw_func($request)
   {
 		$email = $request['email'];
 
