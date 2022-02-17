@@ -1249,6 +1249,12 @@ input[type='number'] {
     padding: 0.5rem;
 }
 
+.wpcf7-form {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {
