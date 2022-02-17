@@ -1579,10 +1579,10 @@ Year 6 -->
                                                 <div>
                                                     <input class="form-check-input" type="checkbox"
                                                         value="<?php echo $kl_place_arr[$i];?>"
-                                                        id="kl-class-area-value-<?php echo $i;?>" name="class-area[]"
+                                                        id="kl-class-area-value2-<?php echo $i;?>" name="class-area[]"
                                                         <?php echo $_POST['filter-form']&&in_array($kl_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
                                                     <label class="form-check-label"
-                                                        for="kl-class-area-value-<?php echo $i;?>">
+                                                        for="kl-class-area-value2-<?php echo $i;?>">
                                                         <?php echo $kl_place_arr[$i];?>
                                                     </label>
                                                 </div>
@@ -1850,10 +1850,10 @@ Year 6 -->
                                                 <div>
                                                     <input class="form-check-input" type="checkbox"
                                                         value="<?php echo $nt_place_arr[$i];?>"
-                                                        id="nt-class-area-value-<?php echo $i;?>" name="class-area[]"
+                                                        id="nt-class-area-value2-<?php echo $i;?>" name="class-area[]"
                                                         <?php echo $_POST['filter-form']&&in_array($nt_place_arr[$i], $_POST['class-area']) ? 'checked':''; ?>>
                                                     <label class="form-check-label"
-                                                        for="nt-class-area-value-<?php echo $i;?>">
+                                                        for="nt-class-area-value2-<?php echo $i;?>">
                                                         <?php echo $nt_place_arr[$i];?>
                                                     </label>
                                                 </div>
