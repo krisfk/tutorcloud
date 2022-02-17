@@ -68,15 +68,29 @@ $query_args = array(
     if ( $the_query->have_posts() ) {
 
         $the_query->the_post();
-        echo '登入成功，三秒後回到主頁。';
-        $_SESSION['tutor_post_id']   = get_the_ID();
-        ?>
 
+        if(get_field('enable')=='true')
+        {
+            echo '登入成功，三秒後回到主頁。';
+            $_SESSION['tutor_post_id']   = get_the_ID();
+            ?>
         <script type="text/javascript">
         window.setTimeout(function() {
             window.location.href = '<?php echo get_site_url();?>';
         }, 3000);
         </script>
+        <?php
+        }
+        else
+        {
+            echo '登入電郵或密碼不正確。';
+            login_form();
+        }
+
+
+        ?>
+
+
 
         <?php
                   
