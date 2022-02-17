@@ -389,7 +389,10 @@ if (!$is_admin) {
         <tr>
             <td class="fw-bold">Whatsapp</td>
             <td><?php echo get_field('whatsapp_tel');?></td>
-
+        </tr>
+        <tr>
+            <td class="fw-bold">Enable</td>
+            <td><?php echo get_field('enable');?></td>
         </tr>
 
     </table>
