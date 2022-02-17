@@ -128,7 +128,7 @@ get_header();
                 <div class="text-center">
                     <h2>登記完成！請稍後⋯審批完成後會盡快聯絡你！謝謝！</h2>
                 </div>
-                <!-- <a href="#" class="submit-login-btn">立即登入查看補習個案</a> -->
+
 
             </div>
             <?php
