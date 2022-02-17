@@ -500,7 +500,7 @@ if($_POST)
 
         $to='krisfk@gmail.com';
         $subject='新導師'.$tutor_id.'檔案已建立。';
-        $message='新導師<a target="_blank" href="'.get_permalink($post_id).'">'.$tutor_id.'</a>檔案已建立。<br>請按上面連結double check導師資料再enable該導師的使用權限。';
+        $message='新導師<a target="_blank" href="'.get_permalink($post_id).'">'.$tutor_id.'</a>檔案已建立。<br>請按上面連結檢查導師資料，再enable該導師的使用權限。';
     
 
         wp_mail( $to, $subject, $message );
