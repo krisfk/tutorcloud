@@ -730,10 +730,52 @@ add_action( 'rest_api_init', function () {
 		'methods' => 'POST',
 		'callback' => 'tutor_apply_case_func',
 	  ) );
+
+	register_rest_route( 'api', '/forgot_pw', array(
+		'methods' => 'POST',
+		'callback' => 'forgot_pw_func',
+	  ) );
+	  
 	
 
   } );
   
+  function forgot_pw_func($repuest)
+  {
+		$email = $request['email'];
+
+		$query_args = array(
+			'post_type' => 'tutor',
+			'meta_query' => array(
+				array(
+					'key' => 'email',
+					'value' => $email,
+					'compare' => '=',
+				)
+			),
+		);
+		
+		$the_query = new WP_Query( $query_args );
+		
+		if ( $the_query->have_posts() ) {
+
+			$the_query->the_post();
+
+			$to = 'krisfk@gmail.com';
+            $subject = '忘記密碼';
+			$message = get_field('chi_name').':<br><br>以下是你的登入資料:<br/>'.get_field('email').'<br/>'.get_field('login_password');
+
+			wp_mail( $to, $subject, $message);
+
+			// echo json_encode(array("status"=>"-1", "msg"=>"this email was existed"));
+
+		} else {
+			// echo json_encode(array("status"=>"1", "msg"=>"valid email"));
+		}
+		
+		
+  }
+
   
   function tutor_apply_case_func($request)
   {

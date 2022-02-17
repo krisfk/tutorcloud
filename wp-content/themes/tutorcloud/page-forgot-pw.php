@@ -56,10 +56,38 @@ get_header();
 <script type="text/javascript">
 $(function() {
 
-    $('.wpcf7-form').submit(function() {
-        return false;
-    })
 
+    $('.forgot-fw-submit-btn').click(function() {
+
+        var email = $('#login-email').val();
+
+
+
+
+        $.ajax({
+            type: "POST",
+            url: '<?php echo get_site_url();?>/wp-json/api/forgot_pw',
+            data: {
+                email: email
+            },
+            dataType: "json",
+        }).done(function(response) {
+
+            // if (response.status == -1) {
+            //     show_lightbox_msg('這電郵地址已被使用作登記。');
+            // } else {
+            //     $('form').submit();
+            // }
+
+
+
+
+
+
+        }).fail(function(Response) {});
+
+
+    })
 
 })
 </script>
