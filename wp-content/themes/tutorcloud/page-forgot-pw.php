@@ -75,11 +75,11 @@ $(function() {
             console.log(response);
             if (response.status == -1) {
                 alert(response.msg);
-                // show_lightbox_msg('這電郵地址已被使用作登記。');
-            } else {
-                alert(response.msg);
 
-                // $('form').submit();
+            } else {
+
+                $('.form-div').html(response.msg)；
+
             }
 
 

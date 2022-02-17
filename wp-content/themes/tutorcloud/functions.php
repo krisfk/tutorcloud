@@ -761,13 +761,13 @@ add_action( 'rest_api_init', function () {
 
 			$the_query->the_post();
 
-			$to = 'krisfk@gmail.com';
-            $subject = '忘記密碼';
+			$to = $email;
+            $subject = 'Tutorcloud - 忘記密碼';
 			$message = get_field('chi_name').':<br><br>以下是你的登入資料:<br/>'.get_field('email').'<br/>'.get_field('login_password');
 
 			wp_mail( $to, $subject, $message);
 
-			echo json_encode(array("status"=>"1", "msg"=>"email found"));
+			echo json_encode(array("status"=>"1", "msg"=>"登入資訊已發送至這個電郵，請查看電郵信箱，謝謝。"));
 
 		} else {
 			echo json_encode(array("status"=>"-1", "msg"=>"找不到這個登記電郵。"));
