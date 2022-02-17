@@ -390,7 +390,8 @@ if (!$is_admin) {
         </tr>
         <tr>
             <td class="fw-bold">Whatsapp</td>
-            <td><?php echo get_field('whatsapp_tel');?></td>
+            <td><a href="https://wa.me/852<?php echo get_field('whatsapp_tel');?>"
+                    target="_blank"><?php echo get_field('whatsapp_tel');?></a></td>
         </tr>
         <tr>
             <td class="fw-bold">Enable</td>
