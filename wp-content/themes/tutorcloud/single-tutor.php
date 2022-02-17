@@ -550,7 +550,7 @@ if (!$is_admin) {
     </div>
 
 
-    <table class="w-50 mx-auto mt-5 border-1">
+    <table class="w-50 mx-auto mt-5 border border-dark">
         <tr>
             <td>Email:</td>
             <td><?php echo get_field('email');?></td>
