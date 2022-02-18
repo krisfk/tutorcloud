@@ -37,8 +37,10 @@ get_header();
     <div class="row gx-5  ">
         <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 text-center"> <img class="pt-icon"
                 src="<?php echo get_template_directory_uri();?>/assets/images/icon-1.png" alt="">
-            <div class="pt-title mt-3">優良師資</div>
-            <div class="pt-content mt-3">所有導師均為現職大學生及具有學士學位或以上資歷，確保導師知識水平及能力，為學生提供最優質的教育。</div>
+            <?php echo get_field('content_1');?>
+            <!-- <div class="pt-title mt-3">優良師資</div>
+            <div class="pt-content mt-3">所有導師均為現職大學生及具有學士學位或以上資歷，確保導師知識水平及能力，為學生提供最優質的教育。</div> -->
+
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 text-center"><img class="pt-icon"
                 src="<?php echo get_template_directory_uri();?>/assets/images/icon-2.png" alt="">
