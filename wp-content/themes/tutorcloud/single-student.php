@@ -360,7 +360,7 @@ if (!$is_admin) {
 <div class="container mt-5">
 
     <div class="text-center">
-        <h2>學生 <?php echo get_field('student_id');?> Preview
+        <h2>學生資料 <?php echo get_field('student_id');?> Preview
             <div class="bar"></div>
         </h2>
     </div>
