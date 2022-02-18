@@ -450,7 +450,7 @@ while ( $loop->have_posts() ) {
                     data-subjects="<?php echo implode(' ', get_field('subjects'));?>"
                     data-lesson-hour="<?php echo get_field('lesson_per_week');?>"
                     data-time="<?php echo get_field('hour_per_lesson');?>"
-                    data-start-tutorial-time="<?php echo get_field('days').' ';?><?php echo get_field('start_tutorial_time');?>"
+                    data-start-tutorial-time="<?php echo implode(' ',  get_field('days')).' ';?><?php echo get_field('start_tutorial_time');?>"
                     data-short-address="<?php echo get_field('short_address');?>"
                     data-tutor-gender="<?php  echo get_field('tutor_gender');?>"
                     data-tutorial-target="<?php echo implode(' ', get_field('objective')).' '.get_field('objective_value_other');?>"
