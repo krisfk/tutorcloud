@@ -344,7 +344,7 @@ get_header();
 
                         <tr>
                             <td>導師編號 </td>
-                            <td><span id="lbc-tutor-id"></span> 加入導師名單</td>
+                            <td><span id="lbc-tutor-id"></span> </td>
                         </tr>
                         <tr>
                             <td>性别</td>
