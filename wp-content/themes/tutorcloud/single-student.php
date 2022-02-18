@@ -374,11 +374,13 @@ get_header();
     主頁 > 補習個案</div> -->
 <div class="container mt-5">
 
+
     <div class="text-center">
-        <h2>補習個案
+        <h2>學生資料<?php echo get_field('student_id');?> Preview
             <div class="bar"></div>
         </h2>
     </div>
+
 
     <div class="text-center mt-3">
         <a href="#" class="filter-btn">個案選項</a>
