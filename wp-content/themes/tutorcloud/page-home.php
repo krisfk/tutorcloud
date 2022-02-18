@@ -94,7 +94,8 @@ get_header();
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-1.jpg" alt="">
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
-            <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5  step-table ">
+            <?php echo get_field('step_1');?>
+            <!-- <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5  step-table ">
                 <tr>
                     <td><span class="num-pt">1</span></td>
                     <td>
@@ -107,7 +108,7 @@ get_header();
 
                         於網站按“學生登記”，填寫網上補習表格。簡單登記步驟。</td>
                 </tr>
-            </table>
+            </table> -->
 
         </div>
     </div>
@@ -116,7 +117,9 @@ get_header();
     <div class="row align-items-center justify-content-center ">
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
-            <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5  step-table ">
+            <?php echo get_field('step_2');?>
+
+            <!-- <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5  step-table ">
                 <tr>
                     <td><span class="num-pt">2</span></td>
                     <td>
@@ -129,7 +132,7 @@ get_header();
                         填妥表格後，TutorCloud會在短時間內為您配對最合適的導師，亦可以於網站內尋
                         找心水導師。</td>
                 </tr>
-            </table>
+            </table> -->
 
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-12 ">
@@ -146,7 +149,9 @@ get_header();
                 src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/big-icon-3.jpg" alt="">
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
-            <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5  step-table">
+            <?php echo get_field('step_3');?>
+
+            <!-- <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5  step-table">
                 <tr>
                     <td><span class="num-pt">3</span></td>
                     <td>
@@ -158,7 +163,7 @@ get_header();
                     <td class="pt-4">
                         成功配對及按照TutorCloud指示繳交學費後，學生可以預備進行線上或上門補習。</td>
                 </tr>
-            </table>
+            </table> -->
 
         </div>
     </div>
@@ -167,7 +172,9 @@ get_header();
     <div class="row align-items-center justify-content-center  ">
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
-            <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5 step-table">
+            <?php echo get_field('step_4');?>
+
+            <!-- <table class="mt-lg-0 mt-md-0 mt-sm-5 mt-5 step-table">
                 <tr>
                     <td><span class="num-pt">4</span></td>
                     <td>
@@ -179,7 +186,7 @@ get_header();
                     <td class="pt-4">
                         完成兩星期課堂後，TutorCloud會聯絡您，讓您提供對導師的評價。</td>
                 </tr>
-            </table>
+            </table> -->
 
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-12 ">
