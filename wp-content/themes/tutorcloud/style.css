@@ -1502,6 +1502,10 @@ input[type='number'] {
 
 @media only screen and (max-width: 640px) {}
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    .msg-div a {
+        font-size: 0.7rem;
+    }
+}
 
 @media only screen and (max-width: 375px) {}
