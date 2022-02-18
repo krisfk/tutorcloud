@@ -53,10 +53,12 @@ get_header();
         <div class="col-lg-5 col-md-12 col-sm-12 col-12 ">
 
             <div class="description-div">
-                年滿十七歲或以上，正就讀大學及具大學學士學位或以上程度學歷之自然人且擁有簽訂合約的心智和法律能
+                <?php echo get_the_content();?>
+                <!-- 年滿十七歲或以上，正就讀大學及具大學學士學位或以上程度學歷之自然人且擁有簽訂合約的心智和法律能
                 力之人士，以及獲其憲章、附例及公司組織章程大綱批准其與TutorCloud 師魂簽訂此合約的公司，方可申請成
                 為導師。TutorCloud 師魂保留拒絕任何人士申請成為導師或終止任何人士之導師資格而不作任何解釋之權利。
-                不符合上述資格者不得使用服務。</div>
+                不符合上述資格者不得使用服務。 -->
+            </div>
         </div>
 
     </div>
@@ -136,8 +138,8 @@ get_header();
         }?>
 
             <div class="step-content step-content-1">
-                <!-- <h3 class="mb-4">條款及細則</h3> -->
-                <ul class="terms-list-ul">
+                <?php echo get_field('terms');?>
+                <!-- <ul class="terms-list-ul">
                     <li>
 
                         <a href="javascript:void(0);" class="terms-a">
@@ -272,7 +274,7 @@ get_header();
 
                     </li>
 
-                </ul>
+                </ul> -->
 
                 <a href="javascript:void(0);" class="agree-terms-btn">同意以上條款</a>
 
