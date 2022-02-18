@@ -416,26 +416,26 @@ if (!$is_admin) {
             // 'relation' => 'AND');
 // 
             // echo 99;
-            if($_POST && $_POST['filter-form'])
-            {
-                if($_POST['gender'])
-                {
-                    array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
-                }
-                if($_POST['student-level'])
-                {
-                    array_push($meta_query_arr,array('key'=>'student_level_2','value'=>$_POST['student-level'],'compare' => 'IN'));
-                }
+            // if($_POST && $_POST['filter-form'])
+            // {
+            //     if($_POST['gender'])
+            //     {
+            //         array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
+            //     }
+            //     if($_POST['student-level'])
+            //     {
+            //         array_push($meta_query_arr,array('key'=>'student_level_2','value'=>$_POST['student-level'],'compare' => 'IN'));
+            //     }
 
-                if($_POST['class-area'])
-                {
-                    array_push($meta_query_arr,array('key'=>'class_area','value'=>$_POST['class-area'],'compare' => 'IN'));
-                }
+            //     if($_POST['class-area'])
+            //     {
+            //         array_push($meta_query_arr,array('key'=>'class_area','value'=>$_POST['class-area'],'compare' => 'IN'));
+            //     }
 
 
 
                 
-            }
+            // }
        
             
             // $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
