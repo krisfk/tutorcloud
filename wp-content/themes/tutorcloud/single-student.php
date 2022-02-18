@@ -369,9 +369,9 @@ get_header();
 
 </div>
 
-<div class="breadcrumb mt-4">
+<!-- <div class="breadcrumb mt-4">
 
-    主頁 > 補習個案</div>
+    主頁 > 補習個案</div> -->
 <div class="container mt-5">
 
     <div class="text-center">
