@@ -690,16 +690,16 @@ $(function() {
 
 
 
-        var class_area = $(this).closest('.student-content-li').attr('data-class-area');
-        var class_area_arr = class_area.split(',');
+        // var class_area = $(this).closest('.student-content-li').attr('data-class-area');
+        // var class_area_arr = class_area.split(',');
 
-        $('.place-span').removeClass('deep-green');
-        for (i = 0; i < $('.place-span').length; i++) {
+        // $('.place-span').removeClass('deep-green');
+        // for (i = 0; i < $('.place-span').length; i++) {
 
-            if (class_area_arr.includes($('.place-span').eq(i).html())) {
-                $('.place-span').eq(i).addClass('deep-green');
-            }
-        }
+        //     if (class_area_arr.includes($('.place-span').eq(i).html())) {
+        //         $('.place-span').eq(i).addClass('deep-green');
+        //     }
+        // }
 
         // id="lbc-self-intro
 
