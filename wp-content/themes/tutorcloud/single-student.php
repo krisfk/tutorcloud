@@ -10,7 +10,7 @@
  */
 
 get_header();
-echo get_field('gender');
+echo get_field('student_id');
 // $arr1 = array('1','2','3','4','5');
 // $arr2 = array('2','3','1','8');
 // print_r(array_unique(array_merge($arr1,$arr2)));
