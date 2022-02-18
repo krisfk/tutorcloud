@@ -32,7 +32,7 @@ get_header();
 
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 col-12 ">
-            <div class="pt-title mt-3 text-start">行政費計算方法</div>
+            <!-- <div class="pt-title mt-3 text-start">行政費計算方法</div>
             <div class="mt-4">
 
                 <ul class="ps-3">
@@ -43,10 +43,16 @@ get_header();
                     </li>
 
                 </ul>
-            </div>
+            </div> -->
+            <?php
+            echo get_field('content_1');
+            ?>
 
+            <?php
+            echo get_field('content_2');
+            ?>
 
-            <table class="price-table mt-5">
+            <!-- <table class="price-table mt-5">
                 <thead>
                     <tr>
                         <th>項目說明</th>
@@ -123,7 +129,7 @@ get_header();
 
 
 
-            </table>
+            </table> -->
 
 
 
