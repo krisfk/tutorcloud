@@ -599,7 +599,7 @@ if($_POST &&  $_POST['apply-case-form'])
             $whatsapp_tel=$_POST['whatsapp-tel'];
             $email = $_POST['email'];
             $gender=$_POST['gender'];
-            $tutorial_course=$_POST['tutorial-course'];
+            // $tutorial_course=$_POST['tutorial-course'];
             $other_tutorial_course=$_POST['other-tutorial-course'];
 
             $student_level=$_POST['student-level'];
@@ -651,7 +651,7 @@ if($_POST &&  $_POST['apply-case-form'])
             add_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
             add_post_meta($post_id, 'email', $email);
             add_post_meta($post_id, 'gender', $gender);
-            add_post_meta($post_id, 'tutorial_course', $tutorial_course);
+            // add_post_meta($post_id, 'tutorial_course', $tutorial_course);
             add_post_meta($post_id, 'other_tutorial_course', $other_tutorial_course);
             add_post_meta($post_id, 'student_level', $student_level);
             add_post_meta($post_id, 'university', $university);
@@ -1057,7 +1057,7 @@ while ( $loop->have_posts() ) {
                                     </td>
                                 </tr>
 
-                                <tr>
+                                <!-- <tr>
                                     <td> <label for="tutorial-course"> 補習課程 *</label></td>
                                     <td>
                                         <select id="tutorial-course" name="tutorial-course" class="form-select"
@@ -1087,7 +1087,7 @@ while ( $loop->have_posts() ) {
                                         </select>
 
                                     </td>
-                                </tr>
+                                </tr> -->
 
 
                                 <tr>
@@ -2713,7 +2713,7 @@ $(function() {
 
         var email = $('#email').val();
         var gender = $('input[name="gender"]:checked').val();
-        var tutorial_course = $('#tutorial-course').val();
+        // var tutorial_course = $('#tutorial-course').val();
         var student_level = $('#student-level').val();
         var student_level_2 = $('#student-level-2').val();
         var paper_lang = $('input[name="paper-lang"]:checked').val();
@@ -2766,10 +2766,10 @@ $(function() {
                 '請輸入性別</br>';
         }
 
-        if (!tutorial_course) {
-            error_txt +=
-                '請輸入補習課程</br>';
-        }
+        // if (!tutorial_course) {
+        //     error_txt +=
+        //         '請輸入補習課程</br>';
+        // }
         if (!student_level) {
             error_txt +=
                 '請輸入就讀年級</br>';
