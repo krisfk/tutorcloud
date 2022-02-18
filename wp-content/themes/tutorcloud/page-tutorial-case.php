@@ -279,6 +279,12 @@ get_header();
                             <td>補習方式</td>
                             <td id="lbc-tutorial-style"></td>
                         </tr>
+                        <tr>
+                            <td>可否分開導師？
+                            </td>
+                            <td id="lbc-can-sep-tutor"></td>
+                        </tr>
+
 
                     </table>
 
@@ -310,6 +316,14 @@ get_header();
                                 <!-- 小學 初中 高中 -->
 
                             </td>
+                        </tr>
+                        <tr>
+                            <td>語言</td>
+                            <td id="lbc-paper-lang"></td>
+                        </tr>
+                        <tr>
+                            <td>樂器</td>
+                            <td id="lbc-instrument"></td>
                         </tr>
 
                     </table>
@@ -443,6 +457,9 @@ while ( $loop->have_posts() ) {
     // implode(', ', $Array)
     ?>
                 <li class="student-content-li" data-student-id="<?php echo get_field('student_id');?>"
+                    data-can-sep-tutor="<?php echo get_field('can_sep_tutor');?>"
+                    data-paper-lang="<?php echo get_field('paper_lang');?>"
+                    data-instrument="<?php echo get_field('instrument');?>"
                     data-student-gender="<?php echo get_field('gender');?>"
                     data-salary="<?php echo get_field('cost_per_ppl');?>"
                     data-tutorial-style="<?php echo get_field('tutorial_style');?>"
@@ -616,6 +633,17 @@ $(function() {
 
         $('#lbc-student-gender').html($(this).closest('.student-content-li').attr(
             'data-student-gender'));
+
+        $('#lbc-instrument').html($(this).closest('.student-content-li').attr(
+            'data-instrument'));
+
+        $('#lbc-can-sep-tutor').html($(this).closest('.student-content-li').attr(
+            'data-can-sep-tutor'));
+        $('#lbc-paper-lang').html($(this).closest('.student-content-li').attr(
+            'data-paper-lang'));
+
+
+
         $('#lbc-salary').html($(this).closest('.student-content-li').attr('data-salary'));
         $('#lbc-tutorial-style').html($(this).closest('.student-content-li').attr(
             'data-tutorial-style'));
