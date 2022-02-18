@@ -2855,21 +2855,21 @@ $(function() {
     $('.next-step-btn').click(function() {
 
 
-        if (tutor_list_arr.length == 0) {
-            // alert('請加入心儀導師');
-            show_lightbox_msg('請加入心儀導師');
-        } else {
-            $('.tutor-list-ul').fadeOut(0);
-            $('.student-form-div').fadeIn(0);
-            $('.prev-step-btn').fadeIn(0);
-            $('.next-step-btn').fadeOut(0);
-            $('.list-close-btn').fadeOut(0);
+        // if (tutor_list_arr.length == 0) {
+        // alert('請加入心儀導師');
+        // show_lightbox_msg('請加入心儀導師');
+        // } else {
+        $('.tutor-list-ul').fadeOut(0);
+        $('.student-form-div').fadeIn(0);
+        $('.prev-step-btn').fadeIn(0);
+        $('.next-step-btn').fadeOut(0);
+        $('.list-close-btn').fadeOut(0);
 
-            $('.step-txt').removeClass('active');
-            $('.step-txt').eq(1).addClass('active');
-            $('.filter-btn,.pagination').fadeOut(0);
+        $('.step-txt').removeClass('active');
+        $('.step-txt').eq(1).addClass('active');
+        $('.filter-btn,.pagination').fadeOut(0);
 
-        }
+        // }
 
     })
 
