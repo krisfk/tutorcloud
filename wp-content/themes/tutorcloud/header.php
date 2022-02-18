@@ -307,3 +307,7 @@ if(!$_SESSION['tutor_post_id'])
 
             })
             </script>
+            <?php
+            wp_reset_postdata(); 
+
+            ?>
