@@ -279,7 +279,7 @@ get_header();
                             <td>補習方式</td>
                             <td id="lbc-tutorial-style"></td>
                         </tr>
-                        <tr>
+                        <tr id="lbc-can-sep-tutor-tr">
                             <td>可否分開導師？
                             </td>
                             <td id="lbc-can-sep-tutor"></td>
@@ -317,11 +317,11 @@ get_header();
 
                             </td>
                         </tr>
-                        <tr>
+                        <tr id="lbc-paper-lang-tr">
                             <td>語言</td>
                             <td id="lbc-paper-lang"></td>
                         </tr>
-                        <tr>
+                        <tr id="lbc-instrument-tr">
                             <td>樂器</td>
                             <td id="lbc-instrument"></td>
                         </tr>
@@ -634,14 +634,35 @@ $(function() {
         $('#lbc-student-gender').html($(this).closest('.student-content-li').attr(
             'data-student-gender'));
 
+
         $('#lbc-instrument').html($(this).closest('.student-content-li').attr(
             'data-instrument'));
 
+        if ($('#lbc-instrument').html() == '') {
+            $('#lbc-instrument-tr').fadeOut(0);
+        } else {
+            $('#lbc-instrument-tr').fadeIn(0);
+        }
+
         $('#lbc-can-sep-tutor').html($(this).closest('.student-content-li').attr(
             'data-can-sep-tutor'));
+
+        if ($('#lbc-can-sep-tutor').html() == '') {
+            $('#lbc-can-sep-tutor-tr').fadeOut(0);
+        } else {
+            $('#lbc-can-sep-tutor-tr').fadeIn(0);
+        }
+
+
         $('#lbc-paper-lang').html($(this).closest('.student-content-li').attr(
             'data-paper-lang'));
 
+
+        if ($('#lbc-paper-lang').html() == '') {
+            $('#lbc-paper-lang-tr').fadeOut(0);
+        } else {
+            $('#lbc-paper-lang-tr').fadeIn(0);
+        }
 
 
         $('#lbc-salary').html($(this).closest('.student-content-li').attr('data-salary'));
