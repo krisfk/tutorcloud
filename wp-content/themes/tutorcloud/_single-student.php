@@ -10,11 +10,25 @@
  */
 
 get_header();
+echo get_field('student_id');
 // $arr1 = array('1','2','3','4','5');
 // $arr2 = array('2','3','1','8');
 // print_r(array_unique(array_merge($arr1,$arr2)));
+$is_admin = current_user_can('manage_options');  // all user they have mange option will get 
+// echo get_field('student_id');
+// echo 11;
+if (!$is_admin) {
+    wp_redirect(get_site_url());
+        exit;
+}
+
 ?>
 
+<style type="text/css">
+#primary {
+    display: none;
+}
+</style>
 <div class="lightbox">
 
     <div class="lightbox-bg-btn ">
@@ -334,28 +348,6 @@ get_header();
                 <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4">其他要求/備註：<br><span
                         id="lbc-other-requirement"></span>test</div>
 
-                <div class="col-12 text-center">
-
-                    <a class="tutor-apply-a" href="javascript:void(0);" data-student-id="" data-tutor-id="<?php
-
-                    $query_args = array(
-                        'post_type' => 'tutor',
-                        'p'=>$_SESSION['tutor_post_id']
-                    );
-                    
-                    $the_query = new WP_Query( $query_args );
-                    $the_query->have_posts();
-                    $the_query->the_post();
-                    echo get_field('tutor_id');
-
-                    
-                    ?>">
-
-                        申請此個案
-
-                    </a>
-                </div>
-
 
             </div>
         </div>
@@ -365,20 +357,51 @@ get_header();
 
 </div>
 
-<div class="breadcrumb mt-4">
-
-    主頁 > 補習個案</div>
 <div class="container mt-5">
 
     <div class="text-center">
-        <h2>補習個案
+        <h2>補習個案<?php echo get_field('student_id');?> Preview
             <div class="bar"></div>
         </h2>
     </div>
 
     <div class="text-center mt-3">
-        <a href="#" class="filter-btn">個案選項</a>
+        <a href="<?php echo get_site_url();?>/wp-admin/post.php?post=<?php echo get_the_ID();?>&action=edit"
+            class="filter-btn">修改</a>
     </div>
+
+
+    <table class="w-50 mx-auto mt-5 preview-table">
+        <tr>
+            <td class="fw-bold">Email:</td>
+            <td><?php?>
+                <a href="mailto:<?php echo get_field('email');?>"><?php echo get_field('email');?></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="fw-bold">Chinese Name:</td>
+            <td><?php echo get_field('chi_name');?></td>
+        </tr>
+        <tr>
+            <td class="fw-bold">English Name:</td>
+            <td><?php echo get_field('eng_name');?></td>
+        </tr>
+        <tr>
+            <td class="fw-bold">Nick Name:</td>
+            <td><?php echo get_field('nick_name');?></td>
+        </tr>
+        <tr>
+            <td class="fw-bold">Whatsapp</td>
+            <td><a href="https://wa.me/852<?php echo get_field('whatsapp_tel');?>"
+                    target="_blank"><?php echo get_field('whatsapp_tel');?></a></td>
+        </tr>
+        <tr>
+            <td class="fw-bold">Enable</td>
+            <td><?php echo get_field('enable');?></td>
+        </tr>
+
+    </table>
+
     <div class="row mt-5 gx-5">
 
 
@@ -391,57 +414,53 @@ get_header();
 
                 <?php
                     
-        $meta_query_arr = array(
-            'relation' => 'AND');
-
-            array_push($meta_query_arr,array('key'=>'enable','value'=>'yes','compare' => '='));
-
-            
+        // $meta_query_arr = array(
+            // 'relation' => 'AND');
+// 
             // echo 99;
-            if($_POST && $_POST['filter-form'])
-            {
-                if($_POST['gender'])
-                {
-                    array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
-                }
-                if($_POST['student-level'])
-                {
-                    array_push($meta_query_arr,array('key'=>'student_level_2','value'=>$_POST['student-level'],'compare' => 'IN'));
-                }
+            // if($_POST && $_POST['filter-form'])
+            // {
+            //     if($_POST['gender'])
+            //     {
+            //         array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
+            //     }
+            //     if($_POST['student-level'])
+            //     {
+            //         array_push($meta_query_arr,array('key'=>'student_level_2','value'=>$_POST['student-level'],'compare' => 'IN'));
+            //     }
 
-                if($_POST['class-area'])
-                {
-                    array_push($meta_query_arr,array('key'=>'class_area','value'=>$_POST['class-area'],'compare' => 'IN'));
-                }
-
-
-
+            //     if($_POST['class-area'])
+            //     {
+            //         array_push($meta_query_arr,array('key'=>'class_area','value'=>$_POST['class-area'],'compare' => 'IN'));
+            //     }
 
 
 
                 
-            }
+            // }
        
             
-            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+            // $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 // echo $paged;
-  $args = array(  
-    'post_type' => 'student',
-    'post_status' => 'publish',
-    'posts_per_page' => 8, 
-    'orderby' => 'date', 
-    'order' => 'DESC', 
-    'meta_query' => $meta_query_arr,
-    'paged' => $paged
-);
+//   $args = array(  
+//     'post_type' => 'student',
+//     'post_status' => 'publish',
+//     'posts_per_page' => 8, 
+//     'orderby' => 'date', 
+//     'order' => 'DESC', 
+//     'meta_query' => $meta_query_arr,
+//     'paged' => $paged
+// );
 
-$loop = new WP_Query( $args ); 
+// $loop = new WP_Query( $args ); 
     
-while ( $loop->have_posts() ) { 
-    $loop->the_post(); 
+// while ( $loop->have_posts() ) { 
+    // $loop->the_post(); 
     // echo 1;
     // implode(', ', $Array)
     ?>
+                <!-- 999 -->
+                <?php echo get_field('cost_per_ppl');?>
                 <li class="student-content-li" data-student-id="<?php echo get_field('student_id');?>"
                     data-student-gender="<?php echo get_field('gender');?>"
                     data-salary="<?php echo get_field('cost_per_ppl');?>"
@@ -450,7 +469,7 @@ while ( $loop->have_posts() ) {
                     data-subjects="<?php echo implode(' ', get_field('subjects'));?>"
                     data-lesson-hour="<?php echo get_field('lesson_per_week');?>"
                     data-time="<?php echo get_field('hour_per_lesson');?>"
-                    data-start-tutorial-time="<?php echo implode(' ',  get_field('days')).' ';?><?php echo get_field('start_tutorial_time');?>"
+                    data-start-tutorial-time="<?php echo get_field('start_tutorial_time');?>"
                     data-short-address="<?php echo get_field('short_address');?>"
                     data-tutor-gender="<?php  echo get_field('tutor_gender');?>"
                     data-tutorial-target="<?php echo implode(' ', get_field('objective')).' '.get_field('objective_value_other');?>"
@@ -488,7 +507,7 @@ while ( $loop->have_posts() ) {
                     </div>
                 </li>
                 <?php
-}
+// }
                 
                 
 
@@ -554,13 +573,13 @@ $(function() {
     });
 
 
-    $('.filter-btn').click(function() {
+    // $('.filter-btn').click(function() {
 
-        $('.lightbox').fadeIn(0);
-        $('.lightbox .lightbox-content').fadeOut(0);
-        $('.lightbox .lightbox-content.filter-content').fadeIn(0);
+    //     $('.lightbox').fadeIn(0);
+    //     $('.lightbox .lightbox-content').fadeOut(0);
+    //     $('.lightbox .lightbox-content.filter-content').fadeIn(0);
 
-    });
+    // });
 
 
     $('.prev-step-btn').fadeOut(0);
@@ -673,16 +692,16 @@ $(function() {
 
 
 
-        var class_area = $(this).closest('.student-content-li').attr('data-class-area');
-        var class_area_arr = class_area.split(',');
+        // var class_area = $(this).closest('.student-content-li').attr('data-class-area');
+        // var class_area_arr = class_area.split(',');
 
-        $('.place-span').removeClass('deep-green');
-        for (i = 0; i < $('.place-span').length; i++) {
+        // $('.place-span').removeClass('deep-green');
+        // for (i = 0; i < $('.place-span').length; i++) {
 
-            if (class_area_arr.includes($('.place-span').eq(i).html())) {
-                $('.place-span').eq(i).addClass('deep-green');
-            }
-        }
+        //     if (class_area_arr.includes($('.place-span').eq(i).html())) {
+        //         $('.place-span').eq(i).addClass('deep-green');
+        //     }
+        // }
 
         // id="lbc-self-intro
 
