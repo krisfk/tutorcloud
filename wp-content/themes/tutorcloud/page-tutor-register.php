@@ -138,8 +138,8 @@ get_header();
         }?>
 
             <div class="step-content step-content-1">
-                <?php echo get_field('terms');?>
-                <!-- <ul class="terms-list-ul">
+                <?php //echo get_field('terms');?>
+                <ul class="terms-list-ul">
                     <li>
 
                         <a href="javascript:void(0);" class="terms-a">
@@ -274,7 +274,7 @@ get_header();
 
                     </li>
 
-                </ul> -->
+                </ul>
 
                 <a href="javascript:void(0);" class="agree-terms-btn">同意以上條款</a>
 
