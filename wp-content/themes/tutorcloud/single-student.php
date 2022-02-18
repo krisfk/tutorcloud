@@ -412,9 +412,9 @@ if (!$is_admin) {
 
                 <?php
                     
-        $meta_query_arr = array(
-            'relation' => 'AND');
-
+        // $meta_query_arr = array(
+            // 'relation' => 'AND');
+// 
             // echo 99;
             if($_POST && $_POST['filter-form'])
             {
@@ -438,7 +438,7 @@ if (!$is_admin) {
             }
        
             
-            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+            // $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 // echo $paged;
 //   $args = array(  
 //     'post_type' => 'student',
