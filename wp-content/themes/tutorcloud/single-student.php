@@ -293,6 +293,12 @@ if (!$is_admin) {
                             <td>補習方式</td>
                             <td id="lbc-tutorial-style"></td>
                         </tr>
+                        <tr id="lbc-can-sep-tutor-tr">
+                            <td>可否分開導師？
+                            </td>
+                            <td id="lbc-can-sep-tutor"></td>
+                        </tr>
+
 
                     </table>
 
@@ -324,6 +330,14 @@ if (!$is_admin) {
                                 <!-- 小學 初中 高中 -->
 
                             </td>
+                        </tr>
+                        <tr id="lbc-paper-lang-tr">
+                            <td>語言</td>
+                            <td id="lbc-paper-lang"></td>
+                        </tr>
+                        <tr id="lbc-instrument-tr">
+                            <td>樂器</td>
+                            <td id="lbc-instrument"></td>
                         </tr>
 
                     </table>
@@ -462,6 +476,9 @@ if (!$is_admin) {
                 <!-- 999 -->
                 <?php //echo get_field('cost_per_ppl');?>
                 <li class="student-content-li" data-student-id="<?php echo get_field('student_id');?>"
+                    data-can-sep-tutor="<?php echo get_field('can_sep_tutor');?>"
+                    data-paper-lang="<?php echo get_field('paper_lang');?>"
+                    data-instrument="<?php echo get_field('instrument');?>"
                     data-student-gender="<?php echo get_field('gender');?>"
                     data-salary="<?php echo get_field('cost_per_ppl');?>"
                     data-tutorial-style="<?php echo get_field('tutorial_style');?>"
@@ -635,6 +652,35 @@ $(function() {
 
         $('#lbc-student-gender').html($(this).closest('.student-content-li').attr(
             'data-student-gender'));
+
+        $('#lbc-instrument').html($(this).closest('.student-content-li').attr(
+            'data-instrument'));
+
+        if ($('#lbc-instrument').html() == '') {
+            $('#lbc-instrument-tr').fadeOut(0);
+        } else {
+            $('#lbc-instrument-tr').fadeIn(0);
+        }
+
+        $('#lbc-can-sep-tutor').html($(this).closest('.student-content-li').attr(
+            'data-can-sep-tutor'));
+
+        if ($('#lbc-can-sep-tutor').html() == '') {
+            $('#lbc-can-sep-tutor-tr').fadeOut(0);
+        } else {
+            $('#lbc-can-sep-tutor-tr').fadeIn(0);
+        }
+
+
+        $('#lbc-paper-lang').html($(this).closest('.student-content-li').attr(
+            'data-paper-lang'));
+
+
+        if ($('#lbc-paper-lang').html() == '') {
+            $('#lbc-paper-lang-tr').fadeOut(0);
+        } else {
+            $('#lbc-paper-lang-tr').fadeIn(0);
+        }
         $('#lbc-salary').html($(this).closest('.student-content-li').attr('data-salary'));
         $('#lbc-tutorial-style').html($(this).closest('.student-content-li').attr(
             'data-tutorial-style'));
