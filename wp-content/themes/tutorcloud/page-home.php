@@ -44,30 +44,40 @@ get_header();
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 text-center"><img class="pt-icon"
                 src="<?php echo get_template_directory_uri();?>/assets/images/icon-2.png" alt="">
-            <div class="pt-title mt-3">簡易登記</div>
-            <div class="pt-content mt-3">登記過程簡易快速，只需填寫個案基本資料，最快2分鐘內完成登記。</div>
+            <?php echo get_field('content_2');?>
+
+            <!-- <div class="pt-title mt-3">簡易登記</div>
+            <div class="pt-content mt-3">登記過程簡易快速，只需填寫個案基本資料，最快2分鐘內完成登記。</div> -->
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 text-center"><img class="pt-icon"
                 src="<?php echo get_template_directory_uri();?>/assets/images/icon-3.png" alt="">
-            <div class="pt-title mt-3">彈性課堂</div>
-            <div class="pt-content mt-3">學生可以自由選擇上課地點及時間，不論是上門、會所、視像補習都由學生自行決定。不像傳統補習社限制時間和地點，私人補習配對解決空間和時間的限制。</div>
+            <?php echo get_field('content_3');?>
+
+            <!-- <div class="pt-title mt-3">彈性課堂</div>
+            <div class="pt-content mt-3">學生可以自由選擇上課地點及時間，不論是上門、會所、視像補習都由學生自行決定。不像傳統補習社限制時間和地點，私人補習配對解決空間和時間的限制。</div> -->
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 text-center"> <img class="pt-icon"
                 src="<?php echo get_template_directory_uri();?>/assets/images/icon-4.png" alt="">
-            <div class="pt-title mt-3">即時配對</div>
-            <div class="pt-content mt-3">網上登記後有專人聯絡，最快24小時內為家長提供多個合適的專業導師作選擇。</div>
+            <?php echo get_field('content_4');?>
+
+            <!-- <div class="pt-title mt-3">即時配對</div>
+            <div class="pt-content mt-3">網上登記後有專人聯絡，最快24小時內為家長提供多個合適的專業導師作選擇。</div> -->
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 text-center"><img class="pt-icon"
                 src="<?php echo get_template_directory_uri();?>/assets/images/icon-5.png" alt="">
-            <div class="pt-title mt-3">收費透明</div>
+            <?php echo get_field('content_5');?>
+
+            <!-- <div class="pt-title mt-3">收費透明</div>
             <div class="pt-content mt-3">TutorCloud 師魂 承諾不收取家長任何行政費用，只向導師收取首兩星期學費作行
-                政費。所有收費在網站清楚列明，絕對沒有隱藏收費。</div>
+                政費。所有收費在網站清楚列明，絕對沒有隱藏收費。</div> -->
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4 text-center"><img class="pt-icon"
                 src="<?php echo get_template_directory_uri();?>/assets/images/icon-6.png" alt="">
-            <div class="pt-title mt-3">學生主導</div>
-            <div class="pt-content mt-3">登記個案時，家長可自行挑選心水導師，增加配對的成效。</div>
+            <?php echo get_field('content_6');?>
+
+            <!-- <div class="pt-title mt-3">學生主導</div>
+            <div class="pt-content mt-3">登記個案時，家長可自行挑選心水導師，增加配對的成效。</div> -->
         </div>
 
     </div>
