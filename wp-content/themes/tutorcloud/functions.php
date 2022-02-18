@@ -823,7 +823,7 @@ add_action( 'rest_api_init', function () {
 
 	
 
-	$to='krisfk@gmail.com,kay@idea-play.com';
+	$to='hktutorcloud@gmail.com';
 	$subject='導師'.$tutor_id.' 對'.'個案'.$student_id.'發出申請。';
 	$message='導師'.$tutor_url.' 對'.'個案'.$student_url.'發出申請。';
 

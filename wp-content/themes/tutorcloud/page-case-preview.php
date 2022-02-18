@@ -597,7 +597,7 @@ get_header();
 
             // $tutor_id=$request['tutor_id'];
 
-            $to='krisfk@gmail.com';
+            $to='hktutorcloud@gmail.com';
             $subject='補習個案'.$student_id.'已建立。';
             $message='補習個案'.$student_id.'已建立。<br/><br/> 心儀導師名單如下：<br/>'.$_POST['tutor-list'];
             if(wp_mail( $to, $subject, $message ))
