@@ -369,7 +369,7 @@ if (!$is_admin) {
     </div>
 
 
-    <!-- <table class="w-50 mx-auto mt-5 preview-table">
+    <table class="w-50 mx-auto mt-5 preview-table">
         <tr>
             <td class="fw-bold">Email:</td>
             <td>
@@ -398,7 +398,7 @@ if (!$is_admin) {
             <td><?php echo get_field('enable');?></td>
         </tr>
 
-    </table> -->
+    </table>
 
     <div class="row mt-5 gx-5">
 
