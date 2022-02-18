@@ -458,6 +458,7 @@ if (!$is_admin) {
     // implode(', ', $Array)
     ?>
                 999
+                <?php echo get_field('student_id');?>
                 <li class="student-content-li" data-student-id="<?php echo get_field('student_id');?>"
                     data-student-gender="<?php echo get_field('gender');?>"
                     data-salary="<?php echo get_field('cost_per_ppl');?>"
