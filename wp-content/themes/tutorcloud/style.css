@@ -1506,6 +1506,9 @@ input[type='number'] {
     .msg-div a {
         font-size: 0.7rem;
     }
+    .hv-msg.top-div-blank {
+        height: 125px;
+    }
 }
 
 @media only screen and (max-width: 375px) {}
