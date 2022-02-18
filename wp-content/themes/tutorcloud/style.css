@@ -1507,7 +1507,10 @@ input[type='number'] {
         font-size: 0.7rem;
     }
     .hv-msg.top-div-blank {
-        height: 125px;
+        height: 100px;
+    }
+    .home-banner-content {
+        padding: 1rem;
     }
 }
 
