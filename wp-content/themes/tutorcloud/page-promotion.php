@@ -16,8 +16,9 @@ get_header();
 
     <div class="home-banner-content">
         <div class="banner-msg">
-            開業優惠！只收導師 <span class="large-txt">1.5星期</span> 學費作行政費 <br>
-            家長可獲高達 <span class="large-txt">$100</span> 現金回贈
+            <?php echo get_field('promotion_txt');?>
+            <!-- 開業優惠！只收導師 <span class="large-txt">1.5星期</span> 學費作行政費 <br>
+            家長可獲高達 <span class="large-txt">$100</span> 現金回贈 -->
         </div>
 
     </div>
@@ -43,7 +44,9 @@ get_header();
 
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 col-12  ">
-            <div class="pt-title mt-3 text-start">現金回贈</div>
+            <?php echo get_field('content_1');?>
+
+            <!-- <div class="pt-title mt-3 text-start">現金回贈</div>
             <div class="mt-4">
                 當補習個案成功配對，即已完成首兩星期課堂，家長可獲半堂學費為現金回贈，上限為$100。 <br><br>
                 例如： <br><br>
@@ -52,7 +55,7 @@ get_header();
                 一星期兩堂，每堂1.5小時，每小時$160，$160 × 1.5 ÷ 2＝$120，則可獲$100 現金回贈 <br><br>
 
                 家長可選擇通過銀行轉賬或轉數快 (FPS) 收取現金回贈。當個案確認成功配對，TutorCloud將於
-                一星期內過數。</div>
+                一星期內過數。</div> -->
 
             <div class="apply-case-btn-div">
                 <a href="<?php echo get_site_url();?>/apply-case"
@@ -65,14 +68,15 @@ get_header();
     <div class="row align-items-top justify-content-center mt-5 reverse-col">
 
         <div class="col-lg-6 col-md-12 col-sm-12 col-12  ">
-            <div class="pt-title mt-3 text-start">行政費優惠</div>
+            <?php echo get_field('content_2');?>
+            <!-- <div class="pt-title mt-3 text-start">行政費優惠</div>
             <div class="mt-4">
                 首課堂前，家長會先將首兩星期的學費交給TutorCloud，代導師繳交行政費。 <br> <br>
 
                 當個案確認成功配對，即已完成首兩星期課堂，TutorCloud會於一星期內將半星期學費退還給導師，
                 回贈金額上限為$200。<br><br>
 
-                導師可選擇通過銀行轉賬或轉數快 (FPS) 收取費用。</div>
+                導師可選擇通過銀行轉賬或轉數快 (FPS) 收取費用。</div> -->
 
             <div class="apply-case-btn-div">
                 <a href="<?php echo get_site_url();?>/tutor-register"
