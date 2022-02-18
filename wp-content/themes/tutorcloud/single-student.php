@@ -15,7 +15,7 @@ get_header();
 // print_r(array_unique(array_merge($arr1,$arr2)));
 $is_admin = current_user_can('manage_options');  // all user they have mange option will get 
 echo get_field('student_id');
-echo 11;
+// echo 11;
 if (!$is_admin) {
     wp_redirect(get_site_url());
         exit;
