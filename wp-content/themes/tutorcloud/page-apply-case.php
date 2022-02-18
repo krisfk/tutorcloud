@@ -542,7 +542,7 @@ if($_POST &&  $_POST['apply-case-form'])
     </h5>
 
     <div class="text-center mt-3 submitted-hide <?php echo $submit_success ? 'd-none' :''; ?>">
-        <a href="#" class="filter-btn">導師選項</a>
+        <a href="#" class="filter-btn">篩選導師</a>
     </div>
     <div class="row mt-5 gx-5 submitted-hide <?php echo $submit_success ? 'd-none' :''; ?>">
 
