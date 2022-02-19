@@ -219,6 +219,11 @@ get_header();
                             </div>
                         </td>
                     </tr>
+
+                    <tr>
+                        <td>科目</td>
+                        <td></td>
+                    </tr>
                 </table>
 
                 <div class="text-center">
