@@ -1495,6 +1495,10 @@ input[type='number'] {
     .top-menu-ul li a {
         display: block;
         padding: 0.4em 0 0.4rem 0;
+        transition: 0.2s all;
+    }
+    .top-menu-ul li a:hover {
+        opacity: 0.85;
     }
     .content-img {
         max-width: 350px;
