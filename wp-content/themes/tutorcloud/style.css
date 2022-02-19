@@ -201,10 +201,12 @@ body {
     /* background: ; */
     background-position: 90% 50%;
     display: inline-block;
+    transition: 0.2s all;
 }
 
 .know-more-btn:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .home-banner-content {
