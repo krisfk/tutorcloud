@@ -2318,7 +2318,7 @@ $(function() {
 
     $('.filter-btn').click(function() {
 
-        $('.lightbox').fadeIn(0);
+        $('.lightbox').fadeIn(200);
         $('.lightbox .lightbox-content').fadeOut(0);
         $('.lightbox .lightbox-content.filter-content').fadeIn(0);
 
@@ -2397,7 +2397,7 @@ $(function() {
 
     $('.data-column').click(function() {
 
-        $('.lightbox').fadeIn(0);
+        $('.lightbox').fadeIn(200);
         $('.lightbox .lightbox-content').fadeOut(0);
         $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
 

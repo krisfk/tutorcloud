@@ -616,7 +616,7 @@ $(function() {
 
     $('.data-column').click(function() {
 
-        $('.lightbox').fadeIn(0);
+        $('.lightbox').fadeIn(200);
         $('.lightbox .lightbox-content').fadeOut(0);
         $('.lightbox .lightbox-content.tutor-intro').fadeIn(0);
 

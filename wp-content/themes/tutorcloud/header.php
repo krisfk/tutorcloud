@@ -29,7 +29,7 @@
 
     <script type="text/javascript">
     function show_lightbox_msg(msg) {
-        $('.lightbox').fadeIn(0);
+        $('.lightbox').fadeIn(200);
         $('.lightbox .lightbox-content').fadeOut(0);
         $('.lightbox-msg-txt').html(msg);
         $('.lightbox .lightbox-content.lightbox-msg').fadeIn(0);
