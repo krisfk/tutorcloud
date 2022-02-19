@@ -143,6 +143,12 @@ body {
     text-decoration: none;
     border-radius: 10px;
     box-shadow: 0px 1px 12.32px 1.68px rgba(0, 0, 0, 0.18);
+    transition: 0.2s all;
+}
+
+.tutor-login-btn:hover,
+.tutor-info-btn:hover {
+    opacity: 0.85;
 }
 
 .tutor-logout-btn {
