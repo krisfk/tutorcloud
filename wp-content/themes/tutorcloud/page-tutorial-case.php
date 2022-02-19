@@ -450,6 +450,14 @@ get_header();
                     array_push($meta_query_arr,array('key'=>'class_area','value'=>$_POST['class-area'],'compare' => 'IN'));
                 }
 
+                if($_POST['subjects'])
+                {
+                    array_push($meta_query_arr,array('key'=>'subjects','value'=>$_POST['subjects'],'compare' => 'IN'));
+                }
+
+
+
+
 
 
 
