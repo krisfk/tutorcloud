@@ -430,6 +430,10 @@ get_header();
         $meta_query_arr = array(
             'relation' => 'AND');
 
+        $meta_query_arr2 = array(
+                'relation' => 'OR');
+
+                
             array_push($meta_query_arr,array('key'=>'enable','value'=>'yes','compare' => '='));
 
             
@@ -454,9 +458,10 @@ get_header();
                 {
                     for($i=0;$i<count($_POST['subjects']);$i++)
                     {
-                        array_push($meta_query_arr,array('key'=>'subjects','value'=>$_POST['subjects'][$i],'compare' => 'LIKE'));
+                        array_push($meta_query_arr2,array('key'=>'subjects','value'=>$_POST['subjects'][$i],'compare' => 'LIKE'));
                     }
                 }
+                array_push($meta_query_arr,$meta_query_arr2);
 
 
 
