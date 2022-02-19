@@ -222,7 +222,24 @@ get_header();
 
                     <tr>
                         <td>科目</td>
-                        <td></td>
+                        <td>
+                            <?php
+                                $subject_arr=array("全科","功課輔導","中文","英文","數學","數學 (M1)","數學 (M2)","通識","物理","化學","生物","綜合科學","資訊及通訊科技","地理","中史","西史","中國文學","英國文學","倫理與宗教","經濟","企業、會計與財務概論","旅遊與款待","普通話","常識");
+                                for($i=0;$i<count($subject_arr);$i++)
+                                {
+                                    ?>
+
+                            <div class="checkbox-div"><input type="checkbox" class="form-check-input"
+                                    id="subject_value_<?php echo $i;?>" name="subjects[]"
+                                    value="<?php echo $subject_arr[$i];?>" /><label
+                                    for="subject_value_<?php echo $i;?>"><?php echo $subject_arr[$i];?></label>
+                            </div>
+                            <?php
+                                }
+                                ?>
+
+
+                        </td>
                     </tr>
                 </table>
 
