@@ -399,12 +399,12 @@ h2 .bar {
 
 .next-step-btn:hover {
     color: #fff;
-    opacity: 0.2s;
+    opacity: 0.85;
 }
 
 .filter-btn:hover {
     color: #fff;
-    opacity: 0.2s;
+    opacity: 0.85;
 }
 
 .step-txt.active {
