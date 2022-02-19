@@ -1160,8 +1160,15 @@ input[type='number'] {
     padding: 0rem;
 }
 
+
+/* .place-span {
+    word-break: keep-all;
+    
+} */
+
 .place-span {
     word-break: keep-all;
+    color: #b3cccb;
 }
 
 .cal-icon {
