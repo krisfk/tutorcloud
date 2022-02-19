@@ -166,6 +166,7 @@ body {
 .tutor-info-btn:hover,
 .tutor-logout-btn:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .home-banner-div {
@@ -340,6 +341,7 @@ h2 .bar {
     text-decoration: none;
     border-radius: 10px;
     box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
+    opacity: 0.85;
     /* margin: 0 auto; */
 }
 
@@ -565,10 +567,12 @@ h2 .bar {
 
 .prev-step-btn:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .agree-terms-btn:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .subject-list label {
@@ -654,6 +658,7 @@ input[type='checkbox'] {
 
 .radio-cancel-btn:hover {
     color: #00374f;
+    opacity: 0.85;
 }
 
 .dse-big-radio-table {
@@ -712,6 +717,7 @@ input[type='checkbox'] {
 
 .subject-list-top a:hover {
     color: #769e9c;
+    opacity: 0.85;
 }
 
 .subject-list {
@@ -766,6 +772,7 @@ input[type='checkbox'] {
 
 .submit-login-btn:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .tutor-reg-icon {
@@ -835,6 +842,7 @@ input[type='checkbox'] {
 
 .tutor-apply-a:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .tutor-list-ul .data-column {
@@ -1038,6 +1046,7 @@ input[type='number'] {
 
 .lightbox .add-btn-a:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .price-table th {
@@ -1085,6 +1094,7 @@ input[type='number'] {
 
 .forgot-pw-a:hover {
     color: #769e9c;
+    opacity: 0.85;
 }
 
 #content {
@@ -1117,6 +1127,7 @@ input[type='number'] {
 .file-a:hover {
     text-decoration: underline;
     color: #769e9c;
+    opacity: 0.85;
 }
 
 .change-file-btn {
@@ -1135,6 +1146,7 @@ input[type='number'] {
 
 .change-file-btn:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .file-input-hide {
@@ -1161,6 +1173,7 @@ input[type='number'] {
 .msg-div a:hover {
     color: #fff;
     text-decoration: none;
+    opacity: 0.85;
 }
 
 #lbc-self-intro {
@@ -1314,10 +1327,12 @@ input[type='number'] {
     text-decoration: none;
     border-radius: 10px;
     box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
+    transition: 0.2s all;
 }
 
 .forgot-fw-submit-btn:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 @media only screen and (max-width: 1920px) {}
