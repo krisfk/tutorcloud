@@ -809,7 +809,12 @@ input[type='checkbox'] {
     color: #fff;
     position: relative;
     z-index: 100;
+    transition: 0.2s all;
     padding: 1rem 0 1rem 0;
+}
+
+.add-btn-a:hover {
+    opacity: 0.85;
 }
 
 .tutor-apply-a {
