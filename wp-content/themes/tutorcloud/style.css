@@ -639,10 +639,12 @@ input[type='checkbox'] {
     width: fit-content;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    transition: 0.2s all;
 }
 
 .submit-btn:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .radio-cancel-btn {
@@ -1061,6 +1063,11 @@ input[type='number'] {
     font-size: 1rem;
     margin: 0 1rem 0 0 !important;
     border: none;
+    transition: 0.2s all;
+}
+
+.login-table .submit-btn:hover {
+    opacity: 0.85;
 }
 
 
