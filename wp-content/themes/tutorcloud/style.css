@@ -275,10 +275,12 @@ h2 .bar {
     font-size: 1.3rem;
     background-size: auto 42%;
     box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
+    transition: 0.2s all;
 }
 
 .apply-case-btn:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .reg-tutor-btn {
@@ -292,10 +294,12 @@ h2 .bar {
     font-size: 1.3rem;
     background-size: auto 60%;
     box-shadow: 0px 1px 12.32px 1.68px rgb(0 0 0 / 18%);
+    transition: 0.2s all;
 }
 
 .reg-tutor-btn:hover {
     color: #fff;
+    opacity: 0.85;
 }
 
 .bottom-btns {
