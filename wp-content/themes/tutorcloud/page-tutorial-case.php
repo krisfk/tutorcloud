@@ -452,8 +452,8 @@ get_header();
 
                 if($_POST['subjects'])
                 {
-                    print_r($_POST['subjects']);
-                    array_push($meta_query_arr,array('key'=>'subjects','value'=>$_POST['subjects'],'compare' => 'IN'));
+                    // print_r($_POST['subjects']);
+                    array_push($meta_query_arr,array('key'=>'subjects','value'=>$_POST['subjects'],'compare' => 'LIKE'));
                 }
 
 
