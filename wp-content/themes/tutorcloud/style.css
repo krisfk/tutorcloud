@@ -1335,6 +1335,10 @@ input[type='number'] {
     opacity: 0.85;
 }
 
+.page-apply-case .prev-step-btn {
+    display: none;
+}
+
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1200px) {
