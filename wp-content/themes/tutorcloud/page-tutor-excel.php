@@ -100,6 +100,13 @@ $table='<table class="excel-table mt-5" id="excel-table">
                 $table .='<td>'.implode(',', $all_posts[$i][$field_key_arr[$j]]).'</td>';   
 
             }
+            else if($field_key_arr[$j]=='proof1' ||$field_key_arr[$j]=='proof2')
+            {
+                $file_src = wp_get_attachment_url($all_posts[$i][$field_key_arr[$j]]);
+
+                $table .='<td>'.$file_src.'</td>';   
+
+            }
             else
             {
                 $table .='<td>'.$all_posts[$i][$field_key_arr[$j]].'</td>';   
