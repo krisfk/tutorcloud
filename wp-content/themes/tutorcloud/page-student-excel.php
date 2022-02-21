@@ -52,10 +52,12 @@ if ( $the_query->have_posts() ){
 	while ( $the_query->have_posts() )
     { 
         $the_query->the_post();
-        echo 1;
-        // echo 
-		// $fields = get_fields(get_the_ID());
+        
 
+        // echo 1;
+        // echo 
+		$fields = get_fields(get_the_ID());
+        print_r($fields);
         // if(!$save_th)
         // {
         //     foreach( $fields as $name => $value ){
@@ -72,7 +74,7 @@ if ( $the_query->have_posts() ){
         // }       
         
         // $save_th=true;
-        print_r($fields);
+        // print_r($fields);
         
         // array_push($all_posts, $fields);
 
