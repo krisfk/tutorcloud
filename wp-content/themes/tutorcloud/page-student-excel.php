@@ -47,12 +47,13 @@ $table_th_arr= array();
 $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ){
 
+    echo 1;
 	// while ( $the_query->have_posts() )
     
     // { 
         $the_query->the_post();
 		$fields = get_fields();
-        print_r($fields);
+        // print_r($fields);
             foreach( $fields as $name => $value ){
                 echo 1;
                 // echo 1;
