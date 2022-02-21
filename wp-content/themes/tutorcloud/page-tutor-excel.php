@@ -44,8 +44,8 @@ $args = array(
 $the_query = new WP_Query( $args );
 $the_query->the_post();
 // echo get_the_ID();
-$fields=get_fields(get_the_ID());
-
+$fields=get_fields(446);
+echo 11;
 print_r($fields);
 
 $all_posts = array();
