@@ -59,10 +59,10 @@ if ( $the_query->have_posts() ):
         {
         
             foreach( $fields as $name => $value ){
-                echo $name;
+                // echo $name;
                 $field = get_field_object($name); 
                 array_push($table_th_arr,$field['label']);
-                // array_push($table_th_arr,$field['name']);
+                array_push($field_key_arr,$name);
 
                 $save_th=true;
             }
@@ -70,10 +70,12 @@ if ( $the_query->have_posts() ):
         }
 array_push($all_posts, $fields);
 
+
 endwhile;
 wp_reset_postdata();
 
 endif;
+print_r($all_posts);
 ?>
 
 <?php
@@ -91,7 +93,11 @@ $table='<table class="excel-table mt-5" id="excel-table">
     {
         $table .='<tr>';
         
-        $table .='<td>f</td>';
+        for($j=0;$j<count($field_key_arr);$j++)
+        {
+            // $table .='<td>'.$all_posts.'</td>';   
+        }
+        // $table .='<td>f</td>';
 
         // foreach($all_posts[$i] as $key => $value){
                 
