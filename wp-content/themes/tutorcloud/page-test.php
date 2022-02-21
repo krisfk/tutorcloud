@@ -6,9 +6,9 @@
 // }
 
         // $tutor_id = 'T'.
-        $post_id= 999;
-        $tutor_id = str_pad($post_id, 5, '0', STR_PAD_LEFT);
-        echo 'T'.substr(date('Y'),2,2).$tutor_id;
+        // $post_id= 999;
+        // $tutor_id = str_pad($post_id, 5, '0', STR_PAD_LEFT);
+        // echo 'T'.substr(date('Y'),2,2).$tutor_id;
     // echo $tutor_id;
 
 ?>
