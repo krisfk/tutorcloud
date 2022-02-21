@@ -86,19 +86,22 @@ $table='<table class="excel-table mt-5" id="excel-table">
     for($i=0;$i<count($all_posts);$i++)
     {
         $table .='<tr>';
-        foreach($all_posts[$i] as $key => $value){
+        
+        ?>
+<td>f</td>
+<?php
+        // foreach($all_posts[$i] as $key => $value){
                 
-            // echo gettype($value);
-            if(is_array($value))
-            {
-                  $table .='<td>'.implode(',', $value).'</td>';
+        //     if(is_array($value))
+        //     {
+        //           $table .='<td>'.implode(',', $value).'</td>';
 
-            }
-            else
-            {
-                $table .='<td>'.$value.'</td>';
-            }
-        }
+        //     }
+        //     else
+        //     {
+        //         $table .='<td>'.$value.'</td>';
+        //     }
+        // }
         $table .='</tr>';
     }
 
