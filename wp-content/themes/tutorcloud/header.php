@@ -140,7 +140,14 @@ echo'</li>';
 
 
 ?>
-                                        <li>fd</li>
+                                        <li> <a href="<?php echo get_site_url();?>" class="sns-a">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/fb.png"
+                                                    alt="">
+                                            </a></li>
+                                        <li> <a href="<?php echo get_site_url();?>" class="sns-a">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/ig.png"
+                                                    alt="">
+                                            </a></li>
 
                                         <li class="mobile-tutor-div"> <?php
 // echo $_SESSION['tutor_post_id'];
