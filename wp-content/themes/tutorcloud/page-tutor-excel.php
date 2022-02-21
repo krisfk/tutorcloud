@@ -41,41 +41,18 @@ $args = array(
     'post_status' => 'publish',
     'posts_per_page' => -1,
 );
-$the_query = new WP_Query( $args );
-$the_query->the_post();
-// echo get_the_ID();
-$fields=get_fields(446);
-echo 11;
-print_r($fields);
 
 $all_posts = array();
 $table_th_arr= array();
-
-$save_th =false;
-
-// $fields = get_fields();
-
-
-
+$the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
-    // echo get_the_ID();
-    
 		$fields = get_fields();
-        if(!$save_th)
-        {
-            // echo 1;
-            print_r($fields);
             foreach( $fields as $name => $value ){
-                // echo $name;
                 $field = get_field_object($name); 
                 array_push($table_th_arr,$field['label']);
-                // echo 22;
             }
-        }
-            $save_th =true;
-
 array_push($all_posts, $fields);
 
 endwhile;
@@ -85,7 +62,6 @@ endif;
 ?>
 
 <?php
-print_r($table_th_arr);
 $table='<table class="excel-table mt-5" id="excel-table">
         <tr>';
 
