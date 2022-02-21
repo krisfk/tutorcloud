@@ -16,8 +16,8 @@ get_header();
 $is_admin = current_user_can('manage_options');  // all user they have mange option will get 
 
 if (!$is_admin) {
-    // wp_redirect(get_site_url());
-        // exit;
+    wp_redirect(get_site_url());
+        exit;
 }
 
 ?>
