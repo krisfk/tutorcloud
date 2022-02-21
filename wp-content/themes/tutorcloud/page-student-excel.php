@@ -45,13 +45,16 @@ $args = array(
 $all_posts = array();
 $table_th_arr= array();
 $the_query = new WP_Query( $args );
-if ( $the_query->have_posts() ):
+if ( $the_query->have_posts() ){
 
-	while ( $the_query->have_posts() ): $the_query->the_post();
+	// while ( $the_query->have_posts() )
+    
+    // { 
+        $the_query->the_post();
 		$fields = get_fields();
             foreach( $fields as $name => $value ){
                 // echo 1;
-                echo $name;
+                // echo $name;
                 //$field = get_field_object($name); 
                 // echo $field['label'];
                 // print_r
@@ -60,10 +63,9 @@ if ( $the_query->have_posts() ):
             }
 array_push($all_posts, $fields);
 
-endwhile;
+        // }
 wp_reset_postdata();
-
-endif;
+}
 ?>
 
 <?php
