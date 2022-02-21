@@ -6,7 +6,7 @@
 // }
 
 
-print_r(get_fields(431));
+// print_r(get_fields(431));
         // $tutor_id = 'T'.
         // $post_id= 999;
         // $tutor_id = str_pad($post_id, 5, '0', STR_PAD_LEFT);

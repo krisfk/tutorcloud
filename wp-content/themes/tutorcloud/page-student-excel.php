@@ -41,55 +41,35 @@ $args = array(
     'post_status' => 'publish',
     'posts_per_page' => -1,
 );
+
 $all_posts = array();
 $table_th_arr= array();
 $the_query = new WP_Query( $args );
-$save_th =false;
+$save_th=false;
+if ( $the_query->have_posts() ):
 
-
-if ( $the_query->have_posts() ){
-
-    // echo 1;
-	while ( $the_query->have_posts() )
-    { 
-        $the_query->the_post();
+	while ( $the_query->have_posts() ): $the_query->the_post();
+        echo get_field('tutor_id');
+        echo '<br>';
+		$fields = get_fields();
+    // print_r($fields);
+    // echo '<br><br>';
+        if(!$save_th)
+        {
         
+            foreach( $fields as $name => $value ){
+                $field = get_field_object($name); 
+                array_push($table_th_arr,$field['label']);
+                $save_th=true;
+            }
+            // echo    $save_th;
+        }
+array_push($all_posts, $fields);
 
-        // echo get_field('student_id');
-        // echo 1;
-        // echo 
+endwhile;
+wp_reset_postdata();
 
-        $field_obj = get_field_objects();
-
-        print_r($field_obj);
-        echo '<br/>';
-        echo '<br/>';
-
-		// $fields = get_fields();
-        // print_r($fields);
-        // if(!$save_th)
-        // {
-        //     foreach( $fields as $name => $value ){
-        //         // echo 1;
-        //         // echo 1;
-        //         // echo $name;
-        //         // $field = get_field_object($name); 
-        //         // echo $field['label'];
-        //         // print_r
-                
-        //         array_push($table_th_arr,$field['label']);
-        //     }
-
-        // }       
-        
-        // $save_th=true;
-        // print_r($fields);
-        
-        // array_push($all_posts, $fields);
-
-    }
-// wp_reset_postdata();
-}
+endif;
 ?>
 
 <?php
