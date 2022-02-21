@@ -1136,7 +1136,8 @@ while ( $loop->have_posts() ) {
 
 
                                 <tr>
-                                    <td> <label for="other-tutorial-course"> 其他補習課程</label></td>
+                                    <td> <label for="other-tutorial-course"> DSE以外其他補習課程 <br> <span class="small">(例如:
+                                                IB/GCE)</span></label></td>
                                     <td>
 
                                         <input id="other-tutorial-course" name="other-tutorial-course" type="text"
