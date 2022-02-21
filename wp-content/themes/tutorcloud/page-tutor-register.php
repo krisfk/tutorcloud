@@ -892,9 +892,18 @@ if($_POST)
                                     <option value="香港都會大學">香港都會大學</option>
                                     <option value="香港恒生大學">香港恒生大學</option>
                                     <option value="嶺南大學">嶺南大學</option>
+                                    <option value="其他大學">其他大學</option>
 
                                 </select></td>
                         </tr>
+                        <tr>
+                            <td><label for="other-university"> 其他大學
+                                </label></td>
+                            <td>
+                                <input type="text" id="other-university" name="other-university" class="form-control">
+                            </td>
+                        </tr>
+
                         <tr>
                             <td> <label for="tutor-level">教育程度 *
                                 </label></td>
