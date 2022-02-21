@@ -50,8 +50,8 @@ $save_th=false;
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
-        echo get_field('tutor_id');
-        echo '<br>';
+        // echo get_field('tutor_id');
+        // echo '<br>';
 		$fields = get_fields();
     // print_r($fields);
     // echo '<br><br>';
@@ -75,7 +75,7 @@ endwhile;
 wp_reset_postdata();
 
 endif;
-print_r($all_posts);
+// print_r($all_posts);
 ?>
 
 <?php
@@ -95,7 +95,7 @@ $table='<table class="excel-table mt-5" id="excel-table">
         
         for($j=0;$j<count($field_key_arr);$j++)
         {
-            // $table .='<td>'.$all_posts.'</td>';   
+            $table .='<td>'.$all_posts[$i][$field_key_arr[$j]].'</td>';   
         }
         // $table .='<td>f</td>';
 
