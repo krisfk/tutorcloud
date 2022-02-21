@@ -46,6 +46,9 @@ $all_posts = array();
 $table_th_arr= array();
 $the_query = new WP_Query( $args );
 $save_th=false;
+
+$fields= get_fields(446);
+print_r($fields);
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
