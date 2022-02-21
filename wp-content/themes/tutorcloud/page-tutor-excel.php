@@ -49,6 +49,7 @@ $save_th=false;
 
 $fields= get_fields(446);
 print_r($fields);
+echo 1;
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
