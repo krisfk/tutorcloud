@@ -793,6 +793,11 @@ if($_POST &&  $_POST['apply-case-form'])
 
             }
 
+            if(!$tutors_str)
+            {
+                echo '該學生沒有選擇心儀導師。';
+            }
+
                
             $message='補習個案<a href="'.$student_url.'" target="_blank">'.$student_id.'</a>已建立。<br/><br/> 心儀導師名單如下：<br/>'.$tutors_str;
            
