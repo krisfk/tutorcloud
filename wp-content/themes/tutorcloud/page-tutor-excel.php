@@ -60,7 +60,7 @@ if ( $the_query->have_posts() ):
         }
             $save_th =true;
 
-// array_push($all_posts, $fields);
+array_push($all_posts, $fields);
 
 endwhile;
 wp_reset_postdata();
