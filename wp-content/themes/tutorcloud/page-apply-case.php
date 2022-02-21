@@ -904,9 +904,18 @@ while ( $loop->have_posts() ) {
     // implode(', ', $Array)
     ?>
                     <li class="tutor-content-li" data-class-area="<?php echo implode(',', get_field('class_area'));?>"
-                        data-lowest-salary="<?php echo get_field('lowest_salary');?>"
-                        data-bac-degree="<?php echo get_field('bac_degree');?> <?php echo get_field('other_university');?>"
-                        data-s-school="<?php echo get_field('s_school');?>"
+                        data-lowest-salary="<?php echo get_field('lowest_salary');?>" data-bac-degree="<?php 
+                        
+                        if(get_field('bac_degree')=='其他大學')
+                        {
+                            echo get_field('other_university');
+                        }
+                        else
+                        {       
+                        echo trim(get_field('bac_degree').' '.get_field('other_university'));
+                        }
+                        
+                        ?>" data-s-school="<?php echo get_field('s_school');?>"
                         data-gender="<?php echo get_field('gender');  ?>"
                         data-tutor-id="<?php echo get_field('tutor_id');?>"
                         data-self-intro="<?php echo get_field('self_intro');?>"
