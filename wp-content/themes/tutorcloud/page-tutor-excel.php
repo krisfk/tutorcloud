@@ -95,7 +95,15 @@ $table='<table class="excel-table mt-5" id="excel-table">
         
         for($j=0;$j<count($field_key_arr);$j++)
         {
-            $table .='<td>'.$all_posts[$i][$field_key_arr[$j]].'</td>';   
+            if(is_array($all_posts[$i][$field_key_arr[$j]]))
+            {
+                $table .='<td>'.implode(',', $all_posts[$i][$field_key_arr[$j]]).'</td>';   
+
+            }
+            else
+            {
+                $table .='<td>'.$all_posts[$i][$field_key_arr[$j]].'</td>';   
+            }
         }
         // $table .='<td>f</td>';
 
