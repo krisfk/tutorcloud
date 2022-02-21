@@ -87,7 +87,7 @@ if ( $the_query->have_posts() ){
         // array_push($all_posts, $fields);
 
     }
-wp_reset_postdata();
+// wp_reset_postdata();
 }
 ?>
 
