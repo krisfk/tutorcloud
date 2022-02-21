@@ -1404,9 +1404,12 @@ input[type='number'] {
 }
 
 @media only screen and (max-width: 991px) {
-    .sns-li a {
-        padding: 0;
-        margin: 0;
+    .mobile-tutor-div .sns-li {
+        margin: 1rem 0 0 0;
+    }
+    .mobile-tutor-div .sns-li a {
+        padding: 0 !important;
+        /* margin: 0 !important; */
     }
     .msg-div {
         position: fixed;
