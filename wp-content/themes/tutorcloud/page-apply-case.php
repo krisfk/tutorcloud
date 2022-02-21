@@ -722,7 +722,9 @@ if($_POST &&  $_POST['apply-case-form'])
             ));
 
             //send email
-            $to='hktutorcloud@gmail.com';
+            // $to='hktutorcloud@gmail.com';
+            $to='krisfk@gmail.com';
+
             $subject='補習個案'.$student_id.'已建立。';
 
             $query_args = array(
