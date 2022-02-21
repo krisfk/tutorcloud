@@ -47,9 +47,15 @@ $table_th_arr= array();
 $the_query = new WP_Query( $args );
 $save_th =false;
 
+// $fields = get_fields();
+
+
+
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
+    echo get_the_ID();
+    
 		$fields = get_fields();
         if(!$save_th)
         {
