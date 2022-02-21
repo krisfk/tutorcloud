@@ -43,7 +43,10 @@ $args = array(
 );
 $the_query = new WP_Query( $args );
 $the_query->the_post();
-echo get_the_ID();
+// echo get_the_ID();
+$fields=get_fields(get_the_ID());
+
+print_r($fields);
 
 $all_posts = array();
 $table_th_arr= array();
