@@ -793,7 +793,7 @@ if($_POST &&  $_POST['apply-case-form'])
 
             }
 
-            if(count($tutor_arr)==0)
+            if(!$tutor_list)
             {
                 $tutors_str= '該學生沒有選擇心儀導師。';
             }
