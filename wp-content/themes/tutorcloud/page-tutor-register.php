@@ -363,23 +363,24 @@ if($_POST)
     $t_subjects_f13_value_other=$_POST['t-subjects-f13-value-other'];  
     $t_subjects_f46=$_POST['t-subjects-f46'];//array  
     $t_subjects_f46_value_other=$_POST['t-subjects-f46-value-other']; 
-    $t_subjects_ib=$_POST['t-subjects-ib'];//array  
-    $t_subjects_ib_value_other=$_POST['t-subjects-ib-value-other'];
+  
+    // $t_subjects_ib=$_POST['t-subjects-ib'];//array  
+    // $t_subjects_ib_value_other=$_POST['t-subjects-ib-value-other'];
 
-    $t_subjects_gceal=$_POST['t-subjects-gceal'];//array  
-    $t_subjects_gceal_value_other=$_POST['t-subjects-gceal-value-other'];
+    // $t_subjects_gceal=$_POST['t-subjects-gceal'];//array  
+    // $t_subjects_gceal_value_other=$_POST['t-subjects-gceal-value-other'];
    
-    $t_subjects_igcse=$_POST['t-subjects-igcse'];//array  
-    $t_subjects_igcse_value_other=$_POST['t-subjects-igcse-value-other'];
+    // $t_subjects_igcse=$_POST['t-subjects-igcse'];//array  
+    // $t_subjects_igcse_value_other=$_POST['t-subjects-igcse-value-other'];
 
-    $t_subjects_sat=$_POST['t-subjects-sat'];//array  
-    $t_subjects_sat_value_other=$_POST['t-subjects-sat-value-other'];
+    // $t_subjects_sat=$_POST['t-subjects-sat'];//array  
+    // $t_subjects_sat_value_other=$_POST['t-subjects-sat-value-other'];
  
-    $t_subjects_sat=$_POST['t-subjects-sat'];//array  
-    $t_subjects_sat_value_other=$_POST['t-subjects-sat-value-other'];
+    // $t_subjects_sat=$_POST['t-subjects-sat'];//array  
+    // $t_subjects_sat_value_other=$_POST['t-subjects-sat-value-other'];
  
-    $t_subjects_music=$_POST['t-subjects-music'];//array  
-    $t_subjects_music_value_other=$_POST['t-subjects-music-value-other'];
+    // $t_subjects_music=$_POST['t-subjects-music'];//array  
+    // $t_subjects_music_value_other=$_POST['t-subjects-music-value-other'];
  
     $lesson_lang=$_POST['lesson-lang'];
 
@@ -401,9 +402,11 @@ if($_POST)
     ));
     
     if ($post_id) {
+
+        $tutor_id = 'T'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
+        add_post_meta($post_id, 'tutor_id', $tutor_id);
         add_post_meta($post_id, 'email', $email);
         add_post_meta($post_id, 'enable', 'no');
-
         add_post_meta($post_id, 'login_password', $login_password);
         add_post_meta($post_id, 'chi_name', $chi_name);
         add_post_meta($post_id, 'eng_name', $eng_name);
@@ -443,7 +446,6 @@ if($_POST)
         add_post_meta($post_id, 'dse_sub_20', $dse_sub_20);
         add_post_meta($post_id, 'dse_sub_21', $dse_sub_21);
         add_post_meta($post_id, 'dse_sub_22', $dse_sub_22);
-
         add_post_meta($post_id, 'other_subject_1', $other_subject_1);
         add_post_meta($post_id, 'other_subject_2', $other_subject_2);
         add_post_meta($post_id, 'other_subject_3', $other_subject_3);
@@ -454,7 +456,6 @@ if($_POST)
         add_post_meta($post_id, 'other_subject_8', $other_subject_8);
         add_post_meta($post_id, 'other_subject_9', $other_subject_9);
         add_post_meta($post_id, 'other_subject_10', $other_subject_10);
-
         add_post_meta($post_id, 'other_subject_1_grade', $other_subject_1_grade);
         add_post_meta($post_id, 'other_subject_2_grade', $other_subject_2_grade);
         add_post_meta($post_id, 'other_subject_3_grade', $other_subject_3_grade);
@@ -465,12 +466,8 @@ if($_POST)
         add_post_meta($post_id, 'other_subject_8_grade', $other_subject_8_grade);
         add_post_meta($post_id, 'other_subject_9_grade', $other_subject_9_grade);
         add_post_meta($post_id, 'other_subject_10_grade', $other_subject_10_grade);
-
-
-
         add_post_meta($post_id, 'exam_lang', $exam_lang);
         add_post_meta($post_id, 'other_cert', $other_cert);
-
         //proof1
         //proof2
         add_post_meta($post_id, 'self_intro', $self_intro);
@@ -493,13 +490,104 @@ if($_POST)
         add_post_meta($post_id, 't_subjects_music', $t_subjects_music);
         add_post_meta($post_id, 't_subjects_music_value_other', $t_subjects_music_value_other);
         add_post_meta($post_id, 'lesson_lang', $lesson_lang);
-
         add_post_meta($post_id, 'class_area', $class_area);
         add_post_meta($post_id, 't_style', $t_style);
         add_post_meta($post_id, 'lowest_salary', $lowest_salary);
-        
-        $tutor_id = 'T'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-        add_post_meta($post_id, 'tutor_id', $tutor_id);
+
+
+
+
+
+        add_post_meta($post_id, '_tutor_id', 'field_61bceeeedd962');
+        add_post_meta($post_id, '_email', 'field_61ab211fa95fc');
+        add_post_meta($post_id, '_enable', 'field_620d662e93061');
+        add_post_meta($post_id, '_login_password', 'field_61ab2126a95fd');
+        add_post_meta($post_id, '_chi_name', 'field_61ab214da95fe');
+        add_post_meta($post_id, '_eng_name', 'field_61ab215ba95ff');
+        add_post_meta($post_id, '_nick_name', 'field_61ab2160a9600');
+        add_post_meta($post_id, '_whatsapp_tel', 'field_61ab2167a9601');
+        add_post_meta($post_id, '_born_year', 'field_61ab216fa9602');
+        add_post_meta($post_id, '_gender', 'field_61ab2176a9603');
+        add_post_meta($post_id, '_occupation', 'field_61ab21f8a9604');
+        add_post_meta($post_id, '_living_area', 'field_61d5f93e77d7b');
+        add_post_meta($post_id, '_bac_degree', 'field_61ab222ca9605');
+        add_post_meta($post_id, '_tutor_level', 'field_61ab2285d19fd');
+        add_post_meta($post_id, '_diploma', 'field_61ab22d56bfb2');
+        add_post_meta($post_id, '_tutor_year', 'field_61ab233b6bfb3');
+        add_post_meta($post_id, '_u_major', 'field_61ab237a6bfb4');
+        add_post_meta($post_id, '_u_minor', 'field_61ab23a66bfb5');
+        add_post_meta($post_id, '_s_school', 'field_61ab23b16bfb6');
+        add_post_meta($post_id, '_past_exam', 'field_61d6a274dc2b0');
+        add_post_meta($post_id, '_dse_sub_1', 'field_61ab24416bfb7');
+        add_post_meta($post_id, '_dse_sub_2', 'field_61ab2ac27ea90');
+        add_post_meta($post_id, '_dse_sub_3', 'field_61ab2ac37ea91');
+        add_post_meta($post_id, '_dse_sub_4', 'field_61ab2ac57ea92');
+        add_post_meta($post_id, '_dse_sub_5', 'field_61ab2ac67ea93');
+        add_post_meta($post_id, '_dse_sub_6', 'field_61ab2ac77ea94');
+        add_post_meta($post_id, '_dse_sub_7', 'field_61ab2ac87ea95');
+        add_post_meta($post_id, '_dse_sub_8', 'field_61ab2ac97ea96');
+        add_post_meta($post_id, '_dse_sub_9', 'field_61ab2aca7ea97');
+        add_post_meta($post_id, '_dse_sub_10', 'field_61ab2acc7ea98');
+        add_post_meta($post_id, '_dse_sub_11', 'field_61ab2acd7ea99');
+        add_post_meta($post_id, '_dse_sub_12', 'field_61ab2ace7ea9a');
+        add_post_meta($post_id, '_dse_sub_13', 'field_61ab2acf7ea9b');
+        add_post_meta($post_id, '_dse_sub_14', 'field_61ab2ad07ea9c');
+        add_post_meta($post_id, '_dse_sub_15', 'field_61ab2ad17ea9d');
+        add_post_meta($post_id, '_dse_sub_16', 'field_61ab2ad27ea9e');
+        add_post_meta($post_id, '_dse_sub_17', 'field_61ab2ad57ea9f');
+        add_post_meta($post_id, '_dse_sub_18', 'field_61ab2ad77eaa0');
+        add_post_meta($post_id, '_dse_sub_19', 'field_61ab2ad87eaa1');
+        add_post_meta($post_id, '_dse_sub_20', 'field_61ab2ad97eaa2');
+        add_post_meta($post_id, '_dse_sub_21', 'field_61ab2ada7eaa3');
+        add_post_meta($post_id, '_dse_sub_22', 'field_61ab2adb7eaa4');
+        add_post_meta($post_id, '_other_subject_1', 'field_61e6bccd1fbac');
+        add_post_meta($post_id, '_other_subject_2', 'field_61e6bcee1fbad');
+        add_post_meta($post_id, '_other_subject_3', 'field_61e6bcef1fbae');
+        add_post_meta($post_id, '_other_subject_4', 'field_61e6bcf21fbaf');
+        add_post_meta($post_id, '_other_subject_5', 'field_61e6bcf31fbb0');
+        add_post_meta($post_id, '_other_subject_6', 'field_61e6bcf51fbb1');
+        add_post_meta($post_id, '_other_subject_7', 'field_61e6bcf61fbb2');
+        add_post_meta($post_id, '_other_subject_8', 'field_61e6bcf81fbb3');
+        add_post_meta($post_id, '_other_subject_9', 'field_61e6bcfa1fbb4');
+        add_post_meta($post_id, '_other_subject_10', 'field_61e6bcfb1fbb5');
+        add_post_meta($post_id, '_other_subject_1_grade', 'field_61e6bd031fbb6');
+        add_post_meta($post_id, '_other_subject_2_grade', 'field_61e6bd111fbb7');
+        add_post_meta($post_id, '_other_subject_3_grade', 'field_61e6bd191fbb8');
+        add_post_meta($post_id, '_other_subject_4_grade', 'field_61e6bd381fbba');
+        add_post_meta($post_id, '_other_subject_5_grade', 'field_61e6bd261fbb9');
+        add_post_meta($post_id, '_other_subject_6_grade', 'field_61e6bd601fbbb');
+        add_post_meta($post_id, '_other_subject_7_grade', 'field_61e6bd691fbbc');
+        add_post_meta($post_id, '_other_subject_8_grade', 'field_61e6bd751fbbd');
+        add_post_meta($post_id, '_other_subject_9_grade', 'field_61e6bd7f1fbbe');
+        add_post_meta($post_id, '_other_subject_10_grade', 'field_61e6bd8a1fbbf');
+        add_post_meta($post_id, '_exam_lang', 'field_61ab24f06bfe2');
+        add_post_meta($post_id, '_other_cert', 'field_61ab25216bfe3');
+        add_post_meta($post_id, '_proof1', 'field_61ab25406bfe4');
+        add_post_meta($post_id, '_proof2', 'field_61ab25466bfe5');
+        add_post_meta($post_id, '_self_intro', 'field_61ab256a0508d');
+        add_post_meta($post_id, '_t_subjects_kin', 'field_61ab257d0508e');
+        add_post_meta($post_id, '_t_subjects_kin_value_other', 'field_61ab26fc05091');
+        add_post_meta($post_id, '_t_subjects_pri', 'field_61ab26da05090');
+        add_post_meta($post_id, '_t_subjects_pri_value_other', 'field_61ab270505092');
+        add_post_meta($post_id, '_t_subjects_f13', 'field_61ab271205093');
+        add_post_meta($post_id, '_t_subjects_f13_value_other', 'field_61ab274ea9e64');
+        add_post_meta($post_id, '_t_subjects_f46', 'field_61ab2758a9e65');
+        add_post_meta($post_id, '_t_subjects_f46_value_other', 'field_61ab277da9e67');
+        // add_post_meta($post_id, '_t_subjects_ib', '');
+        // add_post_meta($post_id, '_t_subjects_ib_value_other', '');
+        // add_post_meta($post_id, '_t_subjects_gceal', '');
+        // add_post_meta($post_id, '_t_subjects_gceal_value_other', '');
+        // add_post_meta($post_id, '_t_subjects_igcse', '');
+        // add_post_meta($post_id, '_t_subjects_igcse_value_other', '');
+        // add_post_meta($post_id, '_t_subjects_sat', '');
+        // add_post_meta($post_id, '_t_subjects_sat_value_other', '');
+        // add_post_meta($post_id, '_t_subjects_music', '');
+        // add_post_meta($post_id, '_t_subjects_music_value_other', '');
+        add_post_meta($post_id, '_lesson_lang', 'field_61d6a81b04597');
+        add_post_meta($post_id, '_class_area', 'field_61abdf68ad377');
+        add_post_meta($post_id, '_t_style', 'field_61abe0cf22470');
+        add_post_meta($post_id, '_lowest_salary', 'field_61abe28bb2739');
+
 
 
         // $to='hktutorcloud@gmail.com';
