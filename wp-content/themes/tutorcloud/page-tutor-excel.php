@@ -87,9 +87,8 @@ $table='<table class="excel-table mt-5" id="excel-table">
     {
         $table .='<tr>';
         
-        ?>
-<td>f</td>
-<?php
+        $table .='<td>f</td>';
+
         // foreach($all_posts[$i] as $key => $value){
                 
         //     if(is_array($value))
@@ -102,7 +101,7 @@ $table='<table class="excel-table mt-5" id="excel-table">
         //         $table .='<td>'.$value.'</td>';
         //     }
         // }
-        $table .='</tr>';
+        $table .='</td>';
     }
 
     $table .='</table>';
