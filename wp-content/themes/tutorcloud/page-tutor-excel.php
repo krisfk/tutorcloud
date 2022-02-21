@@ -59,6 +59,7 @@ if ( $the_query->have_posts() ):
                 $field = get_field_object($name); 
                 array_push($table_th_arr,$field['label']);
             }
+            $save_th=true;
         }
 
     array_push($all_posts, $fields);
