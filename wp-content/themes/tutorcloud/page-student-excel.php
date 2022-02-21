@@ -57,8 +57,8 @@ if ( $the_query->have_posts() ){
         // echo get_field('student_id');
         // echo 1;
         // echo 
-		// $fields = get_fields(get_the_ID());
-        // print_r($fields);
+		$fields = get_fields();
+        print_r($fields);
         // if(!$save_th)
         // {
         //     foreach( $fields as $name => $value ){
