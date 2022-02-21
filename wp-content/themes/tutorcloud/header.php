@@ -175,13 +175,13 @@ if(!$_SESSION['tutor_post_id'])
                                     ?>
 
                                             <div>
-                                                <div class="sns-li"> <a href="<?php echo get_site_url();?>"
-                                                        class="sns-a">
+                                                <div class="sns-li"> <a href="https://facebook.com/hktutorcloud/"
+                                                        target="_blank" class="sns-a">
                                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/fb-icon.png"
                                                             alt="">
                                                     </a></div>
-                                                <div class="sns-li"> <a href="<?php echo get_site_url();?>"
-                                                        class="sns-a">
+                                                <div class="sns-li"> <a href="https://instagram.com/tutorcloud_hk"
+                                                        target="_blank" class="sns-a">
                                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/ig-icon.png"
                                                             alt="">
                                                     </a></div>
@@ -194,11 +194,13 @@ if(!$_SESSION['tutor_post_id'])
 
 
                                 <div class="col-3 text-end right-btn-div">
-                                    <div class="sns-li"> <a href="<?php echo get_site_url();?>" class="sns-a">
+                                    <div class="sns-li"> <a href="https://facebook.com/hktutorcloud/" target="_blank"
+                                            class="sns-a">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/fb-icon.png"
                                                 alt="">
                                         </a></div>
-                                    <div class="sns-li"> <a href="<?php echo get_site_url();?>" class="sns-a">
+                                    <div class="sns-li"> <a href="https://instagram.com/tutorcloud_hk" target="_blank"
+                                            class="sns-a">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/ig-icon.png"
                                                 alt="">
                                         </a></div>
