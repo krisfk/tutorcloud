@@ -897,7 +897,7 @@ if($_POST)
                                 </select></td>
                         </tr>
                         <tr>
-                            <td><label for="other-university"> 其他大學
+                            <td><label for="other-university">其他大學
                                 </label></td>
                             <td>
                                 <input type="text" id="other-university" name="other-university" class="form-control">
