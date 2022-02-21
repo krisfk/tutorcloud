@@ -596,8 +596,8 @@ get_header();
             $student_id = 'T'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
 
 
-            // $to='hktutorcloud@gmail.com';
-            $to='krisfk@gmail.com';
+            $to='hktutorcloud@gmail.com';
+            // $to='krisfk@gmail.com';
 
             $subject='補習個案'.$student_id.'已建立。';
             $message='補習個案'.$student_id.'已建立。<br/><br/> 心儀導師名單如下：<br/>'.$_POST['tutor-list'];
