@@ -54,7 +54,7 @@ if ( $the_query->have_posts() ){
         $the_query->the_post();
         
 
-        echo get_field('student_id');
+        // echo get_field('student_id');
         // echo 1;
         // echo 
 		// $fields = get_fields(get_the_ID());
