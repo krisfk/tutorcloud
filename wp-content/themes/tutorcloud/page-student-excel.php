@@ -53,6 +53,7 @@ if ( $the_query->have_posts() ){
         $the_query->the_post();
 		$fields = get_fields();
             foreach( $fields as $name => $value ){
+                echo 1;
                 // echo 1;
                 // echo $name;
                 //$field = get_field_object($name); 
