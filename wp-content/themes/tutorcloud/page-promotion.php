@@ -59,7 +59,7 @@ get_header();
 
             <div class="apply-case-btn-div">
                 <a href="<?php echo get_site_url();?>/apply-case"
-                    class="apply-case-btn apply-case-btn mt-5 d-inline-block">申請補習個案</a>
+                    class="apply-case-btn apply-case-btn mt-5 d-inline-block">學生登記</a>
             </div>
         </div>
 
