@@ -76,7 +76,7 @@
                                             alt="">
                                     </a>
                                 </div>
-                                <div class="col-8">
+                                <div class="col-7">
                                     <ul class="top-menu-ul">
 
                                         <?php
@@ -178,7 +178,7 @@ if(!$_SESSION['tutor_post_id'])
                                 </div>
 
 
-                                <div class="col-2 text-end right-btn-div">
+                                <div class="col-3 text-end right-btn-div">
                                     <div class="sns-li"> <a href="<?php echo get_site_url();?>" class="sns-a">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/fb-icon.png"
                                                 alt="">
