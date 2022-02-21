@@ -45,28 +45,35 @@ $args = array(
 $all_posts = array();
 $table_th_arr= array();
 $the_query = new WP_Query( $args );
+$save_th =false;
 if ( $the_query->have_posts() ){
 
-    echo 1;
-	// while ( $the_query->have_posts() )
-    
-    // { 
+    // echo 1;
+	while ( $the_query->have_posts() )
+    { 
         $the_query->the_post();
-		$fields = get_fields();
-        // print_r($fields);
+		$fields = get_fields(get_the_ID());
+
+        if(!$save_th)
+        {
             foreach( $fields as $name => $value ){
-                echo 1;
+                // echo 1;
                 // echo 1;
                 // echo $name;
-                //$field = get_field_object($name); 
+                $field = get_field_object($name); 
                 // echo $field['label'];
                 // print_r
                 
                 array_push($table_th_arr,$field['label']);
             }
-array_push($all_posts, $fields);
 
-        // }
+        }       
+        
+        $save_th=true;
+        
+        array_push($all_posts, $fields);
+
+    }
 wp_reset_postdata();
 }
 ?>
