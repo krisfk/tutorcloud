@@ -670,44 +670,45 @@ if($_POST &&  $_POST['apply-case-form'])
         if ($post_id) {
 
             $student_id = 'S'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
-            add_post_meta($post_id, 'field_62052b2720080', $student_id);
-            add_post_meta($post_id, 'field_620d648ab637a', 'no');
-            add_post_meta($post_id, 'field_61b491bb48614', $chi_name);
-            add_post_meta($post_id, 'field_61b491e048615', $eng_name);
-            add_post_meta($post_id, 'field_61b491ef48616', $nick_name);
-            add_post_meta($post_id, 'field_61b491fa48617', $whatsapp_tel);
-            add_post_meta($post_id, 'field_61b4920948618', $email);
-            add_post_meta($post_id, 'field_61b4922048619', $gender);
+            add_post_meta($post_id, 'student_id', $student_id);
+            add_post_meta($post_id, '_student_id', 'field_62052b2720080');
+            add_post_meta($post_id, 'enable', 'no');
+            add_post_meta($post_id, 'chi_name', $chi_name);
+            add_post_meta($post_id, 'eng_name', $eng_name);
+            add_post_meta($post_id, 'nick_name', $nick_name);
+            add_post_meta($post_id, 'whatsapp_tel', $whatsapp_tel);
+            add_post_meta($post_id, 'email', $email);
+            add_post_meta($post_id, 'gender', $gender);
             // add_post_meta($post_id, 'tutorial_course', $tutorial_course);
-            add_post_meta($post_id, 'field_61e5922b916ec', $other_tutorial_course);
-            add_post_meta($post_id, 'field_61b492bf88efa', $student_level);
-            add_post_meta($post_id, 'field_61b4c5a790055', $university);
-            add_post_meta($post_id, 'field_61b4c5fb90056', $student_level_2);
-            add_post_meta($post_id, 'field_61b49351cc904', $subjects);
+            add_post_meta($post_id, 'other_tutorial_course', $other_tutorial_course);
+            add_post_meta($post_id, 'student_level', $student_level);
+            add_post_meta($post_id, 'university', $university);
+            add_post_meta($post_id, 'student_level_2', $student_level_2);
+            add_post_meta($post_id, 'subjects', $subjects);
 
-            add_post_meta($post_id, 'field_61e596c71fe9e', $instrument);
-            add_post_meta($post_id, 'field_61e596d71fe9f', $other_subject);
+            add_post_meta($post_id, 'instrument', $instrument);
+            add_post_meta($post_id, 'other_subject', $other_subject);
 
             
             
 
-            add_post_meta($post_id, 'field_61b49446703bf', $paper_lang);
-            add_post_meta($post_id, 'field_61b4c744815a0', $tutorial_style);
-            add_post_meta($post_id, 'field_61b4c791815a1', $class_area);
-            add_post_meta($post_id, 'field_61b4c8025dfca', $short_address);
-            add_post_meta($post_id, 'field_61b4c8135dfcb', $transport);
-            add_post_meta($post_id, 'field_61b4c8515dfcc', $cost_per_ppl);
-            add_post_meta($post_id, 'field_61b4c8e25dfcd', $lesson_per_week);
-            add_post_meta($post_id, 'field_61b4c91c5dfce', $hour_per_lesson);
-            add_post_meta($post_id, 'field_61b4c96a5dfcf', $days);
-            add_post_meta($post_id, 'field_61b4caa65dfd0', $start_tutorial_time);
-            add_post_meta($post_id, 'field_61b4caba5dfd1', $tutor_gender);
-            add_post_meta($post_id, 'field_61b4caec5dfd2', $objective);
-            add_post_meta($post_id, 'field_61b4cd083d921', $objective_value_other);
-            add_post_meta($post_id, 'field_61b4cd7b3b578', $tutor_requirement);
-            add_post_meta($post_id, 'field_61b4cdceb589e', $tutor_requirement_value_other);
-            add_post_meta($post_id, 'field_61e6dbfe9359e', $can_sep_tutor);
-            add_post_meta($post_id, 'field_61b4cdeeb589f', $other_remark);
+            add_post_meta($post_id, 'paper_lang', $paper_lang);
+            add_post_meta($post_id, 'tutorial_style', $tutorial_style);
+            add_post_meta($post_id, 'class_area', $class_area);
+            add_post_meta($post_id, 'short_address', $short_address);
+            add_post_meta($post_id, 'transport', $transport);
+            add_post_meta($post_id, 'cost_per_ppl', $cost_per_ppl);
+            add_post_meta($post_id, 'lesson_per_week', $lesson_per_week);
+            add_post_meta($post_id, 'hour_per_lesson', $hour_per_lesson);
+            add_post_meta($post_id, 'days', $days);
+            add_post_meta($post_id, 'start_tutorial_time', $start_tutorial_time);
+            add_post_meta($post_id, 'tutor_gender', $tutor_gender);
+            add_post_meta($post_id, 'objective', $objective);
+            add_post_meta($post_id, 'objective_value_other', $objective_value_other);
+            add_post_meta($post_id, 'tutor_requirement', $tutor_requirement);
+            add_post_meta($post_id, 'tutor_requirement_value_other', $tutor_requirement_value_other);
+            add_post_meta($post_id, 'can_sep_tutor', $can_sep_tutor);
+            add_post_meta($post_id, 'other_remark', $other_remark);
 
 
 
