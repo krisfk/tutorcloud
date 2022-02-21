@@ -62,6 +62,7 @@ endif;
 ?>
 
 <?php
+print_r($table_th_arr);
 $table='<table class="excel-table mt-5" id="excel-table">
         <tr>';
 
