@@ -54,10 +54,11 @@ if ( $the_query->have_posts() ){
         $the_query->the_post();
         
 
+        echo get_field('student_id');
         // echo 1;
         // echo 
-		$fields = get_fields(get_the_ID());
-        print_r($fields);
+		// $fields = get_fields(get_the_ID());
+        // print_r($fields);
         // if(!$save_th)
         // {
         //     foreach( $fields as $name => $value ){
