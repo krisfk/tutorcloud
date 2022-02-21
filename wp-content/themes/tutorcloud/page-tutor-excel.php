@@ -50,7 +50,8 @@ if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
 		$fields = get_fields();
-
+    print_r($fields);
+    echo '<br><br>';
         if(!$save_th)
         {
         
