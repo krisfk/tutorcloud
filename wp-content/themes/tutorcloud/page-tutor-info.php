@@ -128,7 +128,7 @@ $the_query->the_post();
                             <td>
                                 <select id="occupation" name="occupation" class="form-select" aria-label="">
                                     <?php 
-                                $occupation_arr=array("全職教師","全職教學助理","全職補習老師","退休教師","其他在職人仕");
+                                $occupation_arr=array("大學生","全職教師","全職教學助理","全職補習老師","退休教師","其他在職人仕");
                                 ?>
                                     <option value="" selected="">選擇</option>
                                     <?php 
