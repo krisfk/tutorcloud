@@ -544,7 +544,7 @@ h2 .bar {
 }
 
 .prev-step-btn {
-    display: none;
+    /* display: none; */
     color: #fff;
     background: #46a879;
     /* url(./assets/images/tutor-icon.png) no-repeat; */
