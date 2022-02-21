@@ -715,7 +715,8 @@ if (!$is_admin) {
                         {
                             if(get_field('dse_sub_'.$i))
                             {
-                                echo 1;
+                                // echo 1;
+                                echo acf_get_field('dse_sub_'.$i);
                                 // 數學（5*） 化學（5**） 經濟（5） 
                                 // print_r(get_field_object('dse_sub_'.$i,get_the_ID()));
                                 $label = get_field_object('dse_sub_'.$i)['label'];
