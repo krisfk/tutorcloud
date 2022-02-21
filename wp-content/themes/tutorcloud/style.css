@@ -1294,7 +1294,7 @@ input[type='number'] {
 }
 
 .submitted-msg {
-    display: none;
+    /* display: none; */
 }
 
 .preview-table td {

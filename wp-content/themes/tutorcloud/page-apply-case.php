@@ -561,11 +561,14 @@ get_header();
 if($_POST &&  $_POST['apply-case-form'])
 {
     $submit_success=true;
-}
-?>
+    ?>
     <h5 class="text-center  mt-5 submitted-msg">
         資料提交完成，我們會盡快聯絡您，謝謝。三秒後回到主頁。
     </h5>
+    <?php
+}
+?>
+
 
     <div class="text-center mt-3 submitted-hide <?php echo $submit_success ? 'd-none' :''; ?>">
         <a href="#" class="filter-btn">篩選導師</a>
