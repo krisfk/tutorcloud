@@ -1257,9 +1257,9 @@ Year 6 -->
                                     ?>
 
                                         <div class="checkbox-div"><input type="checkbox" class="form-check-input"
-                                                id="subject_value_<?php echo $i;?>" name="subjects[]"
+                                                id="subject_value2_<?php echo $i;?>" name="subjects[]"
                                                 value="<?php echo $subject_arr[$i];?>" /><label
-                                                for="subject_value_<?php echo $i;?>"><?php echo $subject_arr[$i];?></label>
+                                                for="subject_value2_<?php echo $i;?>"><?php echo $subject_arr[$i];?></label>
                                         </div>
                                         <?php
                                 }
