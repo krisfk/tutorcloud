@@ -48,7 +48,7 @@ wp_reset_query();
 $the_query = new WP_Query( $args );
 $save_th=false;
 
-$fields= get_fields(446);
+$fields= get_field_objects(446);
 print_r($fields);
 // echo 1;
 if ( $the_query->have_posts() ):
