@@ -49,7 +49,8 @@ $save_th=false;
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
-    echo 1;
+        echo get_field('student_id');
+        echo '<br>';
 		$fields = get_fields();
     // print_r($fields);
     echo '<br><br>';
