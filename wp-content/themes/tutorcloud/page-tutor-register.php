@@ -515,6 +515,8 @@ if($_POST)
         add_post_meta($post_id, '_occupation', 'field_61ab21f8a9604');
         add_post_meta($post_id, '_living_area', 'field_61d5f93e77d7b');
         add_post_meta($post_id, '_bac_degree', 'field_61ab222ca9605');
+        add_post_meta($post_id, '_other_university', 'field_6214080cc7324');
+        
         add_post_meta($post_id, '_tutor_level', 'field_61ab2285d19fd');
         add_post_meta($post_id, '_diploma', 'field_61ab22d56bfb2');
         add_post_meta($post_id, '_tutor_year', 'field_61ab233b6bfb3');
