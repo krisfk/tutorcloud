@@ -61,6 +61,8 @@ if ( $the_query->have_posts() ){
         $field_obj = get_field_objects();
 
         print_r($field_obj);
+        echo '<br/>';
+        echo '<br/>';
 
 		// $fields = get_fields();
         // print_r($fields);
