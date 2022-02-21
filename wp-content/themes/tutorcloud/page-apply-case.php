@@ -671,6 +671,7 @@ if($_POST &&  $_POST['apply-case-form'])
 
             $student_id = 'S'.substr(date('Y'),2,2).str_pad($post_id, 5, '0', STR_PAD_LEFT);
             add_post_meta($post_id, 'student_id', $student_id);
+            add_post_meta($post_id, 'enable', 'no');
             add_post_meta($post_id, 'chi_name', $chi_name);
             add_post_meta($post_id, 'eng_name', $eng_name);
             add_post_meta($post_id, 'nick_name', $nick_name);

@@ -402,6 +402,8 @@ if($_POST)
     
     if ($post_id) {
         add_post_meta($post_id, 'email', $email);
+        add_post_meta($post_id, 'enable', 'no');
+
         add_post_meta($post_id, 'login_password', $login_password);
         add_post_meta($post_id, 'chi_name', $chi_name);
         add_post_meta($post_id, 'eng_name', $eng_name);
