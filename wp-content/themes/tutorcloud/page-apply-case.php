@@ -978,7 +978,7 @@ while ( $loop->have_posts() ) {
 
                                                 <img src="<?php echo get_template_directory_uri();?>/assets/images/add-btn.png"
                                                     alt="">
-                                                <div>加入導師名單</div>
+                                                <div>選擇導師</div>
 
                                             </a></td>
                                     </tr>
