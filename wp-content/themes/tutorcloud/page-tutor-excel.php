@@ -53,6 +53,7 @@ if ( $the_query->have_posts() ):
 		$fields = get_fields();
         if(!$save_th)
         {
+            echo 1;
             foreach( $fields as $name => $value ){
                 $field = get_field_object($name); 
                 array_push($table_th_arr,$field['label']);
