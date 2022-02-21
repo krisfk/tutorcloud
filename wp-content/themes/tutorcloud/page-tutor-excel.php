@@ -44,6 +44,7 @@ $args = array(
 
 $all_posts = array();
 $table_th_arr= array();
+$field_key_arr=array();
 $the_query = new WP_Query( $args );
 $save_th=false;
 if ( $the_query->have_posts() ):
@@ -58,8 +59,11 @@ if ( $the_query->have_posts() ):
         {
         
             foreach( $fields as $name => $value ){
+                echo $name;
                 $field = get_field_object($name); 
                 array_push($table_th_arr,$field['label']);
+                // array_push($table_th_arr,$field['name']);
+
                 $save_th=true;
             }
             // echo    $save_th;
