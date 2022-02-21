@@ -52,26 +52,28 @@ if ( $the_query->have_posts() ){
 	while ( $the_query->have_posts() )
     { 
         $the_query->the_post();
-		$fields = get_fields(get_the_ID());
+        // echo 
+		// $fields = get_fields(get_the_ID());
 
-        if(!$save_th)
-        {
-            foreach( $fields as $name => $value ){
-                // echo 1;
-                // echo 1;
-                // echo $name;
-                $field = get_field_object($name); 
-                // echo $field['label'];
-                // print_r
+        // if(!$save_th)
+        // {
+        //     foreach( $fields as $name => $value ){
+        //         // echo 1;
+        //         // echo 1;
+        //         // echo $name;
+        //         // $field = get_field_object($name); 
+        //         // echo $field['label'];
+        //         // print_r
                 
-                array_push($table_th_arr,$field['label']);
-            }
+        //         array_push($table_th_arr,$field['label']);
+        //     }
 
-        }       
+        // }       
         
-        $save_th=true;
+        // $save_th=true;
+        print_r($fields);
         
-        array_push($all_posts, $fields);
+        // array_push($all_posts, $fields);
 
     }
 wp_reset_postdata();
