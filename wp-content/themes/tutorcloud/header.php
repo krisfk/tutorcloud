@@ -140,16 +140,21 @@ echo'</li>';
 
 
 ?>
-                                        <li class="sns-li"> <a href="<?php echo get_site_url();?>" class="sns-a">
-                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/fb-icon.png"
-                                                    alt="">
-                                            </a></li>
-                                        <li class="sns-li"> <a href="<?php echo get_site_url();?>" class="sns-a">
-                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/ig-icon.png"
-                                                    alt="">
-                                            </a></li>
 
-                                        <li class="mobile-tutor-div"> <?php
+
+                                        <li class="mobile-tutor-div">
+
+
+                                            <div class="sns-li"> <a href="<?php echo get_site_url();?>" class="sns-a">
+                                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/fb-icon.png"
+                                                        alt="">
+                                                </a></div>
+                                            <div class="sns-li"> <a href="<?php echo get_site_url();?>" class="sns-a">
+                                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/ig-icon.png"
+                                                        alt="">
+                                                </a></div>
+
+                                            <?php
 // echo $_SESSION['tutor_post_id'];
 if(!$_SESSION['tutor_post_id'])
 {
