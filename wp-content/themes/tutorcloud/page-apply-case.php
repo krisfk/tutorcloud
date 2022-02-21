@@ -2446,7 +2446,11 @@ Year 6 -->
 </div>
 
 
-
+<style type="text/css">
+.page-apply-case .prev-step-btn {
+    display: none;
+}
+</style>
 
 
 
