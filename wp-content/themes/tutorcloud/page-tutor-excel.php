@@ -16,8 +16,8 @@ get_header();
 $is_admin = current_user_can('manage_options');  // all user they have mange option will get 
 
 if (!$is_admin) {
-    wp_redirect(get_site_url());
-        exit;
+    // wp_redirect(get_site_url());
+        // exit;
 }
 
 ?>
@@ -44,6 +44,7 @@ $args = array(
 
 $all_posts = array();
 $table_th_arr= array();
+$field_key_arr=array();
 $the_query = new WP_Query( $args );
 $save_th=false;
 if ( $the_query->have_posts() ):
@@ -58,18 +59,23 @@ if ( $the_query->have_posts() ):
         {
         
             foreach( $fields as $name => $value ){
+                // echo $name;
                 $field = get_field_object($name); 
                 array_push($table_th_arr,$field['label']);
+                array_push($field_key_arr,$name);
+
                 $save_th=true;
             }
             // echo    $save_th;
         }
 array_push($all_posts, $fields);
 
+
 endwhile;
 wp_reset_postdata();
 
 endif;
+// print_r($all_posts);
 ?>
 
 <?php
@@ -86,20 +92,41 @@ $table='<table class="excel-table mt-5" id="excel-table">
     for($i=0;$i<count($all_posts);$i++)
     {
         $table .='<tr>';
-        foreach($all_posts[$i] as $key => $value){
-                
-            // echo gettype($value);
-            if(is_array($value))
+        
+        for($j=0;$j<count($field_key_arr);$j++)
+        {
+            if(is_array($all_posts[$i][$field_key_arr[$j]]))
             {
-                  $table .='<td>'.implode(',', $value).'</td>';
+                $table .='<td>'.implode(',', $all_posts[$i][$field_key_arr[$j]]).'</td>';   
+
+            }
+            else if($field_key_arr[$j]=='proof1' ||$field_key_arr[$j]=='proof2')
+            {
+                $file_src = wp_get_attachment_url($all_posts[$i][$field_key_arr[$j]]);
+
+                $table .='<td><a href="'.$file_src.'" target="_blank">'.$file_src.'</a></td>';   
 
             }
             else
             {
-                $table .='<td>'.$value.'</td>';
+                $table .='<td>'.$all_posts[$i][$field_key_arr[$j]].'</td>';   
             }
         }
-        $table .='</tr>';
+        // $table .='<td>f</td>';
+
+        // foreach($all_posts[$i] as $key => $value){
+                
+        //     if(is_array($value))
+        //     {
+        //           $table .='<td>'.implode(',', $value).'</td>';
+
+        //     }
+        //     else
+        //     {
+        //         $table .='<td>'.$value.'</td>';
+        //     }
+        // }
+        $table .='</td>';
     }
 
     $table .='</table>';
