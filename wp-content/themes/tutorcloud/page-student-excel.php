@@ -51,8 +51,11 @@ if ( $the_query->have_posts() ):
 		$fields = get_fields();
             foreach( $fields as $name => $value ){
                 // echo 1;
-                $field = get_field_object($name); 
-                echo $field['label'];
+                echo $name;
+                //$field = get_field_object($name); 
+                // echo $field['label'];
+                // print_r
+                
                 array_push($table_th_arr,$field['label']);
             }
 array_push($all_posts, $fields);
