@@ -41,10 +41,13 @@ $args = array(
     'post_status' => 'publish',
     'posts_per_page' => -1,
 );
+$the_query = new WP_Query( $args );
+$the_query->the_post();
+echo get_the_ID();
 
 $all_posts = array();
 $table_th_arr= array();
-$the_query = new WP_Query( $args );
+
 $save_th =false;
 
 // $fields = get_fields();

@@ -41,11 +41,12 @@ $args = array(
     'post_status' => 'publish',
     'posts_per_page' => -1,
 );
-
 $all_posts = array();
 $table_th_arr= array();
 $the_query = new WP_Query( $args );
 $save_th =false;
+
+
 if ( $the_query->have_posts() ){
 
     // echo 1;
