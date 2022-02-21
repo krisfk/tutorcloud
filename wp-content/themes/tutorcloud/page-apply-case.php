@@ -708,9 +708,7 @@ if($_POST &&  $_POST['apply-case-form'])
             add_post_meta($post_id, 'tutor_requirement_value_other', $tutor_requirement_value_other);
             add_post_meta($post_id, 'can_sep_tutor', $can_sep_tutor);
             add_post_meta($post_id, 'other_remark', $other_remark);
-
-
-
+            
             add_post_meta($post_id, '_student_id', 'field_62052b2720080');
             add_post_meta($post_id, '_enable', 'field_620d648ab637a');            
             add_post_meta($post_id, '_chi_name', 'field_61b491bb48614');
