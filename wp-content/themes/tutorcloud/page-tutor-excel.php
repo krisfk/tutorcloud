@@ -45,19 +45,26 @@ $args = array(
 $all_posts = array();
 $table_th_arr= array();
 $the_query = new WP_Query( $args );
+$save_th=false;
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
 		$fields = get_fields();
         print_r($fields);
         echo '<br><br>';
+    
+        if(!$save_th)
+        {
             foreach( $fields as $name => $value ){
                 $field = get_field_object($name); 
                 array_push($table_th_arr,$field['label']);
             }
-array_push($all_posts, $fields);
+        }
 
-endwhile;
+    array_push($all_posts, $fields);
+
+    endwhile;
+
 wp_reset_postdata();
 
 endif;
