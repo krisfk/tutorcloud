@@ -753,6 +753,11 @@ if($_POST)
                             <td><input id="whatsapp-tel" name="whatsapp-tel" type="number" class="form-control"></td>
                         </tr>
                         <tr>
+                            <td><label for="confirm-whatsapp-tel"> 確認 WhatsApp 電話號碼 * </label></td>
+                            <td><input id="confirm-whatsapp-tel" name="confirm-whatsapp-tel" type="number"
+                                    class="form-control"></td>
+                        </tr>
+                        <tr>
                             <td><label for="born_year"> 出生年份*</label></td>
                             <td><input id="born_year" name="born_year" type="number" class="form-control"></td>
                         </tr>
@@ -3688,6 +3693,8 @@ if($_GET['e']=='1')
         var chi_name = $('#chi-name').val();
         var eng_name = $('#eng-name').val();
         var whatsapp_tel = $('#whatsapp-tel').val();
+        var confirm_whatsapp_tel = $('#confirm-whatsapp-tel').val();
+
         var born_year = $('#born_year').val();
         var gender = $('input[name="gender"]:checked').val();
         var living_area = $('#living-area').val();
@@ -3728,6 +3735,13 @@ if($_GET['e']=='1')
             error_txt +=
                 '請輸入英文全名</br>';
         }
+
+
+        if (confirm_whatsapp_tel != whatsapp_tel) {
+            error_txt +=
+                '確認 WhatsApp 電話號碼輸入不相同</br>';
+        }
+
 
         if (!(/^[0-9]{8}$/.test(whatsapp_tel))) {
             error_txt += 'whatsapp電話格式不正確</br>';
