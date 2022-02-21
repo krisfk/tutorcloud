@@ -50,6 +50,7 @@ if ( $the_query->have_posts() ):
 	while ( $the_query->have_posts() ): $the_query->the_post();
 		$fields = get_fields();
             foreach( $fields as $name => $value ){
+                echo 1;
                 $field = get_field_object($name); 
                 array_push($table_th_arr,$field['label']);
             }
