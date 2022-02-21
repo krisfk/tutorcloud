@@ -716,7 +716,7 @@ if (!$is_admin) {
                             if(get_field('dse_sub_'.$i))
                             {
                                 // 數學（5*） 化學（5**） 經濟（5） 
-
+                            echo get_field('dse_sub_'.$i);
                                 $label = get_field_object('dse_sub_'.$i)['label'];
                                 $str.=$label.'('.get_field('dse_sub_'.$i).')'.' ';
                             }
