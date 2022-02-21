@@ -104,7 +104,7 @@ $table='<table class="excel-table mt-5" id="excel-table">
             {
                 $file_src = wp_get_attachment_url($all_posts[$i][$field_key_arr[$j]]);
 
-                $table .='<td>'.$file_src.'</td>';   
+                $table .='<td><a href="'.$file_src.'" target="_blank">'.$file_src.'</a></td>';   
 
             }
             else
