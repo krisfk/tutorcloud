@@ -672,6 +672,7 @@ if($_POST)
                                 <select id="occupation" name="occupation" class="form-select" aria-label="">
 
                                     <option value="" selected>選擇</option>
+                                    <option value="大學生">大學生</option>
                                     <option value="全職教師">全職教師</option>
                                     <option value="全職教學助理">全職教學助理</option>
                                     <option value="全職補習老師">全職補習老師</option>
