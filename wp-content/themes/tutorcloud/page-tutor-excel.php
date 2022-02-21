@@ -54,7 +54,7 @@ $save_th =false;
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
-    echo get_the_ID();
+    // echo get_the_ID();
     
 		$fields = get_fields();
         if(!$save_th)
