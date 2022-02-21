@@ -53,12 +53,13 @@ if ( $the_query->have_posts() ):
 		$fields = get_fields();
         if(!$save_th)
         {
-            echo 1;
+            // echo 1;
+            print_r($fields);
             foreach( $fields as $name => $value ){
-                // echo 1;
+                // echo $name;
                 $field = get_field_object($name); 
                 array_push($table_th_arr,$field['label']);
-                echo 22;
+                // echo 22;
             }
         }
             $save_th =true;
