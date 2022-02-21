@@ -1,7 +1,7 @@
 <?php 
 
-$fields = get_fields(446);
-print_r($fields);
+// $fields = get_fields(446);
+// print_r($fields);
 // if($_POST)
 // {
 //     echo 'post';
