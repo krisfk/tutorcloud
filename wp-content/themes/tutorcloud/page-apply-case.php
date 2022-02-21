@@ -744,15 +744,7 @@ if($_POST &&  $_POST['apply-case-form'])
 
 
 
-            //create record
-            $post_id = wp_insert_post(array (
-                'post_type' => 'student_find_tutors',
-                'post_title' => 'Case Number '.$student_id.' is created',
-                'post_content'  => $message,
-                'post_status' => 'publish',
-                'comment_status' => 'closed',   // if you prefer
-                'ping_status' => 'closed',      // if you prefer
-            ));
+          
 
             //send email
             // $to='hktutorcloud@gmail.com';
@@ -802,6 +794,16 @@ if($_POST &&  $_POST['apply-case-form'])
             $message='補習個案<a href="'.$student_url.'" target="_blank">'.$student_id.'</a>已建立。<br/><br/> 心儀導師名單如下：<br/>'.$tutors_str;
            
             wp_mail( $to, $subject, $message );
+
+              //create record
+              $post_id = wp_insert_post(array (
+                'post_type' => 'student_find_tutors',
+                'post_title' => 'Case Number '.$student_id.' is created',
+                'post_content'  => $message,
+                'post_status' => 'publish',
+                'comment_status' => 'closed',   // if you prefer
+                'ping_status' => 'closed',      // if you prefer
+            ));
 
             
         }
