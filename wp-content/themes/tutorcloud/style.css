@@ -1340,6 +1340,10 @@ input[type='number'] {
     display: none;
 }
 
+.sns-li {}
+
+.sns-a {}
+
 .sns-a img {
     height: 20px;
 }
