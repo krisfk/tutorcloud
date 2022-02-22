@@ -14,39 +14,7 @@
 //   print_r($fields);
 // print_r(get_fields(443));
 
-// function array_sort($array, $on, $order=SORT_ASC){
-//     $new_array = array();
-//     $sortable_array = array();
 
-//     if (count($array) > 0) {
-//         foreach ($array as $k => $v) {
-//             if (is_array($v)) {
-//                 foreach ($v as $k2 => $v2) {
-//                     if ($k2 == $on) {
-//                         $sortable_array[$k] = $v2;
-//                     }
-//                 }
-//             } else {
-//                 $sortable_array[$k] = $v;
-//             }
-//         }
-
-//         switch ($order) {
-//             case SORT_ASC:
-//                 asort($sortable_array);
-//             break;
-//             case SORT_DESC:
-//                 arsort($sortable_array);
-//             break;
-//         }
-
-//         foreach ($sortable_array as $k => $v) {
-//             $new_array[$k] = $array[$k];
-//         }
-//     }
-
-//     return $new_array;
-// }
 
 
 // $meta_data = get_field_objects(443);
@@ -64,6 +32,7 @@
 
 
 <?php
+
 /**
  * The template for displaying all single posts
  *
@@ -100,22 +69,42 @@ if (!$is_admin) {
 
 <?php
 
-function array_orderby()
-					{
-    					$args = func_get_args();
-    					$data = array_shift($args);
-    					foreach ($args as $n => $field) {
-                            if (is_string($field)) {
-                                $tmp = array();
-                                foreach ($data as $key => $row)
-                                $tmp[$key] = $row[$field];
-                                $args[$n] = $tmp;
-                            }
-    			    	}
-    					$args[] = &$data;
-    					call_user_func_array('array_multisort', $args);
-    					return array_pop($args);
+
+function array_sort($array, $on, $order=SORT_ASC){
+    $new_array = array();
+    $sortable_array = array();
+
+    if (count($array) > 0) {
+        foreach ($array as $k => $v) {
+            if (is_array($v)) {
+                foreach ($v as $k2 => $v2) {
+                    if ($k2 == $on) {
+                        $sortable_array[$k] = $v2;
+                    }
+                }
+            } else {
+                $sortable_array[$k] = $v;
+            }
+        }
+
+        switch ($order) {
+            case SORT_ASC:
+                asort($sortable_array);
+            break;
+            case SORT_DESC:
+                arsort($sortable_array);
+            break;
+        }
+
+        foreach ($sortable_array as $k => $v) {
+            $new_array[$k] = $array[$k];
+        }
+    }
+
+    return $new_array;
 }
+
+
                     
 // Get arguments for all posts
 $args = array( 
@@ -144,15 +133,11 @@ if ( $the_query->have_posts() ):
         if(!$save_th)
         {
         
-            foreach( $fields as $name => $value ){
-                // echo $name;
-                $field = get_field_object($name); 
-                array_push($table_th_arr,$field['label']);
-                array_push($field_key_arr,$name);
+            $meta_data = get_field_objects(get_the_ID());
 
-                $save_th=true;
-            }
-            // echo    $save_th;
+            $sorted_meta_data = array_sort($meta_data, 'menu_order', SORT_ASC);
+
+         
         }
 array_push($all_posts, $fields);
 
@@ -170,9 +155,9 @@ $table='<table class="excel-table mt-5" id="excel-table">
 
 
 
-        foreach($table_th_arr as $th)
+        foreach($sorted_meta_data as $meta_data)
         {
-            $table.='<td class="fw-bold text-light bg-dark">'.$th.'</td>';
+            $table.='<td class="fw-bold text-light bg-dark">'.$meta_data.'</td>';
         }
     $table .='</tr>';  
     for($i=0;$i<count($all_posts);$i++)
