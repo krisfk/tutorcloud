@@ -35,6 +35,23 @@ if (!$is_admin) {
 
 <?php
 
+function array_orderby()
+					{
+    					$args = func_get_args();
+    					$data = array_shift($args);
+    					foreach ($args as $n => $field) {
+                            if (is_string($field)) {
+                                $tmp = array();
+                                foreach ($data as $key => $row)
+                                $tmp[$key] = $row[$field];
+                                $args[$n] = $tmp;
+                            }
+    			    	}
+    					$args[] = &$data;
+    					call_user_func_array('array_multisort', $args);
+    					return array_pop($args);
+}
+                    
 // Get arguments for all posts
 $args = array( 
 	'post_type' => 'tutor',
@@ -53,6 +70,10 @@ if ( $the_query->have_posts() ):
         // echo get_field('tutor_id');
         // echo '<br>';
 		$fields = get_fields();
+        
+        $fields = array_orderby($fields, 'menu_order', SORT_ASC);
+
+
     // print_r($fields);
     // echo '<br><br>';
         if(!$save_th)
