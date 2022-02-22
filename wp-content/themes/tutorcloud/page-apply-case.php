@@ -2826,6 +2826,8 @@ $(function() {
         // var tutorial_course = $('#tutorial-course').val();
         var student_level = $('#student-level').val();
         var student_level_2 = $('#student-level-2').val();
+
+
         var paper_lang = $('input[name="paper-lang"]:checked').val();
         // var subjects = $('')
         var tutorial_style = $('input[name="tutorial-style"]:checked').val();
@@ -2888,6 +2890,20 @@ $(function() {
             error_txt +=
                 '請輸入所屬年級</br>';
         }
+
+
+        var val = [];
+
+
+        $('input[name="subjects[]"]:checked').each(function(i) {
+            val[i] = $(this).val();
+
+        });
+
+        if (val.length == 0) {
+            error_txt += '請輸入科目</br>';
+        }
+
 
         if (!paper_lang) {
             error_txt +=
