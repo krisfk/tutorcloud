@@ -160,13 +160,15 @@ $table='<table class="excel-table mt-5" id="excel-table">
         }
     $table .='</tr>';  
     
+    print_r($meta_data['label']);
+    print_r($meta_data['name']);
     for($i=0;$i<count($all_posts);$i++)
     {
         $table .='<tr>';
         
         for($j=0;$j<count($field_key_arr);$j++)
         {
-            echo 1;
+            // echo 1;
             if(is_array($all_posts[$i][$field_key_arr[$j]]))
             {
                 $table .='<td>'.implode(',', $all_posts[$i][$field_key_arr[$j]]).'</td>';   
