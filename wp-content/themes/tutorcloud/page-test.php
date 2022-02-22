@@ -121,23 +121,14 @@ $save_th=false;
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
-        // echo get_field('tutor_id');
-        // echo '<br>';
 		$fields = get_fields();
         
-        // $fields = array_orderby($fields, 'menu_order', SORT_DESC);
-
-
-    // print_r($fields);
-    // echo '<br><br>';
         if(!$save_th)
         {
         
             $meta_data = get_field_objects(get_the_ID());
 
-            $sorted_meta_data = array_sort($meta_data, 'menu_order', SORT_ASC);
-
-         
+            $sorted_meta_data = array_sort($meta_data, 'menu_order', SORT_ASC);  
         }
 array_push($all_posts, $fields);
 
@@ -146,7 +137,6 @@ endwhile;
 wp_reset_postdata();
 
 endif;
-// print_r($all_posts);
 ?>
 
 <?php
@@ -160,8 +150,6 @@ $table='<table class="excel-table mt-5" id="excel-table">
         }
     $table .='</tr>';  
     
-    // print_r($table_th_arr);
-    // print_r($field_key_arr);
     for($i=0;$i<count($all_posts);$i++)
     {
         $table .='<tr>';
@@ -186,28 +174,7 @@ $table='<table class="excel-table mt-5" id="excel-table">
                 $table .='<td>'.$all_posts[$i][$field_key_arr[$j]].'</td>';   
             }
         }
-        // print_r($all_posts[$i]);
-        // for($j=0;$j<count($sorted_meta_data);$j++)
-        // {
- 
-        //     if(is_array($all_posts[$i][$sorted_meta_data[$j]['name']]))
-        //     {
-        //         $table .='<td>'.implode(',', $all_posts[$i][$sorted_meta_data[$j]['name']]).'</td>';   
-
-        //     }
-        //     else if($sorted_meta_data[$j]['name']=='proof1' ||$sorted_meta_data[$j]['name']=='proof2')
-        //     {
-        //         $file_src = wp_get_attachment_url($all_posts[$i][$sorted_meta_data[$j]['name']]);
-
-        //         $table .='<td><a href="'.$file_src.'" target="_blank">'.$file_src.'</a></td>';   
-
-        //     }
-        //     else
-        //     {
-        //         $table .='<td>'.$all_posts[$i][$sorted_meta_data[$j]['name']].'</td>';   
-        //     }
-        // }
-    
+      
         
         $table .='</tr>';
     }
