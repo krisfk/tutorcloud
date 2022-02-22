@@ -155,13 +155,13 @@ $table='<table class="excel-table mt-5" id="excel-table">
         foreach($sorted_meta_data as $meta_data)
         {
             $table.='<td class="fw-bold text-light bg-dark">'.$meta_data['label'].'</td>';
-            array_push($meta_data['label'], $table_th_arr);
-            array_push($meta_data['name'], $field_key_arr);
+            array_push( $table_th_arr,$meta_data['label']);
+            array_push( $field_key_arr,$meta_data['name']);
         }
     $table .='</tr>';  
     
-    print_r($table_th_arr);
-    print_r($field_key_arr);
+    // print_r($table_th_arr);
+    // print_r($field_key_arr);
     for($i=0;$i<count($all_posts);$i++)
     {
         $table .='<tr>';
