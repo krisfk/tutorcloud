@@ -504,9 +504,18 @@ while ( $loop->have_posts() ) {
                     data-student-gender="<?php echo get_field('gender');?>"
                     data-salary="<?php echo get_field('cost_per_ppl');?>"
                     data-tutorial-style="<?php echo get_field('tutorial_style');?>"
-                    data-student-level="<?php echo get_field('student_level_2');?>"
-                    data-subjects="<?php echo implode(' ', get_field('subjects'));?>"
-                    data-lesson-hour="<?php echo get_field('lesson_per_week');?>"
+                    data-student-level="<?php echo get_field('student_level_2');?>" data-subjects="<?php
+                    $str = implode(' ', get_field('subjects'));
+                    if($str =='其他(請在下方填寫科目)')
+                    {
+                        echo get_field('other_subject');
+                    }
+                    else
+                    {
+                        echo $str;   
+                    }
+                    
+                    ?>" data-lesson-hour="<?php echo get_field('lesson_per_week');?>"
                     data-time="<?php echo get_field('hour_per_lesson');?>"
                     data-start-tutorial-time="<?php echo implode(' ',  get_field('days')).' ';?><?php echo get_field('start_tutorial_time');?>"
                     data-short-address="<?php echo get_field('short_address');?>"
