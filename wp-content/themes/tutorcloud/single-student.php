@@ -493,8 +493,7 @@ if (!$is_admin) {
                         echo $str;   
                     }
                     
-                    ?>""
-                    data-lesson-hour=" <?php echo get_field('lesson_per_week');?>"
+                    ?>" data-lesson-hour=" <?php echo get_field('lesson_per_week');?>"
                     data-time="<?php echo get_field('hour_per_lesson');?>"
                     data-start-tutorial-time="<?php echo implode(' ',  get_field('days')).' ';?><?php echo get_field('start_tutorial_time');?>"
                     data-short-address="<?php echo get_field('short_address');?>"
