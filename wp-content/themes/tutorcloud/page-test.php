@@ -5,7 +5,17 @@
 //     echo 'post';
 // }
 
-
+$fields = get_posts(array(
+    'posts_per_page'   => -1,
+    'post_type'        => 'tutor',
+    'orderby'          => 'menu_order',
+    'order'            => 'ASC',
+    // 'suppress_filters' => true, // DO NOT allow WPML to modify the query
+    // 'post_parent'      => $group['ID'],
+    // 'post_status'      => 'any',
+    // 'update_post_meta_cache' => false
+  ));
+  print_r($fields);
 // print_r(get_fields(431));
         // $tutor_id = 'T'.
         // $post_id= 999;
