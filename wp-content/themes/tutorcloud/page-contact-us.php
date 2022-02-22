@@ -28,7 +28,8 @@ get_header();
     <div class="text-center">
 
 
-        <a href="https://wa.me/message/DPN557RPMIDTF1" target="_blank">whatsapp</a>
+        <a href="https://wa.me/message/DPN557RPMIDTF1" target="_blank"> <img class="wts-icon"
+                src="<?php echo get_template_directory_uri();?>/assets/images/wts-icon.png" alt=""></a>
         <?php
     echo do_shortcode('[contact-form-7 id="375"  title="Contact form 1"]');
     ?>
