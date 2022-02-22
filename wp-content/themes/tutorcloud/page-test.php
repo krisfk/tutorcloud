@@ -14,70 +14,290 @@
 //   print_r($fields);
 // print_r(get_fields(443));
 
-function array_sort($array, $on, $order=SORT_ASC){
-    $new_array = array();
-    $sortable_array = array();
+// function array_sort($array, $on, $order=SORT_ASC){
+//     $new_array = array();
+//     $sortable_array = array();
 
-    if (count($array) > 0) {
-        foreach ($array as $k => $v) {
-            if (is_array($v)) {
-                foreach ($v as $k2 => $v2) {
-                    if ($k2 == $on) {
-                        $sortable_array[$k] = $v2;
-                    }
-                }
-            } else {
-                $sortable_array[$k] = $v;
-            }
-        }
+//     if (count($array) > 0) {
+//         foreach ($array as $k => $v) {
+//             if (is_array($v)) {
+//                 foreach ($v as $k2 => $v2) {
+//                     if ($k2 == $on) {
+//                         $sortable_array[$k] = $v2;
+//                     }
+//                 }
+//             } else {
+//                 $sortable_array[$k] = $v;
+//             }
+//         }
 
-        switch ($order) {
-            case SORT_ASC:
-                asort($sortable_array);
-            break;
-            case SORT_DESC:
-                arsort($sortable_array);
-            break;
-        }
+//         switch ($order) {
+//             case SORT_ASC:
+//                 asort($sortable_array);
+//             break;
+//             case SORT_DESC:
+//                 arsort($sortable_array);
+//             break;
+//         }
 
-        foreach ($sortable_array as $k => $v) {
-            $new_array[$k] = $array[$k];
-        }
-    }
+//         foreach ($sortable_array as $k => $v) {
+//             $new_array[$k] = $array[$k];
+//         }
+//     }
 
-    return $new_array;
+//     return $new_array;
+// }
+
+
+// $meta_data = get_field_objects(443);
+
+// $sorted_meta_data = array_sort($meta_data, 'menu_order', SORT_ASC);
+
+
+
+?>
+
+
+
+
+
+
+
+<?php
+/**
+ * The template for displaying all single posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty_One
+ * @since Twenty Twenty-One 1.0
+ */
+
+get_header();
+// $arr1 = array('1','2','3','4','5');
+// $arr2 = array('2','3','1','8');
+// print_r(array_unique(array_merge($arr1,$arr2)));
+$is_admin = current_user_can('manage_options');  // all user they have mange option will get 
+
+if (!$is_admin) {
+    wp_redirect(get_site_url());
+        exit;
 }
 
-
-$meta_data = get_field_objects(443);
-
-$sorted_meta_data = array_sort($meta_data, 'menu_order', SORT_ASC);
-
-
-print_r($sorted_meta_data);
-// print_r($meta_data);
-
-
-        // $tutor_id = 'T'.
-        // $post_id= 999;
-        // $tutor_id = str_pad($post_id, 5, '0', STR_PAD_LEFT);
-        // echo 'T'.substr(date('Y'),2,2).$tutor_id;
-    // echo $tutor_id;
-
 ?>
+<style type="text/css">
+#main {
+    display: none;
+}
+</style>
+<h1 class="text-start mt-5">tutorcloud tutor list export</h1>
+<div class="small">(this page can be only viewed by admin)</div>
+
+<div class="text-start mt-5">
+    <a href="javascript:void(0);" class="btn btn-info getfile">EXPORT</a>
+</div>
+
 <?php
 
+function array_orderby()
+					{
+    					$args = func_get_args();
+    					$data = array_shift($args);
+    					foreach ($args as $n => $field) {
+                            if (is_string($field)) {
+                                $tmp = array();
+                                foreach ($data as $key => $row)
+                                $tmp[$key] = $row[$field];
+                                $args[$n] = $tmp;
+                            }
+    			    	}
+    					$args[] = &$data;
+    					call_user_func_array('array_multisort', $args);
+    					return array_pop($args);
+}
+                    
+// Get arguments for all posts
+$args = array( 
+	'post_type' => 'tutor',
+    'post_status' => 'publish',
+    'posts_per_page' => -1,
+);
 
-// if($_FILES["upload_file"]['size'])
-// {
-// 	//  echo 'have file';
-// 	print_r($_FILES);
-// }
+$all_posts = array();
+$table_th_arr= array();
+$field_key_arr=array();
+$the_query = new WP_Query( $args );
+$save_th=false;
+if ( $the_query->have_posts() ):
+
+	while ( $the_query->have_posts() ): $the_query->the_post();
+        // echo get_field('tutor_id');
+        // echo '<br>';
+		$fields = get_fields();
+        
+        // $fields = array_orderby($fields, 'menu_order', SORT_DESC);
+
+
+    // print_r($fields);
+    // echo '<br><br>';
+        if(!$save_th)
+        {
+        
+            foreach( $fields as $name => $value ){
+                // echo $name;
+                $field = get_field_object($name); 
+                array_push($table_th_arr,$field['label']);
+                array_push($field_key_arr,$name);
+
+                $save_th=true;
+            }
+            // echo    $save_th;
+        }
+array_push($all_posts, $fields);
+
+
+endwhile;
+wp_reset_postdata();
+
+endif;
+// print_r($all_posts);
 ?>
 
-<!-- <form action="" method="post" enctype="multipart/form-data">
+<?php
+$table='<table class="excel-table mt-5" id="excel-table">
+        <tr>';
 
-    <input type="text" name="test">
-    <input type="file" name="upload_file" id="upload_file">
-    <input type="submit">
-</form> -->
+
+
+        foreach($table_th_arr as $th)
+        {
+            $table.='<td class="fw-bold text-light bg-dark">'.$th.'</td>';
+        }
+    $table .='</tr>';  
+    for($i=0;$i<count($all_posts);$i++)
+    {
+        $table .='<tr>';
+        
+        for($j=0;$j<count($field_key_arr);$j++)
+        {
+            if(is_array($all_posts[$i][$field_key_arr[$j]]))
+            {
+                $table .='<td>'.implode(',', $all_posts[$i][$field_key_arr[$j]]).'</td>';   
+
+            }
+            else if($field_key_arr[$j]=='proof1' ||$field_key_arr[$j]=='proof2')
+            {
+                $file_src = wp_get_attachment_url($all_posts[$i][$field_key_arr[$j]]);
+
+                $table .='<td><a href="'.$file_src.'" target="_blank">'.$file_src.'</a></td>';   
+
+            }
+            else
+            {
+                $table .='<td>'.$all_posts[$i][$field_key_arr[$j]].'</td>';   
+            }
+        }
+        // $table .='<td>f</td>';
+
+        // foreach($all_posts[$i] as $key => $value){
+                
+        //     if(is_array($value))
+        //     {
+        //           $table .='<td>'.implode(',', $value).'</td>';
+
+        //     }
+        //     else
+        //     {
+        //         $table .='<td>'.$value.'</td>';
+        //     }
+        // }
+        $table .='</td>';
+    }
+
+    $table .='</table>';
+    echo $table;
+?>
+
+
+
+
+
+<style type="text/css">
+body {
+    padding: 1rem;
+}
+
+table {
+    width: max-content;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+
+table.excel-table th {
+    padding: 1rem;
+    border: 1px solid #000;
+}
+
+table.excel-table td {
+    padding: 1rem;
+
+    border: 1px solid #000;
+}
+</style>
+
+<script type="text/javascript">
+$(function() {
+    $('.getfile').click(
+        function() {
+            exportTableToCSV.apply(this, [$('#excel-table'), 'tutor-list.csv']);
+        });
+
+})
+
+function exportTableToCSV($table, filename) {
+
+    var $rows = $table.find('tr:has(td)'),
+
+        // Temporary delimiter characters unlikely to be typed by keyboard
+        // This is to avoid accidentally splitting the actual contents
+        tmpColDelim = String.fromCharCode(11), // vertical tab character
+        tmpRowDelim = String.fromCharCode(0), // null character
+
+        // actual delimiter characters for CSV format
+        colDelim = '","',
+        rowDelim = '"\r\n"',
+
+        // Grab text from table into CSV formatted string
+        csv = '"' + $rows.map(function(i, row) {
+            var $row = $(row),
+                $cols = $row.find('td');
+
+            return $cols.map(function(j, col) {
+                var $col = $(col),
+                    text = $col.text();
+
+                return text.replace('"', '""'); // escape double quotes
+
+            }).get().join(tmpColDelim);
+
+        }).get().join(tmpRowDelim)
+        .split(tmpRowDelim).join(rowDelim)
+        .split(tmpColDelim).join(colDelim) + '"',
+
+        // Data URI
+        csvData = 'data:application/csv;charset=utf-8,' + encodeURIComponent(csv);
+
+    $(this)
+        .attr({
+            'download': filename,
+            'href': csvData,
+            'target': '_blank'
+        });
+}
+</script>
+<?php
+
+get_footer();
+?>
