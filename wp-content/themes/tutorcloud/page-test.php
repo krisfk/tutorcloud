@@ -152,12 +152,11 @@ endif;
 <?php
 $table='<table class="excel-table mt-5" id="excel-table">
         <tr>';
-
-
-
         foreach($sorted_meta_data as $meta_data)
         {
-            $table.='<td class="fw-bold text-light bg-dark">'.$meta_data['label'].$meta_data['name'].'</td>';
+            $table.='<td class="fw-bold text-light bg-dark">'.$meta_data['label'].'</td>';
+            array_push($meta_data['label'], $table_th_arr);
+            array_push($meta_data['name'], $field_key_arr);
         }
     $table .='</tr>';  
     
@@ -165,7 +164,26 @@ $table='<table class="excel-table mt-5" id="excel-table">
     {
         $table .='<tr>';
         
-        print_r($all_posts[$i]);
+        for($j=0;$j<count($field_key_arr);$j++)
+        {
+            if(is_array($all_posts[$i][$field_key_arr[$j]]))
+            {
+                $table .='<td>'.implode(',', $all_posts[$i][$field_key_arr[$j]]).'</td>';   
+
+            }
+            else if($field_key_arr[$j]=='proof1' ||$field_key_arr[$j]=='proof2')
+            {
+                $file_src = wp_get_attachment_url($all_posts[$i][$field_key_arr[$j]]);
+
+                $table .='<td><a href="'.$file_src.'" target="_blank">'.$file_src.'</a></td>';   
+
+            }
+            else
+            {
+                $table .='<td>'.$all_posts[$i][$field_key_arr[$j]].'</td>';   
+            }
+        }
+        // print_r($all_posts[$i]);
         // for($j=0;$j<count($sorted_meta_data);$j++)
         // {
  
