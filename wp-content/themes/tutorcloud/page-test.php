@@ -160,8 +160,8 @@ $table='<table class="excel-table mt-5" id="excel-table">
         }
     $table .='</tr>';  
     
-    print_r($meta_data['label']);
-    print_r($meta_data['name']);
+    print_r($table_th_arr);
+    print_r($field_key_arr);
     for($i=0;$i<count($all_posts);$i++)
     {
         $table .='<tr>';
