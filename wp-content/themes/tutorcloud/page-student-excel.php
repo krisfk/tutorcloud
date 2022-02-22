@@ -34,6 +34,43 @@ if (!$is_admin) {
 </div>
 <?php
 
+
+function array_sort($array, $on, $order=SORT_ASC){
+    $new_array = array();
+    $sortable_array = array();
+
+    if (count($array) > 0) {
+        foreach ($array as $k => $v) {
+            if (is_array($v)) {
+                foreach ($v as $k2 => $v2) {
+                    if ($k2 == $on) {
+                        $sortable_array[$k] = $v2;
+                    }
+                }
+            } else {
+                $sortable_array[$k] = $v;
+            }
+        }
+
+        switch ($order) {
+            case SORT_ASC:
+                asort($sortable_array);
+            break;
+            case SORT_DESC:
+                arsort($sortable_array);
+            break;
+        }
+
+        foreach ($sortable_array as $k => $v) {
+            $new_array[$k] = $array[$k];
+        }
+    }
+
+    return $new_array;
+}
+
+
+                    
 // Get arguments for all posts
 $args = array( 
 	'post_type' => 'student',
@@ -49,23 +86,14 @@ $save_th=false;
 if ( $the_query->have_posts() ):
 
 	while ( $the_query->have_posts() ): $the_query->the_post();
-        // echo get_field('tutor_id');
-        // echo '<br>';
 		$fields = get_fields();
-    // print_r($fields);
-    // echo '<br><br>';
+        
         if(!$save_th)
         {
         
-            foreach( $fields as $name => $value ){
-                // echo $name;
-                $field = get_field_object($name); 
-                array_push($table_th_arr,$field['label']);
-                array_push($field_key_arr,$name);
+            $meta_data = get_field_objects(get_the_ID());
 
-                $save_th=true;
-            }
-            // echo    $save_th;
+            $sorted_meta_data = array_sort($meta_data, 'menu_order', SORT_ASC);  
         }
 array_push($all_posts, $fields);
 
@@ -74,26 +102,26 @@ endwhile;
 wp_reset_postdata();
 
 endif;
-// print_r($all_posts);
 ?>
 
 <?php
 $table='<table class="excel-table mt-5" id="excel-table">
         <tr>';
-
-
-
-        foreach($table_th_arr as $th)
+        foreach($sorted_meta_data as $meta_data)
         {
-            $table.='<td class="fw-bold text-light bg-dark">'.$th.'</td>';
+            $table.='<td class="fw-bold text-light bg-dark">'.$meta_data['label'].'</td>';
+            array_push( $table_th_arr,$meta_data['label']);
+            array_push( $field_key_arr,$meta_data['name']);
         }
     $table .='</tr>';  
+    
     for($i=0;$i<count($all_posts);$i++)
     {
         $table .='<tr>';
         
         for($j=0;$j<count($field_key_arr);$j++)
         {
+            // echo 1;
             if(is_array($all_posts[$i][$field_key_arr[$j]]))
             {
                 $table .='<td>'.implode(',', $all_posts[$i][$field_key_arr[$j]]).'</td>';   
@@ -111,21 +139,9 @@ $table='<table class="excel-table mt-5" id="excel-table">
                 $table .='<td>'.$all_posts[$i][$field_key_arr[$j]].'</td>';   
             }
         }
-        // $table .='<td>f</td>';
-
-        // foreach($all_posts[$i] as $key => $value){
-                
-        //     if(is_array($value))
-        //     {
-        //           $table .='<td>'.implode(',', $value).'</td>';
-
-        //     }
-        //     else
-        //     {
-        //         $table .='<td>'.$value.'</td>';
-        //     }
-        // }
-        $table .='</td>';
+      
+        
+        $table .='</tr>';
     }
 
     $table .='</table>';
