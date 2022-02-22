@@ -166,6 +166,7 @@ $table='<table class="excel-table mt-5" id="excel-table">
         
         for($j=0;$j<count($meta_data);$j++)
         {
+            echo $meta_data[$j]['name'];
             if(is_array($all_posts[$i][$meta_data[$j]['name']]))
             {
                 $table .='<td>'.implode(',', $all_posts[$i][$meta_data[$j]['name']]).'</td>';   
