@@ -12,7 +12,10 @@
 //     'order'            => 'ASC',
 //   ));
 //   print_r($fields);
-print_r(get_fields(443));
+// print_r(get_fields(443));
+$meta_data = get_field_objects(443);
+
+
         // $tutor_id = 'T'.
         // $post_id= 999;
         // $tutor_id = str_pad($post_id, 5, '0', STR_PAD_LEFT);
