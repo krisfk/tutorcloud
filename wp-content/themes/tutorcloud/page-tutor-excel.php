@@ -71,7 +71,7 @@ if ( $the_query->have_posts() ):
         // echo '<br>';
 		$fields = get_fields();
         
-        $fields = array_orderby($fields, 'menu_order', SORT_DESC);
+        // $fields = array_orderby($fields, 'menu_order', SORT_DESC);
 
 
     // print_r($fields);
