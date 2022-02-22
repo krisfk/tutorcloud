@@ -236,7 +236,7 @@ $the_query->the_post();
 
                                     <?php 
                                     
-                                    $university_arr=array("香港中文大學","香港科技大學","香港理工大學","香港城市大學","香港浸會大學","香港都會大學","香港恒生大學","嶺南大學");
+                                    $university_arr=array("香港中文大學","香港科技大學","香港理工大學","香港城市大學","香港浸會大學","香港都會大學","香港恒生大學","嶺南大學","其他大學");
                                     
                                     for($i=0;$i<count($university_arr);$i++)
                                     {
@@ -254,6 +254,14 @@ $the_query->the_post();
 
                                 </select></td>
                         </tr>
+                        <tr>
+                            <td><label for="other-university">其他大學
+                                </label></td>
+                            <td>
+                                <input type="text" id="other-university" name="other-university" class="form-control">
+                            </td>
+                        </tr>
+
                         <tr>
                             <td> <label for="tutor-level">教育程度 *
                                 </label></td>

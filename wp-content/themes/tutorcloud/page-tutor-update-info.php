@@ -81,7 +81,8 @@ if($_POST['form-type']=='tutor-info-form-2')
 {
     // echo 999;
     $bac_degree = $_POST['bac-degree'];
-    
+    $other_university = $_POST['other-university'];
+
     $tutor_level = $_POST['tutor-level'];
     $diploma = $_POST['diploma'];
     $tutor_year = $_POST['tutor-year'];
@@ -173,6 +174,8 @@ if($_POST['form-type']=='tutor-info-form-2')
     $post_id = $_SESSION['tutor_post_id'];
 
     update_post_meta($post_id, 'bac_degree', $bac_degree);
+    update_post_meta($post_id, 'other_university', $other_university);
+
     update_post_meta($post_id, 'tutor_level', $tutor_level);
     update_post_meta($post_id, 'diploma', $diploma);
     update_post_meta($post_id, 'tutor_year', $tutor_year);
