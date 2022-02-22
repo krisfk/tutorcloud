@@ -166,7 +166,7 @@ $table='<table class="excel-table mt-5" id="excel-table">
         
         for($j=0;$j<count($sorted_meta_data);$j++)
         {
-            print_r($sorted_meta_data[$j]);
+            print_r($sorted_meta_data);
             // echo $meta_data[$j]['name'];
             if(is_array($all_posts[$i][$sorted_meta_data[$j]['name']]))
             {
