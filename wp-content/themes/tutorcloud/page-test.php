@@ -157,7 +157,7 @@ $table='<table class="excel-table mt-5" id="excel-table">
 
         foreach($sorted_meta_data as $meta_data)
         {
-            $table.='<td class="fw-bold text-light bg-dark">'.$meta_data.'</td>';
+            $table.='<td class="fw-bold text-light bg-dark">'.$meta_data['label'].'</td>';
         }
     $table .='</tr>';  
     for($i=0;$i<count($all_posts);$i++)
