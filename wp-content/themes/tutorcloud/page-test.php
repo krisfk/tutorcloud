@@ -160,46 +160,35 @@ $table='<table class="excel-table mt-5" id="excel-table">
             $table.='<td class="fw-bold text-light bg-dark">'.$meta_data['label'].'</td>';
         }
     $table .='</tr>';  
+    
     for($i=0;$i<count($all_posts);$i++)
     {
         $table .='<tr>';
         
-        for($j=0;$j<count($sorted_meta_data);$j++)
-        {
-            print_r($sorted_meta_data);
-            // echo $meta_data[$j]['name'];
-            if(is_array($all_posts[$i][$sorted_meta_data[$j]['name']]))
-            {
-                $table .='<td>'.implode(',', $all_posts[$i][$sorted_meta_data[$j]['name']]).'</td>';   
-
-            }
-            else if($sorted_meta_data[$j]['name']=='proof1' ||$sorted_meta_data[$j]['name']=='proof2')
-            {
-                $file_src = wp_get_attachment_url($all_posts[$i][$sorted_meta_data[$j]['name']]);
-
-                $table .='<td><a href="'.$file_src.'" target="_blank">'.$file_src.'</a></td>';   
-
-            }
-            else
-            {
-                $table .='<td>'.$all_posts[$i][$sorted_meta_data[$j]['name']].'</td>';   
-            }
-        }
-        // $table .='<td>f</td>';
-
-        // foreach($all_posts[$i] as $key => $value){
-                
-        //     if(is_array($value))
+        print_r($all_posts[$i]);
+        // for($j=0;$j<count($sorted_meta_data);$j++)
+        // {
+ 
+        //     if(is_array($all_posts[$i][$sorted_meta_data[$j]['name']]))
         //     {
-        //           $table .='<td>'.implode(',', $value).'</td>';
+        //         $table .='<td>'.implode(',', $all_posts[$i][$sorted_meta_data[$j]['name']]).'</td>';   
+
+        //     }
+        //     else if($sorted_meta_data[$j]['name']=='proof1' ||$sorted_meta_data[$j]['name']=='proof2')
+        //     {
+        //         $file_src = wp_get_attachment_url($all_posts[$i][$sorted_meta_data[$j]['name']]);
+
+        //         $table .='<td><a href="'.$file_src.'" target="_blank">'.$file_src.'</a></td>';   
 
         //     }
         //     else
         //     {
-        //         $table .='<td>'.$value.'</td>';
+        //         $table .='<td>'.$all_posts[$i][$sorted_meta_data[$j]['name']].'</td>';   
         //     }
         // }
-        $table .='</td>';
+    
+        
+        $table .='</tr>';
     }
 
     $table .='</table>';
