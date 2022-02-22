@@ -28,6 +28,7 @@ get_header();
     <div class="text-center">
 
 
+        <a href="https://wa.me/message/DPN557RPMIDTF1" target="_blank">whatsapp</a>
         <?php
     echo do_shortcode('[contact-form-7 id="375"  title="Contact form 1"]');
     ?>
