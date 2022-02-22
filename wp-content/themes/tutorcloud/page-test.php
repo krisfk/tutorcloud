@@ -14,6 +14,7 @@
 //   print_r($fields);
 // print_r(get_fields(443));
 $meta_data = get_field_objects(443);
+print_r($meta_data);
 
 
         // $tutor_id = 'T'.
