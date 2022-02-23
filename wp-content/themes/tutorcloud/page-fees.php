@@ -28,7 +28,7 @@ get_header();
 
         <div class="col-lg-2 col-md-12 col-sm-12 col-12 ">
             <img class="w-100 pe-lg-3 pe-md-0 pe-sm-0 pe-0  cal-icon"
-                src="https://hktutorcloud.com/tutorcloud/wp-content/uploads/2022/02/1200px-Calculator_icon.svg_.png" alt="">
+                src="https://hktutorcloud.com/wp-content/uploads/2022/02/1200px-Calculator_icon.svg_.png" alt="">
 
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 col-12 ">
