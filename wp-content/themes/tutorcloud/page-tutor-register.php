@@ -957,19 +957,19 @@ if($_POST)
                         <tr>
                             <td>
 
-                                <label for="u-major">大學主修科目 *</label>
+                                <label for="u-major">大學主修科目(中文) *</label>
                             </td>
                             <td><input type="text" id="u-major" name="u-major" class="form-control"></td>
                         </tr>
 
                         <tr>
-                            <td> <label for="u-minor">大學副修科目
+                            <td> <label for="u-minor">大學副修科目(中文)
                                 </label>
                             </td>
                             <td><input type="text" id="u-minor" name="u-minor" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td> <label for="s-school">曾就讀中學 *
+                            <td> <label for="s-school">曾就讀中學(中文) *
                                 </label>
                             </td>
                             <td><input type="text" id="s-school" name="s-school" class="form-control"></td>
