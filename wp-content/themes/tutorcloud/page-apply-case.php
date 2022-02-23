@@ -534,8 +534,7 @@ get_header();
 
                 <a class="add-btn-a" href="javascript:void(0);" data-tutor-id="">
 
-                    <img src="https://hktutorcloud.com/wp-content/themes/tutorcloud/assets/images/add-btn.png"
-                        alt="">
+                    <img src="https://hktutorcloud.com/wp-content/themes/tutorcloud/assets/images/add-btn.png" alt="">
                     <div class="mt-1">加入導師名單</div>
 
                 </a>
@@ -1239,7 +1238,7 @@ while ( $loop->have_posts() ) {
                                 </tr>
 
                                 <tr>
-                                    <td><label for="university"> 就讀學校
+                                    <td><label for="university"> 就讀學校(中文)
 
                                             <!-- <br> <span class="small"> (例如：HKU Space / <br>
                                                 香港中文大學
