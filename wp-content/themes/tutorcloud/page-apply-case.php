@@ -2513,6 +2513,11 @@ var tutor_list_arr = [];
 $(function() {
 
 
+    $('#filter-form input[name="gender"]').click(function() {
+
+        $('input[name="filter-gender"]').prop('checked', false);
+    })
+
     $(document).on('keydown', function(e) {
         if (e.keyCode === 27) { // ESC
             $('.lightbox').fadeOut(0);
