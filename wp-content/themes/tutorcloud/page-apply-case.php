@@ -837,10 +837,14 @@ if($_POST &&  $_POST['apply-case-form'])
             
             if($_POST && $_POST['filter-form'])
             {
-                if($_POST['filter-gender'])
+                // if($_POST['filter-gender'])
+                // {
+                //     echo 1;
+                //     array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['filter-gender'] ,'compare' => 'LIKE'));
+                // }
+                if($_POST['gender'])
                 {
-                    echo 1;
-                    array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['filter-gender'] ,'compare' => 'LIKE'));
+                    array_push($meta_query_arr,array('key' => 'gender','value' =>$_POST['gender'] ,'compare' => 'LIKE'));
                 }
                 
                 if($_POST['tutor-level'])
