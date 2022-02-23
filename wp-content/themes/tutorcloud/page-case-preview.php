@@ -513,7 +513,7 @@ get_header();
 
                 <a class="add-btn-a" href="javascript:void(0);" data-tutor-id="">
 
-                    <img src="http://64.227.13.14/tutorcloud/wp-content/themes/tutorcloud/assets/images/add-btn.png"
+                    <img src="https://hktutorcloud.com/tutorcloud/wp-content/themes/tutorcloud/assets/images/add-btn.png"
                         alt="">
                     <div class="mt-1">加入導師名單</div>
 

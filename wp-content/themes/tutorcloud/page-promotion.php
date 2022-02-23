@@ -40,7 +40,7 @@ get_header();
 
         <div class="col-lg-3 col-md-12 col-sm-12 col-12 ">
             <img class="w-100 pe-3 content-img"
-                src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/money-back-icon.jpg" alt="">
+                src="https://hktutorcloud.com/tutorcloud/wp-content/uploads/2021/11/money-back-icon.jpg" alt="">
 
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 col-12  ">
@@ -85,7 +85,7 @@ get_header();
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 col-12 ">
             <img class="w-100 ps-3 content-img"
-                src="http://64.227.13.14/tutorcloud/wp-content/uploads/2021/11/discount-icon.jpg" alt="">
+                src="https://hktutorcloud.com/tutorcloud/wp-content/uploads/2021/11/discount-icon.jpg" alt="">
 
         </div>
 
