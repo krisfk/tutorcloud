@@ -16,7 +16,7 @@ get_header();
 ?>
 <?php 
 
-echo max( 1, get_query_var( 'paged' ) );?>
+// /echo max( 1, get_query_var( 'paged' ) );?>
 <div class="lightbox">
 
     <div class="lightbox-bg-btn ">
