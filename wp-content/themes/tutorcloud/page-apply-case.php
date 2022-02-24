@@ -763,7 +763,7 @@ if($_POST &&  $_POST['apply-case-form'])
                 ),
                 'paged' => max( 1, get_query_var( 'paged' ) )
             );
-            echo 1;
+            echo 999;
             
             
             $the_query = new WP_Query( $query_args );
