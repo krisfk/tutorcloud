@@ -751,7 +751,7 @@ if($_POST &&  $_POST['apply-case-form'])
             // $to='krisfk@gmail.com';
 
             $subject='補習個案'.$student_id.'已建立。';
-
+            
             $query_args = array(
                 'post_type' => 'student',
                 'meta_query' => array(
@@ -763,6 +763,7 @@ if($_POST &&  $_POST['apply-case-form'])
                 ),
                 'paged' => max( 1, get_query_var( 'paged' ) )
             );
+            echo 1;
             
             
             $the_query = new WP_Query( $query_args );
