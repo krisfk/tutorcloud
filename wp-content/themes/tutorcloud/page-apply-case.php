@@ -14,7 +14,9 @@ get_header();
 // $arr2 = array('2','3','1','8');
 // print_r(array_unique(array_merge($arr1,$arr2)));
 ?>
+<?php 
 
+echo max( 1, get_query_var( 'paged' ) );?>
 <div class="lightbox">
 
     <div class="lightbox-bg-btn ">
@@ -763,7 +765,7 @@ if($_POST &&  $_POST['apply-case-form'])
                 ),
                 'paged' => max( 1, get_query_var( 'paged' ) )
             );
-            echo 123;
+            // echo 123;
             
             
             $the_query = new WP_Query( $query_args );
