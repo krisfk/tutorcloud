@@ -762,8 +762,9 @@ if($_POST &&  $_POST['apply-case-form'])
                         'value' => $student_id,
                         'compare' => '=',
                     )
-                ),
-                'paged' => max( 1, get_query_var( 'paged' ) )
+                )
+                // ,
+                // 'paged' => max( 1, get_query_var( 'paged' ) )
             );
             // echo 123;
             
@@ -899,8 +900,9 @@ if($_POST &&  $_POST['apply-case-form'])
     'posts_per_page' => 8, 
     'orderby' => 'date', 
     'order' => 'DESC', 
-    'meta_query' => $meta_query_arr
-    
+    'meta_query' => $meta_query_arr,
+    'paged' => max( 1, get_query_var( 'paged' ) )
+
 );
 
 $loop = new WP_Query( $args ); 
