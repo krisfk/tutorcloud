@@ -761,6 +761,7 @@ if($_POST &&  $_POST['apply-case-form'])
                         'compare' => '=',
                     )
                 ),
+                'paged' => max( 1, get_query_var( 'paged' ) )
             );
             
             
