@@ -463,7 +463,7 @@ get_header();
                     <span class="place-span">太古</span>
                     <span class="place-span">筲箕灣</span>
                     <span class="place-span">西灣河</span>
-                    <span class="place-span"> 柴灣</span>
+                    <span class="place-span">柴灣</span>
                     <span class="place-span">小西灣</span>
                     <span class="place-span">香港仔</span>
                     <span class="place-span">鴨利洲</span>
@@ -2661,6 +2661,7 @@ $(function() {
 
 
         var class_area = $(this).closest('.tutor-content-li').attr('data-class-area');
+
         var class_area_arr = class_area.split(',');
 
         $('.place-span').removeClass('deep-green');
