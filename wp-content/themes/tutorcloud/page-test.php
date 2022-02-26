@@ -864,8 +864,10 @@ if($_POST &&  $_POST['apply-case-form'])
 
                 if($_POST['subjects'])
                 {
+
                     for($i=0;$i<count($_POST['subjects']);$i++)
                     {
+                        print_r($_POST['subjects'][$i]);
                         array_push($meta_query_arr2,array('key'=>'t_subjects_kin','value'=>$_POST['subjects'][$i],'compare' => 'LIKE'));
                         array_push($meta_query_arr2,array('key'=>'t_subjects_pri','value'=>$_POST['subjects'][$i],'compare' => 'LIKE'));
                         array_push($meta_query_arr2,array('key'=>'t_subjects_f13','value'=>$_POST['subjects'][$i],'compare' => 'LIKE'));
