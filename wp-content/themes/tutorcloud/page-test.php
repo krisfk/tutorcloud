@@ -24,8 +24,8 @@ get_header();
     </div>
 
     <div class="lightbox-content filter-content">
-
-        <form action="<?php echo get_site_url(0);?>/apply-case" method="post" id="filter-form">
+        <!-- <?php echo get_site_url(0);?>/apply-case -->
+        <form action="" method="post" id="filter-form">
             <div class="step-content d-block">
                 <a href="javascript:void(0);" class="close-btn">
 
