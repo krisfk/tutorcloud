@@ -866,10 +866,10 @@ if($_POST &&  $_POST['apply-case-form'])
                 {
                     for($i=0;$i<count($_POST['subjects']);$i++)
                     {
-                        array_push($meta_query_arr2,array('key'=>'t_subjects_kin','value'=>$_POST['subjects'][$i],'compare' => 'LIKE'));
-                        array_push($meta_query_arr2,array('key'=>'t_subjects_pri','value'=>$_POST['subjects'][$i],'compare' => 'LIKE'));
-                        array_push($meta_query_arr2,array('key'=>'t_subjects_f13','value'=>$_POST['subjects'][$i],'compare' => 'LIKE'));
-                        array_push($meta_query_arr2,array('key'=>'t_subjects_f46','value'=>$_POST['subjects'][$i],'compare' => 'LIKE'));
+                        array_push($meta_query_arr2,array('key'=>'t_subjects_kin','value'=>$_POST['subjects'][$i],'compare' => 'IN'));
+                        array_push($meta_query_arr2,array('key'=>'t_subjects_pri','value'=>$_POST['subjects'][$i],'compare' => 'IN'));
+                        array_push($meta_query_arr2,array('key'=>'t_subjects_f13','value'=>$_POST['subjects'][$i],'compare' => 'IN'));
+                        array_push($meta_query_arr2,array('key'=>'t_subjects_f46','value'=>$_POST['subjects'][$i],'compare' => 'IN'));
                     }
                 }
                 array_push($meta_query_arr,$meta_query_arr2);
