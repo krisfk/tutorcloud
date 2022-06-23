@@ -2844,7 +2844,8 @@ $(function() {
         var confirm_whatsapp_tel = $('#confirm-whatsapp-tel').val();
 
         var email = $('#email').val();
-        var gender = $('input[name="gender"]:checked').val();
+        var gender = $('#apply-case-form input[name="gender"]:checked').val();
+
         // var tutorial_course = $('#tutorial-course').val();
         var student_level = $('#student-level').val();
         var student_level_2 = $('#student-level-2').val();
