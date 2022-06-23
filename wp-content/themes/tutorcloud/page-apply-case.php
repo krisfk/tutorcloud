@@ -2521,6 +2521,7 @@ Year 6 -->
 
 
 <script type="text/javascript">
+console.log(999);
 var tutor_list_arr = [];
 $(function() {
 
